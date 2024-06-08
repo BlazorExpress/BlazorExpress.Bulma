@@ -1,5 +1,5 @@
 ﻿namespace BlazorExpress.Bulma.Demo.RCL;
 
-public partial class EmptyLayout : LayoutComponentBase
+public partial class EmptyLayout : MainLayoutBase
 {
 }

@@ -1,5 +1,5 @@
 @namespace BlazorExpress.Bulma.Demo.RCL
-@inherits LayoutComponentBase
+@inherits MainLayoutBase
 
 <Navbar IsSpaced="true" HasShadow="true">
     <NavbarBrand>
@@ -117,5 +117,17 @@
     </Menu>
     <main class="bd-main p-5 content">
         @Body
+
+        <MainLayoutBaseFooter Version="@Version"
+                              DocsUrl="@DocsUrl"
+                              BlogUrl="@BlogUrl"
+                              GithubUrl="@GithubUrl"
+                              TwitterUrl="@TwitterUrl"
+                              LinkedInUrl="@LinkedInUrl"
+                              OpenCollectiveUrl="@OpenCollectiveUrl"
+                              GithubIssuesUrl="@GithubIssuesUrl"
+                              GithubDiscussionsUrl="@GithubDiscussionsUrl"
+                              StackoverflowUrl="@StackoverflowUrl" />
+
     </main>
 </div>

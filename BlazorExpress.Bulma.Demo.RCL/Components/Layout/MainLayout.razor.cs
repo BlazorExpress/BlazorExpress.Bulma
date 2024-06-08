@@ -1,6 +1,6 @@
 ﻿namespace BlazorExpress.Bulma.Demo.RCL;
 
-public partial class MainLayout : LayoutComponentBase
+public partial class MainLayout : MainLayoutBase
 {
     bool isMenuActive = false;
 
