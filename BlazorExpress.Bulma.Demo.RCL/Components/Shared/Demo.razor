@@ -1,0 +1,27 @@
+@namespace BlazorExpress.Bulma.Demo.RCL
+@inherits ComponentBase
+
+<div class="bd-example-snippet bd-code-snippet">
+    <div class="bd-example">
+        <DynamicComponent Type="this.Type" />
+    </div>
+    <div class="highlight-toolbar">
+        <small class="font-monospace text-body-secondary text-uppercase">razor</small>
+        <div class="highlight-toolbar-icon">
+            @* <Tooltip Title="@clipboardTooltipTitle" role="button" @onclick="CopyToClipboardAsync">
+            <Icon Name="@clipboardTooltipIconName" Color="@clipboardTooltipIconColor" />
+            </Tooltip> *@
+            <i class="@clipboardTooltipIconName is-clickable" title="@clipboardTooltipTitle" role="button" @onclick="CopyToClipboardAsync"></i>
+        </div>
+    </div>
+    <div class="highlight">
+        <pre>
+            <code class="@LanguageCssClass">
+                @if (codeSnippet is not null)
+                {
+                    <text>@codeSnippet.Trim()</text>
+                }
+            </code>
+        </pre>
+    </div>
+</div>

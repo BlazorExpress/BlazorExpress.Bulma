@@ -1,0 +1,72 @@
+.bd-example {
+    position: relative;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: solid var(--bd-border-color);
+    border-width: 1px;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+    .bd-example::after {
+        display: block;
+        clear: both;
+        content: ""
+    }
+
+@media (min-width: 576px) {
+    .bd-example {
+        padding: 1.5rem;
+    }
+}
+
+.bd-example + p {
+    margin-top: 2rem;
+}
+
+.bd-example > .btn, .bd-example > .btn-group {
+    margin: .25rem .125rem;
+}
+
+@media (min-width: 576px) {
+    .highlight {
+        padding: 1rem 1.5rem;
+    }
+}
+
+.highlight {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--bd-pre-bg);
+    border: solid var(--bd-border-color);
+    border-width: 0 1px 1px 1px;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+
+.highlight-toolbar {
+    color: var(--bd-body-color);
+    background-color: var(--bd-pre-bg);
+    display: flex !important;
+    align-items: center !important;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
+    border: 1px solid var(--bd-border-color) !important;
+    border-top: 0 !important;
+}
+
+    .highlight-toolbar .highlight-toolbar-icon {
+        margin-left: auto !important;
+    }
+
+pre {
+    border: 0 !important;
+    background-color: inherit !important;
+}
+
+    /* prismjs overrides */
+    code[class*=language-], pre[class*=language-] {
+        text-shadow: none !important;
+    }

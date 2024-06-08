@@ -1,0 +1,53 @@
+:root {
+    --bd-tertiary-bg: #f8f9fa;
+
+    --bd-body-color: #212529;
+    --bd-border-color: #dee2e6;
+    --bd-pre-bg: var(--bd-tertiary-bg);
+}
+
+/* dark theme */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bd-body-color: #dee2e6;
+        --bd-border-color: #495057;
+        --bd-pre-bg: #1b1f22;
+    }
+}
+
+[data-theme=dark],
+.theme-dark {
+    --bd-body-color: #dee2e6;
+    --bd-border-color: #495057;
+    --bd-pre-bg: #1b1f22;
+
+    
+}
+
+/* custom */
+.logo-color {
+    color: #5C2D91 !important;
+}
+
+.bd-splash-icon {
+    position: absolute !important;
+    top: 40% !important;
+    left: 50% !important;
+}
+
+/* overrides */
+h1:focus-visible {
+    outline: inherit !important;
+}
+
+.highlight pre .tag {
+    background-color: inherit !important;
+    font-size: inherit !important;
+    height: inherit !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.navbar-item:has(.logo-color):hover, .navbar-item:has(.logo-color):active, .navbar-item:has(.logo-color):focus {
+    background-color: inherit !important;
+}

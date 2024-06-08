@@ -1,0 +1,15 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+
+@if (Type == NavbarItemType.Link)
+{
+    <a @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" href="@Href" @attributes="@AdditionalAttributes">
+        @ChildContent
+    </a>
+}
+else
+{
+    <div @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes">
+        @ChildContent
+    </div>
+}

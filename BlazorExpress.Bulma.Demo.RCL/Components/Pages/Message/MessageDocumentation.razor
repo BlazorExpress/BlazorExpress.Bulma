@@ -1,0 +1,16 @@
+@attribute [Route(pageRoute)]
+
+<PageTitle>@title</PageTitle>
+
+<h1>Message</h1>
+
+<SectionHeading Size="HeadingSize.H2" Text="Example" PageUrl="@pageUrl" HashTagName="example" />
+<Demo Type="typeof(Message_Demo_01_How_it_works)" Tabs="true" />
+
+@code{
+    const string pageRoute = "/message";
+    private string pageUrl = pageRoute;
+    private string title = "Blazor Bulma Message Component";
+    private string description = ""; // TODO: update
+    private string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}

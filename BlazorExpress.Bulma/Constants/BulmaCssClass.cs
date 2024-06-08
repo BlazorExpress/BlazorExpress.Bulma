@@ -1,0 +1,48 @@
+﻿namespace BlazorExpress.Bulma;
+
+public static class BulmaCssClass
+{
+    #region Fields and Constants
+
+    public const string Block = "block";
+
+    public const string Box = "box";
+
+    public const string HasDropdown = "has-dropdown";
+    public const string HasShadow = "has-shadow";
+
+    public const string Hero = "hero";
+    public const string HeroHeader = "hero-head";
+    public const string HeroBody = "hero-body";
+    public const string HeroTitle = "title";
+    public const string HeroSubTitle = "subtitle";
+    public const string HeroFooter = "hero-foot";
+
+    public const string IsActive = "is-active";
+    public const string IsHoverable = "is-hoverable";
+    public const string IsLeft = "is-left";
+    public const string IsRight = "is-right";
+    public const string IsSpaced = "is-spaced";
+
+    public const string Menu = "menu";
+    public const string MenuLabel = "menu-label";
+    public const string MenuList = "menu-list";
+    public const string MenuItem = "menu-item"; // custom class
+
+    public const string Message = "message";
+    public const string MessageHeader = "message-header";
+    public const string MessageBody = "message-body";
+
+    public const string Navbar = "navbar";
+    public const string NavbarBrand = "navbar-brand";
+    public const string NavbarBurger = "navbar-burger";
+    public const string NavbarMenu = "navbar-menu";
+    public const string NavbarStart = "navbar-start";
+    public const string NavbarEnd = "navbar-end";
+    public const string NavbarItem = "navbar-item";
+    public const string NavbarLink = "navbar-link";
+    public const string NavbarDropdown = "navbar-dropdown";
+    public const string NavbarDivider = "navbar-divider";
+
+    #endregion
+}

@@ -1,0 +1,29 @@
+
+/* layout */
+@media (min-width: 641px) {
+    .bd-page {
+        flex-direction: row !important;
+    }
+}
+
+.bd-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.bd-main {
+    flex: 1;
+}
+
+.bd-menu {
+    border-right: 1px solid transparent !important;
+    border-right-color: var(--bd-border-color) !important;
+}
+
+@media (min-width: 641px) {
+    .bd-menu {
+        width: 300px;
+        overflow-x: auto;
+    }
+}

@@ -1,0 +1,121 @@
+@namespace BlazorExpress.Bulma.Demo.RCL
+@inherits LayoutComponentBase
+
+<Navbar IsSpaced="true" HasShadow="true">
+    <NavbarBrand>
+        <NavbarItem Href="/" IsHoverable="false">
+            <img src="_content/BlazorExpress.Bulma.Demo.RCL/icons/logo.png" alt="Blazor Express" />
+            <span class="ml-2 is-size-4 has-text-weight-bold">Blazor Express</span>
+        </NavbarItem>
+        <NavbarBurger TargetId="navbarBasicExample1" NavbarBurgerActiveStateChanged="OnNavbarBurgerActiveStateChanged" />
+    </NavbarBrand>
+
+    <NavbarMenu Id="navbarBasicExample1" IsActive="@isMenuActive">
+        <NavbarStart>
+            <NavbarItem><i class="bi bi-file-text-fill has-text-primary mr-2"></i>Docs</NavbarItem>
+            <NavbarItem><i class="bi bi-newspaper has-text-warning mr-2"></i>Blog</NavbarItem>
+
+            @* <NavbarItem Type="NavbarItemType.Div" HasDropdown="true">
+                <NavbarLink>More</NavbarLink>
+                <NavbarDropdown>
+                    <NavbarItem Href="#">Columns</NavbarItem>
+                    <NavbarItem Href="#">Elements</NavbarItem>
+                    <NavbarItem Href="#">Form</NavbarItem>
+                    <NavbarItem Href="#">Layout</NavbarItem>
+                    <NavbarItem Href="#">Components</NavbarItem>
+                </NavbarDropdown>
+            </NavbarItem> *@
+        </NavbarStart>
+
+        <NavbarEnd>
+            <NavbarItem Href="#">
+                <i class="bi bi-github"></i>
+                <small class="is-hidden-desktop ml-2">GitHub</small>
+            </NavbarItem>
+            <NavbarItem Href="#">
+                <i class="bi bi-twitter-x"></i>
+                <small class="is-hidden-desktop ml-2">Twitter</small>
+            </NavbarItem>
+            <NavbarItem Href="#">
+                <i class="bi bi-linkedin"></i>
+                <small class="is-hidden-desktop ml-2">LinkedIn</small>
+            </NavbarItem>
+            <NavbarItem Type="NavbarItemType.Div">
+                <span class="tag is-link">v0.1.0</span>
+            </NavbarItem>
+
+            <NavbarItem Type="NavbarItemType.Div" HasDropdown="true">
+                <NavbarLink><i class="bi bi-sun"></i></NavbarLink>
+                <NavbarDropdown>
+                    <NavbarItem Class="is-clickable" Type="NavbarItemType.Div"><i class="bi bi-sun mr-2"></i>Light</NavbarItem>
+                    <NavbarItem Class="is-clickable" Type="NavbarItemType.Div"><i class="bi bi-moon-stars-fill mr-2"></i>Dark</NavbarItem>
+                    <NavbarItem Class="is-clickable" Type="NavbarItemType.Div"><i class="bi bi-circle-half mr-2"></i>Auto</NavbarItem>
+                </NavbarDropdown>
+            </NavbarItem>
+
+        </NavbarEnd>
+    </NavbarMenu>
+</Navbar>
+
+<div class="bd-page">
+    <Menu Class="bd-menu p-5" Style="border-right: 1px solid transparent !important; border-right-color: var(--bd-border-color) !important;">
+        <MenuLabel Class="is-size-7 has-text-weight-bold has-text-info">Elements</MenuLabel>
+        <MenuList>
+            <MenuItem><a href="/block">Block</a></MenuItem>
+            <MenuItem><a href="/box">Box</a></MenuItem>
+            <MenuItem><a href="/button">Button</a></MenuItem>
+            <MenuItem><a href="/content">Content</a></MenuItem>
+        </MenuList>
+        <MenuLabel Class="is-size-7 has-text-weight-bold has-text-primary">Components</MenuLabel>
+        <MenuList>
+            <MenuItem><a href="/menu">Breadcrumb</a></MenuItem>
+            <MenuItem><a href="/menu">Card</a></MenuItem>
+            <MenuItem><a href="/menu">Dropdown</a></MenuItem>
+            <MenuItem><a href="/menu">Menu</a></MenuItem>
+            <MenuItem><a href="/message">Message</a></MenuItem>
+            <MenuItem><a href="/message">Modal</a></MenuItem>
+            <MenuItem><a href="/navbar">Navbar</a></MenuItem>
+            <MenuItem><a href="/navbar">Pagination</a></MenuItem>
+            <MenuItem><a href="/navbar">Panel</a></MenuItem>
+            <MenuItem><a href="/navbar">Tabs</a></MenuItem>
+        </MenuList>
+        <MenuLabel Class="is-size-7 has-text-weight-bold has-text-link">Form</MenuLabel>
+        <MenuList>
+            <MenuItem><a href="/form/general">General</a></MenuItem>
+            <MenuItem><a href="/form/input">Input</a></MenuItem>
+            <MenuItem><a href="/form/text-area">Textarea</a></MenuItem>
+            <MenuItem><a href="/form/select">Select</a></MenuItem>
+            <MenuItem><a href="/form/checkbox">Checkbox</a></MenuItem>
+            <MenuItem><a href="/form/radio">Radio</a></MenuItem>
+            <MenuItem><a href="/form/file">File</a></MenuItem>
+        </MenuList>
+        <MenuLabel Class="is-size-7 has-text-weight-bold has-text-danger">Columns</MenuLabel>
+        <MenuList>
+            <MenuItem><a href="/basics">Basics</a></MenuItem>
+            <MenuItem><a href="/box">Sizes</a></MenuItem>
+            <MenuItem><a href="/button">Responsiveness</a></MenuItem>
+            <MenuItem><a href="/button">Nesting</a></MenuItem>
+            <MenuItem><a href="/button">Gap</a></MenuItem>
+            <MenuItem><a href="/button">Options</a></MenuItem>
+        </MenuList>
+        <MenuLabel Class="is-size-7 has-text-weight-bold has-text-warning">Grid</MenuLabel>
+        <MenuList>
+            <MenuItem><a href="/block">Smart Grid</a></MenuItem>
+            <MenuItem><a href="/box">Fixed Grid</a></MenuItem>
+            <MenuItem><a href="/button">Grid Cells</a></MenuItem>
+            <MenuItem><a href="/button">Playground</a></MenuItem>
+        </MenuList>
+        <MenuLabel Class="is-size-7 has-text-weight-bold has-text-success">Layout</MenuLabel>
+        <MenuList>
+            <MenuItem><a href="/container">Container</a></MenuItem>
+            <MenuItem><a href="/hero">Hero</a></MenuItem>
+            <MenuItem><a href="/section">Section</a></MenuItem>
+            <MenuItem><a href="/level">Level</a></MenuItem>
+            <MenuItem><a href="/media-object">Media Object</a></MenuItem>
+            <MenuItem><a href="/footer">Footer</a></MenuItem>
+        </MenuList>
+    </Menu>
+    <main class="bd-main p-5 content">
+        @Body
+    </main>
+</div>
