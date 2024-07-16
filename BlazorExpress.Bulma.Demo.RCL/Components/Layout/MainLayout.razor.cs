@@ -8,4 +8,15 @@ public partial class MainLayout : MainLayoutBase
     {
         isMenuActive = isActive;
     }
+
+    Task SetLightTheme() => SetTheme("light");
+
+    Task SetDarkTheme() => SetTheme("dark");
+
+    Task SetAutoTheme() => SetTheme("system");
+
+    async Task SetTheme(string themeName)
+    {
+        await JS.InvokeVoidAsync("setTheme", themeName);
+    }
 }
