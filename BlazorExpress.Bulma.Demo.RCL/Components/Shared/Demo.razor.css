@@ -44,6 +44,12 @@
     border-bottom-right-radius: .25rem;
 }
 
+@media screen and (min-width: 640px) {
+    .highlight {
+        width: calc(100vw - 15rem);
+    }
+}
+
 .highlight-toolbar {
     color: var(--bd-body-color);
     background-color: var(--bd-pre-bg);
