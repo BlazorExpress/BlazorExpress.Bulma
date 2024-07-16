@@ -1,6 +1,13 @@
-@page "/"
-
+@attribute [Route(pageRoute)]
 
 <PageTitle>@title</PageTitle>
 
 Home page
+
+@code {
+    const string pageRoute = "/";
+    private string pageUrl = pageRoute;
+    private string title = "Blazor Bulma Demos";
+    private string description = ""; // TODO: update
+    private string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}
