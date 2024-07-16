@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="components\pages\Index.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
     <SupportedPlatform Include="browser" />
   </ItemGroup>
 
@@ -23,13 +19,6 @@
     <ProjectReference Include="..\BlazorExpress.Bulma\BlazorExpress.Bulma.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Components\Pages\Message\" />
-    <Folder Include="Components\Pages\Block\" />
-    <Folder Include="Components\Pages\Box\" />
-    <Folder Include="Components\Pages\Hero\" />
-  </ItemGroup>
-
   <Target Name="EmbedDemos" BeforeTargets="PrepareForBuild">
     <!-- Let's embed demos sources into the assembly to show the source at runtime. -->
     <ItemGroup>
@@ -37,17 +26,5 @@
       <EmbeddedResource Include="Components\**\*Snippet*" />
     </ItemGroup>
   </Target>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="components\pages\Index.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="components\pages\Index.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="components\pages\Index.razor" />
-  </ItemGroup>
 
 </Project>
