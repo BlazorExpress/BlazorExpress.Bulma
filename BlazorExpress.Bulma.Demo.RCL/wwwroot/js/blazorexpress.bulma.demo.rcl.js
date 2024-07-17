@@ -33,30 +33,30 @@ function navigateToHeading() {
     }
 }
 
-
 // THEMES
-const STORAGE_KEY = "bulma-theme";
-const SYSTEM_THEME = "system";
+const STORAGE_KEY = "be-bulma-theme";
 const DEFAULT_THEME = "light";
+const SYSTEM_THEME = "system";
 
 const state = {
-    chosenTheme: SYSTEM_THEME,
-    appliedTheme: DEFAULT_THEME,
-    OSTheme: null,
+    chosenTheme: SYSTEM_THEME, // light|dark|system
+    appliedTheme: DEFAULT_THEME // light|dark
 };
 
-const updateThemeUI = () => {
+const showActiveTheme = () => {
     let $themeIndicator = document.querySelector(".be-theme-indicator i");
     if (state.appliedTheme === "light") {
         $themeIndicator.className = "bi bi-sun";
-    } else {
+    } else if (state.appliedTheme === "dark") {
         $themeIndicator.className = "bi bi-moon-stars-fill";
+    } else {
+        $themeIndicator.className = "bi bi-circle-half";
     }
 
     let $themeSwitchers = document.querySelectorAll(".be-theme-item");
     $themeSwitchers.forEach((el) => {
-        const swatchTheme = el.dataset.scheme;
-        if (state.chosenTheme === swatchTheme) {
+        const dataScheme = el.dataset.scheme;
+        if (state.chosenTheme === dataScheme) {
             el.classList.add("is-selected");
         } else {
             el.classList.remove("is-selected");
@@ -68,53 +68,20 @@ function setTheme(theme, save = true) {
     state.chosenTheme = theme;
     state.appliedTheme = theme;
 
-    //if (theme === SYSTEM_THEME) {
-    if (theme === DEFAULT_THEME) {
-        state.appliedTheme = state.OSTheme;
-        document.documentElement.removeAttribute("data-theme");
-        window.localStorage.removeItem(STORAGE_KEY);
-        setDemoTheme("light");
-    } else {
-        document.documentElement.setAttribute("data-theme", theme);
-        if (save) {
-            window.localStorage.setItem(STORAGE_KEY, theme);
-        }
-        setDemoTheme("dark");
+    if (theme === SYSTEM_THEME) {
+        state.appliedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
 
-    updateThemeUI();
-};
-
-const toggleTheme = () => {
-    if (state.appliedTheme === "light") {
-        setTheme("dark");
-        setDemoTheme("dark");
-    } else {
-        setTheme("light");
-        setDemoTheme("light");
+    document.documentElement.setAttribute("data-theme", state.appliedTheme);
+    if (save) {
+        window.localStorage.setItem(STORAGE_KEY, state.chosenTheme);
     }
-};
-
-const detectOSTheme = () => {
-    if (!window.matchMedia) {
-        // matchMedia method not supported
-        return DEFAULT_THEME;
-    }
-
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        // OS theme setting detected as dark
-        return "dark";
-    } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
-        return "light";
-    }
-
-    return DEFAULT_THEME;
+    updateDemoCodeThemeCss(state.appliedTheme);
+    showActiveTheme();
 };
 
 // On load, check if any preference was saved
 const localTheme = window.localStorage.getItem(STORAGE_KEY);
-state.OSTheme = detectOSTheme();
-
 if (localTheme) {
     setTheme(localTheme, false);
 } else {
@@ -125,11 +92,10 @@ window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", (event) => {
         const theme = event.matches ? "dark" : "light";
-        state.OSTheme = theme;
         setTheme(theme);
     });
 
-function setDemoTheme(theme) {
+function updateDemoCodeThemeCss(theme) {
     if (theme === "dark") {
         let prismThemeLightLinkEl = document.getElementById('prismThemeLightLink');
         if (prismThemeLightLinkEl)
