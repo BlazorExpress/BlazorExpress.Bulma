@@ -1,6 +1,5 @@
 :root {
     --bd-tertiary-bg: #f8f9fa;
-
     --bd-body-color: #212529;
     --bd-border-color: #dee2e6;
     --bd-pre-bg: var(--bd-tertiary-bg);
@@ -20,8 +19,6 @@
     --bd-body-color: #dee2e6;
     --bd-border-color: #495057;
     --bd-pre-bg: #1b1f22;
-
-    
 }
 
 /* custom */

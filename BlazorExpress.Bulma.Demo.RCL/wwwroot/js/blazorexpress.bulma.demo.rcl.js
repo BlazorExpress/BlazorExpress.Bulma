@@ -46,7 +46,7 @@ const state = {
 };
 
 const updateThemeUI = () => {
-        let $themeIndicator = document.querySelector(".be-theme-indicator i");
+    let $themeIndicator = document.querySelector(".be-theme-indicator i");
     if (state.appliedTheme === "light") {
         $themeIndicator.className = "bi bi-sun";
     } else {
@@ -68,16 +68,18 @@ function setTheme(theme, save = true) {
     state.chosenTheme = theme;
     state.appliedTheme = theme;
 
-    if (theme === SYSTEM_THEME) {
+    //if (theme === SYSTEM_THEME) {
+    if (theme === DEFAULT_THEME) {
         state.appliedTheme = state.OSTheme;
         document.documentElement.removeAttribute("data-theme");
         window.localStorage.removeItem(STORAGE_KEY);
+        setDemoTheme("light");
     } else {
         document.documentElement.setAttribute("data-theme", theme);
-
         if (save) {
             window.localStorage.setItem(STORAGE_KEY, theme);
         }
+        setDemoTheme("dark");
     }
 
     updateThemeUI();
@@ -86,8 +88,10 @@ function setTheme(theme, save = true) {
 const toggleTheme = () => {
     if (state.appliedTheme === "light") {
         setTheme("dark");
+        setDemoTheme("dark");
     } else {
         setTheme("light");
+        setDemoTheme("light");
     }
 };
 
@@ -124,3 +128,36 @@ window
         state.OSTheme = theme;
         setTheme(theme);
     });
+
+function setDemoTheme(theme) {
+    if (theme === "dark") {
+        let prismThemeLightLinkEl = document.getElementById('prismThemeLightLink');
+        if (prismThemeLightLinkEl)
+            prismThemeLightLinkEl?.remove();
+
+        let prismThemeDarkLinkEl = document.createElement("link");
+        prismThemeDarkLinkEl.setAttribute("rel", "stylesheet");
+        prismThemeDarkLinkEl.setAttribute("href", "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-vsc-dark-plus.min.css");
+        prismThemeDarkLinkEl.setAttribute("integrity", "sha512-ML8rkwYTFNcblPFx+VLgFIT2boa6f8DDP6p6go4+FT0/mJ8DCbCgi6S0UdjtzB3hKCr1zhU+YVB0AHhIloZP8Q==");
+        prismThemeDarkLinkEl.setAttribute("crossorigin", "anonymous");
+        prismThemeDarkLinkEl.setAttribute("referrerpolicy", "no-referrer");
+        prismThemeDarkLinkEl.setAttribute("id", "prismThemeDarkLink");
+
+        document.head.append(prismThemeDarkLinkEl);
+    }
+    else if (theme === "light") {
+        let prismThemeDarkLinkEl = document.getElementById('prismThemeDarkLink');
+        if (prismThemeDarkLinkEl)
+            prismThemeDarkLinkEl?.remove();
+
+        let prismThemeLightLinkEl = document.createElement("link");
+        prismThemeLightLinkEl.setAttribute("rel", "stylesheet");
+        prismThemeLightLinkEl.setAttribute("href", "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-vs.min.css");
+        prismThemeLightLinkEl.setAttribute("integrity", "sha512-Jn4HzkCnzA7Bc+lbSQHAMeen0EhSTy71o9yJbXZtQx9VvozKVBV/2zfR3VyuDFIxGvHgbOMMNvb80l+jxFBC1Q==");
+        prismThemeLightLinkEl.setAttribute("crossorigin", "anonymous");
+        prismThemeLightLinkEl.setAttribute("referrerpolicy", "no-referrer");
+        prismThemeLightLinkEl.setAttribute("id", "prismThemeLightLink");
+
+        document.head.append(prismThemeLightLinkEl);
+    }
+}
