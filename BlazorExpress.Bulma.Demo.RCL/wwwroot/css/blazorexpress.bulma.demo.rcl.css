@@ -48,3 +48,9 @@ h1:focus-visible {
 .navbar-item:has(.logo-color):hover, .navbar-item:has(.logo-color):active, .navbar-item:has(.logo-color):focus {
     background-color: inherit !important;
 }
+
+
+/* prismjs overrides */
+.token.attr-name {
+    margin-left: 6px !important;
+}

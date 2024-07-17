@@ -74,5 +74,6 @@ pre {
 
     /* prismjs overrides */
     code[class*=language-], pre[class*=language-] {
+        font-size: inherit !important;
         text-shadow: none !important;
     }
