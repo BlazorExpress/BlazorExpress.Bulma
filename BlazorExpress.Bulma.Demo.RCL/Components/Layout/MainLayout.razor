@@ -12,36 +12,40 @@
 
     <NavbarMenu Id="navbarBasicExample1" IsActive="@isMenuActive">
         <NavbarStart>
-            <NavbarItem><i class="bi bi-file-text-fill has-text-primary mr-2"></i>Docs</NavbarItem>
-            <NavbarItem><i class="bi bi-newspaper has-text-warning mr-2"></i>Blog</NavbarItem>
+            <NavbarItem Href="@DocsUrl">
+                <i class="bi bi-file-text-fill has-text-primary mr-2"></i>Docs
+            </NavbarItem>
+            <NavbarItem Href="@BlogUrl">
+                <i class="bi bi-newspaper has-text-warning mr-2"></i>Blog
+            </NavbarItem>
 
             @* <NavbarItem Type="NavbarItemType.Div" HasDropdown="true">
-                <NavbarLink>More</NavbarLink>
-                <NavbarDropdown>
-                    <NavbarItem Href="#">Columns</NavbarItem>
-                    <NavbarItem Href="#">Elements</NavbarItem>
-                    <NavbarItem Href="#">Form</NavbarItem>
-                    <NavbarItem Href="#">Layout</NavbarItem>
-                    <NavbarItem Href="#">Components</NavbarItem>
-                </NavbarDropdown>
+            <NavbarLink>More</NavbarLink>
+            <NavbarDropdown>
+            <NavbarItem Href="#">Columns</NavbarItem>
+            <NavbarItem Href="#">Elements</NavbarItem>
+            <NavbarItem Href="#">Form</NavbarItem>
+            <NavbarItem Href="#">Layout</NavbarItem>
+            <NavbarItem Href="#">Components</NavbarItem>
+            </NavbarDropdown>
             </NavbarItem> *@
         </NavbarStart>
 
         <NavbarEnd>
-            <NavbarItem Href="#">
+            <NavbarItem Href="@GithubUrl" target="_blank">
                 <i class="bi bi-github"></i>
                 <small class="is-hidden-desktop ml-2">GitHub</small>
             </NavbarItem>
-            <NavbarItem Href="#">
+            <NavbarItem Href="@TwitterUrl" target="_blank">
                 <i class="bi bi-twitter-x"></i>
                 <small class="is-hidden-desktop ml-2">Twitter</small>
             </NavbarItem>
-            <NavbarItem Href="#">
+            <NavbarItem Href="@LinkedInUrl" target="_blank">
                 <i class="bi bi-linkedin"></i>
                 <small class="is-hidden-desktop ml-2">LinkedIn</small>
             </NavbarItem>
             <NavbarItem Type="NavbarItemType.Div">
-                <span class="tag is-link">v0.1.0</span>
+                <span class="tag is-link">@($"v{Version}")</span>
             </NavbarItem>
 
             <NavbarItem Type="NavbarItemType.Div" HasDropdown="true">
