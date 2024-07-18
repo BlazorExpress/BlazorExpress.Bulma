@@ -4,10 +4,15 @@ public partial class MainLayout : MainLayoutBase
 {
     bool isMenuActive = false;
 
-    void OnNavbarBurgerActiveStateChanged(bool isActive)
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        isMenuActive = isActive;
+        if (firstRender)
+            await JS.InvokeVoidAsync("initializeTheme");
+
+        await base.OnAfterRenderAsync(firstRender);
     }
+
+    void OnNavbarBurgerActiveStateChanged(bool isActive) => isMenuActive = isActive;
 
     Task SetLightTheme() => SetTheme("light");
 
@@ -15,8 +20,5 @@ public partial class MainLayout : MainLayoutBase
 
     Task SetAutoTheme() => SetTheme("system");
 
-    async Task SetTheme(string themeName)
-    {
-        await JS.InvokeVoidAsync("setTheme", themeName);
-    }
+    async Task SetTheme(string themeName) => await JS.InvokeVoidAsync("setTheme", themeName);
 }

@@ -44,10 +44,13 @@ const state = {
 };
 
 const showActiveTheme = () => {
+    console.log(`3: ${state.appliedTheme}`);
     let $themeIndicator = document.querySelector(".be-theme-indicator i");
     if (state.appliedTheme === "light") {
+        console.log(`4: ${state.appliedTheme}`);
         $themeIndicator.className = "bi bi-sun";
     } else if (state.appliedTheme === "dark") {
+        console.log(`5: ${state.appliedTheme}`);
         $themeIndicator.className = "bi bi-moon-stars-fill";
     } else {
         $themeIndicator.className = "bi bi-circle-half";
@@ -65,6 +68,7 @@ const showActiveTheme = () => {
 };
 
 function setTheme(theme, save = true) {
+    console.log(`1: ${state.appliedTheme}`);
     state.chosenTheme = theme;
     state.appliedTheme = theme;
 
@@ -76,16 +80,18 @@ function setTheme(theme, save = true) {
     if (save) {
         window.localStorage.setItem(STORAGE_KEY, state.chosenTheme);
     }
-    updateDemoCodeThemeCss(state.appliedTheme);
+    console.log(`2: ${state.appliedTheme}`);
     showActiveTheme();
+    updateDemoCodeThemeCss(state.appliedTheme);
 };
 
-// On load, check if any preference was saved
-const localTheme = window.localStorage.getItem(STORAGE_KEY);
-if (localTheme) {
-    setTheme(localTheme, false);
-} else {
-    setTheme(SYSTEM_THEME);
+function initializeTheme() {
+    const localTheme = window.localStorage.getItem(STORAGE_KEY);
+    if (localTheme) {
+        setTheme(localTheme, false);
+    } else {
+        setTheme(SYSTEM_THEME);
+    }
 }
 
 window
