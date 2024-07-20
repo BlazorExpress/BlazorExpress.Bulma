@@ -8,8 +8,8 @@ public partial class NavbarBurger : BulmaComponentBase
     {
         IsActive = !IsActive;
 
-        if (NavbarBurgerActiveStateChanged.HasDelegate)
-            NavbarBurgerActiveStateChanged.InvokeAsync(IsActive);
+        if (ActiveStateChanged.HasDelegate)
+            ActiveStateChanged.InvokeAsync(IsActive);
     }
 
     #endregion
@@ -53,7 +53,7 @@ public partial class NavbarBurger : BulmaComponentBase
     public string? TargetId { get; set; }
 
     [Parameter]
-    public EventCallback<bool> NavbarBurgerActiveStateChanged { get; set; }
+    public EventCallback<bool> ActiveStateChanged { get; set; }
 
     #endregion
 }

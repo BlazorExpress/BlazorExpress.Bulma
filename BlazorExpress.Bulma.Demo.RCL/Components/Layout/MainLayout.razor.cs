@@ -4,8 +4,6 @@ public partial class MainLayout : MainLayoutBase
 {
     Menu menuRef = default!;
     bool isNavBarActive = false;
-    bool isMenuToggleButtonVisible = false;
-    bool isMenuVisible = false;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -15,7 +13,7 @@ public partial class MainLayout : MainLayoutBase
         await base.OnAfterRenderAsync(firstRender);
     }
 
-    void OnNavbarBurgerActiveStateChanged(bool isActive) => isNavBarActive = isActive;
+    void ShowNavbarMenu(bool isActive) => isNavBarActive = isActive;
 
     Task SetLightTheme() => SetTheme("light");
 
@@ -25,13 +23,5 @@ public partial class MainLayout : MainLayoutBase
 
     async Task SetTheme(string themeName) => await JS.InvokeVoidAsync("setTheme", themeName);
 
-    void ShowMenu()
-    {
-        isMenuVisible = menuRef.Toggle();
-    }
-
-    void OnWindowResize(WindowResizeEventArgs args)
-    {
-        isMenuToggleButtonVisible = args.DeviceType == DeviceType.Mobile;
-    }
+    void ShowMenu() => _ = menuRef.Toggle();
 }
