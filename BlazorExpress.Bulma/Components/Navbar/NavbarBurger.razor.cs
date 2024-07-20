@@ -19,7 +19,20 @@ public partial class NavbarBurger : BulmaComponentBase
     protected override string? CssClassNames => CssUtility.BuildClassNames(
         Class,
         (BulmaCssClass.NavbarBurger, true),
+        (BulmaCssClass.IsLeft, IsLeft),
         (BulmaCssClass.IsActive, IsActive));
+
+    /// <summary>
+    /// Gets or sets the content to be rendered within the component.
+    /// </summary>
+    /// <remarks>
+    /// Default value is null.
+    /// </remarks>
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public bool IsLeft { get; set; }
 
     /// <summary>
     /// Gets or sets the active state.

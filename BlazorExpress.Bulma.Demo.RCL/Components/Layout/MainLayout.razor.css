@@ -16,7 +16,7 @@
     flex: 1;
 }
 
-.bd-menu {
+/*.bd-menu {
     border-right: 1px solid transparent !important;
     border-right-color: var(--bd-border-color) !important;
 }
@@ -26,4 +26,4 @@
         width: 300px;
         overflow-x: auto;
     }
-}
+}*/

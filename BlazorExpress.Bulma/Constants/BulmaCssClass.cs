@@ -44,5 +44,7 @@ public static class BulmaCssClass
     public const string NavbarDropdown = "navbar-dropdown";
     public const string NavbarDivider = "navbar-divider";
 
+    public const string P5 = "p-5";
+
     #endregion
 }

@@ -3,14 +3,34 @@
 
 <Navbar IsSpaced="true" HasShadow="true">
     <NavbarBrand>
+        <NavbarBurger IsLeft="true" NavbarBurgerActiveStateChanged="ShowMenu">
+            <i class="bi bi-list"></i>
+        </NavbarBurger>
+        @* @if (isMenuToggleButtonVisible)
+        {
+            <NavbarItem Type="NavbarItemType.Div">
+                <span class="p-2" @onclick="ShowMenu">
+                    @if (isMenuVisible)
+                    {
+                        <i class="bi bi-list has-text-link"></i>
+                    }
+                    else
+                    {
+                        <i class="bi bi-list has-text-black"></i>
+                    }
+                </span>
+            </NavbarItem>
+        } *@
         <NavbarItem Href="/" IsHoverable="false">
             <img src="_content/BlazorExpress.Bulma.Demo.RCL/icons/logo.png" alt="Blazor Express" />
             <span class="ml-2 is-size-4 has-text-weight-bold">Blazor Express</span>
         </NavbarItem>
-        <NavbarBurger TargetId="navbarBasicExample1" NavbarBurgerActiveStateChanged="OnNavbarBurgerActiveStateChanged" />
+        <NavbarBurger TargetId="navbarBasicExample1" NavbarBurgerActiveStateChanged="OnNavbarBurgerActiveStateChanged">
+            <i class="bi bi-three-dots-vertical"></i>
+        </NavbarBurger>
     </NavbarBrand>
 
-    <NavbarMenu Id="navbarBasicExample1" IsActive="@isMenuActive">
+    <NavbarMenu Id="navbarBasicExample1" IsActive="@isNavBarActive">
         <NavbarStart>
             <NavbarItem Href="@DocsUrl">
                 <i class="bi bi-file-text-fill has-text-primary mr-2"></i>Docs
@@ -18,17 +38,6 @@
             <NavbarItem Href="@BlogUrl">
                 <i class="bi bi-newspaper has-text-warning mr-2"></i>Blog
             </NavbarItem>
-
-            @* <NavbarItem Type="NavbarItemType.Div" HasDropdown="true">
-            <NavbarLink>More</NavbarLink>
-            <NavbarDropdown>
-            <NavbarItem Href="#">Columns</NavbarItem>
-            <NavbarItem Href="#">Elements</NavbarItem>
-            <NavbarItem Href="#">Form</NavbarItem>
-            <NavbarItem Href="#">Layout</NavbarItem>
-            <NavbarItem Href="#">Components</NavbarItem>
-            </NavbarDropdown>
-            </NavbarItem> *@
         </NavbarStart>
 
         <NavbarEnd>
@@ -62,7 +71,7 @@
 </Navbar>
 
 <div class="bd-page">
-    <Menu Class="bd-menu p-5" Style="border-right: 1px solid transparent !important; border-right-color: var(--bd-border-color) !important;">
+    <Menu @ref="menuRef" OnWindowResize="OnWindowResize">
         <MenuLabel Class="is-size-7 has-text-weight-bold has-text-info">Elements</MenuLabel>
         <MenuList>
             <MenuItem><a href="/block">Block</a></MenuItem>
@@ -120,6 +129,7 @@
         </MenuList>
     </Menu>
     <main class="bd-main p-5 content">
+
         @Body
 
         <MainLayoutBaseFooter Version="@Version"

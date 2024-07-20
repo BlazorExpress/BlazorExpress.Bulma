@@ -1,0 +1,12 @@
+.navbar-burger.is-left {
+    margin-inline-start: .375rem;
+    margin-inline-end: auto;
+}
+
+.navbar-burger:hover {
+    background-color: inherit;
+}
+
+.navbar-burger.is-active {
+    background-color: hsla(var(--bulma-burger-h), var(--bulma-burger-s), var(--bulma-burger-l), .1);
+}
