@@ -7,8 +7,6 @@ public partial class Menu : BulmaComponentBase
 {
     #region Fields and Constants
 
-    //private bool collapseNavMenu = true;
-
     private bool isVisible = false;
 
     private DeviceType deviceType;
@@ -50,24 +48,35 @@ public partial class Menu : BulmaComponentBase
 
         StateHasChanged();
 
+        if (OnStateChanged.HasDelegate)
+            await OnStateChanged.InvokeAsync(isVisible);
+
         if (OnWindowResize.HasDelegate)
             await OnWindowResize.InvokeAsync(new WindowResizeEventArgs(width, deviceType));
     }
 
     /// <summary>
-    /// Toggles menu.
+    /// Toggles the menu.
     /// </summary>
-    public bool Toggle()
+    /// <returns>
+    /// Current menu visible state.
+    /// <see langword="true"/> if the menu is visible, <see langword="false"/> if it is hidden.
+    /// </returns>
+    public void Toggle()
     {
         isVisible = !isVisible;
-        return isVisible;
+
+        if (OnStateChanged.HasDelegate)
+            OnStateChanged.InvokeAsync(isVisible);
     }
 
-    //internal void HideNavMenuOnMobile()
-    //{
-    //    if (isMobile && !collapseNavMenu)
-    //        collapseNavMenu = true;
-    //}
+    internal void HideMenu()
+    {
+        isVisible = false;
+
+        if (OnStateChanged.HasDelegate)
+            OnStateChanged.InvokeAsync(isVisible);
+    }
 
     #endregion
 
@@ -91,6 +100,9 @@ public partial class Menu : BulmaComponentBase
 
     [Parameter]
     public EventCallback<WindowResizeEventArgs> OnWindowResize { get; set; }
+
+    [Parameter]
+    public EventCallback<bool> OnStateChanged { get; set; }
 
     #endregion
 }

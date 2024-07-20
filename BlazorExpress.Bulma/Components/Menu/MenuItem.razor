@@ -1,6 +1,11 @@
 @namespace BlazorExpress.Bulma
 @inherits BulmaComponentBase
 
-<li @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes">
+<li @ref="@Element" 
+    id="@Id" 
+    class="@CssClassNames" 
+    style="@CssStyleNames" 
+    @attributes="@AdditionalAttributes"
+@onclick="OnMenuItemClick">
     @ChildContent
 </li>

@@ -3,7 +3,9 @@
 public partial class MainLayout : MainLayoutBase
 {
     Menu menuRef = default!;
-    bool isNavBarActive = false;
+    bool isNavbarMenuActive = false;
+    bool isNavbarBurgerActive = false;
+    bool isNavMenuToggleButtonActive = false;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -13,8 +15,6 @@ public partial class MainLayout : MainLayoutBase
         await base.OnAfterRenderAsync(firstRender);
     }
 
-    void ShowNavbarMenu(bool isActive) => isNavBarActive = isActive;
-
     Task SetLightTheme() => SetTheme("light");
 
     Task SetDarkTheme() => SetTheme("dark");
@@ -23,5 +23,16 @@ public partial class MainLayout : MainLayoutBase
 
     async Task SetTheme(string themeName) => await JS.InvokeVoidAsync("setTheme", themeName);
 
-    void ShowMenu() => _ = menuRef.Toggle();
+    void ShowNavbarMenu(bool isActive)
+    {
+        isNavbarBurgerActive = isActive;
+        isNavbarMenuActive = isActive;
+    }
+
+    void ShowMenu() => menuRef.Toggle();
+
+    void OnMenuStateChanged(bool isVisible)
+    {
+        isNavMenuToggleButtonActive = isVisible;
+    }
 }
