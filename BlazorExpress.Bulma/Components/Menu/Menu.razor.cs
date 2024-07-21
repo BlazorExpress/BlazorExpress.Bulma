@@ -72,10 +72,13 @@ public partial class Menu : BulmaComponentBase
 
     internal void HideMenu()
     {
-        isVisible = false;
+        if (deviceType == DeviceType.Mobile)
+        {
+            isVisible = false;
 
-        if (OnStateChanged.HasDelegate)
-            OnStateChanged.InvokeAsync(isVisible);
+            if (OnStateChanged.HasDelegate)
+                OnStateChanged.InvokeAsync(isVisible);
+        }
     }
 
     #endregion

@@ -4,13 +4,36 @@ public partial class MenuItem : BulmaComponentBase
 {
     #region Methods
 
-    private void OnMenuItemClick() => Parent?.HideMenu();
+    protected override void OnInitialized()
+    {
+        //NavigationManager.LocationChanged += NavigationManager_LocationChanged;
+        base.OnInitialized();
+    }
+
+    private void NavigationManager_LocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+
+    }
+
+    protected override void Dispose(bool disposing) => base.Dispose(disposing);
+
+    private void OnMenuItemClick()
+    {
+        //IsActive = true; // TODO: remove this
+        Parent?.HideMenu();
+        // TODO: udate IsActive
+        // Additional scenario: Set IsActive based on the URL automatically
+    }
 
     #endregion
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames => CssUtility.BuildClassNames(Class);
+    protected override string? CssClassNames
+        => CssUtility.BuildClassNames(
+            Class,
+            (BulmaCssClass.MenuItem, true),
+            (BulmaCssClass.IsActive, IsActive));
 
     /// <summary>
     /// Gets or sets the child content.
@@ -20,6 +43,18 @@ public partial class MenuItem : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
+
+    /// <summary>
+    /// Gets or sets the active state.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="false"/>.
+    /// </remarks>
+    [Parameter]
+    public bool IsActive { get; set; }
+
+    [Inject]
+    private NavigationManager NavigationManager { get; set; } = default!;
 
     /// <summary>
     /// Gets or sets the parent.

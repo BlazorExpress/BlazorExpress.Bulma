@@ -55,14 +55,14 @@
     </NavbarMenu>
 </Navbar>
 
-<div class="bd-page">
+<div class="is-flex is-flex-direction-row">
     <Menu @ref="menuRef" OnStateChanged="OnMenuStateChanged">
         <MenuLabel Class="is-size-7 has-text-weight-bold has-text-info">Elements</MenuLabel>
         <MenuList>
-            <MenuItem><a href="/block">Block</a></MenuItem>
-            <MenuItem><a href="/box">Box</a></MenuItem>
-            <MenuItem><a href="/button">Button</a></MenuItem>
-            <MenuItem><a href="/content">Content</a></MenuItem>
+            <MenuItem><NavLink href="/block" Match="NavLinkMatch.All">Block</NavLink></MenuItem>
+            <MenuItem><NavLink href="/box" Match="NavLinkMatch.All">Box</NavLink></MenuItem>
+            <MenuItem><NavLink href="/button" Match="NavLinkMatch.All">Button</NavLink></MenuItem>
+            <MenuItem><NavLink href="/content" Match="NavLinkMatch.All">Content</NavLink></MenuItem>
         </MenuList>
         <MenuLabel Class="is-size-7 has-text-weight-bold has-text-primary">Components</MenuLabel>
         <MenuList>
@@ -70,7 +70,7 @@
             <MenuItem><a href="/menu">Card</a></MenuItem>
             <MenuItem><a href="/menu">Dropdown</a></MenuItem>
             <MenuItem><a href="/menu">Menu</a></MenuItem>
-            <MenuItem><a href="/message">Message</a></MenuItem>
+            <MenuItem><NavLink href="/message" Match="NavLinkMatch.All">Message</NavLink></MenuItem>
             <MenuItem><a href="/message">Modal</a></MenuItem>
             <MenuItem><a href="/navbar">Navbar</a></MenuItem>
             <MenuItem><a href="/navbar">Pagination</a></MenuItem>
@@ -113,10 +113,9 @@
             <MenuItem><a href="/footer">Footer</a></MenuItem>
         </MenuList>
     </Menu>
-    <main class="bd-main p-5 content">
 
+    <main class="content p-5">
         @Body
-
         <MainLayoutBaseFooter Version="@Version"
                               DocsUrl="@DocsUrl"
                               BlogUrl="@BlogUrl"
@@ -127,6 +126,5 @@
                               GithubIssuesUrl="@GithubIssuesUrl"
                               GithubDiscussionsUrl="@GithubDiscussionsUrl"
                               StackoverflowUrl="@StackoverflowUrl" />
-
     </main>
 </div>

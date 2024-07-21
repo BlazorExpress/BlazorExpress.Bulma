@@ -1,0 +1,16 @@
+:root{
+    --be-bulma-menu-item-margin: 4px 0;
+}
+
+/* menu */
+.menu-item{
+    margin: var(--be-bulma-menu-item-margin) !important;
+}
+
+.menu-item a {
+    background-color: transparent;
+}
+
+    .menu-item:has(a.active) {
+        --bulma-menu-item-background-l-delta: -5%;
+    }
