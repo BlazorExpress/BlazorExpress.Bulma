@@ -17,11 +17,14 @@ public partial class MenuItem : BulmaComponentBase
 
     protected override void Dispose(bool disposing) => base.Dispose(disposing);
 
-    private void OnMenuItemClick()
+    private async Task OnMenuItemClick()
     {
         //IsActive = true; // TODO: remove this
-        Parent?.HideMenu();
-        // TODO: udate IsActive
+
+        if (Parent is not null)
+            await Parent.HideMenu();
+
+        // TODO: update IsActive
         // Additional scenario: Set IsActive based on the URL automatically
     }
 

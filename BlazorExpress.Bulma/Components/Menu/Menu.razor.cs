@@ -11,6 +11,8 @@ public partial class Menu : BulmaComponentBase
 
     private DeviceType deviceType;
 
+    private float width;
+
     private DotNetObjectReference<Menu> objRef = default!;
 
     private bool requestInProgress = false;
@@ -49,10 +51,10 @@ public partial class Menu : BulmaComponentBase
         StateHasChanged();
 
         if (OnStateChanged.HasDelegate)
-            await OnStateChanged.InvokeAsync(isVisible);
+            await OnStateChanged.InvokeAsync(new(deviceType, width, isVisible));
 
         if (OnWindowResize.HasDelegate)
-            await OnWindowResize.InvokeAsync(new WindowResizeEventArgs(width, deviceType));
+            await OnWindowResize.InvokeAsync(new WindowResizeEventArgs(deviceType, width));
     }
 
     /// <summary>
@@ -62,23 +64,29 @@ public partial class Menu : BulmaComponentBase
     /// Current menu visible state.
     /// <see langword="true"/> if the menu is visible, <see langword="false"/> if it is hidden.
     /// </returns>
-    public void Toggle()
+    public Task Toggle()
     {
         isVisible = !isVisible;
 
         if (OnStateChanged.HasDelegate)
-            OnStateChanged.InvokeAsync(isVisible);
+            return OnStateChanged.InvokeAsync(new(deviceType, width, isVisible));
+
+        return Task.CompletedTask;
     }
 
-    internal void HideMenu()
+    internal Task HideMenu()
     {
         if (deviceType == DeviceType.Mobile)
         {
             isVisible = false;
 
             if (OnStateChanged.HasDelegate)
-                OnStateChanged.InvokeAsync(isVisible);
+                return OnStateChanged.InvokeAsync(new(deviceType, width, isVisible));
+
+            return Task.CompletedTask;
         }
+
+        return Task.CompletedTask;
     }
 
     #endregion
@@ -105,7 +113,7 @@ public partial class Menu : BulmaComponentBase
     public EventCallback<WindowResizeEventArgs> OnWindowResize { get; set; }
 
     [Parameter]
-    public EventCallback<bool> OnStateChanged { get; set; }
+    public EventCallback<MenuEventArgs> OnStateChanged { get; set; }
 
     #endregion
 }
