@@ -31,8 +31,8 @@ public partial class MainLayout : MainLayoutBase
 
     void ShowMenu() => menuRef.Toggle();
 
-    void OnMenuStateChanged(MenuEventArgs args)
+    void OnMenuStateChanged(bool isVisible)
     {
-        isNavMenuToggleButtonActive = args.IsVisible;
+        isNavMenuToggleButtonActive = isVisible;
     }
 }

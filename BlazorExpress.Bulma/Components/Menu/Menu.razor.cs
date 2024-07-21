@@ -51,7 +51,7 @@ public partial class Menu : BulmaComponentBase
         StateHasChanged();
 
         if (OnStateChanged.HasDelegate)
-            await OnStateChanged.InvokeAsync(new(deviceType, width, isVisible));
+            await OnStateChanged.InvokeAsync(isVisible);
 
         if (OnWindowResize.HasDelegate)
             await OnWindowResize.InvokeAsync(new WindowResizeEventArgs(deviceType, width));
@@ -69,7 +69,7 @@ public partial class Menu : BulmaComponentBase
         isVisible = !isVisible;
 
         if (OnStateChanged.HasDelegate)
-            return OnStateChanged.InvokeAsync(new(deviceType, width, isVisible));
+            return OnStateChanged.InvokeAsync(isVisible);
 
         return Task.CompletedTask;
     }
@@ -81,7 +81,7 @@ public partial class Menu : BulmaComponentBase
             isVisible = false;
 
             if (OnStateChanged.HasDelegate)
-                return OnStateChanged.InvokeAsync(new(deviceType, width, isVisible));
+                return OnStateChanged.InvokeAsync(isVisible);
 
             return Task.CompletedTask;
         }
@@ -113,7 +113,7 @@ public partial class Menu : BulmaComponentBase
     public EventCallback<WindowResizeEventArgs> OnWindowResize { get; set; }
 
     [Parameter]
-    public EventCallback<MenuEventArgs> OnStateChanged { get; set; }
+    public EventCallback<bool> OnStateChanged { get; set; }
 
     #endregion
 }
