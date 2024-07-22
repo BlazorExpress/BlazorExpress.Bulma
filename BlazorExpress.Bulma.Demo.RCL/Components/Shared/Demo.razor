@@ -1,16 +1,23 @@
 @namespace BlazorExpress.Bulma.Demo.RCL
-@inherits ComponentBase
+@inherits BulmaComponentBase
 
-<div>
-    <DynamicComponent Type="this.Type" />
-</div>
-@* <div>
+<div @ref="@Element"
+     id="@Id"
+     class="@CssClassNames"
+     style="@CssStyleNames"
+     @attributes="@AdditionalAttributes">
+
+    <div>
+        <DynamicComponent Type="this.Type" />
+    </div>
+    @* <div>
     <pre>
-        <code>
-            @if(codeSnippet is not null)
-            {
-                <text>@codeSnippet.Trim()</text>
-            }
-        </code>
+    <code>
+    @if(codeSnippet is not null)
+    {
+    <text>@codeSnippet.Trim()</text>
+    }
+    </code>
     </pre>
-</div> *@
+    </div> *@
+</div>

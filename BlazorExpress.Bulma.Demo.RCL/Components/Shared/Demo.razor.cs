@@ -1,6 +1,6 @@
 ﻿namespace BlazorExpress.Bulma.Demo.RCL;
 
-public partial class Demo : ComponentBase
+public partial class Demo : BulmaComponentBase
 {
     #region Fields and Constants
 
@@ -22,7 +22,7 @@ public partial class Demo : ComponentBase
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
-            await JS.InvokeVoidAsync("highlightCode");
+            await JSRuntime.InvokeVoidAsync("highlightCode");
 
         await base.OnAfterRenderAsync(firstRender);
     }
@@ -93,13 +93,11 @@ public partial class Demo : ComponentBase
         StateHasChanged();
     }
 
-    private async Task CopyToClipboardAsync() => await JS.InvokeVoidAsync("copyToClipboard", codeSnippet, objRef);
+    private async Task CopyToClipboardAsync() => await JSRuntime.InvokeVoidAsync("copyToClipboard", codeSnippet, objRef);
 
     #endregion
 
     #region Properties, Indexers
-
-    [Inject] protected IJSRuntime JS { get; set; } = default!;
 
     [Parameter] public string LanguageCssClass { get; set; } = "language-cshtml";
 
