@@ -2,15 +2,16 @@
 
 <PageTitle>@title</PageTitle>
 
-<h1>Box</h1>
+<h1 class="title is-1">Box</h1>
+<h2 class="subtitle">A white <b>box</b> to contain other elements</h2>
 
-<SectionHeading Size="HeadingSize.H2" Text="Example" PageUrl="@pageUrl" HashTagName="example" />
+<SectionHeading Size="HeadingSize.H3" Text="Example" PageUrl="@pageUrl" HashTagName="example" />
 <Demo Type="typeof(Box_Demo_01_How_it_works_A)" Tabs="true" />
 <Demo Type="typeof(Box_Demo_01_How_it_works_B)" Tabs="true" />
 <Demo Type="typeof(Box_Demo_01_How_it_works_C)" Tabs="true" />
 
 @code{
-    const string pageRoute = "/box";
+    const string pageRoute = RouteConstants.Demos_Box_Documentation;
     private string pageUrl = pageRoute;
     private string title = "Blazor Bulma Box Component";
     private string description = ""; // TODO: update

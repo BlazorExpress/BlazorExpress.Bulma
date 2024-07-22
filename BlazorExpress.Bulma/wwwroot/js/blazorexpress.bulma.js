@@ -6,9 +6,9 @@ window.blazorExpress = {
     menu: {
         initialize: (elementId, dotNetHelper) => {
             window.addEventListener("resize", () => {
-                dotNetHelper.invokeMethodAsync('WindowResizeJS', screen.width);
+                dotNetHelper.invokeMethodAsync('WindowResizeJS', window.innerWidth);
             });
         },
-        windowSize: () => screen.width
+        windowSize: () => window.innerWidth
     }
 }

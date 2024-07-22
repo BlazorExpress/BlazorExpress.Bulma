@@ -59,8 +59,8 @@
     <Menu @ref="menuRef" OnStateChanged="OnMenuStateChanged">
         <MenuLabel Class="is-size-7 has-text-weight-bold has-text-info">Elements</MenuLabel>
         <MenuList>
-            <MenuItem><NavLink href="/block" Match="NavLinkMatch.All">Block</NavLink></MenuItem>
-            <MenuItem><NavLink href="/box" Match="NavLinkMatch.All">Box</NavLink></MenuItem>
+            <MenuItem><NavLink href="@RouteConstants.Demos_Block_Documentation" Match="NavLinkMatch.All">Block</NavLink></MenuItem>
+            <MenuItem><NavLink href="@RouteConstants.Demos_Box_Documentation" Match="NavLinkMatch.All">Box</NavLink></MenuItem>
             <MenuItem><NavLink href="/button" Match="NavLinkMatch.All">Button</NavLink></MenuItem>
             <MenuItem><NavLink href="/content" Match="NavLinkMatch.All">Content</NavLink></MenuItem>
         </MenuList>
@@ -70,7 +70,7 @@
             <MenuItem><a href="/menu">Card</a></MenuItem>
             <MenuItem><a href="/menu">Dropdown</a></MenuItem>
             <MenuItem><a href="/menu">Menu</a></MenuItem>
-            <MenuItem><NavLink href="/message" Match="NavLinkMatch.All">Message</NavLink></MenuItem>
+            <MenuItem><NavLink href="@RouteConstants.Demos_Message_Documentation" Match="NavLinkMatch.All">Message</NavLink></MenuItem>
             <MenuItem><a href="/message">Modal</a></MenuItem>
             <MenuItem><a href="/navbar">Navbar</a></MenuItem>
             <MenuItem><a href="/navbar">Pagination</a></MenuItem>
@@ -114,7 +114,7 @@
         </MenuList>
     </Menu>
 
-    <main class="content p-5">
+    <main class="p-5">
         @Body
         <MainLayoutBaseFooter Version="@Version"
                               DocsUrl="@DocsUrl"

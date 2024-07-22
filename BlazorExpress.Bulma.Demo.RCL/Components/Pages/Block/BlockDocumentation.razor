@@ -2,17 +2,14 @@
 
 <PageTitle>@title</PageTitle>
 
-<Hero>
-    <HeroBody Class="pt-0 pl-0">
-        <HeroTitle>Block</HeroTitle>
-    </HeroBody>
-</Hero>
+<h1 class="title is-1">Block</h1>
+<h2 class="subtitle">Bulma’s most basic spacer <b>block</b></h2>
 
-<SectionHeading Size="HeadingSize.H2" Text="Example" PageUrl="@pageUrl" HashTagName="example" />
+<SectionHeading Size="HeadingSize.H3" Text="Example" PageUrl="@pageUrl" HashTagName="example" />
 <Demo Type="typeof(Block_Demo_01_How_it_works)" Tabs="true" />
 
 @code{
-    const string pageRoute = "/block";
+    const string pageRoute = RouteConstants.Demos_Block_Documentation;
     private string pageUrl = pageRoute;
     private string title = "Blazor Bulma Block Component";
     private string description = ""; // TODO: update

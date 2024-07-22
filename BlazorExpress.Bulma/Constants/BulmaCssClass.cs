@@ -18,6 +18,13 @@ public static class BulmaCssClass
     public const string HeroSubTitle = "subtitle";
     public const string HeroFooter = "hero-foot";
 
+    public const string Is1 = "is-1";
+    public const string Is2 = "is-2";
+    public const string Is3 = "is-3";
+    public const string Is4 = "is-4";
+    public const string Is5 = "is-5";
+    public const string Is6 = "is-6";
+
     public const string IsActive = "is-active";
     public const string IsHoverable = "is-hoverable";
     public const string IsLeft = "is-left";
@@ -45,6 +52,9 @@ public static class BulmaCssClass
     public const string NavbarDivider = "navbar-divider";
 
     public const string P5 = "p-5";
+
+    public const string Title = "title";
+    public const string SubTitle = "subtitle";
 
     #endregion
 }

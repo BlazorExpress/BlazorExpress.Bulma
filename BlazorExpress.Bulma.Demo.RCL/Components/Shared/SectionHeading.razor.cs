@@ -4,6 +4,8 @@ public partial class SectionHeading : ComponentBase
 {
     #region Members
 
+    private string? classNames => Size.ToTitleSizeClass();
+
     private string link => $"{PageUrl}#{HashTagName}".Trim().ToLower();
 
     #endregion
@@ -37,14 +39,4 @@ public partial class SectionHeading : ComponentBase
     [Inject] protected IJSRuntime JS { get; set; } = default!;
 
     #endregion
-}
-
-public enum HeadingSize
-{
-    H1,
-    H2, 
-    H3, 
-    H4, 
-    H5, 
-    H6
 }

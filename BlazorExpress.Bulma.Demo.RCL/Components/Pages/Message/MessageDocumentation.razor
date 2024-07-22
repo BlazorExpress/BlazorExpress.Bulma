@@ -2,13 +2,14 @@
 
 <PageTitle>@title</PageTitle>
 
-<h1>Message</h1>
+<h1 class="title is-1">Message</h1>
+<h2 class="subtitle">Colored <b>message</b> blocks, to emphasize part of your page</h2>
 
-<SectionHeading Size="HeadingSize.H2" Text="Example" PageUrl="@pageUrl" HashTagName="example" />
+<SectionHeading Size="HeadingSize.H3" Text="Example" PageUrl="@pageUrl" HashTagName="example" />
 <Demo Type="typeof(Message_Demo_01_How_it_works)" Tabs="true" />
 
 @code{
-    const string pageRoute = "/message";
+    const string pageRoute = RouteConstants.Demos_Message_Documentation;
     private string pageUrl = pageRoute;
     private string title = "Blazor Bulma Message Component";
     private string description = ""; // TODO: update
