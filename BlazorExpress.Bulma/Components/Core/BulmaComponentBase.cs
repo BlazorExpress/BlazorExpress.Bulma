@@ -82,19 +82,23 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
     [Parameter(CaptureUnmatchedValues = true)]
     public Dictionary<string, object> AdditionalAttributes { get; set; } = default!;
 
-    [Parameter] public string? Class { get; set; }
+    [Parameter] 
+    public string? Class { get; set; }
 
     protected virtual string? CssClassNames => Class;
 
     public ElementReference Element { get; set; }
 
-    [Parameter] public string? Id { get; set; }
+    [Parameter] 
+    public string? Id { get; set; }
 
     protected bool IsRenderComplete { get; private set; }
 
-    [Inject] protected IJSRuntime JSRuntime { get; set; } = default!;
+    [Inject] 
+    protected IJSRuntime JSRuntime { get; set; } = default!;
 
-    [Parameter] public string? Style { get; set; }
+    [Parameter] 
+    public string? Style { get; set; }
 
     protected virtual string? CssStyleNames => @Style;
 
