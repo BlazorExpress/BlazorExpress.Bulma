@@ -12,14 +12,19 @@
 }
 
 /* menu */
-.menu-item{
+.menu-item {
     margin: var(--be-bulma-menu-item-margin) !important;
 }
 
-.menu-item a {
-    background-color: transparent;
-}
+    .menu-item a {
+        background-color: transparent;
+    }
 
     .menu-item:has(a.active) {
         --bulma-menu-item-background-l-delta: -5%;
     }
+
+/* custom */
+[role=button] {
+    cursor: pointer;
+}

@@ -17,13 +17,12 @@ async function copyToClipboard(text, dotNetHelper) {
 
 async function demoInitialize(dotNetHelper) {
     window.addEventListener("resize", () => {
-        let width = window.innerWidth - document.querySelector('aside.menu').clientWidth - 65; // 56
+        let width = window.innerWidth - document.querySelector('aside.menu').clientWidth - 69; //69 //56
         dotNetHelper.invokeMethodAsync('WindowResizeJS', width);
     });
 
     // initial width
-    //return window.innerWidth - document.querySelector('aside.menu').clientWidth - 48;
-    return window.innerWidth - document.querySelector('aside.menu').clientWidth - 65; // 56
+    return window.innerWidth - document.querySelector('aside.menu').clientWidth - 69; //69 //56 //48
 }
 
 function highlightCode() {

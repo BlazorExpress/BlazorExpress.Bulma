@@ -85,8 +85,7 @@ public partial class Demo : BulmaComponentBase
     public void OnCopySuccessJS()
     {
         clipboardTooltipTitle = "Copied!";
-        clipboardTooltipIconName = "bi bi-check2";
-
+        clipboardTooltipIconName = "bi bi-check2 has-text-primary";
         StateHasChanged();
     }
 
@@ -98,7 +97,6 @@ public partial class Demo : BulmaComponentBase
     {
         clipboardTooltipTitle = "Copy to clipboard";
         clipboardTooltipIconName = "bi bi-clipboard";
-
         StateHasChanged();
     }
 
@@ -109,7 +107,8 @@ public partial class Demo : BulmaComponentBase
         StateHasChanged();
     }
 
-    private async Task CopyToClipboardAsync() => await JSRuntime.InvokeVoidAsync("copyToClipboard", codeSnippet, objRef);
+    private async Task CopyToClipboardAsync() 
+        => await JSRuntime.InvokeVoidAsync("copyToClipboard", codeSnippet, objRef);
 
     #endregion
 
@@ -118,7 +117,7 @@ public partial class Demo : BulmaComponentBase
     protected override string? CssClassNames
         => CssUtility.BuildClassNames(Class, ("be-example", true));
 
-    [Parameter] public string LanguageCssClass { get; set; } = "language-cshtml";
+    [Parameter] public LanguageCode LanguageCode { get; set; } = LanguageCode.Razor;
 
     [Parameter] public bool ShowCodeOnly { get; set; }
 
