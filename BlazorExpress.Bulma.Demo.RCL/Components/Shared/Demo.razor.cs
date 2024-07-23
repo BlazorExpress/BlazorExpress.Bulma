@@ -10,6 +10,8 @@ public partial class Demo : BulmaComponentBase
 
     private string? codeSnippet;
 
+    private float codeSnippetWidth;
+
     /// <summary>
     /// A reference to this component instance for use in JavaScript calls.
     /// </summary>
@@ -21,10 +23,17 @@ public partial class Demo : BulmaComponentBase
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (firstRender)
-            await JSRuntime.InvokeVoidAsync("highlightCode");
-
         await base.OnAfterRenderAsync(firstRender);
+        if (firstRender)
+        {
+            // A 500ms delay has been added to ensure the menu is fully rendered
+            // before calculating the width of the code snippet.
+            await Task.Delay(TimeSpan.FromMilliseconds(500));
+            codeSnippetWidth = await JSRuntime.InvokeAsync<float>("demoInitialize", objRef);
+            StateHasChanged();
+
+            await JSRuntime.InvokeVoidAsync("highlightCode");
+        }
     }
 
     protected override async Task OnInitializedAsync()
@@ -90,6 +99,13 @@ public partial class Demo : BulmaComponentBase
         clipboardTooltipTitle = "Copy to clipboard";
         clipboardTooltipIconName = "bi bi-clipboard";
 
+        StateHasChanged();
+    }
+
+    [JSInvokable]
+    public void WindowResizeJS(float width)
+    {
+        codeSnippetWidth = width;
         StateHasChanged();
     }
 

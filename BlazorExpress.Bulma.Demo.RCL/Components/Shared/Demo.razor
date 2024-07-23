@@ -11,13 +11,16 @@
         <DynamicComponent Type="this.Type" />
     </div>
     <div>
-        <pre>
+        @if (codeSnippetWidth > 0)
+        {
+            <pre style="@($"width:{codeSnippetWidth}px;")">
             <code class="language-html">
                     @if (codeSnippet is not null)
                     {
                         <text>@codeSnippet</text>
                     }
-            </code>
-        </pre>
+                </code>
+            </pre>
+        }
     </div>
 </div>
