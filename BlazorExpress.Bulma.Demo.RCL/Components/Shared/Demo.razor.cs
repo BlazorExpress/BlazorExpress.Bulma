@@ -115,6 +115,9 @@ public partial class Demo : BulmaComponentBase
 
     #region Properties, Indexers
 
+    //protected override string? CssClassNames 
+    //    => CssUtility.BuildClassNames(Class, ("be-example", true));
+
     [Parameter] public string LanguageCssClass { get; set; } = "language-cshtml";
 
     [Parameter] public bool ShowCodeOnly { get; set; }

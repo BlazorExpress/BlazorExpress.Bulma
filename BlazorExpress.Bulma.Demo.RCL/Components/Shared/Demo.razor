@@ -7,10 +7,14 @@
      style="@CssStyleNames"
      @attributes="@AdditionalAttributes">
 
-    <div>
+    <div class="be-example-demo">
         <DynamicComponent Type="this.Type" />
     </div>
-    <div>
+    <div class="be-example-toolbar is-flex is-justify-content-space-between">
+        <div class="pl-4 py-2">@LanguageCssClass</div>
+        <div class="pr-4 py-2"><i class="bi bi-clipboard"></i></div>
+    </div>
+    <div class="be-example-snippet">
         @if (codeSnippetWidth > 0)
         {
             <pre style="@($"width:{codeSnippetWidth}px;")">

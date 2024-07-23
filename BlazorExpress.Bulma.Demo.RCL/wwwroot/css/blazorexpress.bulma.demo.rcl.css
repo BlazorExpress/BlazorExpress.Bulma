@@ -1,3 +1,38 @@
 h1:focus-visible {
     outline: inherit !important;
 }
+
+/* demo example */
+.be-example-demo {
+    position: relative;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: solid #dee2e6;
+    border-width: 1px;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+    .be-example-demo::after {
+        display: block;
+        clear: both;
+        content: ""
+    }
+
+@media (min-width: 576px) {
+    .be-example-demo {
+        padding: 1.5rem;
+    }
+}
+
+.be-example-toolbar {
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+}
+
+.be-example-snippet {
+}
+
+.be-example-snippet pre{
+    margin-top: 0 !important;
+}
