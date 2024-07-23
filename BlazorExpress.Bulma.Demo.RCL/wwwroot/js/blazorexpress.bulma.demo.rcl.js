@@ -17,6 +17,7 @@ async function copyToClipboard(text, dotNetHelper) {
 
 function highlightCode() {
     if (Prism) {
+        Prism.plugins.customClass.prefix('prism-');
         Prism.highlightAll();
     }
 };
@@ -104,10 +105,7 @@ function updateDemoCodeThemeCss(theme) {
 
         let prismThemeDarkLinkEl = document.createElement("link");
         prismThemeDarkLinkEl.setAttribute("rel", "stylesheet");
-        prismThemeDarkLinkEl.setAttribute("href", "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-vsc-dark-plus.min.css");
-        prismThemeDarkLinkEl.setAttribute("integrity", "sha512-ML8rkwYTFNcblPFx+VLgFIT2boa6f8DDP6p6go4+FT0/mJ8DCbCgi6S0UdjtzB3hKCr1zhU+YVB0AHhIloZP8Q==");
-        prismThemeDarkLinkEl.setAttribute("crossorigin", "anonymous");
-        prismThemeDarkLinkEl.setAttribute("referrerpolicy", "no-referrer");
+        prismThemeDarkLinkEl.setAttribute("href", "/_content/BlazorExpress.Bulma.Demo.RCL/css/prism-vsc-dark-plus.min.css");
         prismThemeDarkLinkEl.setAttribute("id", "prismThemeDarkLink");
 
         document.head.append(prismThemeDarkLinkEl);
@@ -119,10 +117,7 @@ function updateDemoCodeThemeCss(theme) {
 
         let prismThemeLightLinkEl = document.createElement("link");
         prismThemeLightLinkEl.setAttribute("rel", "stylesheet");
-        prismThemeLightLinkEl.setAttribute("href", "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-vs.min.css");
-        prismThemeLightLinkEl.setAttribute("integrity", "sha512-Jn4HzkCnzA7Bc+lbSQHAMeen0EhSTy71o9yJbXZtQx9VvozKVBV/2zfR3VyuDFIxGvHgbOMMNvb80l+jxFBC1Q==");
-        prismThemeLightLinkEl.setAttribute("crossorigin", "anonymous");
-        prismThemeLightLinkEl.setAttribute("referrerpolicy", "no-referrer");
+        prismThemeLightLinkEl.setAttribute("href", "/_content/BlazorExpress.Bulma.Demo.RCL/css/prism-vs.min.css");
         prismThemeLightLinkEl.setAttribute("id", "prismThemeLightLink");
 
         document.head.append(prismThemeLightLinkEl);
