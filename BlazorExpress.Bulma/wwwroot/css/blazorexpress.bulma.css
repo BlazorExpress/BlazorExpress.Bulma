@@ -8,6 +8,7 @@
 
 [data-theme=dark] {
     --be-menu-background-offset: 0%;
+    --be-menu-border-offset: 2%;
 }
 
 /* menu */
