@@ -1,0 +1,12 @@
+.menu {
+    background-color: hsl(var(--bulma-scheme-h),var(--bulma-scheme-s),calc(var(--bulma-scheme-main-l) + var(--be-menu-background-offset)));
+    border-right: 1px solid hsl(var(--bulma-scheme-h),var(--bulma-scheme-s),calc(var(--bulma-scheme-main-l) + var(--be-menu-border-offset)));
+    width: var(--be-menu-width);
+    z-index: 11;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        position: absolute;
+    }
+}

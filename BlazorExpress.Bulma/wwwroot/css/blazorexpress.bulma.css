@@ -1,5 +1,13 @@
-:root{
+:root {
+    --be-menu-width: 16rem;
+    --be-menu-border: 2px;
+    --be-menu-background-offset: 9%;
+    --be-menu-border-offset: -6%;
     --be-bulma-menu-item-margin: 4px 0;
+}
+
+[data-theme=dark] {
+    --be-menu-background-offset: 0%;
 }
 
 /* menu */
