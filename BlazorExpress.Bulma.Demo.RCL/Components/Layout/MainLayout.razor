@@ -57,61 +57,76 @@
 
 <div class="be-page">
     <Menu @ref="menuRef" OnStateChanged="OnMenuStateChanged">
-        <MenuLabel Class="is-size-7 has-text-weight-bold has-text-info">Elements</MenuLabel>
+
+        @foreach (var group in linkGroups)
+        {
+            <MenuLabel Class="@group.CssClass">@group.Name</MenuLabel>
+            if (group.Links?.Any() ?? false)
+            {
+                <MenuList>
+                    @foreach(var link in group.Links)
+                    {
+                        <MenuItem><NavLink href="@link.Href" Match="@link.Match">@link.Text</NavLink></MenuItem>
+                    }
+                </MenuList>
+            }
+        }
+
+        @* <MenuLabel Class="is-size-7 has-text-weight-bold has-text-info">Elements</MenuLabel>
         <MenuList>
-            <MenuItem><NavLink href="@RouteConstants.Demos_Block_Documentation" Match="NavLinkMatch.All">Block</NavLink></MenuItem>
-            <MenuItem><NavLink href="@RouteConstants.Demos_Box_Documentation" Match="NavLinkMatch.All">Box</NavLink></MenuItem>
-            <MenuItem><NavLink href="/button" Match="NavLinkMatch.All">Button</NavLink></MenuItem>
-            <MenuItem><NavLink href="/content" Match="NavLinkMatch.All">Content</NavLink></MenuItem>
+        <MenuItem><NavLink href="@RouteConstants.Demos_Block_Documentation" Match="NavLinkMatch.All">Block</NavLink></MenuItem>
+        <MenuItem><NavLink href="@RouteConstants.Demos_Box_Documentation" Match="NavLinkMatch.All">Box</NavLink></MenuItem>
+        <MenuItem><NavLink href="/button" Match="NavLinkMatch.All">Button</NavLink></MenuItem>
+        <MenuItem><NavLink href="/content" Match="NavLinkMatch.All">Content</NavLink></MenuItem>
         </MenuList>
         <MenuLabel Class="is-size-7 has-text-weight-bold has-text-primary">Components</MenuLabel>
         <MenuList>
-            <MenuItem><a href="/menu">Breadcrumb</a></MenuItem>
-            <MenuItem><a href="/menu">Card</a></MenuItem>
-            <MenuItem><a href="/menu">Dropdown</a></MenuItem>
-            <MenuItem><a href="/menu">Menu</a></MenuItem>
-            <MenuItem><NavLink href="@RouteConstants.Demos_Message_Documentation" Match="NavLinkMatch.All">Message</NavLink></MenuItem>
-            <MenuItem><a href="/message">Modal</a></MenuItem>
-            <MenuItem><a href="/navbar">Navbar</a></MenuItem>
-            <MenuItem><a href="/navbar">Pagination</a></MenuItem>
-            <MenuItem><a href="/navbar">Panel</a></MenuItem>
-            <MenuItem><a href="/navbar">Tabs</a></MenuItem>
+        <MenuItem><a href="/menu">Breadcrumb</a></MenuItem>
+        <MenuItem><a href="/menu">Card</a></MenuItem>
+        <MenuItem><a href="/menu">Dropdown</a></MenuItem>
+        <MenuItem><a href="/menu">Menu</a></MenuItem>
+        <MenuItem><NavLink href="@RouteConstants.Demos_Message_Documentation" Match="NavLinkMatch.All">Message</NavLink></MenuItem>
+        <MenuItem><a href="/message">Modal</a></MenuItem>
+        <MenuItem><a href="/navbar">Navbar</a></MenuItem>
+        <MenuItem><a href="/navbar">Pagination</a></MenuItem>
+        <MenuItem><a href="/navbar">Panel</a></MenuItem>
+        <MenuItem><a href="/navbar">Tabs</a></MenuItem>
         </MenuList>
         <MenuLabel Class="is-size-7 has-text-weight-bold has-text-link">Form</MenuLabel>
         <MenuList>
-            <MenuItem><a href="/form/general">General</a></MenuItem>
-            <MenuItem><a href="/form/input">Input</a></MenuItem>
-            <MenuItem><a href="/form/text-area">Textarea</a></MenuItem>
-            <MenuItem><a href="/form/select">Select</a></MenuItem>
-            <MenuItem><a href="/form/checkbox">Checkbox</a></MenuItem>
-            <MenuItem><a href="/form/radio">Radio</a></MenuItem>
-            <MenuItem><a href="/form/file">File</a></MenuItem>
+        <MenuItem><a href="/form/general">General</a></MenuItem>
+        <MenuItem><a href="/form/input">Input</a></MenuItem>
+        <MenuItem><a href="/form/text-area">Textarea</a></MenuItem>
+        <MenuItem><a href="/form/select">Select</a></MenuItem>
+        <MenuItem><a href="/form/checkbox">Checkbox</a></MenuItem>
+        <MenuItem><a href="/form/radio">Radio</a></MenuItem>
+        <MenuItem><a href="/form/file">File</a></MenuItem>
         </MenuList>
         <MenuLabel Class="is-size-7 has-text-weight-bold has-text-danger">Columns</MenuLabel>
         <MenuList>
-            <MenuItem><a href="/basics">Basics</a></MenuItem>
-            <MenuItem><a href="/box">Sizes</a></MenuItem>
-            <MenuItem><a href="/button">Responsiveness</a></MenuItem>
-            <MenuItem><a href="/button">Nesting</a></MenuItem>
-            <MenuItem><a href="/button">Gap</a></MenuItem>
-            <MenuItem><a href="/button">Options</a></MenuItem>
+        <MenuItem><a href="/basics">Basics</a></MenuItem>
+        <MenuItem><a href="/box">Sizes</a></MenuItem>
+        <MenuItem><a href="/button">Responsiveness</a></MenuItem>
+        <MenuItem><a href="/button">Nesting</a></MenuItem>
+        <MenuItem><a href="/button">Gap</a></MenuItem>
+        <MenuItem><a href="/button">Options</a></MenuItem>
         </MenuList>
         <MenuLabel Class="is-size-7 has-text-weight-bold has-text-warning">Grid</MenuLabel>
         <MenuList>
-            <MenuItem><a href="/block">Smart Grid</a></MenuItem>
-            <MenuItem><a href="/box">Fixed Grid</a></MenuItem>
-            <MenuItem><a href="/button">Grid Cells</a></MenuItem>
-            <MenuItem><a href="/button">Playground</a></MenuItem>
+        <MenuItem><a href="/block">Smart Grid</a></MenuItem>
+        <MenuItem><a href="/box">Fixed Grid</a></MenuItem>
+        <MenuItem><a href="/button">Grid Cells</a></MenuItem>
+        <MenuItem><a href="/button">Playground</a></MenuItem>
         </MenuList>
         <MenuLabel Class="is-size-7 has-text-weight-bold has-text-success">Layout</MenuLabel>
         <MenuList>
-            <MenuItem><a href="/container">Container</a></MenuItem>
-            <MenuItem><a href="/hero">Hero</a></MenuItem>
-            <MenuItem><a href="/section">Section</a></MenuItem>
-            <MenuItem><a href="/level">Level</a></MenuItem>
-            <MenuItem><a href="/media-object">Media Object</a></MenuItem>
-            <MenuItem><a href="/footer">Footer</a></MenuItem>
-        </MenuList>
+        <MenuItem><a href="/container">Container</a></MenuItem>
+        <MenuItem><a href="/hero">Hero</a></MenuItem>
+        <MenuItem><a href="/section">Section</a></MenuItem>
+        <MenuItem><a href="/level">Level</a></MenuItem>
+        <MenuItem><a href="/media-object">Media Object</a></MenuItem>
+        <MenuItem><a href="/footer">Footer</a></MenuItem>
+        </MenuList> *@
     </Menu>
 
     <div class="be-page-body p-5">
