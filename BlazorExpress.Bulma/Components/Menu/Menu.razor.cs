@@ -98,7 +98,7 @@ public partial class Menu : BulmaComponentBase
             Class,
             (BulmaCssClass.Menu, true),
             (BulmaCssClass.P5, true),
-            ("is-hidden", !isVisible));
+            (BulmaCssClass.IsHidden, !isVisible));
 
     /// <summary>
     /// Gets or sets the child content.

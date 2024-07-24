@@ -15,7 +15,7 @@
         <div class="pr-4 py-2"><i class="@clipboardTooltipIconName" role="button" @onclick="CopyToClipboardAsync"></i></div>
     </div>
     <div class="be-example-snippet">
-        @if (codeSnippetWidth > 0)
+        @* @if (codeSnippetWidth > 0)
         {
             <pre style="@($"width:{codeSnippetWidth}px;")">
                 <code class="@LanguageCode.ToLanguageCssClass()">
@@ -25,6 +25,14 @@
                     }
                 </code>
             </pre>
-        }
+        } *@
+        <pre>
+            <code class="@LanguageCode.ToLanguageCssClass()">
+                @if (codeSnippet is not null)
+                {
+                    <text>@codeSnippet</text>
+                }
+            </code>
+        </pre>
     </div>
 </div>

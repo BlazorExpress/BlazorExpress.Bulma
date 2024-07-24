@@ -27,9 +27,9 @@ public partial class Demo : BulmaComponentBase
         {
             // A 500ms delay has been added to ensure the menu is fully rendered
             // before calculating the width of the code snippet.
-            await Task.Delay(TimeSpan.FromMilliseconds(500));
-            codeSnippetWidth = await JSRuntime.InvokeAsync<float>("demoInitialize", objRef);
-            StateHasChanged();
+            //await Task.Delay(TimeSpan.FromMilliseconds(500));
+            //codeSnippetWidth = await JSRuntime.InvokeAsync<float>("demoInitialize", objRef);
+            //StateHasChanged();
 
             await JSRuntime.InvokeVoidAsync("highlightCode");
         }

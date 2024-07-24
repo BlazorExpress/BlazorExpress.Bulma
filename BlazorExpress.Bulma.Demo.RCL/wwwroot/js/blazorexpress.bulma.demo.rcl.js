@@ -18,7 +18,7 @@ async function copyToClipboard(text, dotNetHelper) {
 async function demoInitialize(dotNetHelper) {
     window.addEventListener("resize", () => {
         let width = window.innerWidth - document.querySelector('aside.menu').clientWidth - 69; //69 //56
-        dotNetHelper.invokeMethodAsync('WindowResizeJS', width);
+        //dotNetHelper.invokeMethodAsync('WindowResizeJS', width);
     });
 
     // initial width

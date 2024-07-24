@@ -28,6 +28,7 @@ public static class BulmaCssClass
     public const string Is6 = "is-6";
 
     public const string IsActive = "is-active";
+    public const string IsHidden = "is-hidden";
     public const string IsHoverable = "is-hoverable";
     public const string IsLeft = "is-left";
     public const string IsRight = "is-right";
