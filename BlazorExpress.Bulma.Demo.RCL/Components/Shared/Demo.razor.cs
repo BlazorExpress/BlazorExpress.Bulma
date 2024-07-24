@@ -25,12 +25,6 @@ public partial class Demo : BulmaComponentBase
     {
         if (firstRender)
         {
-            // A 500ms delay has been added to ensure the menu is fully rendered
-            // before calculating the width of the code snippet.
-            //await Task.Delay(TimeSpan.FromMilliseconds(500));
-            //codeSnippetWidth = await JSRuntime.InvokeAsync<float>("demoInitialize", objRef);
-            //StateHasChanged();
-
             await JSRuntime.InvokeVoidAsync("highlightCode");
         }
 
@@ -98,13 +92,6 @@ public partial class Demo : BulmaComponentBase
     {
         clipboardTooltipTitle = "Copy to clipboard";
         clipboardTooltipIconName = "bi bi-clipboard";
-        StateHasChanged();
-    }
-
-    [JSInvokable]
-    public void WindowResizeJS(float width)
-    {
-        codeSnippetWidth = width;
         StateHasChanged();
     }
 
