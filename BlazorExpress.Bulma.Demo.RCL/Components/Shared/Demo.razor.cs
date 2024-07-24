@@ -23,7 +23,6 @@ public partial class Demo : BulmaComponentBase
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        await base.OnAfterRenderAsync(firstRender);
         if (firstRender)
         {
             // A 500ms delay has been added to ensure the menu is fully rendered
@@ -34,6 +33,8 @@ public partial class Demo : BulmaComponentBase
 
             await JSRuntime.InvokeVoidAsync("highlightCode");
         }
+
+        await base.OnAfterRenderAsync(firstRender);
     }
 
     protected override async Task OnInitializedAsync()

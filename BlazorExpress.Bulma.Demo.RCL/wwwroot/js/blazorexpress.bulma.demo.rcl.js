@@ -22,6 +22,7 @@ async function demoInitialize(dotNetHelper) {
     });
 
     // initial width
+    console.log(`side menu width: ${document.querySelector('aside.menu').clientWidth}`);
     return window.innerWidth - document.querySelector('aside.menu').clientWidth - 69; //69 //56 //48
 }
 

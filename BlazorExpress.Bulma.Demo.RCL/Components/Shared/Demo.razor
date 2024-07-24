@@ -18,7 +18,7 @@
         @if (codeSnippetWidth > 0)
         {
             <pre style="@($"width:{codeSnippetWidth}px;")">
-            <code class="@LanguageCode.ToLanguageCssClass()">
+                <code class="@LanguageCode.ToLanguageCssClass()">
                     @if (codeSnippet is not null)
                     {
                         <text>@codeSnippet</text>
