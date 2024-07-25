@@ -10,11 +10,18 @@
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Demo Class="mb-3" Type="typeof(Box_Demo_01_How_it_works_A)" Tabs="true" />
+    <div class="mb-3">
+        Box component acts as a container.
+        You can easily include other components, like <b>form elements</b>:
+    </div>
     <Demo Class="mb-3" Type="typeof(Box_Demo_01_How_it_works_B)" Tabs="true" />
+    <div class="mb-3">
+        Or a <code>media</code> object:
+    </div>
     <Demo Type="typeof(Box_Demo_01_How_it_works_C)" Tabs="true" />
 </Section>
 
-@code{
+@code {
     private const string pageUrl = RouteConstants.Demos_Box_Documentation;
     private const string pageTitle = "Box";
     private const string pageDescription = "The <code>Box</code> component is a simple container with a white background, some padding, and a box shadow.";
