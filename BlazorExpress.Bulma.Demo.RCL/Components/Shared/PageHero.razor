@@ -1,0 +1,13 @@
+@namespace BlazorExpress.Bulma.Demo.RCL
+@inherits BulmaComponentBase
+
+<h1 class="title is-1">@Title</h1>
+<hr class="be-doc-hr be-doc-hr-title" />
+@if (SubTitleTemplate is not null)
+{
+    <h2 class="subtitle be-subtitle">@SubTitleTemplate</h2>
+}
+else
+{
+    <h2 class="subtitle be-subtitle">@SubTitle</h2>
+}
