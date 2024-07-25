@@ -1,10 +1,10 @@
-@attribute [Route(pageRoute)]
+@attribute [Route(pageUrl)]
 
-<PageTitle>@title</PageTitle>
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
 
-<PageHero Title="Hero">
+<PageHero Title="@pageTitle">
     <SubTitleTemplate>
-        An imposing <b>hero banner</b> to showcase something
+        @((MarkupString)pageDescription)
     </SubTitleTemplate>
 </PageHero>
 
@@ -13,9 +13,10 @@
 </Section>
 
 @code{
-    const string pageRoute = RouteConstants.Demos_Hero_Documentation;
-    private string pageUrl = pageRoute;
-    private string title = "Blazor Bulma Hero Component";
-    private string description = ""; // TODO: update
-    private string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageUrl = RouteConstants.Demos_Hero_Documentation;
+    private const string pageTitle = "Hero";
+    private const string pageDescription = "The <code>Hero</code> component allows you to add a full-width banner to your webpage. Optionally, it can also span the full height of the page. Create an imposing hero banner to showcase your content.";
+    private const string metaTitle = "Blazor Hero Component";
+    private const string metaDescription = "The Hero component allows you to add a full-width banner to your webpage. Optionally, it can also span the full height of the page. Create an imposing hero banner to showcase your content.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
 }

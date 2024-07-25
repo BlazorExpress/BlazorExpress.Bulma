@@ -1,10 +1,10 @@
-@attribute [Route(pageRoute)]
+@attribute [Route(pageUrl)]
 
-<PageTitle>@title</PageTitle>
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
 
-<PageHero Title="Box">
+<PageHero Title="@pageTitle">
     <SubTitleTemplate>
-        A white <b>box</b> to contain other elements
+        @((MarkupString)pageDescription)
     </SubTitleTemplate>
 </PageHero>
 
@@ -15,9 +15,10 @@
 </Section>
 
 @code{
-    const string pageRoute = RouteConstants.Demos_Box_Documentation;
-    private string pageUrl = pageRoute;
-    private string title = "Blazor Bulma Box Component";
-    private string description = ""; // TODO: update
-    private string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageUrl = RouteConstants.Demos_Box_Documentation;
+    private const string pageTitle = "Box";
+    private const string pageDescription = "The <code>Box</code> component is a simple container with a white background, some padding, and a box shadow.";
+    private const string metaTitle = "Blazor Box Component";
+    private const string metaDescription = "The Box component is a simple container with a white background, some padding, and a box shadow.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
 }

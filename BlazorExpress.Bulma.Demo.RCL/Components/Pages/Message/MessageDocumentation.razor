@@ -1,10 +1,10 @@
-@attribute [Route(pageRoute)]
+@attribute [Route(pageUrl)]
 
-<PageTitle>@title</PageTitle>
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
 
-<PageHero Title="Message">
+<PageHero Title="@pageTitle">
     <SubTitleTemplate>
-        Colored <b>message</b> blocks, to emphasize part of your page
+        @((MarkupString)pageDescription)
     </SubTitleTemplate>
 </PageHero>
 
@@ -13,9 +13,10 @@
 </Section>
 
 @code {
-    const string pageRoute = RouteConstants.Demos_Message_Documentation;
-    private string pageUrl = pageRoute;
-    private string title = "Blazor Bulma Message Component";
-    private string description = ""; // TODO: update
-    private string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageUrl = RouteConstants.Demos_Message_Documentation;
+    private const string pageTitle = "Message";
+    private const string pageDescription = "The <code>Message</code> component is a simple, colored message block used to emphasize part of your page.";
+    private const string metaTitle = "Blazor Message Component";
+    private const string metaDescription = "The Message component is a simple, colored message block used to emphasize part of your page.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
 }
