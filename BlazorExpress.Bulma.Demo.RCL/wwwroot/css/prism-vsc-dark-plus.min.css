@@ -1,8 +1,6 @@
 code[class*=language-], pre[class*=language-] {
     color: #d4d4d4;
-    /*font-size: 13px;*/
     text-shadow: none;
-    /*font-family: Menlo,Monaco,Consolas,"Andale Mono","Ubuntu Mono","Courier New",monospace;*/
     direction: ltr;
     text-align: left;
     white-space: pre;
@@ -123,6 +121,10 @@ pre[class*=language-] {
     color: #569cd6
 }
 
+.prism-token.prism-bold, .prism-token.prism-important {
+    font-weight: 700
+}
+
 .prism-token.prism-italic {
     font-style: italic
 }
@@ -219,13 +221,6 @@ code[class*=language-html], pre[class*=language-html] {
     color: grey
 }
 
-pre[class*=language-] > code[class*=language-] {
-    position: relative;
-    z-index: 1
-}
-
 .line-highlight.line-highlight {
     background: #f7ebc6;
-    box-shadow: inset 5px 0 0 #f7d87c;
-    z-index: 0
 }
