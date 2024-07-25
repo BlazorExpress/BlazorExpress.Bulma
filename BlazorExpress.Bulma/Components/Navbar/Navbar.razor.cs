@@ -8,10 +8,13 @@ public partial class Navbar : BulmaComponentBase
     #region Properties, Indexers
 
     protected override string? CssClassNames => CssUtility.BuildClassNames(
-            Class, 
+            Class,
             (BulmaCssClass.Navbar, true),
             (BulmaCssClass.IsSpaced, IsSpaced),
             (BulmaCssClass.HasShadow, HasShadow));
+
+    protected override string? CssStyleNames
+        => CssUtility.BuildStyleNames(Style, ($"height:var(--be-navbar-height);", true));
 
     /// <summary>
     /// Gets or sets the child content.

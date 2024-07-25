@@ -1,0 +1,3 @@
+.navbar-brand {
+    min-height: var(--be-navbar-min-height);
+}

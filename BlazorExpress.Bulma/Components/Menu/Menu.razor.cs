@@ -97,6 +97,7 @@ public partial class Menu : BulmaComponentBase
         => CssUtility.BuildClassNames(
             Class,
             (BulmaCssClass.Menu, true),
+            ("is-scrollable", IsScrollable),
             (BulmaCssClass.P5, true),
             (BulmaCssClass.IsHidden, !isVisible));
 
@@ -108,6 +109,9 @@ public partial class Menu : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public bool IsScrollable { get; set; }
 
     [Parameter]
     public EventCallback<WindowResizeEventArgs> OnWindowResize { get; set; }

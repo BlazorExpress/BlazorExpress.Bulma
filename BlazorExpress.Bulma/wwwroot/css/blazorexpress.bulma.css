@@ -1,10 +1,13 @@
 :root {
+    /* navbar */
+    --be-navbar-min-height: 0;
+    --be-navbar-height: 52px;
+    /* menu */
     --be-menu-width: 16rem;
     --be-menu-border: 2px;
     --be-menu-background-offset: 9%;
     --be-menu-border-offset: -6%;
     --be-menu-item-margin: 4px 0;
-    --be-navbar-item-padding: 1.5rem !important;
 }
 
 [data-theme=dark] {
@@ -13,6 +16,10 @@
 }
 
 /* layout */
+html {
+    overflow-y: hidden;
+}
+
 .be-page {
     position: relative;
     display: flex !important;
@@ -25,22 +32,42 @@
     }
 }
 
+.be-page-menu {
+    overflow-y: auto;
+}
+
+.be-page-body {
+    overflow-y: auto;
+    height: calc(100vh - var(--be-navbar-height));
+}
+
 @media screen and (width > 768px) {
     .be-page-body {
         width: calc(100vw - var(--be-menu-width));
+        height: calc(100vh - var(--be-navbar-height));
     }
+}
 
-    .navbar-item, .navbar-link, .navbar-dropdown {
-        padding-left: var(--be-navbar-item-padding);
-        padding-right: var(--be-navbar-item-padding);
+@media screen and (width > 768px) {
+    .navbar-burger.custom {
+        display: none;
     }
+}
 
-        .navbar-item.has-dropdown {
-            padding: inherit;
-        }
+/* navbar */
+.navbar-brand > a.navbar-item:hover {
+    --bulma-navbar-item-background-a: 0 !important;
+}
+
+.navbar-item.has-dropdown {
+    padding: inherit;
 }
 
 /* menu */
+.menu.is-scrollable {
+    height: calc(100vh - var(--be-navbar-height));
+}
+
 .menu-item {
     margin: var(--be-menu-item-margin) !important;
 }
