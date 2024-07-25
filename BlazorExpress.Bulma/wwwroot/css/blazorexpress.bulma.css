@@ -55,7 +55,7 @@ html {
 }
 
 /* navbar */
-.navbar-brand > a.navbar-item:hover {
+.navbar-brand > a.navbar-item:hover, .navbar-brand > a.navbar-item:focus {
     --bulma-navbar-item-background-a: 0 !important;
 }
 

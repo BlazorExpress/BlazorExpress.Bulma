@@ -1,7 +1,7 @@
 @namespace BlazorExpress.Bulma.Demo.RCL
 @inherits MainLayoutBase
 
-<Navbar IsSpaced="true" HasShadow="true">
+<Navbar Class="px-3" IsSpaced="true" HasShadow="true">
     <NavbarBrand>
         <NavbarBurger Class="custom" IsLeft="true" IsActive="isNavMenuToggleButtonActive" ActiveStateChanged="ShowMenu">
             <i class="bi bi-list"></i>
@@ -72,7 +72,7 @@
             }
         }
 
-        <MenuLabel Class="is-size-7 has-text-weight-bold has-text-info">Elements</MenuLabel>
+        @* <MenuLabel Class="is-size-7 has-text-weight-bold has-text-info">Elements</MenuLabel>
         <MenuList>
             <MenuItem><NavLink href="@RouteConstants.Demos_Block_Documentation" Match="NavLinkMatch.All">Block</NavLink></MenuItem>
             <MenuItem><NavLink href="@RouteConstants.Demos_Box_Documentation" Match="NavLinkMatch.All">Box</NavLink></MenuItem>
@@ -126,7 +126,8 @@
             <MenuItem><a href="/level">Level</a></MenuItem>
             <MenuItem><a href="/media-object">Media Object</a></MenuItem>
             <MenuItem><a href="/footer">Footer</a></MenuItem>
-        </MenuList>
+        </MenuList> *@
+
     </Menu>
 
     <div class="be-page-body p-5">
