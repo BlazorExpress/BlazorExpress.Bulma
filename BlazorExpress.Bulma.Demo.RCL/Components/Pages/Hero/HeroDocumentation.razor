@@ -2,10 +2,15 @@
 
 <PageTitle>@title</PageTitle>
 
-<h1>Hero</h1>
+<PageHero Title="Hero">
+    <SubTitleTemplate>
+        An imposing <b>hero banner</b> to showcase something
+    </SubTitleTemplate>
+</PageHero>
 
-<SectionHeading Size="HeadingSize.H2" Text="Example" PageUrl="@pageUrl" HashTagName="example" />
-<Demo Type="typeof(Hero_Demo_01_How_it_works)" Tabs="true" />
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(Hero_Demo_01_How_it_works)" Tabs="true" />
+</Section>
 
 @code{
     const string pageRoute = RouteConstants.Demos_Hero_Documentation;

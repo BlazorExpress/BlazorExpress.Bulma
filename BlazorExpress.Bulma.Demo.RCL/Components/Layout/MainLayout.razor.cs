@@ -81,14 +81,14 @@ public partial class MainLayout : MainLayoutBase
         //});
 
         // LAYOUT
-        //groups.Add(new LinkGroup
-        //{
-        //    Name = "LAYOUT",
-        //    CssClass = "is-size-7 has-text-weight-bold has-text-success",
-        //    Links = [
-        //            new Link { Href=@RouteConstants.Demos_Block_Documentation, Text = "Block", Match = NavLinkMatch.All },
-        //    ]
-        //});
+        groups.Add(new LinkGroup
+        {
+            Name = "LAYOUT",
+            CssClass = "is-size-7 has-text-weight-bold has-text-success",
+            Links = [
+                    new Link { Href=@RouteConstants.Demos_Hero_Documentation, Text = "Hero", Match = NavLinkMatch.All },
+            ]
+        });
 
         return groups;
     }

@@ -6,6 +6,9 @@ public partial class PageHero : BulmaComponentBase
     public string? Title { get; set; }
 
     [Parameter]
+    public RenderFragment? TitleTemplate { get; set; }
+
+    [Parameter]
     public string? SubTitle { get; set; }
 
     [Parameter]
