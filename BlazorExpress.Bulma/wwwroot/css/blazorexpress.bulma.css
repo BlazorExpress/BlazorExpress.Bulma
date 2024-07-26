@@ -80,6 +80,15 @@ html {
         --bulma-menu-item-background-l-delta: -5%;
     }
 
+/* tabs */
+.tabs-content > .tab-content {
+    display: none;
+}
+
+    .tabs-content > .tab-content.is-active {
+        display: block !important;
+    }
+
 /* custom */
 [role=button] {
     cursor: pointer;

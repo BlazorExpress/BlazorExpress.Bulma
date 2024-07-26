@@ -17,6 +17,45 @@ public partial class Tabs : BulmaComponentBase
 
     #region Methods
 
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender && !isDefaultActiveTabSet)
+            SetDefaultActiveTab();
+
+        base.OnAfterRender(firstRender);
+    }
+
+    internal void AddTab(Tab tab)
+    {
+        tabs!.Add(tab);
+
+        if (tab is { IsActive: true, IsDisabled: false })
+            activeTab = tab;
+
+        StateHasChanged(); // This is mandatory
+    }
+
+    /// <summary>
+    /// Sets default active tab.
+    /// </summary>
+    internal void SetDefaultActiveTab()
+    {
+        if (!tabs?.Any() ?? true) return;
+
+        activeTab ??= tabs!.FirstOrDefault(x => !x.IsDisabled)!;
+
+        if (activeTab is not null)
+            activeTab.SetActiveState(true);
+
+        isDefaultActiveTabSet = true;
+    }
+
+    private void OnTabClick(Tab currentTab)
+    {
+        foreach (Tab tab in tabs!)
+            tab.SetActiveState(tab.Id == currentTab.Id);
+    }
+
     #endregion
 
     #region Properties, Indexers
@@ -66,6 +105,15 @@ public partial class Tabs : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public TabsSize Size { get; set; }
+
+    /// <summary>
+    /// Gets or sets the tabs container CSS class.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
+    [Parameter]
+    public string? TabsContainerCssClass { get; set; }
 
     /// <summary>
     /// Gets or sets the <see cref="Tabs" /> type.

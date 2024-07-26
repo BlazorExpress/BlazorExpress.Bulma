@@ -1,6 +1,51 @@
 @namespace BlazorExpress.Bulma
 @inherits BulmaComponentBase
 
-<div @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes">
+<CascadingValue Value="@(this)" IsFixed="true">
     @ChildContent
-</div>
+</CascadingValue>
+
+@if (tabs?.Any() ?? false)
+{
+    <div class="tabs-continer @TabsContainerCssClass">
+        <div @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes">
+            <ul>
+                @foreach (Tab t in tabs)
+                {
+                    <li class="@(t.IsActive ? BulmaCssClass.IsActive : "")">
+                        <a @onclick="() => OnTabClick(t)">
+
+                            @if (t.TitleTemplate is not null)
+                            {
+                                @t.TitleTemplate
+                            }
+                            else if (!string.IsNullOrWhiteSpace(t.Title))
+                            {
+                                @t.Title
+                            }
+                            else
+                            {
+                                <text>No Title</text>
+                            }
+
+                        </a>
+                    </li>
+                }
+            </ul>
+        </div>
+        <div class="tabs-content">
+            @foreach (Tab t in tabs)
+            {
+                <div @ref="@t.Element"
+                     id="@t.Id"
+                     class="@t.CssClass"
+                     style="@t.Style"
+                     @attributes="@t.AdditionalAttributes">
+
+                    @t.ChildContent
+
+                </div>
+            }
+        </div>
+    </div>
+}

@@ -5,10 +5,27 @@
 /// </summary>
 public partial class Tab : BulmaComponentBase
 {
+    #region Methods
+
+    protected override void OnInitialized()
+    {
+        Id = IdUtility.GetNextId(); // This is required
+        Parent?.AddTab(this);
+    }
+
+    internal void SetActiveState(bool isActive) => IsActive = isActive;
+
+    #endregion
+
     #region Properties, Indexers
 
+    public string? CssClass => CssClassNames;
+
     protected override string? CssClassNames
-        => CssUtility.BuildClassNames(Class, (BulmaCssClass.Block, true));
+        => CssUtility.BuildClassNames(
+            Class, 
+            ("tab-content", true),
+            (BulmaCssClass.IsActive, IsActive));
 
     /// <summary>
     /// Gets or sets the child content.
@@ -18,6 +35,48 @@ public partial class Tab : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
+
+    /// <summary>
+    /// Gets or sets the active state.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="false"/>.
+    /// </remarks>
+    [Parameter]
+    public bool IsActive { get; set; }
+
+    /// <summary>
+    /// Gets or sets the disabled state.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="false"/>.
+    /// </remarks>
+    [Parameter]
+    public bool IsDisabled { get; set; }
+
+    /// <summary>
+    /// Gets or sets the parent.
+    /// </summary>
+    [CascadingParameter]
+    internal Tabs Parent { get; set; } = default!;
+
+    /// <summary>
+    /// Gets or sets the tab title.
+    /// </summary>
+    /// <remarks>
+    /// Default value is null.
+    /// </remarks>
+    [Parameter]
+    public string Title { get; set; } = default!;
+
+    /// <summary>
+    /// Gets or sets the tab title template.
+    /// </summary>
+    /// <remarks>
+    /// Default value is null.
+    /// </remarks>
+    [Parameter]
+    public RenderFragment TitleTemplate { get; set; } = default!;
 
     #endregion
 }
