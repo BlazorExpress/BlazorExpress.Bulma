@@ -53,7 +53,15 @@ public partial class Tabs : BulmaComponentBase
     private void OnTabClick(Tab currentTab)
     {
         foreach (Tab tab in tabs!)
-            tab.SetActiveState(tab.Id == currentTab.Id);
+        {
+            if (tab.Id == currentTab.Id)
+            {
+                activeTab = tab;
+                tab.SetActiveState(true);
+            }
+            else
+                tab.SetActiveState(false);
+        }
     }
 
     #endregion
