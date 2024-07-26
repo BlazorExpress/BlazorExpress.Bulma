@@ -47,6 +47,7 @@ public partial class MainLayout : MainLayoutBase
             CssClass = "is-size-7 has-text-weight-bold has-text-primary",
             Links = [
                     new Link { Href=@RouteConstants.Demos_Message_Documentation, Text = "Message", Match = NavLinkMatch.All },
+                    new Link { Href=@RouteConstants.Demos_Tabs_Documentation, Text = "Tabs", Match = NavLinkMatch.All },
             ]
         });
 

@@ -46,5 +46,31 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToTabsAlignmentClass(this TabsAlignment alignment) =>
+        alignment switch
+        {
+            TabsAlignment.Center => BulmaCssClass.IsCentered,
+            TabsAlignment.Left => BulmaCssClass.IsLeft,
+            TabsAlignment.Right => BulmaCssClass.IsRight,
+            _ => null
+        };
+
+    public static string? ToTabsSizeClass(this TabsSize size) =>
+        size switch
+        {
+            TabsSize.Large => BulmaCssClass.IsLarge,
+            TabsSize.Medium => BulmaCssClass.IsMedium,
+            TabsSize.Small => BulmaCssClass.IsSmall,
+            _ => null
+        };
+
+    public static string? ToTabsTypeClass(this TabsType type) =>
+        type switch
+        {
+            TabsType.Boxed => BulmaCssClass.IsBoxed,
+            TabsType.Rounded => $"{BulmaCssClass.IsToggle} {BulmaCssClass.IsToggleRounded}",
+            _ => null
+        };
+
     #endregion
 }

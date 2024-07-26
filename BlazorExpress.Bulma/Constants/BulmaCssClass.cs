@@ -28,11 +28,19 @@ public static class BulmaCssClass
     public const string Is6 = "is-6";
 
     public const string IsActive = "is-active";
+    public const string IsCentered = "is-centered";
+    public const string IsBoxed = "is-boxed";
+    public const string IsFullWidth = "is-fullwidth";
     public const string IsHidden = "is-hidden";
     public const string IsHoverable = "is-hoverable";
+    public const string IsLarge = "is-large";
     public const string IsLeft = "is-left";
+    public const string IsMedium = "is-medium";
     public const string IsRight = "is-right";
+    public const string IsSmall = "is-small";
     public const string IsSpaced = "is-spaced";
+    public const string IsToggle = "is-toggle";
+    public const string IsToggleRounded = "is-toggle-rounded";
 
     public const string Menu = "menu";
     public const string MenuLabel = "menu-label";
@@ -59,6 +67,7 @@ public static class BulmaCssClass
     public const string Section = "section";
     public const string SubTitle = "subtitle";
 
+    public const string Tabs = "tabs";
     public const string Title = "title";
 
     #endregion

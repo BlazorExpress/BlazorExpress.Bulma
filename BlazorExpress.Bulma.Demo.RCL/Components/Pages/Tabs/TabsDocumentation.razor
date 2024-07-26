@@ -1,0 +1,51 @@
+@attribute [Route(pageUrl)]
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(Tabs_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Alignment" PageUrl="@pageUrl" Link="alignment">
+    <Demo Type="typeof(Tabs_Demo_02_Alignment_A_Centered)" Tabs="true" />
+    <Demo Type="typeof(Tabs_Demo_02_Alignment_B_Right)" Tabs="true" />
+</Section>
+
+<!-- TODO: tabs with icons -->
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
+    <Demo Type="typeof(Tabs_Demo_03_Sizes_A_Small)" Tabs="true" />
+    <Demo Type="typeof(Tabs_Demo_03_Sizes_B_Medium)" Tabs="true" />
+    <Demo Type="typeof(Tabs_Demo_03_Sizes_C_Large)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Styles" PageUrl="@pageUrl" Link="styles">
+    <Demo Type="typeof(Tabs_Demo_04_Styles_A_Boxed)" Tabs="true" />
+    <Demo Type="typeof(Tabs_Demo_04_Styles_B_Rounded)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Full width" PageUrl="@pageUrl" Link="full-width">
+    <Demo Type="typeof(Tabs_Demo_05_Full_Width)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Combined" PageUrl="@pageUrl" Link="combined">
+    <Demo Type="typeof(Tabs_Demo_06_Combined_A_Centered_Boxed)" Tabs="true" />
+    <Demo Type="typeof(Tabs_Demo_06_Combined_B_Boxed_Full_Width)" Tabs="true" />
+    <Demo Type="typeof(Tabs_Demo_06_Combined_C_Rounded_Full_Width)" Tabs="true" />
+    <Demo Type="typeof(Tabs_Demo_06_Combined_D_Centered_Boxed_Medium)" Tabs="true" />
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Demos_Tabs_Documentation;
+    private const string pageTitle = "Tabs";
+    private const string pageDescription = "Documentation and examples for how to use <b>Tabs</b> component.";
+    private const string metaTitle = "Blazor Tabs Component";
+    private const string metaDescription = "Documentation and examples for how to use Tabs component.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}
