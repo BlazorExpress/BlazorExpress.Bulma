@@ -13,7 +13,9 @@ public partial class Tab : BulmaComponentBase
         Parent?.AddTab(this);
     }
 
-    internal void SetActiveState(bool isActive) => IsActive = isActive;
+    internal void Hide() => IsActive = false;
+
+    internal void Show() => IsActive = true;
 
     #endregion
 
@@ -55,28 +57,40 @@ public partial class Tab : BulmaComponentBase
     public bool IsDisabled { get; set; }
 
     /// <summary>
+    /// Gets or sets the tab name.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
+    [Parameter]
+    public string? Name { get; set; }
+
+    /// <summary>
     /// Gets or sets the parent.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
     [CascadingParameter]
-    internal Tabs Parent { get; set; } = default!;
+    internal Tabs? Parent { get; set; }
 
     /// <summary>
     /// Gets or sets the tab title.
     /// </summary>
     /// <remarks>
-    /// Default value is null.
+    /// Default value is <see langword="null"/>.
     /// </remarks>
     [Parameter]
-    public string Title { get; set; } = default!;
+    public string? Title { get; set; }
 
     /// <summary>
     /// Gets or sets the tab title template.
     /// </summary>
     /// <remarks>
-    /// Default value is null.
+    /// Default value is <see langword="null"/>.
     /// </remarks>
     [Parameter]
-    public RenderFragment TitleTemplate { get; set; } = default!;
+    public RenderFragment? TitleTemplate { get; set; }
 
     #endregion
 }

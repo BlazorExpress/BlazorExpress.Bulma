@@ -13,7 +13,7 @@
                 @foreach (Tab t in tabs)
                 {
                     <li class="@(t.IsActive ? BulmaCssClass.IsActive : "")">
-                        <a @onclick="() => OnTabClick(t)">
+                        <a @onclick="() => ShowTab(t)">
 
                             @if (t.TitleTemplate is not null)
                             {

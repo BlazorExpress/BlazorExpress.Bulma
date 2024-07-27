@@ -9,6 +9,8 @@ public partial class Tabs : BulmaComponentBase
 
     private Tab activeTab = default!;
 
+    private Tab previousActiveTab = default!;
+
     private bool isDefaultActiveTabSet = false;
 
     private List<Tab>? tabs = new();
@@ -45,23 +47,145 @@ public partial class Tabs : BulmaComponentBase
         activeTab ??= tabs!.FirstOrDefault(x => !x.IsDisabled)!;
 
         if (activeTab is not null)
-            activeTab.SetActiveState(true);
+            activeTab.Show();
 
         isDefaultActiveTabSet = true;
     }
 
-    private void OnTabClick(Tab currentTab)
+    private void ShowTab(Tab currentTab)
     {
+        if (currentTab?.IsDisabled ?? true) return;
+
+        previousActiveTab = activeTab;
+        activeTab = currentTab;
+
+        // hide the previous active tab
+        foreach (Tab tab in tabs!)
+        {
+            if (tab.IsActive)
+            {
+                tab.Hide();
+
+                if (OnHidden.HasDelegate)
+                    OnHidden.InvokeAsync(new TabEventArgs(tab));
+            }
+        }
+
+        // show the new tab
         foreach (Tab tab in tabs!)
         {
             if (tab.Id == currentTab.Id)
             {
-                activeTab = tab;
-                tab.SetActiveState(true);
+                tab.Show();
+
+                if (OnShown.HasDelegate)
+                    OnShown.InvokeAsync(new TabEventArgs(tab));
+
+                continue;
             }
-            else
-                tab.SetActiveState(false);
         }
+
+        if (OnTabChanged.HasDelegate)
+            OnTabChanged.InvokeAsync(new TabsEventArgs(activeTab, previousActiveTab));
+    }
+
+    /// <summary>
+    /// Gets the active tab.
+    /// </summary>
+    /// <returns>
+    /// Returns the cuurent active <see cref="Tab"/>.
+    /// </returns>
+    public Tab GetActiveTab() => activeTab;
+
+    /// <summary>
+    /// Removes the tab by index.
+    /// </summary>
+    /// <param name="tabIndex"></param>
+    /// <exception cref="IndexOutOfRangeException"></exception>
+    public void RemoveTabByIndex(int tabIndex)
+    {
+        if (!tabs?.Any() ?? true) return;
+
+        if (tabIndex < 0 || tabIndex >= tabs!.Count) throw new IndexOutOfRangeException();
+
+        var tab = tabs[tabIndex];
+
+        if (tab is null) return;
+
+        tabs!.Remove(tab);
+    }
+
+    /// <summary>
+    /// Removes the tab by name.
+    /// </summary>
+    /// <param name="tabName"></param>
+    public void RemoveTabByName(string tabName)
+    {
+        if (!tabs?.Any() ?? true) return;
+
+        var tabIndex = tabs!.FindIndex(x => x.Name == tabName);
+
+        if (tabIndex == -1) return;
+
+        var tab = tabs[tabIndex];
+
+        tabs!.Remove(tab);
+    }
+
+    /// <summary>
+    /// Selects the first tab and show its associated pane.
+    /// </summary>
+    public void ShowFirstTabAsync()
+    {
+        if (!tabs?.Any() ?? true) return;
+
+        var tab = tabs!.FirstOrDefault(x => !x.IsDisabled);
+
+        ShowTab(tab!);
+    }
+
+    /// <summary>
+    /// Selects the last tab and show its associated pane.
+    /// </summary>
+    public void ShowLastTab()
+    {
+        if (!tabs?.Any() ?? true) return;
+
+        var tab = tabs!.LastOrDefault(x => !x.IsDisabled);
+
+        ShowTab(tab!);
+    }
+
+    /// <summary>
+    /// Selects the tab by index and show its associated pane.
+    /// </summary>
+    /// <param name="tabIndex">The zero-based index of the element to get or set.</param>
+    public void ShowTabByIndex(int tabIndex)
+    {
+        if (!tabs?.Any() ?? true) return;
+
+        if (tabIndex < 0 || tabIndex >= tabs!.Count) throw new IndexOutOfRangeException();
+
+        var tab = tabs[tabIndex];
+
+        ShowTab(tab);
+    }
+
+    /// <summary>
+    /// Selects the tab by name and show its associated pane.
+    /// </summary>
+    /// <param name="tabName">The name of the tab to select.</param>
+    public void ShowTabByName(string tabName)
+    {
+        if (!tabs?.Any() ?? true) return;
+
+        var tabIndex = tabs!.FindIndex(x => x.Name == tabName);
+
+        if (tabIndex == -1) return;
+
+        var tab = tabs[tabIndex];
+
+        ShowTab(tab);
     }
 
     #endregion
@@ -104,6 +228,24 @@ public partial class Tabs : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public bool IsFullWidth { get; set; }
+
+    /// <summary>
+    /// This event fires after a new tab is shown (and thus the previous active tab is hidden).
+    /// </summary>
+    [Parameter]
+    public EventCallback<TabEventArgs> OnHidden { get; set; }
+
+    /// <summary>
+    /// This event fires on tab show after a tab has been shown.
+    /// </summary>
+    [Parameter]
+    public EventCallback<TabEventArgs> OnShown { get; set; }
+
+    /// <summary>
+    /// This event fires when the user clicks the corresponding tab and the tab is displayed.
+    /// </summary>
+    [Parameter]
+    public EventCallback<TabsEventArgs> OnTabChanged { get; set; }
 
     /// <summary>
     /// Gets or sets the <see cref="Tabs" /> size.

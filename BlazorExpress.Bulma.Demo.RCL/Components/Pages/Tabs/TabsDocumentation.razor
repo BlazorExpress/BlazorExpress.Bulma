@@ -41,6 +41,92 @@
     <Demo Type="typeof(Tabs_Demo_06_Combined_D_Centered_Boxed_Medium)" Tabs="true" />
 </Section>
 
+<Section Class="p-0" Size="HeadingSize.H3" Name="Methods" PageUrl="@pageUrl" Link="methods">
+    <div class="table-container">
+        <table class="table is-fullwidth is-hoverable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Return type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GetActiveTab()</td>
+                    <td><code>Tab</code></td>
+                    <td>Gets the active tab.</td>
+                </tr>
+                <tr>
+                    <td>RemoveTabByIndex(int tabIndex)</td>
+                    <td>-</td>
+                    <td>Removes the tab by index.</td>
+                </tr>
+                <tr>
+                    <td>RemoveTabByName(string tabName)</td>
+                    <td>-</td>
+                    <td>Removes the tab by name.</td>
+                </tr>
+                <tr>
+                    <td>ShowFirstTabAsync()</td>
+                    <td>-</td>
+                    <td>Selects the first tab and show its associated pane.</td>
+                </tr>
+                <tr>
+                    <td>ShowLastTab()</td>
+                    <td>-</td>
+                    <td>Selects the last tab and show its associated pane.</td>
+                </tr>
+                <tr>
+                    <td>ShowTabByIndex(int tabIndex)</td>
+                    <td><code>Tab</code></td>
+                    <td>Selects the tab by index and show its associated pane.</td>
+                </tr>
+                <tr>
+                    <td>ShowTabByName(string tabName)</td>
+                    <td><code>Tab</code></td>
+                    <td>Selects the tab by name and show its associated pane.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Events" PageUrl="@pageUrl" Link="events">
+    <div>
+        When displaying a new tab, the events fire in the following sequence:
+
+        <div class="table-container">
+            <table class="table is-fullwidth is-hoverable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Event args</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>OnHidden</td>
+                        <td><code>TabEventArgs</code></td>
+                        <td>This event fires after a new tab is shown (and thus the previous active tab is hidden).</td>
+                    </tr>
+                    <tr>
+                        <td>OnShown</td>
+                        <td><code>TabEventArgs</code></td>
+                        <td>This event fires on tab show after a tab has been shown.</td>
+                    </tr>
+                    <tr>
+                        <td>OnTabChanged</td>
+                        <td><code>TabsEventArgs</code></td>
+                        <td>This event fires when the user clicks the corresponding tab and the tab is displayed.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</Section>
+
 @code {
     private const string pageUrl = RouteConstants.Demos_Tabs_Documentation;
     private const string pageTitle = "Tabs";

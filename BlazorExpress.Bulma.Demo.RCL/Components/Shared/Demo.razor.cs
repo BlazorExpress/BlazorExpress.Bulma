@@ -23,7 +23,7 @@ public partial class Demo : BulmaComponentBase
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (firstRender && IsRenderComplete)
+        if (firstRender && !IsRenderComplete)
         {
             await JSRuntime.InvokeVoidAsync("highlightCode");
         }
