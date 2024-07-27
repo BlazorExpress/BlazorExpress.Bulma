@@ -14,8 +14,12 @@ public partial class Section : BulmaComponentBase
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        await Task.Delay(200);
-        await JSRuntime.InvokeVoidAsync("navigateToHeading");
+        if (firstRender && IsRenderComplete)
+        {
+            await Task.Delay(200);
+            await JSRuntime.InvokeVoidAsync("navigateToHeading");
+        }
+
         await base.OnAfterRenderAsync(firstRender);
     }
 
@@ -30,7 +34,7 @@ public partial class Section : BulmaComponentBase
 
     protected override string? CssClassNames
         => CssUtility.BuildClassNames(
-            Class, 
+            Class,
             (BulmaCssClass.Section, true),
             (BulmaCssClass.IsMobile, IsMobile));
 
