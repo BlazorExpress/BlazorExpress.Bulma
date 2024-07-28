@@ -34,9 +34,9 @@ public partial class MainLayout : MainLayoutBase
             Name = "ELEMENTS",
             CssClass = "is-size-7 has-text-weight-bold has-text-info",
             Links = [
-                    new Link { Href=@RouteConstants.Demos_Block_Documentation, Text = "Block", Match = NavLinkMatch.All },
-                    new Link { Href=@RouteConstants.Demos_Box_Documentation, Text = "Box", Match = NavLinkMatch.All },
-                    new Link { Href=@RouteConstants.Demos_Button_Documentation, Text = "Button", Match = NavLinkMatch.All },
+                    new Link { Href=@RouteConstants.Demos_Block_Documentation, Text = "Block" },
+                    new Link { Href=@RouteConstants.Demos_Box_Documentation, Text = "Box" },
+                    new Link { Href=@RouteConstants.Demos_Button_Documentation, Text = "Button" },
             ]
         });
 
@@ -47,8 +47,8 @@ public partial class MainLayout : MainLayoutBase
             Name = "COMPONENTS",
             CssClass = "is-size-7 has-text-weight-bold has-text-primary",
             Links = [
-                    new Link { Href=@RouteConstants.Demos_Message_Documentation, Text = "Message", Match = NavLinkMatch.All },
-                    new Link { Href=@RouteConstants.Demos_Tabs_Documentation, Text = "Tabs", Match = NavLinkMatch.All },
+                    new Link { Href=@RouteConstants.Demos_Message_Documentation, Text = "Message" },
+                    new Link { Href=@RouteConstants.Demos_Tabs_Documentation, Text = "Tabs" },
             ]
         });
 
@@ -88,7 +88,7 @@ public partial class MainLayout : MainLayoutBase
             Name = "LAYOUT",
             CssClass = "is-size-7 has-text-weight-bold has-text-success",
             Links = [
-                    new Link { Href=@RouteConstants.Demos_Hero_Documentation, Text = "Hero", Match = NavLinkMatch.All },
+                    new Link { Href=@RouteConstants.Demos_Hero_Documentation, Text = "Hero" },
             ]
         });
 
