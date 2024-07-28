@@ -1,0 +1,18 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+
+@if (ChildContent is not null)
+{
+    <span class="@BulmaCssClass.IconText">
+        <span class="@BulmaCssClass.Icon">
+            <i id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes"></i>
+        </span>
+        <span>@ChildContent</span>
+    </span>
+}
+else
+{
+    <span class="@BulmaCssClass.Icon">
+        <i id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes"></i>
+    </span>
+}

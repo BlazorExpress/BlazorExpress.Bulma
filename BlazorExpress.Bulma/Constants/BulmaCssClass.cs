@@ -17,6 +17,16 @@ public static class BulmaCssClass
 
     public const string HasDropdown = "has-dropdown";
     public const string HasShadow = "has-shadow";
+    public const string HasTextBlack = "has-text-black";
+    public const string HasTextDanger = "has-text-danger";
+    public const string HasTextDark = "has-text-dark";
+    public const string HasTextInfo = "has-text-info";
+    public const string HasTextLight = "has-text-light";
+    public const string HasTextLink = "has-text-link";
+    public const string HasTextPrimary = "has-text-primary";
+    public const string HasTextSuccess = "has-text-success";
+    public const string HasTextWarning = "has-text-warning";
+    public const string HasTextWhite = "has-text-white";
 
     public const string Hero = "hero";
     public const string HeroBody = "hero-body";
@@ -25,6 +35,8 @@ public static class BulmaCssClass
     public const string HeroTitle = "title";
     public const string HeroSubTitle = "subtitle";
 
+    public const string Icon = "icon";
+    public const string IconText = "icon-text";
 
     public const string Is1 = "is-1";
     public const string Is2 = "is-2";

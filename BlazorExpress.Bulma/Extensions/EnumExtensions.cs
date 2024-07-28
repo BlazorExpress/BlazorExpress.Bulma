@@ -59,6 +59,31 @@ public static class EnumExtensions
             (> 1407) or _ => DeviceType.FullHD
         };
 
+    public static string? ToIconColorClass(this IconColor color) =>
+        color switch
+        {
+            IconColor.Primary => BulmaCssClass.HasTextPrimary,
+            IconColor.Link => BulmaCssClass.HasTextLink,
+            IconColor.Info => BulmaCssClass.HasTextInfo,
+            IconColor.Success => BulmaCssClass.HasTextSuccess,
+            IconColor.Warning => BulmaCssClass.HasTextWarning,
+            IconColor.Danger => BulmaCssClass.HasTextDanger,
+            IconColor.White => BulmaCssClass.HasTextWhite,
+            IconColor.Black => BulmaCssClass.HasTextBlack,
+            IconColor.Light => BulmaCssClass.HasTextLight,
+            IconColor.Dark => BulmaCssClass.HasTextDark,
+            _ => null,
+        };
+
+    public static string? ToIconSizeClass(this IconSize size) =>
+        size switch
+        {
+            IconSize.Small => BulmaCssClass.IsSmall,
+            IconSize.Medium => BulmaCssClass.IsMedium,
+            IconSize.Large => BulmaCssClass.IsLarge,
+            _ => null,
+        };
+
     public static string? ToNavbarDropdownPositionClass(this NavbarDropdownPosition position) =>
         position switch
         {
