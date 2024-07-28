@@ -1,0 +1,36 @@
+<Tabs @ref="tabsRef">
+    <Tab Title="Home">
+        This is the placeholder content for the Home tab.
+    </Tab>
+    <Tab Title="Profile">
+        This is the placeholder content for the Profile tab.
+    </Tab>
+    <Tab Title="Contact">
+        This is the placeholder content for the Contact tab.
+    </Tab>
+    <Tab Title="Products" Name="Products">
+        This is the placeholder content for the Products tab.
+    </Tab>
+    <Tab Title="FAQs" Name="FAQs">
+        This is the placeholder content for the FAQs tab.
+    </Tab>
+    <Tab Title="About">
+        This is the placeholder content for the About tab.
+    </Tab>
+</Tabs>
+
+<div class="buttons mt-5">
+    <button class="button is-primary is-small" @onclick="() => tabsRef.ShowFirstTab()">First Tab</button>
+    <button class="button is-link is-small" @onclick="() => tabsRef.ShowTabByIndex(1)">Second Tab</button>
+    <button class="button is-info is-small" @onclick="() => tabsRef.ShowTabByIndex(2)">Third Tab</button>
+    <button class="button is-success is-small" @onclick="ShowProductsTab">Products Tab</button>
+    <button class="button is-warning is-small" @onclick="ShowFAQsTab">FAQs Tab</button>
+    <button class="button is-danger is-small" @onclick="() => tabsRef.ShowLastTab()">Last Tab</button>
+</div>
+
+@code{
+    Tabs tabsRef = default!;
+
+    private void ShowProductsTab() => tabsRef.ShowTabByName("Products");
+    private void ShowFAQsTab() => tabsRef.ShowTabByName("FAQs");
+}

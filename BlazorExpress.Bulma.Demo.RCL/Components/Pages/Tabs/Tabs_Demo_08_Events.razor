@@ -1,0 +1,35 @@
+<Tabs @ref="tabsRef"
+      OnHidden="OnHidden"
+      OnShown="OnShown"
+      OnTabChanged="OnTabChanged">
+    <Tab Title="Pictures">
+        This is the placeholder content for the Pictures tab.
+    </Tab>
+    <Tab Title="Music">
+        This is the placeholder content for the Music tab.
+    </Tab>
+    <Tab Title="Videos">
+        This is the placeholder content for the Videos tab.
+    </Tab>
+    <Tab Title="Documents">
+        This is the placeholder content for the Documents tab.
+    </Tab>
+</Tabs>
+
+<div class="mt-5" style="max-height:200px;overflow-y:auto;">
+    @foreach (var item in messages)
+    {
+        <p>Event: @item.Event, Message: @item.Message, UTC Time: @item.TimeStamp</p>
+    }
+</div>
+
+@code {
+    Tabs tabsRef = default!;
+    List<TabMessage> messages = new List<TabMessage>();
+
+    private void OnHidden(TabEventArgs args) => messages.Add(new("OnHidden", $"Tab Title: {args.Tab.Title!}", DateTime.UtcNow));
+    private void OnShown(TabEventArgs args) => messages.Add(new("OnShown", $"Tab Title: {args.Tab.Title!}", DateTime.UtcNow));
+    private void OnTabChanged(TabsEventArgs args) => messages.Add(new("OnTabChanged", $"Active Tab Title: {args.ActiveTab.Title!}, Previous Active Tab: {args.PreviousActiveTab.Title!}", DateTime.UtcNow));
+
+    private record TabMessage(string Event, string Message, DateTime TimeStamp);
+}

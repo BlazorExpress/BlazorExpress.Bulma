@@ -2,10 +2,10 @@
 
 public class TabEventArgs
 {
-    public TabEventArgs(Tab activeTab)
+    public TabEventArgs(Tab tab)
     {
-        ActiveTab = activeTab;
+        Tab = tab;
     }
 
-    public Tab ActiveTab { get; }
+    public Tab Tab { get; }
 }

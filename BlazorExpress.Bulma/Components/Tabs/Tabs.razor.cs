@@ -50,6 +50,8 @@ public partial class Tabs : BulmaComponentBase
             activeTab.Show();
 
         isDefaultActiveTabSet = true;
+
+        StateHasChanged();
     }
 
     private void ShowTab(Tab currentTab)
@@ -135,7 +137,7 @@ public partial class Tabs : BulmaComponentBase
     /// <summary>
     /// Selects the first tab and show its associated pane.
     /// </summary>
-    public void ShowFirstTabAsync()
+    public void ShowFirstTab()
     {
         if (!tabs?.Any() ?? true) return;
 
