@@ -30,7 +30,13 @@ public partial class Button : BulmaComponentBase
             (Color.ToButtonColorClass(), true),
             (BulmaCssClass.IsLight, IsLightVersion),
             (BulmaCssClass.IsDark, IsDarkVersion),
-            (Size.ToButtonSizeClass(), Size != ButtonSize.None));
+            (Size.ToButtonSizeClass(), Size != ButtonSize.None),
+            (BulmaCssClass.IsFullWidth, IsFullWidth),
+            (BulmaCssClass.IsResponsive, IsResponsive),
+            (BulmaCssClass.IsOutlined, IsOutlined),
+            (BulmaCssClass.IsInverted, IsInverted),
+            (BulmaCssClass.IsRounded, IsRounded),
+            (BulmaCssClass.IsLoading, IsLoading));
 
     /// <summary>
     /// Gets or sets the child content.
@@ -48,10 +54,31 @@ public partial class Button : BulmaComponentBase
     public string? Href { get; set; }
 
     [Parameter]
+    public bool IsDarkVersion { get; set; }
+
+    [Parameter]
+    public bool IsDisabled { get; set; }
+
+    [Parameter]
+    public bool IsFullWidth { get; set; }
+
+    [Parameter]
+    public bool IsInverted { get; set; }
+
+    [Parameter]
     public bool IsLightVersion { get; set; }
 
     [Parameter]
-    public bool IsDarkVersion { get; set; }
+    public bool IsLoading { get; set; }
+
+    [Parameter]
+    public bool IsOutlined { get; set; }
+
+    [Parameter]
+    public bool IsRounded { get; set; }
+
+    [Parameter]
+    public bool IsResponsive { get; set; }
 
     [Parameter]
     public ButtonSize Size { get; set; }

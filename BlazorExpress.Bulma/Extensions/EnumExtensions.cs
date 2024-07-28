@@ -32,6 +32,15 @@ public static class EnumExtensions
             _ => null,
         };
 
+    public static string? ToButtonsSizeClass(this ButtonSize size) =>
+        size switch
+        {
+            ButtonSize.Small => BulmaCssClass.AreSmall,
+            ButtonSize.Medium => BulmaCssClass.AreMedium,
+            ButtonSize.Large => BulmaCssClass.AreLarge,
+            _ => null,
+        };
+
     public static string? ToButtonTypeString(this ButtonType type) =>
         type switch
         {
