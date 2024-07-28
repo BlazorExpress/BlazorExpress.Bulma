@@ -36,6 +36,7 @@ public partial class MainLayout : MainLayoutBase
             Links = [
                     new Link { Href=@RouteConstants.Demos_Block_Documentation, Text = "Block", Match = NavLinkMatch.All },
                     new Link { Href=@RouteConstants.Demos_Box_Documentation, Text = "Box", Match = NavLinkMatch.All },
+                    new Link { Href=@RouteConstants.Demos_Button_Documentation, Text = "Button", Match = NavLinkMatch.All },
             ]
         });
 

@@ -4,6 +4,42 @@ public static class EnumExtensions
 {
     #region Methods
 
+    public static string? ToButtonColorClass(this ButtonColor color) =>
+        color switch
+        {
+            ButtonColor.Primary => BulmaCssClass.IsPrimary,
+            ButtonColor.Link => BulmaCssClass.IsLink,
+            ButtonColor.Info => BulmaCssClass.IsInfo,
+            ButtonColor.Success => BulmaCssClass.IsSuccess,
+            ButtonColor.Warning => BulmaCssClass.IsWarning,
+            ButtonColor.Danger => BulmaCssClass.IsDanger,
+            ButtonColor.White => BulmaCssClass.IsWhite,
+            ButtonColor.Light => BulmaCssClass.IsLight,
+            ButtonColor.Dark => BulmaCssClass.IsDark,
+            ButtonColor.Black => BulmaCssClass.IsBlack,
+            ButtonColor.Text => BulmaCssClass.IsText,
+            ButtonColor.Ghost => BulmaCssClass.IsGhost,
+            _ => null,
+        };
+
+    public static string? ToButtonSizeClass(this ButtonSize size) =>
+        size switch
+        {
+            ButtonSize.Small => BulmaCssClass.IsSmall,
+            ButtonSize.Normal => BulmaCssClass.IsNormal,
+            ButtonSize.Medium => BulmaCssClass.IsMedium,
+            ButtonSize.Large => BulmaCssClass.IsLarge,
+            _ => null,
+        };
+
+    public static string? ToButtonTypeString(this ButtonType type) =>
+        type switch
+        {
+            ButtonType.Submit => BulmaCssClass.Submit,
+            ButtonType.Reset  => BulmaCssClass.Reset,
+            _ => BulmaCssClass.Button,
+        };
+
     public static DeviceType ToDeviceTypeEnum(this float width) =>
         width switch
         {

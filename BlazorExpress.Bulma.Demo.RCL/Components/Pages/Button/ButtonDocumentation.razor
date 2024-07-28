@@ -1,0 +1,33 @@
+@attribute [Route(pageUrl)]
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(Button_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Demo Type="typeof(Button_Demo_02_Colors_A)" Tabs="true" />
+    <Demo Type="typeof(Button_Demo_02_Colors_B)" Tabs="true" />
+    <Demo Type="typeof(Button_Demo_02_Colors_C_Light_Version)" Tabs="true" />
+    <Demo Type="typeof(Button_Demo_02_Colors_D_Dark_Version)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
+    <Demo Type="typeof(Button_Demo_03_Sizes)" Tabs="true" />
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Demos_Button_Documentation;
+    private const string pageTitle = "Button";
+    private const string pageDescription = "Use the <code>Button</code> component to style actions in forms, dialogs, and more, with support for multiple sizes, states, and other options.";
+    private const string metaTitle = "Blazor Button Component";
+    private const string metaDescription = "Use the Button component to style actions in forms, dialogs, and more, with support for multiple sizes, states, and other options.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}

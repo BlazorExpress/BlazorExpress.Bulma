@@ -5,6 +5,7 @@
 /// </summary>
 public enum ButtonColor
 {
+    None,
     Primary,
     Link,
     Info,

@@ -5,18 +5,32 @@
 /// </summary>
 public partial class Button : BulmaComponentBase
 {
+    private string? buttonTypeString => Type.ToButtonTypeString();
+
+    #region Methods
+
+    protected override void OnParametersSet()
+    {
+        if (IsLightVersion && IsDarkVersion)
+        {
+            throw new InvalidOperationException($"{nameof(Button)} requires one of {nameof(IsLightVersion)} or {nameof(IsDarkVersion)}, but both were specified.");
+        }
+
+        base.OnParametersSet();
+    }
+
+    #endregion
+
     #region Properties, Indexers
 
-    protected override string? CssClassNames => CssUtility.BuildClassNames(Class, (BulmaCssClass.Box, true));
-
-    /// <summary>
-    /// Gets or sets the button type.
-    /// </summary>
-    /// <remarks>
-    /// Default value is <see cref="ButtonType.Button" />.
-    /// </remarks>
-    [Parameter]
-    public ButtonType Type { get; set; } = ButtonType.Button;
+    protected override string? CssClassNames 
+        => CssUtility.BuildClassNames(
+            Class, 
+            (BulmaCssClass.Button, true),
+            (Color.ToButtonColorClass(), true),
+            (BulmaCssClass.IsLight, IsLightVersion),
+            (BulmaCssClass.IsDark, IsDarkVersion),
+            (Size.ToButtonSizeClass(), Size != ButtonSize.None));
 
     /// <summary>
     /// Gets or sets the child content.
@@ -26,6 +40,30 @@ public partial class Button : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public ButtonColor Color { get; set; }
+
+    [Parameter]
+    public string? Href { get; set; }
+
+    [Parameter]
+    public bool IsLightVersion { get; set; }
+
+    [Parameter]
+    public bool IsDarkVersion { get; set; }
+
+    [Parameter]
+    public ButtonSize Size { get; set; }
+
+    /// <summary>
+    /// Gets or sets the button type.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see cref="ButtonType.Button" />.
+    /// </remarks>
+    [Parameter]
+    public ButtonType Type { get; set; } = ButtonType.Button;
 
     #endregion
 }
