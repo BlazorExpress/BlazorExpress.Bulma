@@ -1,0 +1,23 @@
+<Buttons>
+    <Button Color="ButtonColor.Primary" @onclick="OnClick">Click here</Button>
+    <Button Color="ButtonColor.Link" @ondblclick="OnDoubleClick">Double click here</Button>
+    <Button Color="ButtonColor.Info" @onclick="((args) => OnClickWithArgs(args, message))">Click event with args</Button>
+</Buttons>
+
+@code {
+    public string message = "Test message";
+
+    protected void OnClick(EventArgs args)
+    {
+        // handle click event
+    }
+
+    protected void OnDoubleClick(EventArgs args)
+    {
+        // handle double click event
+    }
+    protected void OnClickWithArgs(EventArgs args, string message)
+    {
+        // handle click event with custom params
+    }
+}

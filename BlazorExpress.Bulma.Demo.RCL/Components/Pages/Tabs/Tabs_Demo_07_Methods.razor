@@ -19,14 +19,14 @@
     </Tab>
 </Tabs>
 
-<div class="buttons mt-5">
-    <button class="button is-primary is-small" @onclick="() => tabsRef.ShowFirstTab()">First Tab</button>
-    <button class="button is-link is-small" @onclick="() => tabsRef.ShowTabByIndex(1)">Second Tab</button>
-    <button class="button is-info is-small" @onclick="() => tabsRef.ShowTabByIndex(2)">Third Tab</button>
-    <button class="button is-success is-small" @onclick="ShowProductsTab">Products Tab</button>
-    <button class="button is-warning is-small" @onclick="ShowFAQsTab">FAQs Tab</button>
-    <button class="button is-danger is-small" @onclick="() => tabsRef.ShowLastTab()">Last Tab</button>
-</div>
+<Buttons Class="mt-5">
+    <Button Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="() => tabsRef.ShowFirstTab()">First Tab</Button>
+    <Button Color="ButtonColor.Link" Size="ButtonSize.Small" @onclick="() => tabsRef.ShowTabByIndex(1)">Second Tab</Button>
+    <Button Color="ButtonColor.Info" Size="ButtonSize.Small" @onclick="() => tabsRef.ShowTabByIndex(2)">Third Tab</Button>
+    <Button Color="ButtonColor.Success" Size="ButtonSize.Small" @onclick="ShowProductsTab">Products Tab</Button>
+    <Button Color="ButtonColor.Warning" Size="ButtonSize.Small" @onclick="ShowFAQsTab">FAQs Tab</Button>
+    <Button Color="ButtonColor.Danger" Size="ButtonSize.Small" @onclick="() => tabsRef.ShowLastTab()">Last Tab</Button>
+</Buttons>
 
 @code{
     Tabs tabsRef = default!;
