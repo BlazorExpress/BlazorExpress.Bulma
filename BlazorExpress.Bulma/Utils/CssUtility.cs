@@ -2,6 +2,19 @@
 
 public static class CssUtility
 {
+    public static string? BuildClassNames(params (string? className, bool condition)[] classNames)
+    {
+        var classList = new HashSet<string>();
+
+        if (classNames?.Any() ?? false)
+            foreach (var (className, condition) in classNames)
+            {
+                if (!string.IsNullOrWhiteSpace(className) && condition)
+                    classList.Add(className!);
+            }
+
+        return string.Join(" ", classList);
+    }
     public static string? BuildClassNames(string? userDefinedClassName, params (string? className, bool condition)[] classNames)
     {
         if (!(classNames?.Any() ?? false) && string.IsNullOrWhiteSpace(userDefinedClassName))

@@ -22,6 +22,15 @@ public partial class Icon : BulmaComponentBase
             (Size.ToIconSizeClass(), Size != IconSize.None));
 
     /// <summary>
+    /// If true, icon color is applied to the text.
+    /// </summary>
+    /// <remarks>
+    /// The default value is <see cref="false" />.
+    /// </remarks>
+    [Parameter]
+    public bool ApplyColorToText { get; set; }
+
+    /// <summary>
     /// Gets or sets the child content.
     /// </summary>
     /// <remarks>
@@ -66,6 +75,11 @@ public partial class Icon : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public IconSize Size { get; set; } = IconSize.None;
+
+    private string? TextCssClassNames
+        => CssUtility.BuildClassNames(
+            (@BulmaCssClass.IconText, true),
+            (Color.ToIconColorClass(), Color != IconColor.None && ApplyColorToText));
 
     #endregion
 }
