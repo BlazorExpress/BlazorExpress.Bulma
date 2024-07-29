@@ -8,6 +8,9 @@ public static class RouteConstants
 
     #region Demos
 
+    // Features
+    public const string Demos_Skeletons_Documentation = Demos_Prefix + "/skeletons";
+
     // Elements
     public const string Demos_Block_Documentation = Demos_Prefix + "/block";
     public const string Demos_Box_Documentation = Demos_Prefix + "/box";

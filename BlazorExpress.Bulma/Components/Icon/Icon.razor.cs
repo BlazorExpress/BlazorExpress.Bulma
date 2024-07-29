@@ -2,24 +2,20 @@
 
 public partial class Icon : BulmaComponentBase
 {
-    #region Methods
-
-    //protected override void OnParametersSet()
-    //{
-    //    base.OnParametersSet();
-    //}
-
-    #endregion
-
     #region Properties, Indexers
 
     protected override string? CssClassNames
         => CssUtility.BuildClassNames(
             Class,
             (BootstrapIconUtility.Icon(), BootstrapIcon != BootstrapIcon.None),
-            (BootstrapIconUtility.Icon(BootstrapIcon), BootstrapIcon != BootstrapIcon.None),
+            (BootstrapIconUtility.Icon(BootstrapIcon), BootstrapIcon != BootstrapIcon.None));
+
+    private string? IconContainerCssClassNames
+        => CssUtility.BuildClassNames(
+            (BulmaCssClass.Icon, true),
             (Color.ToIconColorClass(), Color != IconColor.None),
-            (Size.ToIconSizeClass(), Size != IconSize.None));
+            (Size.ToIconSizeClass(), Size != IconSize.None),
+            (BulmaCssClass.IsSkeleton, IsSkeleton));
 
     /// <summary>
     /// If true, icon color is applied to the text.
@@ -29,6 +25,15 @@ public partial class Icon : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public bool ApplyColorToText { get; set; }
+
+    /// <summary>
+    /// Gets or sets the bootstrap icon name.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see cref="IconName.None" />.
+    /// </remarks>
+    [Parameter]
+    public BootstrapIcon BootstrapIcon { get; set; } = BootstrapIcon.None;
 
     /// <summary>
     /// Gets or sets the child content.
@@ -49,6 +54,15 @@ public partial class Icon : BulmaComponentBase
     public IconColor Color { get; set; } = IconColor.None;
 
     /// <summary>
+    /// If true, the skeleton variant will be enabled.
+    /// </summary>
+    /// <remarks>
+    /// The default value is <see cref="false" />.
+    /// </remarks>
+    [Parameter]
+    public bool IsSkeleton { get; set; }
+
+    /// <summary>
     /// Gets or sets the custom icon name.
     /// Specify custom icons of your own, like `fontawesome`. Example: `fas fa-alarm-clock`.
     /// </summary>
@@ -57,15 +71,6 @@ public partial class Icon : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public string? Name { get; set; }
-
-    /// <summary>
-    /// Gets or sets the bootstrap icon name.
-    /// </summary>
-    /// <remarks>
-    /// Default value is <see cref="IconName.None" />.
-    /// </remarks>
-    [Parameter]
-    public BootstrapIcon BootstrapIcon { get; set; } = BootstrapIcon.None;
 
     /// <summary>
     /// Gets or sets the icon size.

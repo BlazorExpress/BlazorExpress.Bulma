@@ -104,6 +104,30 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToSkeletonColorClass(this SkeletonColor color) =>
+        color switch
+        {
+            SkeletonColor.Primary => BulmaCssClass.HasBackgroundPrimary,
+            SkeletonColor.Link => BulmaCssClass.HasBackgroundLink,
+            SkeletonColor.Info => BulmaCssClass.HasBackgroundInfo,
+            SkeletonColor.Success => BulmaCssClass.HasBackgroundSuccess,
+            SkeletonColor.Warning => BulmaCssClass.HasBackgroundWarning,
+            SkeletonColor.Danger => BulmaCssClass.HasBackgroundDanger,
+            SkeletonColor.White => BulmaCssClass.HasBackgroundWhite,
+            SkeletonColor.Black => BulmaCssClass.HasBackgroundBlack,
+            SkeletonColor.Light => BulmaCssClass.HasBackgroundLight,
+            SkeletonColor.Dark => BulmaCssClass.HasBackgroundDark,
+            _ => null,
+        };
+
+    public static string? ToSkeletonTypeClass(this SkeletonType type) =>
+        type switch
+        {
+            SkeletonType.Block => BulmaCssClass.SkeletonBlock,
+            SkeletonType.Lines => BulmaCssClass.SkeletonLines,
+            _ => null
+        };
+
     public static string? ToSubTitleSizeClass(this HeadingSize headingSize) =>
         headingSize switch
         {

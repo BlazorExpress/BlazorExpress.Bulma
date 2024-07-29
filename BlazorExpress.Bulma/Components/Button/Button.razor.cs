@@ -36,7 +36,8 @@ public partial class Button : BulmaComponentBase
             (BulmaCssClass.IsOutlined, IsOutlined),
             (BulmaCssClass.IsInverted, IsInverted),
             (BulmaCssClass.IsRounded, IsRounded),
-            (BulmaCssClass.IsLoading, IsLoading));
+            (BulmaCssClass.IsLoading, IsLoading),
+            (BulmaCssClass.IsSkeleton, IsSkeleton));
 
     /// <summary>
     /// Gets or sets the child content.
@@ -64,6 +65,15 @@ public partial class Button : BulmaComponentBase
 
     [Parameter]
     public bool IsInverted { get; set; }
+
+    /// <summary>
+    /// If true, the skeleton variant will be enabled.
+    /// </summary>
+    /// <remarks>
+    /// The default value is <see cref="false" />.
+    /// </remarks>
+    [Parameter]
+    public bool IsSkeleton { get; set; }
 
     [Parameter]
     public bool IsLightVersion { get; set; }

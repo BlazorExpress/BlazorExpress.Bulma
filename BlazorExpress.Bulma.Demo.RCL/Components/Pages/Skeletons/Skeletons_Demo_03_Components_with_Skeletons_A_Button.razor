@@ -1,0 +1,22 @@
+<Buttons>
+    <Button IsSkeleton="isSkeleton">Button</Button>
+    <Button Color="ButtonColor.Link" IsSkeleton="isSkeleton">Link</Button>
+    <Button Color="ButtonColor.Primary" IsSkeleton="isSkeleton">Primary</Button>
+    <Button Color="ButtonColor.Success" IsSkeleton="isSkeleton">Success</Button>
+    <Button Color="ButtonColor.Info" IsSkeleton="isSkeleton">Info</Button>
+    <Button Color="ButtonColor.Warning" IsSkeleton="isSkeleton">Warning</Button>
+    <Button Color="ButtonColor.Danger" IsSkeleton="isSkeleton">Danger</Button>
+</Buttons>
+
+<Button Color="ButtonColor.Dark" @onclick="ToggleSkeletonAsync">Toggle Skeleton</Button>
+
+@code{
+    bool isSkeleton = false;
+
+    async Task ToggleSkeletonAsync()
+    {
+        isSkeleton = true;
+        await Task.Delay(3000);
+        isSkeleton = false;
+    }
+}

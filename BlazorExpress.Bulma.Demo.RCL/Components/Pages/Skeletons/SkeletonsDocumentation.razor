@@ -1,0 +1,44 @@
+@attribute [Route(pageUrl)]
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Skeleton block" PageUrl="@pageUrl" Link="skeleton-block">
+    <Demo Type="typeof(Skeletons_Demo_01_Block_A)" Tabs="true" />
+    <Demo Type="typeof(Skeletons_Demo_01_Block_B_Text_Inside)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Skeleton lines" PageUrl="@pageUrl" Link="skeleton-lines">
+    <Demo Type="typeof(Skeletons_Demo_02_Lines_A_Default)" Tabs="true" />
+</Section>
+<Section Class="p-0" Size="HeadingSize.H4" Name="Width" PageUrl="@pageUrl" Link="width">
+    <Demo Type="typeof(Skeletons_Demo_02_Lines_B_Width)" Tabs="true" />
+</Section>
+<Section Class="p-0" Size="HeadingSize.H4" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Demo Type="typeof(Skeletons_Demo_02_Lines_C_Colors_01)" Tabs="true" />
+    <Demo Type="typeof(Skeletons_Demo_02_Lines_C_Colors_02)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Components with skeletons" PageUrl="@pageUrl" Link="components-with-skeletons">
+    <div></div>
+</Section>
+<Section Class="p-0" Size="HeadingSize.H4" Name="Button" PageUrl="@pageUrl" Link="components-with-skeletons-button">
+    <Demo Type="typeof(Skeletons_Demo_03_Components_with_Skeletons_A_Button)" Tabs="true" />
+</Section>
+<Section Class="p-0" Size="HeadingSize.H4" Name="Icon" PageUrl="@pageUrl" Link="components-with-skeletons-icon">
+    <Demo Type="typeof(Skeletons_Demo_03_Components_with_Skeletons_B_Icon)" Tabs="true" />
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Demos_Skeletons_Documentation;
+    private const string pageTitle = "Skeleton";
+    private const string pageDescription = "A <code>Skeleton</code> component is a loading state that acts as a placeholder for content within an interface.";
+    private const string metaTitle = "Blazor Skeleton Component";
+    private const string metaDescription = "A Skeleton component is a loading state that acts as a placeholder for content within an interface.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}

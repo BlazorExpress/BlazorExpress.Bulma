@@ -4,7 +4,7 @@
 @if (ChildContent is not null)
 {
     <span class="@TextCssClassNames">
-        <span class="@BulmaCssClass.Icon">
+        <span class="@IconContainerCssClassNames">
             <i id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes"></i>
         </span>
         <span>@ChildContent</span>
@@ -12,7 +12,7 @@
 }
 else
 {
-    <span class="@BulmaCssClass.Icon">
+    <span class="@IconContainerCssClassNames">
         <i id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes"></i>
     </span>
 }

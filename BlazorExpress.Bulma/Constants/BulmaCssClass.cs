@@ -14,9 +14,21 @@ public static class BulmaCssClass
 
     public const string Button = "button";
     public const string Buttons = "buttons";
+        
+    public const string HasBackgroundBlack = "has-background-black";
+    public const string HasBackgroundDanger = "has-background-danger";
+    public const string HasBackgroundDark = "has-background-dark";
+    public const string HasBackgroundInfo = "has-background-info";
+    public const string HasBackgroundLight = "has-background-light";
+    public const string HasBackgroundLink = "has-background-link";
+    public const string HasBackgroundPrimary = "has-background-primary";
+    public const string HasBackgroundSuccess = "has-background-success";
+    public const string HasBackgroundWarning = "has-background-warning";
+    public const string HasBackgroundWhite = "has-background-white";
 
     public const string HasDropdown = "has-dropdown";
     public const string HasShadow = "has-shadow";
+    public const string HasSkeleton = "has-skeleton";
     public const string HasTextBlack = "has-text-black";
     public const string HasTextDanger = "has-text-danger";
     public const string HasTextDark = "has-text-dark";
@@ -69,6 +81,7 @@ public static class BulmaCssClass
     public const string IsPrimary = "is-primary";
     public const string IsRight = "is-right";
     public const string IsRounded = "is-rounded";
+    public const string IsSkeleton = "is-skeleton";
     public const string IsSmall = "is-small";
     public const string IsSpaced = "is-spaced";
     public const string IsSuccess = "is-success";
@@ -105,6 +118,8 @@ public static class BulmaCssClass
 
     public const string Submit = "submit";
     public const string Section = "section";
+    public const string SkeletonBlock = "skeleton-block";
+    public const string SkeletonLines = "skeleton-lines";
     public const string SubTitle = "subtitle";
 
     public const string Tabs = "tabs";

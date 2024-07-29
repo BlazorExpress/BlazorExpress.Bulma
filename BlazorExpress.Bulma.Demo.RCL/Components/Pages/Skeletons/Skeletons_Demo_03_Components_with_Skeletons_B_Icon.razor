@@ -1,0 +1,17 @@
+<Icon BootstrapIcon="BootstrapIcon.ReplyAllFill" IsSkeleton="isSkeleton" />
+<Icon BootstrapIcon="BootstrapIcon.ReplyFill" IsSkeleton="isSkeleton" />
+
+<div class="mt-5">
+    <Button Color="ButtonColor.Dark" Size="ButtonSize.Small" @onclick="ToggleSkeletonAsync">Toggle Skeleton</Button>
+</div>
+
+@code {
+    bool isSkeleton = false;
+
+    async Task ToggleSkeletonAsync()
+    {
+        isSkeleton = true;
+        await Task.Delay(3000);
+        isSkeleton = false;
+    }
+}

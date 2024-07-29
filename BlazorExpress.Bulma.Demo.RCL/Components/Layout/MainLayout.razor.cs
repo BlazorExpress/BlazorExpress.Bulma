@@ -28,6 +28,16 @@ public partial class MainLayout : MainLayoutBase
     {
         var groups = new HashSet<LinkGroup>();
 
+        // FEATURES
+        groups.Add(new LinkGroup
+        {
+            Name = "FEATURES",
+            CssClass = "is-size-7 has-text-weight-bold has-text-warning",
+            Links = [
+                    new Link { Href=@RouteConstants.Demos_Skeletons_Documentation, Text = "Skeletons" },
+            ]
+        });
+
         // ELEMENTS
         groups.Add(new LinkGroup
         {
