@@ -1,0 +1,36 @@
+@attribute [Route(pageUrl)]
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(Pagination_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Alignment" PageUrl="@pageUrl" Link="alignment">
+    <Demo Type="typeof(Pagination_Demo_02_Alignment_A_Center)" Tabs="true" />
+    <Demo Type="typeof(Pagination_Demo_02_Alignment_B_Right)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Styles" PageUrl="@pageUrl" Link="styles">
+    <Demo Type="typeof(Pagination_Demo_03_Styles)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
+    <Demo Type="typeof(Pagination_Demo_04_Sizes_A_Small)" Tabs="true" />
+    <Demo Type="typeof(Pagination_Demo_04_Sizes_B_Large)" Tabs="true" />
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Demos_Pagination_Documentation;
+    private const string pageTitle = "Pagination";
+    private const string pageDescription = "A <code>Pagination</code> component is used to indicate that a series of related content exists across multiple pages.";
+    private const string metaTitle = "Blazor Pagination Component";
+    private const string metaDescription = "A Pagination component is used to indicate that a series of related content exists across multiple pages.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}

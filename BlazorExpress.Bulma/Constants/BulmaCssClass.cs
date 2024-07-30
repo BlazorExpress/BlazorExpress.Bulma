@@ -112,6 +112,8 @@ public static class BulmaCssClass
     public const string NavbarMenu = "navbar-menu";
     public const string NavbarStart = "navbar-start";
 
+    public const string Pagination = "pagination";
+
     public const string P5 = "p-5";
 
     public const string Reset = "reset";

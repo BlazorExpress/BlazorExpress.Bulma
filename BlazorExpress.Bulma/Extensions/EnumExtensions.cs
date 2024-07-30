@@ -92,6 +92,24 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToPaginationAlignmentClass(this PaginationAlignment alignment) =>
+        alignment switch
+        {
+            PaginationAlignment.Left => BulmaCssClass.IsLeft,
+            PaginationAlignment.Center => BulmaCssClass.IsCentered,
+            PaginationAlignment.Right => BulmaCssClass.IsRight,
+            _ => null
+        };
+
+    public static string? ToPaginationSizeClass(this PaginationSize size) =>
+        size switch
+        {
+            PaginationSize.Small => BulmaCssClass.IsSmall,
+            PaginationSize.Medium => BulmaCssClass.IsMedium,
+            PaginationSize.Large => BulmaCssClass.IsLarge,
+            _ => null,
+        };
+
     public static string? ToTitleSizeClass(this HeadingSize headingSize) =>
         headingSize switch
         {
