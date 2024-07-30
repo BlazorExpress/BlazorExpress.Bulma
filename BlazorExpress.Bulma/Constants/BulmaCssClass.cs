@@ -61,8 +61,10 @@ public static class BulmaCssClass
     public const string IsBlack = "is-black";
     public const string IsBoxed = "is-boxed";
     public const string IsCentered = "is-centered";
+    public const string IsCurrent = "is-current";
     public const string IsDanger = "is-danger";
     public const string IsDark = "is-dark";
+    public const string IsDisabled = "is-disabled";
     public const string IsFullWidth = "is-fullwidth";
     public const string IsGhost = "is-ghost";
     public const string IsHidden = "is-hidden";
@@ -113,6 +115,10 @@ public static class BulmaCssClass
     public const string NavbarStart = "navbar-start";
 
     public const string Pagination = "pagination";
+    public const string PaginationLink = "pagination-link";
+    public const string PaginationList = "pagination-list";
+    public const string PaginationNext = "pagination-next";
+    public const string PaginationPrevious = "pagination-previous";
 
     public const string P5 = "p-5";
 

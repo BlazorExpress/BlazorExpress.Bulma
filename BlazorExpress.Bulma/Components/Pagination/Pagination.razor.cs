@@ -40,15 +40,6 @@ public partial class Pagination : BulmaComponentBase
     public PaginationAlignment Alignment { get; set; }
 
     /// <summary>
-    /// Gets or sets the child content.
-    /// </summary>
-    /// <remarks>
-    /// Default value is <see langword="null"/>.
-    /// </remarks>
-    [Parameter]
-    public RenderFragment? ChildContent { get; set; }
-
-    /// <summary>
     /// When set to <see langword="true"/>, changes the appearance of <see cref="PaginationItem"/> to rounded.
     /// </summary>
     /// <remarks>
@@ -65,8 +56,6 @@ public partial class Pagination : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public PaginationSize Size { get; set; }
-
-
 
     #endregion
 }

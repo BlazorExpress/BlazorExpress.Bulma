@@ -101,6 +101,14 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToPaginationLinkTypeClass(this PaginationLinkType linkType) =>
+        linkType switch
+        {
+            PaginationLinkType.Previous => BulmaCssClass.PaginationPrevious,
+            PaginationLinkType.Next => BulmaCssClass.PaginationNext,
+            _ => BulmaCssClass.PaginationLink
+        };
+
     public static string? ToPaginationSizeClass(this PaginationSize size) =>
         size switch
         {

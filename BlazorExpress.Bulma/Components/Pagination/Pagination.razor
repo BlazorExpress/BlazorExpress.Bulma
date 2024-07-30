@@ -2,5 +2,14 @@
 @inherits BulmaComponentBase
 
 <nav @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes">
-    @ChildContent
+    <PaginationLink Type="PaginationLinkType.Previous" IsDisabled="true">Previous</PaginationLink>
+    <PaginationLink Type="PaginationLinkType.Next">Next</PaginationLink>
+    <ul class="pagination-list">
+        <li>
+            <PaginationLink IsCurrentPage="true">1</PaginationLink>
+            <PaginationLink>2</PaginationLink>
+            <PaginationLink>1</PaginationLink>
+            <PaginationLink>4</PaginationLink>
+        </li>
+    </ul>
 </nav>
