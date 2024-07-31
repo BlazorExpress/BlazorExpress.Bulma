@@ -1,6 +1,7 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
+/// Tab component
 /// <see href="https://bulma.io/documentation/components/tabs/" />
 /// </summary>
 public partial class Tab : BulmaComponentBase
@@ -21,28 +22,29 @@ public partial class Tab : BulmaComponentBase
 
     #region Properties, Indexers
 
-    public string? CssClass => CssClassNames;
-
-    protected override string? CssClassNames
-        => CssUtility.BuildClassNames(
-            Class, 
+    protected override string? CssClassNames =>
+        CssUtility.BuildClassNames(
+            Class,
             ("tab-content", true),
-            (BulmaCssClass.IsActive, IsActive));
+            (BulmaCssClass.IsActive, IsActive)
+        );
 
     /// <summary>
     /// Gets or sets the child content.
     /// </summary>
     /// <remarks>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </remarks>
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
+
+    public string? CssClass => CssClassNames;
 
     /// <summary>
     /// Gets or sets the active state.
     /// </summary>
     /// <remarks>
-    /// Default value is <see langword="false"/>.
+    /// Default value is <see langword="false" />.
     /// </remarks>
     [Parameter]
     public bool IsActive { get; set; }
@@ -51,7 +53,7 @@ public partial class Tab : BulmaComponentBase
     /// Gets or sets the disabled state.
     /// </summary>
     /// <remarks>
-    /// Default value is <see langword="false"/>.
+    /// Default value is <see langword="false" />.
     /// </remarks>
     [Parameter]
     public bool IsDisabled { get; set; }
@@ -60,7 +62,7 @@ public partial class Tab : BulmaComponentBase
     /// Gets or sets the tab name.
     /// </summary>
     /// <remarks>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </remarks>
     [Parameter]
     public string? Name { get; set; }
@@ -69,7 +71,7 @@ public partial class Tab : BulmaComponentBase
     /// Gets or sets the parent.
     /// </summary>
     /// <remarks>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </remarks>
     [CascadingParameter]
     internal Tabs? Parent { get; set; }
@@ -78,7 +80,7 @@ public partial class Tab : BulmaComponentBase
     /// Gets or sets the tab title.
     /// </summary>
     /// <remarks>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </remarks>
     [Parameter]
     public string? Title { get; set; }
@@ -87,7 +89,7 @@ public partial class Tab : BulmaComponentBase
     /// Gets or sets the tab title template.
     /// </summary>
     /// <remarks>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </remarks>
     [Parameter]
     public RenderFragment? TitleTemplate { get; set; }

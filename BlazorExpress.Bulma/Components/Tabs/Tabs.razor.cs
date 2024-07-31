@@ -1,6 +1,7 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
+/// Tabs component
 /// <see href="https://bulma.io/documentation/components/tabs/" />
 /// </summary>
 public partial class Tabs : BulmaComponentBase
@@ -9,9 +10,9 @@ public partial class Tabs : BulmaComponentBase
 
     private Tab activeTab = default!;
 
-    private Tab previousActiveTab = default!;
-
     private bool isDefaultActiveTabSet = false;
+
+    private Tab previousActiveTab = default!;
 
     private List<Tab>? tabs = new();
 
@@ -27,75 +28,11 @@ public partial class Tabs : BulmaComponentBase
         base.OnAfterRender(firstRender);
     }
 
-    internal void AddTab(Tab tab)
-    {
-        tabs!.Add(tab);
-
-        if (tab is { IsActive: true, IsDisabled: false })
-            activeTab = tab;
-
-        StateHasChanged(); // This is mandatory
-    }
-
-    /// <summary>
-    /// Sets default active tab.
-    /// </summary>
-    internal void SetDefaultActiveTab()
-    {
-        if (!tabs?.Any() ?? true) return;
-
-        activeTab ??= tabs!.FirstOrDefault(x => !x.IsDisabled)!;
-
-        if (activeTab is not null)
-            activeTab.Show();
-
-        isDefaultActiveTabSet = true;
-
-        StateHasChanged();
-    }
-
-    private void ShowTab(Tab currentTab)
-    {
-        if (currentTab?.IsDisabled ?? true) return;
-
-        previousActiveTab = activeTab;
-        activeTab = currentTab;
-
-        // hide the previous active tab
-        foreach (Tab tab in tabs!)
-        {
-            if (tab.IsActive)
-            {
-                tab.Hide();
-
-                if (OnHidden.HasDelegate)
-                    OnHidden.InvokeAsync(new TabEventArgs(tab));
-            }
-        }
-
-        // show the new tab
-        foreach (Tab tab in tabs!)
-        {
-            if (tab.Id == currentTab.Id)
-            {
-                tab.Show();
-
-                if (OnShown.HasDelegate)
-                    OnShown.InvokeAsync(new TabEventArgs(tab));
-
-                continue;
-            }
-        }
-
-        if (OnTabChanged.HasDelegate)
-            OnTabChanged.InvokeAsync(new TabsEventArgs(activeTab, previousActiveTab));
-    }
-
     /// <summary>
     /// Gets the active tab.
     /// </summary>
     /// <returns>
-    /// Returns the cuurent active <see cref="Tab"/>.
+    /// Returns the cuurent active <see cref="Tab" />.
     /// </returns>
     public Tab GetActiveTab() => activeTab;
 
@@ -190,18 +127,77 @@ public partial class Tabs : BulmaComponentBase
         ShowTab(tab);
     }
 
+    internal void AddTab(Tab tab)
+    {
+        tabs!.Add(tab);
+
+        if (tab is { IsActive: true, IsDisabled: false })
+            activeTab = tab;
+
+        StateHasChanged(); // This is mandatory
+    }
+
+    /// <summary>
+    /// Sets default active tab.
+    /// </summary>
+    internal void SetDefaultActiveTab()
+    {
+        if (!tabs?.Any() ?? true) return;
+
+        activeTab ??= tabs!.FirstOrDefault(x => !x.IsDisabled)!;
+
+        if (activeTab is not null)
+            activeTab.Show();
+
+        isDefaultActiveTabSet = true;
+
+        StateHasChanged();
+    }
+
+    private void ShowTab(Tab currentTab)
+    {
+        if (currentTab?.IsDisabled ?? true) return;
+
+        previousActiveTab = activeTab;
+        activeTab = currentTab;
+
+        // hide the previous active tab
+        foreach (var tab in tabs!)
+            if (tab.IsActive)
+            {
+                tab.Hide();
+
+                if (OnHidden.HasDelegate)
+                    OnHidden.InvokeAsync(new TabEventArgs(tab));
+            }
+
+        // show the new tab
+        foreach (var tab in tabs!)
+            if (tab.Id == currentTab.Id)
+            {
+                tab.Show();
+
+                if (OnShown.HasDelegate)
+                    OnShown.InvokeAsync(new TabEventArgs(tab));
+            }
+
+        if (OnTabChanged.HasDelegate)
+            OnTabChanged.InvokeAsync(new TabsEventArgs(activeTab, previousActiveTab));
+    }
+
     #endregion
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames
-        => CssUtility.BuildClassNames(
+    protected override string? CssClassNames =>
+        CssUtility.BuildClassNames(
             Class,
             (BulmaCssClass.Tabs, true),
             (Alignment.ToTabsAlignmentClass(), Alignment != TabsAlignment.None),
             (Size.ToTabsSizeClass(), Size != TabsSize.None),
             (Type.ToTabsTypeClass(), Type != TabsType.None),
-            (BulmaCssClass.IsFullWidth, IsFullWidth));
+            (BulmaCssClass.IsFullWidth, IsFullWidth)
+        );
 
     /// <summary>
     /// Gets or sets the <see cref="Tabs" /> alignment.
@@ -223,7 +219,7 @@ public partial class Tabs : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the <see cref="Tabs" /> width.
-    /// If <see langword="true"/>, tabs will take up the whole width available.
+    /// If <see langword="true" />, tabs will take up the whole width available.
     /// </summary>
     /// <remarks>
     /// Default value is <see langword="false" />.
@@ -262,7 +258,7 @@ public partial class Tabs : BulmaComponentBase
     /// Gets or sets the tabs container CSS class.
     /// </summary>
     /// <remarks>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </remarks>
     [Parameter]
     public string? TabsContainerCssClass { get; set; }
