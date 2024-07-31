@@ -16,16 +16,14 @@ public partial class MessageHeader : BulmaComponentBase
     /// Gets or sets the child content.
     /// </summary>
     /// <remarks>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </remarks>
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
-    [CascadingParameter]
-    public Message Parent { get; set; } = default!;
+    [CascadingParameter] public Message Parent { get; set; } = default!;
 
-    [CascadingParameter(Name = "ShowDeleteButton")]
-    public bool ShowDeleteButton { get; set; } = true;
+    [CascadingParameter(Name = "ShowDeleteButton")] public bool ShowDeleteButton { get; set; } = true;
 
     #endregion
 }
