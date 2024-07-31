@@ -4,18 +4,15 @@ public partial class MenuItem : BulmaComponentBase
 {
     #region Methods
 
+    protected override void Dispose(bool disposing) => base.Dispose(disposing);
+
     protected override void OnInitialized()
     {
         //NavigationManager.LocationChanged += NavigationManager_LocationChanged;
         base.OnInitialized();
     }
 
-    private void NavigationManager_LocationChanged(object? sender, LocationChangedEventArgs e)
-    {
-
-    }
-
-    protected override void Dispose(bool disposing) => base.Dispose(disposing);
+    private void NavigationManager_LocationChanged(object? sender, LocationChangedEventArgs e) { }
 
     private async Task OnMenuItemClick()
     {
@@ -32,17 +29,18 @@ public partial class MenuItem : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames
-        => CssUtility.BuildClassNames(
+    protected override string? CssClassNames =>
+        CssUtility.BuildClassNames(
             Class,
             (BulmaCssClass.MenuItem, true),
-            (BulmaCssClass.IsActive, IsActive));
+            (BulmaCssClass.IsActive, IsActive)
+        );
 
     /// <summary>
     /// Gets or sets the child content.
     /// </summary>
     /// <remarks>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </remarks>
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
@@ -51,13 +49,12 @@ public partial class MenuItem : BulmaComponentBase
     /// Gets or sets the active state.
     /// </summary>
     /// <remarks>
-    /// Default value is <see langword="false"/>.
+    /// Default value is <see langword="false" />.
     /// </remarks>
     [Parameter]
     public bool IsActive { get; set; }
 
-    [Inject]
-    private NavigationManager NavigationManager { get; set; } = default!;
+    [Inject] private NavigationManager NavigationManager { get; set; } = default!;
 
     /// <summary>
     /// Gets or sets the parent.

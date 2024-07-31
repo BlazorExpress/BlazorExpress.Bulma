@@ -1,32 +1,26 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
+/// Menu component
 /// <see href="https://bulma.io/documentation/components/menu/" />
 /// </summary>
 public partial class Menu : BulmaComponentBase
 {
     #region Fields and Constants
 
-    private bool isVisible = false;
-
     private DeviceType deviceType;
 
-    private float width;
+    private bool isVisible = false;
 
     private DotNetObjectReference<Menu> objRef = default!;
 
     private bool requestInProgress = false;
 
+    private float width;
+
     #endregion
 
     #region Methods
-
-    protected override async Task OnInitializedAsync()
-    {
-        objRef ??= DotNetObjectReference.Create(this);
-
-        await base.OnInitializedAsync();
-    }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -42,19 +36,11 @@ public partial class Menu : BulmaComponentBase
         await base.OnAfterRenderAsync(firstRender);
     }
 
-    [JSInvokable]
-    public async Task WindowResizeJS(float width)
+    protected override async Task OnInitializedAsync()
     {
-        deviceType = width.ToDeviceTypeEnum();
-        isVisible = (deviceType != DeviceType.Mobile);
+        objRef ??= DotNetObjectReference.Create(this);
 
-        StateHasChanged();
-
-        if (OnStateChanged.HasDelegate)
-            await OnStateChanged.InvokeAsync(isVisible);
-
-        if (OnWindowResize.HasDelegate)
-            await OnWindowResize.InvokeAsync(new WindowResizeEventArgs(deviceType, width));
+        await base.OnInitializedAsync();
     }
 
     /// <summary>
@@ -62,7 +48,7 @@ public partial class Menu : BulmaComponentBase
     /// </summary>
     /// <returns>
     /// Current menu visible state.
-    /// <see langword="true"/> if the menu is visible, <see langword="false"/> if it is hidden.
+    /// <see langword="true" /> if the menu is visible, <see langword="false" /> if it is hidden.
     /// </returns>
     public Task Toggle()
     {
@@ -72,6 +58,21 @@ public partial class Menu : BulmaComponentBase
             return OnStateChanged.InvokeAsync(isVisible);
 
         return Task.CompletedTask;
+    }
+
+    [JSInvokable]
+    public async Task WindowResizeJS(float width)
+    {
+        deviceType = width.ToDeviceTypeEnum();
+        isVisible = deviceType != DeviceType.Mobile;
+
+        StateHasChanged();
+
+        if (OnStateChanged.HasDelegate)
+            await OnStateChanged.InvokeAsync(isVisible);
+
+        if (OnWindowResize.HasDelegate)
+            await OnWindowResize.InvokeAsync(new WindowResizeEventArgs(deviceType, width));
     }
 
     internal Task HideMenu()
@@ -93,31 +94,29 @@ public partial class Menu : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames
-        => CssUtility.BuildClassNames(
+    protected override string? CssClassNames =>
+        CssUtility.BuildClassNames(
             Class,
             (BulmaCssClass.Menu, true),
             ("is-scrollable", IsScrollable),
             (BulmaCssClass.P5, true),
-            (BulmaCssClass.IsHidden, !isVisible));
+            (BulmaCssClass.IsHidden, !isVisible)
+        );
 
     /// <summary>
     /// Gets or sets the child content.
     /// </summary>
     /// <remarks>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </remarks>
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
-    [Parameter]
-    public bool IsScrollable { get; set; }
+    [Parameter] public bool IsScrollable { get; set; }
 
-    [Parameter]
-    public EventCallback<WindowResizeEventArgs> OnWindowResize { get; set; }
+    [Parameter] public EventCallback<bool> OnStateChanged { get; set; }
 
-    [Parameter]
-    public EventCallback<bool> OnStateChanged { get; set; }
+    [Parameter] public EventCallback<WindowResizeEventArgs> OnWindowResize { get; set; }
 
     #endregion
 }

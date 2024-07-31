@@ -1,20 +1,20 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
+/// Block component
 /// <see href="https://bulma.io/documentation/elements/block/" />
 /// </summary>
 public partial class Block : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? CssClassNames
-        => CssUtility.BuildClassNames(Class, (BulmaCssClass.Block, true));
+    protected override string? CssClassNames => CssUtility.BuildClassNames(Class, (BulmaCssClass.Block, true));
 
     /// <summary>
     /// Gets or sets the child content.
     /// </summary>
     /// <remarks>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </remarks>
     [Parameter]
     public RenderFragment? ChildContent { get; set; }

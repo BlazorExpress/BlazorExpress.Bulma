@@ -4,18 +4,12 @@ public partial class Icon : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? CssClassNames
-        => CssUtility.BuildClassNames(
+    protected override string? CssClassNames =>
+        CssUtility.BuildClassNames(
             Class,
             (BootstrapIconUtility.Icon(), BootstrapIcon != BootstrapIcon.None),
-            (BootstrapIconUtility.Icon(BootstrapIcon), BootstrapIcon != BootstrapIcon.None));
-
-    private string? IconContainerCssClassNames
-        => CssUtility.BuildClassNames(
-            (BulmaCssClass.Icon, true),
-            (Color.ToIconColorClass(), Color != IconColor.None),
-            (Size.ToIconSizeClass(), Size != IconSize.None),
-            (BulmaCssClass.IsSkeleton, IsSkeleton));
+            (BootstrapIconUtility.Icon(BootstrapIcon), BootstrapIcon != BootstrapIcon.None)
+        );
 
     /// <summary>
     /// If true, icon color is applied to the text.
@@ -39,7 +33,7 @@ public partial class Icon : BulmaComponentBase
     /// Gets or sets the child content.
     /// </summary>
     /// <remarks>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </remarks>
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
@@ -52,6 +46,14 @@ public partial class Icon : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public IconColor Color { get; set; } = IconColor.None;
+
+    private string? IconContainerCssClassNames =>
+        CssUtility.BuildClassNames(
+            (BulmaCssClass.Icon, true),
+            (Color.ToIconColorClass(), Color != IconColor.None),
+            (Size.ToIconSizeClass(), Size != IconSize.None),
+            (BulmaCssClass.IsSkeleton, IsSkeleton)
+        );
 
     /// <summary>
     /// If true, the skeleton variant will be enabled.
@@ -81,10 +83,11 @@ public partial class Icon : BulmaComponentBase
     [Parameter]
     public IconSize Size { get; set; } = IconSize.None;
 
-    private string? TextCssClassNames
-        => CssUtility.BuildClassNames(
-            (@BulmaCssClass.IconText, true),
-            (Color.ToIconColorClass(), Color != IconColor.None && ApplyColorToText));
+    private string? TextCssClassNames =>
+        CssUtility.BuildClassNames(
+            (BulmaCssClass.IconText, true),
+            (Color.ToIconColorClass(), Color != IconColor.None && ApplyColorToText)
+        );
 
     #endregion
 }

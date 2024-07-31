@@ -79,13 +79,15 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
 
     #region Properties, Indexers
 
-    [Parameter(CaptureUnmatchedValues = true)]
+    [Parameter(CaptureUnmatchedValues = true)] 
     public Dictionary<string, object> AdditionalAttributes { get; set; } = default!;
 
     [Parameter] 
     public string? Class { get; set; }
 
     protected virtual string? CssClassNames => Class;
+
+    protected virtual string? CssStyleNames => Style;
 
     public ElementReference Element { get; set; }
 
@@ -99,8 +101,6 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
 
     [Parameter] 
     public string? Style { get; set; }
-
-    protected virtual string? CssStyleNames => @Style;
 
     #endregion
 
