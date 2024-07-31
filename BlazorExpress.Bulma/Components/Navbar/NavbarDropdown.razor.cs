@@ -4,17 +4,19 @@ public partial class NavbarDropdown : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? CssClassNames => CssUtility.BuildClassNames(
-        Class, 
-        (BulmaCssClass.NavbarDropdown, true),
-        (Position.ToNavbarDropdownPositionClass(), true),
-        ("px-1", true));
+    protected override string? CssClassNames =>
+        CssUtility.BuildClassNames(
+            Class,
+            (BulmaCssClass.NavbarDropdown, true),
+            (Position.ToNavbarDropdownPositionClass(), true),
+            ("px-1", true)
+        );
 
     /// <summary>
     /// Gets or sets the child content.
     /// </summary>
     /// <remarks>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </remarks>
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
@@ -23,7 +25,7 @@ public partial class NavbarDropdown : BulmaComponentBase
     /// Gets or sets the navbar dropdown position.
     /// </summary>
     /// <remarks>
-    /// Default value is <see cref="NavbarDropdownPosition.Left"/>.
+    /// Default value is <see cref="NavbarDropdownPosition.Left" />.
     /// </remarks>
     [Parameter]
     public NavbarDropdownPosition Position { get; set; } = NavbarDropdownPosition.Left;

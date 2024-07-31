@@ -4,12 +4,13 @@ public partial class NavbarItem : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? CssClassNames
-        => CssUtility.BuildClassNames(
+    protected override string? CssClassNames =>
+        CssUtility.BuildClassNames(
             Class,
             (BulmaCssClass.NavbarItem, true),
             (BulmaCssClass.HasDropdown, HasDropdown),
-            (BulmaCssClass.IsHoverable, IsHoverable));
+            (BulmaCssClass.IsHoverable, IsHoverable)
+        );
 
     /// <summary>
     /// Gets or sets the child content.
