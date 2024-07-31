@@ -1,15 +1,42 @@
 @namespace BlazorExpress.Bulma
 @inherits BulmaComponentBase
 
-<nav @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes">
-    <PaginationLink Type="PaginationLinkType.Previous" IsDisabled="true">Previous</PaginationLink>
-    <PaginationLink Type="PaginationLinkType.Next">Next</PaginationLink>
-    <ul class="pagination-list">
-        <li>
-            <PaginationLink IsCurrentPage="true">1</PaginationLink>
-            <PaginationLink>2</PaginationLink>
-            <PaginationLink>1</PaginationLink>
-            <PaginationLink>4</PaginationLink>
-        </li>
+<nav @attributes="@AdditionalAttributes" class="@CssClassNames" id="@Id" @ref="@Element" style="@CssStyleNames">
+    <PaginationItem IsDisabled="ActivePageNumber == 1" @onclick="GoToPreviousPage" Type="PaginationLinkType.Previous">
+        @if (PreviousButtonTemplate is not null)
+        {
+            @PreviousButtonTemplate
+        }
+        else
+        {
+            <text>Previous</text>
+        }
+    </PaginationItem>
+    <PaginationItem IsDisabled="ActivePageNumber == TotalPages || TotalPages == 0 || TotalPages == 1" @onclick="GoToNextPage" Type="PaginationLinkType.Next">
+        @if (PreviousButtonTemplate is not null)
+        {
+            @PreviousButtonTemplate
+        }
+        else
+        {
+            <text>Next</text>
+        }
+    </PaginationItem>
+    <ul class="@BulmaCssClass.PaginationList">
+        @if (PageFromInclusive > 1)
+        {
+            <PaginationItem @onclick="() => GoToPage(PageFromInclusive - 1)">...</PaginationItem>
+        }
+        @for (var i = PageFromInclusive; i <= PageToExclusive; i++)
+        {
+            var j = i; // local scope
+            <li>
+                <PaginationItem IsCurrentPage="ActivePageNumber == i" @onclick="() => GoToPage(j)">@j</PaginationItem>
+            </li>
+        }
+        @if (PageToExclusive < TotalPages)
+        {
+            <PaginationItem @onclick="() => GoToPage(PageToExclusive + 1)">...</PaginationItem>
+        }
     </ul>
 </nav>
