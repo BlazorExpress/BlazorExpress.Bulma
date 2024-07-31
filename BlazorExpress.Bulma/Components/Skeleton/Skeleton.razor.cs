@@ -1,23 +1,25 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
+/// Skeleton component
 /// <see href="https://bulma.io/documentation/features/skeletons/" />
 /// </summary>
 public partial class Skeleton : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? CssClassNames
-        => CssUtility.BuildClassNames(
-            Class, 
+    protected override string? CssClassNames =>
+        CssUtility.BuildClassNames(
+            Class,
             (Type.ToSkeletonTypeClass(), true),
-            (Color.ToSkeletonColorClass(), Color != SkeletonColor.None));
+            (Color.ToSkeletonColorClass(), Color != SkeletonColor.None)
+        );
 
     /// <summary>
     /// Gets or sets the child content.
     /// </summary>
     /// <remarks>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </remarks>
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
@@ -31,8 +33,7 @@ public partial class Skeleton : BulmaComponentBase
     [Parameter]
     public SkeletonColor Color { get; set; }
 
-    [Parameter]
-    public SkeletonType Type { get; set; } = SkeletonType.Block;
+    [Parameter] public SkeletonType Type { get; set; } = SkeletonType.Block;
 
     #endregion
 }
