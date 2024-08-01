@@ -1,0 +1,22 @@
+@attribute [Route(pageUrl)]
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(Block_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Demos_Block_Documentation;
+    private const string pageTitle = "Block";
+    private const string pageDescription = "The <code>Block</code> component is a simple spacer tool. It allows sibling HTML elements to have a consistent margin between them.";
+    private const string metaTitle = "Blazor Block Component";
+    private const string metaDescription = "The Block component is a simple spacer tool. It allows sibling HTML elements to have a consistent margin between them.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}
