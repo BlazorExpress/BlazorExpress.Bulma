@@ -1,6 +1,16 @@
 @namespace BlazorExpress.Bulma
 @inherits BulmaComponentBase
+@typeparam TItem
 
-<div @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes">
+<CascadingValue Value="@(this)" IsFixed="true">
     @ChildContent
-</div>
+</CascadingValue>
+
+@if (columns.Any())
+{
+    <div class="@GridContainerClassNames" style="@GridContainerStyleNames">
+        <table @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes">
+
+        </table>
+    </div>
+}

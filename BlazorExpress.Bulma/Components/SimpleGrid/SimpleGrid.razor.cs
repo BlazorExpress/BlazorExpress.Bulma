@@ -1,20 +1,18 @@
 ﻿namespace BlazorExpress.Bulma;
 
-public partial class SimpleGrid : BulmaComponentBase
+public partial class SimpleGrid<TItem> : BulmaComponentBase
 {
+    #region Fields and Constants
+
+    private CancellationTokenSource cancellationTokenSource = default!;
+
+    private List<SimpleGridColumn> columns = new();
+
+    #endregion
+
     #region Properties, Indexers
 
     protected override string? CssClassNames => CssUtility.BuildClassNames(Class, (BulmaCssClass.Block, true));
-
-    /// <summary>
-    /// Gets or sets the child content.
-    /// </summary>
-    /// <remarks>
-    /// Default value is <see langword="null" />.
-    /// </remarks>
-    [Parameter]
-    public RenderFragment? ChildContent { get; set; }
-
 
     /// <summary>
     /// Gets or sets the grid paging.
@@ -45,6 +43,15 @@ public partial class SimpleGrid : BulmaComponentBase
     public bool AutoHidePaging { get; set; }
 
     /// <summary>
+    /// Gets or sets the child content.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null" />.
+    /// </remarks>
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    /// <summary>
     /// Gets or sets the empty text.
     /// Shows text on no records.
     /// </summary>
@@ -55,6 +62,26 @@ public partial class SimpleGrid : BulmaComponentBase
     public string EmptyText { get; set; } = "No records to display";
 
     /// <summary>
+    /// Gets or sets the grid container css class.
+    /// </summary>
+    [Parameter]
+    public string? GridContainerClass { get; set; }
+
+    private string? GridContainerClassNames =>
+        CssUtility.BuildClassNames(
+            GridContainerClass,
+            (BulmaCssClass.TableContianer, IsResponsive)
+        );
+
+    /// <summary>
+    /// Gets or sets the grid container css style.
+    /// </summary>
+    [Parameter]
+    public string? GridContainerStyle { get; set; }
+
+    private string? GridContainerStyleNames => GridContainerStyle;
+
+    /// <summary>
     /// Gets or sets the grid height.
     /// </summary>
     /// <remarks>
@@ -62,6 +89,15 @@ public partial class SimpleGrid : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public float Height { get; set; } = 320;
+
+    /// <summary>
+    /// Gets or sets a value indicating whether the grid is responsive.
+    /// </summary>
+    /// <remarks>
+    /// Default value is false.
+    /// </remarks>
+    [Parameter]
+    public bool IsResponsive { get; set; }
 
     /// <summary>
     /// Gets or sets the items per page text.
@@ -112,15 +148,6 @@ public partial class SimpleGrid : BulmaComponentBase
     public string PaginationItemsTextFormat { get; set; } = "{0} - {1} of {2} items"!;
 
     /// <summary>
-    /// Gets or sets a value indicating whether the grid is responsive.
-    /// </summary>
-    /// <remarks>
-    /// Default value is false.
-    /// </remarks>
-    [Parameter]
-    public bool Responsive { get; set; }
-
-    /// <summary>
     /// Gets or sets the units.
     /// </summary>
     /// <remarks>
@@ -128,8 +155,6 @@ public partial class SimpleGrid : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public Unit Unit { get; set; } = Unit.Px;
-
-
 
     #endregion
 }

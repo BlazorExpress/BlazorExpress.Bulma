@@ -130,6 +130,8 @@ public static class BulmaCssClass
     public const string SkeletonLines = "skeleton-lines";
     public const string SubTitle = "subtitle";
 
+    public const string Table = "table";
+    public const string TableContianer = "table-container";
     public const string Tabs = "tabs";
     public const string Title = "title";
 
