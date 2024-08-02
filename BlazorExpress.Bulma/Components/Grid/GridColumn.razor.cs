@@ -1,8 +1,17 @@
 ﻿namespace BlazorExpress.Bulma;
 
-public partial class SimpleGridColumn : BulmaComponentBase
+public class GridColumn : BulmaComponentBase
 {
+    #region Fields and Constants
+
+    private RenderFragment? cellTemplate;
+    private RenderFragment? headerTemplate;
+
+    #endregion
+
     #region Properties, Indexers
+
+    internal RenderFragment CellTemplate => null;
 
     /// <summary>
     /// Gets or sets the child content.
@@ -12,6 +21,8 @@ public partial class SimpleGridColumn : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
+
+    internal RenderFragment HeaderTemplate => null;
 
     #endregion
 }

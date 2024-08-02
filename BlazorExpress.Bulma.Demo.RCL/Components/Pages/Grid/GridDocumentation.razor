@@ -1,0 +1,22 @@
+@attribute [Route(pageUrl)]
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(Grid_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Demos_Grid_Documentation;
+    private const string pageTitle = "Grid";
+    private const string pageDescription = "The <code>Grid</code> component is a simple spacer tool. It allows sibling HTML elements to have a consistent margin between them.";
+    private const string metaTitle = "Blazor Grid Component";
+    private const string metaDescription = "The Grid component is a simple spacer tool. It allows sibling HTML elements to have a consistent margin between them.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}

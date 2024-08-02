@@ -1,0 +1,29 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+@typeparam TItem
+
+<CascadingValue Value="@(this)" IsFixed="true">
+    @ChildContent
+</CascadingValue>
+
+@if (columns.Any())
+{
+    <div class="@GridContainerClassNames" style="@GridContainerStyleNames">
+        <table @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes">
+            <thead class="@GridTheadClassNames" style="@GridTheadStyleNames">
+            <tr class="@GridTheadRowClassNames" style="@GridTheadRowStyleNames">
+                @foreach (var column in columns)
+                {
+                    <th></th>
+                }
+            </tr>
+            </thead>
+            <tbody class="@GridTbodyClassNames" style="@GridTbodyStyleNames">
+                @foreach (var item in items)
+                {
+
+                }
+            </tbody>
+        </table>
+    </div>
+}

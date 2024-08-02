@@ -1,12 +1,14 @@
 ﻿namespace BlazorExpress.Bulma;
 
-public partial class SimpleGrid<TItem> : BulmaComponentBase
+public partial class Grid<TItem> : BulmaComponentBase
 {
     #region Fields and Constants
 
     private CancellationTokenSource cancellationTokenSource = default!;
 
-    private List<SimpleGridColumn> columns = new();
+    private List<GridColumn> columns = new();
+
+    private List<TItem>? items = null;
 
     #endregion
 
@@ -52,6 +54,15 @@ public partial class SimpleGrid<TItem> : BulmaComponentBase
     public RenderFragment? ChildContent { get; set; }
 
     /// <summary>
+    /// Gets or sets the grid data.
+    /// </summary>
+    /// <remarks>
+    /// Default value is null.
+    /// </remarks>
+    [Parameter]
+    public IEnumerable<TItem> Data { get; set; } = default!;
+
+    /// <summary>
     /// Gets or sets the empty text.
     /// Shows text on no records.
     /// </summary>
@@ -82,6 +93,54 @@ public partial class SimpleGrid<TItem> : BulmaComponentBase
     private string? GridContainerStyleNames => GridContainerStyle;
 
     /// <summary>
+    /// Gets or sets the tbody element css class.
+    /// </summary>
+    [Parameter]
+    public string? GridTbodyClass { get; set; }
+
+    private string? GridTbodyClassNames => GridTheadClass;
+
+    /// <summary>
+    /// Gets or sets the tbody element css style.
+    /// </summary>
+    [Parameter]
+    public string? GridTbodyStyle { get; set; }
+
+    private string? GridTbodyStyleNames => GridTheadStyle;
+
+    /// <summary>
+    /// Gets or sets the thead element css class.
+    /// </summary>
+    [Parameter]
+    public string? GridTheadClass { get; set; }
+
+    private string? GridTheadClassNames => GridTheadClass;
+
+    /// <summary>
+    /// Gets or sets the thead's tr element css class.
+    /// </summary>
+    [Parameter]
+    public string? GridTheadRowClass { get; set; }
+
+    private string? GridTheadRowClassNames => GridTheadClass;
+
+    /// <summary>
+    /// Gets or sets the thead's tr element css style.
+    /// </summary>
+    [Parameter]
+    public string? GridTheadRowStyle { get; set; }
+
+    private string? GridTheadRowStyleNames => GridTheadStyle;
+
+    /// <summary>
+    /// Gets or sets the thead element css style.
+    /// </summary>
+    [Parameter]
+    public string? GridTheadStyle { get; set; }
+
+    private string? GridTheadStyleNames => GridTheadStyle;
+
+    /// <summary>
     /// Gets or sets the grid height.
     /// </summary>
     /// <remarks>
@@ -106,7 +165,6 @@ public partial class SimpleGrid<TItem> : BulmaComponentBase
     /// Default value is 'Items per page'.
     /// </remarks>
     [Parameter]
-    //[EditorRequired] 
     public string ItemsPerPageText { get; set; } = "Items per page"!;
 
     /// <summary>
