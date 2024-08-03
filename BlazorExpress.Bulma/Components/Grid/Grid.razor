@@ -11,17 +11,50 @@
     <div class="@GridContainerClassNames" style="@GridContainerStyleNames">
         <table @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes">
             <thead class="@GridTheadClassNames" style="@GridTheadStyleNames">
-            <tr class="@GridTheadRowClassNames" style="@GridTheadRowStyleNames">
-                @foreach (var column in columns)
-                {
-                    <th></th>
-                }
-            </tr>
+                <tr class="@GridTheadRowClassNames" style="@GridTheadRowStyleNames">
+                    @foreach (var column in columns)
+                    {
+                        <th class="@column.ThClassNames" style="@column.ThStyleNames">
+                            @if (column.HeaderTemplate is not null)
+                            {
+                                @column.HeaderTemplate
+                            }
+                            else
+                            {
+                                @column.HeaderText
+                            }
+                        </th>
+                    }
+                </tr>
             </thead>
             <tbody class="@GridTbodyClassNames" style="@GridTbodyStyleNames">
-                @foreach (var item in items)
+                @if (Items?.Any() ?? false)
                 {
+                    @foreach (var item in Items)
+                    {
+                        <tr>
+                            @foreach (var column in columns)
+                            {
+                                <td id="@column.Id" class="@column.GridColumnCssClassNames" style="@column.GridColumnCssStyleNames" @attributes="@column.AdditionalAttributes">
 
+                                    @if (column.CellTemplate is not null)
+                                    {
+                                        @column.CellTemplate
+                                    }
+                                    else
+                                    {
+                                        @column.ChildContent
+                                    }
+                                </td>
+                            }
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="2">Loading...</td>
+                    </tr>
                 }
             </tbody>
         </table>

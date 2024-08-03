@@ -6,15 +6,34 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     private CancellationTokenSource cancellationTokenSource = default!;
 
-    private List<GridColumn> columns = new();
+    private List<GridColumn<TItem>> columns = new();
 
-    private List<TItem>? items = null;
+    #endregion
+
+    #region Methods
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        base.OnAfterRender(firstRender);
+        StateHasChanged();
+    }
+
+    internal void AddColumn(GridColumn<TItem> column) => columns.Add(column);
 
     #endregion
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames => CssUtility.BuildClassNames(Class, (BulmaCssClass.Block, true));
+    protected override string? CssClassNames => CssUtility.BuildClassNames(Class, (BulmaCssClass.Table, true));
+
+    /// <summary>
+    /// Gets or sets the grid filtering.
+    /// </summary>
+    /// <remarks>
+    /// Default value is false.
+    /// </remarks>
+    [Parameter]
+    public bool AllowFiltering { get; set; }
 
     /// <summary>
     /// Gets or sets the grid paging.
@@ -54,15 +73,6 @@ public partial class Grid<TItem> : BulmaComponentBase
     public RenderFragment? ChildContent { get; set; }
 
     /// <summary>
-    /// Gets or sets the grid data.
-    /// </summary>
-    /// <remarks>
-    /// Default value is null.
-    /// </remarks>
-    [Parameter]
-    public IEnumerable<TItem> Data { get; set; } = default!;
-
-    /// <summary>
     /// Gets or sets the empty text.
     /// Shows text on no records.
     /// </summary>
@@ -72,73 +82,73 @@ public partial class Grid<TItem> : BulmaComponentBase
     [Parameter]
     public string EmptyText { get; set; } = "No records to display";
 
+    private string? GridContainerClassNames =>
+        CssUtility.BuildClassNames(
+            GridContainerCssClass,
+            (BulmaCssClass.TableContianer, IsResponsive)
+        );
+
     /// <summary>
     /// Gets or sets the grid container css class.
     /// </summary>
     [Parameter]
-    public string? GridContainerClass { get; set; }
-
-    private string? GridContainerClassNames =>
-        CssUtility.BuildClassNames(
-            GridContainerClass,
-            (BulmaCssClass.TableContianer, IsResponsive)
-        );
+    public string? GridContainerCssClass { get; set; }
 
     /// <summary>
     /// Gets or sets the grid container css style.
     /// </summary>
     [Parameter]
-    public string? GridContainerStyle { get; set; }
+    public string? GridContainerCssStyle { get; set; }
 
-    private string? GridContainerStyleNames => GridContainerStyle;
+    private string? GridContainerStyleNames => GridContainerCssStyle;
+
+    private string? GridTbodyClassNames => GridTheadCssClass;
 
     /// <summary>
     /// Gets or sets the tbody element css class.
     /// </summary>
     [Parameter]
-    public string? GridTbodyClass { get; set; }
-
-    private string? GridTbodyClassNames => GridTheadClass;
+    public string? GridTbodyCssClass { get; set; }
 
     /// <summary>
     /// Gets or sets the tbody element css style.
     /// </summary>
     [Parameter]
-    public string? GridTbodyStyle { get; set; }
+    public string? GridTbodyCssStyle { get; set; }
 
-    private string? GridTbodyStyleNames => GridTheadStyle;
+    private string? GridTbodyStyleNames => GridTheadCssStyle;
+
+    private string? GridTheadClassNames => GridTheadCssClass;
 
     /// <summary>
     /// Gets or sets the thead element css class.
     /// </summary>
     [Parameter]
-    public string? GridTheadClass { get; set; }
-
-    private string? GridTheadClassNames => GridTheadClass;
-
-    /// <summary>
-    /// Gets or sets the thead's tr element css class.
-    /// </summary>
-    [Parameter]
-    public string? GridTheadRowClass { get; set; }
-
-    private string? GridTheadRowClassNames => GridTheadClass;
-
-    /// <summary>
-    /// Gets or sets the thead's tr element css style.
-    /// </summary>
-    [Parameter]
-    public string? GridTheadRowStyle { get; set; }
-
-    private string? GridTheadRowStyleNames => GridTheadStyle;
+    public string? GridTheadCssClass { get; set; }
 
     /// <summary>
     /// Gets or sets the thead element css style.
     /// </summary>
     [Parameter]
-    public string? GridTheadStyle { get; set; }
+    public string? GridTheadCssStyle { get; set; }
 
-    private string? GridTheadStyleNames => GridTheadStyle;
+    private string? GridTheadRowClassNames => GridTheadCssClass;
+
+    /// <summary>
+    /// Gets or sets the thead's tr element css class.
+    /// </summary>
+    [Parameter]
+    public string? GridTheadRowCssClass { get; set; }
+
+    /// <summary>
+    /// Gets or sets the thead's tr element css style.
+    /// </summary>
+    [Parameter]
+    public string? GridTheadRowCssStyle { get; set; }
+
+    private string? GridTheadRowStyleNames => GridTheadRowCssStyle;
+
+    private string? GridTheadStyleNames => GridTheadCssStyle;
 
     /// <summary>
     /// Gets or sets the grid height.
@@ -159,6 +169,15 @@ public partial class Grid<TItem> : BulmaComponentBase
     public bool IsResponsive { get; set; }
 
     /// <summary>
+    /// Gets or sets the grid data.
+    /// </summary>
+    /// <remarks>
+    /// Default value is null.
+    /// </remarks>
+    [Parameter]
+    public IEnumerable<TItem> Items { get; set; } = default!;
+
+    /// <summary>
     /// Gets or sets the items per page text.
     /// </summary>
     /// <remarks>
@@ -166,6 +185,16 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public string ItemsPerPageText { get; set; } = "Items per page"!;
+
+    /// <summary>
+    /// DataProvider is for items to render.
+    /// The provider should always return an instance of 'GridDataProviderResult', and 'null' is not allowed.
+    /// </summary>
+    /// <remarks>
+    /// Default value is null.
+    /// </remarks>
+    [Parameter]
+    public GridItemsProvider<TItem> ItemsProvider { get; set; } = default!;
 
     /// <summary>
     /// Gets or sets the page size.
@@ -202,7 +231,6 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// Default value is '{0} - {1} of {2} items'.
     /// </remarks>
     [Parameter]
-    //[EditorRequired]
     public string PaginationItemsTextFormat { get; set; } = "{0} - {1} of {2} items"!;
 
     /// <summary>
