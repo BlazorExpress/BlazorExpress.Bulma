@@ -14,16 +14,16 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     #region Methods
 
-    protected override void OnInitialized()
-    {
-        isLoading = true;
-        base.OnInitialized();
-    }
-
     protected override void OnAfterRender(bool firstRender)
     {
         isLoading = false;
         base.OnAfterRender(firstRender);
+    }
+
+    protected override void OnInitialized()
+    {
+        isLoading = true;
+        base.OnInitialized();
     }
 
     internal void AddColumn(GridColumn<TItem> column)
@@ -36,16 +36,18 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames 
-        => CssUtility.BuildClassNames(
-            Class, 
+    protected override string? CssClassNames =>
+        CssUtility.BuildClassNames(
+            Class,
             (BulmaCssClass.Table, true),
-            (BulmaCssClass.IsFullWidth, IsFullWidth));
+            (BulmaCssClass.IsFullWidth, IsFullWidth)
+        );
 
-    protected override string? CssStyleNames
-        => CssUtility.BuildStyleNames(
+    protected override string? CssStyleNames =>
+        CssUtility.BuildStyleNames(
             Style,
-            ($"{BulmaCssVariable.SkeletonBlockMinHeight}:{SkeletonBlockMinHeight.ToString(CultureInfo.InvariantCulture)}{Unit.ToUnitCssString()};", true));
+            ($"{BulmaCssVariable.SkeletonBlockMinHeight}:{SkeletonBlockMinHeight.ToString(CultureInfo.InvariantCulture)}{Unit.ToUnitCssString()};", true)
+        );
 
     /// <summary>
     /// Gets or sets the grid filtering.
@@ -94,15 +96,6 @@ public partial class Grid<TItem> : BulmaComponentBase
     public RenderFragment? ChildContent { get; set; }
 
     /// <summary>
-    /// Gets or sets the empty data text.
-    /// </summary>
-    /// <remarks>
-    /// Default value is 'No records to display'.
-    /// </remarks>
-    [Parameter]
-    public string EmptyDataText { get; set; } = "No records to display";
-
-    /// <summary>
     /// Gets or sets the empty data template.
     /// </summary>
     /// <remarks>
@@ -112,13 +105,13 @@ public partial class Grid<TItem> : BulmaComponentBase
     public RenderFragment? EmptyDataTemplate { get; set; }
 
     /// <summary>
-    /// Gets or sets the loading template.
+    /// Gets or sets the empty data text.
     /// </summary>
     /// <remarks>
-    /// Default value is null.
+    /// Default value is 'No records to display'.
     /// </remarks>
     [Parameter]
-    public RenderFragment? LoadingTemplate { get; set; }
+    public string EmptyDataText { get; set; } = "No records to display";
 
     private string? GridContainerClassNames =>
         CssUtility.BuildClassNames(
@@ -197,6 +190,8 @@ public partial class Grid<TItem> : BulmaComponentBase
     [Parameter]
     public float Height { get; set; } = 320;
 
+    [Parameter] public bool IsFullWidth { get; set; } = true;
+
     /// <summary>
     /// Gets or sets a value indicating whether the grid is responsive.
     /// </summary>
@@ -235,6 +230,15 @@ public partial class Grid<TItem> : BulmaComponentBase
     public GridItemsProvider<TItem> ItemsProvider { get; set; } = default!;
 
     /// <summary>
+    /// Gets or sets the loading template.
+    /// </summary>
+    /// <remarks>
+    /// Default value is null.
+    /// </remarks>
+    [Parameter]
+    public RenderFragment? LoadingTemplate { get; set; }
+
+    /// <summary>
     /// Gets or sets the page size.
     /// </summary>
     /// <remarks>
@@ -271,6 +275,8 @@ public partial class Grid<TItem> : BulmaComponentBase
     [Parameter]
     public string PaginationItemsTextFormat { get; set; } = "{0} - {1} of {2} items"!;
 
+    [Parameter] public float SkeletonBlockMinHeight { get; set; } = 20;
+
     /// <summary>
     /// Gets or sets the units.
     /// </summary>
@@ -279,11 +285,6 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public Unit Unit { get; set; } = Unit.Px;
-
-
-    [Parameter] public bool IsFullWidth { get; set; } = true;
-
-    [Parameter] public float SkeletonBlockMinHeight { get; set; } = 20;
 
     #endregion
 }

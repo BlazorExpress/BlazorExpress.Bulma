@@ -81,8 +81,19 @@
                 }
                 else
                 {
+                    // show empty
                     <tr>
-                        <td colspan="2">Loading...</td>
+                        <td colspan="@columnCount">
+                            @if (EmptyDataTemplate is not null)
+                            {
+                                @EmptyDataTemplate
+                            }
+                            else{
+                                <div class="has-text-centered has-text-dark my-5">
+                                    <div>@EmptyDataText</div>
+                                </div>
+                            }
+                        </td>
                     </tr>
                 }
             </tbody>
