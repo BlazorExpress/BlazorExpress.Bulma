@@ -14,13 +14,15 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     protected override void OnInitialized()
     {
         Parent.AddColumn(this);
+
+        base.OnInitializedAsync();
     }
 
     #endregion
 
     #region Properties, Indexers
 
-    [Parameter] public RenderFragment? CellTemplate { get; set; }
+    [Parameter] public RenderFragment<TItem>? CellTemplate { get; set; }
 
     /// <summary>
     /// Gets or sets the child content.

@@ -8,23 +8,44 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     private List<GridColumn<TItem>> columns = new();
 
+    private bool isLoading;
+
     #endregion
 
     #region Methods
 
-    protected override void OnAfterRender(bool firstRender)
+    protected override void OnInitialized()
     {
-        base.OnAfterRender(firstRender);
-        StateHasChanged();
+        isLoading = true;
+        base.OnInitialized();
     }
 
-    internal void AddColumn(GridColumn<TItem> column) => columns.Add(column);
+    protected override void OnAfterRender(bool firstRender)
+    {
+        isLoading = false;
+        base.OnAfterRender(firstRender);
+    }
+
+    internal void AddColumn(GridColumn<TItem> column)
+    {
+        columns.Add(column);
+        StateHasChanged(); // TODO: check this is required or not?
+    }
 
     #endregion
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames => CssUtility.BuildClassNames(Class, (BulmaCssClass.Table, true));
+    protected override string? CssClassNames 
+        => CssUtility.BuildClassNames(
+            Class, 
+            (BulmaCssClass.Table, true),
+            (BulmaCssClass.IsFullWidth, IsFullWidth));
+
+    protected override string? CssStyleNames
+        => CssUtility.BuildStyleNames(
+            Style,
+            ($"{BulmaCssVariable.SkeletonBlockMinHeight}:{SkeletonBlockMinHeight.ToString(CultureInfo.InvariantCulture)}{Unit.ToUnitCssString()};", true));
 
     /// <summary>
     /// Gets or sets the grid filtering.
@@ -73,14 +94,31 @@ public partial class Grid<TItem> : BulmaComponentBase
     public RenderFragment? ChildContent { get; set; }
 
     /// <summary>
-    /// Gets or sets the empty text.
-    /// Shows text on no records.
+    /// Gets or sets the empty data text.
     /// </summary>
     /// <remarks>
     /// Default value is 'No records to display'.
     /// </remarks>
     [Parameter]
-    public string EmptyText { get; set; } = "No records to display";
+    public string EmptyDataText { get; set; } = "No records to display";
+
+    /// <summary>
+    /// Gets or sets the empty data template.
+    /// </summary>
+    /// <remarks>
+    /// Default value is null.
+    /// </remarks>
+    [Parameter]
+    public RenderFragment? EmptyDataTemplate { get; set; }
+
+    /// <summary>
+    /// Gets or sets the loading template.
+    /// </summary>
+    /// <remarks>
+    /// Default value is null.
+    /// </remarks>
+    [Parameter]
+    public RenderFragment? LoadingTemplate { get; set; }
 
     private string? GridContainerClassNames =>
         CssUtility.BuildClassNames(
@@ -241,6 +279,11 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public Unit Unit { get; set; } = Unit.Px;
+
+
+    [Parameter] public bool IsFullWidth { get; set; } = true;
+
+    [Parameter] public float SkeletonBlockMinHeight { get; set; } = 20;
 
     #endregion
 }
