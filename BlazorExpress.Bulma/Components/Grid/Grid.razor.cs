@@ -10,25 +10,38 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     private bool isLoading;
 
+    private IEnumerable<TItem> items = default!;
+
+    private object? lastAssignedDataOrDataProvider;
+
+    private int totalCount;
+
     #endregion
 
     #region Methods
 
-    protected override void OnAfterRender(bool firstRender)
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        Console.WriteLine($"Grid.OnAfterRender() called");
-        isLoading = false;
+        Console.WriteLine("Grid.OnAfterRender() called");
+
+        if (firstRender)
+        {
+            await RefreshGridCoreAsync();
+            isLoading = false;
+            StateHasChanged();
+        }
+
         base.OnAfterRender(firstRender);
     }
 
     protected override void OnInitialized()
     {
-        Console.WriteLine($"Grid.OnInitialized() called");
+        Console.WriteLine("Grid.OnInitialized() called");
         isLoading = true;
         base.OnInitialized();
     }
 
-    protected override Task OnParametersSetAsync()
+    protected override async Task OnParametersSetAsync()
     {
         if (Data is not null && DataProvider is not null)
             throw new InvalidOperationException($"{nameof(Grid<TItem>)} requires one of {nameof(Data)} or {nameof(DataProvider)}, but both were specified.");
@@ -36,13 +49,63 @@ public partial class Grid<TItem> : BulmaComponentBase
         if (AllowPaging && PageSize < 0)
             throw new ArgumentException($"{nameof(PageSize)} must be greater than zero.");
 
-        return base.OnParametersSetAsync();
+        if (IsRenderComplete)
+        {
+            // Perform a re-query only if the data source or something else has changed
+            var newDataOrDataProvider = Data ?? (object?)DataProvider;
+            var dataSourceHasChanged = newDataOrDataProvider != lastAssignedDataOrDataProvider;
+
+            if (dataSourceHasChanged)
+                lastAssignedDataOrDataProvider = newDataOrDataProvider;
+
+            var mustRefreshData = dataSourceHasChanged;
+
+            if (mustRefreshData)
+            {
+                await RefreshGridAsync();
+            }
+        }
+
+        await base.OnParametersSetAsync();
     }
 
     internal void AddColumn(GridColumn<TItem> column)
     {
         columns.Add(column);
-        //StateHasChanged(); // TODO: check this is required or not?
+        StateHasChanged(); // TODO: check this is required or not?
+    }
+
+    private async Task RefreshGridAsync(CancellationToken cancellationToken = default)
+    {
+        Console.WriteLine("Grid.RefreshGridAsync() called");
+        await RefreshGridCoreAsync(cancellationToken);
+        StateHasChanged();
+    }
+
+    private async Task RefreshGridCoreAsync(CancellationToken cancellationToken = default)
+    {
+        Console.WriteLine("Grid.RefreshGridCoreAsync() called");
+        var request = new GridDataProviderRequest<TItem> { PageNumber = 1, PageSize = PageSize, CancellationToken = cancellationToken };
+
+        GridDataProviderResult<TItem> result = default!;
+
+        if (DataProvider is not null)
+            result = await DataProvider.Invoke(request);
+        else if (Data is not null)
+            result = request.ApplyTo(Data);
+
+        if (result is not null)
+        {
+            items = result.Data;
+            totalCount = result.TotalCount;
+        }
+        else
+        {
+            items = null!;
+            totalCount = 0;
+        }
+
+        isLoading = false;
     }
 
     #endregion
@@ -327,8 +390,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [Parameter]
     public string PaginationItemsTextFormat { get; set; } = "{0} - {1} of {2} items"!;
 
-    [Parameter] 
-    public float SkeletonBlockMinHeight { get; set; } = 20;
+    [Parameter] public float SkeletonBlockMinHeight { get; set; } = 20;
 
     /// <summary>
     /// Gets or sets the units of measurement.

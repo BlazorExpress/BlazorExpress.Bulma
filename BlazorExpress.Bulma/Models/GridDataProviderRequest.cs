@@ -12,7 +12,7 @@ public class GridDataProviderRequest<TItem>
         var resultData = data;
 
         // apply filter
-        if (Filters != null && Filters.Any())
+        if (Filters?.Any() ?? false)
             try
             {
                 var parameterExpression = Expression.Parameter(typeof(TItem)); // second param optional
@@ -33,7 +33,7 @@ public class GridDataProviderRequest<TItem>
             }
 
         // apply sorting
-        if (Sorting != null && Sorting.Any())
+        if (Sorting?.Any() ?? false)
         {
             IOrderedEnumerable<TItem> orderedData = null!;
             var index = 1;

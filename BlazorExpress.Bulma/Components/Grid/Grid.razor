@@ -41,8 +41,8 @@
                     }
                     else
                     {
-                        var skeletonsRowCount = AllowPaging ? PageSize : 10;
                         // show skeletons
+                        var skeletonsRowCount = AllowPaging ? PageSize : 10;
                         @for (var i = 0; i < skeletonsRowCount; i++)
                         {
                             <tr>
@@ -56,9 +56,9 @@
                         }
                     }
                 }
-                else if (Data?.Any() ?? false)
+                else if (items?.Any() ?? false)
                 {
-                    @foreach (var item in Data)
+                    @foreach (var item in items)
                     {
                         <tr>
                             @foreach (var column in columns)

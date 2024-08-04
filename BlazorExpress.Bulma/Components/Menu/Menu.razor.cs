@@ -14,10 +14,6 @@ public partial class Menu : BulmaComponentBase
 
     private DotNetObjectReference<Menu> objRef = default!;
 
-    private bool requestInProgress = false;
-
-    private float width;
-
     #endregion
 
     #region Methods

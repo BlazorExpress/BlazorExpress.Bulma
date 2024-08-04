@@ -3,4 +3,4 @@
 /// <summary>
 /// Data provider (delegate).
 /// </summary>
-public delegate ValueTask<GridDataProviderResult<TItem>> GridDataProvider<TItem>(GridDataProviderRequest<TItem> request);
+public delegate Task<GridDataProviderResult<TItem>> GridDataProvider<TItem>(GridDataProviderRequest<TItem> request);

@@ -1,4 +1,4 @@
-<Grid TItem="Employee" Data="employees" IsBordered="true">
+<Grid TItem="Employee" DataProvider="EmployeesDataProvider" IsBordered="true">
     <GridColumns>
         <GridColumn TItem="Employee" HeaderText="Id">
             @context.Id
@@ -9,12 +9,6 @@
         <GridColumn TItem="Employee" HeaderText="Designation">
             @context.Designation
         </GridColumn>
-        <GridColumn TItem="Employee" HeaderText="Joining Date">
-            @context.DOJ
-        </GridColumn>
-        <GridColumn TItem="Employee" HeaderText="Active">
-            @context.IsActive
-        </GridColumn>
     </GridColumns>
 </Grid>
 
@@ -22,11 +16,19 @@
 {
     private IEnumerable<Employee> employees;
 
-    protected override async Task OnInitializedAsync()
+    private async Task<GridDataProviderResult<Employee>> EmployeesDataProvider(GridDataProviderRequest<Employee> request)
     {
-        await Task.Delay(1000); // Just to mimic the API response delay
+        await Task.Delay(3000); // Just to mimic the API response delay
 
-        employees = new List<Employee>
+        if (employees is null) // pull employees only one time for client-side filtering, sorting, and paging
+            employees = GetEmployees(); // call a service or an API to pull the employees
+
+        return await Task.FromResult(request.ApplyTo(employees));
+    }
+
+    private IEnumerable<Employee> GetEmployees()
+    {
+        return new List<Employee>
         {
             new Employee { Id = 107, Name = "Alice", Designation = "AI Engineer", DOJ = new DateOnly(1998, 11, 17), IsActive = true },
             new Employee { Id = 103, Name = "Bob", Designation = "Senior DevOps Engineer", DOJ = new DateOnly(1985, 1, 5), IsActive = true },
@@ -39,8 +41,6 @@
             new Employee { Id = 117, Name = "Sharna", Designation = "Data Analyst", DOJ = new DateOnly(1994, 5, 12), IsActive = true },
             new Employee { Id = 108, Name = "Zayne", Designation = "Data Analyst", DOJ = new DateOnly(1991, 1, 1), IsActive = true },
         };
-
-        base.OnInitialized();
     }
 
     public class Employee
