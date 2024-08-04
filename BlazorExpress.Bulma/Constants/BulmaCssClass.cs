@@ -4,7 +4,7 @@ public static class BulmaCssClass
 {
     #region Fields and Constants
 
-    public const string AreSmall = "are-small"; 
+    public const string AreSmall = "are-small";
     public const string AreMedium = "are-medium";
     public const string AreLarge = "are-large";
 
@@ -14,7 +14,7 @@ public static class BulmaCssClass
 
     public const string Button = "button";
     public const string Buttons = "buttons";
-        
+
     public const string HasBackgroundBlack = "has-background-black";
     public const string HasBackgroundDanger = "has-background-danger";
     public const string HasBackgroundDark = "has-background-dark";
@@ -66,12 +66,27 @@ public static class BulmaCssClass
     public const string IsDanger = "is-danger";
     public const string IsDark = "is-dark";
     public const string IsDisabled = "is-disabled";
+    public const string IsFlex = "is-flex";
+    public const string IsFlexDirectionRow = "is-flex-direction-row";
+    public const string IsFlexDirectionRowReverse = "is-flex-direction-row-reverse";
+    public const string IsFlexDirectionColumn = "is-flex-direction-column";
+    public const string IsFlexDirectionColumnReverse = "is-flex-direction-column-reverse";
     public const string IsFullWidth = "is-fullwidth";
     public const string IsGhost = "is-ghost";
     public const string IsHidden = "is-hidden";
     public const string IsHoverable = "is-hoverable";
     public const string IsInfo = "is-info";
     public const string IsInverted = "is-inverted";
+    public const string IsJustifyContentFlexStart = "is-justify-content-flex-start";
+    public const string IsJustifyContentFlexEnd = "is-justify-content-flex-end";
+    public const string IsJustifyContentCenter = "is-justify-content-center";
+    public const string IsJustifyContentSpaceBetween = "is-justify-content-space-between";
+    public const string IsJustifyContentSpaceAround = "is-justify-content-space-around";
+    public const string IsJustifyContentSpaceEvenly = "is-justify-content-space-evenly";
+    public const string IsJustifyContentStart = "is-justify-content-start";
+    public const string IsJustifyContentEnd = "is-justify-content-end";
+    public const string IsJustifyContentLeft = "is-justify-content-left";
+    public const string IsJustifyContentRight = "is-justify-content-right";
     public const string IsLarge = "is-large";
     public const string IsLeft = "is-left";
     public const string IsLight = "is-light";

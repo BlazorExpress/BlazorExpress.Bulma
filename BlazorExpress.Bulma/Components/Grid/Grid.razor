@@ -100,7 +100,21 @@
         </table>
         @if (AllowPaging && (!AutoHidePaging || (AutoHidePaging && totalCount > 0)))
         {
-            <Pagination ActivePageNumber="@pageNumber" TotalPages="@TotalPages" Size="PaginationSize.Small" PageChanged="OnPageChangedAsync" />
+            <div class="@BulmaCssClass.IsFlex @BulmaCssClass.IsFlexDirectionRow @BulmaCssClass.IsJustifyContentSpaceBetween">
+                <div>
+                    <Pagination ActivePageNumber="@pageNumber"
+                                Alignment="PaginationAlignment.Center"
+                                Size="PaginationSize.Small"
+                                TotalPages="@TotalPages"
+                                PageChanged="OnPageChangedAsync" />
+                </div>
+                <div class="select is-small">
+                    <select>
+                        <option>10</option>
+                        <option>20</option>
+                    </select>
+                </div>
+            </div>
         }
     </div>
 }
