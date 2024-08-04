@@ -59,6 +59,7 @@ public static class BulmaCssClass
 
     public const string IsActive = "is-active";
     public const string IsBlack = "is-black";
+    public const string IsBordered = "is-bordered";
     public const string IsBoxed = "is-boxed";
     public const string IsCentered = "is-centered";
     public const string IsCurrent = "is-current";
@@ -78,6 +79,7 @@ public static class BulmaCssClass
     public const string IsLoading = "is-loading";
     public const string IsMedium = "is-medium";
     public const string IsMobile = "is-mobile";
+    public const string IsNarrow = "is-narrow";
     public const string IsNormal = "is-normal";
     public const string IsOutlined = "is-outlined";
     public const string IsPrimary = "is-primary";
@@ -86,6 +88,7 @@ public static class BulmaCssClass
     public const string IsSkeleton = "is-skeleton";
     public const string IsSmall = "is-small";
     public const string IsSpaced = "is-spaced";
+    public const string IsStriped = "is-striped";
     public const string IsSuccess = "is-success";
     public const string IsText = "is-text";
     public const string IsToggle = "is-toggle";

@@ -40,6 +40,10 @@ public partial class Grid<TItem> : BulmaComponentBase
         CssUtility.BuildClassNames(
             Class,
             (BulmaCssClass.Table, true),
+            (BulmaCssClass.IsBordered, IsBordered),
+            (BulmaCssClass.IsStriped, IsStriped),
+            (BulmaCssClass.IsNarrow, IsNarrow),
+            (BulmaCssClass.IsHoverable, IsHoverable),
             (BulmaCssClass.IsFullWidth, IsFullWidth)
         );
 
@@ -190,7 +194,34 @@ public partial class Grid<TItem> : BulmaComponentBase
     [Parameter]
     public float Height { get; set; } = 320;
 
+    /// <summary>
+    /// Indicates whether to add borders to all cells.
+    /// </summary>
+    /// <remarks>
+    /// Defaults to `false`.
+    /// </remarks>
+    [Parameter]
+    public bool IsBordered { get; set; }
+
     [Parameter] public bool IsFullWidth { get; set; } = true;
+
+    /// <summary>
+    /// Indicates whether to add a hover effect to each row.
+    /// </summary>
+    /// <remarks>
+    /// Defaults to `false`.
+    /// </remarks>
+    [Parameter]
+    public bool IsHoverable { get; set; }
+
+    /// <summary>
+    /// Indicates whether to make the cells narrower.
+    /// </summary>
+    /// <remarks>
+    /// Defaults to `false`.
+    /// </remarks>
+    [Parameter]
+    public bool IsNarrow { get; set; }
 
     /// <summary>
     /// Gets or sets a value indicating whether the grid is responsive.
@@ -200,6 +231,15 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public bool IsResponsive { get; set; }
+
+    /// <summary>
+    /// Indicates whether to add stripes to the table.
+    /// </summary>
+    /// <remarks>
+    /// Defaults to `false`.
+    /// </remarks>
+    [Parameter]
+    public bool IsStriped { get; set; }
 
     /// <summary>
     /// Gets or sets the grid data.
@@ -278,10 +318,10 @@ public partial class Grid<TItem> : BulmaComponentBase
     [Parameter] public float SkeletonBlockMinHeight { get; set; } = 20;
 
     /// <summary>
-    /// Gets or sets the units.
+    /// Gets or sets the units of measurement.
     /// </summary>
     /// <remarks>
-    /// Default value is <see cref="Unit.Px" />.
+    /// Defaults to <see cref="Unit.Px" />.
     /// </remarks>
     [Parameter]
     public Unit Unit { get; set; } = Unit.Px;
