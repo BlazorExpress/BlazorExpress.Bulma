@@ -24,7 +24,9 @@
 
     protected override async Task OnInitializedAsync()
     {
-        await Task.Delay(1000); // Just to mimic the API response delay
+        Console.WriteLine("Demo.OnInitializedAsync() called...");
+
+        //await Task.Delay(1000); // Just to mimic the API response delay
 
         employees = new List<Employee>
         {

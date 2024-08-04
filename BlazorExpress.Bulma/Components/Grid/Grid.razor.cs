@@ -30,12 +30,13 @@ public partial class Grid<TItem> : BulmaComponentBase
 
         if (firstRender)
         {
+            Console.WriteLine("Grid.OnAfterRender() called - firstRender");
             await RefreshGridCoreAsync();
             HideLoading();
             StateHasChanged();
         }
 
-        base.OnAfterRender(firstRender);
+        await base.OnAfterRenderAsync(firstRender);
     }
 
     protected override void OnInitialized()
@@ -49,6 +50,8 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     protected override async Task OnParametersSetAsync()
     {
+        Console.WriteLine("Grid.OnParametersSetAsync() called");
+
         if (Data is not null && DataProvider is not null)
             throw new InvalidOperationException($"{nameof(Grid<TItem>)} requires one of {nameof(Data)} or {nameof(DataProvider)}, but both were specified.");
 
@@ -62,10 +65,15 @@ public partial class Grid<TItem> : BulmaComponentBase
 
             var dataSourceHasChanged = newDataOrDataProvider != lastAssignedDataOrDataProvider;
 
+            // dataSourceHasChanged might be true even after rendering.
+            // This can happen because data might be null when the first RefreshGridCoreAsync method is called.
+            // The data is then assigned.
+            // If the data source has changed, update the last assigned data or data provider.
             if (dataSourceHasChanged)
                 lastAssignedDataOrDataProvider = newDataOrDataProvider;
 
             var pageSizeChanged = pageSize != PageSize;
+
             if (pageSizeChanged)
                 pageSize = PageSize;
 
@@ -100,10 +108,13 @@ public partial class Grid<TItem> : BulmaComponentBase
         return 1;
     }
 
-    private Task OnPageChangedAsync(int newPageNumber)
+    private async Task OnPageChangedAsync(int newPageNumber)
     {
+        ShowLoading();
         pageNumber = newPageNumber;
-        return RefreshGridAsync();
+        await RefreshGridCoreAsync();
+        HideLoading();
+        StateHasChanged();
     }
 
     private async Task RefreshGridAsync(CancellationToken cancellationToken = default)
@@ -135,8 +146,6 @@ public partial class Grid<TItem> : BulmaComponentBase
             items = null!;
             totalCount = 0;
         }
-
-        isLoading = false;
     }
 
     #endregion
@@ -421,7 +430,16 @@ public partial class Grid<TItem> : BulmaComponentBase
     [Parameter]
     public string PaginationItemsTextFormat { get; set; } = "{0} - {1} of {2} items"!;
 
-    [Parameter] public float SkeletonBlockMinHeight { get; set; } = 20;
+    /// <summary>
+    /// Gets or sets the minimum height of the skeleton block.
+    /// Skeletons are displayed while a request is in progress.
+    /// </summary>
+    /// <remarks>
+    /// Default value is 24.
+    /// Unit is based on the <see cref="Unit" />.
+    /// </remarks>
+    [Parameter]
+    public float SkeletonBlockMinHeight { get; set; } = 24;
 
     private int TotalPages => GetTotalPagesCount();
 
