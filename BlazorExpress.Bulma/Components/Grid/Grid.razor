@@ -56,9 +56,9 @@
                         }
                     }
                 }
-                else if (Items?.Any() ?? false)
+                else if (Data?.Any() ?? false)
                 {
-                    @foreach (var item in Items)
+                    @foreach (var item in Data)
                     {
                         <tr>
                             @foreach (var column in columns)
@@ -72,7 +72,6 @@
                                     else
                                     {
                                         @column.ChildContent(item)
-                                        ;
                                     }
                                 </td>
                             }

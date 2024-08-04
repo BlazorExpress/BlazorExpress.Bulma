@@ -1,13 +1,13 @@
 ﻿namespace BlazorExpress.Bulma;
 
-public class GridItemsProviderRequest<TItem>
+public class GridDataProviderRequest<TItem>
 {
     #region Methods
 
-    public GridItemsProviderResult<TItem> ApplyTo(IEnumerable<TItem> data)
+    public GridDataProviderResult<TItem> ApplyTo(IEnumerable<TItem> data)
     {
         if (data == null)
-            return new GridItemsProviderResult<TItem> { Items = null, Count = 0 };
+            return new GridDataProviderResult<TItem> { Data = null, TotalCount = 0 };
 
         var resultData = data;
 
@@ -72,7 +72,7 @@ public class GridItemsProviderRequest<TItem>
             resultData = resultData!.Skip(skip).Take(take);
         }
 
-        return new GridItemsProviderResult<TItem> { Items = resultData, Count = totalCount };
+        return new GridDataProviderResult<TItem> { Data = resultData, TotalCount = totalCount };
     }
 
     #endregion

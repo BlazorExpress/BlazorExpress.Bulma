@@ -26,6 +26,17 @@ public partial class Grid<TItem> : BulmaComponentBase
         base.OnInitialized();
     }
 
+    protected override Task OnParametersSetAsync()
+    {
+        if (Data is not null && DataProvider is not null)
+            throw new InvalidOperationException($"{nameof(Grid<TItem>)} requires one of {nameof(Data)} or {nameof(DataProvider)}, but both were specified.");
+
+        if (AllowPaging && PageSize < 0)
+            throw new ArgumentException($"{nameof(PageSize)} must be greater than zero.");
+
+        return base.OnParametersSetAsync();
+    }
+
     internal void AddColumn(GridColumn<TItem> column)
     {
         columns.Add(column);
@@ -98,6 +109,25 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
+
+    /// <summary>
+    /// Gets or sets the grid data.
+    /// </summary>
+    /// <remarks>
+    /// Default value is null.
+    /// </remarks>
+    [Parameter]
+    public IEnumerable<TItem> Data { get; set; } = default!;
+
+    /// <summary>
+    /// DataProvider is for items to render.
+    /// The provider should always return an instance of 'GridDataProviderResult', and 'null' is not allowed.
+    /// </summary>
+    /// <remarks>
+    /// Default value is null.
+    /// </remarks>
+    [Parameter]
+    public GridDataProvider<TItem> DataProvider { get; set; } = default!;
 
     /// <summary>
     /// Gets or sets the empty data template.
@@ -242,15 +272,6 @@ public partial class Grid<TItem> : BulmaComponentBase
     public bool IsStriped { get; set; }
 
     /// <summary>
-    /// Gets or sets the grid data.
-    /// </summary>
-    /// <remarks>
-    /// Default value is null.
-    /// </remarks>
-    [Parameter]
-    public IEnumerable<TItem> Items { get; set; } = default!;
-
-    /// <summary>
     /// Gets or sets the items per page text.
     /// </summary>
     /// <remarks>
@@ -258,16 +279,6 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public string ItemsPerPageText { get; set; } = "Items per page"!;
-
-    /// <summary>
-    /// DataProvider is for items to render.
-    /// The provider should always return an instance of 'GridDataProviderResult', and 'null' is not allowed.
-    /// </summary>
-    /// <remarks>
-    /// Default value is null.
-    /// </remarks>
-    [Parameter]
-    public GridItemsProvider<TItem> ItemsProvider { get; set; } = default!;
 
     /// <summary>
     /// Gets or sets the loading template.

@@ -1,4 +1,4 @@
-<Grid TItem="Employee" Items="employees" IsBordered="true">
+<Grid TItem="Employee" Data="employees" IsBordered="true">
     <GridColumns>
         <GridColumn TItem="Employee" HeaderText="Id">
             @context.Id
@@ -19,7 +19,7 @@
 
         employees = new List<Employee>
         {
-            // new Employee { Id = 107, Name = "Alice", Designation = "AI Engineer", DOJ = new DateOnly(1998, 11, 17), IsActive = true },
+            new Employee { Id = 107, Name = "Alice", Designation = "AI Engineer", DOJ = new DateOnly(1998, 11, 17), IsActive = true },
             // new Employee { Id = 103, Name = "Bob", Designation = "Senior DevOps Engineer", DOJ = new DateOnly(1985, 1, 5), IsActive = true },
             // new Employee { Id = 106, Name = "John", Designation = "Data Engineer", DOJ = new DateOnly(1995, 4, 17), IsActive = true },
             // new Employee { Id = 104, Name = "Pop", Designation = "Associate Architect", DOJ = new DateOnly(1985, 6, 8), IsActive = false },
