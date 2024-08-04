@@ -13,8 +13,8 @@ public partial class GridColumn<TItem> : BulmaComponentBase
 
     protected override void OnInitialized()
     {
+        Console.WriteLine($"GridColumn.OnInitialized() called");
         Parent.AddColumn(this);
-
         base.OnInitializedAsync();
     }
 
@@ -22,7 +22,8 @@ public partial class GridColumn<TItem> : BulmaComponentBase
 
     #region Properties, Indexers
 
-    [Parameter] public RenderFragment<TItem>? CellTemplate { get; set; }
+    [Parameter] 
+    public RenderFragment<TItem>? CellTemplate { get; set; }
 
     /// <summary>
     /// Gets or sets the child content.
@@ -39,7 +40,8 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     // using this member to access in the grid component
     internal string? GridColumnCssStyleNames => Style;
 
-    [Parameter] public RenderFragment? HeaderTemplate { get; set; }
+    [Parameter] 
+    public RenderFragment? HeaderTemplate { get; set; }
 
     /// <summary>
     /// Gets or sets the table column header text.
@@ -50,7 +52,8 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     [Parameter]
     public string HeaderText { get; set; } = default!;
 
-    [CascadingParameter] public Grid<TItem> Parent { get; set; } = default!;
+    [CascadingParameter] 
+    public Grid<TItem> Parent { get; set; } = default!;
 
     /// <summary>
     /// Gets or sets the property name.
@@ -64,9 +67,11 @@ public partial class GridColumn<TItem> : BulmaComponentBase
 
     internal string? ThClassNames => ThCssClass;
 
-    [Parameter] public string? ThCssClass { get; set; }
+    [Parameter] 
+    public string? ThCssClass { get; set; }
 
-    [Parameter] public string? ThCssStyle { get; set; }
+    [Parameter] 
+    public string? ThCssStyle { get; set; }
 
     internal string? ThStyleNames => ThCssStyle;
 

@@ -16,12 +16,14 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     protected override void OnAfterRender(bool firstRender)
     {
+        Console.WriteLine($"Grid.OnAfterRender() called");
         isLoading = false;
         base.OnAfterRender(firstRender);
     }
 
     protected override void OnInitialized()
     {
+        Console.WriteLine($"Grid.OnInitialized() called");
         isLoading = true;
         base.OnInitialized();
     }
@@ -40,7 +42,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     internal void AddColumn(GridColumn<TItem> column)
     {
         columns.Add(column);
-        StateHasChanged(); // TODO: check this is required or not?
+        //StateHasChanged(); // TODO: check this is required or not?
     }
 
     #endregion
@@ -305,7 +307,6 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// Default value is '{ 10, 20, 50 }'.
     /// </remarks>
     [Parameter]
-    //[EditorRequired]
     public int[] PageSizeSelectorItems { get; set; } = { 10, 20, 50 };
 
     /// <summary>
@@ -326,7 +327,8 @@ public partial class Grid<TItem> : BulmaComponentBase
     [Parameter]
     public string PaginationItemsTextFormat { get; set; } = "{0} - {1} of {2} items"!;
 
-    [Parameter] public float SkeletonBlockMinHeight { get; set; } = 20;
+    [Parameter] 
+    public float SkeletonBlockMinHeight { get; set; } = 20;
 
     /// <summary>
     /// Gets or sets the units of measurement.
