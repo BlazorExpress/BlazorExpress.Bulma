@@ -14,9 +14,11 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     private object? lastAssignedDataOrDataProvider;
 
-    private int totalCount;
+    private int pageNumber = 1;
 
     private int pageSize;
+
+    private int totalCount;
 
     #endregion
 
@@ -36,13 +38,11 @@ public partial class Grid<TItem> : BulmaComponentBase
         base.OnAfterRender(firstRender);
     }
 
-    internal void ShowLoading() => isLoading = true;
-
-    internal void HideLoading() => isLoading = false;
-
     protected override void OnInitialized()
     {
         Console.WriteLine("Grid.OnInitialized() called");
+
+        pageSize = PageSize;
         ShowLoading();
         base.OnInitialized();
     }
@@ -61,6 +61,7 @@ public partial class Grid<TItem> : BulmaComponentBase
             var newDataOrDataProvider = Data ?? (object?)DataProvider;
 
             var dataSourceHasChanged = newDataOrDataProvider != lastAssignedDataOrDataProvider;
+
             if (dataSourceHasChanged)
                 lastAssignedDataOrDataProvider = newDataOrDataProvider;
 
@@ -70,10 +71,7 @@ public partial class Grid<TItem> : BulmaComponentBase
 
             var mustRefreshData = dataSourceHasChanged || pageSizeChanged;
 
-            if (mustRefreshData)
-            {
-                await RefreshGridAsync();
-            }
+            if (mustRefreshData) await RefreshGridAsync();
         }
 
         await base.OnParametersSetAsync();
@@ -83,6 +81,29 @@ public partial class Grid<TItem> : BulmaComponentBase
     {
         columns.Add(column);
         StateHasChanged(); // TODO: check this is required or not?
+    }
+
+    internal void HideLoading() => isLoading = false;
+
+    internal void ShowLoading() => isLoading = true;
+
+    private int GetTotalPagesCount()
+    {
+        if (totalCount > 0)
+        {
+            var q = totalCount / pageSize;
+            var r = totalCount % pageSize;
+
+            return q < 1 ? 1 : q + (r > 0 ? 1 : 0);
+        }
+
+        return 1;
+    }
+
+    private Task OnPageChangedAsync(int newPageNumber)
+    {
+        pageNumber = newPageNumber;
+        return RefreshGridAsync();
     }
 
     private async Task RefreshGridAsync(CancellationToken cancellationToken = default)
@@ -95,7 +116,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     private async Task RefreshGridCoreAsync(CancellationToken cancellationToken = default)
     {
         Console.WriteLine("Grid.RefreshGridCoreAsync() called");
-        var request = new GridDataProviderRequest<TItem> { PageNumber = 1, PageSize = PageSize, CancellationToken = cancellationToken };
+        var request = new GridDataProviderRequest<TItem> { PageNumber = pageNumber, PageSize = pageSize, CancellationToken = cancellationToken };
 
         GridDataProviderResult<TItem> result = default!;
 
@@ -401,6 +422,8 @@ public partial class Grid<TItem> : BulmaComponentBase
     public string PaginationItemsTextFormat { get; set; } = "{0} - {1} of {2} items"!;
 
     [Parameter] public float SkeletonBlockMinHeight { get; set; } = 20;
+
+    private int TotalPages => GetTotalPagesCount();
 
     /// <summary>
     /// Gets or sets the units of measurement.

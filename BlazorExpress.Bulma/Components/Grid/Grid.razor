@@ -100,7 +100,7 @@
         </table>
         @if (AllowPaging && (!AutoHidePaging || (AutoHidePaging && totalCount > 0)))
         {
-
+            <Pagination ActivePageNumber="@pageNumber" TotalPages="@TotalPages" Size="PaginationSize.Small" PageChanged="OnPageChangedAsync" />
         }
     </div>
 }
