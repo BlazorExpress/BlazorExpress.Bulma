@@ -16,6 +16,8 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     private int totalCount;
 
+    private int pageSize;
+
     #endregion
 
     #region Methods
@@ -27,17 +29,21 @@ public partial class Grid<TItem> : BulmaComponentBase
         if (firstRender)
         {
             await RefreshGridCoreAsync();
-            isLoading = false;
+            HideLoading();
             StateHasChanged();
         }
 
         base.OnAfterRender(firstRender);
     }
 
+    internal void ShowLoading() => isLoading = true;
+
+    internal void HideLoading() => isLoading = false;
+
     protected override void OnInitialized()
     {
         Console.WriteLine("Grid.OnInitialized() called");
-        isLoading = true;
+        ShowLoading();
         base.OnInitialized();
     }
 
@@ -53,12 +59,16 @@ public partial class Grid<TItem> : BulmaComponentBase
         {
             // Perform a re-query only if the data source or something else has changed
             var newDataOrDataProvider = Data ?? (object?)DataProvider;
-            var dataSourceHasChanged = newDataOrDataProvider != lastAssignedDataOrDataProvider;
 
+            var dataSourceHasChanged = newDataOrDataProvider != lastAssignedDataOrDataProvider;
             if (dataSourceHasChanged)
                 lastAssignedDataOrDataProvider = newDataOrDataProvider;
 
-            var mustRefreshData = dataSourceHasChanged;
+            var pageSizeChanged = pageSize != PageSize;
+            if (pageSizeChanged)
+                pageSize = PageSize;
+
+            var mustRefreshData = dataSourceHasChanged || pageSizeChanged;
 
             if (mustRefreshData)
             {

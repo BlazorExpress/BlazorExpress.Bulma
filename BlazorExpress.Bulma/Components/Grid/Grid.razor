@@ -87,7 +87,8 @@
                             {
                                 @EmptyDataTemplate
                             }
-                            else{
+                            else
+                            {
                                 <div class="has-text-centered has-text-dark my-5">
                                     <div>@EmptyDataText</div>
                                 </div>
@@ -97,5 +98,9 @@
                 }
             </tbody>
         </table>
+        @if (AllowPaging && (!AutoHidePaging || (AutoHidePaging && totalCount > 0)))
+        {
+
+        }
     </div>
 }
