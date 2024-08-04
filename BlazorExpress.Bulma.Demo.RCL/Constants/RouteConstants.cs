@@ -35,6 +35,7 @@ public static class RouteConstants
     public const string Demos_Navbar_Documentation = Demos_Prefix + "/navbar";
     public const string Demos_Pagination_Documentation = Demos_Prefix + "/pagination";
     public const string Demos_Panel_Documentation = Demos_Prefix + "/panel";
+    public const string Demos_Grid_Documentation = Demos_Prefix + "/grid";
     public const string Demos_Tabs_Documentation = Demos_Prefix + "/tabs";
 
     // Form

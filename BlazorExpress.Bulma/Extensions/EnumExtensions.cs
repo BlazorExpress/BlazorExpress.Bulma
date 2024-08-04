@@ -19,7 +19,7 @@ public static class EnumExtensions
             ButtonColor.Black => BulmaCssClass.IsBlack,
             ButtonColor.Text => BulmaCssClass.IsText,
             ButtonColor.Ghost => BulmaCssClass.IsGhost,
-            _ => null,
+            _ => null
         };
 
     public static string? ToButtonSizeClass(this ButtonSize size) =>
@@ -29,7 +29,7 @@ public static class EnumExtensions
             ButtonSize.Normal => BulmaCssClass.IsNormal,
             ButtonSize.Medium => BulmaCssClass.IsMedium,
             ButtonSize.Large => BulmaCssClass.IsLarge,
-            _ => null,
+            _ => null
         };
 
     public static string? ToButtonsSizeClass(this ButtonSize size) =>
@@ -38,15 +38,15 @@ public static class EnumExtensions
             ButtonSize.Small => BulmaCssClass.AreSmall,
             ButtonSize.Medium => BulmaCssClass.AreMedium,
             ButtonSize.Large => BulmaCssClass.AreLarge,
-            _ => null,
+            _ => null
         };
 
     public static string? ToButtonTypeString(this ButtonType type) =>
         type switch
         {
             ButtonType.Submit => BulmaCssClass.Submit,
-            ButtonType.Reset  => BulmaCssClass.Reset,
-            _ => BulmaCssClass.Button,
+            ButtonType.Reset => BulmaCssClass.Reset,
+            _ => BulmaCssClass.Button
         };
 
     public static DeviceType ToDeviceTypeEnum(this float width) =>
@@ -72,7 +72,7 @@ public static class EnumExtensions
             IconColor.Black => BulmaCssClass.HasTextBlack,
             IconColor.Light => BulmaCssClass.HasTextLight,
             IconColor.Dark => BulmaCssClass.HasTextDark,
-            _ => null,
+            _ => null
         };
 
     public static string? ToIconSizeClass(this IconSize size) =>
@@ -81,7 +81,7 @@ public static class EnumExtensions
             IconSize.Small => BulmaCssClass.IsSmall,
             IconSize.Medium => BulmaCssClass.IsMedium,
             IconSize.Large => BulmaCssClass.IsLarge,
-            _ => null,
+            _ => null
         };
 
     public static string? ToNavbarDropdownPositionClass(this NavbarDropdownPosition position) =>
@@ -115,18 +115,6 @@ public static class EnumExtensions
             PaginationSize.Small => BulmaCssClass.IsSmall,
             PaginationSize.Medium => BulmaCssClass.IsMedium,
             PaginationSize.Large => BulmaCssClass.IsLarge,
-            _ => null,
-        };
-
-    public static string? ToTitleSizeClass(this HeadingSize headingSize) =>
-        headingSize switch
-        {
-            HeadingSize.H1 => $"{BulmaCssClass.Title} {BulmaCssClass.Is1}",
-            HeadingSize.H2 => $"{BulmaCssClass.Title} {BulmaCssClass.Is2}",
-            HeadingSize.H3 => $"{BulmaCssClass.Title} {BulmaCssClass.Is3}",
-            HeadingSize.H4 => $"{BulmaCssClass.Title} {BulmaCssClass.Is4}",
-            HeadingSize.H5 => $"{BulmaCssClass.Title} {BulmaCssClass.Is5}",
-            HeadingSize.H6 => $"{BulmaCssClass.Title} {BulmaCssClass.Is6}",
             _ => null
         };
 
@@ -143,7 +131,7 @@ public static class EnumExtensions
             SkeletonColor.Black => BulmaCssClass.HasBackgroundBlack,
             SkeletonColor.Light => BulmaCssClass.HasBackgroundLight,
             SkeletonColor.Dark => BulmaCssClass.HasBackgroundDark,
-            _ => null,
+            _ => null
         };
 
     public static string? ToSkeletonTypeClass(this SkeletonType type) =>
@@ -190,6 +178,33 @@ public static class EnumExtensions
             TabsType.Boxed => BulmaCssClass.IsBoxed,
             TabsType.Rounded => $"{BulmaCssClass.IsToggle} {BulmaCssClass.IsToggleRounded}",
             _ => null
+        };
+
+    public static string? ToTitleSizeClass(this HeadingSize headingSize) =>
+        headingSize switch
+        {
+            HeadingSize.H1 => $"{BulmaCssClass.Title} {BulmaCssClass.Is1}",
+            HeadingSize.H2 => $"{BulmaCssClass.Title} {BulmaCssClass.Is2}",
+            HeadingSize.H3 => $"{BulmaCssClass.Title} {BulmaCssClass.Is3}",
+            HeadingSize.H4 => $"{BulmaCssClass.Title} {BulmaCssClass.Is4}",
+            HeadingSize.H5 => $"{BulmaCssClass.Title} {BulmaCssClass.Is5}",
+            HeadingSize.H6 => $"{BulmaCssClass.Title} {BulmaCssClass.Is6}",
+            _ => null
+        };
+
+    public static string ToUnitCssString(this Unit unit) =>
+        unit switch
+        {
+            Unit.Em => "em",
+            Unit.Percentage => "%",
+            Unit.Pt => "pt",
+            Unit.Px => "px",
+            Unit.Rem => "rem",
+            Unit.Vh => "vh",
+            Unit.VMax => "vmax",
+            Unit.VMin => "vmin",
+            Unit.Vw => "vw",
+            _ => string.Empty
         };
 
     #endregion

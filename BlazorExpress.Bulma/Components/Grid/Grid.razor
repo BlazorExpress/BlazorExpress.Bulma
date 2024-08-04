@@ -1,0 +1,102 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+@typeparam TItem
+
+<CascadingValue Value="@(this)" IsFixed="true">
+    @ChildContent
+</CascadingValue>
+
+@if (columns.Any())
+{
+    <div class="@GridContainerClassNames" style="@GridContainerStyleNames">
+        <table @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes">
+            <thead class="@GridTheadClassNames" style="@GridTheadStyleNames">
+                <tr class="@GridTheadRowClassNames" style="@GridTheadRowStyleNames">
+                    @foreach (var column in columns)
+                    {
+                        <th class="@column.ThClassNames" style="@column.ThStyleNames">
+                            @if (column.HeaderTemplate is not null)
+                            {
+                                @column.HeaderTemplate
+                            }
+                            else
+                            {
+                                @column.HeaderText
+                            }
+                        </th>
+                    }
+                </tr>
+            </thead>
+            <tbody class="@GridTbodyClassNames" style="@GridTbodyStyleNames">
+                @{
+                    var columnCount = columns.Count;
+                }
+                @if (isLoading)
+                {
+                    @if (LoadingTemplate is not null)
+                    {
+                        <tr>
+                            @LoadingTemplate
+                        </tr>
+                    }
+                    else
+                    {
+                        var skeletonsRowCount = AllowPaging ? PageSize : 10;
+                        // show skeletons
+                        @for (var i = 0; i < skeletonsRowCount; i++)
+                        {
+                            <tr>
+                                @for (var j = 0; j < columnCount; j++)
+                                {
+                                    <td>
+                                        <div class="@BulmaCssClass.SkeletonBlock"></div>
+                                    </td>
+                                }
+                            </tr>
+                        }
+                    }
+                }
+                else if (Items?.Any() ?? false)
+                {
+                    @foreach (var item in Items)
+                    {
+                        <tr>
+                            @foreach (var column in columns)
+                            {
+                                <td id="@column.Id" class="@column.GridColumnCssClassNames" style="@column.GridColumnCssStyleNames" @attributes="@column.AdditionalAttributes">
+
+                                    @if (column.CellTemplate is not null)
+                                    {
+                                        @column.CellTemplate(item)
+                                    }
+                                    else
+                                    {
+                                        @column.ChildContent(item)
+                                        ;
+                                    }
+                                </td>
+                            }
+                        </tr>
+                    }
+                }
+                else
+                {
+                    // show empty
+                    <tr>
+                        <td colspan="@columnCount">
+                            @if (EmptyDataTemplate is not null)
+                            {
+                                @EmptyDataTemplate
+                            }
+                            else{
+                                <div class="has-text-centered has-text-dark my-5">
+                                    <div>@EmptyDataText</div>
+                                </div>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
