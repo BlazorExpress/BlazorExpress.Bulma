@@ -71,7 +71,7 @@
                                     }
                                     else
                                     {
-                                        @column.ChildContent(item)
+                                        @column.ChildContent!(item)
                                     }
                                 </td>
                             }
@@ -100,7 +100,7 @@
         </table>
         @if (AllowPaging && (!AutoHidePaging || (AutoHidePaging && totalCount > 0)))
         {
-            <div class="@BulmaCssClass.IsFlex @BulmaCssClass.IsFlexDirectionRow @BulmaCssClass.IsJustifyContentSpaceBetween">
+            @* <div class="@BulmaCssClass.IsFlex @BulmaCssClass.IsFlexDirectionRow @BulmaCssClass.IsJustifyContentSpaceBetween">
                 <div>
                     <Pagination ActivePageNumber="@pageNumber"
                                 Alignment="PaginationAlignment.Center"
@@ -117,9 +117,31 @@
                             }
                         </InputSelect>
                     </div>
-                    <span class="ml-1">Items per page</span>
+                    <span class="ml-1">@ItemsPerPageText</span>
                 </div>
                 <div>@paginationItemsText</div>
+            </div> *@
+
+            <div class="level">
+                <div class="level-item has-text-left" style="flex-grow: inherit !important;">
+                    <Pagination ActivePageNumber="@pageNumber"
+                                Alignment="PaginationAlignment.Center"
+                                Size="PaginationSize.Small"
+                                TotalPages="@TotalPages"
+                                PageChanged="OnPageChangedAsync" />
+                </div>
+                <div class="level-item" style="flex-grow: inherit !important;">
+                    <div class="select is-small">
+                        <InputSelect TValue="int" Value="@pageSize" ValueExpression="() => pageSize" ValueChanged="async (value) => await OnPageSizeChangedAsync(value)">
+                            @foreach (var i in PageSizeSelectorItems)
+                            {
+                                <option value="@i">@i</option>
+                            }
+                        </InputSelect>
+                    </div>
+                    <span class="ml-1">@ItemsPerPageText</span>
+                </div>
+                <div class="level-item has-text-right" style="flex-grow: inherit !important;">@paginationItemsText</div>
             </div>
         }
     </div>
