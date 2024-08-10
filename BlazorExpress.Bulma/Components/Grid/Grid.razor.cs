@@ -117,6 +117,15 @@ public partial class Grid<TItem> : BulmaComponentBase
         StateHasChanged();
     }
 
+    private async Task OnPageSizeChangedAsync(int newPageSize)
+    {
+        ShowLoading();
+        pageSize = PageSize = newPageSize;
+        await RefreshGridCoreAsync();
+        HideLoading();
+        StateHasChanged();
+    }
+
     private async Task RefreshGridAsync(CancellationToken cancellationToken = default)
     {
         Console.WriteLine("Grid.RefreshGridAsync() called");

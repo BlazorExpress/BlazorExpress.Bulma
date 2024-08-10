@@ -1,7 +1,8 @@
 <Grid TItem="Employee"
       DataProvider="EmployeesDataProvider"
       AllowPaging="true"
-      PageSize="3"
+      PageSize="5"
+      PageSizeSelectorItems="pageSizeSelectorItems"
       IsBordered="true">
 
     <GridColumns>
@@ -20,7 +21,8 @@
 
 @code
 {
-    private IEnumerable<Employee> employees;
+    private IEnumerable<Employee> employees = default!;
+    private int[] pageSizeSelectorItems = { 3, 5, 10 };
 
     private async Task<GridDataProviderResult<Employee>> EmployeesDataProvider(GridDataProviderRequest<Employee> request)
     {

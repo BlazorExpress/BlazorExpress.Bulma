@@ -110,10 +110,12 @@
                 </div>
                 <div>
                     <div class="select is-small">
-                        <select>
-                            <option>10</option>
-                            <option>20</option>
-                        </select>
+                        <InputSelect TValue="int" Value="@pageSize" ValueExpression="() => pageSize" ValueChanged="async (value) => await OnPageSizeChangedAsync(value)">
+                            @foreach (var i in PageSizeSelectorItems)
+                            {
+                                <option value="@i">@i</option>
+                            }
+                        </InputSelect>
                     </div>
                     <span class="ml-1">Items per page</span>
                 </div>
