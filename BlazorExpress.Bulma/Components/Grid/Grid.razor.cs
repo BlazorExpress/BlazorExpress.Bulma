@@ -95,6 +95,17 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     internal void ShowLoading() => isLoading = true;
 
+    private string GetPaginationItemsText()
+    {
+        var fromItemNumber = (pageNumber - 1) * pageSize + 1;
+        var toItemNumber = pageNumber * pageSize;
+
+        if (toItemNumber > totalCount)
+            toItemNumber = totalCount;
+
+        return string.Format(PaginationItemsTextFormat, fromItemNumber, toItemNumber, totalCount);
+    }
+
     private int GetTotalPagesCount()
     {
         if (totalCount > 0)
@@ -120,6 +131,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     private async Task OnPageSizeChangedAsync(int newPageSize)
     {
         ShowLoading();
+        pageNumber = 1; // reset
         pageSize = PageSize = newPageSize;
         await RefreshGridCoreAsync();
         HideLoading();
@@ -429,6 +441,8 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public bool PageSizeSelectorVisible { get; set; }
+
+    private string paginationItemsText => GetPaginationItemsText();
 
     /// <summary>
     /// Gets or sets the pagination items text format.

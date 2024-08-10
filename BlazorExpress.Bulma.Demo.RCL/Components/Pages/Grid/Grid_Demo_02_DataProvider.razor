@@ -1,4 +1,8 @@
-<Grid TItem="Employee" DataProvider="EmployeesDataProvider" IsBordered="true">
+<Grid TItem="Employee"
+      DataProvider="EmployeesDataProvider"
+      IsBordered="true"
+      IsResponsive="true">
+
     <GridColumns>
         <GridColumn TItem="Employee" HeaderText="Id">
             @context.Id
@@ -9,7 +13,14 @@
         <GridColumn TItem="Employee" HeaderText="Designation">
             @context.Designation
         </GridColumn>
+        <GridColumn TItem="Employee" HeaderText="Joining Date">
+            @context.DOJ
+        </GridColumn>
+        <GridColumn TItem="Employee" HeaderText="Active">
+            @context.IsActive
+        </GridColumn>
     </GridColumns>
+
 </Grid>
 
 @code

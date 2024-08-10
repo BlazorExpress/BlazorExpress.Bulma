@@ -1,4 +1,8 @@
-<Grid TItem="Employee" Data="employees" IsBordered="true">
+<Grid TItem="Employee"
+      Data="employees"
+      IsBordered="true"
+      IsResponsive="true">
+
     <GridColumns>
         <GridColumn TItem="Employee" HeaderText="Id">
             @context.Id
@@ -16,6 +20,7 @@
             @context.IsActive
         </GridColumn>
     </GridColumns>
+
 </Grid>
 
 @code

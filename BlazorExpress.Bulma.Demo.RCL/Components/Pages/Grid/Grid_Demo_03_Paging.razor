@@ -3,7 +3,8 @@
       AllowPaging="true"
       PageSize="5"
       PageSizeSelectorItems="pageSizeSelectorItems"
-      IsBordered="true">
+      IsBordered="true"
+      IsResponsive="true">
 
     <GridColumns>
         <GridColumn TItem="Employee" HeaderText="Id">
@@ -14,6 +15,12 @@
         </GridColumn>
         <GridColumn TItem="Employee" HeaderText="Designation">
             @context.Designation
+        </GridColumn>
+        <GridColumn TItem="Employee" HeaderText="Joining Date">
+            @context.DOJ
+        </GridColumn>
+        <GridColumn TItem="Employee" HeaderText="Active">
+            @context.IsActive
         </GridColumn>
     </GridColumns>
 
@@ -26,7 +33,7 @@
 
     private async Task<GridDataProviderResult<Employee>> EmployeesDataProvider(GridDataProviderRequest<Employee> request)
     {
-        await Task.Delay(600); // Just to mimic the API response delay
+        await Task.Delay(600); // 600 milliseconds: Just to mimic the API response delay
 
         if (employees is null) // pull employees only one time for client-side filtering, sorting, and paging
             employees = GetEmployees(); // call a service or an API to pull the employees
