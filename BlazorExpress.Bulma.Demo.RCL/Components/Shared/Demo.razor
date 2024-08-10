@@ -30,13 +30,16 @@
     else
     {
         <Tabs>
-            <Tab Title="Example" IsActive="true">
+            <Tab Title="Example">
                 <div class="be-doc-example-demo">
                     <DynamicComponent Type="this.Type" />
                 </div>
             </Tab>
             <Tab Title="View Source">
                 <div class="be-doc-example-snippet">
+                    <div class="pr-4 py-2 be-doc-float-end">
+                        <i class="@clipboardTooltipIconName" role="button" @onclick="CopyToClipboardAsync"></i>
+                    </div>
                     <pre>
                         <code class="@LanguageCode.ToLanguageCssClass()">
                             @if (codeSnippet is not null)

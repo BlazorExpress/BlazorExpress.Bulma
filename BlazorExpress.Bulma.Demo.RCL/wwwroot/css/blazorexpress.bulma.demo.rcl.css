@@ -45,6 +45,10 @@ h1:focus-visible {
         margin-bottom: 0 !important;
     }
 
+.be-doc-float-end {
+    float: right !important;
+}
+
 .be-doc-hr {
     background-color: var(--bulma-primary) !important;
     border-radius: 9999px;
