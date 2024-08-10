@@ -193,6 +193,7 @@ public partial class Tabs : BulmaComponentBase
         CssUtility.BuildClassNames(
             Class,
             (BulmaCssClass.Tabs, true),
+            ("mb-0", true),
             (Alignment.ToTabsAlignmentClass(), Alignment != TabsAlignment.None),
             (Size.ToTabsSizeClass(), Size != TabsSize.None),
             (Type.ToTabsTypeClass(), Type != TabsType.None),
