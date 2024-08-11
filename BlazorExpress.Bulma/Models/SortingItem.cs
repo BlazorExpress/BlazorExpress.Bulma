@@ -1,6 +1,4 @@
-﻿using System.Linq.Expressions;
-
-namespace BlazorExpress.Bulma;
+﻿namespace BlazorExpress.Bulma;
 
 public sealed class SortingItem<TItem>
 {

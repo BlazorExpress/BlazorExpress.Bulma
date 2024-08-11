@@ -1,25 +1,26 @@
 <Grid TItem="Employee"
       DataProvider="EmployeesDataProvider"
       AllowPaging="true"
+      AllowSorting="true"
       PageSize="5"
       PageSizeSelectorItems="pageSizeSelectorItems"
       IsBordered="true"
       IsResponsive="true">
 
     <GridColumns>
-        <GridColumn TItem="Employee" HeaderText="Id">
+        <GridColumn TItem="Employee" HeaderText="Id" SortKeySelector="item => item.Id">
             @context.Id
         </GridColumn>
-        <GridColumn TItem="Employee" HeaderText="Name">
+        <GridColumn TItem="Employee" HeaderText="Name" SortKeySelector="item => item.Name">
             @context.Name
         </GridColumn>
-        <GridColumn TItem="Employee" HeaderText="Designation">
+        <GridColumn TItem="Employee" HeaderText="Designation" SortKeySelector="item => item.Designation">
             @context.Designation
         </GridColumn>
-        <GridColumn TItem="Employee" HeaderText="Joining Date">
+        <GridColumn TItem="Employee" HeaderText="Joining Date" SortKeySelector="item => item.DOJ">
             @context.DOJ
         </GridColumn>
-        <GridColumn TItem="Employee" HeaderText="Active">
+        <GridColumn TItem="Employee" HeaderText="Active" SortKeySelector="item => item.IsActive">
             @context.IsActive
         </GridColumn>
     </GridColumns>

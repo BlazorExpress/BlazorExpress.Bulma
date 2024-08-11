@@ -6,6 +6,8 @@ public class GridDataProviderRequest<TItem>
 
     public GridDataProviderResult<TItem> ApplyTo(IEnumerable<TItem> data)
     {
+        Console.WriteLine($"ApplyTo called...");
+
         if (data == null)
             return new GridDataProviderResult<TItem> { Data = null, TotalCount = 0 };
 
@@ -35,6 +37,7 @@ public class GridDataProviderRequest<TItem>
         // apply sorting
         if (Sorting?.Any() ?? false)
         {
+            Console.WriteLine($"Sorting called...");
             IOrderedEnumerable<TItem> orderedData = null!;
             var index = 1;
 
@@ -61,18 +64,18 @@ public class GridDataProviderRequest<TItem>
         }
 
         // apply paging
-        var skip = 0;
-        var take = data.Count();
+        var skipCount = 0;
+        var takeCount = data.Count();
         var totalCount = resultData!.Count(); // before paging
 
         if (PageNumber > 0 && PageSize > 0)
         {
-            skip = (PageNumber - 1) * PageSize;
-            take = PageSize;
-            resultData = resultData!.Skip(skip).Take(take);
+            skipCount = (PageNumber - 1) * PageSize;
+            takeCount = PageSize;
+            resultData = resultData!.Skip(skipCount).Take(takeCount);
         }
 
-        return new GridDataProviderResult<TItem> { Data = resultData, TotalCount = totalCount };
+        return new GridDataProviderResult<TItem> { Data = resultData!, TotalCount = totalCount };
     }
 
     #endregion

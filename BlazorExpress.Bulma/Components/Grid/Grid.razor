@@ -18,7 +18,7 @@
                         <th class="@column.ThClassNames"
                             style="@column.ThStyleNames"
                             role="@(AllowSorting ? "button" : null)"
-                            @onclick="@(AllowSorting ? OnSortClickAsync : null)">
+                            @onclick="@(AllowSorting ? async (e) => OnSortClickAsync(e, column) : null)">
 
                             @if (column.HeaderTemplate is not null)
                             {
@@ -26,7 +26,11 @@
                             }
                             else
                             {
-                                @column.HeaderText
+                                <span class="mr-2">@column.HeaderText</span>
+                                @if (AllowSorting)
+                                {
+                                    <span><i class="@column.SortIconName"></i></span>
+                                }
                             }
                         </th>
                     }
@@ -108,7 +112,7 @@
         {
             <div class="level is-mobile">
                 <div class="level-item has-text-left" style="flex-grow: inherit !important;">
-                    <Pagination ActivePageNumber="@pageNumber"
+                    <Pagination ActivePageNumber="@gridCurrentState.PageNumber"
                                 Alignment="PaginationAlignment.Center"
                                 Size="PaginationSize.Small"
                                 TotalPages="@TotalPages"
@@ -116,7 +120,7 @@
                 </div>
                 <div class="level-item" style="flex-grow: inherit !important;">
                     <div class="select is-small">
-                        <InputSelect TValue="int" Value="@pageSize" ValueExpression="() => pageSize" ValueChanged="async (value) => await OnPageSizeChangedAsync(value)">
+                        <InputSelect TValue="int" Value="@gridCurrentState.PageSize" ValueExpression="() => gridCurrentState.PageSize" ValueChanged="async (value) => await OnPageSizeChangedAsync(value)">
                             @foreach (var i in PageSizeSelectorItems)
                             {
                                 <option value="@i">@i</option>

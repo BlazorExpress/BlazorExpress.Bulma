@@ -8,15 +8,16 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     private List<GridColumn<TItem>> columns = new();
 
+    /// <summary>
+    /// Current grid state (filters, paging, sorting).
+    /// </summary>
+    internal GridState<TItem> gridCurrentState = default!;
+
     private bool isLoading;
 
     private IEnumerable<TItem> items = default!;
 
     private object? lastAssignedDataOrDataProvider;
-
-    private int pageNumber = 1;
-
-    private int pageSize;
 
     private int totalCount;
 
@@ -43,7 +44,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     {
         Console.WriteLine("Grid.OnInitialized() called");
 
-        pageSize = PageSize;
+        gridCurrentState = new(1, PageSize, null);
         ShowLoading();
         base.OnInitialized();
     }
@@ -72,10 +73,10 @@ public partial class Grid<TItem> : BulmaComponentBase
             if (dataSourceHasChanged)
                 lastAssignedDataOrDataProvider = newDataOrDataProvider;
 
-            var pageSizeChanged = pageSize != PageSize;
+            var pageSizeChanged = gridCurrentState.PageSize != PageSize;
 
             if (pageSizeChanged)
-                pageSize = PageSize;
+                gridCurrentState = new(gridCurrentState.PageNumber, PageSize, gridCurrentState.Sorting);
 
             var mustRefreshData = dataSourceHasChanged || pageSizeChanged;
 
@@ -97,8 +98,8 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     private string GetPaginationItemsText()
     {
-        var fromItemNumber = (pageNumber - 1) * pageSize + 1;
-        var toItemNumber = pageNumber * pageSize;
+        var fromItemNumber = (gridCurrentState.PageNumber - 1) * gridCurrentState.PageSize + 1;
+        var toItemNumber = gridCurrentState.PageNumber * gridCurrentState.PageSize;
 
         if (toItemNumber > totalCount)
             toItemNumber = totalCount;
@@ -110,8 +111,8 @@ public partial class Grid<TItem> : BulmaComponentBase
     {
         if (totalCount > 0)
         {
-            var q = totalCount / pageSize;
-            var r = totalCount % pageSize;
+            var q = totalCount / gridCurrentState.PageSize;
+            var r = totalCount % gridCurrentState.PageSize;
 
             return q < 1 ? 1 : q + (r > 0 ? 1 : 0);
         }
@@ -122,7 +123,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     private async Task OnPageChangedAsync(int newPageNumber)
     {
         ShowLoading();
-        pageNumber = newPageNumber;
+        gridCurrentState = new GridState<TItem>(newPageNumber, gridCurrentState.PageSize, gridCurrentState.Sorting);
         await RefreshGridCoreAsync();
         HideLoading();
         StateHasChanged();
@@ -131,20 +132,49 @@ public partial class Grid<TItem> : BulmaComponentBase
     private async Task OnPageSizeChangedAsync(int newPageSize)
     {
         ShowLoading();
-        pageNumber = 1; // reset
-        pageSize = PageSize = newPageSize;
+        gridCurrentState = new GridState<TItem>(1, newPageSize, gridCurrentState.Sorting); // reset page number
         await RefreshGridCoreAsync();
         HideLoading();
         StateHasChanged();
+
+        if (PageSizeValueChanged.HasDelegate)
+            await PageSizeValueChanged.InvokeAsync(newPageSize);
     }
 
-    private async Task OnSortClickAsync(MouseEventArgs e)
+    private async Task OnSortClickAsync(MouseEventArgs e, GridColumn<TItem> column)
     {
         Console.WriteLine("Grid.OnSortClickAsync() called");
-        if (!AllowSorting) return;
+        Console.WriteLine($"Column Id={column.Id}");
+        if (!AllowSorting || !(columns?.Any() ?? false)) return;
 
         ShowLoading();
+
         // update sorting
+        columns.ForEach(c =>
+        {
+            if (c.Id == column.Id)
+            {
+                switch (c.currentSortDirection)
+                {
+                    case SortDirection.None:
+                        c.currentSortDirection = SortDirection.Ascending;
+                        break;
+                    case SortDirection.Ascending:
+                        c.currentSortDirection = SortDirection.Descending;
+                        break;
+                    case SortDirection.Descending:
+                        c.currentSortDirection = SortDirection.None;
+                        break;
+                    default:
+                        c.currentSortDirection = SortDirection.Ascending;
+                        break;
+                }
+                gridCurrentState = new GridState<TItem>(gridCurrentState.PageNumber, gridCurrentState.PageSize, c.GetSorting());
+            }
+            else
+                c.currentSortDirection = SortDirection.None;
+        });
+
         await RefreshGridCoreAsync();
         HideLoading();
         StateHasChanged();
@@ -160,7 +190,13 @@ public partial class Grid<TItem> : BulmaComponentBase
     private async Task RefreshGridCoreAsync(CancellationToken cancellationToken = default)
     {
         Console.WriteLine("Grid.RefreshGridCoreAsync() called");
-        var request = new GridDataProviderRequest<TItem> { PageNumber = pageNumber, PageSize = pageSize, CancellationToken = cancellationToken };
+        var request = new GridDataProviderRequest<TItem>
+        {
+            PageNumber = AllowPaging ? gridCurrentState.PageNumber : default!,
+            PageSize = AllowPaging ? gridCurrentState.PageSize : default!,
+            Sorting = AllowSorting ? (gridCurrentState.Sorting ?? GetDefaultSorting()!) : null!,
+            CancellationToken = cancellationToken
+        };
 
         GridDataProviderResult<TItem> result = default!;
 
@@ -180,6 +216,11 @@ public partial class Grid<TItem> : BulmaComponentBase
             totalCount = 0;
         }
     }
+
+    private IEnumerable<SortingItem<TItem>>? GetDefaultSorting() =>
+        !AllowSorting || columns == null || !columns.Any()
+            ? null
+            : columns?.Where(column => column.CanSort() && column.IsDefaultSortColumn)?.SelectMany(item => item.GetSorting());
 
     #endregion
 
@@ -486,6 +527,9 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public Unit Unit { get; set; } = Unit.Px;
+
+    [Parameter]
+    public EventCallback<int> PageSizeValueChanged { get; set; }
 
     #endregion
 }
