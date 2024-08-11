@@ -138,6 +138,18 @@ public partial class Grid<TItem> : BulmaComponentBase
         StateHasChanged();
     }
 
+    private async Task OnSortClickAsync(MouseEventArgs e)
+    {
+        Console.WriteLine("Grid.OnSortClickAsync() called");
+        if (!AllowSorting) return;
+
+        ShowLoading();
+        // update sorting
+        await RefreshGridCoreAsync();
+        HideLoading();
+        StateHasChanged();
+    }
+
     private async Task RefreshGridAsync(CancellationToken cancellationToken = default)
     {
         Console.WriteLine("Grid.RefreshGridAsync() called");

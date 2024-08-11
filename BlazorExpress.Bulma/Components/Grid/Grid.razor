@@ -15,7 +15,11 @@
                 <tr class="@GridTheadRowClassNames" style="@GridTheadRowStyleNames">
                     @foreach (var column in columns)
                     {
-                        <th class="@column.ThClassNames" style="@column.ThStyleNames">
+                        <th class="@column.ThClassNames"
+                            style="@column.ThStyleNames"
+                            role="@(AllowSorting ? "button" : null)"
+                            @onclick="@(AllowSorting ? OnSortClickAsync : null)">
+
                             @if (column.HeaderTemplate is not null)
                             {
                                 @column.HeaderTemplate
