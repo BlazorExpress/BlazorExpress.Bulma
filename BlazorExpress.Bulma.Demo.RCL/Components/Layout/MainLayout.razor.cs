@@ -2,19 +2,17 @@
 
 public partial class MainLayout : MainLayoutBase
 {
-    Menu menuRef = default!;
-    bool isNavbarMenuActive = false;
-    bool isNavbarBurgerActive = false;
-    bool isNavMenuToggleButtonActive = false;
-    HashSet<LinkGroup> linkGroups = new();
+    #region Fields and Constants
 
-    protected override void OnInitialized()
-    {
-        if (!linkGroups.Any())
-            linkGroups = GetLinkGroups();
+    private bool isNavbarBurgerActive;
+    private bool isNavbarMenuActive;
+    private bool isNavMenuToggleButtonActive;
+    private HashSet<LinkGroup> linkGroups = new();
+    private Menu menuRef = default!;
 
-        base.OnInitialized();
-    }
+    #endregion
+
+    #region Methods
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -24,7 +22,15 @@ public partial class MainLayout : MainLayoutBase
         await base.OnAfterRenderAsync(firstRender);
     }
 
-    HashSet<LinkGroup> GetLinkGroups()
+    protected override void OnInitialized()
+    {
+        if (!linkGroups.Any())
+            linkGroups = GetLinkGroups();
+
+        base.OnInitialized();
+    }
+
+    private HashSet<LinkGroup> GetLinkGroups()
     {
         var groups = new HashSet<LinkGroup>();
 
@@ -34,7 +40,7 @@ public partial class MainLayout : MainLayoutBase
             Name = "FEATURES",
             CssClass = "is-size-7 has-text-weight-bold has-text-warning",
             Links = [
-                    new Link { Href=@RouteConstants.Demos_Skeletons_Documentation, Text = "Skeletons" },
+                new Link { Href = RouteConstants.Demos_Skeletons_Documentation, Text = "Skeletons" },
             ]
         });
 
@@ -44,13 +50,12 @@ public partial class MainLayout : MainLayoutBase
             Name = "ELEMENTS",
             CssClass = "is-size-7 has-text-weight-bold has-text-info",
             Links = [
-                    new Link { Href=@RouteConstants.Demos_Block_Documentation, Text = "Block" },
-                    new Link { Href=@RouteConstants.Demos_Box_Documentation, Text = "Box" },
-                    new Link { Href=@RouteConstants.Demos_Button_Documentation, Text = "Button" },
-                    new Link { Href=@RouteConstants.Demos_Icon_Documentation, Text = "Icon" },
+                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Block" },
+                new Link { Href = RouteConstants.Demos_Box_Documentation, Text = "Box" },
+                new Link { Href = RouteConstants.Demos_Button_Documentation, Text = "Button" },
+                new Link { Href = RouteConstants.Demos_Icon_Documentation, Text = "Icon" },
             ]
         });
-
 
         // COMPONENTS
         groups.Add(new LinkGroup
@@ -58,42 +63,30 @@ public partial class MainLayout : MainLayoutBase
             Name = "COMPONENTS",
             CssClass = "is-size-7 has-text-weight-bold has-text-primary",
             Links = [
-                    new Link { Href=@RouteConstants.Demos_Message_Documentation, Text = "Message" },
-                    new Link { Href=@RouteConstants.Demos_Pagination_Documentation, Text = "Pagination" },
-                    new Link { Href=@RouteConstants.Demos_Grid_Documentation, Text = "Grid" },
-                    new Link { Href=@RouteConstants.Demos_Tabs_Documentation, Text = "Tabs" },
+                new Link { Href = RouteConstants.Demos_Message_Documentation, Text = "Message" },
+                new Link { Href = RouteConstants.Demos_Pagination_Documentation, Text = "Pagination" },
+                new Link {
+                            Href = RouteConstants.Demos_Grid_Documentation, 
+                            Text = "Grid", 
+                            Links =  [
+                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Overview" },
+                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Data Binding" },
+                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Detail View" },
+                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Events" },
+                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Filters" },
+                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Grid State" },
+                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Nested Grid" },
+                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Paging" },
+                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Selection" },
+                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Sorting" },
+                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Translations" },
+                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Customization" },
+                            ]
+                },
+                new Link { Href = RouteConstants.Demos_Tabs_Documentation, Text = "Tabs" },
             ]
         });
-
-        // FORM
-        //groups.Add(new LinkGroup
-        //{
-        //    Name = "FORM",
-        //    CssClass = "is-size-7 has-text-weight-bold has-text-link",
-        //    Links = [
-        //            new Link { Href=@RouteConstants.Demos_Block_Documentation, Text = "Block", Match = NavLinkMatch.All },
-        //    ]
-        //});
-
-        // COLUMNS
-        //groups.Add(new LinkGroup
-        //{
-        //    Name = "COLUMNS",
-        //    CssClass = "is-size-7 has-text-weight-bold has-text-danger",
-        //    Links = [
-        //            new Link { Href=@RouteConstants.Demos_Block_Documentation, Text = "Block", Match = NavLinkMatch.All },
-        //    ]
-        //});
-
-        // GRID
-        //groups.Add(new LinkGroup
-        //{
-        //    Name = "GRID",
-        //    CssClass = "is-size-7 has-text-weight-bold has-text-warning",
-        //    Links = [
-        //            new Link { Href=@RouteConstants.Demos_Block_Documentation, Text = "Block", Match = NavLinkMatch.All },
-        //    ]
-        //});
+        
 
         // LAYOUT
         groups.Add(new LinkGroup
@@ -101,47 +94,56 @@ public partial class MainLayout : MainLayoutBase
             Name = "LAYOUT",
             CssClass = "is-size-7 has-text-weight-bold has-text-success",
             Links = [
-                    new Link { Href=@RouteConstants.Demos_Hero_Documentation, Text = "Hero" },
+                new Link { Href = RouteConstants.Demos_Hero_Documentation, Text = "Hero" },
             ]
         });
 
         return groups;
     }
 
-    Task SetLightTheme() => SetTheme("light");
+    private void OnMenuStateChanged(bool isVisible)
+    {
+        isNavMenuToggleButtonActive = isVisible;
+    }
 
-    Task SetDarkTheme() => SetTheme("dark");
+    private Task SetAutoTheme() => SetTheme("system");
 
-    Task SetAutoTheme() => SetTheme("system");
+    private Task SetDarkTheme() => SetTheme("dark");
 
-    async Task SetTheme(string themeName) => await JS.InvokeVoidAsync("setTheme", themeName);
+    private Task SetLightTheme() => SetTheme("light");
 
-    void ShowNavbarMenu(bool isActive)
+    private async Task SetTheme(string themeName) => await JS.InvokeVoidAsync("setTheme", themeName);
+
+    private void ShowMenu() => menuRef.Toggle();
+
+    private void ShowNavbarMenu(bool isActive)
     {
         isNavbarBurgerActive = isActive;
         isNavbarMenuActive = isActive;
     }
 
-    void ShowMenu() => menuRef.Toggle();
-
-    void OnMenuStateChanged(bool isVisible)
-    {
-        isNavMenuToggleButtonActive = isVisible;
-    }
+    #endregion
 }
 
 public class LinkGroup
 {
-    public string? Name { get; set; }
+    #region Properties, Indexers
+
     public string? CssClass { get; set; }
     public HashSet<Link>? Links { get; set; }
+    public string? Name { get; set; }
+
+    #endregion
 }
 
 public class Link
 {
-    public string? Href { get; set; }
-    public string? Text { get; set; }
-    public NavLinkMatch Match { get; set; } = NavLinkMatch.Prefix;
+    #region Properties, Indexers
 
-    public LinkGroup? Group { get; set; }
+    public string? Href { get; set; }
+    public HashSet<Link>? Links { get; set; }
+    public NavLinkMatch Match { get; set; } = NavLinkMatch.Prefix;
+    public string? Text { get; set; }
+
+    #endregion
 }

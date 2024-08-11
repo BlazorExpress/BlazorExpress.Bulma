@@ -118,18 +118,21 @@
                                 TotalPages="@TotalPages"
                                 PageChanged="OnPageChangedAsync" />
                 </div>
-                <div class="level-item" style="flex-grow: inherit !important;">
-                    <div class="select is-small">
-                        <InputSelect TValue="int" Value="@gridCurrentState.PageSize" ValueExpression="() => gridCurrentState.PageSize" ValueChanged="async (value) => await OnPageSizeChangedAsync(value)">
-                            @foreach (var i in PageSizeSelectorItems)
-                            {
-                                <option value="@i">@i</option>
-                            }
-                        </InputSelect>
+                @if (PageSizeSelectorVisible && (PageSizeSelectorItems?.Any() ?? false))
+                {
+                    <div class="level-item" style="flex-grow: inherit !important;">
+                        <div class="select is-small">
+                            <InputSelect TValue="int" Value="@gridCurrentState.PageSize" ValueExpression="() => gridCurrentState.PageSize" ValueChanged="async (value) => await OnPageSizeChangedAsync(value)">
+                                @foreach (var i in PageSizeSelectorItems)
+                                {
+                                    <option value="@i">@i</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <span class="ml-1">@ItemsPerPageText</span>
                     </div>
-                    <span class="ml-1">@ItemsPerPageText</span>
-                </div>
-                <div class="level-item has-text-right" style="flex-grow: inherit !important;">@paginationItemsText</div>
+                }
+                <div class="level-item has-text-right" style="flex-grow: inherit !important;">@PaginationItemsText</div>
             </div>
         }
     </div>

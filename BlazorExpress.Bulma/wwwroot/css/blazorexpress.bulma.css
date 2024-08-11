@@ -32,11 +32,7 @@ html {
     }
 }
 
-.be-page-menu {
-    overflow-y: auto;
-}
-
-.be-page-body {
+.be-page-menu, .be-page-body {
     overflow-y: auto;
     height: calc(100vh - var(--be-navbar-height));
 }

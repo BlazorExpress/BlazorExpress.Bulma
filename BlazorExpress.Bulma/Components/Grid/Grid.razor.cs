@@ -494,14 +494,14 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// Gets or sets the page size selector visible.
     /// </summary>
     /// <remarks>
-    /// Default value is false.
+    /// Default value is <see langword="true" />.
     /// </remarks>
     [Parameter]
-    public bool PageSizeSelectorVisible { get; set; }
+    public bool PageSizeSelectorVisible { get; set; } = true;
 
     [Parameter] public EventCallback<int> PageSizeValueChanged { get; set; }
 
-    private string paginationItemsText => GetPaginationItemsText();
+    private string PaginationItemsText => GetPaginationItemsText();
 
     /// <summary>
     /// Gets or sets the pagination items text format.
