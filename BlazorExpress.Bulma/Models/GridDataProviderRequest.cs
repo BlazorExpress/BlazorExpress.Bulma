@@ -6,9 +6,9 @@ public class GridDataProviderRequest<TItem>
 
     public GridDataProviderResult<TItem> ApplyTo(IEnumerable<TItem> data)
     {
-        Console.WriteLine($"ApplyTo called...");
+        Console.WriteLine("ApplyTo called...");
 
-        if (data == null)
+        if (data is null)
             return new GridDataProviderResult<TItem> { Data = null, TotalCount = 0 };
 
         var resultData = data;
@@ -37,7 +37,7 @@ public class GridDataProviderRequest<TItem>
         // apply sorting
         if (Sorting?.Any() ?? false)
         {
-            Console.WriteLine($"Sorting called...");
+            Console.WriteLine("Sorting called...");
             IOrderedEnumerable<TItem> orderedData = null!;
             var index = 1;
 

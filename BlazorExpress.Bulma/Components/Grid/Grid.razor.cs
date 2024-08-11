@@ -44,7 +44,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     {
         Console.WriteLine("Grid.OnInitialized() called");
 
-        gridCurrentState = new(1, PageSize, null);
+        gridCurrentState = new GridState<TItem>(1, PageSize, null);
         ShowLoading();
         base.OnInitialized();
     }
@@ -76,7 +76,7 @@ public partial class Grid<TItem> : BulmaComponentBase
             var pageSizeChanged = gridCurrentState.PageSize != PageSize;
 
             if (pageSizeChanged)
-                gridCurrentState = new(gridCurrentState.PageNumber, PageSize, gridCurrentState.Sorting);
+                gridCurrentState = new GridState<TItem>(gridCurrentState.PageNumber, PageSize, gridCurrentState.Sorting);
 
             var mustRefreshData = dataSourceHasChanged || pageSizeChanged;
 
@@ -95,6 +95,11 @@ public partial class Grid<TItem> : BulmaComponentBase
     internal void HideLoading() => isLoading = false;
 
     internal void ShowLoading() => isLoading = true;
+
+    private IEnumerable<SortingItem<TItem>>? GetDefaultSorting() =>
+        !AllowSorting || columns == null || !columns.Any()
+            ? null
+            : columns?.Where(column => column.CanSort() && column.IsDefaultSortColumn)?.SelectMany(item => item.GetSorting());
 
     private string GetPaginationItemsText()
     {
@@ -145,35 +150,45 @@ public partial class Grid<TItem> : BulmaComponentBase
     {
         Console.WriteLine("Grid.OnSortClickAsync() called");
         Console.WriteLine($"Column Id={column.Id}");
+
         if (!AllowSorting || !(columns?.Any() ?? false)) return;
 
         ShowLoading();
 
         // update sorting
-        columns.ForEach(c =>
-        {
-            if (c.Id == column.Id)
+        columns.ForEach(
+            c =>
             {
-                switch (c.currentSortDirection)
+                if (c.Id == column.Id)
                 {
-                    case SortDirection.None:
-                        c.currentSortDirection = SortDirection.Ascending;
-                        break;
-                    case SortDirection.Ascending:
-                        c.currentSortDirection = SortDirection.Descending;
-                        break;
-                    case SortDirection.Descending:
-                        c.currentSortDirection = SortDirection.None;
-                        break;
-                    default:
-                        c.currentSortDirection = SortDirection.Ascending;
-                        break;
+                    switch (c.currentSortDirection)
+                    {
+                        case SortDirection.None:
+                            c.currentSortDirection = SortDirection.Ascending;
+
+                            break;
+                        case SortDirection.Ascending:
+                            c.currentSortDirection = SortDirection.Descending;
+
+                            break;
+                        case SortDirection.Descending:
+                            c.currentSortDirection = SortDirection.None;
+
+                            break;
+                        default:
+                            c.currentSortDirection = SortDirection.Ascending;
+
+                            break;
+                    }
+
+                    gridCurrentState = new GridState<TItem>(gridCurrentState.PageNumber, gridCurrentState.PageSize, c.GetSorting());
                 }
-                gridCurrentState = new GridState<TItem>(gridCurrentState.PageNumber, gridCurrentState.PageSize, c.GetSorting());
+                else
+                {
+                    c.currentSortDirection = SortDirection.None;
+                }
             }
-            else
-                c.currentSortDirection = SortDirection.None;
-        });
+        );
 
         await RefreshGridCoreAsync();
         HideLoading();
@@ -190,13 +205,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     private async Task RefreshGridCoreAsync(CancellationToken cancellationToken = default)
     {
         Console.WriteLine("Grid.RefreshGridCoreAsync() called");
-        var request = new GridDataProviderRequest<TItem>
-        {
-            PageNumber = AllowPaging ? gridCurrentState.PageNumber : default!,
-            PageSize = AllowPaging ? gridCurrentState.PageSize : default!,
-            Sorting = AllowSorting ? (gridCurrentState.Sorting ?? GetDefaultSorting()!) : null!,
-            CancellationToken = cancellationToken
-        };
+        var request = new GridDataProviderRequest<TItem> { PageNumber = AllowPaging ? gridCurrentState.PageNumber : default!, PageSize = AllowPaging ? gridCurrentState.PageSize : default!, Sorting = AllowSorting ? gridCurrentState.Sorting ?? GetDefaultSorting()! : null!, CancellationToken = cancellationToken };
 
         GridDataProviderResult<TItem> result = default!;
 
@@ -216,11 +225,6 @@ public partial class Grid<TItem> : BulmaComponentBase
             totalCount = 0;
         }
     }
-
-    private IEnumerable<SortingItem<TItem>>? GetDefaultSorting() =>
-        !AllowSorting || columns == null || !columns.Any()
-            ? null
-            : columns?.Where(column => column.CanSort() && column.IsDefaultSortColumn)?.SelectMany(item => item.GetSorting());
 
     #endregion
 
@@ -495,6 +499,8 @@ public partial class Grid<TItem> : BulmaComponentBase
     [Parameter]
     public bool PageSizeSelectorVisible { get; set; }
 
+    [Parameter] public EventCallback<int> PageSizeValueChanged { get; set; }
+
     private string paginationItemsText => GetPaginationItemsText();
 
     /// <summary>
@@ -527,9 +533,6 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public Unit Unit { get; set; } = Unit.Px;
-
-    [Parameter]
-    public EventCallback<int> PageSizeValueChanged { get; set; }
 
     #endregion
 }
