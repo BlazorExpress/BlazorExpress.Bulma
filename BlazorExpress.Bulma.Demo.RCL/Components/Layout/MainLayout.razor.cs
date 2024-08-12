@@ -65,24 +65,7 @@ public partial class MainLayout : MainLayoutBase
             Links = [
                 new Link { Href = RouteConstants.Demos_Message_Documentation, Text = "Message" },
                 new Link { Href = RouteConstants.Demos_Pagination_Documentation, Text = "Pagination" },
-                new Link {
-                            Href = RouteConstants.Demos_Grid_Documentation, 
-                            Text = "Grid", 
-                            Links =  [
-                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Overview" },
-                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Data Binding" },
-                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Detail View" },
-                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Events" },
-                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Filters" },
-                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Grid State" },
-                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Nested Grid" },
-                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Paging" },
-                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Selection" },
-                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Sorting" },
-                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Translations" },
-                                new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Customization" },
-                            ]
-                },
+                new Link { Href = RouteConstants.Demos_Grid_Documentation, Text = "Grid" },
                 new Link { Href = RouteConstants.Demos_Tabs_Documentation, Text = "Tabs" },
             ]
         });

@@ -8,6 +8,12 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     private List<GridColumn<TItem>> columns = new();
 
+    private GridDetailView<TItem>? detailView;
+
+    public GridEmptyDataTemplate<TItem>? emptyDataTemplate;
+
+    public GridLoadingTemplate<TItem>? loadingTemplate;
+
     /// <summary>
     /// Current grid state (filters, paging, sorting).
     /// </summary>
@@ -226,6 +232,12 @@ public partial class Grid<TItem> : BulmaComponentBase
         }
     }
 
+    internal void SetGridDetailView(GridDetailView<TItem> detailView) => this.detailView = detailView;
+
+    internal void SetGridEmptyDataTemplate(GridEmptyDataTemplate<TItem> emptyDataTemplate) => this.emptyDataTemplate = emptyDataTemplate;
+
+    internal void SetGridLoadingTemplate(GridLoadingTemplate<TItem> loadingTemplate) => this.loadingTemplate = loadingTemplate;
+
     #endregion
 
     #region Properties, Indexers
@@ -313,15 +325,6 @@ public partial class Grid<TItem> : BulmaComponentBase
     public GridDataProvider<TItem> DataProvider { get; set; } = default!;
 
     /// <summary>
-    /// Gets or sets the empty data template.
-    /// </summary>
-    /// <remarks>
-    /// Default value is null.
-    /// </remarks>
-    [Parameter]
-    public RenderFragment? EmptyDataTemplate { get; set; }
-
-    /// <summary>
     /// Gets or sets the empty data text.
     /// </summary>
     /// <remarks>
@@ -349,6 +352,9 @@ public partial class Grid<TItem> : BulmaComponentBase
     public string? GridContainerCssStyle { get; set; }
 
     private string? GridContainerStyleNames => GridContainerCssStyle;
+
+    [Parameter]
+    public RenderFragment? GridDetailView { get; set; }
 
     private string? GridTbodyClassNames => GridTheadCssClass;
 
@@ -462,15 +468,6 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public string ItemsPerPageText { get; set; } = "Items per page"!;
-
-    /// <summary>
-    /// Gets or sets the loading template.
-    /// </summary>
-    /// <remarks>
-    /// Default value is null.
-    /// </remarks>
-    [Parameter]
-    public RenderFragment? LoadingTemplate { get; set; }
 
     /// <summary>
     /// Gets or sets the page size.

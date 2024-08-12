@@ -40,6 +40,11 @@ public static class BulmaCssClass
     public const string HasTextWarning = "has-text-warning";
     public const string HasTextWhite = "has-text-white";
 
+    public const string HasTextCentered = "has-text-centered";
+    public const string HasTextJustified = "has-text-justified";
+    public const string HasTextLeft = "has-text-left";
+    public const string HasTextRight = "has-text-right";
+
     public const string Hero = "hero";
     public const string HeroBody = "hero-body";
     public const string HeroFooter = "hero-foot";

@@ -42,10 +42,10 @@
                 }
                 @if (isLoading)
                 {
-                    @if (LoadingTemplate is not null)
+                    @if (loadingTemplate is not null)
                     {
                         <tr>
-                            @LoadingTemplate
+                            @loadingTemplate.Template
                         </tr>
                     }
                     else
@@ -92,13 +92,13 @@
                     // show empty
                     <tr>
                         <td colspan="@columnCount">
-                            @if (EmptyDataTemplate is not null)
+                            @if (emptyDataTemplate is not null)
                             {
-                                @EmptyDataTemplate
+                                @emptyDataTemplate.Template
                             }
                             else
                             {
-                                <div class="has-text-centered has-text-dark my-5">
+                                <div class="@BulmaCssClass.HasTextCentered @BulmaCssClass.HasTextDark py-6">
                                     <div>@EmptyDataText</div>
                                 </div>
                             }

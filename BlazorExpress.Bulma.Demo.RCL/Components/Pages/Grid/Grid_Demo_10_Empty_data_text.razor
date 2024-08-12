@@ -1,0 +1,38 @@
+<Grid TItem="Employee"
+      Data="employees"
+      IsBordered="true"
+      IsResponsive="true">
+
+    <GridColumns>
+        <GridColumn TItem="Employee" HeaderText="Id" SortKeySelector="item => item.Id">
+            @context.Id
+        </GridColumn>
+        <GridColumn TItem="Employee" HeaderText="Name" SortKeySelector="item => item.Name">
+            @context.Name
+        </GridColumn>
+        <GridColumn TItem="Employee" HeaderText="Designation" SortKeySelector="item => item.Designation">
+            @context.Designation
+        </GridColumn>
+        <GridColumn TItem="Employee" HeaderText="Joining Date" SortKeySelector="item => item.DOJ">
+            @context.DOJ
+        </GridColumn>
+        <GridColumn TItem="Employee" HeaderText="Active" SortKeySelector="item => item.IsActive">
+            @context.IsActive
+        </GridColumn>
+    </GridColumns>
+
+</Grid>
+
+@code
+{
+    private IEnumerable<Employee> employees = default!;
+
+    public class Employee
+    {
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public string? Designation { get; set; }
+        public DateOnly? DOJ { get; set; }
+        public bool IsActive { get; set; }
+    }
+}

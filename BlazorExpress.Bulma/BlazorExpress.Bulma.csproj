@@ -7,11 +7,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="components\grid\GridEmptyDataTemplate.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <SupportedPlatform Include="browser" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="components\grid\GridEmptyDataTemplate.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="components\grid\GridEmptyDataTemplate.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="components\grid\GridEmptyDataTemplate.razor" />
   </ItemGroup>
 
 </Project>
