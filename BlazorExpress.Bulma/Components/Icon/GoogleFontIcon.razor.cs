@@ -1,14 +1,20 @@
 ﻿namespace BlazorExpress.Bulma;
 
-public partial class Icon : BulmaComponentBase
+/// <summary>
+/// Component for Google Material Symbols and Icons.
+/// <see href="https://fonts.google.com/icons" />
+/// </summary>
+public partial class GoogleFontIcon : BulmaComponentBase
 {
+    private string IconName => GoogleFontIconUtility.ToIconName(Name);
+
     #region Properties, Indexers
 
     protected override string? CssClassNames =>
         CssUtility.BuildClassNames(
             Class,
-            (BootstrapIconUtility.Icon(), BootstrapIcon != BootstrapIconName.None),
-            (BootstrapIconUtility.Icon(BootstrapIcon), BootstrapIcon != BootstrapIconName.None)
+            (GoogleFontIconUtility.Icon(IconStyle), Name != GoogleFontIconName.None),
+            (GoogleFontIconUtility.Icon(IconStyle), Name != GoogleFontIconName.None)
         );
 
     /// <summary>
@@ -21,13 +27,13 @@ public partial class Icon : BulmaComponentBase
     public bool ApplyColorToText { get; set; }
 
     /// <summary>
-    /// Gets or sets the bootstrap icon name.
+    /// Gets or sets the google font icon name.
     /// </summary>
     /// <remarks>
-    /// Default value is <see cref="IconName.None" />.
+    /// Default value is <see cref="GoogleFontIconName.None" />.
     /// </remarks>
     [Parameter]
-    public BootstrapIconName BootstrapIcon { get; set; } = BootstrapIconName.None;
+    public GoogleFontIconName Name { get; set; } = GoogleFontIconName.None;
 
     /// <summary>
     /// Gets or sets the child content.
@@ -65,16 +71,6 @@ public partial class Icon : BulmaComponentBase
     public bool IsSkeleton { get; set; }
 
     /// <summary>
-    /// Gets or sets the custom icon name.
-    /// Specify custom icons of your own, like `fontawesome`. Example: `fas fa-alarm-clock`.
-    /// </summary>
-    /// <remarks>
-    /// Default value is null.
-    /// </remarks>
-    [Parameter]
-    public string? Name { get; set; }
-
-    /// <summary>
     /// Gets or sets the icon size.
     /// </summary>
     /// <remarks>
@@ -83,11 +79,29 @@ public partial class Icon : BulmaComponentBase
     [Parameter]
     public IconSize Size { get; set; } = IconSize.None;
 
+    /// <summary>
+    /// Gets or sets the icon fill.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="false" />.
+    /// </remarks>
+    [Parameter]
+    public bool Fill { get; set; }
+
     private string? TextCssClassNames =>
         CssUtility.BuildClassNames(
             (BulmaCssClass.IconText, true),
             (Color.ToIconColorClass(), Color != IconColor.None && ApplyColorToText)
         );
+
+    /// <summary>
+    /// Gets or sets the google font icon style.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see cref="GoogleFontIconStyle.Outlined" />.
+    /// </remarks>
+    [Parameter] 
+    public GoogleFontIconStyle IconStyle { get; set; } = GoogleFontIconStyle.Outlined;
 
     #endregion
 }

@@ -1,14 +1,14 @@
 ﻿namespace BlazorExpress.Bulma;
 
-public partial class Icon : BulmaComponentBase
+public partial class BootstrapIcon : BulmaComponentBase
 {
     #region Properties, Indexers
 
     protected override string? CssClassNames =>
         CssUtility.BuildClassNames(
             Class,
-            (BootstrapIconUtility.Icon(), BootstrapIcon != BootstrapIconName.None),
-            (BootstrapIconUtility.Icon(BootstrapIcon), BootstrapIcon != BootstrapIconName.None)
+            (BootstrapIconUtility.Icon(), Name != BootstrapIconName.None),
+            (BootstrapIconUtility.Icon(Name), Name != BootstrapIconName.None)
         );
 
     /// <summary>
@@ -24,10 +24,10 @@ public partial class Icon : BulmaComponentBase
     /// Gets or sets the bootstrap icon name.
     /// </summary>
     /// <remarks>
-    /// Default value is <see cref="IconName.None" />.
+    /// Default value is <see cref="BootstrapIconName.None" />.
     /// </remarks>
     [Parameter]
-    public BootstrapIconName BootstrapIcon { get; set; } = BootstrapIconName.None;
+    public BootstrapIconName Name { get; set; } = BootstrapIconName.None;
 
     /// <summary>
     /// Gets or sets the child content.
@@ -63,16 +63,6 @@ public partial class Icon : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public bool IsSkeleton { get; set; }
-
-    /// <summary>
-    /// Gets or sets the custom icon name.
-    /// Specify custom icons of your own, like `fontawesome`. Example: `fas fa-alarm-clock`.
-    /// </summary>
-    /// <remarks>
-    /// Default value is null.
-    /// </remarks>
-    [Parameter]
-    public string? Name { get; set; }
 
     /// <summary>
     /// Gets or sets the icon size.

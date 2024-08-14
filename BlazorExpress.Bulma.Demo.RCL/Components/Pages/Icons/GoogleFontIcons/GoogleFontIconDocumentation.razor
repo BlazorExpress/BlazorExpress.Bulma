@@ -1,0 +1,31 @@
+@attribute [Route(pageUrl)]
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(GoogleFontIcon_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Icon text" PageUrl="@pageUrl" Link="icon-text">
+    <Demo Type="typeof(GoogleFontIcon_Demo_02_Icon_Text)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Demo Type="typeof(GoogleFontIcon_Demo_03_Icon_Colors_A)" Tabs="true" />
+    <Demo Type="typeof(GoogleFontIcon_Demo_03_Icon_Colors_B_Text_Color)" Tabs="true" />
+</Section>
+
+@code{
+    private const string pageUrl = RouteConstants.Demos_GoogleFontIcon_Documentation;
+    private const string pageTitle = "Component for Google Material Symbols and Icons.";
+    private const string pageDescription = "The <code>GoogleFontIcon</code> component will display Google Material Symbols.";
+    private const string metaTitle = "Blazor Icon Component";
+    private const string metaDescription = "The GoogleFontIcon component will display Google Material Symbols.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}

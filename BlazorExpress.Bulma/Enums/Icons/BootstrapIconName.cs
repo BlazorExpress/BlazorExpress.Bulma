@@ -1,6 +1,6 @@
 ﻿namespace BlazorExpress.Bulma;
 
-public enum BootstrapIcon
+public enum BootstrapIconName
 {
     None = 0,
     Activity,

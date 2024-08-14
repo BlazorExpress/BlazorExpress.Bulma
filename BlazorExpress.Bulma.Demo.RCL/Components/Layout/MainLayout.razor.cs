@@ -54,6 +54,7 @@ public partial class MainLayout : MainLayoutBase
                 new Link { Href = RouteConstants.Demos_Box_Documentation, Text = "Box" },
                 new Link { Href = RouteConstants.Demos_Button_Documentation, Text = "Button" },
                 new Link { Href = RouteConstants.Demos_Icon_Documentation, Text = "Icon" },
+                new Link { Href = RouteConstants.Demos_GoogleFontIcon_Documentation, Text = "Google Font Icons" },
             ]
         });
 
