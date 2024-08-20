@@ -60,6 +60,7 @@ public partial class GoogleMap : BulmaComponentBase
 
     private void OnScriptLoad()
     {
+        Console.WriteLine("OnScriptLoad called...");
         Task.Run(async () => await JSRuntime.InvokeVoidAsync(GoogleMapInterop.Initialize, Id, Zoom, Center, Markers, Clickable, objRef));
     }
 
@@ -77,18 +78,27 @@ public partial class GoogleMap : BulmaComponentBase
     /// <summary>
     /// Gets or sets the Google Maps API key.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null" />.
+    /// </remarks>
     [Parameter]
     public string? ApiKey { get; set; }
 
     /// <summary>
     /// Gets or sets the center parameter.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null" />.
+    /// </remarks>
     [Parameter]
     public GoogleMapCenter Center { get; set; } = default!;
 
     /// <summary>
     /// Makes the marker clickable if set to <see langword="true" />.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="false" />.
+    /// </remarks>
     [Parameter]
     public bool Clickable { get; set; }
 
@@ -115,6 +125,9 @@ public partial class GoogleMap : BulmaComponentBase
     /// <summary>
     /// Gets or sets the markers.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null" />.
+    /// </remarks>
     [Parameter]
     public IEnumerable<GoogleMapMarker>? Markers { get; set; }
 

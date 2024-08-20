@@ -13,7 +13,7 @@ window.blazorExpress = {
     },
     googlemaps: {
         addMarker: (elementId, marker, dotNetHelper) => {
-            let mapInstance = window.blazorBootstrap.googlemaps.get(elementId);
+            let mapInstance = window.blazorExpress.googlemaps.get(elementId);
             if (mapInstance) {
                 let map = mapInstance.map;
                 let clickable = mapInstance.clickable;
@@ -41,7 +41,7 @@ window.blazorExpress = {
                 }
                 else if (marker.content) {
                     _content = document.createElement("div");
-                    _content.classList.add("bb-google-marker-content");
+                    _content.classList.add("be-google-marker-content");
                     _content.innerHTML = marker.content;
                 }
 
@@ -53,7 +53,7 @@ window.blazorExpress = {
                     gmpClickable: clickable
                 });
 
-                window.blazorBootstrap.googlemaps.markerEls[elementId].push(markerEl);
+                window.blazorExpress.googlemaps.markerEls[elementId].push(markerEl);
 
                 // add a click listener for each marker, and set up the info window.
                 if (clickable) {
@@ -69,7 +69,7 @@ window.blazorExpress = {
             }
         },
         create: (elementId, map, zoom, center, markers, clickable) => {
-            window.blazorBootstrap.googlemaps.instances[elementId] = {
+            window.blazorExpress.googlemaps.instances[elementId] = {
                 map: map,
                 zoom: zoom,
                 center: center,
@@ -78,26 +78,27 @@ window.blazorExpress = {
             };
         },
         get: (elementId) => {
-            return window.blazorBootstrap.googlemaps.instances[elementId];
+            return window.blazorExpress.googlemaps.instances[elementId];
         },
         initialize: (elementId, zoom, center, markers, clickable, dotNetHelper) => {
-            window.blazorBootstrap.googlemaps.markerEls[elementId] = window.blazorBootstrap.googlemaps.markerEls[elementId] ?? []
+            console.log(`JS initialize called...`);
+            window.blazorExpress.googlemaps.markerEls[elementId] = window.blazorExpress.googlemaps.markerEls[elementId] ?? [];
 
             let mapOptions = { center: center, zoom: zoom, mapId: elementId };
             let map = new google.maps.Map(document.getElementById(elementId), mapOptions);
 
-            window.blazorBootstrap.googlemaps.create(elementId, map, zoom, center, markers, clickable);
+            window.blazorExpress.googlemaps.create(elementId, map, zoom, center, markers, clickable);
 
             if (markers) {
                 for (const marker of markers) {
-                    window.blazorBootstrap.googlemaps.addMarker(elementId, marker, dotNetHelper);
+                    window.blazorExpress.googlemaps.addMarker(elementId, marker, dotNetHelper);
                 }
             }
         },
         instances: {},
         markerEls: {},
         updateMarkers: (elementId, markers, dotNetHelper) => {
-            let markerEls = window.blazorBootstrap.googlemaps.markerEls[elementId] ?? [];
+            let markerEls = window.blazorExpress.googlemaps.markerEls[elementId] ?? [];
 
             // delete the markers
             if (markerEls.length > 0) {
@@ -108,7 +109,7 @@ window.blazorExpress = {
 
             if (markers) {
                 for (const marker of markers) {
-                    window.blazorBootstrap.googlemaps.addMarker(elementId, marker, dotNetHelper);
+                    window.blazorExpress.googlemaps.addMarker(elementId, marker, dotNetHelper);
                 }
             }
         }
