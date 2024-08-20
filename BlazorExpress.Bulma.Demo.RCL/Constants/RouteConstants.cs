@@ -30,13 +30,15 @@ public static class RouteConstants
     public const string Demos_Breadcrumb_Documentation = Demos_Prefix + "/breadcrumb";
     public const string Demos_Card_Documentation = Demos_Prefix + "/card";
     public const string Demos_Dropdown_Documentation = Demos_Prefix + "/dropdown";
+    public const string Demos_GoogleMaps_Documentation = Demos_Prefix + "/google-maps";
+    public const string Demos_Grid_Documentation = Demos_Prefix + "/grid";
     public const string Demos_Menu_Documentation = Demos_Prefix + "/menu";
     public const string Demos_Message_Documentation = Demos_Prefix + "/message";
     public const string Demos_Modal_Documentation = Demos_Prefix + "/modal";
     public const string Demos_Navbar_Documentation = Demos_Prefix + "/navbar";
     public const string Demos_Pagination_Documentation = Demos_Prefix + "/pagination";
     public const string Demos_Panel_Documentation = Demos_Prefix + "/panel";
-    public const string Demos_Grid_Documentation = Demos_Prefix + "/grid";
+    public const string Demos_ScriptLoader_Documentation = Demos_Prefix + "/script-loader";
     public const string Demos_Tabs_Documentation = Demos_Prefix + "/tabs";
 
     // Form

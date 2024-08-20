@@ -1,0 +1,12 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+
+<ScriptLoader Async="true"
+              Defer="true"
+              Class="mt-4"
+              ScriptId="@($"script{Id}")"
+              Source="@GoogleMapsJsFileUrl"
+              OnLoad="OnScriptLoad" />
+
+<div @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" role="alert" @attributes="@AdditionalAttributes">
+</div>
