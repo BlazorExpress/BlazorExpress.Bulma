@@ -16,8 +16,8 @@ public partial class MainLayout : MainLayoutBase
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (firstRender)
-            await JS.InvokeVoidAsync("initializeTheme");
+        //if (firstRender)
+        //    await JS.InvokeVoidAsync("initializeTheme");
 
         await base.OnAfterRenderAsync(firstRender);
     }
@@ -40,7 +40,7 @@ public partial class MainLayout : MainLayoutBase
             Name = "FEATURES",
             CssClass = "is-size-7 has-text-weight-bold has-text-warning",
             Links = [
-                new Link { Href = RouteConstants.Demos_Skeletons_Documentation, Text = "Skeletons" },
+                new Link { Href = RouteConstants.Demos_Skeletons_Documentation, Text = "Skeletons" }
             ]
         });
 
@@ -54,7 +54,7 @@ public partial class MainLayout : MainLayoutBase
                 new Link { Href = RouteConstants.Demos_Box_Documentation, Text = "Box" },
                 new Link { Href = RouteConstants.Demos_Button_Documentation, Text = "Button" },
                 new Link { Href = RouteConstants.Demos_Icon_Documentation, Text = "Icon" },
-                new Link { Href = RouteConstants.Demos_GoogleFontIcon_Documentation, Text = "Google Font Icons" },
+                new Link { Href = RouteConstants.Demos_GoogleFontIcon_Documentation, Text = "Google Font Icons" }
             ]
         });
 
@@ -69,7 +69,7 @@ public partial class MainLayout : MainLayoutBase
                 new Link { Href = RouteConstants.Demos_Grid_Documentation, Text = "Grid" },
                 new Link { Href = RouteConstants.Demos_Pagination_Documentation, Text = "Pagination" },
                 new Link { Href = RouteConstants.Demos_ScriptLoader_Documentation, Text = "Script Loader" },
-                new Link { Href = RouteConstants.Demos_Tabs_Documentation, Text = "Tabs" },
+                new Link { Href = RouteConstants.Demos_Tabs_Documentation, Text = "Tabs" }
             ]
         });
         
@@ -80,7 +80,7 @@ public partial class MainLayout : MainLayoutBase
             Name = "LAYOUT",
             CssClass = "is-size-7 has-text-weight-bold has-text-success",
             Links = [
-                new Link { Href = RouteConstants.Demos_Hero_Documentation, Text = "Hero" },
+                new Link { Href = RouteConstants.Demos_Hero_Documentation, Text = "Hero" }
             ]
         });
 
@@ -107,29 +107,6 @@ public partial class MainLayout : MainLayoutBase
         isNavbarBurgerActive = isActive;
         isNavbarMenuActive = isActive;
     }
-
-    #endregion
-}
-
-public class LinkGroup
-{
-    #region Properties, Indexers
-
-    public string? CssClass { get; set; }
-    public HashSet<Link>? Links { get; set; }
-    public string? Name { get; set; }
-
-    #endregion
-}
-
-public class Link
-{
-    #region Properties, Indexers
-
-    public string? Href { get; set; }
-    public HashSet<Link>? Links { get; set; }
-    public NavLinkMatch Match { get; set; } = NavLinkMatch.Prefix;
-    public string? Text { get; set; }
 
     #endregion
 }
