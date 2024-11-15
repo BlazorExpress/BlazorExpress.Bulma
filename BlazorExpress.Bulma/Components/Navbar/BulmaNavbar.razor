@@ -3,7 +3,7 @@
 
 <Navbar Class="px-3" IsSpaced="true" HasShadow="true">
     <NavbarBrand>
-        <NavbarBurger Class="custom" IsLeft="true" IsActive="isNavMenuToggleButtonActive" ActiveStateChanged="ShowMenu">
+        <NavbarBurger Class="custom" IsLeft="true" @bind-IsActive="isNavMenuToggleButtonActive">
             <i class="bi bi-list"></i>
         </NavbarBurger>
         <NavbarItem Href="/" IsHoverable="false">
@@ -16,12 +16,12 @@
                 <span class="ml-2 is-size-5 has-text-weight-bold">@ApplicationName</span>
             }
         </NavbarItem>
-        <NavbarBurger TargetId="navbarBasicExample1" IsActive="isNavbarBurgerActive" ActiveStateChanged="ShowNavbarMenu">
+        <NavbarBurger TargetId="navbarBasicExample1" IsActive="isNavbarMenuActive" ActiveStateChanged="ToggleNavbarMenu">
             <i class="bi bi-three-dots-vertical"></i>
         </NavbarBurger>
     </NavbarBrand>
 
-    <NavbarMenu Id="navbarBasicExample1" IsActive="@isNavbarMenuActive">
+    <NavbarMenu Id="navbarBasicExample1" IsActive="isNavbarMenuActive">
         @* <NavbarStart>
             <NavbarItem Class="mr-1" Href="@DocsUrl">
                 <i class="bi bi-file-text-fill has-text-primary mr-2"></i>Docs

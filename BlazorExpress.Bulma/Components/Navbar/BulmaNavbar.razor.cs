@@ -2,20 +2,28 @@
 
 public partial class BulmaNavbar : BulmaComponentBase
 {
-    private bool isNavbarBurgerActive;
+    #region Fields and Constants
+    
     private bool isNavbarMenuActive;
     private bool isNavMenuToggleButtonActive;
     private Menu menuRef = default!;
 
-    [Parameter] public string? ApplicationName { get; set; }
+    #endregion
 
-    [Parameter] public string? BrandImgAltText { get; set; }
+    #region Methods
 
-    [Parameter] public string? BrandImgSrc { get; set; }
+    //private void ShowMenu() => menuRef.Toggle();
 
-    private void OnMenuStateChanged(bool isVisible)
+    //private void ShowNavbarMenu(bool isActive)
+    //{
+    //    isNavbarBurgerActive = isActive;
+    //    isNavbarMenuActive = isActive;
+    //}
+
+    private void ToggleNavbarMenu(bool isActive)
     {
-        isNavMenuToggleButtonActive = isVisible;
+        isNavbarMenuActive = isActive;
+        Console.WriteLine($"BulmaNavbar.isNavbarMenuActive: {isNavbarMenuActive}");
     }
 
     private Task SetAutoTheme() => SetTheme("system");
@@ -24,13 +32,21 @@ public partial class BulmaNavbar : BulmaComponentBase
 
     private Task SetLightTheme() => SetTheme("light");
 
-    private async Task SetTheme(string themeName) => await JSRuntime.InvokeVoidAsync("setTheme", themeName);
-
-    private void ShowMenu() => menuRef.Toggle();
-
-    private void ShowNavbarMenu(bool isActive)
+    private async Task SetTheme(string themeName)
     {
-        isNavbarBurgerActive = isActive;
-        isNavbarMenuActive = isActive;
+        await JSRuntime.InvokeVoidAsync("setTheme", themeName);
+        isNavbarMenuActive = false;
     }
+
+    #endregion
+
+    #region Properties, Indexers
+
+    [Parameter] public string? ApplicationName { get; set; }
+
+    [Parameter] public string? BrandImgAltText { get; set; }
+
+    [Parameter] public string? BrandImgSrc { get; set; }
+
+    #endregion
 }
