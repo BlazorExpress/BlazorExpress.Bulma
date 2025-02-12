@@ -12,7 +12,7 @@
     </HeaderSection>
 
     <SidebarSection>
-        <Menu @ref="menuRef" Class="be-page-menu" OnStateChanged="OnMenuStateChanged">
+        <Menu @ref="menuRef" Class="be-page-menu" IsVisible="sidebarActive" IsScrollable="true" OnStateChanged="OnMenuStateChanged">
             @foreach (var group in linkGroups)
             {
                 <MenuLabel Class="@group.CssClass">@group.Name</MenuLabel>
@@ -47,7 +47,8 @@
     </SidebarSection>
 
     <ContentSection>
-        <Button Class="bi bi-signout">Logout</Button>
+        <Overlay IsActive="false" />
+        <Button Class="bi bi-box-arrow-right menu-toggle-button" @onclick="ToggleSidebarSection" />
         @Body
     </ContentSection>
 

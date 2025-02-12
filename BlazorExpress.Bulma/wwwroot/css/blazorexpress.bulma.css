@@ -89,3 +89,31 @@ html {
 [role=button] {
     cursor: pointer;
 }
+
+.menu-toggle-button {
+    --bulma-button-border-width: 0px;
+    background-color: var(--bulma-scheme-main-ter);
+    box-shadow: none;
+    color: var(--bulma-text-weak);
+    height: 2.5em;
+    margin-left: -1.5rem;
+    margin-top: -1.5rem;
+    padding: 0 !important;
+    width: 2.5em
+}
+
+@media print,screen and (min-width: 769px) {
+    .menu-toggle-button {
+        display: none;
+    }
+
+        .menu-toggle-button.is-active {
+            display: block;
+            margin: 0 0 -2.5em;
+            margin-left: calc(var(--p)*-.5);
+            margin-top: calc(var(--p)*-.5);
+            position: sticky;
+            top: 1.5rem;
+            z-index: 1
+        }
+}

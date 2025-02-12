@@ -57,7 +57,7 @@ public partial class MainLayout : MainLayoutBase
         groups.Add(new LinkGroup
         {
             Name = "ELEMENTS",
-            CssClass = "is-size-7 has-text-weight-bold has-text-info",
+            CssClass = "is-size-7 has-text-weight-bold has-text-primary",
             Links = [
                 new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Block" },
                 new Link { Href = RouteConstants.Demos_Box_Documentation, Text = "Box" },
@@ -69,7 +69,7 @@ public partial class MainLayout : MainLayoutBase
         groups.Add(new LinkGroup
         {
             Name = "COMPONENTS",
-            CssClass = "is-size-7 has-text-weight-bold has-text-primary",
+            CssClass = "is-size-7 has-text-weight-bold has-text-dark",
             Links = [
                 new Link { Href = RouteConstants.Demos_Message_Documentation, Text = "Message" },
                 new Link { Href = RouteConstants.Demos_GoogleMaps_Documentation, Text = "Google Maps" },
@@ -115,10 +115,10 @@ public partial class MainLayout : MainLayoutBase
         //isNavbarMenuActive = isActive;
     }
 
-    private void ToggleSidebarSection(bool isActive)
+    private void ToggleSidebarSection()
     {
-        Console.WriteLine($"MainLayout:ToggleSidebarSection - {isActive}");
-        sidebarActive = isActive;
+        sidebarActive = !sidebarActive;
+        Console.WriteLine($"MainLayout:ToggleSidebarSection - {sidebarActive}");
     }
 
     #endregion
