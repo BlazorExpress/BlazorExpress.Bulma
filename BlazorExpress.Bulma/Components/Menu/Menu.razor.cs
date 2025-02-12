@@ -10,8 +10,6 @@ public partial class Menu : BulmaComponentBase
 
     private DeviceType deviceType;
 
-    private bool isVisible = false;
-
     private DotNetObjectReference<Menu> objRef = default!;
 
     #endregion
@@ -48,10 +46,10 @@ public partial class Menu : BulmaComponentBase
     /// </returns>
     public Task Toggle()
     {
-        isVisible = !isVisible;
+        IsVisible = !IsVisible;
 
         if (OnStateChanged.HasDelegate)
-            return OnStateChanged.InvokeAsync(isVisible);
+            return OnStateChanged.InvokeAsync(IsVisible);
 
         return Task.CompletedTask;
     }
@@ -60,12 +58,12 @@ public partial class Menu : BulmaComponentBase
     public async Task WindowResizeJS(float width)
     {
         deviceType = width.ToDeviceTypeEnum();
-        isVisible = deviceType != DeviceType.Mobile;
+        IsVisible = deviceType != DeviceType.Mobile;
 
         StateHasChanged();
 
         if (OnStateChanged.HasDelegate)
-            await OnStateChanged.InvokeAsync(isVisible);
+            await OnStateChanged.InvokeAsync(IsVisible);
 
         if (OnWindowResize.HasDelegate)
             await OnWindowResize.InvokeAsync(new WindowResizeEventArgs(deviceType, width));
@@ -75,10 +73,10 @@ public partial class Menu : BulmaComponentBase
     {
         if (deviceType == DeviceType.Mobile)
         {
-            isVisible = false;
+            IsVisible = false;
 
             if (OnStateChanged.HasDelegate)
-                return OnStateChanged.InvokeAsync(isVisible);
+                return OnStateChanged.InvokeAsync(IsVisible);
 
             return Task.CompletedTask;
         }
@@ -96,7 +94,7 @@ public partial class Menu : BulmaComponentBase
             (BulmaCssClass.Menu, true),
             ("is-scrollable", IsScrollable),
             (BulmaCssClass.P5, true),
-            (BulmaCssClass.IsHidden, !isVisible)
+            (BulmaCssClass.IsHidden, !IsVisible)
         );
 
     /// <summary>
@@ -109,6 +107,8 @@ public partial class Menu : BulmaComponentBase
     public RenderFragment? ChildContent { get; set; }
 
     [Parameter] public bool IsScrollable { get; set; }
+
+    [Parameter] public bool IsVisible { get; set; }
 
     [Parameter] public EventCallback<bool> OnStateChanged { get; set; }
 

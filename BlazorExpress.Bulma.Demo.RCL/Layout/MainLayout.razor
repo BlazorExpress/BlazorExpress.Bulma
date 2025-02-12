@@ -6,7 +6,9 @@
     <HeaderSection>
         <BulmaNavbar BrandImgSrc="_content/BlazorExpress.Bulma.Demo.RCL/icons/logo.png"
                      BrandImgAltText="Blazor Express Logo"
-                     ApplicationName="Blazor Express" />
+                     ApplicationName="Blazor Express"
+                     SidebarActive="sidebarActive"
+                     ToggleSidebarSection="ToggleSidebarSection" />
     </HeaderSection>
 
     <SidebarSection>
@@ -45,6 +47,7 @@
     </SidebarSection>
 
     <ContentSection>
+        <Button Class="bi bi-signout">Logout</Button>
         @Body
     </ContentSection>
 

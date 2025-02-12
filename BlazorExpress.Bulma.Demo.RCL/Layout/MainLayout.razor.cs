@@ -3,10 +3,8 @@
 public partial class MainLayout : MainLayoutBase
 {
     #region Fields and Constants
-
-    private bool isNavbarBurgerActive;
-    private bool isNavbarMenuActive;
-    private bool isNavMenuToggleButtonActive;
+    
+    private bool sidebarActive;
     private HashSet<LinkGroup> linkGroups = new();
     private Menu menuRef = default!;
 
@@ -44,6 +42,17 @@ public partial class MainLayout : MainLayoutBase
             ]
         });
 
+        // ICONS
+        groups.Add(new LinkGroup
+        {
+            Name = "ICONS",
+            CssClass = "is-size-7 has-text-weight-bold has-text-info",
+            Links = [
+                new Link { Href = RouteConstants.Demos_BootstrapIcons_Documentation, Text = "Bootstrap Icons" },
+                new Link { Href = RouteConstants.Demos_GoogleFontIcons_Documentation, Text = "Google Font Icons" }
+            ]
+        });
+
         // ELEMENTS
         groups.Add(new LinkGroup
         {
@@ -53,8 +62,6 @@ public partial class MainLayout : MainLayoutBase
                 new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Block" },
                 new Link { Href = RouteConstants.Demos_Box_Documentation, Text = "Box" },
                 new Link { Href = RouteConstants.Demos_Button_Documentation, Text = "Button" },
-                new Link { Href = RouteConstants.Demos_Icon_Documentation, Text = "Icon" },
-                new Link { Href = RouteConstants.Demos_GoogleFontIcon_Documentation, Text = "Google Font Icons" }
             ]
         });
 
@@ -89,7 +96,7 @@ public partial class MainLayout : MainLayoutBase
 
     private void OnMenuStateChanged(bool isVisible)
     {
-        isNavMenuToggleButtonActive = isVisible;
+        //isNavMenuToggleButtonActive = isVisible;
     }
 
     private Task SetAutoTheme() => SetTheme("system");
@@ -104,8 +111,14 @@ public partial class MainLayout : MainLayoutBase
 
     private void ShowNavbarMenu(bool isActive)
     {
-        isNavbarBurgerActive = isActive;
-        isNavbarMenuActive = isActive;
+        //isNavbarBurgerActive = isActive;
+        //isNavbarMenuActive = isActive;
+    }
+
+    private void ToggleSidebarSection(bool isActive)
+    {
+        Console.WriteLine($"MainLayout:ToggleSidebarSection - {isActive}");
+        sidebarActive = isActive;
     }
 
     #endregion
