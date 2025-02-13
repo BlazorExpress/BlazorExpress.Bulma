@@ -4,10 +4,8 @@ public partial class NavbarBurger : BulmaComponentBase
 {
     #region Methods
 
-    private void ToggleActiveState()
+    private void OnNavbarBurgerClick()
     {
-        //IsActive = !IsActive;
-
         if (ActiveStateChanged.HasDelegate)
             ActiveStateChanged.InvokeAsync(!IsActive);
         else

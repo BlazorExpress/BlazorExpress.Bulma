@@ -11,14 +11,16 @@ public static class RouteConstants
     // Features
     public const string Demos_Skeletons_Documentation = Demos_Prefix + "/skeletons";
 
+    // Icons
+    public const string Demos_BootstrapIcons_Documentation = Demos_Prefix + "/icons/bootatrap-icons";
+    public const string Demos_GoogleFontIcons_Documentation = Demos_Prefix + "/icons/google-font-icons";
+
     // Elements
     public const string Demos_Block_Documentation = Demos_Prefix + "/block";
     public const string Demos_Box_Documentation = Demos_Prefix + "/box";
     public const string Demos_Button_Documentation = Demos_Prefix + "/button";
     public const string Demos_Content_Documentation = Demos_Prefix + "/content";
     public const string Demos_Delete_Documentation = Demos_Prefix + "/delete";
-    public const string Demos_Icon_Documentation = Demos_Prefix + "/icon";
-    public const string Demos_GoogleFontIcon_Documentation = Demos_Prefix + "/google-font-icon";
     public const string Demos_Image_Documentation = Demos_Prefix + "/image";
     public const string Demos_Notification_Documentation = Demos_Prefix + "/notification";
     public const string Demos_ProgressBar_Documentation = Demos_Prefix + "/progress-bar";

@@ -3,10 +3,8 @@
 public partial class MainLayout : MainLayoutBase
 {
     #region Fields and Constants
-
-    private bool isNavbarBurgerActive;
-    private bool isNavbarMenuActive;
-    private bool isNavMenuToggleButtonActive;
+    
+    private bool isSidebarVisible = false;
     private HashSet<LinkGroup> linkGroups = new();
     private Menu menuRef = default!;
 
@@ -40,7 +38,18 @@ public partial class MainLayout : MainLayoutBase
             Name = "FEATURES",
             CssClass = "is-size-7 has-text-weight-bold has-text-warning",
             Links = [
-                new Link { Href = RouteConstants.Demos_Skeletons_Documentation, Text = "Skeletons" },
+                new Link { Href = RouteConstants.Demos_Skeletons_Documentation, Text = "Skeletons" }
+            ]
+        });
+
+        // ICONS
+        groups.Add(new LinkGroup
+        {
+            Name = "ICONS",
+            CssClass = "is-size-7 has-text-weight-bold has-text-info",
+            Links = [
+                new Link { Href = RouteConstants.Demos_BootstrapIcons_Documentation, Text = "Bootstrap Icons" },
+                new Link { Href = RouteConstants.Demos_GoogleFontIcons_Documentation, Text = "Google Font Icons" }
             ]
         });
 
@@ -48,13 +57,11 @@ public partial class MainLayout : MainLayoutBase
         groups.Add(new LinkGroup
         {
             Name = "ELEMENTS",
-            CssClass = "is-size-7 has-text-weight-bold has-text-info",
+            CssClass = "is-size-7 has-text-weight-bold has-text-primary",
             Links = [
                 new Link { Href = RouteConstants.Demos_Block_Documentation, Text = "Block" },
                 new Link { Href = RouteConstants.Demos_Box_Documentation, Text = "Box" },
                 new Link { Href = RouteConstants.Demos_Button_Documentation, Text = "Button" },
-                new Link { Href = RouteConstants.Demos_Icon_Documentation, Text = "Icon" },
-                new Link { Href = RouteConstants.Demos_GoogleFontIcon_Documentation, Text = "Google Font Icons" },
             ]
         });
 
@@ -62,14 +69,14 @@ public partial class MainLayout : MainLayoutBase
         groups.Add(new LinkGroup
         {
             Name = "COMPONENTS",
-            CssClass = "is-size-7 has-text-weight-bold has-text-primary",
+            CssClass = "is-size-7 has-text-weight-bold has-text-dark",
             Links = [
                 new Link { Href = RouteConstants.Demos_Message_Documentation, Text = "Message" },
                 new Link { Href = RouteConstants.Demos_GoogleMaps_Documentation, Text = "Google Maps" },
                 new Link { Href = RouteConstants.Demos_Grid_Documentation, Text = "Grid" },
                 new Link { Href = RouteConstants.Demos_Pagination_Documentation, Text = "Pagination" },
                 new Link { Href = RouteConstants.Demos_ScriptLoader_Documentation, Text = "Script Loader" },
-                new Link { Href = RouteConstants.Demos_Tabs_Documentation, Text = "Tabs" },
+                new Link { Href = RouteConstants.Demos_Tabs_Documentation, Text = "Tabs" }
             ]
         });
         
@@ -80,16 +87,11 @@ public partial class MainLayout : MainLayoutBase
             Name = "LAYOUT",
             CssClass = "is-size-7 has-text-weight-bold has-text-success",
             Links = [
-                new Link { Href = RouteConstants.Demos_Hero_Documentation, Text = "Hero" },
+                new Link { Href = RouteConstants.Demos_Hero_Documentation, Text = "Hero" }
             ]
         });
 
         return groups;
-    }
-
-    private void OnMenuStateChanged(bool isVisible)
-    {
-        isNavMenuToggleButtonActive = isVisible;
     }
 
     private Task SetAutoTheme() => SetTheme("system");
@@ -100,36 +102,10 @@ public partial class MainLayout : MainLayoutBase
 
     private async Task SetTheme(string themeName) => await JS.InvokeVoidAsync("setTheme", themeName);
 
-    private void ShowMenu() => menuRef.Toggle();
-
-    private void ShowNavbarMenu(bool isActive)
+    private void ToggleSidebarSection()
     {
-        isNavbarBurgerActive = isActive;
-        isNavbarMenuActive = isActive;
+        @menuRef.Toggle();
     }
-
-    #endregion
-}
-
-public class LinkGroup
-{
-    #region Properties, Indexers
-
-    public string? CssClass { get; set; }
-    public HashSet<Link>? Links { get; set; }
-    public string? Name { get; set; }
-
-    #endregion
-}
-
-public class Link
-{
-    #region Properties, Indexers
-
-    public string? Href { get; set; }
-    public HashSet<Link>? Links { get; set; }
-    public NavLinkMatch Match { get; set; } = NavLinkMatch.Prefix;
-    public string? Text { get; set; }
 
     #endregion
 }

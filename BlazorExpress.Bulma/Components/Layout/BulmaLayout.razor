@@ -1,0 +1,26 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaLayoutComponentBase
+
+@if (HeaderSection is not null)
+{
+    @HeaderSection
+}
+
+<div class="@CssClassNames">
+    @if (SidebarSection is not null)
+    {
+        @SidebarSection
+    }
+
+    @if (ContentSection is not null)
+    {
+        <div class="@ContentSectionCssClassNames">
+            @ContentSection
+        </div>
+    }
+
+    @if (FooterSection is not null)
+    {
+        @FooterSection
+    }
+</div>

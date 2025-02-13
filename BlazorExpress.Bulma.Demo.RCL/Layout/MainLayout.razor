@@ -1,106 +1,64 @@
 @namespace BlazorExpress.Bulma.Demo.RCL
 @inherits MainLayoutBase
 
-<Navbar Class="px-3" IsSpaced="true" HasShadow="true">
-    <NavbarBrand>
-        <NavbarBurger Class="custom" IsLeft="true" IsActive="isNavMenuToggleButtonActive" ActiveStateChanged="ShowMenu">
-            <i class="bi bi-list"></i>
-        </NavbarBurger>
-        <NavbarItem Href="/" IsHoverable="false">
-            <img src="_content/BlazorExpress.Bulma.Demo.RCL/icons/logo.png" alt="Blazor Express" />
-            <span class="ml-2 is-size-5 has-text-weight-bold">Blazor Express</span>
-        </NavbarItem>
-        <NavbarBurger TargetId="navbarBasicExample1" IsActive="isNavbarBurgerActive" ActiveStateChanged="ShowNavbarMenu">
-            <i class="bi bi-three-dots-vertical"></i>
-        </NavbarBurger>
-    </NavbarBrand>
+<BulmaLayout>
 
-    <NavbarMenu Id="navbarBasicExample1" IsActive="@isNavbarMenuActive">
-        <NavbarStart>
-            <NavbarItem Class="mr-1" Href="@DocsUrl">
-                <i class="bi bi-file-text-fill has-text-primary mr-2"></i>Docs
-            </NavbarItem>
-            <NavbarItem Href="@BlogUrl">
-                <i class="bi bi-newspaper has-text-warning mr-2"></i>Blog
-            </NavbarItem>
-        </NavbarStart>
-        <NavbarEnd>
-            <NavbarItem Class="mr-1" Href="@GithubUrl" target="_blank">
-                <i class="bi bi-github"></i>
-                <small class="is-hidden-desktop ml-2">GitHub</small>
-            </NavbarItem>
-            <NavbarItem Class="mr-1" Href="@TwitterUrl" target="_blank">
-                <i class="bi bi-twitter-x"></i>
-                <small class="is-hidden-desktop ml-2">Twitter</small>
-            </NavbarItem>
-            <NavbarItem Href="@LinkedInUrl" target="_blank">
-                <i class="bi bi-linkedin"></i>
-                <small class="is-hidden-desktop ml-2">LinkedIn</small>
-            </NavbarItem>
-            <NavbarItem Type="NavbarItemType.Div">
-                <span class="tag is-link">@Version</span>
-            </NavbarItem>
+    <HeaderSection>
+        <BulmaNavbar BrandImgSrc="_content/BlazorExpress.Bulma.Demo.RCL/icons/logo.png"
+                     BrandImgAltText="Blazor Express Logo"
+                     ApplicationName="Blazor Express" />
+    </HeaderSection>
 
-            <NavbarItem Type="NavbarItemType.Div" HasDropdown="true">
-                <NavbarLink Class="be-theme-indicator"><i class="bi bi-sun"></i></NavbarLink>
-                <NavbarDropdown Class="mt-2" Position="NavbarDropdownPosition.Right">
-                    <NavbarItem Class="be-theme-item is-clickable" Type="NavbarItemType.Link" data-scheme="light" @onclick="SetLightTheme"><i class="bi bi-sun mr-2"></i>Light</NavbarItem>
-                    <NavbarItem Class="be-theme-item is-clickable my-1" Type="NavbarItemType.Link" data-scheme="dark" @onclick="SetDarkTheme"><i class="bi bi-moon-stars-fill mr-2"></i>Dark</NavbarItem>
-                    <NavbarItem Class="be-theme-item is-clickable" Type="NavbarItemType.Link" data-scheme="system" @onclick="SetAutoTheme"><i class="bi bi-circle-half mr-2"></i>Auto</NavbarItem>
-                </NavbarDropdown>
-            </NavbarItem>
-
-        </NavbarEnd>
-    </NavbarMenu>
-</Navbar>
-
-<div class="be-page">
-    <Menu @ref="menuRef" Class="be-page-menu" OnStateChanged="OnMenuStateChanged">
-        @foreach (var group in linkGroups)
-        {
-            <MenuLabel Class="@group.CssClass">@group.Name</MenuLabel>
-            if (group.Links?.Any() ?? false)
+    <SidebarSection>
+        <Menu @ref="menuRef" Class="be-page-menu" IsScrollable="true">
+            @foreach (var group in linkGroups)
             {
-                <MenuList>
-                    @foreach (var link in group.Links)
-                    {
-                        <MenuItem>
-                            @if (link.Links?.Any() ?? false) // level 2 links
-                            {
-                                <NavLink>@link.Text</NavLink>
-                                <MenuList>
-                                    @foreach (var clink in link.Links)
-                                    {
-                                        <MenuItem>
-                                            <NavLink href="@clink.Href" Match="@clink.Match">@clink.Text</NavLink>
-                                        </MenuItem>
-                                    }
-                                </MenuList>
-                            }
-                            else
-                            {
-                                <NavLink href="@link.Href" Match="@link.Match">@link.Text</NavLink>
-                            }
-                        </MenuItem>
-                    }
-                </MenuList>
+                <MenuLabel Class="@group.CssClass">@group.Name</MenuLabel>
+                if (group.Links?.Any() ?? false)
+                {
+                    <MenuList>
+                        @foreach (var link in group.Links)
+                        {
+                            <MenuItem>
+                                @if (link.Links?.Any() ?? false) // level 2 links
+                                {
+                                    <NavLink>@link.Text</NavLink>
+                                    <MenuList>
+                                        @foreach (var clink in link.Links)
+                                        {
+                                            <MenuItem>
+                                                <NavLink href="@clink.Href" Match="@clink.Match">@clink.Text</NavLink>
+                                            </MenuItem>
+                                        }
+                                    </MenuList>
+                                }
+                                else
+                                {
+                                    <NavLink href="@link.Href" Match="@link.Match">@link.Text</NavLink>
+                                }
+                            </MenuItem>
+                        }
+                    </MenuList>
+                }
             }
-        }
-    </Menu>
+        </Menu>
+    </SidebarSection>
 
-    <div class="be-page-body p-5">
+    <ContentSection>
+        <Button Class="bi bi-box-arrow-right menu-toggle-button ml-1 mt-0 mb-1" @onclick="ToggleSidebarSection" />
         @Body
-    </div>
+    </ContentSection>
 
-    <MainLayoutBaseFooter Version="@Version"
-                          DocsUrl="@DocsUrl"
-                          BlogUrl="@BlogUrl"
-                          GithubUrl="@GithubUrl"
-                          TwitterUrl="@TwitterUrl"
-                          LinkedInUrl="@LinkedInUrl"
-                          OpenCollectiveUrl="@OpenCollectiveUrl"
-                          GithubIssuesUrl="@GithubIssuesUrl"
-                          GithubDiscussionsUrl="@GithubDiscussionsUrl"
-                          StackoverflowUrl="@StackoverflowUrl" />
-
-</div>
+    <FooterSection>
+        <MainLayoutBaseFooter Version="@Version"
+                              DocsUrl="@DocsUrl"
+                              BlogUrl="@BlogUrl"
+                              GithubUrl="@GithubUrl"
+                              TwitterUrl="@TwitterUrl"
+                              LinkedInUrl="@LinkedInUrl"
+                              OpenCollectiveUrl="@OpenCollectiveUrl"
+                              GithubIssuesUrl="@GithubIssuesUrl"
+                              GithubDiscussionsUrl="@GithubDiscussionsUrl"
+                              StackoverflowUrl="@StackoverflowUrl" />
+    </FooterSection>
+</BulmaLayout>

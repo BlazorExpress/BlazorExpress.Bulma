@@ -10,8 +10,6 @@ public partial class Menu : BulmaComponentBase
 
     private DeviceType deviceType;
 
-    private bool isVisible = false;
-
     private DotNetObjectReference<Menu> objRef = default!;
 
     #endregion
@@ -26,7 +24,7 @@ public partial class Menu : BulmaComponentBase
 
             var width = await JSRuntime.InvokeAsync<float>(MenuInterop.WindowSize);
 
-            await WindowResizeJS(width);
+            WindowResizeJS(width);
         }
 
         await base.OnAfterRenderAsync(firstRender);
@@ -46,44 +44,26 @@ public partial class Menu : BulmaComponentBase
     /// Current menu visible state.
     /// <see langword="true" /> if the menu is visible, <see langword="false" /> if it is hidden.
     /// </returns>
-    public Task Toggle()
+    public void Toggle()
     {
-        isVisible = !isVisible;
-
-        if (OnStateChanged.HasDelegate)
-            return OnStateChanged.InvokeAsync(isVisible);
-
-        return Task.CompletedTask;
+        IsVisible = !IsVisible;
     }
 
     [JSInvokable]
-    public async Task WindowResizeJS(float width)
+    public void WindowResizeJS(float width)
     {
         deviceType = width.ToDeviceTypeEnum();
-        isVisible = deviceType != DeviceType.Mobile;
+        IsVisible = deviceType != DeviceType.Mobile;
 
         StateHasChanged();
-
-        if (OnStateChanged.HasDelegate)
-            await OnStateChanged.InvokeAsync(isVisible);
-
-        if (OnWindowResize.HasDelegate)
-            await OnWindowResize.InvokeAsync(new WindowResizeEventArgs(deviceType, width));
     }
 
-    internal Task HideMenu()
+    internal void HideMenu()
     {
         if (deviceType == DeviceType.Mobile)
-        {
-            isVisible = false;
+            IsVisible = false;
 
-            if (OnStateChanged.HasDelegate)
-                return OnStateChanged.InvokeAsync(isVisible);
-
-            return Task.CompletedTask;
-        }
-
-        return Task.CompletedTask;
+        //StateHasChanged();
     }
 
     #endregion
@@ -94,9 +74,9 @@ public partial class Menu : BulmaComponentBase
         CssUtility.BuildClassNames(
             Class,
             (BulmaCssClass.Menu, true),
-            ("is-scrollable", IsScrollable),
+            (BulmaCssClass.IsScrollable, IsScrollable),
             (BulmaCssClass.P5, true),
-            (BulmaCssClass.IsHidden, !isVisible)
+            (BulmaCssClass.IsHidden, !IsVisible)
         );
 
     /// <summary>
@@ -110,9 +90,7 @@ public partial class Menu : BulmaComponentBase
 
     [Parameter] public bool IsScrollable { get; set; }
 
-    [Parameter] public EventCallback<bool> OnStateChanged { get; set; }
-
-    [Parameter] public EventCallback<WindowResizeEventArgs> OnWindowResize { get; set; }
+    [Parameter] public bool IsVisible { get; set; }
 
     #endregion
 }
