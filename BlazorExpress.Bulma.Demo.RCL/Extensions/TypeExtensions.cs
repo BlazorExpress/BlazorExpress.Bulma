@@ -8,6 +8,66 @@ public static class TypeExtensions
     #region Methods
 
     /// <summary>
+    /// Get added version of a method.
+    /// </summary>
+    /// <param name="type"></param>
+    /// <param name="methodName"></param>
+    /// <returns>string</returns>
+    public static string GetMethodAddedVersion(this Type type, string methodName)
+    {
+        if (type is null || string.IsNullOrWhiteSpace(methodName))
+            return string.Empty;
+
+        var method = type.GetMethod(methodName);
+        if (method is null)
+            return string.Empty;
+
+        var addedVersionAttribute = method.GetCustomAttributes(typeof(AddedVersionAttribute), false)
+            .FirstOrDefault() as AddedVersionAttribute;
+
+        return addedVersionAttribute?.Version!;
+    }
+
+    /// <summary>
+    /// Get method description.
+    /// </summary>
+    /// <param name="type"></param>
+    /// <param name="methodName"></param>
+    /// <returns>string</returns>
+    public static string GetMethodDescription(this Type type, string methodName)
+    {
+        if (type is null || string.IsNullOrWhiteSpace(methodName))
+            return string.Empty;
+
+        var method = type.GetMethod(methodName);
+        if (method is null)
+            return string.Empty;
+
+        var descriptionAttribute = method.GetCustomAttributes(typeof(DescriptionAttribute), false)
+            .FirstOrDefault() as DescriptionAttribute;
+
+        return descriptionAttribute?.Description ?? string.Empty;
+    }
+
+    /// <summary>
+    /// Get method return type.
+    /// </summary>
+    /// <param name="type"></param>
+    /// <param name="methodName"></param>
+    /// <returns>string</returns>
+    public static string GetMethodReturnType(this Type type, string methodName)
+    {
+        if (type is null || string.IsNullOrWhiteSpace(methodName))
+            return string.Empty;
+
+        var method = type.GetMethod(methodName);
+        if (method is null)
+            return string.Empty;
+
+        return method.ReturnType.ToString();
+    }
+
+    /// <summary>
     /// Get added version of a property.
     /// </summary>
     /// <param name="type"></param>
@@ -158,27 +218,6 @@ public static class TypeExtensions
             .FirstOrDefault() as EditorRequiredAttribute;
 
         return editorRequiredAttribute is not null;
-    }
-
-    /// <summary>
-    /// Get added version of a method.
-    /// </summary>
-    /// <param name="type"></param>
-    /// <param name="methodName"></param>
-    /// <returns>string</returns>
-    public static string GetMethodAddedVersion(this Type type, string methodName)
-    {
-        if (type is null || string.IsNullOrWhiteSpace(methodName))
-            return string.Empty;
-
-        var method = type.GetMethod(methodName);
-        if (method is null)
-            return string.Empty;
-
-        var addedVersionAttribute = method.GetCustomAttributes(typeof(AddedVersionAttribute), false)
-            .FirstOrDefault() as AddedVersionAttribute;
-
-        return addedVersionAttribute?.Version!;
     }
 
     #endregion

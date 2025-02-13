@@ -18,12 +18,4 @@ public partial class DocxPropertyRow<TItem> : ComponentBase
 
     [Parameter]
     public string PropertyName { get; set; } = default!;
-
-    [Parameter]
-    public string? MethodName { get; set; }
-
-    [Parameter]
-    public string? ReturnType { get; set; }
-
-
 }

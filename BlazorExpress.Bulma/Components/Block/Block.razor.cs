@@ -27,8 +27,9 @@ public partial class Block : BulmaComponentBase
 
     [AddedVersion("1.0.0")]
     [Description("Test 1 method")]
-    //[ReturnType(typeof(void))]
     public void Test1() { }
 
+    [AddedVersion("1.0.0")]
+    [Description("Test 2 method")]
     public int Test2(int a, int b) => a + b;
 }
