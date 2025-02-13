@@ -4,7 +4,7 @@ public partial class MainLayout : MainLayoutBase
 {
     #region Fields and Constants
     
-    private bool sidebarActive;
+    private bool isSidebarVisible = false;
     private HashSet<LinkGroup> linkGroups = new();
     private Menu menuRef = default!;
 
@@ -94,11 +94,6 @@ public partial class MainLayout : MainLayoutBase
         return groups;
     }
 
-    private void OnMenuStateChanged(bool isVisible)
-    {
-        //isNavMenuToggleButtonActive = isVisible;
-    }
-
     private Task SetAutoTheme() => SetTheme("system");
 
     private Task SetDarkTheme() => SetTheme("dark");
@@ -107,18 +102,9 @@ public partial class MainLayout : MainLayoutBase
 
     private async Task SetTheme(string themeName) => await JS.InvokeVoidAsync("setTheme", themeName);
 
-    private void ShowMenu() => menuRef.Toggle();
-
-    private void ShowNavbarMenu(bool isActive)
-    {
-        //isNavbarBurgerActive = isActive;
-        //isNavbarMenuActive = isActive;
-    }
-
     private void ToggleSidebarSection()
     {
-        sidebarActive = !sidebarActive;
-        Console.WriteLine($"MainLayout:ToggleSidebarSection - {sidebarActive}");
+        @menuRef.Toggle();
     }
 
     #endregion

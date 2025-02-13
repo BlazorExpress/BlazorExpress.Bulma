@@ -2,17 +2,15 @@
 @inherits MainLayoutBase
 
 <BulmaLayout>
-             
+
     <HeaderSection>
         <BulmaNavbar BrandImgSrc="_content/BlazorExpress.Bulma.Demo.RCL/icons/logo.png"
                      BrandImgAltText="Blazor Express Logo"
-                     ApplicationName="Blazor Express"
-                     SidebarActive="sidebarActive"
-                     ToggleSidebarSection="ToggleSidebarSection" />
+                     ApplicationName="Blazor Express" />
     </HeaderSection>
 
     <SidebarSection>
-        <Menu @ref="menuRef" Class="be-page-menu" IsVisible="sidebarActive" IsScrollable="true" OnStateChanged="OnMenuStateChanged">
+        <Menu @ref="menuRef" Class="be-page-menu" IsScrollable="true">
             @foreach (var group in linkGroups)
             {
                 <MenuLabel Class="@group.CssClass">@group.Name</MenuLabel>
@@ -47,8 +45,7 @@
     </SidebarSection>
 
     <ContentSection>
-        <Overlay IsActive="false" />
-        <Button Class="bi bi-box-arrow-right menu-toggle-button" @onclick="ToggleSidebarSection" />
+        <Button Class="bi bi-box-arrow-right menu-toggle-button ml-1 mt-0 mb-1" @onclick="ToggleSidebarSection" />
         @Body
     </ContentSection>
 

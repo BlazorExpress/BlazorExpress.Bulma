@@ -4,22 +4,10 @@ public partial class MenuItem : BulmaComponentBase
 {
     #region Methods
 
-    protected override void Dispose(bool disposing) => base.Dispose(disposing);
-
-    protected override void OnInitialized()
+    private void  OnMenuItemClick()
     {
-        //NavigationManager.LocationChanged += NavigationManager_LocationChanged;
-        base.OnInitialized();
-    }
-
-    private void NavigationManager_LocationChanged(object? sender, LocationChangedEventArgs e) { }
-
-    private async Task OnMenuItemClick()
-    {
-        //IsActive = true; // TODO: remove this
-
         if (Parent is not null)
-            await Parent.HideMenu();
+            Parent.HideMenu();
 
         // TODO: update IsActive
         // Additional scenario: Set IsActive based on the URL automatically
@@ -53,8 +41,6 @@ public partial class MenuItem : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public bool IsActive { get; set; }
-
-    [Inject] private NavigationManager NavigationManager { get; set; } = default!;
 
     /// <summary>
     /// Gets or sets the parent.

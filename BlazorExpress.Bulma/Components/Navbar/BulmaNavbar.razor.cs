@@ -27,14 +27,6 @@ public partial class BulmaNavbar : BulmaComponentBase
         navbarMenuActive = isActive;
     }
 
-    private void ToggleSidebar()
-    {
-        if (ToggleSidebarSection.HasDelegate)
-            ToggleSidebarSection.InvokeAsync(!SidebarActive);
-        else
-            SidebarActive = !SidebarActive;
-    }
-
     #endregion
 
     #region Properties, Indexers
@@ -44,10 +36,6 @@ public partial class BulmaNavbar : BulmaComponentBase
     [Parameter] public string? BrandImgAltText { get; set; }
 
     [Parameter] public string? BrandImgSrc { get; set; }
-
-    [Parameter] public bool SidebarActive { get; set; }
-
-    [Parameter] public EventCallback<bool> ToggleSidebarSection { get; set; }
 
     #endregion
 }
