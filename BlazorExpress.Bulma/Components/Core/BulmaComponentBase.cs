@@ -82,6 +82,12 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
     [Parameter(CaptureUnmatchedValues = true)] 
     public Dictionary<string, object> AdditionalAttributes { get; set; } = default!;
 
+    /// <summary>
+    /// Gets or sets the CSS class.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the CSS class.")]
     [Parameter] 
     public string? Class { get; set; }
 
@@ -99,6 +105,12 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
     [Inject] 
     protected IJSRuntime JSRuntime { get; set; } = default!;
 
+    /// <summary>
+    /// Gets or sets the CSS style.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the CSS style.")]
     [Parameter] 
     public string? Style { get; set; }
 

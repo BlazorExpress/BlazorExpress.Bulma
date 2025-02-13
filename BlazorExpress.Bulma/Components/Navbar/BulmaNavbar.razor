@@ -13,6 +13,7 @@
                 <span class="ml-2 is-size-5 has-text-weight-bold">@ApplicationName</span>
             }
         </NavbarItem>
+
         <NavbarBurger TargetId="navbarBasicExample1" IsActive="navbarMenuActive" ActiveStateChanged="ToggleNavbarMenu">
             <i class="bi bi-three-dots-vertical"></i>
         </NavbarBurger>
@@ -20,10 +21,10 @@
 
     <NavbarMenu Id="navbarBasicExample1" IsActive="navbarMenuActive">
         @* <NavbarStart>
-            <NavbarItem Class="mr-1" Href="@DocsUrl">
+            <NavbarItem Class="mr-1" Href="/docs">
                 <i class="bi bi-file-text-fill has-text-primary mr-2"></i>Docs
             </NavbarItem>
-            <NavbarItem Href="@BlogUrl">
+            <NavbarItem Href="/blog">
                 <i class="bi bi-newspaper has-text-warning mr-2"></i>Blog
             </NavbarItem>
         </NavbarStart> *@

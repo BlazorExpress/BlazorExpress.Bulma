@@ -16,8 +16,19 @@ public partial class Block : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the child content.")]
+    [EditorRequired]
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
     #endregion
+
+    [AddedVersion("1.0.0")]
+    [Description("Test 1 method")]
+    //[ReturnType(typeof(void))]
+    public void Test1() { }
+
+    public int Test2(int a, int b) => a + b;
 }

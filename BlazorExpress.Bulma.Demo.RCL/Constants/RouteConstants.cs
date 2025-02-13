@@ -6,6 +6,12 @@ public static class RouteConstants
     public const string Docs_Prefix = "/docs";
     public const string Demos_Prefix = "/demos";
 
+    #region Blog
+
+    public const string Docs_Block_Documentation = Docs_Prefix + "/block";
+
+    #endregion
+
     #region Demos
 
     // Features
