@@ -8,6 +8,24 @@ public static class TypeExtensions
     #region Methods
 
     /// <summary>
+    /// Get component parameters.
+    /// </summary>
+    /// <param name="type"></param>
+    /// <returns>Returns list of component parameters</returns>
+    public static List<string> GetComponentParameters(this Type type)
+    {
+        if (type is null)
+            return new List<string>();
+
+        return type.GetProperties()
+            .Where(p => p.GetCustomAttributes(typeof(ParameterAttribute), false).Any())
+            .Where(p => p.Name != "AdditionalAttributes")
+            .Select(p => p.Name)
+            .OrderBy(p => p)
+            .ToList();
+    }
+
+    /// <summary>
     /// Get added version of a method.
     /// </summary>
     /// <param name="type"></param>

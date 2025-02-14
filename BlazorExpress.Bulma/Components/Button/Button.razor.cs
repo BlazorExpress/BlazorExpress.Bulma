@@ -44,6 +44,10 @@ public partial class Button : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the child content.")]
+    [EditorRequired]
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
@@ -51,22 +55,103 @@ public partial class Button : BulmaComponentBase
 
     [Parameter] public string? Href { get; set; }
 
+    /// <summary>
+    /// If true, the dark version of the button will be enabled.
+    /// </summary>
+    /// <remarks>
+    /// The default value is <see langword="false" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If true, the dark version of the button will be enabled.")]
     [Parameter] public bool IsDarkVersion { get; set; }
 
+    /// <summary>
+    /// If true, the button will be disabled.
+    /// </summary>
+    /// <remarks>
+    /// The default value is <see langword="false" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If true, the button will be disabled.")]
     [Parameter] public bool IsDisabled { get; set; }
 
+    /// <summary>
+    /// If true, the button will be expanded to the full width of its container.
+    /// </summary>
+    /// <remarks>
+    /// The default value is <see langword="false" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If true, the button will be expanded to the full width of its container.")]
     [Parameter] public bool IsFullWidth { get; set; }
 
+    /// <summary>
+    /// If true, the inverted variant will be enabled.
+    /// </summary>
+    /// <remarks>
+    /// The default value is <see langword="false" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If true, the inverted variant will be enabled.")]
     [Parameter] public bool IsInverted { get; set; }
 
+    /// <summary>
+    /// If true, the light version of the button will be enabled.
+    /// </summary>
+    /// <remarks>
+    /// The default value is <see langword="false" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If true, the light version of the button will be enabled.")]
     [Parameter] public bool IsLightVersion { get; set; }
 
+    /// <summary>
+    /// If true, the button will be loading.
+    /// </summary>
+    /// <remarks>
+    /// The default value is <see langword="false" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If true, the button will be loading.")]
     [Parameter] public bool IsLoading { get; set; }
 
+    /// <summary>
+    /// If true, the outlined variant will be enabled.
+    /// </summary>
+    /// <remarks>
+    /// The default value is <see langword="false" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If true, the outlined variant will be enabled.")]
     [Parameter] public bool IsOutlined { get; set; }
 
+    /// <summary>
+    /// If true, the button will be responsive.
+    /// </summary>
+    /// <remarks>
+    /// The default value is <see langword="false" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If true, the button will be responsive.")]
     [Parameter] public bool IsResponsive { get; set; }
 
+    /// <summary>
+    /// If true, the rounded variant will be enabled.
+    /// </summary>
+    /// <remarks>
+    /// The default value is <see langword="false" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If true, the rounded variant will be enabled.")]
     [Parameter] public bool IsRounded { get; set; }
 
     /// <summary>
@@ -75,9 +160,18 @@ public partial class Button : BulmaComponentBase
     /// <remarks>
     /// The default value is <see langword="false" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If true, the skeleton variant will be enabled.")]
     [Parameter]
     public bool IsSkeleton { get; set; }
 
+    /// <summary>
+    /// Gets or sets the size.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets the size.")]
     [Parameter] public ButtonSize Size { get; set; }
 
     /// <summary>
@@ -86,6 +180,9 @@ public partial class Button : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="ButtonType.Button" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets the button type.")]
     [Parameter]
     public ButtonType Type { get; set; } = ButtonType.Button;
 

@@ -13,26 +13,31 @@
 
 <DemoLink Href="@RouteConstants.Demos_Grid_Documentation" />
 
-<Section Class="p-0" Size="HeadingSize.H4" Name="Parameters" PageUrl="@pageUrl" Link="parameters">
-    <DocxTable TItem="Block" DocType="DocType.Parameters">
-        <DocxPropertyRow TItem="Block" PropertyName="@nameof(Block.Class)" />
-        <DocxPropertyRow TItem="Block" PropertyName="@nameof(Block.ChildContent)" />
-        <DocxPropertyRow TItem="Block" PropertyName="@nameof(Block.Style)" />
-    </DocxTable>
+<Section Class="p-0" Size="HeadingSize.H4" Name="Grid Parameters" PageUrl="@pageUrl" Link="grid-parameters">
+    <DocxTable TItem="Grid<object>" DocType="DocType.Parameters" />
 </Section>
 
-<Section Class="p-0" Size="HeadingSize.H4" Name="Methods" PageUrl="@pageUrl" Link="methods">
-    <DocxTable TItem="Block" DocType="DocType.Methods">
-        <DocxMethodRow TItem="Block" MethodName="@nameof(Block.Test1)" />
-        <DocxMethodRow TItem="Block" MethodName="@nameof(Block.Test2)" />
-    </DocxTable>
+<Section Class="p-0" Size="HeadingSize.H4" Name="GridColumns Parameters" PageUrl="@pageUrl" Link="grid-columns-parameters">
+    <DocxTable TItem="GridColumns" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="GridColumn Parameters" PageUrl="@pageUrl" Link="grid-column-parameters">
+    <DocxTable TItem="GridColumn<object>" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="GridEmptyDataTemplate Parameters" PageUrl="@pageUrl" Link="grid-empty-data-template-parameters">
+    <DocxTable TItem="GridEmptyDataTemplate<object>" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="GridLoadingTemplate Parameters" PageUrl="@pageUrl" Link="grid-loading-template-parameters">
+    <DocxTable TItem="GridLoadingTemplate<object>" DocType="DocType.Parameters" />
 </Section>
 
 @code {
     private const string pageUrl = RouteConstants.Docs_Grid_Documentation;
-    private const string pageTitle = "Block";
-    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>Block</code> component, guiding you through its configuration options.";
-    private const string metaTitle = "Blazor Block Component";
-    private const string metaDescription = "This documentation provides a comprehensive reference for the Block component, guiding you through its configuration options.";
+    private const string pageTitle = "Grid";
+    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>Grid</code> component, guiding you through its configuration options.";
+    private const string metaTitle = "Blazor Grid Component";
+    private const string metaDescription = "This documentation provides a comprehensive reference for the Grid component, guiding you through its configuration options.";
     private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
 }

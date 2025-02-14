@@ -14,25 +14,14 @@
 <DemoLink Href="@RouteConstants.Demos_GoogleMaps_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Parameters" PageUrl="@pageUrl" Link="parameters">
-    <DocxTable TItem="Block" DocType="DocType.Parameters">
-        <DocxPropertyRow TItem="Block" PropertyName="@nameof(Block.Class)" />
-        <DocxPropertyRow TItem="Block" PropertyName="@nameof(Block.ChildContent)" />
-        <DocxPropertyRow TItem="Block" PropertyName="@nameof(Block.Style)" />
-    </DocxTable>
-</Section>
-
-<Section Class="p-0" Size="HeadingSize.H4" Name="Methods" PageUrl="@pageUrl" Link="methods">
-    <DocxTable TItem="Block" DocType="DocType.Methods">
-        <DocxMethodRow TItem="Block" MethodName="@nameof(Block.Test1)" />
-        <DocxMethodRow TItem="Block" MethodName="@nameof(Block.Test2)" />
-    </DocxTable>
+    <DocxTable TItem="GoogleMap" DocType="DocType.Parameters" />
 </Section>
 
 @code {
     private const string pageUrl = RouteConstants.Docs_GoogleMaps_Documentation;
-    private const string pageTitle = "Block";
-    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>Block</code> component, guiding you through its configuration options.";
-    private const string metaTitle = "Blazor Block Component";
-    private const string metaDescription = "This documentation provides a comprehensive reference for the Block component, guiding you through its configuration options.";
+    private const string pageTitle = "GoogleMap";
+    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>GoogleMap</code> component, guiding you through its configuration options.";
+    private const string metaTitle = "Blazor GoogleMap Component";
+    private const string metaDescription = "This documentation provides a comprehensive reference for the GoogleMap component, guiding you through its configuration options.";
     private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
 }

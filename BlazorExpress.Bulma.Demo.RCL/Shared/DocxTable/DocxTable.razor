@@ -18,7 +18,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @ChildContent
+                    @foreach (var prop in typeof(TItem).GetComponentParameters())
+                    {
+                        <DocxPropertyRow TItem="TItem" PropertyName="@prop" />
+                    }
                 </tbody>
             </table>
         </div>

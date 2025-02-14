@@ -97,6 +97,12 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
 
     public ElementReference Element { get; set; }
 
+    /// <summary>
+    /// Gets or sets the ID. If not set, a unique ID will be generated.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the ID. If not set, a unique ID will be generated.")]
     [Parameter] 
     public string? Id { get; set; }
 
