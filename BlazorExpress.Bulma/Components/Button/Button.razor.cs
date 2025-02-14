@@ -51,8 +51,26 @@ public partial class Button : BulmaComponentBase
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
-    [Parameter] public ButtonColor Color { get; set; }
+    /// <summary>
+    /// Gets or sets the color.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see cref="ButtonColor.None" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(ButtonColor.None)]
+    [Description("Gets or sets the color.")]
+    [Parameter] public ButtonColor Color { get; set; } = ButtonColor.None;
 
+    /// <summary>
+    /// Gets or sets the href.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the href.")]
     [Parameter] public string? Href { get; set; }
 
     /// <summary>
