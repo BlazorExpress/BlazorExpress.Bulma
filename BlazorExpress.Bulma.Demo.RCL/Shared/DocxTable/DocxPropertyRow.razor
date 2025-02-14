@@ -3,13 +3,13 @@
 @typeparam TItem
 
 <tr>
-    <td class="has-text-primary text-opacity-75">@PropertyName</td>
-    <td class="has-text-danger text-opacity-75">@PropertyTypeShortName</td>
+    <td>@PropertyName</td>
+    <td class="has-text-danger">@PropertyTypeShortName</td>
     <td>@typeof(TItem).GetPropertyDefaultValue(PropertyName)</td>
     <td class="has-text-centered">
         @if (IsRequired)
         {
-            <i class="bi bi-check-circle-fill has-text-success text-opacity-75"></i>
+            <i class="bi bi-check-circle-fill has-text-success"></i>
         }
     </td>
     <td>@((MarkupString)Description)</td>

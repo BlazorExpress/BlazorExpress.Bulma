@@ -6,9 +6,59 @@ public static class RouteConstants
     public const string Docs_Prefix = "/docs";
     public const string Demos_Prefix = "/demos";
 
-    #region Blog
+    #region Docs
 
+    // Features
+    public const string Docs_Skeletons_Documentation = Docs_Prefix + "/skeletons";
+
+    // Icons
+    public const string Docs_BootstrapIcons_Documentation = Docs_Prefix + "/icons/bootstrap-icons";
+    public const string Docs_GoogleFontIcons_Documentation = Docs_Prefix + "/icons/google-font-icons";
+
+    // Elements
     public const string Docs_Block_Documentation = Docs_Prefix + "/block";
+    public const string Docs_Box_Documentation = Docs_Prefix + "/box";
+    public const string Docs_Button_Documentation = Docs_Prefix + "/button";
+    public const string Docs_Content_Documentation = Docs_Prefix + "/content";
+    public const string Docs_Delete_Documentation = Docs_Prefix + "/delete";
+    public const string Docs_Image_Documentation = Docs_Prefix + "/image";
+    public const string Docs_Notification_Documentation = Docs_Prefix + "/notification";
+    public const string Docs_ProgressBar_Documentation = Docs_Prefix + "/progress-bar";
+    public const string Docs_Table_Documentation = Docs_Prefix + "/table";
+    public const string Docs_Tags_Documentation = Docs_Prefix + "/tags";
+    public const string Docs_Title_Documentation = Docs_Prefix + "/title";
+
+    // Components
+    public const string Docs_Breadcrumb_Documentation = Docs_Prefix + "/breadcrumb";
+    public const string Docs_Card_Documentation = Docs_Prefix + "/card";
+    public const string Docs_Dropdown_Documentation = Docs_Prefix + "/dropdown";
+    public const string Docs_GoogleMaps_Documentation = Docs_Prefix + "/google-maps";
+    public const string Docs_Grid_Documentation = Docs_Prefix + "/grid";
+    public const string Docs_Menu_Documentation = Docs_Prefix + "/menu";
+    public const string Docs_Message_Documentation = Docs_Prefix + "/message";
+    public const string Docs_Modal_Documentation = Docs_Prefix + "/modal";
+    public const string Docs_Navbar_Documentation = Docs_Prefix + "/navbar";
+    public const string Docs_Pagination_Documentation = Docs_Prefix + "/pagination";
+    public const string Docs_Panel_Documentation = Docs_Prefix + "/panel";
+    public const string Docs_ScriptLoader_Documentation = Docs_Prefix + "/script-loader";
+    public const string Docs_Tabs_Documentation = Docs_Prefix + "/tabs";
+
+    // Form
+    public const string Docs_Form_General_Documentation = Docs_Prefix + "/form/general";
+    public const string Docs_Form_Input_Documentation = Docs_Prefix + "/form/input";
+    public const string Docs_Form_Textarea_Documentation = Docs_Prefix + "/form/textarea";
+    public const string Docs_Form_Select_Documentation = Docs_Prefix + "/form/select";
+    public const string Docs_Form_Checkbox_Documentation = Docs_Prefix + "/form/checkbox";
+    public const string Docs_Form_Radio_Documentation = Docs_Prefix + "/form/radio";
+    public const string Docs_Form_FileUpload_Documentation = Docs_Prefix + "/form/file-upload";
+
+    // Layout
+    public const string Docs_Container_Documentation = Docs_Prefix + "/container";
+    public const string Docs_Hero_Documentation = Docs_Prefix + "/hero";
+    public const string Docs_Section_Documentation = Docs_Prefix + "/section";
+    public const string Docs_Level_Documentation = Docs_Prefix + "/level";
+    public const string Docs_Media_Documentation = Docs_Prefix + "/media";
+    public const string Docs_Footer_Documentation = Docs_Prefix + "/footer";
 
     #endregion
 
@@ -18,7 +68,7 @@ public static class RouteConstants
     public const string Demos_Skeletons_Documentation = Demos_Prefix + "/skeletons";
 
     // Icons
-    public const string Demos_BootstrapIcons_Documentation = Demos_Prefix + "/icons/bootatrap-icons";
+    public const string Demos_BootstrapIcons_Documentation = Demos_Prefix + "/icons/bootstrap-icons";
     public const string Demos_GoogleFontIcons_Documentation = Demos_Prefix + "/icons/google-font-icons";
 
     // Elements

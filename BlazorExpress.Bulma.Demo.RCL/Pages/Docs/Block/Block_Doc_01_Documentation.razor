@@ -1,4 +1,5 @@
 @attribute [Route(pageUrl)]
+@layout DocsMainLayout
 
 <PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
 
@@ -10,11 +11,13 @@
 
 @* <img src="https://i.imgur.com/IX3bajc.png" class="img-fluid" alt="Blazor Bar Chart - API Documentation" /> *@
 
+<DemoLink Href="@RouteConstants.Demos_Block_Documentation" />
+
 <Section Class="p-0" Size="HeadingSize.H4" Name="Parameters" PageUrl="@pageUrl" Link="parameters">
     <DocxTable TItem="Block" DocType="DocType.Parameters">
         <DocxPropertyRow TItem="Block" PropertyName="@nameof(Block.Class)" />
-        <DocxPropertyRow TItem="Block" PropertyName="@nameof(Block.Style)" />
         <DocxPropertyRow TItem="Block" PropertyName="@nameof(Block.ChildContent)" />
+        <DocxPropertyRow TItem="Block" PropertyName="@nameof(Block.Style)" />
     </DocxTable>
 </Section>
 
@@ -28,8 +31,8 @@
 @code {
     private const string pageUrl = RouteConstants.Docs_Block_Documentation;
     private const string pageTitle = "Block";
-    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>Block</code> component, guiding you through its functionality and configuration options.";
+    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>Block</code> component, guiding you through its configuration options.";
     private const string metaTitle = "Blazor Block Component";
-    private const string metaDescription = "This documentation provides a comprehensive reference for the Block component, guiding you through its functionality and configuration options.";
+    private const string metaDescription = "This documentation provides a comprehensive reference for the Block component, guiding you through its configuration options.";
     private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
 }

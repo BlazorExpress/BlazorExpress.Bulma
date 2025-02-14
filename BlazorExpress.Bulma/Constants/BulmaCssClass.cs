@@ -63,6 +63,16 @@ public static class BulmaCssClass
     public const string Is6 = "is-6";
 
     public const string IsActive = "is-active";
+    public const string IsAlignContentBaseline = "is-align-content-baseline";
+    public const string IsAlignContentCenter = "is-align-content-center";
+    public const string IsAlignContentEnd = "is-align-content-end";
+    public const string IsAlignContentFlexEnd = "is-align-content-flex-end";
+    public const string IsAlignContentFlexStart = "is-align-content-flex-start";
+    public const string IsAlignContentSpaceAround = "is-align-content-space-around";
+    public const string IsAlignContentSpaceBetween = "is-align-content-space-between";
+    public const string IsAlignContentSpaceEvenly = "is-align-content-space-evenly";
+    public const string IsAlignContentStart = "is-align-content-start";
+    public const string IsAlignContentStretch = "is-align-content-stretch";
     public const string IsBlack = "is-black";
     public const string IsBordered = "is-bordered";
     public const string IsBoxed = "is-boxed";

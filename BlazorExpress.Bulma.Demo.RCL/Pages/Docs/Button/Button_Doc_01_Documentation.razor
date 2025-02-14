@@ -1,0 +1,54 @@
+@attribute [Route(pageUrl)]
+@layout DocsMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+@* <img src="https://i.imgur.com/IX3bajc.png" class="img-fluid" alt="Blazor Bar Chart - API Documentation" /> *@
+
+<DemoLink Href="@RouteConstants.Demos_Button_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Button Parameters" PageUrl="@pageUrl" Link="button-parameters">
+    <DocxTable TItem="Button" DocType="DocType.Parameters">
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.Class)" />
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.ChildContent)" />
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.Color)" />
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.Href)" />
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.IsDarkVersion)" />
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.IsDisabled)" />
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.IsFullWidth)" />
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.IsInverted)" />
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.IsLightVersion)" />
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.IsLoading)" />
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.IsOutlined)" />
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.IsResponsive)" />
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.IsRounded)" />
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.IsSkeleton)" />
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.Size)" />
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.Style)" />
+        <DocxPropertyRow TItem="Button" PropertyName="@nameof(Button.Type)" />
+    </DocxTable>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Buttons Parameters" PageUrl="@pageUrl" Link="buttons-parameters">
+    <DocxTable TItem="Buttons" DocType="DocType.Parameters">
+        <DocxPropertyRow TItem="Buttons" PropertyName="@nameof(Buttons.Class)" />
+        <DocxPropertyRow TItem="Buttons" PropertyName="@nameof(Buttons.ChildContent)" />
+        <DocxPropertyRow TItem="Buttons" PropertyName="@nameof(Buttons.Style)" />
+        <DocxPropertyRow TItem="Buttons" PropertyName="@nameof(Buttons.Size)" />
+    </DocxTable>
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Docs_Button_Documentation;
+    private const string pageTitle = "Button";
+    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>Button</code> component, guiding you through its configuration options.";
+    private const string metaTitle = "Blazor Button Component";
+    private const string metaDescription = "This documentation provides a comprehensive reference for the Button component, guiding you through its configuration options.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}

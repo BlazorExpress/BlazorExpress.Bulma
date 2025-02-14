@@ -1,0 +1,111 @@
+﻿namespace BlazorExpress.Bulma.Demo.RCL;
+
+public partial class DocsMainLayout : MainLayoutBase
+{
+    #region Fields and Constants
+    
+    private bool isSidebarVisible = false;
+    private HashSet<LinkGroup> linkGroups = new();
+    private Menu menuRef = default!;
+
+    #endregion
+
+    #region Methods
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+            await JS.InvokeVoidAsync("initializeTheme");
+
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+    protected override void OnInitialized()
+    {
+        if (!linkGroups.Any())
+            linkGroups = GetLinkGroups();
+
+        base.OnInitialized();
+    }
+
+    private HashSet<LinkGroup> GetLinkGroups()
+    {
+        var groups = new HashSet<LinkGroup>();
+
+        // FEATURES
+        groups.Add(new LinkGroup
+        {
+            Name = "FEATURES",
+            CssClass = "is-size-7 has-text-weight-bold has-text-warning",
+            Links = [
+                new Link { Href = RouteConstants.Docs_Skeletons_Documentation, Text = "Skeletons" }
+            ]
+        });
+
+        // ICONS
+        groups.Add(new LinkGroup
+        {
+            Name = "ICONS",
+            CssClass = "is-size-7 has-text-weight-bold has-text-info",
+            Links = [
+                new Link { Href = RouteConstants.Docs_BootstrapIcons_Documentation, Text = "Bootstrap Icons" },
+                new Link { Href = RouteConstants.Docs_GoogleFontIcons_Documentation, Text = "Google Font Icons" }
+            ]
+        });
+
+        // ELEMENTS
+        groups.Add(new LinkGroup
+        {
+            Name = "ELEMENTS",
+            CssClass = "is-size-7 has-text-weight-bold has-text-primary",
+            Links = [
+                new Link { Href = RouteConstants.Docs_Block_Documentation, Text = "Block" },
+                new Link { Href = RouteConstants.Docs_Box_Documentation, Text = "Box" },
+                new Link { Href = RouteConstants.Docs_Button_Documentation, Text = "Button" },
+            ]
+        });
+
+        // COMPONENTS
+        groups.Add(new LinkGroup
+        {
+            Name = "COMPONENTS",
+            CssClass = "is-size-7 has-text-weight-bold has-text-dark",
+            Links = [
+                new Link { Href = RouteConstants.Docs_Message_Documentation, Text = "Message" },
+                new Link { Href = RouteConstants.Docs_GoogleMaps_Documentation, Text = "Google Maps" },
+                new Link { Href = RouteConstants.Docs_Grid_Documentation, Text = "Grid" },
+                new Link { Href = RouteConstants.Docs_Pagination_Documentation, Text = "Pagination" },
+                new Link { Href = RouteConstants.Docs_ScriptLoader_Documentation, Text = "Script Loader" },
+                new Link { Href = RouteConstants.Docs_Tabs_Documentation, Text = "Tabs" }
+            ]
+        });
+        
+
+        // LAYOUT
+        groups.Add(new LinkGroup
+        {
+            Name = "LAYOUT",
+            CssClass = "is-size-7 has-text-weight-bold has-text-success",
+            Links = [
+                new Link { Href = RouteConstants.Docs_Hero_Documentation, Text = "Hero" }
+            ]
+        });
+
+        return groups;
+    }
+
+    private Task SetAutoTheme() => SetTheme("system");
+
+    private Task SetDarkTheme() => SetTheme("dark");
+
+    private Task SetLightTheme() => SetTheme("light");
+
+    private async Task SetTheme(string themeName) => await JS.InvokeVoidAsync("setTheme", themeName);
+
+    private void ToggleSidebarSection()
+    {
+        @menuRef.Toggle();
+    }
+
+    #endregion
+}

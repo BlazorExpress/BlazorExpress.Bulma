@@ -1,0 +1,64 @@
+@namespace BlazorExpress.Bulma.Demo.RCL
+@inherits MainLayoutBase
+
+<BulmaLayout>
+
+    <HeaderSection>
+        <BulmaNavbar BrandImgSrc="_content/BlazorExpress.Bulma.Demo.RCL/icons/logo.png"
+                     BrandImgAltText="Blazor Express Logo"
+                     ApplicationName="Blazor Express" />
+    </HeaderSection>
+
+    <SidebarSection>
+        <Menu @ref="menuRef" Class="be-page-menu" IsScrollable="true">
+            @foreach (var group in linkGroups)
+            {
+                <MenuLabel Class="@group.CssClass">@group.Name</MenuLabel>
+                if (group.Links?.Any() ?? false)
+                {
+                    <MenuList>
+                        @foreach (var link in group.Links)
+                        {
+                            <MenuItem>
+                                @if (link.Links?.Any() ?? false) // level 2 links
+                                {
+                                    <NavLink>@link.Text</NavLink>
+                                    <MenuList>
+                                        @foreach (var clink in link.Links)
+                                        {
+                                            <MenuItem>
+                                                <NavLink href="@clink.Href" Match="@clink.Match">@clink.Text</NavLink>
+                                            </MenuItem>
+                                        }
+                                    </MenuList>
+                                }
+                                else
+                                {
+                                    <NavLink href="@link.Href" Match="@link.Match">@link.Text</NavLink>
+                                }
+                            </MenuItem>
+                        }
+                    </MenuList>
+                }
+            }
+        </Menu>
+    </SidebarSection>
+
+    <ContentSection>
+        <Button Class="bi bi-box-arrow-right menu-toggle-button ml-1 mt-0 mb-1" @onclick="ToggleSidebarSection" />
+        @Body
+    </ContentSection>
+
+    <FooterSection>
+        <MainLayoutBaseFooter Version="@Version"
+                              DocsUrl="@DocsUrl"
+                              BlogUrl="@BlogUrl"
+                              GithubUrl="@GithubUrl"
+                              TwitterUrl="@TwitterUrl"
+                              LinkedInUrl="@LinkedInUrl"
+                              OpenCollectiveUrl="@OpenCollectiveUrl"
+                              GithubIssuesUrl="@GithubIssuesUrl"
+                              GithubDiscussionsUrl="@GithubDiscussionsUrl"
+                              StackoverflowUrl="@StackoverflowUrl" />
+    </FooterSection>
+</BulmaLayout>
