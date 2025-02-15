@@ -8,11 +8,13 @@ public partial class DocxPropertyRow<TItem> : ComponentBase
     
     private string Description => typeof(TItem).GetPropertyDescription(PropertyName);
     
+    private string ParameterTypeName => typeof(TItem).GetParameterTypeName(PropertyName);
+
     private string PropertyTypeName => typeof(TItem).GetPropertyTypeName(PropertyName);
-    
-    private string PropertyTypeShortName => PropertyTypeName.Contains(".") 
+
+    private string PropertyTypeShortName => ParameterTypeName ?? (PropertyTypeName.Contains(".") 
         ? PropertyTypeName.Split('.').Last()
-        : PropertyTypeName;
+        : PropertyTypeName);
 
     private bool IsRequired => typeof(TItem).IsPropertyRequired(PropertyName);
 

@@ -85,6 +85,21 @@ public static class TypeExtensions
         return method.ReturnType.ToString();
     }
 
+    public static string GetParameterTypeName(this Type type, string parameterName)
+    {
+        if (type is null || string.IsNullOrWhiteSpace(parameterName))
+            return string.Empty;
+
+        var property = type.GetProperty(parameterName);
+        if (property is null)
+            return string.Empty;
+
+        var parameterTypeNameAttribute = property.GetCustomAttributes(typeof(ParameterTypeNameAttribute), false)
+            .FirstOrDefault() as ParameterTypeNameAttribute;
+
+        return parameterTypeNameAttribute?.TypeName!;
+    }
+
     /// <summary>
     /// Get added version of a property.
     /// </summary>
@@ -127,6 +142,12 @@ public static class TypeExtensions
         return defaultValueAttribute?.Value?.ToString() ?? "null";
     }
 
+    /// <summary>
+    /// Get property description.
+    /// </summary>
+    /// <param name="type"></param>
+    /// <param name="propertyName"></param>
+    /// <returns>string</returns>
     public static string GetPropertyDescription(this Type type, string propertyName)
     {
         if (type is null || string.IsNullOrWhiteSpace(propertyName))
@@ -153,13 +174,15 @@ public static class TypeExtensions
         if (type is null || string.IsNullOrWhiteSpace(propertyName))
             return string.Empty;
 
-        var propertyType = type.GetProperty(propertyName)?.PropertyType;
+        var propertyType = type.GetPropertyType(propertyName);
         if (propertyType is null)
             return string.Empty;
 
         var propertyTypeName = propertyType?.ToString();
         if (string.IsNullOrWhiteSpace(propertyTypeName))
             return string.Empty;
+
+        Console.WriteLine($"PropertyName: {propertyName}, PropertyTypeName: {propertyTypeName}");
 
         if (propertyTypeName.Contains(StringConstants.PropertyTypeNameInt16, StringComparison.InvariantCulture))
             propertyTypeName = StringConstants.PropertyTypeNameInt16CSharpTypeKeyword;
@@ -194,8 +217,8 @@ public static class TypeExtensions
         else if (propertyTypeName.Contains(StringConstants.PropertyTypeNameBoolean, StringComparison.InvariantCulture))
             propertyTypeName = StringConstants.PropertyTypeNameBooleanCSharpTypeKeyword;
 
-        else if (propertyType!.IsEnum)
-            propertyTypeName = StringConstants.PropertyTypeNameEnumCSharpTypeKeyword;
+        //else if (propertyType!.IsEnum)
+        //    propertyTypeName = StringConstants.PropertyTypeNameEnumCSharpTypeKeyword;
 
         else if (propertyTypeName.Contains(StringConstants.PropertyTypeNameGuid, StringComparison.InvariantCulture))
             propertyTypeName = StringConstants.PropertyTypeNameGuidCSharpTypeKeyword;
