@@ -263,8 +263,11 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// Gets or sets the grid filtering.
     /// </summary>
     /// <remarks>
-    /// Default value is false.
+    /// Default value is <see langword="false"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets the grid filtering.")]
     [Parameter]
     public bool AllowFiltering { get; set; }
 
@@ -272,8 +275,11 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// Gets or sets the grid paging.
     /// </summary>
     /// <remarks>
-    /// Default value is false.
+    /// Default value is <see langword="false"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets the grid paging.")]
     [Parameter]
     public bool AllowPaging { get; set; }
 
@@ -281,18 +287,24 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// Gets or sets the grid sorting.
     /// </summary>
     /// <remarks>
-    /// Default value is false.
+    /// Default value is <see langword="false"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets the grid sorting.")]
     [Parameter]
     public bool AllowSorting { get; set; }
 
     /// <summary>
     /// Automatically hides the paging controls when the grid item count is less than or equal to the <see cref="PageSize" />
-    /// and this property is set to `true`.
+    /// and this property is set to <see langword="true"/>.
     /// </summary>
     /// <remarks>
-    /// Default value is false.
+    /// Default value is <see langword="false"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Automatically hides the paging controls when the grid item count is less than or equal to the <code>PageSize</code> and this property is set to <b>true</b>.")]
     [Parameter]
     public bool AutoHidePaging { get; set; }
 
@@ -302,6 +314,10 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the child content.")]
+    [EditorRequired]
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
@@ -309,8 +325,11 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// Gets or sets the grid data.
     /// </summary>
     /// <remarks>
-    /// Default value is null.
+    /// Default value is <see langword="null"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the grid data.")]
     [Parameter]
     public IEnumerable<TItem> Data { get; set; } = default!;
 
@@ -319,8 +338,11 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// The provider should always return an instance of 'GridDataProviderResult', and 'null' is not allowed.
     /// </summary>
     /// <remarks>
-    /// Default value is null.
+    /// Default value is <see langword="null"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description($"DataProvider is for items to render. The provider should always return an instance of <code>GridDataProviderResult</code>, and <b>null</b> is not allowed.")]
     [Parameter]
     public GridDataProvider<TItem> DataProvider { get; set; } = default!;
 
@@ -330,6 +352,9 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// <remarks>
     /// Default value is 'No records to display'.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue("No records to display")]
+    [Description("Gets or sets the empty data text.")]
     [Parameter]
     public string EmptyDataText { get; set; } = "No records to display";
 
@@ -342,17 +367,38 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// <summary>
     /// Gets or sets the grid container css class.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the grid container css class.")]
     [Parameter]
     public string? GridContainerCssClass { get; set; }
 
     /// <summary>
     /// Gets or sets the grid container css style.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the grid container css style.")]
     [Parameter]
     public string? GridContainerCssStyle { get; set; }
 
     private string? GridContainerStyleNames => GridContainerCssStyle;
 
+    /// <summary>
+    /// Gets or sets the grid detail view.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the grid detail view.")]
     [Parameter]
     public RenderFragment? GridDetailView { get; set; }
 
@@ -361,12 +407,24 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// <summary>
     /// Gets or sets the tbody element css class.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the <code>tbody</code> element css class.")]
     [Parameter]
     public string? GridTbodyCssClass { get; set; }
 
     /// <summary>
     /// Gets or sets the tbody element css style.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the <code>tbody</code> element css style.")]
     [Parameter]
     public string? GridTbodyCssStyle { get; set; }
 
@@ -377,12 +435,24 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// <summary>
     /// Gets or sets the thead element css class.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the <code>thead</code> element css class.")]
     [Parameter]
     public string? GridTheadCssClass { get; set; }
 
     /// <summary>
     /// Gets or sets the thead element css style.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the <code>thead</code> element css style.")]
     [Parameter]
     public string? GridTheadCssStyle { get; set; }
 
@@ -391,12 +461,24 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// <summary>
     /// Gets or sets the thead's tr element css class.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the thead's <code>tr</code> element css class.")]
     [Parameter]
     public string? GridTheadRowCssClass { get; set; }
 
     /// <summary>
     /// Gets or sets the thead's tr element css style.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the thead's <code>tr</code> element css style.")]
     [Parameter]
     public string? GridTheadRowCssStyle { get; set; }
 
@@ -410,6 +492,9 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// <remarks>
     /// Default value is 320 <see cref="Unit.Px" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(320)]
+    [Description("Gets or sets the grid height. Height will be in pixels.")]
     [Parameter]
     public float Height { get; set; } = 320;
 
@@ -417,19 +502,34 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// Indicates whether to add borders to all cells.
     /// </summary>
     /// <remarks>
-    /// Defaults to `false`.
+    /// Default value is <see langword="false"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Indicates whether to add borders to all cells.")]
     [Parameter]
     public bool IsBordered { get; set; }
 
+    /// <summary>
+    /// Indicates whether to make the table full width.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="true"/>.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(true)]
+    [Description("Indicates whether to make the table full width.")]
     [Parameter] public bool IsFullWidth { get; set; } = true;
 
     /// <summary>
     /// Indicates whether to add a hover effect to each row.
     /// </summary>
     /// <remarks>
-    /// Defaults to `false`.
+    /// Default value is <see langword="false"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Indicates whether to add a hover effect to each row.")]
     [Parameter]
     public bool IsHoverable { get; set; }
 
@@ -437,8 +537,11 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// Indicates whether to make the cells narrower.
     /// </summary>
     /// <remarks>
-    /// Defaults to `false`.
+    /// Default value is <see langword="false"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Indicates whether to make the cells narrower.")]
     [Parameter]
     public bool IsNarrow { get; set; }
 
@@ -446,8 +549,11 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// Gets or sets a value indicating whether the grid is responsive.
     /// </summary>
     /// <remarks>
-    /// Default value is false.
+    /// Default value is <see langword="false"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets a value indicating whether the grid is responsive.")]
     [Parameter]
     public bool IsResponsive { get; set; }
 
@@ -455,8 +561,11 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// Indicates whether to add stripes to the table.
     /// </summary>
     /// <remarks>
-    /// Defaults to `false`.
+    /// Defaults to <see langword="false"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Indicates whether to add stripes to the table.")]
     [Parameter]
     public bool IsStriped { get; set; }
 
@@ -466,6 +575,9 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// <remarks>
     /// Default value is 'Items per page'.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue("Items per page")]
+    [Description("Gets or sets the items per page text.")]
     [Parameter]
     public string ItemsPerPageText { get; set; } = "Items per page"!;
 
@@ -475,6 +587,9 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// <remarks>
     /// Default value is 10.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(10)]
+    [Description("Gets or sets the page size.")]
     [Parameter]
     public int PageSize { get; set; } = 10;
 
@@ -484,6 +599,9 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// <remarks>
     /// Default value is '{ 10, 20, 50 }'.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue("{ 10, 20, 50 }")]
+    [Description("Gets or sets the page size selector items.")]
     [Parameter]
     public int[] PageSizeSelectorItems { get; set; } = { 10, 20, 50 };
 
@@ -493,9 +611,17 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="true" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(true)]
+    [Description("Gets or sets the page size selector visible.")]
     [Parameter]
     public bool PageSizeSelectorVisible { get; set; } = true;
 
+    /// <summary>
+    /// Event fired when the page size value changes.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("Event fired when the page size value changes.")]
     [Parameter] public EventCallback<int> PageSizeValueChanged { get; set; }
 
     private string PaginationItemsText => GetPaginationItemsText();
@@ -506,6 +632,9 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// <remarks>
     /// Default value is '{0} - {1} of {2} items'.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue("{0} - {1} of {2} items")]
+    [Description("Gets or sets the pagination items text format.")]
     [Parameter]
     public string PaginationItemsTextFormat { get; set; } = "{0} - {1} of {2} items"!;
 
@@ -517,6 +646,9 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// Default value is 24.
     /// Unit is based on the <see cref="Unit" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(24)]
+    [Description("Gets or sets the minimum height of the skeleton block. Skeletons are displayed while a request is in progress.")]
     [Parameter]
     public float SkeletonBlockMinHeight { get; set; } = 24;
 
@@ -528,6 +660,9 @@ public partial class Grid<TItem> : BulmaComponentBase
     /// <remarks>
     /// Defaults to <see cref="Unit.Px" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(Unit.Px)]
+    [Description("Gets or sets the units of measurement.")]
     [Parameter]
     public Unit Unit { get; set; } = Unit.Px;
 
