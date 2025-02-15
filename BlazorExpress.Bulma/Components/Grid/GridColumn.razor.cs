@@ -53,6 +53,15 @@ public partial class GridColumn<TItem> : BulmaComponentBase
 
     #region Properties, Indexers
 
+    /// <summary>
+    /// Gets or sets the cell template.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the cell template.")]
     [Parameter] public RenderFragment<TItem>? CellTemplate { get; set; }
 
     /// <summary>
@@ -61,7 +70,11 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the child content.")]
     [Parameter]
+    [EditorRequired]
     public RenderFragment<TItem>? ChildContent { get; set; }
 
     // using this member to access in the grid component
@@ -70,14 +83,26 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     // using this member to access in the grid component
     internal string? GridColumnCssStyleNames => Style;
 
+    /// <summary>
+    /// Gets or sets the header template.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the header template.")]
     [Parameter] public RenderFragment? HeaderTemplate { get; set; }
 
     /// <summary>
     /// Gets or sets the table column header text.
     /// </summary>
     /// <remarks>
-    /// Default value is null.
+    /// Default value is <see langword="null"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the table column header text.")]
     [Parameter]
     public string HeaderText { get; set; } = default!;
 
@@ -85,8 +110,11 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// Gets or sets the default sort column.
     /// </summary>
     /// <remarks>
-    /// Default value is false.
+    /// Default value is <see langword="false"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets the default sort column.")]
     [Parameter]
     public bool IsDefaultSortColumn { get; set; } = false;
     
@@ -98,8 +126,11 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// This is required when `AllowFiltering` is true.
     /// </summary>
     /// <remarks>
-    /// Default value is null.
+    /// Default value is <see langword="null"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the property name. This is required when <code>AllowFiltering</code> is <b>true</b>.")]
     [Parameter]
     public string PropertyName { get; set; } = default!;
 
@@ -108,8 +139,11 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// The sorting is enabled or disabled based on the `AllowSorting` parameter on the grid.
     /// </summary>
     /// <remarks>
-    /// Default value is true.
+    /// Default value is <see langword="true"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(true)]
+    [Description("Enable or disable the sorting on a specific column. The sorting is enabled or disabled based on the <code>AllowSorting</code> parameter on the grid.")]
     [Parameter]
     public bool Sortable { get; set; } = true;
 
@@ -119,6 +153,9 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="SortDirection.None" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(SortDirection.None)]
+    [Description("Gets or sets the default sort direction of a column.")]
     [Parameter]
     public SortDirection SortDirection { get; set; } = SortDirection.None;
 
@@ -127,6 +164,8 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// <summary>
     /// Expression used for sorting.
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("Expression used for sorting.")]
     [Parameter]
     public Expression<Func<TItem, IComparable>> SortKeySelector { get; set; } = default!;
 
@@ -136,8 +175,11 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// And this property is ignored for the client-side sorting.
     /// </summary>
     /// <remarks>
-    /// Default value is null.
+    /// Default value is <see langword="null"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the column sort string. This value will be passed to the backend/API for sorting. And this property is ignored for the client-side sorting.")]
     [Parameter]
     public string SortString { get; set; } = default!;
 
@@ -147,13 +189,34 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="StringComparison.OrdinalIgnoreCase" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(StringComparison.OrdinalIgnoreCase)]
+    [Description("Gets or sets the StringComparison.")]
     [Parameter]
     public StringComparison StringComparison { get; set; } = StringComparison.OrdinalIgnoreCase;
 
     internal string? ThClassNames => ThCssClass;
 
+    /// <summary>
+    /// Gets or sets the CSS class for the table header.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the CSS class for the table header.")]
     [Parameter] public string? ThCssClass { get; set; }
 
+    /// <summary>
+    /// Gets or sets the CSS style for the table header.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the CSS style for the table header.")]
     [Parameter] public string? ThCssStyle { get; set; }
 
     internal string? ThStyleNames => ThCssStyle;
