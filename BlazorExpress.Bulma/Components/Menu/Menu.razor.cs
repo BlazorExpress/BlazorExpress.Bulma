@@ -90,7 +90,7 @@ public partial class Menu : BulmaComponentBase
 
     [Parameter] public bool IsScrollable { get; set; }
 
-    [Parameter] public bool IsVisible { get; set; }
+    [Parameter] public bool IsVisible { get; set; } = true;
 
     #endregion
 }
