@@ -1,7 +1,7 @@
 ﻿namespace BlazorExpress.Bulma.Demo.RCL;
 
 /// <summary>
-/// Various extension methods for <see cref="Type" />.
+/// Extension methods for <see cref="Type" />.
 /// </summary>
 public static class TypeExtensions
 {
@@ -63,9 +63,6 @@ public static class TypeExtensions
     public static HashSet<MethodInfo> GetComponentMethods(this Type type)
     {
         var methods = new HashSet<MethodInfo>();
-        //methods = type.GetMethods(BindingFlags.Public | BindingFlags.Instance)?.OrderBy(m => m.Name);
-        //if(methods is null)
-        //    return new HashSet<MethodInfo>();
 
         foreach (MethodInfo method in type.GetMethods(BindingFlags.Public | BindingFlags.Instance))
         {
@@ -75,8 +72,6 @@ public static class TypeExtensions
                 && !method.Name.StartsWith("get_") // Exclude get_ methods
                 && !method.Name.StartsWith("set_")) // Exclude set_ methods
             {
-                //string parameters = GetMethodParameters(method); // Helper function (see below)
-                //Console.WriteLine($"  {method.Name}({parameters})");
                 methods.Add(method);
             }
         }

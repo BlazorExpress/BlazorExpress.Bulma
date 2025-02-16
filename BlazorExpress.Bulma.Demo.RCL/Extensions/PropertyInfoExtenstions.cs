@@ -1,5 +1,8 @@
 ﻿namespace BlazorExpress.Bulma.Demo.RCL;
 
+/// <summary>
+/// Extension methods for <see cref="PropertyInfo" />.
+/// </summary>
 public static class PropertyInfoExtenstions
 {
     /// <summary>

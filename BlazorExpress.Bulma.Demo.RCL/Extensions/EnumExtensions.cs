@@ -1,5 +1,8 @@
 ﻿namespace BlazorExpress.Bulma.Demo.RCL;
 
+/// <summary>
+/// Extension methods for <see cref="Enum" />.
+/// </summary>
 public static class EnumExtensions
 {
     public static string? ToLanguageCssClass(this LanguageCode languageCode) =>

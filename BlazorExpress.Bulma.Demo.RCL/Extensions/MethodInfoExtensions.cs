@@ -1,5 +1,8 @@
 ﻿namespace BlazorExpress.Bulma.Demo.RCL;
 
+/// <summary>
+/// Extension methods for <see cref="MethodInfo" />.
+/// </summary>
 public static class MethodInfoExtensions
 {
     /// <summary>
