@@ -62,7 +62,7 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the cell template.")]
-    [ParameterTypeName("RenderFragment<TItem>?")]
+    [ParameterTypeName("RenderFragment<TItem>")]
     [Parameter] public RenderFragment<TItem>? CellTemplate { get; set; }
 
     /// <summary>
@@ -74,7 +74,7 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the child content.")]
-    [ParameterTypeName("RenderFragment<TItem>?")]
+    [ParameterTypeName("RenderFragment<TItem>")]
     [Parameter]
     [EditorRequired]
     public RenderFragment<TItem>? ChildContent { get; set; }

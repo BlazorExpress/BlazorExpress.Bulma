@@ -1,23 +1,23 @@
 ﻿namespace BlazorExpress.Bulma.Demo.RCL;
 
 public partial class DocxPropertyRow<TItem> : ComponentBase
-{
-    private string AddedVersion => typeof(TItem).GetPropertyAddedVersion(PropertyName);
+{    
+    private string DefaultValue => PropertyInfo.GetPropertyDefaultValue();
     
-    private string DefaultValue => typeof(TItem).GetPropertyDefaultValue(PropertyName);
-    
-    private string Description => typeof(TItem).GetPropertyDescription(PropertyName);
-    
-    private string ParameterTypeName => typeof(TItem).GetParameterTypeName(PropertyName);
-
-    private string PropertyTypeName => typeof(TItem).GetPropertyTypeName(PropertyName);
+    private string ParameterTypeName => PropertyInfo.GetParameterTypeName();
 
     private string PropertyTypeShortName => ParameterTypeName ?? (PropertyTypeName.Contains(".") 
         ? PropertyTypeName.Split('.').Last()
         : PropertyTypeName);
 
-    private bool IsRequired => typeof(TItem).IsPropertyRequired(PropertyName);
+    private bool IsRequired => PropertyInfo.IsPropertyRequired();
+
+    private string AddedVersion => PropertyInfo.GetPropertyAddedVersion();
+
+    private string Description => PropertyInfo.GetPropertyDescription();
+
+    private string PropertyTypeName => PropertyInfo.GetPropertyTypeName();
 
     [Parameter]
-    public string PropertyName { get; set; } = default!;
+    public PropertyInfo PropertyInfo { get; set; } = default!;
 }

@@ -13,19 +13,19 @@
 
 <DemoLink Href="@RouteConstants.Demos_Grid_Documentation" />
 
-@* <Section Class="p-0" Size="HeadingSize.H4" Name="Grid Parameters" PageUrl="@pageUrl" Link="grid-parameters">
+<Section Class="p-0" Size="HeadingSize.H4" Name="Grid Parameters" PageUrl="@pageUrl" Link="grid-parameters">
     <DocxTable TItem="Grid<TItem>" DocType="DocType.Parameters" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="GridColumns Parameters" PageUrl="@pageUrl" Link="grid-columns-parameters">
     <DocxTable TItem="GridColumns" DocType="DocType.Parameters" />
-</Section> *@
+</Section>
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="GridColumn Parameters" PageUrl="@pageUrl" Link="grid-column-parameters">
     <DocxTable TItem="GridColumn<TItem>" DocType="DocType.Parameters" />
 </Section>
-
-@* <Section Class="p-0" Size="HeadingSize.H4" Name="GridDetailView Parameters" PageUrl="@pageUrl" Link="grid-detail-view-parameters">
+ 
+<Section Class="p-0" Size="HeadingSize.H4" Name="GridDetailView Parameters" PageUrl="@pageUrl" Link="grid-detail-view-parameters">
     <DocxTable TItem="GridDetailView<TItem>" DocType="DocType.Parameters" />
 </Section>
 
@@ -35,7 +35,11 @@
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="GridLoadingTemplate Parameters" PageUrl="@pageUrl" Link="grid-loading-template-parameters">
     <DocxTable TItem="GridLoadingTemplate<TItem>" DocType="DocType.Parameters" />
-</Section> *@
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Grid EventCallbacks" PageUrl="@pageUrl" Link="grid-event-callbacks">
+    <DocxTable TItem="Grid<TItem>" DocType="DocType.Events" />
+</Section>
 
 @code {
     private const string pageUrl = RouteConstants.Docs_Grid_Documentation;

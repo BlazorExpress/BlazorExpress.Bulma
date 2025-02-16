@@ -330,6 +330,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the grid data.")]
+    [ParameterTypeName("IEnumerable<TItem>")]
     [Parameter]
     public IEnumerable<TItem> Data { get; set; } = default!;
 
@@ -343,6 +344,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description($"DataProvider is for items to render. The provider should always return an instance of <code>GridDataProviderResult</code>, and <b>null</b> is not allowed.")]
+    [ParameterTypeName("GridDataProvider<TItem>")]
     [Parameter]
     public GridDataProvider<TItem> DataProvider { get; set; } = default!;
 

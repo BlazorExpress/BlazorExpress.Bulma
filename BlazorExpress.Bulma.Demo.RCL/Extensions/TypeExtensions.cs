@@ -12,17 +12,47 @@ public static class TypeExtensions
     /// </summary>
     /// <param name="type"></param>
     /// <returns>Returns list of component parameters</returns>
-    public static List<string> GetComponentParameters(this Type type)
+    private static IEnumerable<PropertyInfo>? GetComponentParameters(this Type type)
     {
         if (type is null)
-            return new List<string>();
+            return null;
 
-        return type.GetProperties()
-            .Where(p => p.GetCustomAttributes(typeof(ParameterAttribute), false).Any())
-            .Where(p => p.Name != "AdditionalAttributes")
-            .Select(p => p.Name)
-            .OrderBy(p => p)
-            .ToList();
+        var properties = type.GetProperties();
+        return properties?.Where(p => p.GetCustomAttributes(typeof(ParameterAttribute), false).Any() && p.Name != "AdditionalAttributes")?.OrderBy(p => p.Name);
+    }
+
+    /// <summary>
+    /// Get component parameters and excludes event callbacks.
+    /// </summary>
+    /// <param name="type"></param>
+    /// <returns>Returns list of component parameters</returns>
+    public static HashSet<PropertyInfo> GetComponentParametersOnly(this Type type)
+    {
+        var parameters = type.GetComponentParameters();
+        if (parameters is null)
+            return new HashSet<PropertyInfo>();
+
+        return parameters
+            .Where(p => !p.IsEventCallbackProperty())
+            .ToHashSet();
+    }
+
+    /// <summary>
+    /// Get component event callbacks.
+    /// </summary>
+    /// <param name="type"></param>
+    /// <returns>Returns list of component event callbacks.</returns>
+    public static HashSet<PropertyInfo> GetComponentEventCallbacks(this Type type)
+    {
+        HashSet<string> eventCallbacks = new();
+
+        var parameters = type.GetComponentParameters();
+        if (parameters is null)
+            return new HashSet<PropertyInfo>();
+
+        return parameters
+            .Where(p => p.IsEventCallbackProperty())
+            .ToHashSet();
     }
 
     /// <summary>
@@ -85,180 +115,64 @@ public static class TypeExtensions
         return method.ReturnType.ToString();
     }
 
-    public static string GetParameterTypeName(this Type type, string parameterName)
-    {
-        if (type is null || string.IsNullOrWhiteSpace(parameterName))
-            return string.Empty;
-
-        var property = type.GetProperty(parameterName);
-        if (property is null)
-            return string.Empty;
-
-        var parameterTypeNameAttribute = property.GetCustomAttributes(typeof(ParameterTypeNameAttribute), false)
-            .FirstOrDefault() as ParameterTypeNameAttribute;
-
-        return parameterTypeNameAttribute?.TypeName!;
-    }
-
-    /// <summary>
-    /// Get added version of a property.
-    /// </summary>
-    /// <param name="type"></param>
-    /// <param name="propertyName"></param>
-    /// <returns>string</returns>
-    public static string GetPropertyAddedVersion(this Type type, string propertyName)
-    {
-        if (type is null || string.IsNullOrWhiteSpace(propertyName))
-            return string.Empty;
-
-        var property = type.GetProperty(propertyName);
-        if (property is null)
-            return string.Empty;
-
-        var addedVersionAttribute = property.GetCustomAttributes(typeof(AddedVersionAttribute), false)
-            .FirstOrDefault() as AddedVersionAttribute;
-
-        return addedVersionAttribute?.Version!;
-    }
-
-    /// <summary>
-    /// Get default value of a property.
-    /// </summary>
-    /// <param name="type"></param>
-    /// <param name="propertyName"></param>
-    /// <returns>string</returns>
-    public static string GetPropertyDefaultValue(this Type type, string propertyName)
-    {
-        if (type is null || string.IsNullOrWhiteSpace(propertyName))
-            return string.Empty;
-
-        var property = type.GetProperty(propertyName);
-        if (property is null)
-            return string.Empty;
-
-        var defaultValueAttribute = property.GetCustomAttributes(typeof(DefaultValueAttribute), false)
-            .FirstOrDefault() as DefaultValueAttribute;
-
-        return defaultValueAttribute?.Value?.ToString() ?? "null";
-    }
-
-    /// <summary>
-    /// Get property description.
-    /// </summary>
-    /// <param name="type"></param>
-    /// <param name="propertyName"></param>
-    /// <returns>string</returns>
-    public static string GetPropertyDescription(this Type type, string propertyName)
-    {
-        if (type is null || string.IsNullOrWhiteSpace(propertyName))
-            return string.Empty;
-
-        var property = type.GetProperty(propertyName);
-        if (property is null)
-            return string.Empty;
-
-        var descriptionAttribute = property.GetCustomAttributes(typeof(DescriptionAttribute), false)
-            .FirstOrDefault() as DescriptionAttribute;
-
-        return descriptionAttribute?.Description ?? string.Empty;
-    }
-
     /// <summary>
     /// Get property type name.
     /// </summary>
     /// <param name="type"></param>
     /// <param name="propertyName"></param>
     /// <returns>string</returns>
-    public static string GetPropertyTypeName(this Type type, string propertyName)
+    public static string GetCSharpTypeName(this Type type)
     {
-        if (type is null || string.IsNullOrWhiteSpace(propertyName))
+        if (type is null)
             return string.Empty;
 
-        var propertyType = type.GetPropertyType(propertyName);
-        if (propertyType is null)
+        var typeName = type.Name;
+        if (string.IsNullOrWhiteSpace(typeName))
             return string.Empty;
 
-        var propertyTypeName = propertyType?.ToString();
-        if (string.IsNullOrWhiteSpace(propertyTypeName))
-            return string.Empty;
+        if (typeName.Contains(StringConstants.PropertyTypeNameInt16, StringComparison.InvariantCulture))
+            typeName = StringConstants.PropertyTypeNameInt16CSharpTypeKeyword;
 
-        Console.WriteLine($"PropertyName: {propertyName}, PropertyTypeName: {propertyTypeName}");
+        else if (typeName.Contains(StringConstants.PropertyTypeNameInt32, StringComparison.InvariantCulture))
+            typeName = StringConstants.PropertyTypeNameInt32CSharpTypeKeyword;
 
-        if (propertyTypeName.Contains(StringConstants.PropertyTypeNameInt16, StringComparison.InvariantCulture))
-            propertyTypeName = StringConstants.PropertyTypeNameInt16CSharpTypeKeyword;
+        else if (typeName.Contains(StringConstants.PropertyTypeNameInt64, StringComparison.InvariantCulture))
+            typeName = StringConstants.PropertyTypeNameInt64CSharpTypeKeyword;
 
-        else if (propertyTypeName.Contains(StringConstants.PropertyTypeNameInt32, StringComparison.InvariantCulture))
-            propertyTypeName = StringConstants.PropertyTypeNameInt32CSharpTypeKeyword;
+        else if (typeName.Contains(StringConstants.PropertyTypeNameChar, StringComparison.InvariantCulture))
+            typeName = StringConstants.PropertyTypeNameCharCSharpTypeKeyword;
 
-        else if (propertyTypeName.Contains(StringConstants.PropertyTypeNameInt64, StringComparison.InvariantCulture))
-            propertyTypeName = StringConstants.PropertyTypeNameInt64CSharpTypeKeyword;
+        else if (typeName.Contains(StringConstants.PropertyTypeNameStringComparison, StringComparison.InvariantCulture))
+            typeName = StringConstants.PropertyTypeNameStringComparisonCSharpTypeKeyword;
 
-        else if (propertyTypeName.Contains(StringConstants.PropertyTypeNameChar, StringComparison.InvariantCulture))
-            propertyTypeName = StringConstants.PropertyTypeNameCharCSharpTypeKeyword;
+        else if (typeName.Contains(StringConstants.PropertyTypeNameString, StringComparison.InvariantCulture))
+            typeName = StringConstants.PropertyTypeNameStringCSharpTypeKeyword;
 
-        else if (propertyTypeName.Contains(StringConstants.PropertyTypeNameString, StringComparison.InvariantCulture))
-            propertyTypeName = StringConstants.PropertyTypeNameStringCSharpTypeKeyword;
+        else if (typeName.Contains(StringConstants.PropertyTypeNameSingle, StringComparison.InvariantCulture)) // float
+            typeName = StringConstants.PropertyTypeNameSingleCSharpTypeKeyword;
 
-        else if (propertyTypeName.Contains(StringConstants.PropertyTypeNameSingle, StringComparison.InvariantCulture)) // float
-            propertyTypeName = StringConstants.PropertyTypeNameSingleCSharpTypeKeyword;
+        else if (typeName.Contains(StringConstants.PropertyTypeNameDecimal, StringComparison.InvariantCulture))
+            typeName = StringConstants.PropertyTypeNameDecimalCSharpTypeKeyword;
 
-        else if (propertyTypeName.Contains(StringConstants.PropertyTypeNameDecimal, StringComparison.InvariantCulture))
-            propertyTypeName = StringConstants.PropertyTypeNameDecimalCSharpTypeKeyword;
+        else if (typeName.Contains(StringConstants.PropertyTypeNameDouble, StringComparison.InvariantCulture))
+            typeName = StringConstants.PropertyTypeNameDoubleCSharpTypeKeyword;
 
-        else if (propertyTypeName.Contains(StringConstants.PropertyTypeNameDouble, StringComparison.InvariantCulture))
-            propertyTypeName = StringConstants.PropertyTypeNameDoubleCSharpTypeKeyword;
+        else if (typeName.Contains(StringConstants.PropertyTypeNameDateOnly, StringComparison.InvariantCulture))
+            typeName = StringConstants.PropertyTypeNameDateOnlyCSharpTypeKeyword;
 
-        else if (propertyTypeName.Contains(StringConstants.PropertyTypeNameDateOnly, StringComparison.InvariantCulture))
-            propertyTypeName = StringConstants.PropertyTypeNameDateOnlyCSharpTypeKeyword;
+        else if (typeName.Contains(StringConstants.PropertyTypeNameDateTime, StringComparison.InvariantCulture))
+            typeName = StringConstants.PropertyTypeNameDateTimeCSharpTypeKeyword;
 
-        else if (propertyTypeName.Contains(StringConstants.PropertyTypeNameDateTime, StringComparison.InvariantCulture))
-            propertyTypeName = StringConstants.PropertyTypeNameDateTimeCSharpTypeKeyword;
-
-        else if (propertyTypeName.Contains(StringConstants.PropertyTypeNameBoolean, StringComparison.InvariantCulture))
-            propertyTypeName = StringConstants.PropertyTypeNameBooleanCSharpTypeKeyword;
+        else if (typeName.Contains(StringConstants.PropertyTypeNameBoolean, StringComparison.InvariantCulture))
+            typeName = StringConstants.PropertyTypeNameBooleanCSharpTypeKeyword;
 
         //else if (propertyType!.IsEnum)
         //    propertyTypeName = StringConstants.PropertyTypeNameEnumCSharpTypeKeyword;
 
-        else if (propertyTypeName.Contains(StringConstants.PropertyTypeNameGuid, StringComparison.InvariantCulture))
-            propertyTypeName = StringConstants.PropertyTypeNameGuidCSharpTypeKeyword;
+        else if (typeName.Contains(StringConstants.PropertyTypeNameGuid, StringComparison.InvariantCulture))
+            typeName = StringConstants.PropertyTypeNameGuidCSharpTypeKeyword;
 
-        return propertyType!.IsNullableType() ? $"{propertyTypeName}?" : propertyTypeName;
-    }
-
-    /// <summary>
-    /// Get property type.
-    /// </summary>
-    /// <param name="type"></param>
-    /// <param name="propertyName"></param>
-    /// <returns>Type?</returns>
-    public static Type? GetPropertyType(this Type type, string propertyName)
-    {
-        if (type is null || string.IsNullOrWhiteSpace(propertyName))
-            return null;
-
-        return type.GetProperty(propertyName)?.PropertyType;
-    }
-
-    /// <summary>
-    /// Returns true if the property is required. Otherwise, false.
-    /// </summary>
-    /// <param name="type"></param>
-    /// <param name="propertyName"></param>
-    /// <returns>bool</returns>
-    public static bool IsPropertyRequired(this Type type, string propertyName)
-    {
-        if (type is null || string.IsNullOrWhiteSpace(propertyName))
-            return false;
-
-        var property = type.GetProperty(propertyName);
-        if (property is null)
-            return false;
-
-        var editorRequiredAttribute = property.GetCustomAttributes(typeof(EditorRequiredAttribute), false)
-            .FirstOrDefault() as EditorRequiredAttribute;
-
-        return editorRequiredAttribute is not null;
+        return typeName;
     }
 
     #endregion

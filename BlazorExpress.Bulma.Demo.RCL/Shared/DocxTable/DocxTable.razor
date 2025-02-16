@@ -18,9 +18,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var prop in typeof(TItem).GetComponentParameters())
+                    @foreach (var prop in typeof(TItem).GetComponentParametersOnly())
                     {
-                        <DocxPropertyRow TItem="TItem" PropertyName="@prop" />
+                        <DocxPropertyRow TItem="TItem" PropertyInfo="@prop" />
                     }
                 </tbody>
             </table>
@@ -57,7 +57,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @ChildContent
+                    @foreach (var prop in typeof(TItem).GetComponentEventCallbacks())
+                    {
+                        <DocxEventCallbackRow TItem="TItem" PropertyInfo="@prop" />
+                    }
                 </tbody>
             </table>
         </div>
