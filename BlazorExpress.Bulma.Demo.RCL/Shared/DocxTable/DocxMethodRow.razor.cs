@@ -2,15 +2,16 @@
 
 public partial class DocxMethodRow<TItem> : ComponentBase
 {
-    private string AddedVersion => typeof(TItem).GetMethodAddedVersion(MethodName);
+    private string AddedVersion => MethodInfo.GetMethodAddedVersion();
 
-    private string Description => typeof(TItem).GetMethodDescription(MethodName);
+    private string Description => MethodInfo.GetMethodDescription();
 
-    public string ReturnType => typeof(TItem).GetMethodReturnType(MethodName);
+    public string ReturnType => MethodInfo.GetMethodReturnType();
+
     public string ReturnTypeShortName => ReturnType.Contains(".")
         ? ReturnType.Split('.').Last()
         : ReturnType;
 
     [Parameter]
-    public string MethodName { get; set; } = default!;
+    public MethodInfo MethodInfo { get; set; } = default!;
 }

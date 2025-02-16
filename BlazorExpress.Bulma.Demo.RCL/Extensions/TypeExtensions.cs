@@ -56,63 +56,32 @@ public static class TypeExtensions
     }
 
     /// <summary>
-    /// Get added version of a method.
+    /// Get component methods.
     /// </summary>
     /// <param name="type"></param>
-    /// <param name="methodName"></param>
-    /// <returns>string</returns>
-    public static string GetMethodAddedVersion(this Type type, string methodName)
+    /// <returns>Returns list of component methods.</returns>
+    public static HashSet<MethodInfo> GetComponentMethods(this Type type)
     {
-        if (type is null || string.IsNullOrWhiteSpace(methodName))
-            return string.Empty;
+        var methods = new HashSet<MethodInfo>();
+        //methods = type.GetMethods(BindingFlags.Public | BindingFlags.Instance)?.OrderBy(m => m.Name);
+        //if(methods is null)
+        //    return new HashSet<MethodInfo>();
 
-        var method = type.GetMethod(methodName);
-        if (method is null)
-            return string.Empty;
+        foreach (MethodInfo method in type.GetMethods(BindingFlags.Public | BindingFlags.Instance))
+        {
+            // Filter out methods inherited from System.Object (if needed)
+            if (method.DeclaringType != typeof(object)
+                && method.DeclaringType == type // Exclude methods declared in base classes
+                && !method.Name.StartsWith("get_") // Exclude get_ methods
+                && !method.Name.StartsWith("set_")) // Exclude set_ methods
+            {
+                //string parameters = GetMethodParameters(method); // Helper function (see below)
+                //Console.WriteLine($"  {method.Name}({parameters})");
+                methods.Add(method);
+            }
+        }
 
-        var addedVersionAttribute = method.GetCustomAttributes(typeof(AddedVersionAttribute), false)
-            .FirstOrDefault() as AddedVersionAttribute;
-
-        return addedVersionAttribute?.Version!;
-    }
-
-    /// <summary>
-    /// Get method description.
-    /// </summary>
-    /// <param name="type"></param>
-    /// <param name="methodName"></param>
-    /// <returns>string</returns>
-    public static string GetMethodDescription(this Type type, string methodName)
-    {
-        if (type is null || string.IsNullOrWhiteSpace(methodName))
-            return string.Empty;
-
-        var method = type.GetMethod(methodName);
-        if (method is null)
-            return string.Empty;
-
-        var descriptionAttribute = method.GetCustomAttributes(typeof(DescriptionAttribute), false)
-            .FirstOrDefault() as DescriptionAttribute;
-
-        return descriptionAttribute?.Description ?? string.Empty;
-    }
-
-    /// <summary>
-    /// Get method return type.
-    /// </summary>
-    /// <param name="type"></param>
-    /// <param name="methodName"></param>
-    /// <returns>string</returns>
-    public static string GetMethodReturnType(this Type type, string methodName)
-    {
-        if (type is null || string.IsNullOrWhiteSpace(methodName))
-            return string.Empty;
-
-        var method = type.GetMethod(methodName);
-        if (method is null)
-            return string.Empty;
-
-        return method.ReturnType.ToString();
+        return methods.ToHashSet();
     }
 
     /// <summary>
