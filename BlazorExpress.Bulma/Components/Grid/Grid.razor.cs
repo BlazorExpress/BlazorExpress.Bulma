@@ -33,11 +33,8 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        Console.WriteLine("Grid.OnAfterRender() called");
-
         if (firstRender)
         {
-            Console.WriteLine("Grid.OnAfterRender() called - firstRender");
             await RefreshGridCoreAsync();
             HideLoading();
             StateHasChanged();
@@ -48,8 +45,6 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     protected override void OnInitialized()
     {
-        Console.WriteLine("Grid.OnInitialized() called");
-
         gridCurrentState = new GridState<TItem>(1, PageSize, null);
         ShowLoading();
         base.OnInitialized();
@@ -57,8 +52,6 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     protected override async Task OnParametersSetAsync()
     {
-        Console.WriteLine("Grid.OnParametersSetAsync() called");
-
         if (Data is not null && DataProvider is not null)
             throw new InvalidOperationException($"{nameof(Grid<TItem>)} requires one of {nameof(Data)} or {nameof(DataProvider)}, but both were specified.");
 
@@ -154,9 +147,6 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     private async Task OnSortClickAsync(MouseEventArgs e, GridColumn<TItem> column)
     {
-        Console.WriteLine("Grid.OnSortClickAsync() called");
-        Console.WriteLine($"Column Id={column.Id}");
-
         if (!AllowSorting || !(columns?.Any() ?? false)) return;
 
         ShowLoading();
@@ -203,14 +193,12 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     private async Task RefreshGridAsync(CancellationToken cancellationToken = default)
     {
-        Console.WriteLine("Grid.RefreshGridAsync() called");
         await RefreshGridCoreAsync(cancellationToken);
         StateHasChanged();
     }
 
     private async Task RefreshGridCoreAsync(CancellationToken cancellationToken = default)
     {
-        Console.WriteLine("Grid.RefreshGridCoreAsync() called");
         var request = new GridDataProviderRequest<TItem> { PageNumber = AllowPaging ? gridCurrentState.PageNumber : default!, PageSize = AllowPaging ? gridCurrentState.PageSize : default!, Sorting = AllowSorting ? gridCurrentState.Sorting ?? GetDefaultSorting()! : null!, CancellationToken = cancellationToken };
 
         GridDataProviderResult<TItem> result = default!;
