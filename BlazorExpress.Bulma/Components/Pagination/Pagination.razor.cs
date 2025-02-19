@@ -90,7 +90,9 @@ public partial class Pagination : BulmaComponentBase
     /// <remarks>
     /// Default value is 1.
     /// </remarks>
-    [Parameter]
+    [AddedVersion("1.0.0")]
+    [DefaultValue(1)]
+    [Description("Gets or sets the active page number.")]
     public int ActivePageNumber { get; set; } = 1;
 
     /// <summary>
@@ -99,8 +101,11 @@ public partial class Pagination : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="PaginationAlignment.None" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(PaginationAlignment.None)]
+    [Description("Get or sets the <code>Pagination</code> alignment.")]
     [Parameter]
-    public PaginationAlignment Alignment { get; set; }
+    public PaginationAlignment Alignment { get; set; } = PaginationAlignment.None;
 
     /// <summary>
     /// Gets or sets the maximum page links to be displayed.
@@ -108,6 +113,9 @@ public partial class Pagination : BulmaComponentBase
     /// <remarks>
     /// Default value is 5.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(5)]
+    [Description("Gets or sets the maximum page links to be displayed.")]
     [Parameter]
     public int DisplayPages { get; set; } = 5;
 
@@ -117,14 +125,25 @@ public partial class Pagination : BulmaComponentBase
     /// <remarks>
     /// The default value is <see langword="false" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("When set to <b>true</b>, changes the appearance of <code>PaginationItem</code> to rounded.")]
     [Parameter]
-    public bool IsRounded { get; set; }
+    public bool IsRounded { get; set; } = false;
 
+    /// <summary>
+    /// Gets or sets the next button template.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the next button template.")]
     [Parameter] public RenderFragment? NextButtonTemplate { get; set; }
 
     /// <summary>
     /// This event fires immediately when the page number is changed.
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("This event fires immediately when the page number is changed.")]
     [Parameter]
     public EventCallback<int> PageChanged { get; set; }
 
@@ -132,6 +151,12 @@ public partial class Pagination : BulmaComponentBase
 
     private int PageToExclusive => GetPageToExclusive();
 
+    /// <summary>
+    /// Gets or sets the previous button template.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the previous button template.")]
     [Parameter] public RenderFragment? PreviousButtonTemplate { get; set; }
 
     /// <summary>
@@ -140,8 +165,11 @@ public partial class Pagination : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="PaginationSize.None" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(PaginationSize.None)]
+    [Description("Get or sets the <code>Pagination</code> size.")]
     [Parameter]
-    public PaginationSize Size { get; set; }
+    public PaginationSize Size { get; set; } = PaginationSize.None;
 
     /// <summary>
     /// Gets or sets the total pages.
@@ -149,8 +177,11 @@ public partial class Pagination : BulmaComponentBase
     /// <remarks>
     /// Default value is 0.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(0)]
+    [Description("Gets or sets the total pages.")]
     [Parameter]
-    public int TotalPages { get; set; }
+    public int TotalPages { get; set; } = 0;
 
     #endregion
 }

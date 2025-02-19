@@ -18,6 +18,10 @@ public partial class PaginationItem : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the child content.")]
+    [EditorRequired]
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
@@ -27,7 +31,10 @@ public partial class PaginationItem : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="false" />.
     /// </remarks>
-    [Parameter] public bool IsCurrentPage { get; set; }
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If <b>true</b>, sets the <code>PaginationItem</code> as current page.")]
+    [Parameter] public bool IsCurrentPage { get; set; } = false;
 
     /// <summary>
     /// If <see langword="true" />, disables the <see cref="PaginationItem"/>.
@@ -35,7 +42,10 @@ public partial class PaginationItem : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="false" />.
     /// </remarks>
-    [Parameter] public bool IsDisabled { get; set; }
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If <b>true</b>, disables the <code>PaginationItem</code>.")]
+    [Parameter] public bool IsDisabled { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the  <see cref="PaginationItem" /> type.
@@ -43,6 +53,9 @@ public partial class PaginationItem : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="PaginationLinkType.None" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(PaginationLinkType.None)]
+    [Description("Gets or sets the  <code>PaginationItem</code> type.")]
     [Parameter]
     public PaginationLinkType Type { get; set; } = PaginationLinkType.None;
 
