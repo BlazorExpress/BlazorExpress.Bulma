@@ -29,6 +29,19 @@ public static class MethodInfoExtensions
         return descriptionAttribute?.Description ?? string.Empty;
     }
 
+    public static string GetMethodParameters(this MethodInfo methodInfo)
+    {
+        var parameters = methodInfo.GetParameters();
+        if (parameters.Length == 0)
+            return string.Empty;
+
+        var parametersWithType = new HashSet<string>();
+        foreach (var parameter in parameters)
+            parametersWithType.Add($"{parameter.ParameterType.GetCSharpTypeName()} {parameter.Name}");
+
+        return string.Join(",", parametersWithType);
+    }
+
     /// <summary>
     /// Get method return type.
     /// </summary>

@@ -92,8 +92,6 @@ public static class TypeExtensions
             return string.Empty;
 
         var typeName = type.Name;
-        if (string.IsNullOrWhiteSpace(typeName))
-            return string.Empty;
 
         if (typeName.Contains(StringConstants.PropertyTypeNameInt16, StringComparison.InvariantCulture))
             typeName = StringConstants.PropertyTypeNameInt16CSharpTypeKeyword;
@@ -136,6 +134,12 @@ public static class TypeExtensions
 
         else if (typeName.Contains(StringConstants.PropertyTypeNameGuid, StringComparison.InvariantCulture))
             typeName = StringConstants.PropertyTypeNameGuidCSharpTypeKeyword;
+
+        else if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IEnumerable<>))
+        {
+            Type enumerableType = type.GetGenericArguments()[0]; // Get the T in IEnumerable<T>
+            typeName = $"IEnumerable<{enumerableType.Name}>";
+        }
 
         return typeName;
     }

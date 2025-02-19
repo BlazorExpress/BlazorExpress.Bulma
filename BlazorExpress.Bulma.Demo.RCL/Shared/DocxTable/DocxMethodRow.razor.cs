@@ -8,6 +8,10 @@ public partial class DocxMethodRow<TItem> : ComponentBase
 
     public string ReturnType => MethodInfo.GetMethodReturnType();
 
+    public string MethodNameWithParameters => $"{MethodInfo.Name}({MethodParameters})";
+
+    public string MethodParameters => MethodInfo.GetMethodParameters();
+
     public string ReturnTypeShortName => ReturnType.Contains(".")
         ? ReturnType.Split('.').Last()
         : ReturnType;
