@@ -22,6 +22,8 @@ public partial class GoogleMap : BulmaComponentBase
     /// </summary>
     /// <param name="marker">The marker to add to the map.</param>
     /// <returns>A completed task.</returns>
+    [AddedVersion("1.0.0")]
+    [Description("Adds a marker to the GoogleMap.")]
     public ValueTask AddMarkerAsync(GoogleMapMarker marker)
     {
         JSRuntime.InvokeVoidAsync(GoogleMapInterop.AddMarker, Id, marker, objRef);
@@ -40,6 +42,8 @@ public partial class GoogleMap : BulmaComponentBase
     /// Refreshes the Google Maps component.
     /// </summary>
     /// <returns>A completed task.</returns>
+    [AddedVersion("1.0.0")]
+    [Description("Refreshes the Google Maps component.")]
     public ValueTask RefreshAsync()
     {
         JSRuntime.InvokeVoidAsync(GoogleMapInterop.Initialize, Id, Zoom, Center, Markers, Clickable, objRef);
@@ -51,6 +55,8 @@ public partial class GoogleMap : BulmaComponentBase
     /// Updates the markers on the Google Map.
     /// </summary>
     /// <returns>A completed task.</returns>
+    [AddedVersion("1.0.0")]
+    [Description("Updates the markers on the Google Map.")]
     public ValueTask UpdateMarkersAsync(IEnumerable<GoogleMapMarker> markers)
     {
         JSRuntime.InvokeVoidAsync(GoogleMapInterop.UpdateMarkers, Id, markers, objRef);
@@ -81,6 +87,10 @@ public partial class GoogleMap : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the Google Maps API key.")]
+    [EditorRequired]
     [Parameter]
     public string? ApiKey { get; set; }
 
@@ -90,6 +100,9 @@ public partial class GoogleMap : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the center parameter.")]
     [Parameter]
     public GoogleMapCenter Center { get; set; } = default!;
 
@@ -99,8 +112,11 @@ public partial class GoogleMap : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="false" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Makes the marker clickable if set to <b>true</b>.")]
     [Parameter]
-    public bool Clickable { get; set; }
+    public bool Clickable { get; set; } = false;
 
     private string? GoogleMapsJsFileUrl => $"https://maps.googleapis.com/maps/api/js?key={ApiKey}&libraries=maps,marker";
 
@@ -110,6 +126,9 @@ public partial class GoogleMap : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the height of the <code>GoogleMap</code>.")]
     [Parameter]
     public double? Height { get; set; }
 
@@ -119,6 +138,9 @@ public partial class GoogleMap : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="Unit.Px" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(Unit.Px)]
+    [Description("Gets or sets the units for the <code>Height</code>.")]
     [Parameter]
     public Unit HeightUnit { get; set; } = Unit.Px;
 
@@ -128,6 +150,9 @@ public partial class GoogleMap : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the markers.")]
     [Parameter]
     public IEnumerable<GoogleMapMarker>? Markers { get; set; }
 
@@ -135,6 +160,8 @@ public partial class GoogleMap : BulmaComponentBase
     /// Event fired when a user clicks on a marker.
     /// This event fires only when <see cref="Clickable" /> is set to <see langword="true" />.
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("This event is fired when a user clicks on a marker. It fires only when <code>Clickable</code> is set to <b>true</b>.")]
     [Parameter]
     public EventCallback<GoogleMapMarker> OnMarkerClick { get; set; }
 
@@ -144,6 +171,9 @@ public partial class GoogleMap : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the width of the <code>GoogleMap</code>.")]
     [Parameter]
     public double? Width { get; set; }
 
@@ -153,6 +183,9 @@ public partial class GoogleMap : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="Unit.Percentage" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(Unit.Percentage)]
+    [Description("Gets or sets the units for the <code>Width</code>.")]
     [Parameter]
     public Unit WidthUnit { get; set; } = Unit.Percentage;
 
@@ -162,6 +195,9 @@ public partial class GoogleMap : BulmaComponentBase
     /// <remarks>
     /// Default value is 14.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(14)]
+    [Description("Gets or sets the zoom level of the <code>GoogleMap</code>.")]
     [Parameter]
     public int Zoom { get; set; } = 14;
 

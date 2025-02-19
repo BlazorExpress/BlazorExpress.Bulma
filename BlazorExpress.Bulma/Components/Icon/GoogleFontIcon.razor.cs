@@ -23,8 +23,11 @@ public partial class GoogleFontIcon : BulmaComponentBase
     /// <remarks>
     /// The default value is <see cref="false" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If true, icon color is applied to the text.")]
     [Parameter]
-    public bool ApplyColorToText { get; set; }
+    public bool ApplyColorToText { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the google font icon name.
@@ -32,6 +35,9 @@ public partial class GoogleFontIcon : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="GoogleFontIconName.None" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(GoogleFontIconName.None)]
+    [Description("Gets or sets the google font icon name.")]
     [Parameter]
     public GoogleFontIconName Name { get; set; } = GoogleFontIconName.None;
 
@@ -41,6 +47,10 @@ public partial class GoogleFontIcon : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the child content.")]
+    [EditorRequired]
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
@@ -50,6 +60,9 @@ public partial class GoogleFontIcon : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="IconColor.None" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(IconColor.None)]
+    [Description("Gets or sets the icon color.")]
     [Parameter]
     public IconColor Color { get; set; } = IconColor.None;
 
@@ -67,8 +80,11 @@ public partial class GoogleFontIcon : BulmaComponentBase
     /// <remarks>
     /// The default value is <see cref="false" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If true, the skeleton variant will be enabled.")]
     [Parameter]
-    public bool IsSkeleton { get; set; }
+    public bool IsSkeleton { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the icon size.
@@ -76,6 +92,9 @@ public partial class GoogleFontIcon : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="IconSize.None" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(IconSize.None)]
+    [Description("Gets or sets the icon size.")]
     [Parameter]
     public IconSize Size { get; set; } = IconSize.None;
 
@@ -85,8 +104,11 @@ public partial class GoogleFontIcon : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="false" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets the icon fill.")]
     [Parameter]
-    public bool Fill { get; set; }
+    public bool Fill { get; set; } = false;
 
     private string? TextCssClassNames =>
         CssUtility.BuildClassNames(
@@ -100,6 +122,9 @@ public partial class GoogleFontIcon : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="GoogleFontIconStyle.Outlined" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(GoogleFontIconStyle.Outlined)]
+    [Description("Gets or sets the google font icon style.")]
     [Parameter] 
     public GoogleFontIconStyle IconStyle { get; set; } = GoogleFontIconStyle.Outlined;
 

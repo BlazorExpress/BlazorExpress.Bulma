@@ -70,7 +70,8 @@ public static class TypeExtensions
             if (method.DeclaringType != typeof(object)
                 && method.DeclaringType == type // Exclude methods declared in base classes
                 && !method.Name.StartsWith("get_") // Exclude get_ methods
-                && !method.Name.StartsWith("set_")) // Exclude set_ methods
+                && !method.Name.StartsWith("set_") // Exclude set_ methods
+                && !method.GetCustomAttributes(typeof(JSInvokableAttribute), false).Any()) // Exclude methods that are not general public methods
             {
                 methods.Add(method);
             }

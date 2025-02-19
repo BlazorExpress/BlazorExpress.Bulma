@@ -16,7 +16,6 @@ public partial class Box : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
-    /// </remarks>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the child content.")]

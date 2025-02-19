@@ -24,12 +24,4 @@ public partial class Block : BulmaComponentBase
     public RenderFragment? ChildContent { get; set; }
 
     #endregion
-
-    [AddedVersion("1.0.0")]
-    [Description("Test 1 method")]
-    public void Test1() { }
-
-    [AddedVersion("1.0.0")]
-    [Description("Test 2 method")]
-    public int Test2(int a, int b) => a + b;
 }
