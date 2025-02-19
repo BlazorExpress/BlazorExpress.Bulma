@@ -1,15 +1,15 @@
 .menu {
-    background-color: hsl(var(--bulma-scheme-h),var(--bulma-scheme-s),calc(var(--bulma-scheme-main-l) + var(--be-menu-background-offset)));
+    background-color: hsl(var(--bulma-scheme-h),var(--bulma-scheme-s),calc(var(--bulma-scheme-main-l) + var(--be-bulma-menu-background-offset)));
     border-right: 0;
-    border-bottom: var(--be-menu-border) solid hsl(var(--bulma-scheme-h),var(--bulma-scheme-s),calc(var(--bulma-scheme-main-l) + var(--be-menu-border-offset)));
+    border-bottom: var(--be-bulma-menu-border) solid hsl(var(--bulma-scheme-h),var(--bulma-scheme-s),calc(var(--bulma-scheme-main-l) + var(--be-menu-border-offset)));
 }
 
 @media screen and (width > 768px) {
     .menu {
-        background-color: hsl(var(--bulma-scheme-h),var(--bulma-scheme-s),calc(var(--bulma-scheme-main-l) + var(--be-menu-background-offset)));
-        border-right: var(--be-menu-border) solid hsl(var(--bulma-scheme-h),var(--bulma-scheme-s),calc(var(--bulma-scheme-main-l) + var(--be-menu-border-offset)));
+        background-color: hsl(var(--bulma-scheme-h),var(--bulma-scheme-s),calc(var(--bulma-scheme-main-l) + var(--be-bulma-menu-background-offset)));
+        border-right: var(--be-bulma-menu-border) solid hsl(var(--bulma-scheme-h),var(--bulma-scheme-s),calc(var(--bulma-scheme-main-l) + var(--be-menu-border-offset)));
         border-bottom: 0;
-        width: var(--be-menu-width);
-        height: calc(100vh - var(--be-navbar-height));
+        width: var(--be-bulma-menu-width);
+        height: calc(100vh - var(--be-bulma-navbar-height));
     }
 }

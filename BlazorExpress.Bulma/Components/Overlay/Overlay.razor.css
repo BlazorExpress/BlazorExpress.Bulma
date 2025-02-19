@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px) {
-    .be-b-overlay {
+    .be-bulma-overlay {
         background-color: rgba(0, 0, 0, .8);
         bottom: 0;
         left: 0;
@@ -11,14 +11,14 @@
         z-index: 10;
     }
 
-    .be-b-overlay.is-active {
-        opacity: 1;
-        pointer-events: auto;
-    }
+        .be-bulma-overlay.is-active {
+            opacity: 1;
+            pointer-events: auto;
+        }
 }
 
 @media print, screen and (min-width: 769px) {
-    .be-b-overlay {
+    .be-bulma-overlay {
         display: none;
     }
 }

@@ -9,14 +9,14 @@
 
     @if (!Tabs)
     {
-        <div class="be-doc-example-demo">
+        <div class="be-bulma-doc-example-demo">
             <DynamicComponent Type="this.Type" />
         </div>
-        <div class="be-doc-example-toolbar is-flex is-justify-content-space-between">
+        <div class="be-bulma-doc-example-toolbar is-flex is-justify-content-space-between">
             <div class="pl-4 py-2">@LanguageCode.ToLanguageName()?.ToUpperInvariant()</div>
             <div class="pr-4 py-2"><i class="@clipboardTooltipIconName" role="button" @onclick="CopyToClipboardAsync"></i></div>
         </div>
-        <div class="be-doc-example-snippet">
+        <div class="be-bulma-doc-example-snippet">
             <pre>
                 <code class="@LanguageCode.ToLanguageCssClass()">
                     @if (codeSnippet is not null)
@@ -31,13 +31,13 @@
     {
         <Tabs>
             <Tab Title="Example">
-                <div class="be-doc-example-demo">
+                <div class="be-bulma-doc-example-demo">
                     <DynamicComponent Type="this.Type" />
                 </div>
             </Tab>
             <Tab Title="View Source">
-                <div class="be-doc-example-snippet">
-                    <div class="pr-4 py-2 be-doc-float-end">
+                <div class="be-bulma-doc-example-snippet">
+                    <div class="pr-4 py-2 be-bulma-doc-float-end">
                         <i class="@clipboardTooltipIconName" role="button" @onclick="CopyToClipboardAsync"></i>
                     </div>
                     <pre>

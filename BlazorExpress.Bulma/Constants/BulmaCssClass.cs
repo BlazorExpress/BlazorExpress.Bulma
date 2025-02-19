@@ -148,7 +148,7 @@ public static class BulmaCssClass
     public const string NavbarMenu = "navbar-menu";
     public const string NavbarStart = "navbar-start";
 
-    public const string Overlay = "be-b-overlay";
+    public const string Overlay = "be-bulma-overlay";
 
     public const string Pagination = "pagination";
     public const string PaginationLink = "pagination-link";

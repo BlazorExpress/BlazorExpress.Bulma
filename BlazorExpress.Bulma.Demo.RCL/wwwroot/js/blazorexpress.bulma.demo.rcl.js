@@ -45,7 +45,7 @@ const state = {
 };
 
 const showActiveTheme = () => {
-    let $themeIndicator = document.querySelector(".be-theme-indicator i");
+    let $themeIndicator = document.querySelector(".be-bulma-theme-indicator i");
     if (state.appliedTheme === "light") {
         $themeIndicator.className = "bi bi-sun";
     } else if (state.appliedTheme === "dark") {
@@ -54,7 +54,7 @@ const showActiveTheme = () => {
         $themeIndicator.className = "bi bi-circle-half";
     }
 
-    let $themeSwitchers = document.querySelectorAll(".be-theme-item");
+    let $themeSwitchers = document.querySelectorAll(".be-bulma-theme-item");
     $themeSwitchers.forEach((el) => {
         const dataScheme = el.dataset.scheme;
         if (state.chosenTheme === dataScheme) {

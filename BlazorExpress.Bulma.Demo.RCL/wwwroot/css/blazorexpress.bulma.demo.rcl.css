@@ -1,55 +1,55 @@
 :root {
-    --be-border-color: #dee2e6;
-    --be-border-radius: 0.375rem;
-    --be-pre-bg: #f8f9fa;
+    --be-bulma-border-color: #dee2e6;
+    --be-bulma-border-radius: 0.375rem;
+    --be-bulma-pre-bg: #f8f9fa;
 }
 
 [data-theme=dark] {
-    --be-border-color: #495057;
-    --be-pre-bg: #1b1f22;
+    --be-bulma-border-color: #495057;
+    --be-bulma-pre-bg: #1b1f22;
 }
 
 h1:focus-visible {
     outline: inherit !important;
 }
 
-.be-doc-example {
+.be-bulma-doc-example {
     margin-bottom: 1rem;
-    border: 1px solid var(--be-border-color);
-    border-radius: var(--be-border-radius);
+    border: 1px solid var(--be-bulma-border-color);
+    border-radius: var(--be-bulma-border-radius);
 }
 
-.be-doc-example-demo {
+.be-bulma-doc-example-demo {
     border: 0 !important;
     margin: 0 !important;
 }
 
-.be-doc-example-demo {
+.be-bulma-doc-example-demo {
     padding: 1rem;
 }
 
-.be-doc-example-toolbar {
-    background-color: var(--be-pre-bg);
-    border-top: 1px solid var(--be-border-color);
-    border-bottom: 1px solid var(--be-border-color);
+.be-bulma-doc-example-toolbar {
+    background-color: var(--be-bulma-pre-bg);
+    border-top: 1px solid var(--be-bulma-border-color);
+    border-bottom: 1px solid var(--be-bulma-border-color);
 }
 
-.be-doc-example-snippet {
-    background-color: var(--be-pre-bg);
+.be-bulma-doc-example-snippet {
+    background-color: var(--be-bulma-pre-bg);
 }
 
-    .be-doc-example-snippet pre {
+    .be-bulma-doc-example-snippet pre {
         background-color: transparent !important;
         border: 0 !important;
         margin-top: 0 !important;
         margin-bottom: 0 !important;
     }
 
-.be-doc-float-end {
+.be-bulma-doc-float-end {
     float: right !important;
 }
 
-.be-doc-hr {
+.be-bulma-doc-hr {
     background-color: var(--bulma-primary) !important;
     border-radius: 9999px;
     height: .25rem;
@@ -57,10 +57,10 @@ h1:focus-visible {
     width: 4em;
 }
 
-.be-doc-hr-title {
+.be-bulma-doc-hr-title {
     margin-left: 0;
 }
 
-.be-doc-subtitle {
+.be-bulma-doc-subtitle {
     color: var(--bulma-text-weak);
 }

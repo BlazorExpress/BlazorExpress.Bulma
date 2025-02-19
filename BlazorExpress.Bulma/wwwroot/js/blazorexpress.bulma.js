@@ -41,7 +41,7 @@ window.blazorExpress = {
                 }
                 else if (marker.content) {
                     _content = document.createElement("div");
-                    _content.classList.add("be-google-marker-content");
+                    _content.classList.add("be-bulma-google-marker-content");
                     _content.innerHTML = marker.content;
                 }
 

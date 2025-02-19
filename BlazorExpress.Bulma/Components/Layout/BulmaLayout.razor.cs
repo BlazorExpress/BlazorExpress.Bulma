@@ -39,17 +39,17 @@ public partial class BulmaLayout : BulmaLayoutComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames => CssUtility.BuildClassNames(Class, ("be-page", true));
+    protected override string? CssClassNames => CssUtility.BuildClassNames(Class, ("be-bulma-page", true));
     // width
     // height
 
     [Parameter] public RenderFragment? ContentSection { get; set; }
     [Parameter] public string? ContentSectionCssClass { get; set; }
-    protected string? ContentSectionCssClassNames => CssUtility.BuildClassNames(ContentSectionCssClass, ("be-page-body p-5", true));
+    protected string? ContentSectionCssClassNames => CssUtility.BuildClassNames(ContentSectionCssClass, ("be-bulma-page-body p-5", true));
 
     [Parameter] public RenderFragment? FooterSection { get; set; }
     [Parameter] public string? FooterSectionCssClass { get; set; } = "bg-body-tertiary";
-    protected string? FooterSectionCssClassNames => CssUtility.BuildClassNames(FooterSectionCssClass, ("bb-footer p-4", true));
+    protected string? FooterSectionCssClassNames => CssUtility.BuildClassNames(FooterSectionCssClass, ("be-bulma-page-footer p-4", true));
 
     [Parameter] public RenderFragment? HeaderSection { get; set; }
     [Parameter] public string? HeaderSectionCssClass { get; set; } = "d-flex justify-content-end";
