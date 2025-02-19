@@ -29,11 +29,14 @@ public partial class SkeletonLine : BulmaComponentBase
         );
 
     /// <summary>
-    /// Gets or sets the <see cref="Skeleton" /> color.
+    /// Gets or sets the <see cref="SkeletonLine" /> color.
     /// </summary>
     /// <remarks>
     /// Default value is <see cref="SkeletonColor.None" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(SkeletonColor.None)]
+    [Description("Gets or sets the <code>SkeletonLine</code> color.")]
     [Parameter]
     public SkeletonColor Color { get; set; }
 
@@ -43,6 +46,9 @@ public partial class SkeletonLine : BulmaComponentBase
     /// <remarks>
     /// Default value is 100.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(100)]
+    [Description("Gets or sets the <code>SkeletonLine</code> width.")]
     [Parameter]
     public float Width { get; set; } = 100;
 

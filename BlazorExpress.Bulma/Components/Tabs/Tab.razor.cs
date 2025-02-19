@@ -35,6 +35,10 @@ public partial class Tab : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the child content.")]
+    [EditorRequired]
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
@@ -46,8 +50,11 @@ public partial class Tab : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="false" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets the active state.")]
     [Parameter]
-    public bool IsActive { get; set; }
+    public bool IsActive { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the disabled state.
@@ -55,8 +62,11 @@ public partial class Tab : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="false" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets the disabled state.")]
     [Parameter]
-    public bool IsDisabled { get; set; }
+    public bool IsDisabled { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the tab name.
@@ -64,6 +74,9 @@ public partial class Tab : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the tab name.")]
     [Parameter]
     public string? Name { get; set; }
 
@@ -82,6 +95,9 @@ public partial class Tab : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the tab title.")]
     [Parameter]
     public string? Title { get; set; }
 
@@ -91,6 +107,9 @@ public partial class Tab : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the tab title template.")]
     [Parameter]
     public RenderFragment? TitleTemplate { get; set; }
 

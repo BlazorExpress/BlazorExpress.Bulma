@@ -32,8 +32,10 @@ public partial class Tabs : BulmaComponentBase
     /// Gets the active tab.
     /// </summary>
     /// <returns>
-    /// Returns the cuurent active <see cref="Tab" />.
+    /// Returns the current active <see cref="Tab" />.
     /// </returns>
+    [AddedVersion("1.0.0")]
+    [Description("Gets the active tab.")]
     public Tab GetActiveTab() => activeTab;
 
     /// <summary>
@@ -41,6 +43,8 @@ public partial class Tabs : BulmaComponentBase
     /// </summary>
     /// <param name="tabIndex"></param>
     /// <exception cref="IndexOutOfRangeException"></exception>
+    [AddedVersion("1.0.0")]
+    [Description("Removes the tab by index.")]
     public void RemoveTabByIndex(int tabIndex)
     {
         if (!tabs?.Any() ?? true) return;
@@ -58,6 +62,8 @@ public partial class Tabs : BulmaComponentBase
     /// Removes the tab by name.
     /// </summary>
     /// <param name="tabName"></param>
+    [AddedVersion("1.0.0")]
+    [Description("Removes the tab by name.")]
     public void RemoveTabByName(string tabName)
     {
         if (!tabs?.Any() ?? true) return;
@@ -74,6 +80,8 @@ public partial class Tabs : BulmaComponentBase
     /// <summary>
     /// Selects the first tab and show its associated pane.
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("Selects the first tab and show its associated pane.")]
     public void ShowFirstTab()
     {
         if (!tabs?.Any() ?? true) return;
@@ -86,6 +94,8 @@ public partial class Tabs : BulmaComponentBase
     /// <summary>
     /// Selects the last tab and show its associated pane.
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("Selects the last tab and show its associated pane.")]
     public void ShowLastTab()
     {
         if (!tabs?.Any() ?? true) return;
@@ -99,6 +109,8 @@ public partial class Tabs : BulmaComponentBase
     /// Selects the tab by index and show its associated pane.
     /// </summary>
     /// <param name="tabIndex">The zero-based index of the element to get or set.</param>
+    [AddedVersion("1.0.0")]
+    [Description("Selects the tab by index and show its associated pane.")]
     public void ShowTabByIndex(int tabIndex)
     {
         if (!tabs?.Any() ?? true) return;
@@ -114,6 +126,8 @@ public partial class Tabs : BulmaComponentBase
     /// Selects the tab by name and show its associated pane.
     /// </summary>
     /// <param name="tabName">The name of the tab to select.</param>
+    [AddedVersion("1.0.0")]
+    [Description("Selects the tab by name and show its associated pane.")]
     public void ShowTabByName(string tabName)
     {
         if (!tabs?.Any() ?? true) return;
@@ -206,8 +220,11 @@ public partial class Tabs : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="TabsAlignment.None" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(TabsAlignment.None)]
+    [Description("Gets or sets the <code>Tabs</code> alignment.")]
     [Parameter]
-    public TabsAlignment Alignment { get; set; }
+    public TabsAlignment Alignment { get; set; } = TabsAlignment.None;
 
     /// <summary>
     /// Gets or sets the child content.
@@ -215,6 +232,10 @@ public partial class Tabs : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the child content.")]
+    [EditorRequired]
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
@@ -225,24 +246,33 @@ public partial class Tabs : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="false" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets the <code>Tabs</code> width. If <b>true</b>, tabs will take up the whole width available.")]
     [Parameter]
-    public bool IsFullWidth { get; set; }
+    public bool IsFullWidth { get; set; } = false;
 
     /// <summary>
     /// This event fires after a new tab is shown (and thus the previous active tab is hidden).
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("This event fires after a new tab is shown (and thus the previous active tab is hidden).")]
     [Parameter]
     public EventCallback<TabEventArgs> OnHidden { get; set; }
 
     /// <summary>
     /// This event fires on tab show after a tab has been shown.
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("This event fires on tab show after a tab has been shown.")]
     [Parameter]
     public EventCallback<TabEventArgs> OnShown { get; set; }
 
     /// <summary>
     /// This event fires when the user clicks the corresponding tab and the tab is displayed.
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("This event fires when the user clicks the corresponding tab and the tab is displayed.")]
     [Parameter]
     public EventCallback<TabsEventArgs> OnTabChanged { get; set; }
 
@@ -252,8 +282,11 @@ public partial class Tabs : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="TabsSize.None" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(TabsSize.None)]
+    [Description("Gets or sets the <code>Tabs</code> size.")]
     [Parameter]
-    public TabsSize Size { get; set; }
+    public TabsSize Size { get; set; } = TabsSize.None;
 
     /// <summary>
     /// Gets or sets the tabs container CSS class.
@@ -261,6 +294,9 @@ public partial class Tabs : BulmaComponentBase
     /// <remarks>
     /// Default value is <see langword="null" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the tabs container CSS class.")]
     [Parameter]
     public string? TabsContainerCssClass { get; set; }
 
@@ -270,8 +306,11 @@ public partial class Tabs : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="TabsType.None" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(TabsType.None)]
+    [Description("Gets or sets the <code>Tabs</code> type.")]
     [Parameter]
-    public TabsType Type { get; set; }
+    public TabsType Type { get; set; } = TabsType.None;
 
     #endregion
 }

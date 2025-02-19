@@ -72,39 +72,67 @@ public partial class ScriptLoader : BulmaComponentBase
     /// <summary>
     /// Gets or sets a value indicating whether the script should be loaded asynchronously.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="false" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets a value indicating whether the script should be loaded asynchronously.")]
     [Parameter]
-    public bool Async { get; set; }
+    public bool Async { get; set; } = false;
 
     /// <summary>
     /// Gets or sets a value indicating whether the script is meant to be executed 
-    /// after the document has been parsed, but before firing DOMContentLoaded event..
+    /// after the document has been parsed, but before firing DOMContentLoaded event.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="false" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets a value indicating whether the script is meant to be executed after the document has been parsed, but before firing DOMContentLoaded event.")]
     [Parameter]
-    public bool Defer { get; set; }
+    public bool Defer { get; set; } = false;
 
     /// <summary>
     /// An event that is fired when a script loading error occurs.
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("An event that is fired when a script loading error occurs.")]
     [Parameter]
     public EventCallback<string> OnError { get; set; }
 
     /// <summary>
     /// An event that is fired when a script has been successfully loaded.
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("An event that is fired when a script has been successfully loaded.")]
     [Parameter]
     public EventCallback OnLoad { get; set; }
 
     /// <summary>
     /// Gets or sets the ID of the script element.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the ID of the script element.")]
     [Parameter]
     public string? ScriptId { get; set; }
 
     /// <summary>
     /// Gets or sets the URI of the external script to load.
     /// </summary>
-    [Parameter]
+    /// <remarks>
+    /// Default value is <see langword="null" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the URI of the external script to load.")]
     [EditorRequired]
+    [Parameter]
     public string? Source { get; set; } = default!;
 
     #endregion
