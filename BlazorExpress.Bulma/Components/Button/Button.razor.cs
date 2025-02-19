@@ -188,9 +188,9 @@ public partial class Button : BulmaComponentBase
     /// Gets or sets the size.
     /// </summary>
     [AddedVersion("1.0.0")]
-    [DefaultValue(false)]
+    [DefaultValue(ButtonSize.None)]
     [Description("Gets or sets the size.")]
-    [Parameter] public ButtonSize Size { get; set; }
+    [Parameter] public ButtonSize Size { get; set; } = ButtonSize.None;
 
     /// <summary>
     /// Gets or sets the button type.
@@ -199,7 +199,7 @@ public partial class Button : BulmaComponentBase
     /// Default value is <see cref="ButtonType.Button" />.
     /// </remarks>
     [AddedVersion("1.0.0")]
-    [DefaultValue(false)]
+    [DefaultValue(ButtonType.Button)]
     [Description("Gets or sets the button type.")]
     [Parameter]
     public ButtonType Type { get; set; } = ButtonType.Button;
