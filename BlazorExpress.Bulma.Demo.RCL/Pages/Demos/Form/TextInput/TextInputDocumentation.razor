@@ -1,0 +1,40 @@
+@attribute [Route(pageUrl)]
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@RouteConstants.Docs_Form_TextInput_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(TextInput_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Demo Type="typeof(TextInput_Demo_02_Colors)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="Sizes">
+    <Demo Type="typeof(TextInput_Demo_03_Sizes)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Styles" PageUrl="@pageUrl" Link="styles">
+    <Demo Type="typeof(TextInput_Demo_04_Styles)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="States" PageUrl="@pageUrl" Link="states">
+    <Demo Type="typeof(TextInput_Demo_05_States)" Tabs="true" />
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Demos_Form_TextInput_Documentation;
+    private const string pageTitle = "TextInput";
+    private const string pageDescription = "The <code>TextInput</code> component is a simple spacer tool. It allows sibling HTML elements to have a consistent margin between them.";
+    private const string metaTitle = "Blazor TextInput Component";
+    private const string metaDescription = "The TextInput component is a simple spacer tool. It allows sibling HTML elements to have a consistent margin between them.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}

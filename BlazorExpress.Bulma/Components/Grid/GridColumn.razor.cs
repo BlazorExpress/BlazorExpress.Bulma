@@ -16,8 +16,6 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     {
         Id ??= IdUtility.GetNextId();
 
-        Console.WriteLine("GridColumn.OnInitialized() called");
-
         currentSortDirection = SortDirection;
         defaultSortDirection = SortDirection;
 

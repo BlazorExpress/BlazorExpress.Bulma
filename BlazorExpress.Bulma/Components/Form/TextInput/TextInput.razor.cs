@@ -1,5 +1,160 @@
-﻿namespace BlazorExpress.Bulma;
+﻿using Microsoft.AspNetCore.Components.Forms;
+
+namespace BlazorExpress.Bulma;
 
 public partial class TextInput : BulmaComponentBase
 {
+    #region Fields and Constants
+
+    private FieldIdentifier fieldIdentifier = default!;
+
+    #endregion
+
+    #region Methods
+
+    protected override void OnInitialized()
+    {
+        AdditionalAttributes ??= new Dictionary<string, object>();
+
+        fieldIdentifier = FieldIdentifier.Create(ValueExpression);
+
+        base.OnInitialized();
+    }
+
+    /// <summary>
+    /// Disables number input.
+    /// </summary>
+    public void Disable() => Disabled = true;
+
+    /// <summary>
+    /// Enables number input.
+    /// </summary>
+    public void Enable() => Disabled = false;
+
+    private async Task OnChange(ChangeEventArgs e)
+    {
+        var oldValue = Value;
+        var newValue = e.Value?.ToString() ?? string.Empty; // object
+
+        await ValueChanged.InvokeAsync(newValue);
+
+        EditContext?.NotifyFieldChanged(fieldIdentifier);
+    }
+
+    #endregion
+
+    #region Properties, Indexers
+
+    protected override string? ClassNames =>
+        BuildClassNames(
+            Class,
+            (BulmaCssClass.Input, true),
+            (Color.ToTextInputColorClass(), Color != TextInputColor.None),
+            (TextAlignment.ToTextAlignmentClass(), TextAlignment != Alignment.None),
+            (Size.ToTextInputSizeClass(), Size != TextInputSize.None),
+            (BulmaCssClass.IsRounded, IsRounded),
+            (State.ToTextInputStateClass(), State != TextInputState.None)
+        );
+
+    private string autoComplete => AutoComplete ? "true" : "false";
+
+    /// <summary>
+    /// If <see langword="true" />, TextInput can complete the values automatically by the browser.
+    /// </summary>
+    /// <remarks>
+    /// Default value is false.
+    /// </remarks>
+    [Parameter]
+    public bool AutoComplete { get; set; }
+
+    /// <summary>
+    /// Gets or sets the color.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see cref="TextInputColor.None" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(TextInputColor.None)]
+    [Description("Gets or sets the color.")]
+    [Parameter] public TextInputColor Color { get; set; } = TextInputColor.None;
+
+    /// <summary>
+    /// Gets or sets the disabled state.
+    /// </summary>
+    /// <remarks>
+    /// Default value is false.
+    /// </remarks>
+    [Parameter]
+    public bool Disabled { get; set; }
+
+    [CascadingParameter] private EditContext EditContext { get; set; } = default!;
+
+    private string fieldCssClasses => EditContext?.FieldCssClass(fieldIdentifier) ?? "";
+
+    /// <summary>
+    /// If true, the rounded variant will be enabled.
+    /// </summary>
+    /// <remarks>
+    /// The default value is <see langword="false" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If true, the rounded variant will be enabled.")]
+    [Parameter] public bool IsRounded { get; set; }
+
+    /// <summary>
+    /// Gets or sets the maximum number of characters that can be entered.
+    /// </summary>
+    [Parameter]
+    public int? MaxLength { get; set; }
+
+    /// <summary>
+    /// Gets or sets the placeholder text.
+    /// </summary>
+    /// <remarks>
+    /// Default value is null.
+    /// </remarks>
+    [Parameter]
+    public string? Placeholder { get; set; }
+
+    /// <summary>
+    /// Gets or sets the size.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(TextInputSize.None)]
+    [Description("Gets or sets the size.")]
+    [Parameter] public TextInputSize Size { get; set; } = TextInputSize.None;
+
+    /// <summary>
+    /// Gets or sets the state.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(TextInputState.None)]
+    [Description("Gets or sets the state.")]
+    [Parameter] public TextInputState State { get; set; } = TextInputState.None;
+
+    /// <summary>
+    /// Gets or sets the text alignment.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see cref="Alignment.None" />.
+    /// </remarks>
+    [Parameter]
+    public Alignment TextAlignment { get; set; } = Alignment.None;
+
+    /// <summary>
+    /// Gets or sets the value.
+    /// </summary>
+    [Parameter]
+    public string Value { get; set; } = default!;
+
+    /// <summary>
+    /// This event fires when the <see cref="TextInput" /> value changes.
+    /// </summary>
+    [Parameter]
+    public EventCallback<string> ValueChanged { get; set; }
+
+    [Parameter] public Expression<Func<string>> ValueExpression { get; set; } = default!;
+
+    #endregion
 }

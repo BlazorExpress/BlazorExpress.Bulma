@@ -65,6 +65,16 @@ public partial class MainLayout : MainLayoutBase
             ]
         });
 
+        // FORM
+        groups.Add(new LinkGroup
+        {
+            Name = "FORM",
+            CssClass = "is-size-7 has-text-weight-bold has-text-primary",
+            Links = [
+                new Link { Href = RouteConstants.Demos_Form_TextInput_Documentation , Text = "Text Input" },
+            ]
+        });
+
         // COMPONENTS
         groups.Add(new LinkGroup
         {

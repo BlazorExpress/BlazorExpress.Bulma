@@ -28,6 +28,22 @@ public static class RouteConstants
     public const string Docs_Tags_Documentation = Docs_Prefix + "/tags";
     public const string Docs_Title_Documentation = Docs_Prefix + "/title";
 
+    // Form
+    public const string Docs_Form_Prefix = Docs_Prefix + "/form";
+    public const string Docs_Form_AutoComplete_Documentation = Docs_Form_Prefix + "/autocomplete";
+    public const string Docs_Form_CheckboxInput_Documentation = Docs_Form_Prefix + "/checkbox-input";
+    public const string Docs_Form_CurrencyInput_Documentation = Docs_Form_Prefix + "/currency-input";
+    public const string Docs_Form_DateInput_Documentation = Docs_Form_Prefix + "/date-input";
+    public const string Docs_Form_NumberInput_Documentation = Docs_Form_Prefix + "/number-input";
+    public const string Docs_Form_PasswordInput_Documentation = Docs_Form_Prefix + "/password-input";
+    public const string Docs_Form_RadioInput_Documentation = Docs_Form_Prefix + "/radio-input";
+    public const string Docs_Form_RangeInput_Documentation = Docs_Form_Prefix + "/range-input";
+    public const string Docs_Form_SelectInput_Documentation = Docs_Form_Prefix + "/select-input";
+    public const string Docs_Form_Switch_Documentation = Docs_Form_Prefix + "/switch";
+    public const string Docs_Form_TextInput_Documentation = Docs_Form_Prefix + "/text-input";
+    public const string Docs_Form_TextAreaInput_Documentation = Docs_Form_Prefix + "/text-area-input";
+    public const string Docs_Form_TimeInput_Documentation = Docs_Form_Prefix + "/time-input";
+
     // Components
     public const string Docs_Breadcrumb_Documentation = Docs_Prefix + "/breadcrumb";
     public const string Docs_Card_Documentation = Docs_Prefix + "/card";
@@ -83,6 +99,22 @@ public static class RouteConstants
     public const string Demos_Table_Documentation = Demos_Prefix + "/table";
     public const string Demos_Tags_Documentation = Demos_Prefix + "/tags";
     public const string Demos_Title_Documentation = Demos_Prefix + "/title";
+
+    // Form
+    public const string Demos_Form_Prefix = Demos_Prefix + "/form";
+    public const string Demos_Form_AutoComplete_Documentation = Demos_Form_Prefix + "/autocomplete";
+    public const string Demos_Form_CheckboxInput_Documentation = Demos_Form_Prefix + "/checkbox-input";
+    public const string Demos_Form_CurrencyInput_Documentation = Demos_Form_Prefix + "/currency-input";
+    public const string Demos_Form_DateInput_Documentation = Demos_Form_Prefix + "/date-input";
+    public const string Demos_Form_NumberInput_Documentation = Demos_Form_Prefix + "/number-input";
+    public const string Demos_Form_PasswordInput_Documentation = Demos_Form_Prefix + "/password-input";
+    public const string Demos_Form_RadioInput_Documentation = Demos_Form_Prefix + "/radio-input";
+    public const string Demos_Form_RangeInput_Documentation = Demos_Form_Prefix + "/range-input";
+    public const string Demos_Form_SelectInput_Documentation = Demos_Form_Prefix + "/select-input";
+    public const string Demos_Form_Switch_Documentation = Demos_Form_Prefix + "/switch";
+    public const string Demos_Form_TextInput_Documentation = Demos_Form_Prefix + "/text-input";
+    public const string Demos_Form_TextAreaInput_Documentation = Demos_Form_Prefix + "/text-area-input";
+    public const string Demos_Form_TimeInput_Documentation = Demos_Form_Prefix + "/time-input";
 
     // Components
     public const string Demos_Breadcrumb_Documentation = Demos_Prefix + "/breadcrumb";

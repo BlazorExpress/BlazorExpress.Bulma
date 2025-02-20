@@ -15,6 +15,8 @@ public static class BulmaCssClass
     public const string Button = "button";
     public const string Buttons = "buttons";
 
+    public const string Control = "control";
+
     public const string HasBackgroundBlack = "has-background-black";
     public const string HasBackgroundDanger = "has-background-danger";
     public const string HasBackgroundDark = "has-background-dark";
@@ -55,6 +57,8 @@ public static class BulmaCssClass
     public const string Icon = "icon";
     public const string IconText = "icon-text";
 
+    public const string Input = "input";
+
     public const string Is1 = "is-1";
     public const string Is2 = "is-2";
     public const string Is3 = "is-3";
@@ -86,10 +90,12 @@ public static class BulmaCssClass
     public const string IsFlexDirectionRowReverse = "is-flex-direction-row-reverse";
     public const string IsFlexDirectionColumn = "is-flex-direction-column";
     public const string IsFlexDirectionColumnReverse = "is-flex-direction-column-reverse";
+    public const string IsFocused = "is-focused";
     public const string IsFullWidth = "is-fullwidth";
     public const string IsGhost = "is-ghost";
     public const string IsHidden = "is-hidden";
     public const string IsHoverable = "is-hoverable";
+    public const string IsHovered = "is-hovered";
     public const string IsInfo = "is-info";
     public const string IsInverted = "is-inverted";
     public const string IsJustifyContentFlexStart = "is-justify-content-flex-start";

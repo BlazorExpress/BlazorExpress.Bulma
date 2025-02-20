@@ -180,6 +180,46 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string ToTextAlignmentClass(this Alignment alignment) =>
+        alignment switch
+        {
+            Alignment.Start => BulmaCssClass.HasTextLeft,
+            Alignment.Center => BulmaCssClass.HasTextCentered,
+            Alignment.End => BulmaCssClass.HasTextRight,
+            _ => ""
+        };
+
+    public static string? ToTextInputColorClass(this TextInputColor color) =>
+        color switch
+        {
+            TextInputColor.Primary => BulmaCssClass.IsPrimary,
+            TextInputColor.Link => BulmaCssClass.IsLink,
+            TextInputColor.Info => BulmaCssClass.IsInfo,
+            TextInputColor.Success => BulmaCssClass.IsSuccess,
+            TextInputColor.Warning => BulmaCssClass.IsWarning,
+            TextInputColor.Danger => BulmaCssClass.IsDanger,
+            _ => null
+        };
+
+    public static string? ToTextInputSizeClass(this TextInputSize size) =>
+        size switch
+        {
+            TextInputSize.Small => BulmaCssClass.IsSmall,
+            TextInputSize.Normal => BulmaCssClass.IsNormal,
+            TextInputSize.Medium => BulmaCssClass.IsMedium,
+            TextInputSize.Large => BulmaCssClass.IsLarge,
+            _ => null
+        };
+
+    public static string? ToTextInputStateClass(this TextInputState size) =>
+        size switch
+        {
+            TextInputState.Hovered => BulmaCssClass.IsHovered,
+            TextInputState.Focused => BulmaCssClass.IsFocused,
+            TextInputState.Loading => BulmaCssClass.IsLoading,
+            _ => null
+        };
+
     public static string? ToTitleSizeClass(this HeadingSize headingSize) =>
         headingSize switch
         {

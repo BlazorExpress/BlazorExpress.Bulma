@@ -1,11 +1,35 @@
 @namespace BlazorExpress.Bulma
 @inherits BulmaComponentBase
 
-<input class="input" type="text" placeholder="Text input" />
-<input @ref="@Element"
-       type="text"
-       id="@Id" 
-       class="@ClassNames" 
-       style="@StyleNames" 
-       @attributes="@AdditionalAttributes" 
-       placeholder="Text input" />
+@if (State != TextInputState.Loading)
+{
+    <input @ref="@Element"
+           type="text"
+           id="@Id"
+           class="@ClassNames @fieldCssClasses"
+           style="@StyleNames"
+           value="@Value"
+           disabled="@Disabled"
+           placeholder="@Placeholder"
+           maxlength="@MaxLength"
+           autocomplete="@autoComplete"
+           @attributes="@AdditionalAttributes"
+           @onchange="OnChange" />
+}
+else
+{
+    <div class="@BulmaCssClass.Control @(State == TextInputState.Loading ? BulmaCssClass.IsLoading : "")">
+        <input @ref="@Element"
+               type="text"
+               id="@Id"
+               class="@ClassNames @fieldCssClasses"
+               style="@StyleNames"
+               value="@Value"
+               disabled="@Disabled"
+               placeholder="@Placeholder"
+               maxlength="@MaxLength"
+               autocomplete="@autoComplete"
+               @attributes="@AdditionalAttributes"
+               @onchange="OnChange" />
+    </div>
+}

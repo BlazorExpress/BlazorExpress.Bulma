@@ -1,0 +1,31 @@
+@attribute [Route(pageUrl)]
+@layout DocsMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+@* <img src="https://i.imgur.com/IX3bajc.png" class="img-fluid" alt="Blazor Bar Chart - API Documentation" /> *@
+
+<DemoLink Href="@RouteConstants.Demos_Form_TextInput_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Parameters" PageUrl="@pageUrl" Link="parameters">
+    <DocxTable TItem="TextInput" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Methods" PageUrl="@pageUrl" Link="methods">
+    <DocxTable TItem="TextInput" DocType="DocType.Methods" />
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Docs_Form_TextInput_Documentation;
+    private const string pageTitle = "TextInput";
+    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>TextInput</code> component, guiding you through its configuration options.";
+    private const string metaTitle = "Blazor TextInput Component";
+    private const string metaDescription = "This documentation provides a comprehensive reference for the TextInput component, guiding you through its configuration options.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}
