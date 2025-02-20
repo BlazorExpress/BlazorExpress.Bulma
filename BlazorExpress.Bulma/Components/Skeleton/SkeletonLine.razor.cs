@@ -16,14 +16,14 @@ public partial class SkeletonLine : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames =>
-        CssUtility.BuildClassNames(
+    protected override string? ClassNames =>
+        BuildClassNames(
             Class,
             (Color.ToSkeletonColorClass(), Color != SkeletonColor.None)
         );
 
-    protected override string? CssStyleNames =>
-        CssUtility.BuildStyleNames(
+    protected override string? StyleNames =>
+        BuildStyleNames(
             Style,
             ($"width: {Width.ToString(CultureInfo.InvariantCulture)}%", Width > 0)
         );

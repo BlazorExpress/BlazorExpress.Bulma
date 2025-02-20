@@ -8,8 +8,8 @@ public partial class Skeleton : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? CssClassNames =>
-        CssUtility.BuildClassNames(
+    protected override string? ClassNames =>
+        BuildClassNames(
             Class,
             (Type.ToSkeletonTypeClass(), true),
             (Color.ToSkeletonColorClass(), Color != SkeletonColor.None)

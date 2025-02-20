@@ -4,7 +4,7 @@ public partial class NavbarBrand : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? CssClassNames => CssUtility.BuildClassNames(Class, (BulmaCssClass.NavbarBrand, true));
+    protected override string? ClassNames => BuildClassNames(Class, (BulmaCssClass.NavbarBrand, true));
 
     /// <summary>
     /// Gets or sets the child content.

@@ -203,8 +203,8 @@ public partial class Tabs : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames =>
-        CssUtility.BuildClassNames(
+    protected override string? ClassNames =>
+        BuildClassNames(
             Class,
             (BulmaCssClass.Tabs, true),
             ("mb-0", true),

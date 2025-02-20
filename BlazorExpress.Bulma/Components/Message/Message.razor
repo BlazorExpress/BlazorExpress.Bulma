@@ -5,7 +5,7 @@
     <CascadingValue Name="ShowDeleteButton" Value="@ShowDeleteButton" IsFixed="true">
         @if (Visible)
         {
-            <div @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes">
+            <div @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
                 @ChildContent
             </div>
         }

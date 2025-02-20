@@ -4,7 +4,7 @@ public partial class NavbarDivider : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? CssClassNames => CssUtility.BuildClassNames(Class, (BulmaCssClass.NavbarDivider, true));
+    protected override string? ClassNames => BuildClassNames(Class, (BulmaCssClass.NavbarDivider, true));
 
     /// <summary>
     /// Gets or sets the child content.

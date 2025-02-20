@@ -4,7 +4,7 @@ public partial class MessageBody : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? CssClassNames => CssUtility.BuildClassNames(Class, (BulmaCssClass.MessageBody, true));
+    protected override string? ClassNames => BuildClassNames(Class, (BulmaCssClass.MessageBody, true));
 
     /// <summary>
     /// Gets or sets the child content.

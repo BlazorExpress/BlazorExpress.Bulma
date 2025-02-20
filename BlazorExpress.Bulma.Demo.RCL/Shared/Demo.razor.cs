@@ -102,8 +102,8 @@ public partial class Demo : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames
-        => CssUtility.BuildClassNames(Class, ("be-bulma-doc-example", true));
+    protected override string? ClassNames
+        => BuildClassNames(Class, ("be-bulma-doc-example", true));
 
     [Parameter] public LanguageCode LanguageCode { get; set; } = LanguageCode.Razor;
 

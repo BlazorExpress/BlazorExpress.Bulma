@@ -8,7 +8,7 @@ public partial class Hero : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? CssClassNames => CssUtility.BuildClassNames(Class, (BulmaCssClass.Hero, true));
+    protected override string? ClassNames => BuildClassNames(Class, (BulmaCssClass.Hero, true));
 
     /// <summary>
     /// Gets or sets the child content.

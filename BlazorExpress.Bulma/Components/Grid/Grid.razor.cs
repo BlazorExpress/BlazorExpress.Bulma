@@ -230,8 +230,8 @@ public partial class Grid<TItem> : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames =>
-        CssUtility.BuildClassNames(
+    protected override string? ClassNames =>
+        BuildClassNames(
             Class,
             (BulmaCssClass.Table, true),
             (BulmaCssClass.IsBordered, IsBordered),
@@ -241,8 +241,8 @@ public partial class Grid<TItem> : BulmaComponentBase
             (BulmaCssClass.IsFullWidth, IsFullWidth)
         );
 
-    protected override string? CssStyleNames =>
-        CssUtility.BuildStyleNames(
+    protected override string? StyleNames =>
+        BuildStyleNames(
             Style,
             ($"{BulmaCssVariable.SkeletonBlockMinHeight}:{SkeletonBlockMinHeight.ToString(CultureInfo.InvariantCulture)}{Unit.ToUnitCssString()};", true)
         );
@@ -349,7 +349,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     public string EmptyDataText { get; set; } = "No records to display";
 
     private string? GridContainerClassNames =>
-        CssUtility.BuildClassNames(
+        BuildClassNames(
             GridContainerCssClass,
             (BulmaCssClass.TableContianer, IsResponsive)
         );

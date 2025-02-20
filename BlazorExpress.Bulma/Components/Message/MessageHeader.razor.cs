@@ -10,7 +10,7 @@ public partial class MessageHeader : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames => CssUtility.BuildClassNames(Class, (BulmaCssClass.MessageHeader, true));
+    protected override string? ClassNames => BuildClassNames(Class, (BulmaCssClass.MessageHeader, true));
 
     /// <summary>
     /// Gets or sets the child content.

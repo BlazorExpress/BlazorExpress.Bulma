@@ -32,8 +32,8 @@ public partial class Section : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames
-        => CssUtility.BuildClassNames(
+    protected override string? ClassNames
+        => BuildClassNames(
             Class,
             (BulmaCssClass.Section, true),
             (BulmaCssClass.IsMobile, IsMobile));

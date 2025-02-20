@@ -19,8 +19,8 @@ public partial class Button : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames =>
-        CssUtility.BuildClassNames(
+    protected override string? ClassNames =>
+        BuildClassNames(
             Class,
             (BulmaCssClass.Button, true),
             (Color.ToButtonColorClass(), true),

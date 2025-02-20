@@ -70,8 +70,8 @@ public partial class Menu : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames =>
-        CssUtility.BuildClassNames(
+    protected override string? ClassNames =>
+        BuildClassNames(
             Class,
             (BulmaCssClass.Menu, true),
             (BulmaCssClass.IsScrollable, IsScrollable),

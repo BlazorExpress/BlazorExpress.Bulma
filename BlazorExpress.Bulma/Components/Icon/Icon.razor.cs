@@ -4,8 +4,8 @@ public partial class Icon : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? CssClassNames =>
-        CssUtility.BuildClassNames(
+    protected override string? ClassNames =>
+        BuildClassNames(
             Class,
             (BootstrapIconUtility.Icon(), BootstrapIcon != BootstrapIconName.None),
             (BootstrapIconUtility.Icon(BootstrapIcon), BootstrapIcon != BootstrapIconName.None)
@@ -48,7 +48,7 @@ public partial class Icon : BulmaComponentBase
     public IconColor Color { get; set; } = IconColor.None;
 
     private string? IconContainerCssClassNames =>
-        CssUtility.BuildClassNames(
+        BuildClassNames(
             (BulmaCssClass.Icon, true),
             (Color.ToIconColorClass(), Color != IconColor.None),
             (Size.ToIconSizeClass(), Size != IconSize.None),
@@ -84,7 +84,7 @@ public partial class Icon : BulmaComponentBase
     public IconSize Size { get; set; } = IconSize.None;
 
     private string? TextCssClassNames =>
-        CssUtility.BuildClassNames(
+        BuildClassNames(
             (BulmaCssClass.IconText, true),
             (Color.ToIconColorClass(), Color != IconColor.None && ApplyColorToText)
         );

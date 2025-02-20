@@ -4,8 +4,8 @@ public partial class NavbarMenu : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? CssClassNames =>
-        CssUtility.BuildClassNames(
+    protected override string? ClassNames =>
+        BuildClassNames(
             Class,
             (BulmaCssClass.NavbarMenu, true),
             (BulmaCssClass.IsActive, IsActive)

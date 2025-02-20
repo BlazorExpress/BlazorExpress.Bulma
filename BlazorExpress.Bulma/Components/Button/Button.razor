@@ -3,13 +3,13 @@
 
 @if (Type == ButtonType.Link)
 {
-    <a @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" href="@Href" disabled="@IsDisabled" @attributes="@AdditionalAttributes">
+    <a @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" href="@Href" disabled="@IsDisabled" @attributes="@AdditionalAttributes">
         @ChildContent
     </a>
 }
 else
 {
-    <button @ref="@Element" type="@ButtonTypeString" id="@Id" class="@CssClassNames" style="@CssStyleNames" disabled="@IsDisabled" @attributes="@AdditionalAttributes">
+    <button @ref="@Element" type="@ButtonTypeString" id="@Id" class="@ClassNames" style="@StyleNames" disabled="@IsDisabled" @attributes="@AdditionalAttributes">
         @ChildContent
     </button>
 }

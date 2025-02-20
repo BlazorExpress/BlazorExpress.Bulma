@@ -7,8 +7,8 @@ public partial class Overlay : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? CssClassNames
-        => CssUtility.BuildClassNames(
+    protected override string? ClassNames
+        => BuildClassNames(
             Class,
             (BulmaCssClass.Overlay, true),
             (BulmaCssClass.IsActive, IsActive));

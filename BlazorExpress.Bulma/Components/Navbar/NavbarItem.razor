@@ -3,13 +3,13 @@
 
 @if (Type == NavbarItemType.Link)
 {
-    <a @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" href="@Href" @attributes="@AdditionalAttributes">
+    <a @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" href="@Href" @attributes="@AdditionalAttributes">
         @ChildContent
     </a>
 }
 else
 {
-    <div @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes">
+    <div @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
         @ChildContent
     </div>
 }

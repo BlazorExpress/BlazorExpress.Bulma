@@ -4,8 +4,8 @@ public partial class Buttons : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? CssClassNames =>
-        CssUtility.BuildClassNames(
+    protected override string? ClassNames =>
+        BuildClassNames(
             Class,
             (BulmaCssClass.Buttons, true),
             (Size.ToButtonsSizeClass(), Size != ButtonSize.None)

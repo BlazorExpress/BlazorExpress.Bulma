@@ -74,8 +74,8 @@ public partial class GoogleMap : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssStyleNames =>
-        CssUtility.BuildStyleNames(
+    protected override string? StyleNames =>
+        BuildStyleNames(
             Style,
             ($"width:{Width!.Value.ToString(CultureInfo.InvariantCulture)}{WidthUnit.ToUnitCssString()}", Width is not null && Width.Value > 0),
             ($"height:{Height!.Value.ToString(CultureInfo.InvariantCulture)}{HeightUnit.ToUnitCssString()}", Height is not null && Height.Value > 0)

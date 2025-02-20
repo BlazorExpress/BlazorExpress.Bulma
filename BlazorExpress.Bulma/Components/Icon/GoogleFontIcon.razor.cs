@@ -10,8 +10,8 @@ public partial class GoogleFontIcon : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames =>
-        CssUtility.BuildClassNames(
+    protected override string? ClassNames =>
+        BuildClassNames(
             Class,
             (GoogleFontIconUtility.Icon(IconStyle), Name != GoogleFontIconName.None),
             (GoogleFontIconUtility.Icon(IconStyle), Name != GoogleFontIconName.None)
@@ -67,7 +67,7 @@ public partial class GoogleFontIcon : BulmaComponentBase
     public IconColor Color { get; set; } = IconColor.None;
 
     private string? IconContainerCssClassNames =>
-        CssUtility.BuildClassNames(
+        BuildClassNames(
             (BulmaCssClass.Icon, true),
             (Color.ToIconColorClass(), Color != IconColor.None),
             (Size.ToIconSizeClass(), Size != IconSize.None),
@@ -111,7 +111,7 @@ public partial class GoogleFontIcon : BulmaComponentBase
     public bool Fill { get; set; } = false;
 
     private string? TextCssClassNames =>
-        CssUtility.BuildClassNames(
+        BuildClassNames(
             (BulmaCssClass.IconText, true),
             (Color.ToIconColorClass(), Color != IconColor.None && ApplyColorToText)
         );

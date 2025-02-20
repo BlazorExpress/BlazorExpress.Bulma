@@ -4,8 +4,8 @@ public partial class PaginationItem : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? CssClassNames =>
-        CssUtility.BuildClassNames(
+    protected override string? ClassNames =>
+        BuildClassNames(
             Class,
             (Type.ToPaginationLinkTypeClass(), true),
             (BulmaCssClass.IsCurrent, IsCurrentPage),

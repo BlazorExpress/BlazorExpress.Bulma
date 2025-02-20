@@ -17,8 +17,8 @@ public partial class MenuItem : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames =>
-        CssUtility.BuildClassNames(
+    protected override string? ClassNames =>
+        BuildClassNames(
             Class,
             (BulmaCssClass.MenuItem, true),
             (BulmaCssClass.IsActive, IsActive)

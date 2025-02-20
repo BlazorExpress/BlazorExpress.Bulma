@@ -8,7 +8,7 @@
 @if (tabs?.Any() ?? false)
 {
     <div class="tabs-continer @TabsContainerCssClass">
-        <div @ref="@Element" id="@Id" class="@CssClassNames" style="@CssStyleNames" @attributes="@AdditionalAttributes">
+        <div @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
             <ul>
                 @foreach (Tab t in tabs)
                 {

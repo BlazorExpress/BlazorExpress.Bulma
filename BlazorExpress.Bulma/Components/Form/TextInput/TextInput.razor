@@ -1,0 +1,11 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+
+<input class="input" type="text" placeholder="Text input" />
+<input @ref="@Element"
+       type="text"
+       id="@Id" 
+       class="@ClassNames" 
+       style="@StyleNames" 
+       @attributes="@AdditionalAttributes" 
+       placeholder="Text input" />

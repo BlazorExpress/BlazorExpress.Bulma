@@ -22,8 +22,8 @@ public partial class Tab : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames =>
-        CssUtility.BuildClassNames(
+    protected override string? ClassNames =>
+        BuildClassNames(
             Class,
             ("tab-content", true),
             (BulmaCssClass.IsActive, IsActive)
@@ -42,7 +42,7 @@ public partial class Tab : BulmaComponentBase
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
-    public string? CssClass => CssClassNames;
+    public string? CssClass => ClassNames;
 
     /// <summary>
     /// Gets or sets the active state.

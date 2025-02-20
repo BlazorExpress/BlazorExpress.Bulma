@@ -75,8 +75,8 @@ public partial class Pagination : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? CssClassNames =>
-        CssUtility.BuildClassNames(
+    protected override string? ClassNames =>
+        BuildClassNames(
             Class,
             (BulmaCssClass.Pagination, true),
             (Alignment.ToPaginationAlignmentClass(), Alignment != PaginationAlignment.None),

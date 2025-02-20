@@ -4,7 +4,7 @@ public partial class HeroTitle : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? CssClassNames => CssUtility.BuildClassNames(Class, (BulmaCssClass.HeroTitle, true));
+    protected override string? ClassNames => BuildClassNames(Class, (BulmaCssClass.HeroTitle, true));
 
     /// <summary>
     /// Gets or sets the child content.
