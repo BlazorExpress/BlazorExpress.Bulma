@@ -1,4 +1,6 @@
-﻿namespace BlazorExpress.Bulma;
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace BlazorExpress.Bulma;
 
 public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDisposable
 {
@@ -152,7 +154,13 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
 
     protected virtual string? ClassNames => Class;
 
-    public ElementReference Element { get; set; }
+    /// <summary>
+    /// Gets or sets the associated <see cref="ElementReference"/>.
+    /// <para>
+    /// May be <see langword="null"/> if accessed before the component is rendered.
+    /// </para>
+    /// </summary>
+    [DisallowNull] public ElementReference? Element { get; set; }
 
     /// <summary>
     /// Gets or sets the ID. If not set, a unique ID will be generated.

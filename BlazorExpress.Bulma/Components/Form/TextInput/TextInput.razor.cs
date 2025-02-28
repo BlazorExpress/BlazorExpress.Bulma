@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Components.Forms;
-
-namespace BlazorExpress.Bulma;
+﻿namespace BlazorExpress.Bulma;
 
 public partial class TextInput : BulmaComponentBase
 {
@@ -21,6 +19,39 @@ public partial class TextInput : BulmaComponentBase
         base.OnInitialized();
     }
 
+    protected override void BuildRenderTree(RenderTreeBuilder builder)
+    {
+        if (State == TextInputState.Loading)
+        {
+            builder.OpenElement(100, "div"); // open div
+            builder.AddAttributeIfNotNullOrWhiteSpace(203, "class", $"{BulmaCssClass.Control} {BulmaCssClass.IsLoading}");
+        }
+
+        builder.OpenElement(200, "input"); // open input
+        builder.AddAttribute(201, "type", "number");
+        builder.AddAttribute(202, "id", Id);
+        builder.AddAttributeIfNotNullOrWhiteSpace(203, "class", $"{ClassNames} {fieldCssClasses}");
+        builder.AddAttributeIfNotNullOrWhiteSpace(204, "style", StyleNames);
+        builder.AddAttribute(205, "value", Value);
+        builder.AddAttribute(206, "disabled", Disabled);
+        builder.AddAttribute(207, "placeholder", Placeholder);
+        builder.AddAttribute(208, "maxlength", MaxLength);
+        builder.AddAttribute(209, "autocomplete", autoCompleteAsString);
+        builder.AddMultipleAttributes(210, AdditionalAttributes);
+
+        if (BindEvent == BindEvent.OnChange)
+            builder.AddAttribute(211, "onchange", OnChange);
+        else if (BindEvent == BindEvent.OnInput)
+            builder.AddAttribute(212, "oninput", OnInput);
+
+        builder.AddElementReferenceCapture(213, __inputReference => Element = __inputReference);
+
+        builder.CloseElement(); // close: input
+
+        if (State == TextInputState.Loading)
+            builder.CloseElement(); // close: div
+    }
+
     /// <summary>
     /// Disables number input.
     /// </summary>
@@ -32,6 +63,16 @@ public partial class TextInput : BulmaComponentBase
     public void Enable() => Disabled = false;
 
     private async Task OnChange(ChangeEventArgs e)
+    {
+        var oldValue = Value;
+        var newValue = e.Value?.ToString() ?? string.Empty; // object
+
+        await ValueChanged.InvokeAsync(newValue);
+
+        EditContext?.NotifyFieldChanged(fieldIdentifier);
+    }
+
+    private async Task OnInput(ChangeEventArgs e)
     {
         var oldValue = Value;
         var newValue = e.Value?.ToString() ?? string.Empty; // object
@@ -56,7 +97,7 @@ public partial class TextInput : BulmaComponentBase
             (State.ToTextInputStateClass(), State != TextInputState.None)
         );
 
-    private string autoComplete => AutoComplete ? "true" : "false";
+    private string autoCompleteAsString => AutoComplete ? "true" : "false";
 
     /// <summary>
     /// If <see langword="true" />, TextInput can complete the values automatically by the browser.
@@ -66,6 +107,15 @@ public partial class TextInput : BulmaComponentBase
     /// </remarks>
     [Parameter]
     public bool AutoComplete { get; set; }
+
+    /// <summary>
+    /// Gets or sets the input bind event.
+    /// <para>
+    /// Default value is <see cref="BindEvent.OnChange" />.
+    /// </para>
+    /// </summary>
+    [Parameter]
+    public BindEvent BindEvent { get; set; } = BindEvent.OnChange;
 
     /// <summary>
     /// Gets or sets the color.
