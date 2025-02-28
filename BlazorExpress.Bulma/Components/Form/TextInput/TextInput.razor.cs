@@ -28,7 +28,7 @@ public partial class TextInput : BulmaComponentBase
         }
 
         builder.OpenElement(200, "input"); // open input
-        builder.AddAttribute(201, "type", "number");
+        builder.AddAttribute(201, "type", "text");
         builder.AddAttribute(202, "id", Id);
         builder.AddAttributeIfNotNullOrWhiteSpace(203, "class", $"{ClassNames} {fieldCssClasses}");
         builder.AddAttributeIfNotNullOrWhiteSpace(204, "style", StyleNames);
