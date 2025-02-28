@@ -53,13 +53,17 @@ public partial class TextInput : BulmaComponentBase
     }
 
     /// <summary>
-    /// Disables number input.
+    /// Disables the <see cref="TextInput" />.
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("Disables the <code>TextInput</code>.")]
     public void Disable() => Disabled = true;
 
     /// <summary>
-    /// Enables number input.
+    /// Enables the <see cref="TextInput" />.
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("Enables the <code>TextInput</code>.")]
     public void Enable() => Disabled = false;
 
     private async Task OnChange(ChangeEventArgs e)
@@ -103,10 +107,13 @@ public partial class TextInput : BulmaComponentBase
     /// If <see langword="true" />, TextInput can complete the values automatically by the browser.
     /// </summary>
     /// <remarks>
-    /// Default value is false.
+    /// Default value is <see langword="false"/>.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If <b>true</b>, <code>TextInput</code> can complete the values automatically by the browser.")]
     [Parameter]
-    public bool AutoComplete { get; set; }
+    public bool AutoComplete { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the input bind event.
@@ -114,6 +121,9 @@ public partial class TextInput : BulmaComponentBase
     /// Default value is <see cref="BindEvent.OnChange" />.
     /// </para>
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(BindEvent.OnChange)]
+    [Description("Gets or sets the input bind event.")]
     [Parameter]
     public BindEvent BindEvent { get; set; } = BindEvent.OnChange;
 
@@ -134,8 +144,11 @@ public partial class TextInput : BulmaComponentBase
     /// <remarks>
     /// Default value is false.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets the disabled state.")]
     [Parameter]
-    public bool Disabled { get; set; }
+    public bool Disabled { get; set; } = false;
 
     [CascadingParameter] private EditContext EditContext { get; set; } = default!;
 
@@ -155,6 +168,10 @@ public partial class TextInput : BulmaComponentBase
     /// <summary>
     /// Gets or sets the maximum number of characters that can be entered.
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the maximum number of characters that can be entered.")]
+    [ParameterTypeName("int?")]
     [Parameter]
     public int? MaxLength { get; set; }
 
@@ -164,6 +181,9 @@ public partial class TextInput : BulmaComponentBase
     /// <remarks>
     /// Default value is null.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the placeholder text.")]
     [Parameter]
     public string? Placeholder { get; set; }
 
@@ -189,22 +209,37 @@ public partial class TextInput : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="Alignment.None" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(Alignment.None)]
+    [Description("Gets or sets the text alignment.")]
     [Parameter]
     public Alignment TextAlignment { get; set; } = Alignment.None;
 
     /// <summary>
     /// Gets or sets the value.
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the value.")]
     [Parameter]
     public string Value { get; set; } = default!;
 
     /// <summary>
     /// This event fires when the <see cref="TextInput" /> value changes.
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("This event fires when the <code>TextInput</code> value changes.")]
     [Parameter]
     public EventCallback<string> ValueChanged { get; set; }
 
-    [Parameter] public Expression<Func<string>> ValueExpression { get; set; } = default!;
+    /// <summary>
+    /// Gets or sets the expression.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the expression.")]
+    [ParameterTypeName("Expression<Func<string>>?")]
+    [Parameter] public Expression<Func<string>>? ValueExpression { get; set; } = default!;
 
     #endregion
 }
