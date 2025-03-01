@@ -24,7 +24,7 @@ public partial class TextInput : BulmaComponentBase
         if (State == TextInputState.Loading)
         {
             builder.OpenElement(100, "div"); // open div
-            builder.AddAttributeIfNotNullOrWhiteSpace(203, "class", $"{BulmaCssClass.Control} {BulmaCssClass.IsLoading}");
+            builder.AddAttributeIfNotNullOrWhiteSpace(101, "class", $"{BulmaCssClass.Control} {BulmaCssClass.IsLoading}");
         }
 
         builder.OpenElement(200, "input"); // open input
