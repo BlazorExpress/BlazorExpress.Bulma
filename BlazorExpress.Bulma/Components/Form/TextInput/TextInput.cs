@@ -14,7 +14,7 @@ public partial class TextInput : BulmaComponentBase
     {
         AdditionalAttributes ??= new Dictionary<string, object>();
 
-        fieldIdentifier = FieldIdentifier.Create(ValueExpression);
+        fieldIdentifier = FieldIdentifier.Create(ValueExpression!);
 
         base.OnInitialized();
     }
