@@ -31,7 +31,11 @@ public static class PropertyInfoExtenstions
     /// </summary>
     /// <param name="propertyInfo"></param>
     /// <returns>string</returns>
-    public static string GetParameterTypeName(this PropertyInfo propertyInfo) => propertyInfo.PropertyType.GetCSharpTypeName();
+    public static string GetParameterTypeName(this PropertyInfo propertyInfo)
+    {
+        var parameterTypeNameAttribute = propertyInfo.GetCustomAttributes(typeof(ParameterTypeNameAttribute), false).FirstOrDefault() as ParameterTypeNameAttribute;
+        return parameterTypeNameAttribute?.TypeName ?? null!;
+    }
 
     /// <summary>
     /// Get added version of a property.

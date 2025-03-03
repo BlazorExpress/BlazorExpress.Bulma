@@ -15,6 +15,11 @@
     --be-bulma-menu-border-offset: 2%;
 }
 
+/* custom */
+[role=button] {
+    cursor: pointer;
+}
+
 /* layout */
 html {
     overflow-y: hidden;
@@ -50,15 +55,6 @@ html {
     }
 }
 
-/* navbar */
-.navbar-brand > a.navbar-item:hover, .navbar-brand > a.navbar-item:focus {
-    --bulma-navbar-item-background-a: 0 !important;
-}
-
-.navbar-item.has-dropdown {
-    padding: inherit;
-}
-
 /* menu */
 .menu.is-scrollable {
     height: calc(100vh - var(--be-bulma-navbar-height));
@@ -76,19 +72,6 @@ html {
         --bulma-menu-item-background-l-delta: -5%;
     }
 
-/* tabs */
-.tabs-content > .tab-content {
-    display: none;
-}
-
-    .tabs-content > .tab-content.is-active {
-        display: block !important;
-    }
-
-/* custom */
-[role=button] {
-    cursor: pointer;
-}
 
 .menu-toggle-button {
     --bulma-button-border-width: 0px;
@@ -117,3 +100,21 @@ html {
             z-index: 1
         }
 }
+
+/* navbar */
+.navbar-brand > a.navbar-item:hover, .navbar-brand > a.navbar-item:focus {
+    --bulma-navbar-item-background-a: 0 !important;
+}
+
+.navbar-item.has-dropdown {
+    padding: inherit;
+}
+
+/* tabs */
+.tabs-content > .tab-content {
+    display: none;
+}
+
+    .tabs-content > .tab-content.is-active {
+        display: block !important;
+    }

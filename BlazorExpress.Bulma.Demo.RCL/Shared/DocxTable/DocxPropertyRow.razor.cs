@@ -3,8 +3,8 @@
 public partial class DocxPropertyRow<TItem> : ComponentBase
 {    
     private string DefaultValue => PropertyInfo.GetPropertyDefaultValue();
-    
-    private string ParameterTypeName => PropertyInfo.GetParameterTypeName();
+
+    private string ParameterTypeName => PropertyInfo.GetParameterTypeName() ?? PropertyInfo.PropertyType.GetCSharpTypeName();
 
     private string PropertyTypeShortName => ParameterTypeName ?? (PropertyTypeName.Contains(".") 
         ? PropertyTypeName.Split('.').Last()
