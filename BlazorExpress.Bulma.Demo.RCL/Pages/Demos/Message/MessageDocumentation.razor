@@ -14,6 +14,40 @@
     <Demo Type="typeof(Message_Demo_01_How_it_works)" Tabs="true" />
 </Section>
 
+<Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <div class="mb-3">The message component supports multiple colors.</div>
+    <Demo Type="typeof(Message_Demo_02_Colors_A_Dark)" Tabs="true" />
+    <Demo Type="typeof(Message_Demo_02_Colors_B_Link)" Tabs="true" />
+    <Demo Type="typeof(Message_Demo_02_Colors_C_Primary)" Tabs="true" />
+    <Demo Type="typeof(Message_Demo_02_Colors_D_Info)" Tabs="true" />
+    <Demo Type="typeof(Message_Demo_02_Colors_E_Success)" Tabs="true" />
+    <Demo Type="typeof(Message_Demo_02_Colors_F_Warning)" Tabs="true" />
+    <Demo Type="typeof(Message_Demo_02_Colors_G_Danger)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Message body only" PageUrl="@pageUrl" Link="message-body-only">
+    <div class="mb-3">You can remove the <code>MessageHeader</code> if you don't need it, which will add a left border to the <code>MessageBody</code>.</div>
+    <Demo Type="typeof(Message_Demo_03_Message_Body_Only_A_Dark)" Tabs="true" />
+    <Demo Type="typeof(Message_Demo_03_Message_Body_Only_B_Link)" Tabs="true" />
+    <Demo Type="typeof(Message_Demo_03_Message_Body_Only_C_Primary)" Tabs="true" />
+    <Demo Type="typeof(Message_Demo_03_Message_Body_Only_D_Info)" Tabs="true" />
+    <Demo Type="typeof(Message_Demo_03_Message_Body_Only_E_Success)" Tabs="true" />
+    <Demo Type="typeof(Message_Demo_03_Message_Body_Only_F_Warning)" Tabs="true" />
+    <Demo Type="typeof(Message_Demo_03_Message_Body_Only_G_Danger)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
+    <div class="mb-3"></div>
+    <Demo Type="typeof(Message_Demo_04_Sizes_A_Small)" Tabs="true" />
+    <Demo Type="typeof(Message_Demo_04_Sizes_B_Normal)" Tabs="true" />
+    <Demo Type="typeof(Message_Demo_04_Sizes_C_Medium)" Tabs="true" />
+    <Demo Type="typeof(Message_Demo_04_Sizes_D_Large)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Hide close button" PageUrl="@pageUrl" Link="hide-close-button">
+    <Demo Type="typeof(Message_Demo_05_Hide_Close_Button)" Tabs="true" />
+</Section>
+
 @code {
     private const string pageUrl = RouteConstants.Demos_Message_Documentation;
     private const string pageTitle = "Message";

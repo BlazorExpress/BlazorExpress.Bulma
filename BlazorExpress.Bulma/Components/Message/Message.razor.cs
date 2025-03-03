@@ -19,7 +19,13 @@ public partial class Message : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? ClassNames => BuildClassNames(Class, (BulmaCssClass.Message, true));
+    protected override string? ClassNames => 
+        BuildClassNames(
+            Class, 
+            (BulmaCssClass.Message, true),
+            (Color.ToMessageColorClass(), true),
+            (Size.ToMessageSizeClass(), Size != MessageSize.None)
+        );
 
     /// <summary>
     /// Gets or sets the child content.
@@ -35,6 +41,17 @@ public partial class Message : BulmaComponentBase
     public RenderFragment? ChildContent { get; set; }
 
     /// <summary>
+    /// Gets or sets the color.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see cref="MessageColor.None" />.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(ButtonColor.None)]
+    [Description("Gets or sets the color.")]
+    [Parameter] public MessageColor Color { get; set; } = MessageColor.None;
+
+    /// <summary>
     /// If <see langword="true" />, shows the delete button in the message header.
     /// </summary>
     /// <remarks>
@@ -46,6 +63,13 @@ public partial class Message : BulmaComponentBase
     [Parameter]
     public bool ShowDeleteButton { get; set; } = true;
 
+    /// <summary>
+    /// Gets or sets the size.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(MessageSize.None)]
+    [Description("Gets or sets the size.")]
+    [Parameter] public MessageSize Size { get; set; } = MessageSize.None;
     /// <summary>
     /// Gets or sets the message visible state.
     /// </summary>
