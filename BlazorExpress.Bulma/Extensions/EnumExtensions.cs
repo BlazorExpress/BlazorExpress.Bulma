@@ -84,6 +84,28 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToMessageColorClass(this MessageColor color) =>
+        color switch
+        {
+            MessageColor.Primary => BulmaCssClass.IsPrimary,
+            MessageColor.Link => BulmaCssClass.IsLink,
+            MessageColor.Info => BulmaCssClass.IsInfo,
+            MessageColor.Success => BulmaCssClass.IsSuccess,
+            MessageColor.Warning => BulmaCssClass.IsWarning,
+            MessageColor.Danger => BulmaCssClass.IsDanger,
+            MessageColor.Dark => BulmaCssClass.IsDark,
+            _ => null
+        };
+
+    public static string? ToMessageSizeClass(this MessageSize size) =>
+        size switch
+        {
+            MessageSize.Small => BulmaCssClass.IsSmall,
+            MessageSize.Medium => BulmaCssClass.IsMedium,
+            MessageSize.Large => BulmaCssClass.IsLarge,
+            _ => null
+        };
+
     public static string? ToNavbarDropdownPositionClass(this NavbarDropdownPosition position) =>
         position switch
         {
