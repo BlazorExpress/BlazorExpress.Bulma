@@ -59,6 +59,8 @@ public static class BulmaCssClass
     public const string Icon = "icon";
     public const string IconText = "icon-text";
 
+    public const string Image = "image";
+
     public const string Input = "input";
 
     public const string Is1 = "is-1";
@@ -67,6 +69,14 @@ public static class BulmaCssClass
     public const string Is4 = "is-4";
     public const string Is5 = "is-5";
     public const string Is6 = "is-6";
+
+    public const string Is16x16 = "is-16x16";
+    public const string Is24x24 = "is-24x24";
+    public const string Is32x32 = "is-32x32";
+    public const string Is48x48 = "is-48x48";
+    public const string Is64x64 = "is-64x64";
+    public const string Is96x96 = "is-96x96";
+    public const string Is128x128 = "is-128x128";
 
     public const string IsActive = "is-active";
     public const string IsAlignContentBaseline = "is-align-content-baseline";

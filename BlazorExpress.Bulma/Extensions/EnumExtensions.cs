@@ -94,6 +94,19 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToImageDimensionClass(this ImageDimension dimension) =>
+        dimension switch
+        {
+            ImageDimension.Is16x16 => BulmaCssClass.Is16x16,
+            ImageDimension.Is24x24 => BulmaCssClass.Is24x24,
+            ImageDimension.Is32x32 => BulmaCssClass.Is32x32,
+            ImageDimension.Is48x48 => BulmaCssClass.Is48x48,
+            ImageDimension.Is64x64 => BulmaCssClass.Is64x64,
+            ImageDimension.Is96x96 => BulmaCssClass.Is96x96,
+            ImageDimension.Is128x128 => BulmaCssClass.Is128x128,
+            _ => null
+        };
+
     public static string? ToMessageColorClass(this MessageColor color) =>
         color switch
         {

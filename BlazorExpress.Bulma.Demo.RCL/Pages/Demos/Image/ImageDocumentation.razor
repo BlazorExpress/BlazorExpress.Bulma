@@ -1,0 +1,32 @@
+@attribute [Route(pageUrl)]
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@RouteConstants.Docs_Image_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(Image_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Fixed square images" PageUrl="@pageUrl" Link="fixed-square-images">
+    <Demo Type="typeof(Image_Demo_02_Fixed_square_images)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Rounded images" PageUrl="@pageUrl" Link="rounded-images">
+    <Demo Type="typeof(Image_Demo_03_Rounded_images)" Tabs="true" />
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Demos_Image_Documentation;
+    private const string pageTitle = "Image";
+    private const string pageDescription = "<code>Image</code> component is a container for responsive images.";
+    private const string metaTitle = "Blazor Block Component";
+    private const string metaDescription = "Image component is a container for responsive images.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}

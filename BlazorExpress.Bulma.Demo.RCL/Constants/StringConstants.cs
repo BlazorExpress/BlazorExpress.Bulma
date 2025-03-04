@@ -37,5 +37,17 @@ public static class StringConstants
     public const string PropertyTypeNameEnumCSharpTypeKeyword = "enum";
     public const string PropertyTypeNameGuidCSharpTypeKeyword = "Guid";
 
+    public const string StaticAssets_RootPath = "_content/BlazorExpress.Bulma.Demo.RCL";
+    public const string StaticAssets_ImagesPath = StaticAssets_RootPath + "/images";
+
+    public const string StaticAssets_Images_16x16_png = StaticAssets_ImagesPath + "/16x16.png";
+    public const string StaticAssets_Images_24x24_png = StaticAssets_ImagesPath + "/24x24.png";
+    public const string StaticAssets_Images_32x32_png = StaticAssets_ImagesPath + "/32x32.png";
+    public const string StaticAssets_Images_48x48_png = StaticAssets_ImagesPath + "/48x48.png";
+    public const string StaticAssets_Images_64x64_png = StaticAssets_ImagesPath + "/64x64.png";
+    public const string StaticAssets_Images_96x96_png = StaticAssets_ImagesPath + "/96x96.png";
+    public const string StaticAssets_Images_128x128_png = StaticAssets_ImagesPath + "/128x128.png";
+    public const string StaticAssets_Images_256x256_png = StaticAssets_ImagesPath + "/256x256.png";
+
     #endregion
 }
