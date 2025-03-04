@@ -3,6 +3,7 @@
 
 <div @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
     @ChildContent
+
     @if (ShowDeleteButton)
     {
         <button class="delete" aria-label="delete" @onclick="CloseMessage"></button>

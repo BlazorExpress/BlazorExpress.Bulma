@@ -20,7 +20,7 @@ public static class RouteConstants
     public const string Docs_Box_Documentation = Docs_Prefix + "/box";
     public const string Docs_Button_Documentation = Docs_Prefix + "/button";
     public const string Docs_Content_Documentation = Docs_Prefix + "/content";
-    public const string Docs_Delete_Documentation = Docs_Prefix + "/delete";
+    public const string Docs_DeleteButton_Documentation = Docs_Prefix + "/delete-button";
     public const string Docs_Image_Documentation = Docs_Prefix + "/image";
     public const string Docs_Notification_Documentation = Docs_Prefix + "/notification";
     public const string Docs_ProgressBar_Documentation = Docs_Prefix + "/progress-bar";
@@ -92,7 +92,7 @@ public static class RouteConstants
     public const string Demos_Box_Documentation = Demos_Prefix + "/box";
     public const string Demos_Button_Documentation = Demos_Prefix + "/button";
     public const string Demos_Content_Documentation = Demos_Prefix + "/content";
-    public const string Demos_Delete_Documentation = Demos_Prefix + "/delete";
+    public const string Demos_DeleteButton_Documentation = Demos_Prefix + "/delete-button";
     public const string Demos_Image_Documentation = Demos_Prefix + "/image";
     public const string Demos_Notification_Documentation = Demos_Prefix + "/notification";
     public const string Demos_ProgressBar_Documentation = Demos_Prefix + "/progress-bar";

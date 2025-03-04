@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Button component
+/// <para>
 /// <see href="https://bulma.io/documentation/elements/button/" />
+/// </para>
 /// </summary>
 public partial class Button : BulmaComponentBase
 {

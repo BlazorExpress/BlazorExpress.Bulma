@@ -1,5 +1,11 @@
 ﻿namespace BlazorExpress.Bulma;
 
+/// <summary>
+/// TextInput component
+/// <para>
+/// <see href="https://bulma.io/documentation/form/input/" />
+/// </para>
+/// </summary>
 public partial class TextInput : BulmaComponentBase
 {
     #region Fields and Constants

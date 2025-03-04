@@ -17,6 +17,8 @@ public static class BulmaCssClass
 
     public const string Control = "control";
 
+    public const string Delete = "delete";
+
     public const string HasBackgroundBlack = "has-background-black";
     public const string HasBackgroundDanger = "has-background-danger";
     public const string HasBackgroundDark = "has-background-dark";

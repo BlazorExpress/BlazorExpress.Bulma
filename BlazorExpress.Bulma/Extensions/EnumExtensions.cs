@@ -49,6 +49,16 @@ public static class EnumExtensions
             _ => BulmaCssClass.Button
         };
 
+    public static string? ToDeleteButtonSizeClass(this DeleteButtonSize size) =>
+        size switch
+        {
+            DeleteButtonSize.Small => BulmaCssClass.IsSmall,
+            DeleteButtonSize.Normal => BulmaCssClass.IsNormal,
+            DeleteButtonSize.Medium => BulmaCssClass.IsMedium,
+            DeleteButtonSize.Large => BulmaCssClass.IsLarge,
+            _ => null
+        };
+
     public static DeviceType ToDeviceTypeEnum(this float width) =>
         width switch
         {
