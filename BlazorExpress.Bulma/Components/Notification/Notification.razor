@@ -1,0 +1,13 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+
+@if (Visible)
+{
+    <div @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
+        @if (!HideDeleteButton)
+        {
+            <DeleteButton @onclick="CloseNotification" />
+        }
+        @ChildContent
+    </div>
+}

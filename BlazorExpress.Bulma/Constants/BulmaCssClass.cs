@@ -183,6 +183,8 @@ public static class BulmaCssClass
     public const string NavbarMenu = "navbar-menu";
     public const string NavbarStart = "navbar-start";
 
+    public const string Notification = "notification";
+
     public const string Overlay = "be-bulma-overlay";
 
     public const string Pagination = "pagination";

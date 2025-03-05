@@ -142,6 +142,18 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToNotificationColorClass(this NotificationColor color) =>
+        color switch
+        {
+            NotificationColor.Primary => BulmaCssClass.IsPrimary,
+            NotificationColor.Link => BulmaCssClass.IsLink,
+            NotificationColor.Info => BulmaCssClass.IsInfo,
+            NotificationColor.Success => BulmaCssClass.IsSuccess,
+            NotificationColor.Warning => BulmaCssClass.IsWarning,
+            NotificationColor.Danger => BulmaCssClass.IsDanger,
+            _ => null
+        };
+
     public static string? ToMessageSizeClass(this MessageSize size) =>
         size switch
         {

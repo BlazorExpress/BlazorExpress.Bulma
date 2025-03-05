@@ -47,7 +47,7 @@ public partial class Message : BulmaComponentBase
     /// Default value is <see cref="MessageColor.None" />.
     /// </remarks>
     [AddedVersion("1.0.0")]
-    [DefaultValue(ButtonColor.None)]
+    [DefaultValue(MessageColor.None)]
     [Description("Gets or sets the color.")]
     [Parameter] public MessageColor Color { get; set; } = MessageColor.None;
 

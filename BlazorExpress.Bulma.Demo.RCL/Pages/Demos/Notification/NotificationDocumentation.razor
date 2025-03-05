@@ -1,0 +1,42 @@
+@attribute [Route(pageUrl)]
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@RouteConstants.Docs_Notification_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(Notification_Demo_01_How_it_works)" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Demo Type="typeof(Notification_Demo_02_Colors_A_Link)" Tabs="true" />
+    <Demo Type="typeof(Notification_Demo_02_Colors_B_Primary)" Tabs="true" />
+    <Demo Type="typeof(Notification_Demo_02_Colors_C_Info)" Tabs="true" />
+    <Demo Type="typeof(Notification_Demo_02_Colors_D_Success)" Tabs="true" />
+    <Demo Type="typeof(Notification_Demo_02_Colors_E_Warning)" Tabs="true" />
+    <Demo Type="typeof(Notification_Demo_02_Colors_F_Danger)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Light colors" PageUrl="@pageUrl" Link="light-colors">
+    <Demo Type="typeof(Notification_Demo_03_LightColors_A_Link)" Tabs="true" />
+    <Demo Type="typeof(Notification_Demo_03_LightColors_B_Primary)" Tabs="true" />
+    <Demo Type="typeof(Notification_Demo_03_LightColors_C_Info)" Tabs="true" />
+    <Demo Type="typeof(Notification_Demo_03_LightColors_D_Success)" Tabs="true" />
+    <Demo Type="typeof(Notification_Demo_03_LightColors_E_Warning)" Tabs="true" />
+    <Demo Type="typeof(Notification_Demo_03_LightColors_F_Danger)" Tabs="true" />
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Demos_Notification_Documentation;
+    private const string pageTitle = "Notification";
+    private const string pageDescription = "The <code>Notification</code> component is a simple colored block meant to draw the attention to the user about something. ";
+    private const string metaTitle = "Blazor Notification Component";
+    private const string metaDescription = "The Notification component is a simple colored block meant to draw the attention to the user about something. ";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}
