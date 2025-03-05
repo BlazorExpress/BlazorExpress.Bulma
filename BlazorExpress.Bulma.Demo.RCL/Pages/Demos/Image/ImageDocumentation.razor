@@ -10,6 +10,12 @@
 
 <DocsLink Href="@RouteConstants.Docs_Image_Documentation" />
 
+<Message Class="mt-5" Color="MessageColor.Info">
+    <MessageBody>
+        <strong>NOTE:</strong> All images are taken from the <a href="https://bulma.io/documentation/elements/image/">Bulma image docs page</a>.
+    </MessageBody>
+</Message>
+
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Demo Type="typeof(Image_Demo_01_How_it_works)" Tabs="true" />
 </Section>
@@ -25,12 +31,6 @@
 <Section Class="p-0" Size="HeadingSize.H3" Name="Responsive images with ratios" PageUrl="@pageUrl" Link="responsive-images-with-ratios">
     <Demo Type="typeof(Image_Demo_04_Responsive_images_with_ratios)" Tabs="true" />
 </Section>
-
-<Message Color="MessageColor.Info">
-    <MessageBody>
-    All images are taken from the <a href="https://bulma.io/documentation/elements/image/">Bulma image docs page</a>.
-    </MessageBody>
-</Message>
 
 @code {
     private const string pageUrl = RouteConstants.Demos_Image_Documentation;
