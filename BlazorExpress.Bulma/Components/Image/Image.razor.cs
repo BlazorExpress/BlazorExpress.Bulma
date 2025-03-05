@@ -37,6 +37,7 @@ public partial class Image : BulmaComponentBase
         BuildClassNames(
             FigureCssClass,
             (BulmaCssClass.Image, true),
+            (Ratio.ToImageRatioClass(), Ratio != ImageRatio.None),
             (Dimension.ToImageDimensionClass(), Dimension != ImageDimension.None)
         );
 
@@ -60,7 +61,17 @@ public partial class Image : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, image will be rounded.")]
-    [Parameter] public bool IsRounded { get; set; }
+    [Parameter] 
+    public bool IsRounded { get; set; }
+
+    /// <summary>
+    /// Gets or sets the image ratio.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(ImageRatio.None)]
+    [Description("Gets or sets the image ratio.")]
+    [Parameter]
+    public ImageRatio Ratio { get; set; } = ImageRatio.None;
 
     /// <summary>
     /// Gets or sets the image src.

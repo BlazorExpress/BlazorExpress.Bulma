@@ -107,6 +107,28 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToImageRatioClass(this ImageRatio ratio) =>
+        ratio switch
+        {
+            ImageRatio.IsSquare => BulmaCssClass.IsSquare,
+            ImageRatio.Is1by1 => BulmaCssClass.Is1by1,
+            ImageRatio.Is1by2 => BulmaCssClass.Is1by2,
+            ImageRatio.Is1by3 => BulmaCssClass.Is1by3,
+            ImageRatio.Is2by1 => BulmaCssClass.Is2by1,
+            ImageRatio.Is2by3 => BulmaCssClass.Is2by3,
+            ImageRatio.Is3by1 => BulmaCssClass.Is3by1,
+            ImageRatio.Is3by2 => BulmaCssClass.Is3by2,
+            ImageRatio.Is3by4 => BulmaCssClass.Is3by4,
+            ImageRatio.Is3by5 => BulmaCssClass.Is3by5,
+            ImageRatio.Is4by3 => BulmaCssClass.Is4by3,
+            ImageRatio.Is4by5 => BulmaCssClass.Is4by5,
+            ImageRatio.Is5by3 => BulmaCssClass.Is5by3,
+            ImageRatio.Is5by4 => BulmaCssClass.Is5by4,
+            ImageRatio.Is9by16 => BulmaCssClass.Is9by16,
+            ImageRatio.Is16by9 => BulmaCssClass.Is16by9,
+            _ => null
+        };
+
     public static string? ToMessageColorClass(this MessageColor color) =>
         color switch
         {

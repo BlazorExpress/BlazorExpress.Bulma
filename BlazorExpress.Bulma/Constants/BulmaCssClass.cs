@@ -78,6 +78,22 @@ public static class BulmaCssClass
     public const string Is96x96 = "is-96x96";
     public const string Is128x128 = "is-128x128";
 
+    public const string Is1by1 = "is-1by1";
+    public const string Is5by4 = "is-5by4";
+    public const string Is4by3 = "is-4by3";
+    public const string Is3by2 = "is-3by2";
+    public const string Is5by3 = "is-5by3";
+    public const string Is16by9 = "is-16by9";
+    public const string Is2by1 = "is-2by1";
+    public const string Is3by1 = "is-3by1";
+    public const string Is4by5 = "is-4by5";
+    public const string Is3by4 = "is-3by4";
+    public const string Is2by3 = "is-2by3";
+    public const string Is3by5 = "is-3by5";
+    public const string Is9by16 = "is-9by16";
+    public const string Is1by2 = "is-1by2";
+    public const string Is1by3 = "is-1by3";
+
     public const string IsActive = "is-active";
     public const string IsAlignContentBaseline = "is-align-content-baseline";
     public const string IsAlignContentCenter = "is-align-content-center";
@@ -137,6 +153,7 @@ public static class BulmaCssClass
     public const string IsSkeleton = "is-skeleton";
     public const string IsSmall = "is-small";
     public const string IsSpaced = "is-spaced";
+    public const string IsSquare = "is-square";
     public const string IsStriped = "is-striped";
     public const string IsSuccess = "is-success";
     public const string IsText = "is-text";

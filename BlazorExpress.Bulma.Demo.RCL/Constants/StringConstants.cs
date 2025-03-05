@@ -47,7 +47,22 @@ public static class StringConstants
     public const string StaticAssets_Images_64x64_png = StaticAssets_ImagesPath + "/64x64.png";
     public const string StaticAssets_Images_96x96_png = StaticAssets_ImagesPath + "/96x96.png";
     public const string StaticAssets_Images_128x128_png = StaticAssets_ImagesPath + "/128x128.png";
+    public const string StaticAssets_Images_240x720_png = StaticAssets_ImagesPath + "/240x720.png";
     public const string StaticAssets_Images_256x256_png = StaticAssets_ImagesPath + "/256x256.png";
+    public const string StaticAssets_Images_320x480_png = StaticAssets_ImagesPath + "/320x480.png";
+    public const string StaticAssets_Images_320x640_png = StaticAssets_ImagesPath + "/320x640.png";
+    public const string StaticAssets_Images_360x640_png = StaticAssets_ImagesPath + "/360x640.png";
+    public const string StaticAssets_Images_480x320_png = StaticAssets_ImagesPath + "/480x320.png";
+    public const string StaticAssets_Images_480x480_png = StaticAssets_ImagesPath + "/480x480.png";
+    public const string StaticAssets_Images_480x600_png = StaticAssets_ImagesPath + "/480x600.png";
+    public const string StaticAssets_Images_480x640_png = StaticAssets_ImagesPath + "/480x640.png";
+    public const string StaticAssets_Images_480x800_png = StaticAssets_ImagesPath + "/480x800.png";
+    public const string StaticAssets_Images_600x480_png = StaticAssets_ImagesPath + "/600x480.png";
+    public const string StaticAssets_Images_640x320_png = StaticAssets_ImagesPath + "/640x320.png";
+    public const string StaticAssets_Images_640x360_png = StaticAssets_ImagesPath + "/640x360.png";
+    public const string StaticAssets_Images_640x480_png = StaticAssets_ImagesPath + "/640x480.png";
+    public const string StaticAssets_Images_720x240_png = StaticAssets_ImagesPath + "/720x240.png";
+    public const string StaticAssets_Images_800x480_png = StaticAssets_ImagesPath + "/800x480.png";
 
     #endregion
 }
