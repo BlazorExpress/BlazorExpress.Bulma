@@ -65,6 +65,7 @@ public partial class MainLayout : MainLayoutBase
                 new Link { Href = RouteConstants.Demos_DeleteButton_Documentation, Text = "Delete Button" },
                 new Link { Href = RouteConstants.Demos_Image_Documentation, Text = "Image" },
                 new Link { Href = RouteConstants.Demos_Notification_Documentation, Text = "Notification" },
+                new Link { Href = RouteConstants.Demos_ProgressBar_Documentation, Text = "Progress Bar" },
             ]
         });
 

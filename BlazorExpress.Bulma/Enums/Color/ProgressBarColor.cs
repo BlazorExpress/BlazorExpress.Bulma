@@ -1,9 +1,9 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// https://bulma.io/documentation/elements/notification/
+/// https://bulma.io/documentation/elements/progress/#colors
 /// </summary>
-public enum NotificationColor
+public enum ProgressBarColor
 {
     None,
     Primary,

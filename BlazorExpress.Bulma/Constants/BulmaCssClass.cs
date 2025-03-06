@@ -193,6 +193,8 @@ public static class BulmaCssClass
     public const string PaginationNext = "pagination-next";
     public const string PaginationPrevious = "pagination-previous";
 
+    public const string Progress = "progress";
+
     public const string P5 = "p-5";
 
     public const string Reset = "reset";

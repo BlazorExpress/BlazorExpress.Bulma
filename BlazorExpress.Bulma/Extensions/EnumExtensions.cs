@@ -197,6 +197,18 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToProgressBarColorClass(this ProgressBarColor color) =>
+        color switch
+        {
+            ProgressBarColor.Primary => BulmaCssClass.IsPrimary,
+            ProgressBarColor.Link => BulmaCssClass.IsLink,
+            ProgressBarColor.Info => BulmaCssClass.IsInfo,
+            ProgressBarColor.Success => BulmaCssClass.IsSuccess,
+            ProgressBarColor.Warning => BulmaCssClass.IsWarning,
+            ProgressBarColor.Danger => BulmaCssClass.IsDanger,
+            _ => null
+        };
+
     public static string? ToSkeletonColorClass(this SkeletonColor color) =>
         color switch
         {
