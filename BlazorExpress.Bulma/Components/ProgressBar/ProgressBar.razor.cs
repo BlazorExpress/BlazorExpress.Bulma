@@ -12,7 +12,8 @@ public partial class ProgressBar : BulmaComponentBase
         BuildClassNames(
             Class, 
             (BulmaCssClass.Progress, true),
-            (Color.ToProgressBarColorClass(), true)
+            (Color.ToProgressBarColorClass(), true),
+            (Size.ToProgressBarSizeClass(), Size != ProgressBarSize.None)
         );
 
     /// <summary>
@@ -40,6 +41,14 @@ public partial class ProgressBar : BulmaComponentBase
     public float Max { get; set; } = 100;
 
     /// <summary>
+    /// Gets or sets the size.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(ProgressBarSize.None)]
+    [Description("Gets or sets the size.")]
+    [Parameter] public ProgressBarSize Size { get; set; } = ProgressBarSize.None;
+
+    /// <summary>
     /// Gets or sets the value.
     /// <para>
     /// Default value is <see langword="null"/>.
@@ -48,6 +57,7 @@ public partial class ProgressBar : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the value.")]
+    [ParameterTypeName("float?")]
     [Parameter]
     public float? Value { get; set; }
 
