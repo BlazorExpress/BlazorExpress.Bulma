@@ -1,0 +1,18 @@
+<ProgressBar Color="color" Max="100" Value="30" />
+
+<Button Color="ButtonColor.Link" Size="ButtonSize.Small" @onclick="() => SetColor(ProgressBarColor.Link)">Set Color</Button>
+<Button Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="() => SetColor(ProgressBarColor.Primary)">Set Color</Button>
+<Button Color="ButtonColor.Info" Size="ButtonSize.Small" @onclick="() => SetColor(ProgressBarColor.Info)">Set Color</Button>
+<Button Color="ButtonColor.Success" Size="ButtonSize.Small" @onclick="() => SetColor(ProgressBarColor.Success)">Set Color</Button>
+<Button Color="ButtonColor.Warning" Size="ButtonSize.Small" @onclick="() => SetColor(ProgressBarColor.Warning)">Set Color</Button>
+<Button Color="ButtonColor.Danger" Size="ButtonSize.Small" @onclick="() => SetColor(ProgressBarColor.Danger)">Set Color</Button>
+
+@code {
+    private ProgressBarColor color;
+    private float width = 10;
+
+    private void SetColor(ProgressBarColor progressBarColor)
+    {
+        color = progressBarColor;
+    }
+}

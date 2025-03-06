@@ -1,0 +1,37 @@
+<ProgressBar Color="ProgressBarColor.Link" Max="maxWidth" Value="width" />
+
+<Button Color="ButtonColor.Link" Size="ButtonSize.Small" @onclick="IncreaseProgressBar">Increase by 10%</Button>
+<Button Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="DecreaseProgressBar">Decrease by 10%</Button>
+<Button Color="ButtonColor.Danger" Size="ButtonSize.Small" @onclick="ResetProgressBar">Reset</Button>
+
+@code {
+    private float maxWidth = 100;
+    private float width = 0;
+
+    private void IncreaseProgressBar()
+    {
+        if (width == maxWidth)
+            return;
+
+        if ((width + 10) <= maxWidth)
+            width += 10;
+        else
+            width = maxWidth;
+    }
+
+    private void DecreaseProgressBar()
+    {
+        if (width == 0)
+            return;
+
+        if ((width - 10) > 0)
+            width -= 10;
+        else
+            width = 0;
+    }
+
+    private void ResetProgressBar()
+    {
+        width = 0;
+    }
+}

@@ -65,6 +65,7 @@ public partial class DocsMainLayout : MainLayoutBase
                 new Link { Href = RouteConstants.Docs_DeleteButton_Documentation, Text = "Delete Button" },
                 new Link { Href = RouteConstants.Docs_Image_Documentation, Text = "Image" },
                 new Link { Href = RouteConstants.Docs_Notification_Documentation, Text = "Notification" },
+                new Link { Href = RouteConstants.Docs_ProgressBar_Documentation, Text = "Progress Bar" },
             ]
         });
 

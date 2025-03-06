@@ -118,3 +118,8 @@ html {
     .tabs-content > .tab-content.is-active {
         display: block !important;
     }
+
+/* text */
+.be-bulma-text-decoration-none {
+    text-decoration: none !important;
+}

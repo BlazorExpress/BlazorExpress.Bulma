@@ -142,18 +142,6 @@ public static class EnumExtensions
             _ => null
         };
 
-    public static string? ToNotificationColorClass(this NotificationColor color) =>
-        color switch
-        {
-            NotificationColor.Primary => BulmaCssClass.IsPrimary,
-            NotificationColor.Link => BulmaCssClass.IsLink,
-            NotificationColor.Info => BulmaCssClass.IsInfo,
-            NotificationColor.Success => BulmaCssClass.IsSuccess,
-            NotificationColor.Warning => BulmaCssClass.IsWarning,
-            NotificationColor.Danger => BulmaCssClass.IsDanger,
-            _ => null
-        };
-
     public static string? ToMessageSizeClass(this MessageSize size) =>
         size switch
         {
@@ -168,6 +156,18 @@ public static class EnumExtensions
         {
             NavbarDropdownPosition.Left => BulmaCssClass.IsLeft,
             NavbarDropdownPosition.Right => BulmaCssClass.IsRight,
+            _ => null
+        };
+
+    public static string? ToNotificationColorClass(this NotificationColor color) =>
+        color switch
+        {
+            NotificationColor.Primary => BulmaCssClass.IsPrimary,
+            NotificationColor.Link => BulmaCssClass.IsLink,
+            NotificationColor.Info => BulmaCssClass.IsInfo,
+            NotificationColor.Success => BulmaCssClass.IsSuccess,
+            NotificationColor.Warning => BulmaCssClass.IsWarning,
+            NotificationColor.Danger => BulmaCssClass.IsDanger,
             _ => null
         };
 
@@ -194,6 +194,28 @@ public static class EnumExtensions
             PaginationSize.Small => BulmaCssClass.IsSmall,
             PaginationSize.Medium => BulmaCssClass.IsMedium,
             PaginationSize.Large => BulmaCssClass.IsLarge,
+            _ => null
+        };
+
+    public static string? ToProgressBarColorClass(this ProgressBarColor color) =>
+        color switch
+        {
+            ProgressBarColor.Primary => BulmaCssClass.IsPrimary,
+            ProgressBarColor.Link => BulmaCssClass.IsLink,
+            ProgressBarColor.Info => BulmaCssClass.IsInfo,
+            ProgressBarColor.Success => BulmaCssClass.IsSuccess,
+            ProgressBarColor.Warning => BulmaCssClass.IsWarning,
+            ProgressBarColor.Danger => BulmaCssClass.IsDanger,
+            _ => null
+        };
+
+    public static string? ToProgressBarSizeClass(this ProgressBarSize size) =>
+        size switch
+        {
+            ProgressBarSize.Small => BulmaCssClass.IsSmall,
+            ProgressBarSize.Normal => BulmaCssClass.IsNormal,
+            ProgressBarSize.Medium => BulmaCssClass.IsMedium,
+            ProgressBarSize.Large => BulmaCssClass.IsLarge,
             _ => null
         };
 
