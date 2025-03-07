@@ -89,6 +89,7 @@ public partial class MainLayout : MainLayoutBase
                 new Link { Href = RouteConstants.Demos_Message_Documentation, Text = "Message" },
                 new Link { Href = RouteConstants.Demos_GoogleMaps_Documentation, Text = "Google Maps" },
                 new Link { Href = RouteConstants.Demos_Grid_Documentation, Text = "Grid" },
+                new Link { Href = RouteConstants.Demos_Modal_Documentation, Text = "Modal" },
                 new Link { Href = RouteConstants.Demos_Pagination_Documentation, Text = "Pagination" },
                 new Link { Href = RouteConstants.Demos_ScriptLoader_Documentation, Text = "Script Loader" },
                 new Link { Href = RouteConstants.Demos_Tabs_Documentation, Text = "Tabs" }
