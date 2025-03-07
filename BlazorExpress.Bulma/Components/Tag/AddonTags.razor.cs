@@ -1,18 +1,30 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// Tags component
+/// Tag component
 /// <see href="https://bulma.io/documentation/elements/tag/" />
 /// </summary>
-public partial class Tags : BulmaComponentBase
+public partial class AddonTags : BulmaComponentBase
 {
+    #region Methods
+
+    protected override void OnInitialized()
+    {
+        Id = Id ?? IdUtility.GetNextId(); // This is required
+
+        if (Parent is not null)
+            Parent.Add(this);
+    }
+
+    #endregion
+
     #region Properties, Indexers
 
     protected override string? ClassNames =>
         BuildClassNames(
             Class,
             (BulmaCssClass.Tags, true),
-            (Size.ToTagsSizeClass(), Size != TagSize.None)
+            (BulmaCssClass.HasAddons, true)
         );
 
     /// <summary>
@@ -29,12 +41,16 @@ public partial class Tags : BulmaComponentBase
     public RenderFragment? ChildContent { get; set; }
 
     /// <summary>
-    /// Gets or sets the size.
+    /// Gets or sets the parent.
     /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null" />.
+    /// </remarks>
     [AddedVersion("1.0.0")]
-    [DefaultValue(TagSize.None)]
-    [Description("Gets or sets the size.")]
-    [Parameter] public TagSize Size { get; set; } = TagSize.None;
+    [DefaultValue(null)]
+    [Description("Gets or sets the parent.")]
+    [CascadingParameter]
+    internal GroupedAddonTags Parent { get; set; } = default!;
 
     #endregion
 }

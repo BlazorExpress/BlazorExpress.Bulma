@@ -21,6 +21,14 @@
     <DocxTable TItem="Tags" DocType="DocType.Parameters" />
 </Section>
 
+<Section Class="p-0" Size="HeadingSize.H4" Name="AddonTags Parameters" PageUrl="@pageUrl" Link="tags-parameters">
+    <DocxTable TItem="AddonTags" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="GroupedAddonTags Parameters" PageUrl="@pageUrl" Link="tags-parameters">
+    <DocxTable TItem="GroupedAddonTags" DocType="DocType.Parameters" />
+</Section>
+
 @code {
     private const string pageUrl = RouteConstants.Docs_Tags_Documentation;
     private const string pageTitle = "Tags";

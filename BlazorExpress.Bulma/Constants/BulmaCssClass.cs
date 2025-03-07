@@ -19,6 +19,8 @@ public static class BulmaCssClass
 
     public const string Delete = "delete";
 
+    public const string Field = "field";
+
     public const string HasAddons = "has-addons";
 
     public const string HasBackgroundBlack = "has-background-black";
@@ -124,6 +126,8 @@ public static class BulmaCssClass
     public const string IsFocused = "is-focused";
     public const string IsFullWidth = "is-fullwidth";
     public const string IsGhost = "is-ghost";
+    public const string IsGrouped = "is-grouped";
+    public const string IsGroupedMultiline = "is-grouped-multiline";
     public const string IsHidden = "is-hidden";
     public const string IsHoverable = "is-hoverable";
     public const string IsHovered = "is-hovered";
