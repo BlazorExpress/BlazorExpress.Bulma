@@ -19,6 +19,10 @@ public static class BulmaCssClass
 
     public const string Delete = "delete";
 
+    public const string Field = "field";
+
+    public const string HasAddons = "has-addons";
+
     public const string HasBackgroundBlack = "has-background-black";
     public const string HasBackgroundDanger = "has-background-danger";
     public const string HasBackgroundDark = "has-background-dark";
@@ -111,6 +115,7 @@ public static class BulmaCssClass
     public const string IsCentered = "is-centered";
     public const string IsCurrent = "is-current";
     public const string IsDanger = "is-danger";
+    public const string IsDelete = "is-delete";
     public const string IsDark = "is-dark";
     public const string IsDisabled = "is-disabled";
     public const string IsFlex = "is-flex";
@@ -121,6 +126,8 @@ public static class BulmaCssClass
     public const string IsFocused = "is-focused";
     public const string IsFullWidth = "is-fullwidth";
     public const string IsGhost = "is-ghost";
+    public const string IsGrouped = "is-grouped";
+    public const string IsGroupedMultiline = "is-grouped-multiline";
     public const string IsHidden = "is-hidden";
     public const string IsHoverable = "is-hoverable";
     public const string IsHovered = "is-hovered";
@@ -208,6 +215,10 @@ public static class BulmaCssClass
     public const string Table = "table";
     public const string TableContianer = "table-container";
     public const string Tabs = "tabs";
+
+    public const string Tag = "tag";
+    public const string Tags = "tags";
+
     public const string Title = "title";
 
     #endregion

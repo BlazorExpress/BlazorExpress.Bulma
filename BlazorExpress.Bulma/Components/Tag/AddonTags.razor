@@ -1,0 +1,17 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+
+@if (Parent is null)
+{
+    <span @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
+        @ChildContent
+    </span>
+}
+else
+{
+    <div class="control">
+        <span @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
+            @ChildContent
+        </span>
+    </div>
+}

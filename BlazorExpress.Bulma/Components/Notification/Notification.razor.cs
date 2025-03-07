@@ -24,7 +24,7 @@ public partial class Notification : BulmaComponentBase
             Class, 
             (BulmaCssClass.Notification, true),
             (Color.ToNotificationColorClass(), true),
-            (BulmaCssClass.IsLight, ShowLightColors)
+            (BulmaCssClass.IsLight, ShowLightVersion)
         );
 
     /// <summary>
@@ -53,18 +53,6 @@ public partial class Notification : BulmaComponentBase
     public NotificationColor Color { get; set; } = NotificationColor.None;
 
     /// <summary>
-    /// If <see langword="true"/>, shows the color in its light version.
-    /// <para>
-    /// Default value is <see langword="false" />.
-    /// </para>
-    /// </summary>
-    [AddedVersion("1.0.0")]
-    [DefaultValue(NotificationColor.None)]
-    [Description("If <b>true</b>, shows the color in its light version.")]
-    [Parameter]
-    public bool ShowLightColors { get; set; } = false;
-
-    /// <summary>
     /// If <see langword="true" />, shows the delete button.
     /// <para>
     /// Default value is <see langword="false" />.
@@ -75,6 +63,18 @@ public partial class Notification : BulmaComponentBase
     [Description("If <b>true</b>, shows the delete button.")]
     [Parameter]
     public bool HideDeleteButton { get; set; } = false;
+
+    /// <summary>
+    /// If <see langword="true"/>, shows the color in its light version.
+    /// <para>
+    /// Default value is <see langword="false" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(NotificationColor.None)]
+    [Description("If <b>true</b>, shows the color in its light version.")]
+    [Parameter]
+    public bool ShowLightVersion { get; set; } = false;
 
     /// <summary>
     /// If <see langword="true"/>, the notification is visible.
