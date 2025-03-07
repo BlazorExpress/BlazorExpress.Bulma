@@ -1,0 +1,31 @@
+@attribute [Route(pageUrl)]
+@layout DocsMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+@* <img src="https://i.imgur.com/IX3bajc.png" class="img-fluid" alt="Blazor Bar Chart - API Documentation" /> *@
+
+<DemoLink Href="@RouteConstants.Demos_Tags_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Tag Parameters" PageUrl="@pageUrl" Link="tag-parameters">
+    <DocxTable TItem="Tag" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Tags Parameters" PageUrl="@pageUrl" Link="tags-parameters">
+    <DocxTable TItem="Tags" DocType="DocType.Parameters" />
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Docs_Tags_Documentation;
+    private const string pageTitle = "Tags";
+    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>Tag</code> component, guiding you through its configuration options.";
+    private const string metaTitle = "Blazor Tag Component";
+    private const string metaDescription = "This documentation provides a comprehensive reference for the Tag component, guiding you through its configuration options.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}

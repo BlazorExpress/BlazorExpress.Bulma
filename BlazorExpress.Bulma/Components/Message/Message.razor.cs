@@ -70,6 +70,7 @@ public partial class Message : BulmaComponentBase
     [DefaultValue(MessageSize.None)]
     [Description("Gets or sets the size.")]
     [Parameter] public MessageSize Size { get; set; } = MessageSize.None;
+
     /// <summary>
     /// Gets or sets the message visible state.
     /// </summary>

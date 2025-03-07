@@ -1,0 +1,59 @@
+@attribute [Route(pageUrl)]
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@RouteConstants.Docs_Tags_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(Tag_Demo_01_How_it_works)" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Demo Type="typeof(Tag_Demo_02_Colors_A)" />
+    <Demo Type="typeof(Tag_Demo_02_Colors_B_Light_version)" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
+    <Demo Type="typeof(Tag_Demo_03_Sizes_A)" />
+    <Demo Type="typeof(Tag_Demo_03_Sizes_B_Are_Medium)" />
+    <Demo Type="typeof(Tag_Demo_03_Sizes_C_Are_Large)" />
+    <Demo Type="typeof(Tag_Demo_03_Sizes_D_Are_Medium_Mixed)" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Rounded" PageUrl="@pageUrl" Link="rounded">
+    <Demo Type="typeof(Tag_Demo_04_Rounded)" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Hover state" PageUrl="@pageUrl" Link="hover-state">
+    <Demo Type="typeof(Tag_Demo_05_Hover)" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Delete" PageUrl="@pageUrl" Link="delete">
+    <Demo Type="typeof(Tag_Demo_06_Delete_A)" />
+    <Demo Type="typeof(Tag_Demo_06_Delete_B_Rounded)" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="List of tags" PageUrl="@pageUrl" Link="list-of-tags">
+    <Demo Type="typeof(Tag_Demo_07_List_of_tags_A)" />
+    <Demo Type="typeof(Tag_Demo_07_List_of_tags_B)" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Tag addons" PageUrl="@pageUrl" Link="tag-addons">
+    <Demo Type="typeof(Tag_Demo_08_Addons_A)" />
+    <Demo Type="typeof(Tag_Demo_08_Addons_B)" />
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Demos_Tags_Documentation;
+    private const string pageTitle = "Tags";
+    private const string pageDescription = "The <code>Tag</code> component is a small label to insert anywhere.";
+    private const string metaTitle = "Blazor Tags Component";
+    private const string metaDescription = "The Tag component is a small label to insert anywhere.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}

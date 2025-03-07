@@ -281,6 +281,39 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToTagColorClass(this TagColor color) =>
+        color switch
+        {
+            TagColor.Black => BulmaCssClass.IsBlack,
+            TagColor.Dark => BulmaCssClass.IsDark,
+            TagColor.Light => BulmaCssClass.IsLight,
+            TagColor.White => BulmaCssClass.IsWhite,
+            TagColor.Primary => BulmaCssClass.IsPrimary,
+            TagColor.Link => BulmaCssClass.IsLink,
+            TagColor.Info => BulmaCssClass.IsInfo,
+            TagColor.Success => BulmaCssClass.IsSuccess,
+            TagColor.Warning => BulmaCssClass.IsWarning,
+            TagColor.Danger => BulmaCssClass.IsDanger,
+            _ => null
+        };
+
+    public static string? ToTagSizeClass(this TagSize size) =>
+        size switch
+        {
+            TagSize.Normal => BulmaCssClass.IsNormal,
+            TagSize.Medium => BulmaCssClass.IsMedium,
+            TagSize.Large => BulmaCssClass.IsLarge,
+            _ => null
+        };
+
+    public static string? ToTagsSizeClass(this TagSize size) =>
+        size switch
+        {
+            TagSize.Medium => BulmaCssClass.AreMedium,
+            TagSize.Large => BulmaCssClass.AreLarge,
+            _ => null
+        };
+
     public static string ToTextAlignmentClass(this Alignment alignment) =>
         alignment switch
         {

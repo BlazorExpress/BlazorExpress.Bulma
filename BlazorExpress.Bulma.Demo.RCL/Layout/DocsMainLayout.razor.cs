@@ -66,6 +66,7 @@ public partial class DocsMainLayout : MainLayoutBase
                 new Link { Href = RouteConstants.Docs_Image_Documentation, Text = "Image" },
                 new Link { Href = RouteConstants.Docs_Notification_Documentation, Text = "Notification" },
                 new Link { Href = RouteConstants.Docs_ProgressBar_Documentation, Text = "Progress Bar" },
+                new Link { Href = RouteConstants.Docs_Tags_Documentation, Text = "Tags" },
             ]
         });
 
