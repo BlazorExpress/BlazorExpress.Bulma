@@ -53,10 +53,10 @@ public partial class GridColumn<TItem> : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the cell template.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null"/>.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the cell template.")]
@@ -65,10 +65,10 @@ public partial class GridColumn<TItem> : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the child content.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the child content.")]
@@ -85,10 +85,10 @@ public partial class GridColumn<TItem> : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the header template.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null"/>.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the header template.")]
@@ -96,10 +96,10 @@ public partial class GridColumn<TItem> : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the table column header text.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null"/>.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the table column header text.")]
@@ -108,10 +108,10 @@ public partial class GridColumn<TItem> : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the default sort column.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="false"/>.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("Gets or sets the default sort column.")]
@@ -124,10 +124,10 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// <summary>
     /// Gets or sets the property name.
     /// This is required when `AllowFiltering` is true.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null"/>.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the property name. This is required when <code>AllowFiltering</code> is <b>true</b>.")]
@@ -137,10 +137,10 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// <summary>
     /// Enable or disable the sorting on a specific column.
     /// The sorting is enabled or disabled based on the `AllowSorting` parameter on the grid.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="true"/>.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(true)]
     [Description("Enable or disable the sorting on a specific column. The sorting is enabled or disabled based on the <code>AllowSorting</code> parameter on the grid.")]
@@ -149,10 +149,10 @@ public partial class GridColumn<TItem> : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the default sort direction of a column.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="SortDirection.None" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(SortDirection.None)]
     [Description("Gets or sets the default sort direction of a column.")]
@@ -174,10 +174,10 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// Gets or sets the column sort string.
     /// This value will be passed to the backend/API for sorting.
     /// And this property is ignored for the client-side sorting.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null"/>.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the column sort string. This value will be passed to the backend/API for sorting. And this property is ignored for the client-side sorting.")]
@@ -186,10 +186,10 @@ public partial class GridColumn<TItem> : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the StringComparison.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="StringComparison.OrdinalIgnoreCase" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(StringComparison.OrdinalIgnoreCase)]
     [Description("Gets or sets the StringComparison.")]
@@ -200,10 +200,10 @@ public partial class GridColumn<TItem> : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the CSS class for the table header.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null"/>.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the CSS class for the table header.")]
@@ -211,10 +211,10 @@ public partial class GridColumn<TItem> : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the CSS style for the table header.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null"/>.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the CSS style for the table header.")]
