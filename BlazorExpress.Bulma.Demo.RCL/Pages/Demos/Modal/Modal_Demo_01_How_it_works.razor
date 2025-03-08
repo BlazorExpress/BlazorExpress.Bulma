@@ -1,0 +1,13 @@
+<Modal @ref="modalRef" CloseButtonCssClass="is-large">
+    <Box>
+        Modal content text goes here.
+    </Box>
+</Modal>
+
+<Button Color="ButtonColor.Link" Size="ButtonSize.Small" @onclick="ShowModal">Show Modal</Button>
+
+@code {
+    private Modal modalRef = default!;
+
+    private void ShowModal() => modalRef.Show();
+}

@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Message component
+/// <para>
 /// <see href="https://bulma.io/documentation/components/message/" />
+/// </para>
 /// </summary>
 public partial class Message : BulmaComponentBase
 {
@@ -29,10 +31,10 @@ public partial class Message : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the child content.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the child content.")]
@@ -42,10 +44,10 @@ public partial class Message : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the color.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="MessageColor.None" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(MessageColor.None)]
     [Description("Gets or sets the color.")]
@@ -53,10 +55,10 @@ public partial class Message : BulmaComponentBase
 
     /// <summary>
     /// If <see langword="true" />, shows the delete button in the message header.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="true" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(true)]
     [Description("If <b>true</b>, shows the delete button in the message header.")]
@@ -65,18 +67,22 @@ public partial class Message : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the size.
+    /// <para>
+    /// Default value is <see cref="MessageSize.None" />.
+    /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(MessageSize.None)]
     [Description("Gets or sets the size.")]
-    [Parameter] public MessageSize Size { get; set; } = MessageSize.None;
+    [Parameter] 
+    public MessageSize Size { get; set; } = MessageSize.None;
 
     /// <summary>
     /// Gets or sets the message visible state.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="true" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(true)]
     [Description("Gets or sets the message visible state.")]

@@ -14,7 +14,7 @@ public partial class Overlay : BulmaComponentBase
             (BulmaCssClass.IsActive, IsActive));
 
     [Parameter]
-    public bool IsActive { get; set; }
+    public bool IsActive { get; set; } = false;
 
     #endregion
 }

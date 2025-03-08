@@ -1,5 +1,11 @@
 ﻿namespace BlazorExpress.Bulma;
 
+/// <summary>
+/// Buttons component
+/// <para>
+/// <see href="https://bulma.io/documentation/elements/button/" />
+/// </para>
+/// </summary>
 public partial class Buttons : BulmaComponentBase
 {
     #region Properties, Indexers
@@ -13,10 +19,10 @@ public partial class Buttons : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the child content.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the child content.")]
@@ -26,10 +32,10 @@ public partial class Buttons : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the size.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="ButtonSize.None" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(ButtonSize.None)]
     [Description("Gets or sets the size.")]

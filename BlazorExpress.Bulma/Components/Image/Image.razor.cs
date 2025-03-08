@@ -31,7 +31,7 @@ public partial class Image : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the figure CSS class.")]
     [Parameter]
-    public string? FigureCssClass { get; set; }
+    public string? FigureCssClass { get; set; } = null;
 
     private string? FigureCssClassNames => 
         BuildClassNames(
@@ -48,7 +48,7 @@ public partial class Image : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the figure CSS style.")]
     [Parameter]
-    public string? FigureCssStyle { get; set; }
+    public string? FigureCssStyle { get; set; } = null;
 
     private string? FigureCssStyleNames => FigureCssStyle;
 
@@ -62,7 +62,7 @@ public partial class Image : BulmaComponentBase
     [DefaultValue(false)]
     [Description("If true, image will be rounded.")]
     [Parameter] 
-    public bool IsRounded { get; set; }
+    public bool IsRounded { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the image ratio.
@@ -81,7 +81,7 @@ public partial class Image : BulmaComponentBase
     [Description("Gets or sets the image src.")]
     [EditorRequired]
     [Parameter]
-    public string? Src { get; set; }
+    public string? Src { get; set; } = null;
 
     #endregion
 }

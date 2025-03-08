@@ -18,7 +18,7 @@ public class PinElement
 
     public double Scale { get; set; } = 1.0;
 
-    public bool UseIconFonts { get; set; }
+    public bool UseIconFonts { get; set; } = false;
 
     #endregion
 }

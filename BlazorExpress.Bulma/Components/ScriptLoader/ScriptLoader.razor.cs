@@ -71,10 +71,10 @@ public partial class ScriptLoader : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets a value indicating whether the script should be loaded asynchronously.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("Gets or sets a value indicating whether the script should be loaded asynchronously.")]
@@ -84,10 +84,10 @@ public partial class ScriptLoader : BulmaComponentBase
     /// <summary>
     /// Gets or sets a value indicating whether the script is meant to be executed 
     /// after the document has been parsed, but before firing DOMContentLoaded event.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("Gets or sets a value indicating whether the script is meant to be executed after the document has been parsed, but before firing DOMContentLoaded event.")]
@@ -112,28 +112,28 @@ public partial class ScriptLoader : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the ID of the script element.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the ID of the script element.")]
     [Parameter]
-    public string? ScriptId { get; set; }
+    public string? ScriptId { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the URI of the external script to load.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the URI of the external script to load.")]
     [EditorRequired]
     [Parameter]
-    public string? Source { get; set; } = default!;
+    public string? Source { get; set; } = null;
 
     #endregion
 }

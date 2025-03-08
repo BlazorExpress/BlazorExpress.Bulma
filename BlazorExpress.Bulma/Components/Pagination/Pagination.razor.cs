@@ -86,10 +86,10 @@ public partial class Pagination : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the active page number.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is 1.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(1)]
     [Description("Gets or sets the active page number.")]
@@ -97,10 +97,10 @@ public partial class Pagination : BulmaComponentBase
 
     /// <summary>
     /// Get or sets the <see cref="Pagination" /> alignment.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="PaginationAlignment.None" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(PaginationAlignment.None)]
     [Description("Get or sets the <code>Pagination</code> alignment.")]
@@ -109,10 +109,10 @@ public partial class Pagination : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the maximum page links to be displayed.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is 5.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(5)]
     [Description("Gets or sets the maximum page links to be displayed.")]
@@ -121,10 +121,10 @@ public partial class Pagination : BulmaComponentBase
 
     /// <summary>
     /// When set to <see langword="true" />, changes the appearance of <see cref="PaginationItem" /> to rounded.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// The default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("When set to <b>true</b>, changes the appearance of <code>PaginationItem</code> to rounded.")]
@@ -133,11 +133,15 @@ public partial class Pagination : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the next button template.
+    /// <para>
+    /// Default value is <see langword="null" />.
+    /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the next button template.")]
-    [Parameter] public RenderFragment? NextButtonTemplate { get; set; }
+    [Parameter] 
+    public RenderFragment? NextButtonTemplate { get; set; }
 
     /// <summary>
     /// This event fires immediately when the page number is changed.
@@ -153,18 +157,22 @@ public partial class Pagination : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the previous button template.
+    /// <para>
+    /// Default value is <see langword="null" />.
+    /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the previous button template.")]
-    [Parameter] public RenderFragment? PreviousButtonTemplate { get; set; }
+    [Parameter] 
+    public RenderFragment? PreviousButtonTemplate { get; set; }
 
     /// <summary>
     /// Get or sets the <see cref="Pagination" /> size.
     /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="PaginationSize.None" />.
-    /// </remarks>
+    /// </para>
     [AddedVersion("1.0.0")]
     [DefaultValue(PaginationSize.None)]
     [Description("Get or sets the <code>Pagination</code> size.")]
@@ -174,9 +182,9 @@ public partial class Pagination : BulmaComponentBase
     /// <summary>
     /// Gets or sets the total pages.
     /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is 0.
-    /// </remarks>
+    /// </para>
     [AddedVersion("1.0.0")]
     [DefaultValue(0)]
     [Description("Gets or sets the total pages.")]

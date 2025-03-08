@@ -31,11 +31,14 @@ public partial class BulmaNavbar : BulmaComponentBase
 
     #region Properties, Indexers
 
-    [Parameter] public string? ApplicationName { get; set; }
+    [Parameter] 
+    public string? ApplicationName { get; set; } = null;
 
-    [Parameter] public string? BrandImgAltText { get; set; }
+    [Parameter] 
+    public string? BrandImgAltText { get; set; } = null;
 
-    [Parameter] public string? BrandImgSrc { get; set; }
+    [Parameter] 
+    public string? BrandImgSrc { get; set; } = null;
 
     #endregion
 }

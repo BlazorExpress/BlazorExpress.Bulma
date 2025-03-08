@@ -22,67 +22,76 @@ public partial class Tag : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the child content.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the child content.")]
+    [EditorRequired]
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
     /// <summary>
     /// Gets or sets the color.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="TagColor.None" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(TagColor.None)]
     [Description("Gets or sets the color.")]
-    [Parameter] public TagColor Color { get; set; } = TagColor.None;
+    [Parameter] 
+    public TagColor Color { get; set; } = TagColor.None;
 
     /// <summary>
     /// If <see langword="true"/>, the tag will converted to delete button.
     /// </summary>
-    /// <remarks>
+    /// <para>
     /// The default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If <b>true</b>, the tag will converted to delete button.")]
-    [Parameter] public bool IsDelete { get; set; } = false;
+    [Parameter] 
+    public bool IsDelete { get; set; } = false;
 
     /// <summary>
     /// If <see langword="true"/>, the tag will react to hover state. 
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// The default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If <b>true</b>, the tag will react to hover state.")]
-    [Parameter] public bool IsHoverable { get; set; } = false;
+    [Parameter] 
+    public bool IsHoverable { get; set; } = false;
 
     /// <summary>
     /// If <see langword="true"/>, the rounded variant will be enabled.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// The default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If <b>true</b>, the rounded variant will be enabled.")]
-    [Parameter] public bool IsRounded { get; set; } = false;
+    [Parameter] 
+    public bool IsRounded { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the size.
+    /// <para>
+    /// Default value is <see cref="TagSize.None" />.
+    /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(TagSize.None)]
     [Description("Gets or sets the size.")]
-    [Parameter] public TagSize Size { get; set; } = TagSize.None;
+    [Parameter] 
+    public TagSize Size { get; set; } = TagSize.None;
 
     /// <summary>
     /// If <see langword="true"/>, shows the color in its light version.

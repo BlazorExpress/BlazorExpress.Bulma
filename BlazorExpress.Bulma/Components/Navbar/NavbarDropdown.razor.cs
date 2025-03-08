@@ -1,5 +1,11 @@
 ﻿namespace BlazorExpress.Bulma;
 
+/// <summary>
+/// NavbarDropdown component
+/// <para>
+/// <see href="https://bulma.io/documentation/components/navbar/" />
+/// </para>
+/// </summary>
 public partial class NavbarDropdown : BulmaComponentBase
 {
     #region Properties, Indexers
@@ -14,19 +20,26 @@ public partial class NavbarDropdown : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the child content.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the child content.")]
+    [EditorRequired]
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
     /// <summary>
     /// Gets or sets the navbar dropdown position.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="NavbarDropdownPosition.Left" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(NavbarDropdownPosition.Left)]
+    [Description("Gets or sets the navbar dropdown position.")]
     [Parameter]
     public NavbarDropdownPosition Position { get; set; } = NavbarDropdownPosition.Left;
 

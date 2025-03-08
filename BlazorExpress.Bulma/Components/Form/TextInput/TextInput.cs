@@ -111,10 +111,10 @@ public partial class TextInput : BulmaComponentBase
 
     /// <summary>
     /// If <see langword="true" />, TextInput can complete the values automatically by the browser.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="false"/>.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If <b>true</b>, <code>TextInput</code> can complete the values automatically by the browser.")]
@@ -135,10 +135,10 @@ public partial class TextInput : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the color.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="TextInputColor.None" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(TextInputColor.None)]
     [Description("Gets or sets the color.")]
@@ -146,33 +146,38 @@ public partial class TextInput : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the disabled state.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is false.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("Gets or sets the disabled state.")]
     [Parameter]
     public bool Disabled { get; set; } = false;
 
-    [CascadingParameter] private EditContext EditContext { get; set; } = default!;
+    [CascadingParameter] 
+    private EditContext EditContext { get; set; } = default!;
 
     private string fieldCssClasses => EditContext?.FieldCssClass(fieldIdentifier) ?? "";
 
     /// <summary>
     /// If true, the rounded variant will be enabled.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// The default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the rounded variant will be enabled.")]
-    [Parameter] public bool IsRounded { get; set; }
+    [Parameter] 
+    public bool IsRounded { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the maximum number of characters that can be entered.
+    /// <para>
+    /// Default value is <see langword="null"/>.
+    /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
@@ -183,18 +188,21 @@ public partial class TextInput : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the placeholder text.
+    /// <para>
+    /// Default value is <see langword="null"/>.
+    /// </para>
     /// </summary>
-    /// <remarks>
-    /// Default value is null.
-    /// </remarks>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the placeholder text.")]
     [Parameter]
-    public string? Placeholder { get; set; }
+    public string? Placeholder { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the size.
+    /// <para>
+    /// Default value is <see cref="TextInputSize.None" />.
+    /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(TextInputSize.None)]
@@ -203,6 +211,9 @@ public partial class TextInput : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the state.
+    /// <para>
+    /// Default value is <see cref="TextInputState.None" />.
+    /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(TextInputState.None)]
@@ -211,10 +222,10 @@ public partial class TextInput : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the text alignment.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="Alignment.None" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(Alignment.None)]
     [Description("Gets or sets the text alignment.")]
@@ -223,6 +234,9 @@ public partial class TextInput : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the value.
+    /// <para>
+    /// Default value is <see langword="null" />.
+    /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
@@ -245,7 +259,8 @@ public partial class TextInput : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the expression.")]
     [ParameterTypeName("Expression<Func<string>>?")]
-    [Parameter] public Expression<Func<string>>? ValueExpression { get; set; } = default!;
+    [Parameter] 
+    public Expression<Func<string>>? ValueExpression { get; set; } = default!;
 
     #endregion
 }

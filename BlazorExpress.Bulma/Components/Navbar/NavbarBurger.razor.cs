@@ -1,5 +1,11 @@
 ﻿namespace BlazorExpress.Bulma;
 
+/// <summary>
+/// NavbarBurger component
+/// <para>
+/// <see href="https://bulma.io/documentation/components/navbar/" />
+/// </para>
+/// </summary>
 public partial class NavbarBurger : BulmaComponentBase
 {
     #region Methods
@@ -24,36 +30,57 @@ public partial class NavbarBurger : BulmaComponentBase
             (BulmaCssClass.IsActive, IsActive)
         );
 
-    [Parameter] public EventCallback<bool> ActiveStateChanged { get; set; }
+    [Parameter] 
+    public EventCallback<bool> ActiveStateChanged { get; set; }
 
     /// <summary>
-    /// Gets or sets the content to be rendered within the component.
+    /// Gets or sets the child content.
+    /// <para>
+    /// Default value is <see langword="null" />.
+    /// </para>
     /// </summary>
-    /// <remarks>
-    /// Default value is null.
-    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the child content.")]
+    [EditorRequired]
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
     /// <summary>
     /// Gets or sets the active state.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets the active state.")]
     [Parameter]
-    public bool IsActive { get; set; }
+    public bool IsActive { get; set; } = false;
 
-    [Parameter] public bool IsLeft { get; set; }
+    /// <summary>
+    /// If <see langword="true" />, sets the <see cref="NavbarBurger"/> to the left side.
+    /// <para>
+    /// Default value is <see langword="false" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If <b>true</b>, sets the <code>NavbarBurger</code> to the left side.")]
+    [Parameter] 
+    public bool IsLeft { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the target id.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the target id.")]
     [Parameter]
-    public string? TargetId { get; set; }
+    public string? TargetId { get; set; } = null;
 
     #endregion
 }

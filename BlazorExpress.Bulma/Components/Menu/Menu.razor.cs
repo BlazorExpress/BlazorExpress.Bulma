@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Menu component
+/// <para>
 /// <see href="https://bulma.io/documentation/components/menu/" />
+/// </para>
 /// </summary>
 public partial class Menu : BulmaComponentBase
 {
@@ -82,15 +84,39 @@ public partial class Menu : BulmaComponentBase
     /// <summary>
     /// Gets or sets the child content.
     /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the child content.")]
+    [EditorRequired]
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
-    [Parameter] public bool IsScrollable { get; set; }
+    /// <summary>
+    /// If <see langword="true" />, the menu is scrollable.
+    /// <para>
+    /// Default value is <see langword="false" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If <b>true</b>, the menu is scrollable.")]
+    [Parameter]
+    public bool IsScrollable { get; set; } = false;
 
-    [Parameter] public bool IsVisible { get; set; } = true;
+    /// <summary>
+    /// If <see langword="true" />, the menu is visible.
+    /// <para>
+    /// Default value is <see langword="true" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(true)]
+    [Description("If <b>true</b>, the menu is visible.")]
+    [Parameter] 
+    public bool IsVisible { get; set; } = true;
 
     #endregion
 }

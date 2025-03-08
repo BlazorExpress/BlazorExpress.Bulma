@@ -31,10 +31,10 @@ public partial class Tab : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the child content.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the child content.")]
@@ -46,10 +46,10 @@ public partial class Tab : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the active state.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("Gets or sets the active state.")]
@@ -58,10 +58,10 @@ public partial class Tab : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the disabled state.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("Gets or sets the disabled state.")]
@@ -70,43 +70,43 @@ public partial class Tab : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the tab name.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the tab name.")]
     [Parameter]
-    public string? Name { get; set; }
+    public string? Name { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the parent.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [CascadingParameter]
     internal Tabs? Parent { get; set; }
 
     /// <summary>
     /// Gets or sets the tab title.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the tab title.")]
     [Parameter]
-    public string? Title { get; set; }
+    public string? Title { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the tab title template.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the tab title template.")]

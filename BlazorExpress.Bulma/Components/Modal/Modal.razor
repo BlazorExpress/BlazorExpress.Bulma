@@ -1,0 +1,57 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+
+<div @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
+    <div class="@BulmaCssClass.ModalBackground"></div>
+    @if (ChildContent is not null)
+    {
+        <!-- Child Content -->
+        <div class="@BulmaCssClass.ModalContent">
+            @ChildContent
+        </div>
+
+        <!-- Close button -->
+        @if (!HideCloseButton)
+        {
+            <button class="@CloseButtonClassNames" aria-label="close" @onclick="Hide"></button>
+        }
+    }
+    else
+    {
+        <!-- Modal card -->
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <!-- Title -->
+                <p class="@TitleClassNames">
+                    @if (TitleContent is not null)
+                    {
+                        @TitleContent
+                    }
+                    else if (string.IsNullOrWhiteSpace(Title))
+                    {
+                        @Title
+                    }
+                </p>
+                <!-- Close button -->
+                @if (!HideCloseButton)
+                {
+                    <DeleteButton @onclick="Hide" />
+                }
+            </header>
+            <!-- Body -->
+            <section class="@BodyClassNames">
+                @if (BodyContent is not null)
+                {
+                    @BodyContent
+                }
+            </section>
+            <!-- Footer -->
+            @if (FootContent is not null)
+            {
+                <footer class="@FootClassNames">
+                    @FootContent
+                </footer>
+            }
+        </div>
+    }
+</div>
