@@ -1,5 +1,18 @@
-<Modal>
+<Modal IsActive="isModalVisible">
     <ModalContent>
-        Modal content text goes here.
+        <Box>
+            Modal content text goes here.
+        </Box>
     </ModalContent>
 </Modal>
+
+<Button Color="ButtonColor.Link" Size="ButtonSize.Small" @onclick="ShowModal">Show Modal</Button>
+
+@code{
+    private bool isModalVisible = false;
+
+    private void ShowModal()
+    {
+        isModalVisible = true;
+    }
+}

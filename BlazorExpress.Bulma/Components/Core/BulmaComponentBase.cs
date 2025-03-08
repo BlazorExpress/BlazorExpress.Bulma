@@ -153,7 +153,7 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
     [DefaultValue(null)]
     [Description("Gets or sets the CSS class.")]
     [Parameter] 
-    public string? Class { get; set; }
+    public string? Class { get; set; } = null;
 
     protected virtual string? ClassNames => Class;
 
@@ -176,7 +176,7 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
     [DefaultValue(null)]
     [Description("Gets or sets the ID. If not set, a unique ID will be generated.")]
     [Parameter] 
-    public string? Id { get; set; }
+    public string? Id { get; set; } = null;
 
     protected bool IsRenderComplete { get; private set; }
 
@@ -193,7 +193,7 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
     [DefaultValue(null)]
     [Description("Gets or sets the CSS style.")]
     [Parameter] 
-    public string? Style { get; set; }
+    public string? Style { get; set; } = null;
 
     protected virtual string? StyleNames => Style;
 

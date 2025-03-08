@@ -73,7 +73,7 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the href.")]
-    [Parameter] public string? Href { get; set; }
+    [Parameter] public string? Href { get; set; } = null;
 
     /// <summary>
     /// If true, the dark version of the button will be enabled.

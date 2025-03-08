@@ -39,7 +39,7 @@ public partial class NavbarLink : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the <code>href</code> attribute to the link.")]
     [Parameter]
-    public string? Href { get; set; }
+    public string? Href { get; set; } = null;
 
     #endregion
 }

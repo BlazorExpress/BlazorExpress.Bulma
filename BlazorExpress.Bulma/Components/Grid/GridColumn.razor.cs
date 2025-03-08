@@ -207,7 +207,8 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the CSS class for the table header.")]
-    [Parameter] public string? ThCssClass { get; set; }
+    [Parameter] 
+    public string? ThCssClass { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the CSS style for the table header.
@@ -218,7 +219,8 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the CSS style for the table header.")]
-    [Parameter] public string? ThCssStyle { get; set; }
+    [Parameter] 
+    public string? ThCssStyle { get; set; } = null;
 
     internal string? ThStyleNames => ThCssStyle;
 

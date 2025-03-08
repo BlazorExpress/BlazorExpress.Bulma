@@ -80,7 +80,7 @@ public partial class NavbarBurger : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the target id.")]
     [Parameter]
-    public string? TargetId { get; set; }
+    public string? TargetId { get; set; } = null;
 
     #endregion
 }

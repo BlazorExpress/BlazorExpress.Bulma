@@ -186,6 +186,7 @@ public static class BulmaCssClass
     public const string ModalCardTitle = "modal-card-title";
     public const string ModalCardBody = "modal-card-body";
     public const string ModalCardFoot = "modal-card-foot";
+    public const string ModalClose = "modal-close";
     public const string ModalContent = "modal-content";
 
     public const string Navbar = "navbar";

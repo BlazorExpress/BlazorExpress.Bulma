@@ -364,7 +364,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the grid container css class.")]
     [Parameter]
-    public string? GridContainerCssClass { get; set; }
+    public string? GridContainerCssClass { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the grid container css style.
@@ -376,7 +376,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the grid container css style.")]
     [Parameter]
-    public string? GridContainerCssStyle { get; set; }
+    public string? GridContainerCssStyle { get; set; } = null;
 
     private string? GridContainerStyleNames => GridContainerCssStyle;
 
@@ -404,7 +404,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the <code>tbody</code> element css class.")]
     [Parameter]
-    public string? GridTbodyCssClass { get; set; }
+    public string? GridTbodyCssClass { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the tbody element css style.
@@ -416,7 +416,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the <code>tbody</code> element css style.")]
     [Parameter]
-    public string? GridTbodyCssStyle { get; set; }
+    public string? GridTbodyCssStyle { get; set; } = null;
 
     private string? GridTbodyStyleNames => GridTheadCssStyle;
 
@@ -432,7 +432,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the <code>thead</code> element css class.")]
     [Parameter]
-    public string? GridTheadCssClass { get; set; }
+    public string? GridTheadCssClass { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the thead element css style.
@@ -444,7 +444,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the <code>thead</code> element css style.")]
     [Parameter]
-    public string? GridTheadCssStyle { get; set; }
+    public string? GridTheadCssStyle { get; set; } = null;
 
     private string? GridTheadRowClassNames => GridTheadCssClass;
 
@@ -458,7 +458,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the thead's <code>tr</code> element css class.")]
     [Parameter]
-    public string? GridTheadRowCssClass { get; set; }
+    public string? GridTheadRowCssClass { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the thead's tr element css style.
@@ -470,7 +470,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the thead's <code>tr</code> element css style.")]
     [Parameter]
-    public string? GridTheadRowCssStyle { get; set; }
+    public string? GridTheadRowCssStyle { get; set; } = null;
 
     private string? GridTheadRowStyleNames => GridTheadRowCssStyle;
 

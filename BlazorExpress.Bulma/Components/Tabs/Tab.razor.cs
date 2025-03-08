@@ -78,7 +78,7 @@ public partial class Tab : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the tab name.")]
     [Parameter]
-    public string? Name { get; set; }
+    public string? Name { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the parent.
@@ -99,7 +99,7 @@ public partial class Tab : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the tab title.")]
     [Parameter]
-    public string? Title { get; set; }
+    public string? Title { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the tab title template.

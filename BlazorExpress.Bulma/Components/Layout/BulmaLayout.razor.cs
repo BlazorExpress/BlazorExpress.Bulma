@@ -44,18 +44,31 @@ public partial class BulmaLayout : BulmaLayoutComponentBase
     // height
 
     [Parameter] public RenderFragment? ContentSection { get; set; }
-    [Parameter] public string? ContentSectionCssClass { get; set; }
+
+    [Parameter] 
+    public string? ContentSectionCssClass { get; set; } = null;
+
     protected string? ContentSectionCssClassNames => BuildClassNames(ContentSectionCssClass, ("be-bulma-page-body p-5", true));
 
-    [Parameter] public RenderFragment? FooterSection { get; set; }
-    [Parameter] public string? FooterSectionCssClass { get; set; } = "bg-body-tertiary";
+    [Parameter] 
+    public RenderFragment? FooterSection { get; set; }
+
+    [Parameter] 
+    public string? FooterSectionCssClass { get; set; } = "bg-body-tertiary";
+
     protected string? FooterSectionCssClassNames => BuildClassNames(FooterSectionCssClass, ("be-bulma-page-footer p-4", true));
 
-    [Parameter] public RenderFragment? HeaderSection { get; set; }
-    [Parameter] public string? HeaderSectionCssClass { get; set; } = "d-flex justify-content-end";
+    [Parameter] 
+    public RenderFragment? HeaderSection { get; set; }
 
-    [Parameter] public RenderFragment? SidebarSection { get; set; }
-    [Parameter] public string? SidebarSectionCssClass { get; set; } = "d-flex justify-content-end";
+    [Parameter] 
+    public string? HeaderSectionCssClass { get; set; } = "d-flex justify-content-end";
+
+    [Parameter] 
+    public RenderFragment? SidebarSection { get; set; }
+
+    [Parameter] 
+    public string? SidebarSectionCssClass { get; set; } = "d-flex justify-content-end";
 
     #endregion
 }

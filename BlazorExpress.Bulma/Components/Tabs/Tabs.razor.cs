@@ -297,7 +297,7 @@ public partial class Tabs : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the tabs container CSS class.")]
     [Parameter]
-    public string? TabsContainerCssClass { get; set; }
+    public string? TabsContainerCssClass { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the <see cref="Tabs" /> type.

@@ -3,13 +3,17 @@
 
 <div @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
     <div class="@BulmaCssClass.ModalBackground"></div>
-    
+
     @* modal content *@
     @if (ModalContent is not null)
     {
         <div class="@BulmaCssClass.ModalContent">
             @ModalContent
         </div>
-    }
 
+        @if (!HideCloseButton)
+        {
+            <button class="modal-close is-large" aria-label="close" @onclick="Hide"></button>
+        }
+    }
 </div>

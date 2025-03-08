@@ -120,7 +120,7 @@ public partial class ScriptLoader : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the ID of the script element.")]
     [Parameter]
-    public string? ScriptId { get; set; }
+    public string? ScriptId { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the URI of the external script to load.
@@ -133,7 +133,7 @@ public partial class ScriptLoader : BulmaComponentBase
     [Description("Gets or sets the URI of the external script to load.")]
     [EditorRequired]
     [Parameter]
-    public string? Source { get; set; } = default!;
+    public string? Source { get; set; } = null;
 
     #endregion
 }

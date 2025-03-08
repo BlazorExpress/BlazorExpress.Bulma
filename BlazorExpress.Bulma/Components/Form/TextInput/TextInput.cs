@@ -196,7 +196,7 @@ public partial class TextInput : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the placeholder text.")]
     [Parameter]
-    public string? Placeholder { get; set; }
+    public string? Placeholder { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the size.

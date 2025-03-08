@@ -92,7 +92,7 @@ public partial class GoogleMap : BulmaComponentBase
     [Description("Gets or sets the Google Maps API key.")]
     [EditorRequired]
     [Parameter]
-    public string? ApiKey { get; set; }
+    public string? ApiKey { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the center parameter.
