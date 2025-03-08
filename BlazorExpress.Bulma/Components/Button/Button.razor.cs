@@ -42,10 +42,10 @@ public partial class Button : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the child content.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the child content.")]
@@ -55,10 +55,10 @@ public partial class Button : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the color.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="ButtonColor.None" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(ButtonColor.None)]
     [Description("Gets or sets the color.")]
@@ -66,10 +66,10 @@ public partial class Button : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the href.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the href.")]
@@ -77,10 +77,10 @@ public partial class Button : BulmaComponentBase
 
     /// <summary>
     /// If true, the dark version of the button will be enabled.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// The default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the dark version of the button will be enabled.")]
@@ -88,10 +88,10 @@ public partial class Button : BulmaComponentBase
 
     /// <summary>
     /// If true, the button will be disabled.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// The default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the button will be disabled.")]
@@ -99,10 +99,10 @@ public partial class Button : BulmaComponentBase
 
     /// <summary>
     /// If true, the button will be expanded to the full width of its container.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// The default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the button will be expanded to the full width of its container.")]
@@ -110,10 +110,10 @@ public partial class Button : BulmaComponentBase
 
     /// <summary>
     /// If true, the inverted variant will be enabled.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// The default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the inverted variant will be enabled.")]
@@ -121,10 +121,10 @@ public partial class Button : BulmaComponentBase
 
     /// <summary>
     /// If true, the light version of the button will be enabled.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// The default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the light version of the button will be enabled.")]
@@ -132,10 +132,10 @@ public partial class Button : BulmaComponentBase
 
     /// <summary>
     /// If true, the button will be loading.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// The default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the button will be loading.")]
@@ -143,10 +143,10 @@ public partial class Button : BulmaComponentBase
 
     /// <summary>
     /// If true, the outlined variant will be enabled.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// The default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the outlined variant will be enabled.")]
@@ -154,10 +154,10 @@ public partial class Button : BulmaComponentBase
 
     /// <summary>
     /// If true, the button will be responsive.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// The default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the button will be responsive.")]
@@ -165,10 +165,10 @@ public partial class Button : BulmaComponentBase
 
     /// <summary>
     /// If true, the rounded variant will be enabled.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// The default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the rounded variant will be enabled.")]
@@ -176,10 +176,10 @@ public partial class Button : BulmaComponentBase
 
     /// <summary>
     /// If true, the skeleton variant will be enabled.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// The default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the skeleton variant will be enabled.")]
@@ -188,6 +188,9 @@ public partial class Button : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the size.
+    /// <para>
+    /// The default value is <see cref="ButtonSize.None" />.
+    /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(ButtonSize.None)]
@@ -196,10 +199,10 @@ public partial class Button : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the button type.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="ButtonType.Button" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(ButtonType.Button)]
     [Description("Gets or sets the button type.")]

@@ -1,8 +1,8 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// Block component
-/// <see href="https://bulma.io/documentation/elements/block/" />
+/// Modal component
+/// <see href="https://bulma.io/documentation/components/modal/" />
 /// </summary>
 public partial class Modal : BulmaComponentBase
 {

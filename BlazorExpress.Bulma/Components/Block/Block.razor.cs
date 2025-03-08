@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Block component
+/// <para>
 /// <see href="https://bulma.io/documentation/elements/block/" />
+/// </para>
 /// </summary>
 public partial class Block : BulmaComponentBase
 {
@@ -12,10 +14,10 @@ public partial class Block : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the child content.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the child content.")]

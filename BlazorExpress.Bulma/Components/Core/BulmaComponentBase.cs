@@ -145,6 +145,9 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
 
     /// <summary>
     /// Gets or sets the CSS class.
+    /// <para>
+    /// Default value is <see langword="null" />.
+    /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
@@ -157,13 +160,17 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
     /// <summary>
     /// Gets or sets the associated <see cref="ElementReference"/>.
     /// <para>
-    /// May be <see langword="null"/> if accessed before the component is rendered.
+    /// May be <see langword="null"/>, if accessed before the component is rendered.
     /// </para>
     /// </summary>
-    [DisallowNull] public ElementReference? Element { get; set; }
+    [DisallowNull] 
+    public ElementReference? Element { get; set; }
 
     /// <summary>
     /// Gets or sets the ID. If not set, a unique ID will be generated.
+    /// <para>
+    /// Default value is <see langword="null" />.
+    /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
@@ -178,6 +185,9 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
 
     /// <summary>
     /// Gets or sets the CSS style.
+    /// <para>
+    /// Default value is <see langword="null" />.
+    /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]

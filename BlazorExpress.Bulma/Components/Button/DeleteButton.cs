@@ -44,6 +44,9 @@ public partial class DeleteButton : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the size.
+    /// <para>
+    /// Default value is <see cref="DeleteButtonSize.None" />
+    /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(DeleteButtonSize.None)]
