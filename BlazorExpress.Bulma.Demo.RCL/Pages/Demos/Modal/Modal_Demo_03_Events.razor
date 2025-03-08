@@ -1,0 +1,37 @@
+<Modal @ref="modalRef" OnHidden="OnModalHidden" OnShown="OnModalShown">
+    <TitleContent>
+        Modal title
+    </TitleContent>
+    <BodyContent>
+        Content goes here.
+    </BodyContent>
+    <FootContent>
+        <Buttons>
+            <Button Color="ButtonColor.Primary">Save changes</Button>
+            <Button @onclick="HideModal">Cancel</Button>
+        </Buttons>
+    </FootContent>
+</Modal>
+
+<Button Color="ButtonColor.Link" Size="ButtonSize.Small" @onclick="ShowModal">Show Modal</Button>
+
+<div class="mt-3">
+    @foreach (var item in messages)
+    {
+        <p>Event: @item</p>
+    }
+</div>
+
+@code {
+    private Modal modalRef = default!;
+
+    List<string> messages = new();
+
+    private void HideModal() => modalRef.Hide();
+
+    private void ShowModal() => modalRef.Show();
+
+    private void OnModalHidden() => messages.Add($"Modal hidden, Time: {DateTime.Now.ToString()}");
+
+    private void OnModalShown() => messages.Add($"Modal shown, Time: {DateTime.Now.ToString()}");
+}

@@ -1,18 +1,13 @@
-<Modal IsActive="isModalVisible">
-    <ModalContent>
-        <Box>
-            Modal content text goes here.
-        </Box>
-    </ModalContent>
+<Modal @ref="modalRef" CloseButtonCssClass="is-large">
+    <Box>
+        Modal content text goes here.
+    </Box>
 </Modal>
 
 <Button Color="ButtonColor.Link" Size="ButtonSize.Small" @onclick="ShowModal">Show Modal</Button>
 
-@code{
-    private bool isModalVisible = false;
+@code {
+    private Modal modalRef = default!;
 
-    private void ShowModal()
-    {
-        isModalVisible = true;
-    }
+    private void ShowModal() => modalRef.Show();
 }
