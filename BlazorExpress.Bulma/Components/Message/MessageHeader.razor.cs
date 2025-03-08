@@ -1,5 +1,11 @@
 ﻿namespace BlazorExpress.Bulma;
 
+/// <summary>
+/// MessageHeader component
+/// <para>
+/// <see href="https://bulma.io/documentation/components/message/" />
+/// </para>
+/// </summary>
 public partial class MessageHeader : BulmaComponentBase
 {
     #region Methods
@@ -14,10 +20,10 @@ public partial class MessageHeader : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the child content.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the child content.")]
@@ -25,9 +31,11 @@ public partial class MessageHeader : BulmaComponentBase
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
-    [CascadingParameter] public Message Parent { get; set; } = default!;
+    [CascadingParameter] 
+    public Message Parent { get; set; } = default!;
 
-    [CascadingParameter(Name = "ShowDeleteButton")] public bool ShowDeleteButton { get; set; } = true;
+    [CascadingParameter(Name = "ShowDeleteButton")] 
+    public bool ShowDeleteButton { get; set; } = true;
 
     #endregion
 }

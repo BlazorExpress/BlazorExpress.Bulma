@@ -216,10 +216,10 @@ public partial class Tabs : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the <see cref="Tabs" /> alignment.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="TabsAlignment.None" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(TabsAlignment.None)]
     [Description("Gets or sets the <code>Tabs</code> alignment.")]
@@ -228,10 +228,10 @@ public partial class Tabs : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the child content.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the child content.")]
@@ -240,12 +240,11 @@ public partial class Tabs : BulmaComponentBase
     public RenderFragment? ChildContent { get; set; }
 
     /// <summary>
-    /// Gets or sets the <see cref="Tabs" /> width.
     /// If <see langword="true" />, tabs will take up the whole width available.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("Gets or sets the <code>Tabs</code> width. If <b>true</b>, tabs will take up the whole width available.")]
@@ -278,10 +277,10 @@ public partial class Tabs : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the <see cref="Tabs" /> size.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="TabsSize.None" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(TabsSize.None)]
     [Description("Gets or sets the <code>Tabs</code> size.")]
@@ -290,10 +289,10 @@ public partial class Tabs : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the tabs container CSS class.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the tabs container CSS class.")]
@@ -302,10 +301,10 @@ public partial class Tabs : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the <see cref="Tabs" /> type.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="TabsType.None" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(TabsType.None)]
     [Description("Gets or sets the <code>Tabs</code> type.")]

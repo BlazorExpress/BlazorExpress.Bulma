@@ -1,5 +1,11 @@
 ﻿namespace BlazorExpress.Bulma;
 
+/// <summary>
+/// Skeleton component
+/// <para>
+/// <see href="https://bulma.io/documentation/features/skeletons/" />
+/// </para>
+/// </summary>
 public partial class SkeletonLine : BulmaComponentBase
 {
     #region Methods
@@ -30,22 +36,22 @@ public partial class SkeletonLine : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the <see cref="SkeletonLine" /> color.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="SkeletonColor.None" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(SkeletonColor.None)]
     [Description("Gets or sets the <code>SkeletonLine</code> color.")]
     [Parameter]
-    public SkeletonColor Color { get; set; }
+    public SkeletonColor Color { get; set; } = SkeletonColor.None;
 
     /// <summary>
     /// Gets or sets the <see cref="SkeletonLine" /> width.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is 100.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(100)]
     [Description("Gets or sets the <code>SkeletonLine</code> width.")]

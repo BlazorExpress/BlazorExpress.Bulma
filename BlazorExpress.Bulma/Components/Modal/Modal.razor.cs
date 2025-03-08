@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Modal component
+/// <para>
 /// <see href="https://bulma.io/documentation/components/modal/" />
+/// </para>
 /// </summary>
 public partial class Modal : BulmaComponentBase
 {
@@ -16,10 +18,10 @@ public partial class Modal : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the modal content.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the modal content.")]

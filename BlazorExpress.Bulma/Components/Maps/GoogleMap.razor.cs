@@ -83,10 +83,10 @@ public partial class GoogleMap : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the Google Maps API key.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the Google Maps API key.")]
@@ -96,10 +96,10 @@ public partial class GoogleMap : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the center parameter.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the center parameter.")]
@@ -108,10 +108,10 @@ public partial class GoogleMap : BulmaComponentBase
 
     /// <summary>
     /// Makes the marker clickable if set to <see langword="true" />.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="false" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("Makes the marker clickable if set to <b>true</b>.")]
@@ -122,10 +122,10 @@ public partial class GoogleMap : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the height of the <see cref="GoogleMap" />.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the height of the <code>GoogleMap</code>.")]
@@ -134,10 +134,10 @@ public partial class GoogleMap : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the units for the <see cref="Height" />.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="Unit.Px" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(Unit.Px)]
     [Description("Gets or sets the units for the <code>Height</code>.")]
@@ -146,10 +146,10 @@ public partial class GoogleMap : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the markers.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the markers.")]
@@ -167,10 +167,10 @@ public partial class GoogleMap : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the width of the <see cref="GoogleMap" />.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the width of the <code>GoogleMap</code>.")]
@@ -179,10 +179,10 @@ public partial class GoogleMap : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the units for the <see cref="Width" />.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see cref="Unit.Percentage" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(Unit.Percentage)]
     [Description("Gets or sets the units for the <code>Width</code>.")]
@@ -191,10 +191,10 @@ public partial class GoogleMap : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the zoom level of the <see cref="GoogleMap" />.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is 14.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(14)]
     [Description("Gets or sets the zoom level of the <code>GoogleMap</code>.")]

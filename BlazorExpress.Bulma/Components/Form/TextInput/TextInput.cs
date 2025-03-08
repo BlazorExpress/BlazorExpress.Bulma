@@ -170,7 +170,8 @@ public partial class TextInput : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the rounded variant will be enabled.")]
-    [Parameter] public bool IsRounded { get; set; }
+    [Parameter] 
+    public bool IsRounded { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the maximum number of characters that can be entered.

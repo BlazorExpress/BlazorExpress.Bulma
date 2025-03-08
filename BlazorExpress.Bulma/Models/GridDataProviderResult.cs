@@ -6,18 +6,18 @@ public class GridDataProviderResult<TItem>
 
     /// <summary>
     /// The provided items by the request.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is null.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     public required IEnumerable<TItem> Data { get; init; }
 
     /// <summary>
     /// The total item count in the source (for pagination and infinite scroll).
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is null.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     public int TotalCount { get; init; }
 
     #endregion

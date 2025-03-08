@@ -1,5 +1,11 @@
 ﻿namespace BlazorExpress.Bulma;
 
+/// <summary>
+/// MessageBody component
+/// <para>
+/// <see href="https://bulma.io/documentation/components/message/" />
+/// </para>
+/// </summary>
 public partial class MessageBody : BulmaComponentBase
 {
     #region Properties, Indexers
@@ -8,10 +14,10 @@ public partial class MessageBody : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the child content.
-    /// </summary>
-    /// <remarks>
+    /// <para>
     /// Default value is <see langword="null" />.
-    /// </remarks>
+    /// </para>
+    /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the child content.")]

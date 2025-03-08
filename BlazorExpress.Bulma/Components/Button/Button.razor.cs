@@ -84,7 +84,8 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the dark version of the button will be enabled.")]
-    [Parameter] public bool IsDarkVersion { get; set; }
+    [Parameter] 
+    public bool IsDarkVersion { get; set; } = false;
 
     /// <summary>
     /// If true, the button will be disabled.
@@ -95,7 +96,8 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the button will be disabled.")]
-    [Parameter] public bool IsDisabled { get; set; }
+    [Parameter] 
+    public bool IsDisabled { get; set; } = false;
 
     /// <summary>
     /// If true, the button will be expanded to the full width of its container.
@@ -106,7 +108,8 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the button will be expanded to the full width of its container.")]
-    [Parameter] public bool IsFullWidth { get; set; }
+    [Parameter] 
+    public bool IsFullWidth { get; set; } = false;
 
     /// <summary>
     /// If true, the inverted variant will be enabled.
@@ -117,7 +120,8 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the inverted variant will be enabled.")]
-    [Parameter] public bool IsInverted { get; set; }
+    [Parameter] 
+    public bool IsInverted { get; set; } = false;
 
     /// <summary>
     /// If true, the light version of the button will be enabled.
@@ -128,7 +132,8 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the light version of the button will be enabled.")]
-    [Parameter] public bool IsLightVersion { get; set; }
+    [Parameter] 
+    public bool IsLightVersion { get; set; } = false;
 
     /// <summary>
     /// If true, the button will be loading.
@@ -139,7 +144,8 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the button will be loading.")]
-    [Parameter] public bool IsLoading { get; set; }
+    [Parameter] 
+    public bool IsLoading { get; set; } = false;
 
     /// <summary>
     /// If true, the outlined variant will be enabled.
@@ -150,7 +156,8 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the outlined variant will be enabled.")]
-    [Parameter] public bool IsOutlined { get; set; }
+    [Parameter] 
+    public bool IsOutlined { get; set; } = false;
 
     /// <summary>
     /// If true, the button will be responsive.
@@ -161,7 +168,8 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the button will be responsive.")]
-    [Parameter] public bool IsResponsive { get; set; }
+    [Parameter] 
+    public bool IsResponsive { get; set; } = false;
 
     /// <summary>
     /// If true, the rounded variant will be enabled.
@@ -172,7 +180,8 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the rounded variant will be enabled.")]
-    [Parameter] public bool IsRounded { get; set; }
+    [Parameter] 
+    public bool IsRounded { get; set; } = false;
 
     /// <summary>
     /// If true, the skeleton variant will be enabled.
@@ -184,7 +193,7 @@ public partial class Button : BulmaComponentBase
     [DefaultValue(false)]
     [Description("If true, the skeleton variant will be enabled.")]
     [Parameter]
-    public bool IsSkeleton { get; set; }
+    public bool IsSkeleton { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the size.

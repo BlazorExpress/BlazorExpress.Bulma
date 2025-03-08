@@ -257,7 +257,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(false)]
     [Description("Gets or sets the grid filtering.")]
     [Parameter]
-    public bool AllowFiltering { get; set; }
+    public bool AllowFiltering { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the grid paging.
@@ -269,7 +269,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(false)]
     [Description("Gets or sets the grid paging.")]
     [Parameter]
-    public bool AllowPaging { get; set; }
+    public bool AllowPaging { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the grid sorting.
@@ -281,7 +281,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(false)]
     [Description("Gets or sets the grid sorting.")]
     [Parameter]
-    public bool AllowSorting { get; set; }
+    public bool AllowSorting { get; set; } = false;
 
     /// <summary>
     /// Automatically hides the paging controls when the grid item count is less than or equal to the <see cref="PageSize" />
@@ -294,7 +294,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(false)]
     [Description("Automatically hides the paging controls when the grid item count is less than or equal to the <code>PageSize</code> and this property is set to <b>true</b>.")]
     [Parameter]
-    public bool AutoHidePaging { get; set; }
+    public bool AutoHidePaging { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the child content.
@@ -498,7 +498,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(false)]
     [Description("Indicates whether to add borders to all cells.")]
     [Parameter]
-    public bool IsBordered { get; set; }
+    public bool IsBordered { get; set; } = false;
 
     /// <summary>
     /// Indicates whether to make the table full width.
@@ -509,7 +509,8 @@ public partial class Grid<TItem> : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(true)]
     [Description("Indicates whether to make the table full width.")]
-    [Parameter] public bool IsFullWidth { get; set; } = true;
+    [Parameter] 
+    public bool IsFullWidth { get; set; } = true;
 
     /// <summary>
     /// Indicates whether to add a hover effect to each row.
@@ -521,7 +522,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(false)]
     [Description("Indicates whether to add a hover effect to each row.")]
     [Parameter]
-    public bool IsHoverable { get; set; }
+    public bool IsHoverable { get; set; } = false;
 
     /// <summary>
     /// Indicates whether to make the cells narrower.
@@ -533,7 +534,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(false)]
     [Description("Indicates whether to make the cells narrower.")]
     [Parameter]
-    public bool IsNarrow { get; set; }
+    public bool IsNarrow { get; set; } = false;
 
     /// <summary>
     /// Gets or sets a value indicating whether the grid is responsive.
@@ -545,7 +546,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(false)]
     [Description("Gets or sets a value indicating whether the grid is responsive.")]
     [Parameter]
-    public bool IsResponsive { get; set; }
+    public bool IsResponsive { get; set; } = false;
 
     /// <summary>
     /// Indicates whether to add stripes to the table.
@@ -557,7 +558,7 @@ public partial class Grid<TItem> : BulmaComponentBase
     [DefaultValue(false)]
     [Description("Indicates whether to add stripes to the table.")]
     [Parameter]
-    public bool IsStriped { get; set; }
+    public bool IsStriped { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the items per page text.

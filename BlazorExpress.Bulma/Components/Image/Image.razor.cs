@@ -62,7 +62,7 @@ public partial class Image : BulmaComponentBase
     [DefaultValue(false)]
     [Description("If true, image will be rounded.")]
     [Parameter] 
-    public bool IsRounded { get; set; }
+    public bool IsRounded { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the image ratio.
