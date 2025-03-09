@@ -86,16 +86,16 @@ public partial class DocsMainLayout : MainLayoutBase
             Name = "COMPONENTS",
             CssClass = "is-size-7 has-text-weight-bold has-text-dark",
             Links = [
-                new Link { Href = RouteConstants.Docs_Message_Documentation, Text = "Message" },
+                new Link { Href = RouteConstants.Docs_ConfirmDialog_Documentation, Text = "Confirm Dialog" },
                 new Link { Href = RouteConstants.Docs_GoogleMaps_Documentation, Text = "Google Maps" },
                 new Link { Href = RouteConstants.Docs_Grid_Documentation, Text = "Grid" },
+                new Link { Href = RouteConstants.Docs_Message_Documentation, Text = "Message" },
                 new Link { Href = RouteConstants.Docs_Modal_Documentation, Text = "Modal" },
                 new Link { Href = RouteConstants.Docs_Pagination_Documentation, Text = "Pagination" },
                 new Link { Href = RouteConstants.Docs_ScriptLoader_Documentation, Text = "Script Loader" },
                 new Link { Href = RouteConstants.Docs_Tabs_Documentation, Text = "Tabs" }
             ]
-        });
-        
+        });        
 
         // LAYOUT
         groups.Add(new LinkGroup
