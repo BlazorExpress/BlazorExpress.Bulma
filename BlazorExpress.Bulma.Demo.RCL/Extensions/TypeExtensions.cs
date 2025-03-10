@@ -144,5 +144,19 @@ public static class TypeExtensions
         return typeName;
     }
 
+    /// <summary>
+    /// Get model properties.
+    /// </summary>
+    /// <param name="type"></param>
+    /// <returns>Returns list of model properties</returns>
+    public static IEnumerable<PropertyInfo> GetModelProperties(this Type type)
+    {
+        if (type is null)
+            return Enumerable.Empty<PropertyInfo>();
+
+        var properties = type.GetProperties();
+        return properties?.OrderBy(p => p.Name) ?? Enumerable.Empty<PropertyInfo>();
+    }
+
     #endregion
 }
