@@ -3,7 +3,7 @@
 @typeparam TItem
 
 <CascadingValue Name="DocType" Value="DocType" IsFixed>
-    @if (DocType is DocType.Parameters or DocType.Properties)
+    @if (DocType is DocType.Parameters)
     {
         <div class="table-container">
             <table class="table is-bordered is-hoverable is-fullwidth">
@@ -19,6 +19,29 @@
                 </thead>
                 <tbody>
                     @foreach (var propertyInfo in typeof(TItem).GetComponentParametersOnly())
+                    {
+                        <DocxPropertyRow TItem="TItem" PropertyInfo="@propertyInfo" />
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else if (DocType is DocType.Properties)
+    {
+        <div class="table-container">
+            <table class="table is-bordered is-hoverable is-fullwidth">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th class="has-text-centered">Required</th>
+                        <th>Description</th>
+                        <th class="text-nowrap">Added Version</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var propertyInfo in typeof(TItem).GetModelProperties())
                     {
                         <DocxPropertyRow TItem="TItem" PropertyInfo="@propertyInfo" />
                     }

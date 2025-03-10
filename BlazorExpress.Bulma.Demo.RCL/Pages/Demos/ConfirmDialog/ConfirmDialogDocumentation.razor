@@ -1,0 +1,28 @@
+@attribute [Route(pageUrl)]
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@RouteConstants.Docs_ConfirmDialog_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(ConfirmDialog_Demo_01_How_it_works)" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Change buttons text and color" PageUrl="@pageUrl" Link="change-buttons-text-and-color">
+    <Demo Type="typeof(ConfirmDialog_Demo_02_Change_buttons_text_and_color)" />
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Demos_ConfirmDialog_Documentation;
+    private const string pageTitle = "Confirm Dialog";
+    private const string pageDescription = "Use <code>Confirm Dialog</code> component when you want the user to verify or accept something.";
+    private const string metaTitle = "Blazor Confirm Dialog Component";
+    private const string metaDescription = "Use Confirm Dialog component when you want the user to verify or accept something.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}
