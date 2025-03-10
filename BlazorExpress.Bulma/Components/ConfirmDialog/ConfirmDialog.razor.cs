@@ -12,10 +12,18 @@ public partial class ConfirmDialog : BulmaComponentBase
     private string? titleHtml = null;
     private string? message = null;
     private string? messageHtml = null;
+
+    private string? titleCssClass;
+    private string? bodyCssClass;
+    private string? footCssClass;
+
     private string yesButtonText { get; set; } = "Yes";
+    private ButtonColor yesButtonColor { get; set; } = ButtonColor.Primary;
     private string? yesButtonCssClass { get; set; }
     private string noButtonText { get; set; } = "No";
+    private ButtonColor noButtonColor { get; set; } = ButtonColor.None;
     private string? noButtonCssClass { get; set; }
+
     private bool isVisible { get; set; } = false;
 
     private TaskCompletionSource<bool>? taskCompletionSource;
@@ -26,7 +34,8 @@ public partial class ConfirmDialog : BulmaComponentBase
         string? title = null,
         string? titleHtml = null,
         string? message = null,
-        string? messageHtml = null)
+        string? messageHtml = null,
+        ConfirmDialogOptions? options = null)
     {
         taskCompletionSource = new TaskCompletionSource<bool>();
         var task = taskCompletionSource.Task;
@@ -35,6 +44,21 @@ public partial class ConfirmDialog : BulmaComponentBase
         this.titleHtml = titleHtml;
         this.message = message;
         this.messageHtml = messageHtml;
+
+        if (options is null)
+            options = new();
+
+        this.titleCssClass = options.TitleCssClass;
+        this.bodyCssClass = options.BodyCssClass;
+        this.footCssClass = options.FootCssClass;
+
+        this.yesButtonText = options.YesButtonText;
+        this.yesButtonColor = options.YesButtonColor;
+        this.yesButtonCssClass = options.YesButtonCssClass;
+        this.noButtonText = options.NoButtonText;
+        this.noButtonColor = options.NoButtonColor;
+        this.noButtonCssClass = options.NoButtonCssClass;
+
         isVisible = true;
 
         StateHasChanged();
@@ -58,6 +82,12 @@ public partial class ConfirmDialog : BulmaComponentBase
 
     #region Properties, Indexers
 
+    private string? BodyClassNames =>
+        BuildClassNames(
+            bodyCssClass,
+            (BulmaCssClass.ModalCardBody, true)
+        );
+
     /// <summary>
     /// Gets or sets the child content.
     /// <para>
@@ -77,43 +107,42 @@ public partial class ConfirmDialog : BulmaComponentBase
             (BulmaCssClass.IsActive, isVisible)
         );
 
+    private string? FootClassNames =>
+        BuildClassNames(
+            footCssClass,
+            (BulmaCssClass.ModalCardFoot, true)
+        );
+
     /// <summary>
-    /// If <see langword="true"/>, modal close button is hidden.
+    /// If <see langword="true"/>, confirm modal close button is hidden.
     /// <para>
     /// Default value is <see langword="false" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
-    [Description("If <b>true</b>, modal close button is hidden.")]
+    [Description("If <b>true</b>, confirm modal close button is hidden.")]
     [Parameter]
     public bool HideCloseButton { get; set; } = false;
 
-    [Parameter]
-    public string? TitleCssClass { get; set; }
+    private string? NoButtonClassNames =>
+        BuildClassNames(
+            noButtonCssClass,
+            (BulmaCssClass.Button, true),
+            (noButtonColor.ToButtonColorClass(), noButtonColor != ButtonColor.None)
+        );
 
     private string? TitleClassNames =>
         BuildClassNames(
-            TitleCssClass,
+            titleCssClass,
             (BulmaCssClass.ModalCardTitle, true)
         );
 
-    [Parameter]
-    public string? BodyCssClass { get; set; }
-
-    private string? BodyClassNames =>
+    private string? YesButtonClassNames =>
         BuildClassNames(
-            BodyCssClass,
-            (BulmaCssClass.ModalCardBody, true)
-        );
-
-    [Parameter]
-    public string? FootCssClass { get; set; }
-
-    private string? FootClassNames =>
-        BuildClassNames(
-            FootCssClass,
-            (BulmaCssClass.ModalCardFoot, true)
+            yesButtonCssClass,
+            (BulmaCssClass.Button, true),
+            (yesButtonColor.ToButtonColorClass(), yesButtonColor != ButtonColor.None)
         );
 
     #endregion

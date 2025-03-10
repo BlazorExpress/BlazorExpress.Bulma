@@ -1,0 +1,35 @@
+<ConfirmDialog @ref="confirmDialogRef" />
+
+<Button Color="ButtonColor.Danger" @onclick="ShowConfirmationDialogAsync"> Delete Employee </Button>
+
+@code {
+    private ConfirmDialog confirmDialogRef = default!;
+
+    private async Task ShowConfirmationDialogAsync()
+    {
+        var options = new ConfirmDialogOptions
+            {
+                YesButtonText = "Yes, delete it",
+                NoButtonText = "No, keep it",
+                YesButtonColor = ButtonColor.Danger,
+                NoButtonColor = ButtonColor.Info
+            };
+
+        var result = await confirmDialogRef.ShowAsync(
+            title: "Are you sure you want to delete this item?",
+            message: "You won't be able to revert this!",
+            options: options
+        );
+
+        if (result)
+        {
+            Console.WriteLine("Item deleted.");
+            // Delete the item
+        }
+        else
+        {
+            Console.WriteLine("Item not deleted.");
+            // Do nothing
+        }
+    }
+}

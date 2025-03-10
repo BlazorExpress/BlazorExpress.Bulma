@@ -35,10 +35,10 @@
             }
         </section>
         <!-- Footer -->
-        <footer class="modal-card-foot">
-            <div class="buttons">
-                <button class="button is-success" @onclick="OnYesClick">@yesButtonText</button>
-                <button class="button" @onclick="OnNoClick">@noButtonText</button>
+        <footer class="@FootClassNames">
+            <div class="@BulmaCssClass.Buttons">
+                <button class="@YesButtonClassNames" @onclick="OnYesClick">@yesButtonText</button>
+                <button class="@NoButtonClassNames" @onclick="OnNoClick">@noButtonText</button>
             </div>
         </footer>
     </div>
