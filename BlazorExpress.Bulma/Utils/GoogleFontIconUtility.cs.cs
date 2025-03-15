@@ -48,6 +48,13 @@ public static class GoogleFontIconUtility
     {
         return name switch
         {
+            GoogleFontIconName.Rotation3D => "3d_rotation",
+            GoogleFontIconName.Accessibility => "accessibility",
+            GoogleFontIconName.AccessibilityNew => "accessibility_new",
+            GoogleFontIconName.Accessible => "accessible",
+            GoogleFontIconName.AccessibleForward => "accessible_forward",
+            GoogleFontIconName.AccountBox => "account_box",
+
             GoogleFontIconName.Search => "search",
 
             _ => ""
