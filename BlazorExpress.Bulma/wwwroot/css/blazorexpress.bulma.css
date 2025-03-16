@@ -3,7 +3,7 @@
     --be-bulma-navbar-min-height: 0;
     --be-bulma-navbar-height: 52px;
     /* menu */
-    --be-bulma-menu-width: 16rem;
+    --be-bulma-menu-width: 256px;
     --be-bulma-menu-border: 2px;
     --be-bulma-menu-background-offset: 9%;
     --be-bulma-menu-border-offset: -6%;
@@ -37,13 +37,17 @@ html {
     }
 }
 
-.be-bulma-page-menu, .be-bulma-page-body {
+.be-bulma-page-menu, .be-bulma-page-content {
     overflow-y: auto;
     height: calc(100vh - var(--be-bulma-navbar-height));
 }
 
 @media screen and (width > 768px) {
-    .be-bulma-page-body {
+    .be-bulma-page-sidebar {
+        width: var(--be-bulma-menu-width);
+    }
+
+    .be-bulma-page-content {
         width: calc(100vw - var(--be-bulma-menu-width));
         height: calc(100vh - var(--be-bulma-navbar-height));
     }
@@ -60,7 +64,7 @@ html {
     height: calc(100vh - var(--be-bulma-navbar-height));
 }
 
-.menu-item {
+/*.menu-item {
     margin: var(--be-bulma-menu-item-margin) !important;
 }
 
@@ -70,7 +74,7 @@ html {
 
     .menu-item:has(a.active) {
         --bulma-menu-item-background-l-delta: -5%;
-    }
+    }*/
 
 
 .menu-toggle-button {
