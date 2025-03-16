@@ -1,35 +1,103 @@
 ﻿namespace BlazorExpress.Bulma;
 
+/// <summary>
+/// https://fonts.google.com/icons
+/// </summary>
 public enum GoogleFontIconName
 {
     None = 0,
+
+    // Actions
+    Rotation3D,
+    Accessibility,
+    AccessibilityNew,
+    Accessible,
+    AccessibleForward,
+    AccountBox,
+    AccountCircle,
+    AccountCircleOff,
+    Ad,
+    AdGroup,
+    AdGroupOff,
+    AdOff,
+    AddAlert,
+    AdsClick,
+    Alarm,
+    AlarmAdd,
+    AlarmOff,
+    AlarmOn,
+    AllInclusive,
+    AllOut,
+    Anchor,
+    Api,
+    AppShortcut,
+    Approval,
+    AutoDelete,
+    AwardStar,
+    BackgroundReplace,
+    Backup,
+    BackupTable,
+    BatchPrediction,
+    BookmarkAdd,
+    BookmarkAdded,
+    BookmarkBag,
+    BookmarkCheck,
+    BookmarkFlag,
+    BookmarkHeart,
+    BookmarkStar,
+    Bookmarks,
+    Browse,
+    BugReport,
+    Build,
+    BuildCircle,
+    CalendarToday,
+    Category,
+    Celebration,
+    ChangeHistory,
+    ChromeReaderMode,
+    CircleNotifications,
+    Code,
+    CodeBlocks,
+    CodeOff,
+    CollectionsBookmark,
+    Commit,
+    ComponentExchange,
+    DataLossPrevention,
+    DateRange,
+    DeleteHistory,
+    DeveloperGuide,
+    DomainVerification,
+    DomainVerificationOff,
+    EditCalendar,
+    EditNotifications,
+    EditSquare,
+    Error,
+    Event,
+    EventAvailable,
+    EventRepeat,
+    EventUpcoming,
+    Extension,
+    FeatureSearch,
+    Feedback,
+    FindReplace,
+    Flutter,
+    FlutterDash,
+    FreeCancellation,
+    Gesture,
+    GestureSelect,
+    HandGesture,
+    HelpCenter,
+    HelpClinic,
+    History,
+    History2,
+    HistoryOff,
+    HistoryToggleOff,
+    Hourglass,
+    HourglassDisabled,
+    HourglassEmpty,
+    HourglassPause,
+
+
     Search
 }
 
-public enum GoogleFontIconStyle
-{
-    None,
-    Outlined,
-    Rounded,
-    Sharp
-}
-
-public enum GoogleFontIconWeight
-{
-    None,
-    W100,
-    W200,
-    W300,
-    W400,
-    W500,
-    W600,
-    W700
-}
-
-public enum GoogleFontIconGrade
-{
-    None,
-    Low, // -25
-    Medium, // 0
-    High // 200
-}
