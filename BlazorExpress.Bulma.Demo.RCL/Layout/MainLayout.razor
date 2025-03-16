@@ -22,19 +22,19 @@
                             <MenuItem>
                                 @if (link.Links?.Any() ?? false) // level 2 links
                                 {
-                                    <NavLink>@link.Text</NavLink>
+                                    <NavLink ActiveClass="is-active">@link.Text</NavLink>
                                     <MenuList>
                                         @foreach (var clink in link.Links)
                                         {
                                             <MenuItem>
-                                                <NavLink href="@clink.Href" Match="@clink.Match">@clink.Text</NavLink>
+                                                <NavLink href="@clink.Href" Match="@clink.Match" ActiveClass="is-active">@clink.Text</NavLink>
                                             </MenuItem>
                                         }
                                     </MenuList>
                                 }
                                 else
                                 {
-                                    <NavLink href="@link.Href" Match="@link.Match">@link.Text</NavLink>
+                                    <NavLink href="@link.Href" Match="@link.Match" ActiveClass="is-active">@link.Text</NavLink>
                                 }
                             </MenuItem>
                         }

@@ -26,7 +26,7 @@ public partial class MenuItem : BulmaComponentBase
     protected override string? ClassNames =>
         BuildClassNames(
             Class,
-            (BulmaCssClass.MenuItem, true),
+            //(BulmaCssClass.MenuItem, true),
             (BulmaCssClass.IsActive, IsActive)
         );
 

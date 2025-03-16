@@ -39,16 +39,33 @@ public partial class BulmaLayout : BulmaLayoutComponentBase
 
     #region Properties, Indexers
 
-    protected override string? ClassNames => BuildClassNames(Class, ("be-bulma-page", true));
+    protected override string? ClassNames => 
+        BuildClassNames(
+            Class, 
+            ("be-bulma-page", true)
+        );
+
     // width
     // height
 
     [Parameter] public RenderFragment? ContentSection { get; set; }
 
+    private string? ContentSectionClassNames =>
+        BuildClassNames(
+            ContentSectionCssClass,
+            ("be-bulma-page-content p-5", true)
+        );
+
     [Parameter] 
     public string? ContentSectionCssClass { get; set; } = null;
 
-    protected string? ContentSectionCssClassNames => BuildClassNames(ContentSectionCssClass, ("be-bulma-page-body p-5", true));
+    private string? ContentSectionStyleNames =>
+        BuildClassNames(
+            ContentSectionCssStyle
+        );
+
+    [Parameter]
+    public string? ContentSectionCssStyle { get; set; } = null;
 
     [Parameter] 
     public RenderFragment? FooterSection { get; set; }
@@ -56,7 +73,11 @@ public partial class BulmaLayout : BulmaLayoutComponentBase
     [Parameter] 
     public string? FooterSectionCssClass { get; set; } = "bg-body-tertiary";
 
-    protected string? FooterSectionCssClassNames => BuildClassNames(FooterSectionCssClass, ("be-bulma-page-footer p-4", true));
+    private string? FooterSectionCssClassNames => 
+        BuildClassNames(
+            FooterSectionCssClass, 
+            ("be-bulma-page-footer p-4", true)
+        );
 
     [Parameter] 
     public RenderFragment? HeaderSection { get; set; }
@@ -67,8 +88,29 @@ public partial class BulmaLayout : BulmaLayoutComponentBase
     [Parameter] 
     public RenderFragment? SidebarSection { get; set; }
 
+    private string? SidebarSectionClassNames =>
+        BuildClassNames(
+            SidebarSectionCssClass,
+            ("be-bulma-page-sidebar", true)
+        );
+
     [Parameter] 
-    public string? SidebarSectionCssClass { get; set; } = "d-flex justify-content-end";
+    public string? SidebarSectionCssClass { get; set; }
+
+    private string? SidebarSectionStyleNames =>
+        BuildStyleNames(
+            SidebarSectionCssStyle,
+            ($"--be-bulma-menu-width:{SidebarWidth.ToString(CultureInfo.InvariantCulture)}px", SidebarWidth > 0)
+        );
+
+    [Parameter]
+    public string? SidebarSectionCssStyle { get; set; }
+
+    /// <summary>
+    /// Gets or sets the sidebar width in pixels.
+    /// </summary>
+    [Parameter]
+    public float SidebarWidth { get; set; } = 256;
 
     #endregion
 }
