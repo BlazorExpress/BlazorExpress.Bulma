@@ -83,6 +83,21 @@ public enum GoogleFontIconName
     Flutter,
     FlutterDash,
     FreeCancellation,
+    Gesture,
+    GestureSelect,
+    HandGesture,
+    HelpCenter,
+    HelpClinic,
+    History,
+    History2,
+    HistoryOff,
+    HistoryToggleOff,
+    Hourglass,
+    HourglassDisabled,
+    HourglassEmpty,
+    HourglassPause,
+
+
     Search
 }
 

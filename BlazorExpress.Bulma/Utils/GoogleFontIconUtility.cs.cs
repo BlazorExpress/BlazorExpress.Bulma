@@ -123,6 +123,22 @@ public static class GoogleFontIconUtility
             GoogleFontIconName.Flutter => "flutter",
             GoogleFontIconName.FlutterDash => "flutter_dash",
             GoogleFontIconName.FreeCancellation => "free_cancellation",
+            GoogleFontIconName.Gesture => "gesture",
+            GoogleFontIconName.GestureSelect => "gesture_select",
+            GoogleFontIconName.HandGesture => "hand_gesture",
+            GoogleFontIconName.HelpCenter => "help_center",
+            GoogleFontIconName.HelpClinic => "help_clinic",
+            GoogleFontIconName.History => "history",
+            GoogleFontIconName.History2 => "history_2",
+            GoogleFontIconName.HistoryOff => "history_off",
+            GoogleFontIconName.HistoryToggleOff => "history_toggle_off",
+            GoogleFontIconName.Hourglass => "hourglass",
+            GoogleFontIconName.HourglassDisabled => "hourglass_disabled",
+            GoogleFontIconName.HourglassEmpty => "hourglass_empty",
+            GoogleFontIconName.HourglassPause => "hourglass_pause",
+
+
+
             GoogleFontIconName.Search => "search",
 
             _ => ""
