@@ -1,0 +1,19 @@
+<div class="grid">
+    @foreach (var item in Enum.GetValues<BootstrapIconName>().Where(x => x != BootstrapIconName.None))
+    {
+        <div class="cell has-text-centered has-background-light is-clickable py-3">
+            <div>
+                <BootstrapIcon Name="item" />
+            </div>
+            <div>
+                @item.ToString()
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+    .cell:hover {
+        color: hsl(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-l)) !important;
+    }
+</style>
