@@ -4,24 +4,6 @@ public static class EnumExtensions
 {
     #region Methods
 
-    public static string? ToButtonColorClass(this ButtonColor color) =>
-        color switch
-        {
-            ButtonColor.Primary => BulmaCssClass.IsPrimary,
-            ButtonColor.Link => BulmaCssClass.IsLink,
-            ButtonColor.Info => BulmaCssClass.IsInfo,
-            ButtonColor.Success => BulmaCssClass.IsSuccess,
-            ButtonColor.Warning => BulmaCssClass.IsWarning,
-            ButtonColor.Danger => BulmaCssClass.IsDanger,
-            ButtonColor.White => BulmaCssClass.IsWhite,
-            ButtonColor.Light => BulmaCssClass.IsLight,
-            ButtonColor.Dark => BulmaCssClass.IsDark,
-            ButtonColor.Black => BulmaCssClass.IsBlack,
-            ButtonColor.Text => BulmaCssClass.IsText,
-            ButtonColor.Ghost => BulmaCssClass.IsGhost,
-            _ => null
-        };
-
     public static string? ToBootstrapIconColorClass(this BootstrapIconColor color) =>
         color switch
         {
@@ -48,6 +30,24 @@ public static class EnumExtensions
             BootstrapIconSize.XLarge => BulmaCssClass.IsSize2,
             BootstrapIconSize.XXLarge => BulmaCssClass.IsSize1,
             _ => BulmaCssClass.IsSize4
+        };
+
+    public static string? ToButtonColorClass(this ButtonColor color) =>
+        color switch
+        {
+            ButtonColor.Primary => BulmaCssClass.IsPrimary,
+            ButtonColor.Link => BulmaCssClass.IsLink,
+            ButtonColor.Info => BulmaCssClass.IsInfo,
+            ButtonColor.Success => BulmaCssClass.IsSuccess,
+            ButtonColor.Warning => BulmaCssClass.IsWarning,
+            ButtonColor.Danger => BulmaCssClass.IsDanger,
+            ButtonColor.White => BulmaCssClass.IsWhite,
+            ButtonColor.Light => BulmaCssClass.IsLight,
+            ButtonColor.Dark => BulmaCssClass.IsDark,
+            ButtonColor.Black => BulmaCssClass.IsBlack,
+            ButtonColor.Text => BulmaCssClass.IsText,
+            ButtonColor.Ghost => BulmaCssClass.IsGhost,
+            _ => null
         };
 
     public static string? ToButtonSizeClass(this ButtonSize size) =>

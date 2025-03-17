@@ -8,10 +8,14 @@ namespace BlazorExpress.Bulma;
 /// </summary>
 internal static class RenderTreeBuilderExtensions
 {
+    #region Methods
+
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static void AddAttributeIfNotNullOrWhiteSpace(this RenderTreeBuilder builder, int sequence, string name, string? value)
     {
         if (!string.IsNullOrWhiteSpace(value))
             builder.AddAttribute(sequence, name, value);
     }
+
+    #endregion
 }
