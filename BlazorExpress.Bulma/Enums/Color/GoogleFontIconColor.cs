@@ -3,7 +3,7 @@
 /// <summary>
 /// <see href="https://bulma.io/documentation/helpers/color-helpers/#text-color" />
 /// </summary>
-public enum IconColor
+public enum GoogleFontIconColor
 {
     None,
     Primary,

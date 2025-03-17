@@ -22,6 +22,34 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToBootstrapIconColorClass(this BootstrapIconColor color) =>
+        color switch
+        {
+            BootstrapIconColor.Primary => BulmaCssClass.HasTextPrimary,
+            BootstrapIconColor.Link => BulmaCssClass.HasTextLink,
+            BootstrapIconColor.Info => BulmaCssClass.HasTextInfo,
+            BootstrapIconColor.Success => BulmaCssClass.HasTextSuccess,
+            BootstrapIconColor.Warning => BulmaCssClass.HasTextWarning,
+            BootstrapIconColor.Danger => BulmaCssClass.HasTextDanger,
+            BootstrapIconColor.White => BulmaCssClass.HasTextWhite,
+            BootstrapIconColor.Black => BulmaCssClass.HasTextBlack,
+            BootstrapIconColor.Light => BulmaCssClass.HasTextLight,
+            BootstrapIconColor.Dark => BulmaCssClass.HasTextDark,
+            _ => null
+        };
+
+    public static string? ToBootstrapIconSizeClass(this BootstrapIconSize size) =>
+        size switch
+        {
+            BootstrapIconSize.XSmall => BulmaCssClass.IsSize7,
+            BootstrapIconSize.Small => BulmaCssClass.IsSize6,
+            BootstrapIconSize.Medium => BulmaCssClass.IsSize5,
+            BootstrapIconSize.Large => BulmaCssClass.IsSize3,
+            BootstrapIconSize.XLarge => BulmaCssClass.IsSize2,
+            BootstrapIconSize.XXLarge => BulmaCssClass.IsSize1,
+            _ => BulmaCssClass.IsSize4
+        };
+
     public static string? ToButtonSizeClass(this ButtonSize size) =>
         size switch
         {
@@ -69,6 +97,22 @@ public static class EnumExtensions
             (> 1407) or _ => DeviceType.FullHD
         };
 
+    public static string? ToGoogleFontIconColorClass(this GoogleFontIconColor color) =>
+        color switch
+        {
+            GoogleFontIconColor.Primary => BulmaCssClass.HasTextPrimary,
+            GoogleFontIconColor.Link => BulmaCssClass.HasTextLink,
+            GoogleFontIconColor.Info => BulmaCssClass.HasTextInfo,
+            GoogleFontIconColor.Success => BulmaCssClass.HasTextSuccess,
+            GoogleFontIconColor.Warning => BulmaCssClass.HasTextWarning,
+            GoogleFontIconColor.Danger => BulmaCssClass.HasTextDanger,
+            GoogleFontIconColor.White => BulmaCssClass.HasTextWhite,
+            GoogleFontIconColor.Black => BulmaCssClass.HasTextBlack,
+            GoogleFontIconColor.Light => BulmaCssClass.HasTextLight,
+            GoogleFontIconColor.Dark => BulmaCssClass.HasTextDark,
+            _ => null
+        };
+
     public static string? ToGoogleFontIconSizeClass(this GoogleFontIconSize size) =>
         size switch
         {
@@ -79,31 +123,6 @@ public static class EnumExtensions
             GoogleFontIconSize.XLarge => BulmaCssClass.IsSize2,
             GoogleFontIconSize.XXLarge => BulmaCssClass.IsSize1,
             _ => BulmaCssClass.IsSize4
-        };
-
-    public static string? ToIconColorClass(this IconColor color) =>
-        color switch
-        {
-            IconColor.Primary => BulmaCssClass.HasTextPrimary,
-            IconColor.Link => BulmaCssClass.HasTextLink,
-            IconColor.Info => BulmaCssClass.HasTextInfo,
-            IconColor.Success => BulmaCssClass.HasTextSuccess,
-            IconColor.Warning => BulmaCssClass.HasTextWarning,
-            IconColor.Danger => BulmaCssClass.HasTextDanger,
-            IconColor.White => BulmaCssClass.HasTextWhite,
-            IconColor.Black => BulmaCssClass.HasTextBlack,
-            IconColor.Light => BulmaCssClass.HasTextLight,
-            IconColor.Dark => BulmaCssClass.HasTextDark,
-            _ => null
-        };
-
-    public static string? ToIconSizeClass(this IconSize size) =>
-        size switch
-        {
-            IconSize.Small => BulmaCssClass.IsSmall,
-            IconSize.Medium => BulmaCssClass.IsMedium,
-            IconSize.Large => BulmaCssClass.IsLarge,
-            _ => null
         };
 
     public static string? ToImageDimensionClass(this ImageDimension dimension) =>

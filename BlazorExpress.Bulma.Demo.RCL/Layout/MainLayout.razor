@@ -24,10 +24,10 @@
                                 {
                                     <NavLink ActiveClass="is-active">@link.Text</NavLink>
                                     <MenuList>
-                                        @foreach (var clink in link.Links)
+                                        @foreach (var cLink in link.Links)
                                         {
                                             <MenuItem>
-                                                <NavLink href="@clink.Href" Match="@clink.Match" ActiveClass="is-active">@clink.Text</NavLink>
+                                                <NavLink href="@cLink.Href" Match="@cLink.Match" ActiveClass="is-active">@cLink.Text</NavLink>
                                             </MenuItem>
                                         }
                                     </MenuList>
