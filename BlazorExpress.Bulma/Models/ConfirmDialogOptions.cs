@@ -2,10 +2,7 @@
 
 public class ConfirmDialogOptions
 {
-    [AddedVersion("1.0.0")]
-    [DefaultValue(null)]
-    [Description("The title of the dialog.")]
-    public string? TitleCssClass { get; set; }
+    #region Properties, Indexers
 
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
@@ -18,9 +15,24 @@ public class ConfirmDialogOptions
     public string? FootCssClass { get; set; }
 
     [AddedVersion("1.0.0")]
-    [DefaultValue("Yes")]
-    [Description("Yes button text.")]
-    public string YesButtonText { get; set; } = "Yes";
+    [DefaultValue(ButtonColor.None)]
+    [Description("No button color.")]
+    public ButtonColor NoButtonColor { get; set; } = ButtonColor.None;
+
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("No button CSS class.")]
+    public string? NoButtonCssClass { get; set; }
+
+    [AddedVersion("1.0.0")]
+    [DefaultValue("No")]
+    [Description("No button text.")]
+    public string NoButtonText { get; set; } = "No";
+
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("The title of the dialog.")]
+    public string? TitleCssClass { get; set; }
 
     [AddedVersion("1.0.0")]
     [DefaultValue(ButtonColor.Primary)]
@@ -33,17 +45,9 @@ public class ConfirmDialogOptions
     public string? YesButtonCssClass { get; set; }
 
     [AddedVersion("1.0.0")]
-    [DefaultValue("No")]
-    [Description("No button text.")]
-    public string NoButtonText { get; set; } = "No";
+    [DefaultValue("Yes")]
+    [Description("Yes button text.")]
+    public string YesButtonText { get; set; } = "Yes";
 
-    [AddedVersion("1.0.0")]
-    [DefaultValue(ButtonColor.None)]
-    [Description("No button color.")]
-    public ButtonColor NoButtonColor { get; set; } = ButtonColor.None;
-
-    [AddedVersion("1.0.0")]
-    [DefaultValue(null)]
-    [Description("No button CSS class.")]
-    public string? NoButtonCssClass { get; set; }
+    #endregion
 }
