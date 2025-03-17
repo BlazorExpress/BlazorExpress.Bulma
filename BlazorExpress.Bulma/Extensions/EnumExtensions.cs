@@ -69,6 +69,18 @@ public static class EnumExtensions
             (> 1407) or _ => DeviceType.FullHD
         };
 
+    public static string? ToGoogleFontIconSizeClass(this GoogleFontIconSize size) =>
+        size switch
+        {
+            GoogleFontIconSize.XSmall => BulmaCssClass.IsSize7,
+            GoogleFontIconSize.Small => BulmaCssClass.IsSize6,
+            GoogleFontIconSize.Medium => BulmaCssClass.IsSize5,
+            GoogleFontIconSize.Large => BulmaCssClass.IsSize3,
+            GoogleFontIconSize.XLarge => BulmaCssClass.IsSize2,
+            GoogleFontIconSize.XXLarge => BulmaCssClass.IsSize1,
+            _ => BulmaCssClass.IsSize4
+        };
+
     public static string? ToIconColorClass(this IconColor color) =>
         color switch
         {

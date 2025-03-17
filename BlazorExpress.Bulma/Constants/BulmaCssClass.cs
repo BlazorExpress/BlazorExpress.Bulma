@@ -157,6 +157,13 @@ public static class BulmaCssClass
     public const string IsRight = "is-right";
     public const string IsRounded = "is-rounded";
     public const string IsScrollable = "is-scrollable";
+    public const string IsSize1 = "is-size-1";
+    public const string IsSize2 = "is-size-2";
+    public const string IsSize3 = "is-size-3";
+    public const string IsSize4 = "is-size-4";
+    public const string IsSize5 = "is-size-5";
+    public const string IsSize6 = "is-size-6";
+    public const string IsSize7 = "is-size-7";
     public const string IsSkeleton = "is-skeleton";
     public const string IsSmall = "is-small";
     public const string IsSpaced = "is-spaced";

@@ -30,18 +30,6 @@ public partial class GoogleFontIcon : BulmaComponentBase
     public bool ApplyColorToText { get; set; } = false;
 
     /// <summary>
-    /// Gets or sets the google font icon name.
-    /// <para>
-    /// Default value is <see cref="GoogleFontIconName.None" />.
-    /// </para>
-    /// </summary>
-    [AddedVersion("1.0.0")]
-    [DefaultValue(GoogleFontIconName.None)]
-    [Description("Gets or sets the google font icon name.")]
-    [Parameter]
-    public GoogleFontIconName Name { get; set; } = GoogleFontIconName.None;
-
-    /// <summary>
     /// Gets or sets the child content.
     /// <para>
     /// Default value is <see langword="null" />.
@@ -69,7 +57,7 @@ public partial class GoogleFontIcon : BulmaComponentBase
         BuildClassNames(
             (BulmaCssClass.Icon, true),
             (Color.ToIconColorClass(), Color != IconColor.None),
-            (Size.ToIconSizeClass(), Size != IconSize.None),
+            (Size.ToGoogleFontIconSizeClass(), Size != GoogleFontIconSize.None),
             (BulmaCssClass.IsSkeleton, IsSkeleton)
         );
 
@@ -86,6 +74,18 @@ public partial class GoogleFontIcon : BulmaComponentBase
     public bool IsSkeleton { get; set; } = false;
 
     /// <summary>
+    /// Gets or sets the google font icon name.
+    /// <para>
+    /// Default value is <see cref="GoogleFontIconName.None" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(GoogleFontIconName.None)]
+    [Description("Gets or sets the google font icon name.")]
+    [Parameter]
+    public GoogleFontIconName Name { get; set; } = GoogleFontIconName.None;
+
+    /// <summary>
     /// Gets or sets the icon size.
     /// <para>
     /// Default value is <see cref="IconSize.None" />.
@@ -95,7 +95,7 @@ public partial class GoogleFontIcon : BulmaComponentBase
     [DefaultValue(IconSize.None)]
     [Description("Gets or sets the icon size.")]
     [Parameter]
-    public IconSize Size { get; set; } = IconSize.None;
+    public GoogleFontIconSize Size { get; set; } = GoogleFontIconSize.None;
 
     /// <summary>
     /// Gets or sets the icon fill.
