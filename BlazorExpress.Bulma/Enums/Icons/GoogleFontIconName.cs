@@ -1,7 +1,10 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// https://fonts.google.com/icons
+/// Represents the name of a Google Font Icon.
+/// <para>
+///     <see href="https://fonts.google.com/icons" />
+/// </para>
 /// </summary>
 public enum GoogleFontIconName
 {
@@ -97,7 +100,5 @@ public enum GoogleFontIconName
     HourglassEmpty,
     HourglassPause,
 
-
     Search
 }
-

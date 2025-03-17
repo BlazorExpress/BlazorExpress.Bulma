@@ -2,7 +2,13 @@
 
 public partial class GridDetailView<TItem> : BulmaComponentBase
 {
+    #region Fields and Constants
+
     private RenderFragment<TItem>? gridDetailViewTemplate;
+
+    #endregion
+
+    #region Methods
 
     protected override async Task OnInitializedAsync()
     {
@@ -14,10 +20,14 @@ public partial class GridDetailView<TItem> : BulmaComponentBase
         await base.OnInitializedAsync();
     }
 
+    #endregion
+
+    #region Properties, Indexers
+
     /// <summary>
     /// Gets or sets the child content.
     /// <para>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
@@ -27,12 +37,9 @@ public partial class GridDetailView<TItem> : BulmaComponentBase
     [Parameter]
     public RenderFragment<TItem> ChildContent { get; set; } = default!;
 
-    internal RenderFragment<TItem> GetTemplate =>
-        gridDetailViewTemplate ??= rowData => builder =>
-                                              {
-                                                  builder.AddContent(100, ChildContent, rowData);
-                                              };
+    internal RenderFragment<TItem> GetTemplate => gridDetailViewTemplate ??= rowData => builder => { builder.AddContent(100, ChildContent, rowData); };
 
-    [CascadingParameter]
-    public Grid<TItem> Parent { get; set; } = default!;
+    [CascadingParameter] public Grid<TItem> Parent { get; set; } = default!;
+
+    #endregion
 }

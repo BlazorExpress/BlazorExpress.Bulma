@@ -2,15 +2,17 @@
 
 /// <summary>
 /// Progress Bar
-/// <see href="https://bulma.io/documentation/elements/progress/" />
+/// <para>
+///     <see href="https://bulma.io/documentation/elements/progress/" />
+/// </para>
 /// </summary>
 public partial class ProgressBar : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? ClassNames => 
+    protected override string? ClassNames =>
         BuildClassNames(
-            Class, 
+            Class,
             (BulmaCssClass.Progress, true),
             (Color.ToProgressBarColorClass(), true),
             (Size.ToProgressBarSizeClass(), Size != ProgressBarSize.None)
@@ -46,12 +48,13 @@ public partial class ProgressBar : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(ProgressBarSize.None)]
     [Description("Gets or sets the size.")]
-    [Parameter] public ProgressBarSize Size { get; set; } = ProgressBarSize.None;
+    [Parameter]
+    public ProgressBarSize Size { get; set; } = ProgressBarSize.None;
 
     /// <summary>
     /// Gets or sets the value.
     /// <para>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
@@ -61,8 +64,7 @@ public partial class ProgressBar : BulmaComponentBase
     [Parameter]
     public float? Value { get; set; }
 
-    private string? ValueAsPercentageString => 
-        Value.HasValue ? $"{Value.Value.ToString(CultureInfo.InvariantCulture)}%" : null;
+    private string? ValueAsPercentageString => Value.HasValue ? $"{Value.Value.ToString(CultureInfo.InvariantCulture)}%" : null;
 
     #endregion
 }

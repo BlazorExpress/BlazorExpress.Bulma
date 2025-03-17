@@ -3,7 +3,7 @@
 /// <summary>
 /// Skeleton component
 /// <para>
-/// <see href="https://bulma.io/documentation/features/skeletons/" />
+///     <see href="https://bulma.io/documentation/features/skeletons/" />
 /// </para>
 /// </summary>
 public partial class SkeletonLine : BulmaComponentBase

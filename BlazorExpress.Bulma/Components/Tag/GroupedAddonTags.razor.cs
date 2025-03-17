@@ -1,8 +1,10 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// Tag component
-/// <see href="https://bulma.io/documentation/elements/tag/" />
+/// GroupedAddonTags component
+/// <para>
+///     <see href="https://bulma.io/documentation/elements/tag/" />
+/// </para>
 /// </summary>
 public partial class GroupedAddonTags : BulmaComponentBase
 {

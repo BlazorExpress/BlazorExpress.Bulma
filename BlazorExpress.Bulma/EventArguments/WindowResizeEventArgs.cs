@@ -1,6 +1,8 @@
 ﻿namespace BlazorExpress.Bulma;
 
-public class WindowResizeEventArgs : EventArgs {
+public class WindowResizeEventArgs : EventArgs
+{
+    #region Constructors
 
     public WindowResizeEventArgs(DeviceType deviceType, float width)
     {
@@ -8,7 +10,13 @@ public class WindowResizeEventArgs : EventArgs {
         Width = width;
     }
 
+    #endregion
+
+    #region Properties, Indexers
+
     public DeviceType DeviceType { get; }
 
     public float Width { get; }
+
+    #endregion
 }

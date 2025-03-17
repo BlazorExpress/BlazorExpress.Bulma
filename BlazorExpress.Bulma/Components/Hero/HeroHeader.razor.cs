@@ -2,7 +2,9 @@
 
 /// <summary>
 /// HeroHeader component
-/// <see href="https://bulma.io/documentation/layout/hero/" />
+/// <para>
+///     <see href="https://bulma.io/documentation/layout/hero/" />
+/// </para>
 /// </summary>
 public partial class HeroHeader : BulmaComponentBase
 {

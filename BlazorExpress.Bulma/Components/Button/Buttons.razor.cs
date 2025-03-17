@@ -3,7 +3,7 @@
 /// <summary>
 /// Buttons component
 /// <para>
-/// <see href="https://bulma.io/documentation/elements/button/" />
+///     <see href="https://bulma.io/documentation/elements/button/" />
 /// </para>
 /// </summary>
 public partial class Buttons : BulmaComponentBase
@@ -39,7 +39,8 @@ public partial class Buttons : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(ButtonSize.None)]
     [Description("Gets or sets the size.")]
-    [Parameter] public ButtonSize Size { get; set; } = ButtonSize.None;
+    [Parameter]
+    public ButtonSize Size { get; set; } = ButtonSize.None;
 
     #endregion
 }

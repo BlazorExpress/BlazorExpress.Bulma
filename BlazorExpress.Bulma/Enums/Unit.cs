@@ -1,5 +1,8 @@
 ﻿namespace BlazorExpress.Bulma;
 
+/// <summary>
+/// Represents the unit of measurement.
+/// </summary>
 public enum Unit
 {
     /// <summary>

@@ -1,7 +1,10 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// <see href="https://bulma.io/documentation/elements/button/#sizes" />
+/// Represents the size of a Bulma Button.
+/// <para>
+///     <see href="https://bulma.io/documentation/elements/button/#sizes" />
+/// </para>
 /// </summary>
 public enum ButtonSize
 {
@@ -9,5 +12,5 @@ public enum ButtonSize
     Small,
     Normal,
     Medium,
-    Large,
+    Large
 }

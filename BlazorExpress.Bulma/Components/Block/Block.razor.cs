@@ -3,7 +3,7 @@
 /// <summary>
 /// Block component
 /// <para>
-/// <see href="https://bulma.io/documentation/elements/block/" />
+///     <see href="https://bulma.io/documentation/elements/block/" />
 /// </para>
 /// </summary>
 public partial class Block : BulmaComponentBase

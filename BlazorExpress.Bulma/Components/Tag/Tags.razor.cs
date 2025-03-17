@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Tags component
-/// <see href="https://bulma.io/documentation/elements/tag/" />
+/// <para>
+///     <see href="https://bulma.io/documentation/elements/tag/" />
+/// </para>
 /// </summary>
 public partial class Tags : BulmaComponentBase
 {
@@ -37,7 +39,8 @@ public partial class Tags : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(TagSize.None)]
     [Description("Gets or sets the size.")]
-    [Parameter] public TagSize Size { get; set; } = TagSize.None;
+    [Parameter]
+    public TagSize Size { get; set; } = TagSize.None;
 
     #endregion
 }

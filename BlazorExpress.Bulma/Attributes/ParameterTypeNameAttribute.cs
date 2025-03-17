@@ -5,10 +5,18 @@
 /// </summary>
 public class ParameterTypeNameAttribute : Attribute
 {
-    public string TypeName { get; }
+    #region Constructors
 
     public ParameterTypeNameAttribute(string typeName)
     {
         TypeName = typeName;
     }
+
+    #endregion
+
+    #region Properties, Indexers
+
+    public string TypeName { get; }
+
+    #endregion
 }

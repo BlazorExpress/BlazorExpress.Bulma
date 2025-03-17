@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Tab component
-/// <see href="https://bulma.io/documentation/components/tabs/" />
+/// <para>
+///     <see href="https://bulma.io/documentation/components/tabs/" />
+/// </para>
 /// </summary>
 public partial class Tab : BulmaComponentBase
 {

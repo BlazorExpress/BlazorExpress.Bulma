@@ -1,7 +1,10 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// <see href="https://bulma.io/documentation/elements/button/#colors" />
+/// Represents the color of a Bulma Button.
+/// <para>
+///     <see href="https://bulma.io/documentation/elements/button/#colors" />
+/// </para>
 /// </summary>
 public enum ButtonColor
 {

@@ -3,30 +3,25 @@
 /// <summary>
 /// ConfirmDialog component
 /// <para>
-/// <see href="https://bulma.io/documentation/components/modal/" />
+///     <see href="https://bulma.io/documentation/components/modal/" />
 /// </para>
 /// </summary>
 public partial class ConfirmDialog : BulmaComponentBase
 {
-    private string? title = null;
-    private string? titleHtml = null;
+    #region Fields and Constants
+
+    private string? bodyCssClass;
+    private string? footCssClass;
     private string? message = null;
     private string? messageHtml = null;
 
-    private string? titleCssClass;
-    private string? bodyCssClass;
-    private string? footCssClass;
-
-    private string yesButtonText { get; set; } = "Yes";
-    private ButtonColor yesButtonColor { get; set; } = ButtonColor.Primary;
-    private string? yesButtonCssClass { get; set; }
-    private string noButtonText { get; set; } = "No";
-    private ButtonColor noButtonColor { get; set; } = ButtonColor.None;
-    private string? noButtonCssClass { get; set; }
-
-    private bool isVisible { get; set; } = false;
-
     private TaskCompletionSource<bool>? taskCompletionSource;
+    private string? title = null;
+
+    private string? titleCssClass;
+    private string? titleHtml = null;
+
+    #endregion
 
     #region Methods
 
@@ -35,7 +30,8 @@ public partial class ConfirmDialog : BulmaComponentBase
         string? titleHtml = null,
         string? message = null,
         string? messageHtml = null,
-        ConfirmDialogOptions? options = null)
+        ConfirmDialogOptions? options = null
+    )
     {
         taskCompletionSource = new TaskCompletionSource<bool>();
         var task = taskCompletionSource.Task;
@@ -46,18 +42,18 @@ public partial class ConfirmDialog : BulmaComponentBase
         this.messageHtml = messageHtml;
 
         if (options is null)
-            options = new();
+            options = new ConfirmDialogOptions();
 
-        this.titleCssClass = options.TitleCssClass;
-        this.bodyCssClass = options.BodyCssClass;
-        this.footCssClass = options.FootCssClass;
+        titleCssClass = options.TitleCssClass;
+        bodyCssClass = options.BodyCssClass;
+        footCssClass = options.FootCssClass;
 
-        this.yesButtonText = options.YesButtonText;
-        this.yesButtonColor = options.YesButtonColor;
-        this.yesButtonCssClass = options.YesButtonCssClass;
-        this.noButtonText = options.NoButtonText;
-        this.noButtonColor = options.NoButtonColor;
-        this.noButtonCssClass = options.NoButtonCssClass;
+        yesButtonText = options.YesButtonText;
+        yesButtonColor = options.YesButtonColor;
+        yesButtonCssClass = options.YesButtonCssClass;
+        noButtonText = options.NoButtonText;
+        noButtonColor = options.NoButtonColor;
+        noButtonCssClass = options.NoButtonCssClass;
 
         isVisible = true;
 
@@ -82,6 +78,13 @@ public partial class ConfirmDialog : BulmaComponentBase
 
     #region Properties, Indexers
 
+    protected override string? ClassNames =>
+        BuildClassNames(
+            Class,
+            (BulmaCssClass.Modal, true),
+            (BulmaCssClass.IsActive, isVisible)
+        );
+
     private string? BodyClassNames =>
         BuildClassNames(
             bodyCssClass,
@@ -100,13 +103,6 @@ public partial class ConfirmDialog : BulmaComponentBase
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
-    protected override string? ClassNames =>
-        BuildClassNames(
-            Class,
-            (BulmaCssClass.Modal, true),
-            (BulmaCssClass.IsActive, isVisible)
-        );
-
     private string? FootClassNames =>
         BuildClassNames(
             footCssClass,
@@ -114,7 +110,7 @@ public partial class ConfirmDialog : BulmaComponentBase
         );
 
     /// <summary>
-    /// If <see langword="true"/>, confirm modal close button is hidden.
+    /// If <see langword="true" />, confirm modal close button is hidden.
     /// <para>
     /// Default value is <see langword="false" />.
     /// </para>
@@ -125,12 +121,18 @@ public partial class ConfirmDialog : BulmaComponentBase
     [Parameter]
     public bool HideCloseButton { get; set; } = false;
 
+    private bool isVisible { get; set; } = false;
+
     private string? NoButtonClassNames =>
         BuildClassNames(
             noButtonCssClass,
             (BulmaCssClass.Button, true),
             (noButtonColor.ToButtonColorClass(), noButtonColor != ButtonColor.None)
         );
+
+    private ButtonColor noButtonColor { get; set; } = ButtonColor.None;
+    private string? noButtonCssClass { get; set; }
+    private string noButtonText { get; set; } = "No";
 
     private string? TitleClassNames =>
         BuildClassNames(
@@ -144,6 +146,11 @@ public partial class ConfirmDialog : BulmaComponentBase
             (BulmaCssClass.Button, true),
             (yesButtonColor.ToButtonColorClass(), yesButtonColor != ButtonColor.None)
         );
+
+    private ButtonColor yesButtonColor { get; set; } = ButtonColor.Primary;
+    private string? yesButtonCssClass { get; set; }
+
+    private string yesButtonText { get; set; } = "Yes";
 
     #endregion
 }

@@ -1,7 +1,10 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// <see href="https://bulma.io/documentation/components/tabs/#styles" />
+/// Represents the type of a Bulma Tabs component.
+/// <para>
+///     <see href="https://bulma.io/documentation/components/tabs/#styles" />
+/// </para>
 /// </summary>
 public enum TabsType
 {

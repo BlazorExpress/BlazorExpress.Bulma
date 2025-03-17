@@ -1,7 +1,10 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// https://bulma.io/documentation/elements/notification/
+/// Represents the color of a Bulma Notification.
+/// <para>
+///     <see href="https://bulma.io/documentation/elements/notification/" />
+/// </para>
 /// </summary>
 public enum NotificationColor
 {

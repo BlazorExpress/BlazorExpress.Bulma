@@ -4,9 +4,9 @@ public partial class GridColumn<TItem> : BulmaComponentBase
 {
     #region Fields and Constants
 
-    internal SortDirection currentSortDirection;
+    internal SortDirection currentSortDirection = SortDirection.None;
 
-    internal SortDirection defaultSortDirection;
+    internal SortDirection defaultSortDirection = SortDirection.None;
 
     #endregion
 
@@ -54,14 +54,15 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// <summary>
     /// Gets or sets the cell template.
     /// <para>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the cell template.")]
     [ParameterTypeName("RenderFragment<TItem>")]
-    [Parameter] public RenderFragment<TItem>? CellTemplate { get; set; }
+    [Parameter]
+    public RenderFragment<TItem>? CellTemplate { get; set; }
 
     /// <summary>
     /// Gets or sets the child content.
@@ -86,18 +87,19 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// <summary>
     /// Gets or sets the header template.
     /// <para>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the header template.")]
-    [Parameter] public RenderFragment? HeaderTemplate { get; set; }
+    [Parameter]
+    public RenderFragment? HeaderTemplate { get; set; }
 
     /// <summary>
     /// Gets or sets the table column header text.
     /// <para>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
@@ -109,7 +111,7 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// <summary>
     /// Gets or sets the default sort column.
     /// <para>
-    /// Default value is <see langword="false"/>.
+    /// Default value is <see langword="false" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
@@ -117,15 +119,14 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     [Description("Gets or sets the default sort column.")]
     [Parameter]
     public bool IsDefaultSortColumn { get; set; } = false;
-    
-    [CascadingParameter] 
-    public Grid<TItem> Parent { get; set; } = default!;
+
+    [CascadingParameter] public Grid<TItem> Parent { get; set; } = default!;
 
     /// <summary>
     /// Gets or sets the property name.
     /// This is required when `AllowFiltering` is true.
     /// <para>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
@@ -138,7 +139,7 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// Enable or disable the sorting on a specific column.
     /// The sorting is enabled or disabled based on the `AllowSorting` parameter on the grid.
     /// <para>
-    /// Default value is <see langword="true"/>.
+    /// Default value is <see langword="true" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
@@ -175,7 +176,7 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// This value will be passed to the backend/API for sorting.
     /// And this property is ignored for the client-side sorting.
     /// <para>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
@@ -201,25 +202,25 @@ public partial class GridColumn<TItem> : BulmaComponentBase
     /// <summary>
     /// Gets or sets the CSS class for the table header.
     /// <para>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the CSS class for the table header.")]
-    [Parameter] 
+    [Parameter]
     public string? ThCssClass { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the CSS style for the table header.
     /// <para>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the CSS style for the table header.")]
-    [Parameter] 
+    [Parameter]
     public string? ThCssStyle { get; set; } = null;
 
     internal string? ThStyleNames => ThCssStyle;

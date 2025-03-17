@@ -7,14 +7,14 @@ public partial class Overlay : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? ClassNames
-        => BuildClassNames(
+    protected override string? ClassNames =>
+        BuildClassNames(
             Class,
             (BulmaCssClass.Overlay, true),
-            (BulmaCssClass.IsActive, IsActive));
+            (BulmaCssClass.IsActive, IsActive)
+        );
 
-    [Parameter]
-    public bool IsActive { get; set; } = false;
+    [Parameter] public bool IsActive { get; set; }
 
     #endregion
 }

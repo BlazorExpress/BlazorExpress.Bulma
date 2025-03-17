@@ -3,7 +3,7 @@
 /// <summary>
 /// MenuLabel component
 /// <para>
-/// <see href="https://bulma.io/documentation/components/menu/" />
+///     <see href="https://bulma.io/documentation/components/menu/" />
 /// </para>
 /// </summary>
 public partial class MenuLabel : BulmaComponentBase
@@ -11,7 +11,6 @@ public partial class MenuLabel : BulmaComponentBase
     #region Properties, Indexers
 
     protected override string? ClassNames => BuildClassNames(Class, (BulmaCssClass.MenuLabel, true));
-
 
     /// <summary>
     /// Gets or sets the child content.

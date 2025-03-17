@@ -1,7 +1,10 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// https://bulma.io/documentation/elements/tag/#sizes
+/// Represents the size of a Bulma Tag.
+/// <para>
+///     <see href="https://bulma.io/documentation/elements/tag/#sizes" />
+/// </para>
 /// </summary>
 public enum TagSize
 {

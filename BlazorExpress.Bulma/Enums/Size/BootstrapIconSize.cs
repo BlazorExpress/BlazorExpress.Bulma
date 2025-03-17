@@ -1,7 +1,10 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// <see href="https://bulma.io/documentation/helpers/typography-helpers/#size" />
+/// Represents the size of a Bootstrap Icon.
+/// <para>
+///     <see href="https://bulma.io/documentation/helpers/typography-helpers/#size" />
+/// </para>
 /// </summary>
 public enum BootstrapIconSize
 {

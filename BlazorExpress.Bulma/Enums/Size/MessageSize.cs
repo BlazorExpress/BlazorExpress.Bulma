@@ -1,7 +1,10 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// <see href="https://bulma.io/documentation/components/message/#sizes" />
+/// Represents the size of a Bulma Message.
+/// <para>
+///     <see href="https://bulma.io/documentation/components/message/#sizes" />
+/// </para>
 /// </summary>
 public enum MessageSize
 {
@@ -9,5 +12,5 @@ public enum MessageSize
     Small,
     Normal,
     Medium,
-    Large,
+    Large
 }

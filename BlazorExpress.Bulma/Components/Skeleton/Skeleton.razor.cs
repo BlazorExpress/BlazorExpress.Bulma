@@ -3,7 +3,7 @@
 /// <summary>
 /// Skeleton component
 /// <para>
-/// <see href="https://bulma.io/documentation/features/skeletons/" />
+///     <see href="https://bulma.io/documentation/features/skeletons/" />
 /// </para>
 /// </summary>
 public partial class Skeleton : BulmaComponentBase
@@ -51,7 +51,7 @@ public partial class Skeleton : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(SkeletonType.Block)]
     [Description("Gets or sets the <code>Skeleton</code> type.")]
-    [Parameter] 
+    [Parameter]
     public SkeletonType Type { get; set; } = SkeletonType.Block;
 
     #endregion

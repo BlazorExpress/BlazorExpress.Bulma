@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Pagination component
-/// <see href="https://bulma.io/documentation/components/pagination/" />
+/// <para>
+///     <see href="https://bulma.io/documentation/components/pagination/" />
+/// </para>
 /// </summary>
 public partial class Pagination : BulmaComponentBase
 {
@@ -140,7 +142,7 @@ public partial class Pagination : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the next button template.")]
-    [Parameter] 
+    [Parameter]
     public RenderFragment? NextButtonTemplate { get; set; }
 
     /// <summary>
@@ -164,7 +166,7 @@ public partial class Pagination : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the previous button template.")]
-    [Parameter] 
+    [Parameter]
     public RenderFragment? PreviousButtonTemplate { get; set; }
 
     /// <summary>

@@ -3,7 +3,7 @@
 /// <summary>
 /// Message component
 /// <para>
-/// <see href="https://bulma.io/documentation/components/message/" />
+///     <see href="https://bulma.io/documentation/components/message/" />
 /// </para>
 /// </summary>
 public partial class Message : BulmaComponentBase
@@ -21,9 +21,9 @@ public partial class Message : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? ClassNames => 
+    protected override string? ClassNames =>
         BuildClassNames(
-            Class, 
+            Class,
             (BulmaCssClass.Message, true),
             (Color.ToMessageColorClass(), true),
             (Size.ToMessageSizeClass(), Size != MessageSize.None)
@@ -51,7 +51,8 @@ public partial class Message : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(MessageColor.None)]
     [Description("Gets or sets the color.")]
-    [Parameter] public MessageColor Color { get; set; } = MessageColor.None;
+    [Parameter]
+    public MessageColor Color { get; set; } = MessageColor.None;
 
     /// <summary>
     /// If <see langword="true" />, shows the delete button in the message header.
@@ -74,7 +75,7 @@ public partial class Message : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(MessageSize.None)]
     [Description("Gets or sets the size.")]
-    [Parameter] 
+    [Parameter]
     public MessageSize Size { get; set; } = MessageSize.None;
 
     /// <summary>

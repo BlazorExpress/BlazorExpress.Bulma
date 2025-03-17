@@ -3,7 +3,7 @@
 /// <summary>
 /// Button component
 /// <para>
-/// <see href="https://bulma.io/documentation/elements/button/" />
+///     <see href="https://bulma.io/documentation/elements/button/" />
 /// </para>
 /// </summary>
 public partial class Button : BulmaComponentBase
@@ -61,7 +61,8 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(ButtonColor.None)]
     [Description("Gets or sets the color.")]
-    [Parameter] public ButtonColor Color { get; set; } = ButtonColor.None;
+    [Parameter]
+    public ButtonColor Color { get; set; } = ButtonColor.None;
 
     /// <summary>
     /// Gets or sets the href.
@@ -72,7 +73,8 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the href.")]
-    [Parameter] public string? Href { get; set; } = null;
+    [Parameter]
+    public string? Href { get; set; } = null;
 
     /// <summary>
     /// If true, the dark version of the button will be enabled.
@@ -83,7 +85,7 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the dark version of the button will be enabled.")]
-    [Parameter] 
+    [Parameter]
     public bool IsDarkVersion { get; set; } = false;
 
     /// <summary>
@@ -95,7 +97,7 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the button will be disabled.")]
-    [Parameter] 
+    [Parameter]
     public bool IsDisabled { get; set; } = false;
 
     /// <summary>
@@ -107,7 +109,7 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the button will be expanded to the full width of its container.")]
-    [Parameter] 
+    [Parameter]
     public bool IsFullWidth { get; set; } = false;
 
     /// <summary>
@@ -119,7 +121,7 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the inverted variant will be enabled.")]
-    [Parameter] 
+    [Parameter]
     public bool IsInverted { get; set; } = false;
 
     /// <summary>
@@ -131,7 +133,7 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the light version of the button will be enabled.")]
-    [Parameter] 
+    [Parameter]
     public bool IsLightVersion { get; set; } = false;
 
     /// <summary>
@@ -143,7 +145,7 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the button will be loading.")]
-    [Parameter] 
+    [Parameter]
     public bool IsLoading { get; set; } = false;
 
     /// <summary>
@@ -155,7 +157,7 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the outlined variant will be enabled.")]
-    [Parameter] 
+    [Parameter]
     public bool IsOutlined { get; set; } = false;
 
     /// <summary>
@@ -167,7 +169,7 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the button will be responsive.")]
-    [Parameter] 
+    [Parameter]
     public bool IsResponsive { get; set; } = false;
 
     /// <summary>
@@ -179,7 +181,7 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the rounded variant will be enabled.")]
-    [Parameter] 
+    [Parameter]
     public bool IsRounded { get; set; } = false;
 
     /// <summary>
@@ -203,7 +205,8 @@ public partial class Button : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(ButtonSize.None)]
     [Description("Gets or sets the size.")]
-    [Parameter] public ButtonSize Size { get; set; } = ButtonSize.None;
+    [Parameter]
+    public ButtonSize Size { get; set; } = ButtonSize.None;
 
     /// <summary>
     /// Gets or sets the button type.
