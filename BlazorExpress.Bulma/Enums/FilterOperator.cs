@@ -1,5 +1,8 @@
 ﻿namespace BlazorExpress.Bulma;
 
+/// <summary>
+/// Represents the operator used to filter a value.
+/// </summary>
 public enum FilterOperator
 {
     None,

@@ -1,5 +1,9 @@
 ﻿namespace BlazorExpress.Bulma;
 
+/// <summary>
+/// Represents a Bootstrap Icon Name.
+/// <para><see href="https://icons.getbootstrap.com/"/></para>
+/// </summary>
 public enum BootstrapIconName
 {
     None = 0,
@@ -2051,5 +2055,5 @@ public enum BootstrapIconName
     ZeroSquareFill,
     ZoomIn,
     ZoomOut,
-    ZeroCircle,
+    ZeroCircle
 }

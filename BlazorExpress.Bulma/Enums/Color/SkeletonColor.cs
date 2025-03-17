@@ -1,7 +1,10 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
+/// Represents the color of a Bulma Skeleton.
+///     <para>
 /// <see href="https://bulma.io/documentation/helpers/color-helpers/#background-color" />
+/// </para>
 /// </summary>
 public enum SkeletonColor
 {
@@ -15,5 +18,5 @@ public enum SkeletonColor
     White,
     Black,
     Light,
-    Dark,
+    Dark
 }

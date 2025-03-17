@@ -1,7 +1,8 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// <see href="https://bulma.io/documentation/form/input/#colors" />
+/// Represents the color of a Bulma Text Input.
+///     <para><see href="https://bulma.io/documentation/form/input/#colors" /></para>
 /// </summary>
 public enum TextInputColor
 {

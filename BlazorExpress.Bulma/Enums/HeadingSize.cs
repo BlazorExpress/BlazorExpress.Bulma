@@ -1,5 +1,8 @@
 ﻿namespace BlazorExpress.Bulma;
 
+/// <summary>
+/// Represents the size of a Bulma Heading.
+/// </summary>
 public enum HeadingSize
 {
     H1,

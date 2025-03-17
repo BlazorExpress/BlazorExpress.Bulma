@@ -1,7 +1,8 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// https://bulma.io/documentation/elements/image/#fixed-square-images
+/// Represents the dimensions of an image.
+/// <para><see href="https://bulma.io/documentation/elements/image/#fixed-square-images"/></para>
 /// </summary>
 public enum ImageDimension
 {

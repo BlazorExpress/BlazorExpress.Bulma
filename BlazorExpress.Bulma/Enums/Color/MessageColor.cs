@@ -1,7 +1,8 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// <see href="https://bulma.io/documentation/components/message/#colors" />
+/// Represents the color of a Bulma Message.
+///     <para><see href="https://bulma.io/documentation/components/message/#colors" /></para>
 /// </summary>
 public enum MessageColor
 {
@@ -12,5 +13,5 @@ public enum MessageColor
     Success,
     Warning,
     Danger,
-    Dark,
+    Dark
 }

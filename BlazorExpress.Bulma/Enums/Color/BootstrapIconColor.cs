@@ -1,7 +1,10 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// <see href="https://bulma.io/documentation/helpers/color-helpers/#text-color" />
+/// Represents the color of a Bootstrap Icon.
+/// <para>
+///     <see href="https://bulma.io/documentation/helpers/color-helpers/#text-color" />
+/// </para>
 /// </summary>
 public enum BootstrapIconColor
 {
@@ -15,5 +18,5 @@ public enum BootstrapIconColor
     White,
     Black,
     Light,
-    Dark,
+    Dark
 }

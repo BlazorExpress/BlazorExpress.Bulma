@@ -1,7 +1,8 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// https://bulma.io/documentation/elements/image/#responsive-images-with-ratios
+/// Represents the ratio of an image.
+/// <para><see href="https://bulma.io/documentation/elements/image/#responsive-images-with-ratios"/></para>
 /// </summary>
 public enum ImageRatio
 {
@@ -85,5 +86,5 @@ public enum ImageRatio
     /// <summary>
     /// 16 by 9
     /// </summary>
-    Is16by9,
+    Is16by9
 }

@@ -1,7 +1,8 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// <see href="https://bulma.io/documentation/elements/button/" />
+/// Represents the type of a Bulma Button component.
+///     <para><see href="https://bulma.io/documentation/elements/button/" /></para>
 /// </summary>
 public enum ButtonType
 {

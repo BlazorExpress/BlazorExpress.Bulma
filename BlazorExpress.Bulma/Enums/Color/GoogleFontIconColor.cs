@@ -1,7 +1,8 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// <see href="https://bulma.io/documentation/helpers/color-helpers/#text-color" />
+/// Represents the color of a Google Font Icon.
+///     <para><see href="https://bulma.io/documentation/helpers/color-helpers/#text-color" /></para>
 /// </summary>
 public enum GoogleFontIconColor
 {
@@ -15,5 +16,5 @@ public enum GoogleFontIconColor
     White,
     Black,
     Light,
-    Dark,
+    Dark
 }
