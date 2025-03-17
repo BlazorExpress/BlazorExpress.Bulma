@@ -3,7 +3,7 @@
 /// <summary>
 /// Navbar component
 /// <para>
-/// <see href="https://bulma.io/documentation/components/navbar/" />
+///     <see href="https://bulma.io/documentation/components/navbar/" />
 /// </para>
 /// </summary>
 public partial class Navbar : BulmaComponentBase
@@ -18,9 +18,9 @@ public partial class Navbar : BulmaComponentBase
             (BulmaCssClass.HasShadow, HasShadow)
         );
 
-    protected override string? StyleNames => 
+    protected override string? StyleNames =>
         BuildStyleNames(
-            Style//, 
+            Style //, 
             //("height:var(--be-bulma-navbar-height);", true)
         );
 

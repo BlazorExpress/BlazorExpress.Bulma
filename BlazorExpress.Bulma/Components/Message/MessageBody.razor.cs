@@ -3,7 +3,7 @@
 /// <summary>
 /// MessageBody component
 /// <para>
-/// <see href="https://bulma.io/documentation/components/message/" />
+///     <see href="https://bulma.io/documentation/components/message/" />
 /// </para>
 /// </summary>
 public partial class MessageBody : BulmaComponentBase

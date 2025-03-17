@@ -2,7 +2,13 @@
 
 public partial class GridEmptyDataTemplate<TItem> : BulmaComponentBase
 {
+    #region Fields and Constants
+
     private RenderFragment? template;
+
+    #endregion
+
+    #region Methods
 
     protected override async Task OnInitializedAsync()
     {
@@ -14,10 +20,14 @@ public partial class GridEmptyDataTemplate<TItem> : BulmaComponentBase
         await base.OnInitializedAsync();
     }
 
+    #endregion
+
+    #region Properties, Indexers
+
     /// <summary>
     /// Gets or sets the child content.
     /// <para>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
@@ -27,8 +37,9 @@ public partial class GridEmptyDataTemplate<TItem> : BulmaComponentBase
     [Parameter]
     public RenderFragment ChildContent { get; set; } = default!;
 
+    [CascadingParameter] public Grid<TItem> Parent { get; set; } = default!;
+
     internal RenderFragment Template => template ??= builder => { builder.AddContent(100, ChildContent); };
 
-    [CascadingParameter]
-    public Grid<TItem> Parent { get; set; } = default!;
+    #endregion
 }

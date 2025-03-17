@@ -3,7 +3,7 @@
 /// <summary>
 /// Menu component
 /// <para>
-/// <see href="https://bulma.io/documentation/components/menu/" />
+///     <see href="https://bulma.io/documentation/components/menu/" />
 /// </para>
 /// </summary>
 public partial class Menu : BulmaComponentBase
@@ -115,7 +115,7 @@ public partial class Menu : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(true)]
     [Description("If <b>true</b>, the menu is visible.")]
-    [Parameter] 
+    [Parameter]
     public bool IsVisible { get; set; } = true;
 
     #endregion

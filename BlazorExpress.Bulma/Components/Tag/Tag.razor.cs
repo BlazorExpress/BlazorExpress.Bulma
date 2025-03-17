@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Tag component
-/// <see href="https://bulma.io/documentation/elements/tag/" />
+/// <para>
+///     <see href="https://bulma.io/documentation/elements/tag/" />
+/// </para>
 /// </summary>
 public partial class Tag : BulmaComponentBase
 {
@@ -42,11 +44,11 @@ public partial class Tag : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(TagColor.None)]
     [Description("Gets or sets the color.")]
-    [Parameter] 
+    [Parameter]
     public TagColor Color { get; set; } = TagColor.None;
 
     /// <summary>
-    /// If <see langword="true"/>, the tag will converted to delete button.
+    /// If <see langword="true" />, the tag will converted to delete button.
     /// </summary>
     /// <para>
     /// The default value is <see langword="false" />.
@@ -54,11 +56,11 @@ public partial class Tag : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If <b>true</b>, the tag will converted to delete button.")]
-    [Parameter] 
+    [Parameter]
     public bool IsDelete { get; set; } = false;
 
     /// <summary>
-    /// If <see langword="true"/>, the tag will react to hover state. 
+    /// If <see langword="true" />, the tag will react to hover state.
     /// <para>
     /// The default value is <see langword="false" />.
     /// </para>
@@ -66,11 +68,11 @@ public partial class Tag : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If <b>true</b>, the tag will react to hover state.")]
-    [Parameter] 
+    [Parameter]
     public bool IsHoverable { get; set; } = false;
 
     /// <summary>
-    /// If <see langword="true"/>, the rounded variant will be enabled.
+    /// If <see langword="true" />, the rounded variant will be enabled.
     /// <para>
     /// The default value is <see langword="false" />.
     /// </para>
@@ -78,8 +80,20 @@ public partial class Tag : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If <b>true</b>, the rounded variant will be enabled.")]
-    [Parameter] 
+    [Parameter]
     public bool IsRounded { get; set; } = false;
+
+    /// <summary>
+    /// If <see langword="true" />, shows the color in its light version.
+    /// <para>
+    /// Default value is <see langword="false" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(NotificationColor.None)]
+    [Description("If <b>true</b>, shows the color in its light version.")]
+    [Parameter]
+    public bool ShowLightVersion { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the size.
@@ -90,20 +104,8 @@ public partial class Tag : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(TagSize.None)]
     [Description("Gets or sets the size.")]
-    [Parameter] 
-    public TagSize Size { get; set; } = TagSize.None;
-
-    /// <summary>
-    /// If <see langword="true"/>, shows the color in its light version.
-    /// <para>
-    /// Default value is <see langword="false" />.
-    /// </para>
-    /// </summary>
-    [AddedVersion("1.0.0")]
-    [DefaultValue(NotificationColor.None)]
-    [Description("If <b>true</b>, shows the color in its light version.")]
     [Parameter]
-    public bool ShowLightVersion { get; set; } = false;
+    public TagSize Size { get; set; } = TagSize.None;
 
     #endregion
 }

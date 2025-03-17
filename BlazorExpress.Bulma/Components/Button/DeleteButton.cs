@@ -3,20 +3,12 @@
 /// <summary>
 /// DeleteButton component
 /// <para>
-/// <see href="https://bulma.io/documentation/elements/delete/" />
+///     <see href="https://bulma.io/documentation/elements/delete/" />
 /// </para>
 /// </summary>
-public partial class DeleteButton : BulmaComponentBase
+public class DeleteButton : BulmaComponentBase
 {
-
     #region Methods
-
-    protected override void OnInitialized()
-    {
-        AdditionalAttributes ??= new Dictionary<string, object>();
-
-        base.OnInitialized();
-    }
 
     protected override void BuildRenderTree(RenderTreeBuilder builder)
     {
@@ -29,6 +21,13 @@ public partial class DeleteButton : BulmaComponentBase
         builder.AddElementReferenceCapture(213, __inputReference => Element = __inputReference);
 
         builder.CloseElement(); // close: button
+    }
+
+    protected override void OnInitialized()
+    {
+        AdditionalAttributes ??= new Dictionary<string, object>();
+
+        base.OnInitialized();
     }
 
     #endregion
@@ -51,7 +50,8 @@ public partial class DeleteButton : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(DeleteButtonSize.None)]
     [Description("Gets or sets the size.")]
-    [Parameter] public DeleteButtonSize Size { get; set; } = DeleteButtonSize.None;
+    [Parameter]
+    public DeleteButtonSize Size { get; set; } = DeleteButtonSize.None;
 
     #endregion
 }

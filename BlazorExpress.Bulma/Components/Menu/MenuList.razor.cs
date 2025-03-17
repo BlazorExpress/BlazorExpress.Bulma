@@ -3,7 +3,7 @@
 /// <summary>
 /// MenuList component
 /// <para>
-/// <see href="https://bulma.io/documentation/components/menu/" />
+///     <see href="https://bulma.io/documentation/components/menu/" />
 /// </para>
 /// </summary>
 public partial class MenuList : BulmaComponentBase
@@ -11,7 +11,6 @@ public partial class MenuList : BulmaComponentBase
     #region Properties, Indexers
 
     protected override string? ClassNames => BuildClassNames(Class, (BulmaCssClass.MenuList, true));
-
 
     /// <summary>
     /// Gets or sets the child content.

@@ -3,7 +3,7 @@
 /// <summary>
 /// Box component
 /// <para>
-/// <see href="https://bulma.io/documentation/elements/box/" />
+///     <see href="https://bulma.io/documentation/elements/box/" />
 /// </para>
 /// </summary>
 public partial class Box : BulmaComponentBase

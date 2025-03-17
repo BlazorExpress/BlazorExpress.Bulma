@@ -3,7 +3,7 @@
 /// <summary>
 /// MessageHeader component
 /// <para>
-/// <see href="https://bulma.io/documentation/components/message/" />
+///     <see href="https://bulma.io/documentation/components/message/" />
 /// </para>
 /// </summary>
 public partial class MessageHeader : BulmaComponentBase
@@ -31,11 +31,9 @@ public partial class MessageHeader : BulmaComponentBase
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
-    [CascadingParameter] 
-    public Message Parent { get; set; } = default!;
+    [CascadingParameter] public Message Parent { get; set; } = default!;
 
-    [CascadingParameter(Name = "ShowDeleteButton")] 
-    public bool ShowDeleteButton { get; set; } = true;
+    [CascadingParameter(Name = "ShowDeleteButton")] public bool ShowDeleteButton { get; set; } = true;
 
     #endregion
 }

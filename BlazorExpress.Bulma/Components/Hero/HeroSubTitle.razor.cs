@@ -2,7 +2,9 @@
 
 /// <summary>
 /// HeroSubTitle component
-/// <see href="https://bulma.io/documentation/layout/hero/" />
+/// <para>
+///     <see href="https://bulma.io/documentation/layout/hero/" />
+/// </para>
 /// </summary>
 public partial class HeroSubTitle : BulmaComponentBase
 {
@@ -13,7 +15,7 @@ public partial class HeroSubTitle : BulmaComponentBase
     /// <summary>
     /// Gets or sets the child content.
     /// <para>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]

@@ -2,15 +2,17 @@
 
 /// <summary>
 /// Image component
-/// <see href="https://bulma.io/documentation/elements/image/" />
+/// <para>
+///     <see href="https://bulma.io/documentation/elements/image/" />
+/// </para>
 /// </summary>
 public partial class Image : BulmaComponentBase
 {
     #region Properties, Indexers
 
-    protected override string? ClassNames => 
+    protected override string? ClassNames =>
         BuildClassNames(
-            Class, 
+            Class,
             (BulmaCssClass.Block, true),
             (BulmaCssClass.IsRounded, IsRounded)
         );
@@ -33,7 +35,7 @@ public partial class Image : BulmaComponentBase
     [Parameter]
     public string? FigureCssClass { get; set; } = null;
 
-    private string? FigureCssClassNames => 
+    private string? FigureCssClassNames =>
         BuildClassNames(
             FigureCssClass,
             (BulmaCssClass.Image, true),
@@ -61,7 +63,7 @@ public partial class Image : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, image will be rounded.")]
-    [Parameter] 
+    [Parameter]
     public bool IsRounded { get; set; } = false;
 
     /// <summary>

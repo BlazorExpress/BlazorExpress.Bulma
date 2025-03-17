@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Message component
-/// <see href="https://bulma.io/documentation/components/message/" />
+/// <para>
+///     <see href="https://bulma.io/documentation/components/message/" />
+/// </para>
 /// </summary>
 public partial class Notification : BulmaComponentBase
 {
@@ -19,9 +21,9 @@ public partial class Notification : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? ClassNames => 
+    protected override string? ClassNames =>
         BuildClassNames(
-            Class, 
+            Class,
             (BulmaCssClass.Notification, true),
             (Color.ToNotificationColorClass(), true),
             (BulmaCssClass.IsLight, ShowLightVersion)
@@ -49,7 +51,7 @@ public partial class Notification : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(NotificationColor.None)]
     [Description("Gets or sets the color.")]
-    [Parameter] 
+    [Parameter]
     public NotificationColor Color { get; set; } = NotificationColor.None;
 
     /// <summary>
@@ -65,7 +67,7 @@ public partial class Notification : BulmaComponentBase
     public bool HideDeleteButton { get; set; } = false;
 
     /// <summary>
-    /// If <see langword="true"/>, shows the color in its light version.
+    /// If <see langword="true" />, shows the color in its light version.
     /// <para>
     /// Default value is <see langword="false" />.
     /// </para>
@@ -77,7 +79,7 @@ public partial class Notification : BulmaComponentBase
     public bool ShowLightVersion { get; set; } = false;
 
     /// <summary>
-    /// If <see langword="true"/>, the notification is visible.
+    /// If <see langword="true" />, the notification is visible.
     /// <para>
     /// Default value is <see langword="true" />.
     /// </para>

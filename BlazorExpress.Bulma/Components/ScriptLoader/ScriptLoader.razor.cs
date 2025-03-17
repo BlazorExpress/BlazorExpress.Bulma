@@ -82,7 +82,7 @@ public partial class ScriptLoader : BulmaComponentBase
     public bool Async { get; set; } = false;
 
     /// <summary>
-    /// Gets or sets a value indicating whether the script is meant to be executed 
+    /// Gets or sets a value indicating whether the script is meant to be executed
     /// after the document has been parsed, but before firing DOMContentLoaded event.
     /// <para>
     /// Default value is <see langword="false" />.

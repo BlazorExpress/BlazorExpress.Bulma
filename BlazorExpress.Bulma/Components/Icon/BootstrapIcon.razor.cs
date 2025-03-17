@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Component for Google Material Symbols and Icons.
-/// <see href="https://icons.getbootstrap.com/" />
+/// <para>
+///     <see href="https://icons.getbootstrap.com/" />
+/// </para>
 /// </summary>
 public partial class BootstrapIcon : BulmaComponentBase
 {
@@ -26,19 +28,6 @@ public partial class BootstrapIcon : BulmaComponentBase
     [Description("If true, icon color is applied to the text.")]
     [Parameter]
     public bool ApplyColorToText { get; set; } = false;
-
-    /// <summary>
-    /// Gets or sets the bootstrap icon name.
-    /// <para>
-    /// Default value is <see cref="BootstrapIconName.None" />.
-    /// </para>
-    /// </summary>
-    [AddedVersion("1.0.0")]
-    [DefaultValue(BootstrapIconName.None)]
-    [Description("Gets or sets the bootstrap icon name.")]
-    [EditorRequired]
-    [Parameter]
-    public BootstrapIconName Name { get; set; } = BootstrapIconName.None;
 
     /// <summary>
     /// Gets or sets the child content.
@@ -76,7 +65,7 @@ public partial class BootstrapIcon : BulmaComponentBase
     /// <summary>
     /// Gets or sets the CSS class for the icon container.
     /// <para>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
@@ -96,6 +85,19 @@ public partial class BootstrapIcon : BulmaComponentBase
     [Description("If true, the skeleton variant will be enabled.")]
     [Parameter]
     public bool IsSkeleton { get; set; } = false;
+
+    /// <summary>
+    /// Gets or sets the bootstrap icon name.
+    /// <para>
+    /// Default value is <see cref="BootstrapIconName.None" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(BootstrapIconName.None)]
+    [Description("Gets or sets the bootstrap icon name.")]
+    [EditorRequired]
+    [Parameter]
+    public BootstrapIconName Name { get; set; } = BootstrapIconName.None;
 
     /// <summary>
     /// Gets or sets the icon size.
@@ -119,7 +121,7 @@ public partial class BootstrapIcon : BulmaComponentBase
     /// <summary>
     /// Gets or sets the CSS class for the text.
     /// <para>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]

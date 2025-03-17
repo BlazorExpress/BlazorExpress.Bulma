@@ -1,5 +1,8 @@
 ﻿namespace BlazorExpress.Bulma;
 
+/// <summary>
+/// Bulma Navbar component
+/// </summary>
 public partial class BulmaNavbar : BulmaComponentBase
 {
     #region Fields and Constants
@@ -31,14 +34,11 @@ public partial class BulmaNavbar : BulmaComponentBase
 
     #region Properties, Indexers
 
-    [Parameter] 
-    public string? ApplicationName { get; set; } = null;
+    [Parameter] public string? ApplicationName { get; set; } = null;
 
-    [Parameter] 
-    public string? BrandImgAltText { get; set; } = null;
+    [Parameter] public string? BrandImgAltText { get; set; } = null;
 
-    [Parameter] 
-    public string? BrandImgSrc { get; set; } = null;
+    [Parameter] public string? BrandImgSrc { get; set; } = null;
 
     #endregion
 }

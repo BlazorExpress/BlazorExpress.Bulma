@@ -38,15 +38,13 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
 
         if (cssClassList is not null && cssClassList.Any())
             foreach (var (cssClass, when) in cssClassList)
-            {
                 if (!string.IsNullOrWhiteSpace(cssClass) && when)
                     list.Add(cssClass);
-            }
 
         if (list.Any())
             return string.Join(" ", list);
-        else
-            return string.Empty;
+
+        return string.Empty;
     }
 
     public static string BuildClassNames(string? userDefinedCssClass, params (string? cssClass, bool when)[] cssClassList)
@@ -55,18 +53,16 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
 
         if (cssClassList is not null && cssClassList.Any())
             foreach (var (cssClass, when) in cssClassList)
-            {
                 if (!string.IsNullOrWhiteSpace(cssClass) && when)
                     list.Add(cssClass);
-            }
 
         if (!string.IsNullOrWhiteSpace(userDefinedCssClass))
             list.Add(userDefinedCssClass.Trim());
 
         if (list.Any())
             return string.Join(" ", list);
-        else
-            return string.Empty;
+
+        return string.Empty;
     }
 
     public static string BuildStyleNames(string? userDefinedCssStyle, params (string? cssStyle, bool when)[] cssStyleList)
@@ -75,18 +71,16 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
 
         if (cssStyleList is not null && cssStyleList.Any())
             foreach (var (cssStyle, when) in cssStyleList)
-            {
                 if (!string.IsNullOrWhiteSpace(cssStyle) && when)
                     list.Add(cssStyle);
-            }
 
         if (!string.IsNullOrWhiteSpace(userDefinedCssStyle))
             list.Add(userDefinedCssStyle.Trim());
 
         if (list.Any())
             return string.Join(';', list);
-        else
-            return string.Empty;
+
+        return string.Empty;
     }
 
     /// <inheritdoc />
@@ -140,8 +134,7 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
 
     #region Properties, Indexers
 
-    [Parameter(CaptureUnmatchedValues = true)] 
-    public Dictionary<string, object> AdditionalAttributes { get; set; } = default!;
+    [Parameter(CaptureUnmatchedValues = true)] public Dictionary<string, object> AdditionalAttributes { get; set; } = default!;
 
     /// <summary>
     /// Gets or sets the CSS class.
@@ -152,18 +145,18 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the CSS class.")]
-    [Parameter] 
-    public string? Class { get; set; } = null;
+    [Parameter]
+    public string? Class { get; set; }
 
     protected virtual string? ClassNames => Class;
 
     /// <summary>
-    /// Gets or sets the associated <see cref="ElementReference"/>.
+    /// Gets or sets the associated <see cref="ElementReference" />.
     /// <para>
-    /// May be <see langword="null"/>, if accessed before the component is rendered.
+    /// May be <see langword="null" />, if accessed before the component is rendered.
     /// </para>
     /// </summary>
-    [DisallowNull] 
+    [DisallowNull]
     public ElementReference? Element { get; set; }
 
     /// <summary>
@@ -175,13 +168,12 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the ID. If not set, a unique ID will be generated.")]
-    [Parameter] 
-    public string? Id { get; set; } = null;
+    [Parameter]
+    public string? Id { get; set; }
 
     protected bool IsRenderComplete { get; private set; }
 
-    [Inject] 
-    protected IJSRuntime JSRuntime { get; set; } = default!;
+    [Inject] protected IJSRuntime JSRuntime { get; set; } = default!;
 
     /// <summary>
     /// Gets or sets the CSS style.
@@ -192,8 +184,8 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the CSS style.")]
-    [Parameter] 
-    public string? Style { get; set; } = null;
+    [Parameter]
+    public string? Style { get; set; }
 
     protected virtual string? StyleNames => Style;
 

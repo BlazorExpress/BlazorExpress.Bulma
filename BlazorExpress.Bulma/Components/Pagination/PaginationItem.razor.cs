@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Pagination component
-/// <see href="https://bulma.io/documentation/components/pagination/" />
+/// <para>
+///     <see href="https://bulma.io/documentation/components/pagination/" />
+/// </para>
 /// </summary>
 public partial class PaginationItem : BulmaComponentBase
 {
@@ -30,7 +32,7 @@ public partial class PaginationItem : BulmaComponentBase
     public RenderFragment? ChildContent { get; set; }
 
     /// <summary>
-    /// If <see langword="true" />, sets the <see cref="PaginationItem"/> as current page.
+    /// If <see langword="true" />, sets the <see cref="PaginationItem" /> as current page.
     /// <para>
     /// Default value is <see langword="false" />.
     /// </para>
@@ -38,11 +40,11 @@ public partial class PaginationItem : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If <b>true</b>, sets the <code>PaginationItem</code> as current page.")]
-    [Parameter] 
+    [Parameter]
     public bool IsCurrentPage { get; set; } = false;
 
     /// <summary>
-    /// If <see langword="true" />, disables the <see cref="PaginationItem"/>.
+    /// If <see langword="true" />, disables the <see cref="PaginationItem" />.
     /// <para>
     /// Default value is <see langword="false" />.
     /// </para>
@@ -50,7 +52,7 @@ public partial class PaginationItem : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If <b>true</b>, disables the <code>PaginationItem</code>.")]
-    [Parameter] 
+    [Parameter]
     public bool IsDisabled { get; set; } = false;
 
     /// <summary>
@@ -63,7 +65,7 @@ public partial class PaginationItem : BulmaComponentBase
     [DefaultValue(PaginationLinkType.None)]
     [Description("Gets or sets the  <code>PaginationItem</code> type.")]
     [Parameter]
-    public 
+    public
         PaginationLinkType Type { get; set; } = PaginationLinkType.None;
 
     #endregion

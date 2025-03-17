@@ -3,7 +3,7 @@
 /// <summary>
 /// NavbarBurger component
 /// <para>
-/// <see href="https://bulma.io/documentation/components/navbar/" />
+///     <see href="https://bulma.io/documentation/components/navbar/" />
 /// </para>
 /// </summary>
 public partial class NavbarBurger : BulmaComponentBase
@@ -30,8 +30,7 @@ public partial class NavbarBurger : BulmaComponentBase
             (BulmaCssClass.IsActive, IsActive)
         );
 
-    [Parameter] 
-    public EventCallback<bool> ActiveStateChanged { get; set; }
+    [Parameter] public EventCallback<bool> ActiveStateChanged { get; set; }
 
     /// <summary>
     /// Gets or sets the child content.
@@ -59,7 +58,7 @@ public partial class NavbarBurger : BulmaComponentBase
     public bool IsActive { get; set; } = false;
 
     /// <summary>
-    /// If <see langword="true" />, sets the <see cref="NavbarBurger"/> to the left side.
+    /// If <see langword="true" />, sets the <see cref="NavbarBurger" /> to the left side.
     /// <para>
     /// Default value is <see langword="false" />.
     /// </para>
@@ -67,7 +66,7 @@ public partial class NavbarBurger : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If <b>true</b>, sets the <code>NavbarBurger</code> to the left side.")]
-    [Parameter] 
+    [Parameter]
     public bool IsLeft { get; set; } = false;
 
     /// <summary>

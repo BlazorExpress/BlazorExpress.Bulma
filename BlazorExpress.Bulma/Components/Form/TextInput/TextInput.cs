@@ -3,10 +3,10 @@
 /// <summary>
 /// TextInput component
 /// <para>
-/// <see href="https://bulma.io/documentation/form/input/" />
+///     <see href="https://bulma.io/documentation/form/input/" />
 /// </para>
 /// </summary>
-public partial class TextInput : BulmaComponentBase
+public class TextInput : BulmaComponentBase
 {
     #region Fields and Constants
 
@@ -15,15 +15,6 @@ public partial class TextInput : BulmaComponentBase
     #endregion
 
     #region Methods
-
-    protected override void OnInitialized()
-    {
-        AdditionalAttributes ??= new Dictionary<string, object>();
-
-        fieldIdentifier = FieldIdentifier.Create(ValueExpression!);
-
-        base.OnInitialized();
-    }
 
     protected override void BuildRenderTree(RenderTreeBuilder builder)
     {
@@ -36,13 +27,13 @@ public partial class TextInput : BulmaComponentBase
         builder.OpenElement(200, "input"); // open input
         builder.AddAttribute(201, "type", "text");
         builder.AddAttribute(202, "id", Id);
-        builder.AddAttributeIfNotNullOrWhiteSpace(203, "class", $"{ClassNames} {fieldCssClasses}");
+        builder.AddAttributeIfNotNullOrWhiteSpace(203, "class", $"{ClassNames} {FieldCssClasses}");
         builder.AddAttributeIfNotNullOrWhiteSpace(204, "style", StyleNames);
         builder.AddAttribute(205, "value", Value);
         builder.AddAttribute(206, "disabled", Disabled);
         builder.AddAttribute(207, "placeholder", Placeholder);
         builder.AddAttribute(208, "maxlength", MaxLength);
-        builder.AddAttribute(209, "autocomplete", autoCompleteAsString);
+        builder.AddAttribute(209, "autocomplete", AutoCompleteAsString);
         builder.AddMultipleAttributes(210, AdditionalAttributes);
 
         if (BindEvent == BindEvent.OnChange)
@@ -56,6 +47,15 @@ public partial class TextInput : BulmaComponentBase
 
         if (State == TextInputState.Loading)
             builder.CloseElement(); // close: div
+    }
+
+    protected override void OnInitialized()
+    {
+        AdditionalAttributes ??= new Dictionary<string, object>();
+
+        fieldIdentifier = FieldIdentifier.Create(ValueExpression!);
+
+        base.OnInitialized();
     }
 
     /// <summary>
@@ -107,12 +107,10 @@ public partial class TextInput : BulmaComponentBase
             (State.ToTextInputStateClass(), State != TextInputState.None)
         );
 
-    private string autoCompleteAsString => AutoComplete ? "true" : "false";
-
     /// <summary>
     /// If <see langword="true" />, TextInput can complete the values automatically by the browser.
     /// <para>
-    /// Default value is <see langword="false"/>.
+    /// Default value is <see langword="false" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
@@ -120,6 +118,8 @@ public partial class TextInput : BulmaComponentBase
     [Description("If <b>true</b>, <code>TextInput</code> can complete the values automatically by the browser.")]
     [Parameter]
     public bool AutoComplete { get; set; } = false;
+
+    private string AutoCompleteAsString => AutoComplete ? "true" : "false";
 
     /// <summary>
     /// Gets or sets the input bind event.
@@ -142,7 +142,8 @@ public partial class TextInput : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(TextInputColor.None)]
     [Description("Gets or sets the color.")]
-    [Parameter] public TextInputColor Color { get; set; } = TextInputColor.None;
+    [Parameter]
+    public TextInputColor Color { get; set; } = TextInputColor.None;
 
     /// <summary>
     /// Gets or sets the disabled state.
@@ -156,10 +157,9 @@ public partial class TextInput : BulmaComponentBase
     [Parameter]
     public bool Disabled { get; set; } = false;
 
-    [CascadingParameter] 
-    private EditContext EditContext { get; set; } = default!;
+    [CascadingParameter] private EditContext EditContext { get; set; } = default!;
 
-    private string fieldCssClasses => EditContext?.FieldCssClass(fieldIdentifier) ?? "";
+    private string FieldCssClasses => EditContext?.FieldCssClass(fieldIdentifier) ?? "";
 
     /// <summary>
     /// If true, the rounded variant will be enabled.
@@ -170,13 +170,13 @@ public partial class TextInput : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("If true, the rounded variant will be enabled.")]
-    [Parameter] 
+    [Parameter]
     public bool IsRounded { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the maximum number of characters that can be entered.
     /// <para>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
@@ -189,7 +189,7 @@ public partial class TextInput : BulmaComponentBase
     /// <summary>
     /// Gets or sets the placeholder text.
     /// <para>
-    /// Default value is <see langword="null"/>.
+    /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
@@ -207,7 +207,8 @@ public partial class TextInput : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(TextInputSize.None)]
     [Description("Gets or sets the size.")]
-    [Parameter] public TextInputSize Size { get; set; } = TextInputSize.None;
+    [Parameter]
+    public TextInputSize Size { get; set; } = TextInputSize.None;
 
     /// <summary>
     /// Gets or sets the state.
@@ -218,7 +219,8 @@ public partial class TextInput : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(TextInputState.None)]
     [Description("Gets or sets the state.")]
-    [Parameter] public TextInputState State { get; set; } = TextInputState.None;
+    [Parameter]
+    public TextInputState State { get; set; } = TextInputState.None;
 
     /// <summary>
     /// Gets or sets the text alignment.
@@ -259,7 +261,7 @@ public partial class TextInput : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the expression.")]
     [ParameterTypeName("Expression<Func<string>>?")]
-    [Parameter] 
+    [Parameter]
     public Expression<Func<string>>? ValueExpression { get; set; } = default!;
 
     #endregion

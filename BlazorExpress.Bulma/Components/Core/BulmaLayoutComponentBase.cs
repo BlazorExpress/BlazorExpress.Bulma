@@ -128,22 +128,19 @@ public abstract class BulmaLayoutComponentBase : LayoutComponentBase
 
     [Parameter(CaptureUnmatchedValues = true)] public Dictionary<string, object> AdditionalAttributes { get; set; } = default!;
 
-    [Parameter] 
-    public string? Class { get; set; } = null;
+    [Parameter] public string? Class { get; set; }
 
     protected virtual string? ClassNames => Class;
 
     public ElementReference Element { get; set; }
 
-    [Parameter] 
-    public string? Id { get; set; } = null;
+    [Parameter] public string? Id { get; set; }
 
     protected bool IsRenderComplete { get; private set; }
 
     [Inject] protected IJSRuntime JSRuntime { get; set; } = default!;
 
-    [Parameter] 
-    public string? Style { get; set; } = null;
+    [Parameter] public string? Style { get; set; }
 
     protected virtual string? StyleNames => Style;
 

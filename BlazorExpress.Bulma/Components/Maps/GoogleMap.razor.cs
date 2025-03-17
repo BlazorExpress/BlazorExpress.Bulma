@@ -1,5 +1,11 @@
 ﻿namespace BlazorExpress.Bulma;
 
+/// <summary>
+/// Google Map component
+/// <para>
+///     <see href="https://developers.google.com/maps/documentation/javascript/tutorial" />
+/// </para>
+/// </summary>
 public partial class GoogleMap : BulmaComponentBase
 {
     #region Fields and Constants

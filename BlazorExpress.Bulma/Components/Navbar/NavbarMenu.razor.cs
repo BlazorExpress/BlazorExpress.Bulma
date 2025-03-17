@@ -3,7 +3,7 @@
 /// <summary>
 /// NavbarMenu component
 /// <para>
-/// <see href="https://bulma.io/documentation/components/navbar/" />
+///     <see href="https://bulma.io/documentation/components/navbar/" />
 /// </para>
 /// </summary>
 public partial class NavbarMenu : BulmaComponentBase
@@ -35,7 +35,8 @@ public partial class NavbarMenu : BulmaComponentBase
     /// <para>
     /// Default value is <see langword="false" />.
     /// </para>
-    /// </summary>v
+    /// </summary>
+    /// v
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
     [Description("Gets or sets the active state.")]

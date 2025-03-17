@@ -1,5 +1,8 @@
 ﻿namespace BlazorExpress.Bulma;
 
+/// <summary>
+/// Bulma layout component
+/// </summary>
 public partial class BulmaLayout : BulmaLayoutComponentBase
 {
     #region Fields and Constants
@@ -39,9 +42,9 @@ public partial class BulmaLayout : BulmaLayoutComponentBase
 
     #region Properties, Indexers
 
-    protected override string? ClassNames => 
+    protected override string? ClassNames =>
         BuildClassNames(
-            Class, 
+            Class,
             ("be-bulma-page", true)
         );
 
@@ -56,37 +59,30 @@ public partial class BulmaLayout : BulmaLayoutComponentBase
             ("be-bulma-page-content p-5", true)
         );
 
-    [Parameter] 
-    public string? ContentSectionCssClass { get; set; } = null;
+    [Parameter] public string? ContentSectionCssClass { get; set; } = null;
+
+    [Parameter] public string? ContentSectionCssStyle { get; set; } = null;
 
     private string? ContentSectionStyleNames =>
         BuildClassNames(
             ContentSectionCssStyle
         );
 
-    [Parameter]
-    public string? ContentSectionCssStyle { get; set; } = null;
+    [Parameter] public RenderFragment? FooterSection { get; set; }
 
-    [Parameter] 
-    public RenderFragment? FooterSection { get; set; }
+    [Parameter] public string? FooterSectionCssClass { get; set; } = "bg-body-tertiary";
 
-    [Parameter] 
-    public string? FooterSectionCssClass { get; set; } = "bg-body-tertiary";
-
-    private string? FooterSectionCssClassNames => 
+    private string? FooterSectionCssClassNames =>
         BuildClassNames(
-            FooterSectionCssClass, 
+            FooterSectionCssClass,
             ("be-bulma-page-footer p-4", true)
         );
 
-    [Parameter] 
-    public RenderFragment? HeaderSection { get; set; }
+    [Parameter] public RenderFragment? HeaderSection { get; set; }
 
-    [Parameter] 
-    public string? HeaderSectionCssClass { get; set; } = "d-flex justify-content-end";
+    [Parameter] public string? HeaderSectionCssClass { get; set; } = "d-flex justify-content-end";
 
-    [Parameter] 
-    public RenderFragment? SidebarSection { get; set; }
+    [Parameter] public RenderFragment? SidebarSection { get; set; }
 
     private string? SidebarSectionClassNames =>
         BuildClassNames(
@@ -94,17 +90,15 @@ public partial class BulmaLayout : BulmaLayoutComponentBase
             ("be-bulma-page-sidebar", true)
         );
 
-    [Parameter] 
-    public string? SidebarSectionCssClass { get; set; }
+    [Parameter] public string? SidebarSectionCssClass { get; set; }
+
+    [Parameter] public string? SidebarSectionCssStyle { get; set; }
 
     private string? SidebarSectionStyleNames =>
         BuildStyleNames(
             SidebarSectionCssStyle,
             ($"--be-bulma-menu-width:{SidebarWidth.ToString(CultureInfo.InvariantCulture)}px", SidebarWidth > 0)
         );
-
-    [Parameter]
-    public string? SidebarSectionCssStyle { get; set; }
 
     /// <summary>
     /// Gets or sets the sidebar width in pixels.

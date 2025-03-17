@@ -3,7 +3,7 @@
 /// <summary>
 /// NavbarEnd component
 /// <para>
-/// <see href="https://bulma.io/documentation/components/navbar/" />
+///     <see href="https://bulma.io/documentation/components/navbar/" />
 /// </para>
 /// </summary>
 public partial class NavbarEnd : BulmaComponentBase

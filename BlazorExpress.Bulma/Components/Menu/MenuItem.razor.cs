@@ -3,14 +3,14 @@
 /// <summary>
 /// MenuItem component
 /// <para>
-/// <see href="https://bulma.io/documentation/components/menu/" />
+///     <see href="https://bulma.io/documentation/components/menu/" />
 /// </para>
 /// </summary>
 public partial class MenuItem : BulmaComponentBase
 {
     #region Methods
 
-    private void  OnMenuItemClick()
+    private void OnMenuItemClick()
     {
         if (Parent is not null)
             Parent.HideMenu();

@@ -3,13 +3,11 @@
 /// <summary>
 /// Modal component
 /// <para>
-/// <see href="https://bulma.io/documentation/components/modal/" />
+///     <see href="https://bulma.io/documentation/components/modal/" />
 /// </para>
 /// </summary>
 public partial class Modal : BulmaComponentBase
 {
-    private bool isVisible { get; set; } = false;
-
     #region Methods
 
     /// <summary>
@@ -38,6 +36,33 @@ public partial class Modal : BulmaComponentBase
 
     #region Properties, Indexers
 
+    protected override string? ClassNames =>
+        BuildClassNames(
+            Class,
+            (BulmaCssClass.Modal, true),
+            (BulmaCssClass.IsActive, isVisible)
+        );
+
+    private string? BodyClassNames =>
+        BuildClassNames(
+            BodyCssClass,
+            (BulmaCssClass.ModalCardBody, true)
+        );
+
+    /// <summary>
+    /// Gets or sets the modal body content.
+    /// <para>
+    /// Default value is <see langword="null" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the modal body content.")]
+    [Parameter]
+    public RenderFragment? BodyContent { get; set; }
+
+    [Parameter] public string? BodyCssClass { get; set; }
+
     /// <summary>
     /// Gets or sets the child content.
     /// <para>
@@ -50,11 +75,10 @@ public partial class Modal : BulmaComponentBase
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
-    protected override string? ClassNames =>
+    private string? CloseButtonClassNames =>
         BuildClassNames(
-            Class,
-            (BulmaCssClass.Modal, true),
-            (BulmaCssClass.IsActive, isVisible)
+            CloseButtonCssClass,
+            (BulmaCssClass.ModalClose, true)
         );
 
     /// <summary>
@@ -66,14 +90,28 @@ public partial class Modal : BulmaComponentBase
     [Parameter]
     public string? CloseButtonCssClass { get; set; } = null;
 
-    private string? CloseButtonClassNames =>
+    private string? FootClassNames =>
         BuildClassNames(
-            CloseButtonCssClass,
-            (BulmaCssClass.ModalClose, true)
+            FootCssClass,
+            (BulmaCssClass.ModalCardFoot, true)
         );
 
     /// <summary>
-    /// If <see langword="true"/>, modal close button is hidden.
+    /// Gets or sets the modal foot content.
+    /// <para>
+    /// Default value is <see langword="null" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the modal foot content.")]
+    [Parameter]
+    public RenderFragment? FootContent { get; set; }
+
+    [Parameter] public string? FootCssClass { get; set; }
+
+    /// <summary>
+    /// If <see langword="true" />, modal close button is hidden.
     /// <para>
     /// Default value is <see langword="false" />.
     /// </para>
@@ -83,6 +121,8 @@ public partial class Modal : BulmaComponentBase
     [Description("If <b>true</b>, modal close button is hidden.")]
     [Parameter]
     public bool HideCloseButton { get; set; } = false;
+
+    private bool isVisible { get; set; } = false;
 
     /// <summary>
     /// This event fires when the <see cref="Modal" /> is hidden.
@@ -100,14 +140,7 @@ public partial class Modal : BulmaComponentBase
     [Parameter]
     public EventCallback OnShown { get; set; }
 
-    [Parameter]
-    public string? Title { get; set; }
-
-    [Parameter]
-    public RenderFragment? TitleContent { get; set; }
-
-    [Parameter]
-    public string? TitleCssClass { get; set; }
+    [Parameter] public string? Title { get; set; }
 
     private string? TitleClassNames =>
         BuildClassNames(
@@ -115,47 +148,9 @@ public partial class Modal : BulmaComponentBase
             (BulmaCssClass.ModalCardTitle, true)
         );
 
-    /// <summary>
-    /// Gets or sets the modal body content.
-    /// <para>
-    /// Default value is <see langword="null" />.
-    /// </para>
-    /// </summary>
-    [AddedVersion("1.0.0")]
-    [DefaultValue(null)]
-    [Description("Gets or sets the modal body content.")]
-    [Parameter]
-    public RenderFragment? BodyContent { get; set; }
+    [Parameter] public RenderFragment? TitleContent { get; set; }
 
-    [Parameter]
-    public string? BodyCssClass { get; set; }
-
-    private string? BodyClassNames =>
-        BuildClassNames(
-            BodyCssClass,
-            (BulmaCssClass.ModalCardBody, true)
-        );
-
-    /// <summary>
-    /// Gets or sets the modal foot content.
-    /// <para>
-    /// Default value is <see langword="null" />.
-    /// </para>
-    /// </summary>
-    [AddedVersion("1.0.0")]
-    [DefaultValue(null)]
-    [Description("Gets or sets the modal foot content.")]
-    [Parameter]
-    public RenderFragment? FootContent { get; set; }
-
-    [Parameter]
-    public string? FootCssClass { get; set; }
-
-    private string? FootClassNames =>
-        BuildClassNames(
-            FootCssClass,
-            (BulmaCssClass.ModalCardFoot, true)
-        );
+    [Parameter] public string? TitleCssClass { get; set; }
 
     #endregion
 }
