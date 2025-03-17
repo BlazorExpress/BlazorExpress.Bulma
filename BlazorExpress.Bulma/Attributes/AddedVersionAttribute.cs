@@ -5,10 +5,18 @@
 /// </summary>
 public class AddedVersionAttribute : Attribute
 {
-    public string Version { get; }
+    #region Constructors
 
     public AddedVersionAttribute(string version)
     {
         Version = version;
     }
+
+    #endregion
+
+    #region Properties, Indexers
+
+    public string Version { get; }
+
+    #endregion
 }
