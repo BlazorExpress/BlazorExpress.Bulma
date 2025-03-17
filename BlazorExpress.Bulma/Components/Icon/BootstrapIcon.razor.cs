@@ -36,6 +36,7 @@ public partial class BootstrapIcon : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(BootstrapIconName.None)]
     [Description("Gets or sets the bootstrap icon name.")]
+    [EditorRequired]
     [Parameter]
     public BootstrapIconName Name { get; set; } = BootstrapIconName.None;
 
@@ -48,29 +49,41 @@ public partial class BootstrapIcon : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the child content.")]
-    [EditorRequired]
     [Parameter]
-    public RenderFragment? ChildContent { get; set; }
+    public RenderFragment? ChildContent { get; set; } = null;
 
     /// <summary>
     /// Gets or sets the icon color.
     /// <para>
-    /// Default value is <see cref="IconColor.None" />.
+    /// Default value is <see cref="BootstrapIconColor.None" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
-    [DefaultValue(IconColor.None)]
+    [DefaultValue(BootstrapIconColor.None)]
     [Description("Gets or sets the icon color.")]
     [Parameter]
-    public IconColor Color { get; set; } = IconColor.None;
+    public BootstrapIconColor Color { get; set; } = BootstrapIconColor.None;
 
-    private string? IconContainerCssClassNames =>
+    private string? IconContainerClassNames =>
         BuildClassNames(
+            IconContainerCssClass,
             (BulmaCssClass.Icon, true),
-            (Color.ToIconColorClass(), Color != IconColor.None),
-            (Size.ToIconSizeClass(), Size != IconSize.None),
+            (Color.ToBootstrapIconColorClass(), Color != BootstrapIconColor.None),
+            (Size.ToBootstrapIconSizeClass(), Size != BootstrapIconSize.None),
             (BulmaCssClass.IsSkeleton, IsSkeleton)
         );
+
+    /// <summary>
+    /// Gets or sets the CSS class for the icon container.
+    /// <para>
+    /// Default value is <see langword="null"/>.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the CSS class for the icon container.")]
+    [Parameter]
+    public string? IconContainerCssClass { get; set; } = null;
 
     /// <summary>
     /// If true, the skeleton variant will be enabled.
@@ -87,20 +100,33 @@ public partial class BootstrapIcon : BulmaComponentBase
     /// <summary>
     /// Gets or sets the icon size.
     /// <para>
-    /// Default value is <see cref="IconSize.None" />.
+    /// Default value is <see cref="BootstrapIconSize.None" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
-    [DefaultValue(IconSize.None)]
+    [DefaultValue(BootstrapIconSize.None)]
     [Description("Gets or sets the icon size.")]
     [Parameter]
-    public IconSize Size { get; set; } = IconSize.None;
+    public BootstrapIconSize Size { get; set; } = BootstrapIconSize.None;
 
-    private string? TextCssClassNames =>
+    private string? TextClassNames =>
         BuildClassNames(
+            TextCssClass,
             (BulmaCssClass.IconText, true),
-            (Color.ToIconColorClass(), Color != IconColor.None && ApplyColorToText)
+            (Color.ToBootstrapIconColorClass(), Color != BootstrapIconColor.None && ApplyColorToText)
         );
+
+    /// <summary>
+    /// Gets or sets the CSS class for the text.
+    /// <para>
+    /// Default value is <see langword="null"/>.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the CSS class for the text.")]
+    [Parameter]
+    public string? TextCssClass { get; set; } = null;
 
     #endregion
 }

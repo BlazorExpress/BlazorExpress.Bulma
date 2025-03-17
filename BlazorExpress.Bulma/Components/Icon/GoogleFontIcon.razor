@@ -3,8 +3,8 @@
 
 @if (ChildContent is not null)
 {
-    <span class="@TextCssClassNames">
-        <span class="@IconContainerCssClassNames">
+    <span class="@TextClassNames">
+        <span class="@IconContainerClassNames">
             <i id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
                 @IconName
             </i>
@@ -14,7 +14,7 @@
 }
 else
 {
-    <span class="@IconContainerCssClassNames">
+    <span class="@IconContainerClassNames">
         <i id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
             @IconName
         </i>

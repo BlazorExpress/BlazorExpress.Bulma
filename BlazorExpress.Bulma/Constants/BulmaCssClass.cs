@@ -157,6 +157,13 @@ public static class BulmaCssClass
     public const string IsRight = "is-right";
     public const string IsRounded = "is-rounded";
     public const string IsScrollable = "is-scrollable";
+    public const string IsSize1 = "is-size-1";
+    public const string IsSize2 = "is-size-2";
+    public const string IsSize3 = "is-size-3";
+    public const string IsSize4 = "is-size-4";
+    public const string IsSize5 = "is-size-5";
+    public const string IsSize6 = "is-size-6";
+    public const string IsSize7 = "is-size-7";
     public const string IsSkeleton = "is-skeleton";
     public const string IsSmall = "is-small";
     public const string IsSpaced = "is-spaced";
@@ -169,6 +176,69 @@ public static class BulmaCssClass
     public const string IsResponsive = "is-responsive";
     public const string IsWarning = "is-warning";
     public const string IsWhite = "is-white";
+
+    public const string Margin0 = "m-0";
+    public const string Margin1 = "m-1";
+    public const string Margin2 = "m-2";
+    public const string Margin3 = "m-3";
+    public const string Margin4 = "m-4";
+    public const string Margin5 = "m-5";
+    public const string Margin6 = "m-6";
+    public const string MarginAuto = "m-auto";
+
+    public const string MarginBottom0 = "mb-0";
+    public const string MarginBottom1 = "mb-1";
+    public const string MarginBottom2 = "mb-2";
+    public const string MarginBottom3 = "mb-3";
+    public const string MarginBottom4 = "mb-4";
+    public const string MarginBottom5 = "mb-5";
+    public const string MarginBottom6 = "mb-6";
+    public const string MarginBottomAuto = "mb-auto";
+
+    public const string MarginLeft0 = "ml-0";
+    public const string MarginLeft1 = "ml-1";
+    public const string MarginLeft2 = "ml-2";
+    public const string MarginLeft3 = "ml-3";
+    public const string MarginLeft4 = "ml-4";
+    public const string MarginLeft5 = "ml-5";
+    public const string MarginLeft6 = "ml-6";
+    public const string MarginLeftAuto = "ml-auto";
+
+    public const string MarginLeftRight0 = "mx-0";
+    public const string MarginLeftRight1 = "mx-1";
+    public const string MarginLeftRight2 = "mx-2";
+    public const string MarginLeftRight3 = "mx-3";
+    public const string MarginLeftRight4 = "mx-4";
+    public const string MarginLeftRight5 = "mx-5";
+    public const string MarginLeftRight6 = "mx-6";
+    public const string MarginLeftRightAuto = "mx-auto";
+
+    public const string MarginRight0 = "mr-0";
+    public const string MarginRight1 = "mr-1";
+    public const string MarginRight2 = "mr-2";
+    public const string MarginRight3 = "mr-3";
+    public const string MarginRight4 = "mr-4";
+    public const string MarginRight5 = "mr-5";
+    public const string MarginRight6 = "mr-6";
+    public const string MarginRightAuto = "mr-auto";
+
+    public const string MarginTop0 = "mt-0";
+    public const string MarginTop1 = "mt-1";
+    public const string MarginTop2 = "mt-2";
+    public const string MarginTop3 = "mt-3";
+    public const string MarginTop4 = "mt-4";
+    public const string MarginTop5 = "mt-5";
+    public const string MarginTop6 = "mt-6";
+    public const string MarginTopAuto = "mt-auto";
+
+    public const string MarginTopBottom0 = "my-0";
+    public const string MarginTopBottom1 = "my-1";
+    public const string MarginTopBottom2 = "my-2";
+    public const string MarginTopBottom3 = "my-3";
+    public const string MarginTopBottom4 = "my-4";
+    public const string MarginTopBottom5 = "my-5";
+    public const string MarginTopBottom6 = "my-6";
+    public const string MarginTopBottomAuto = "my-auto";
 
     public const string Menu = "menu";
     public const string MenuLabel = "menu-label";
@@ -203,6 +273,69 @@ public static class BulmaCssClass
     public const string Notification = "notification";
 
     public const string Overlay = "be-bulma-overlay";
+
+    public const string Padding0 = "p-0";
+    public const string Padding1 = "p-1";
+    public const string Padding2 = "p-2";
+    public const string Padding3 = "p-3";
+    public const string Padding4 = "p-4";
+    public const string Padding5 = "p-5";
+    public const string Padding6 = "p-6";
+    public const string PaddingAuto = "p-auto";
+
+    public const string PaddingBottom0 = "pb-0";
+    public const string PaddingBottom1 = "pb-1";
+    public const string PaddingBottom2 = "pb-2";
+    public const string PaddingBottom3 = "pb-3";
+    public const string PaddingBottom4 = "pb-4";
+    public const string PaddingBottom5 = "pb-5";
+    public const string PaddingBottom6 = "pb-6";
+    public const string PaddingBottomAuto = "pb-auto";
+
+    public const string PaddingLeft0 = "pl-0";
+    public const string PaddingLeft1 = "pl-1";
+    public const string PaddingLeft2 = "pl-2";
+    public const string PaddingLeft3 = "pl-3";
+    public const string PaddingLeft4 = "pl-4";
+    public const string PaddingLeft5 = "pl-5";
+    public const string PaddingLeft6 = "pl-6";
+    public const string PaddingLeftAuto = "pl-auto";
+
+    public const string PaddingLeftRight0 = "px-0";
+    public const string PaddingLeftRight1 = "px-1";
+    public const string PaddingLeftRight2 = "px-2";
+    public const string PaddingLeftRight3 = "px-3";
+    public const string PaddingLeftRight4 = "px-4";
+    public const string PaddingLeftRight5 = "px-5";
+    public const string PaddingLeftRight6 = "px-6";
+    public const string PaddingLeftRightAuto = "px-auto";
+
+    public const string PaddingRight0 = "pr-0";
+    public const string PaddingRight1 = "pr-1";
+    public const string PaddingRight2 = "pr-2";
+    public const string PaddingRight3 = "pr-3";
+    public const string PaddingRight4 = "pr-4";
+    public const string PaddingRight5 = "pr-5";
+    public const string PaddingRight6 = "pr-6";
+    public const string PaddingRightAuto = "pr-auto";
+
+    public const string PaddingTop0 = "pt-0";
+    public const string PaddingTop1 = "pt-1";
+    public const string PaddingTop2 = "pt-2";
+    public const string PaddingTop3 = "pt-3";
+    public const string PaddingTop4 = "pt-4";
+    public const string PaddingTop5 = "pt-5";
+    public const string PaddingTop6 = "pt-6";
+    public const string PaddingTopAuto = "pt-auto";
+
+    public const string PaddingTopBottom0 = "py-0";
+    public const string PaddingTopBottom1 = "py-1";
+    public const string PaddingTopBottom2 = "py-2";
+    public const string PaddingTopBottom3 = "py-3";
+    public const string PaddingTopBottom4 = "py-4";
+    public const string PaddingTopBottom5 = "py-5";
+    public const string PaddingTopBottom6 = "py-6";
+    public const string PaddingTopBottomAuto = "py-auto";
 
     public const string Pagination = "pagination";
     public const string PaginationLink = "pagination-link";
