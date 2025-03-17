@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Represents the size of a Google Font Icon.
-///     <para><see href="https://bulma.io/documentation/helpers/typography-helpers/#size" /></para>
+/// <para>
+///     <see href="https://bulma.io/documentation/helpers/typography-helpers/#size" />
+/// </para>
 /// </summary>
 public enum GoogleFontIconSize
 {

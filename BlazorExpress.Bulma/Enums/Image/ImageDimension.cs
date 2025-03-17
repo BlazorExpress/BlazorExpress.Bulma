@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Represents the dimensions of an image.
-/// <para><see href="https://bulma.io/documentation/elements/image/#fixed-square-images"/></para>
+/// <para>
+///     <see href="https://bulma.io/documentation/elements/image/#fixed-square-images" />
+/// </para>
 /// </summary>
 public enum ImageDimension
 {

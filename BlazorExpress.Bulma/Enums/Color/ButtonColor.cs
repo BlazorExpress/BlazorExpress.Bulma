@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Represents the color of a Bulma Button.
-///     <para><see href="https://bulma.io/documentation/elements/button/#colors" /></para>
+/// <para>
+///     <see href="https://bulma.io/documentation/elements/button/#colors" />
+/// </para>
 /// </summary>
 public enum ButtonColor
 {

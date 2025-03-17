@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Represents the weight of a Google Font Icon.
-/// <para><see href="https://fonts.google.com/icons"/></para>
+/// <para>
+///     <see href="https://fonts.google.com/icons" />
+/// </para>
 /// </summary>
 public enum GoogleFontIconWeight
 {

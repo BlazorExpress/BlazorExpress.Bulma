@@ -3,7 +3,7 @@
 /// <summary>
 /// Represents the size of a Bulma Progress Bar.
 /// <para>
-/// <see href="https://bulma.io/documentation/elements/progress/#sizes" />
+///     <see href="https://bulma.io/documentation/elements/progress/#sizes" />
 /// </para>
 /// </summary>
 public enum ProgressBarSize

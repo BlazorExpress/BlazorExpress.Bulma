@@ -3,7 +3,7 @@
 /// <summary>
 /// Represents the color of a Bulma Progress Bar.
 /// <para>
-/// <see href="https://bulma.io/documentation/elements/progress/#colors" />
+///     <see href="https://bulma.io/documentation/elements/progress/#colors" />
 /// </para>
 /// </summary>
 public enum ProgressBarColor

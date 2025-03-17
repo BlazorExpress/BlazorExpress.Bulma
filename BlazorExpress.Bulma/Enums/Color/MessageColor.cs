@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Represents the color of a Bulma Message.
-///     <para><see href="https://bulma.io/documentation/components/message/#colors" /></para>
+/// <para>
+///     <see href="https://bulma.io/documentation/components/message/#colors" />
+/// </para>
 /// </summary>
 public enum MessageColor
 {

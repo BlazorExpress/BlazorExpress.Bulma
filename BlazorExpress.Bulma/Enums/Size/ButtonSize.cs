@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Represents the size of a Bulma Button.
-///     <para><see href="https://bulma.io/documentation/elements/button/#sizes" /></para>
+/// <para>
+///     <see href="https://bulma.io/documentation/elements/button/#sizes" />
+/// </para>
 /// </summary>
 public enum ButtonSize
 {

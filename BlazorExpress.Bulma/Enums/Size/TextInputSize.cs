@@ -2,8 +2,8 @@
 
 /// <summary>
 /// Represents the size of a Bulma Text Input.
-///     <para>
-/// <see href="https://bulma.io/documentation/form/input/#sizes" />
+/// <para>
+///     <see href="https://bulma.io/documentation/form/input/#sizes" />
 /// </para>
 /// </summary>
 public enum TextInputSize

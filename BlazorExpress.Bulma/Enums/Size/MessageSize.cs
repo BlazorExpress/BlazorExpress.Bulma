@@ -2,7 +2,9 @@
 
 /// <summary>
 /// Represents the size of a Bulma Message.
-///     <para><see href="https://bulma.io/documentation/components/message/#sizes" /></para>
+/// <para>
+///     <see href="https://bulma.io/documentation/components/message/#sizes" />
+/// </para>
 /// </summary>
 public enum MessageSize
 {

@@ -2,8 +2,8 @@
 
 /// <summary>
 /// Represents the color of a Bulma Skeleton.
-///     <para>
-/// <see href="https://bulma.io/documentation/helpers/color-helpers/#background-color" />
+/// <para>
+///     <see href="https://bulma.io/documentation/helpers/color-helpers/#background-color" />
 /// </para>
 /// </summary>
 public enum SkeletonColor
