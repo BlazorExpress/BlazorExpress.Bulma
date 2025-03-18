@@ -81,6 +81,10 @@ public static class RouteConstants
 
     #region Demos
 
+    // Getting Started
+    public const string Demos_Getting_Started = Demos_Prefix + "/getting-started";
+    public const string Demos_Getting_Started_Introduction = Demos_Getting_Started + "/introduction";
+
     // Features
     public const string Demos_Skeletons_Documentation = Demos_Prefix + "/skeletons";
 

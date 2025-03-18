@@ -32,6 +32,16 @@ public partial class MainLayout : MainLayoutBase
     {
         var groups = new HashSet<LinkGroup>();
 
+        // GETTING STARTED
+        groups.Add(new LinkGroup
+        {
+            Name = "GETTING STARTED",
+            CssClass = "is-size-7 has-text-weight-bold has-text-danger",
+            Links = [
+                new Link { Href = RouteConstants.Demos_Getting_Started_Introduction, Text = "Introduction" },
+            ]
+        });
+
         // FEATURES
         groups.Add(new LinkGroup
         {

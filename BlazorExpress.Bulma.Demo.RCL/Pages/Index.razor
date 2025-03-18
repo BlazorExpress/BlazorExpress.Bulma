@@ -1,15 +1,20 @@
-@attribute [Route(pageRoute)]
+@attribute [Route(pageUrl)]
+@attribute [Route(pageUrl2)]
 
-<PageTitle>@title</PageTitle>
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
 
-<div>
-Home page
-</div>
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
 
 @code {
-    const string pageRoute = "/";
-    private string pageUrl = pageRoute;
-    private string title = "Blazor Bulma Demos";
-    private string description = ""; // TODO: update
-    private string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageUrl = "/";
+    private const string pageUrl2 = RouteConstants.Demos_Getting_Started_Introduction;
+    private const string pageTitle = "Get started with BlazorExpress Bulma";
+    private const string pageDescription = "Build production-ready Blazor apps quickly. A lightweight, developer-focused library combining Blazor performance with Bulma simplicity.";
+    private const string metaTitle = "Get started with BlazorExpress Bulma";
+    private const string metaDescription = "Build production-ready Blazor apps quickly. A lightweight, developer-focused library combining Blazor performance with Bulma simplicity.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
 }
