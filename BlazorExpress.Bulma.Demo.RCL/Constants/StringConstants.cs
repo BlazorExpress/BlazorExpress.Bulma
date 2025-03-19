@@ -38,6 +38,9 @@ public static class StringConstants
     public const string PropertyTypeNameGuidCSharpTypeKeyword = "Guid";
 
     public const string StaticAssets_RootPath = "_content/BlazorExpress.Bulma.Demo.RCL";
+    public const string StaticAssets_Icons_Path = StaticAssets_RootPath + "/icons";
+    public const string StaticAssets_Icons_Logo_png = StaticAssets_Icons_Path + "/logo.png";
+
     public const string StaticAssets_Images_Path = StaticAssets_RootPath + "/images";
     public const string StaticAssets_Images_Placeholders_Path = StaticAssets_Images_Path + "/placeholders";
 

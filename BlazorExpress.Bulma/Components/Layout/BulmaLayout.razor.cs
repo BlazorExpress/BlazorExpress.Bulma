@@ -65,7 +65,8 @@ public partial class BulmaLayout : BulmaLayoutComponentBase
 
     private string? ContentSectionStyleNames =>
         BuildClassNames(
-            ContentSectionCssStyle
+            ContentSectionCssStyle, 
+            ($"--be-bulma-menu-width: 0px !important", SidebarSection is null)
         );
 
     [Parameter] public RenderFragment? FooterSection { get; set; }
@@ -97,7 +98,7 @@ public partial class BulmaLayout : BulmaLayoutComponentBase
     private string? SidebarSectionStyleNames =>
         BuildStyleNames(
             SidebarSectionCssStyle,
-            ($"--be-bulma-menu-width:{SidebarWidth.ToString(CultureInfo.InvariantCulture)}px", SidebarWidth > 0)
+            ($"--be-bulma-menu-width: {SidebarWidth.ToString(CultureInfo.InvariantCulture)}px", SidebarSection is not null && SidebarWidth > 0)
         );
 
     /// <summary>
