@@ -1,20 +1,94 @@
 @attribute [Route(pageUrl)]
-@attribute [Route(pageUrl2)]
 
 <PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
 
-<PageHero Title="@pageTitle">
-    <SubTitleTemplate>
-        @((MarkupString)pageDescription)
-    </SubTitleTemplate>
-</PageHero>
+<div class="has-text-centered mb-4">
+    <div class="mb-4">
+        <Tag Color="TagColor.Success">New in @version</Tag>
+        <span class="text-muted">@releaseShortDescription</span>
+    </div>
+    <div style="justify-items: center;">
+        <Image Src="@StringConstants.StaticAssets_Icons_Logo_png"
+               Dimension="ImageDimension.Is128x128"
+               alt="BlazorExpress Logo" />
+    </div>
+</div>
+
+<div class="container mb-4">
+    <Hero Class="has-text-centered mb-4">
+        <HeroTitle class="mb-4">
+            @((MarkupString)pageTitle)
+        </HeroTitle>
+        <HeroSubTitle Class="has-text-dark">
+            @((MarkupString)pageDescription)
+        </HeroSubTitle>
+    </Hero>
+    <div class="has-text-centered mb-4">
+        <a href="https://www.nuget.org/packages/BlazorExpress.Bulma/"><img alt="Nuget" src="https://img.shields.io/nuget/v/Blazor.Bootstrap"></a>
+        <span class="px-1"></span>
+        <a href="https://www.nuget.org/packages/BlazorExpress.Bulma/"><img alt="Nuget" src="https://img.shields.io/nuget/dt/Blazor.Bootstrap"></a>
+    </div>
+    <div class="has-text-centered mb-4">
+        <h2 class="is-size-2">All Components</h2>
+    </div>
+    <div class="has-text-centered">
+        <div class="fixed-grid has-4-cols">
+            <div class="grid has-text-link is-size-5 has-text-left has-text-weight-semibold">
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.Box" /> Block</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.Box" /> Box</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.ToggleOn" /> Button</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.QuestionDiamondFill" /> ConfirmDialog</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.XCircleFill" /> DeleteButton</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.InputCursorText" /> TextInput</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.Grid3X2" /> Grid</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.Box" /> Hero</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.PersonSquare" /> GoogleFontIcons</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.PersonSquare" /> BootstrapIcons</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.Image" /> Image</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.Map" /> Maps</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.EnvelopeFill" /> Message</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.WindowStack" /> Modal</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.ExclamationTriangleFill" /> Notification</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.ThreeDots" /> Pagination</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.UsbCFill" /> ProgressBar</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.CodeSlash" /> ScriptLoader</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.ColumnsGap" /> Skeletons</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.WindowPlus" /> Tabs</div>
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.TagFill" /> Tag</div>
+            </div>
+        </div>
+    </div>
+    <div class="has-text-centered mb-4">
+        <h2 class="is-size-2">Form Components</h2>
+    </div>
+    <div class="has-text-centered">
+        <div class="fixed-grid has-4-cols">
+            <div class="grid has-text-link is-size-5 has-text-left has-text-weight-semibold">
+                <div class="cell"><BootstrapIcon Name="BootstrapIconName.InputCursorText" /> TextInput</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 @code {
     private const string pageUrl = "/";
-    private const string pageUrl2 = RouteConstants.Demos_Getting_Started_Introduction;
-    private const string pageTitle = "Get started with BlazorExpress Bulma";
-    private const string pageDescription = "Build production-ready Blazor apps quickly. A lightweight, developer-focused library combining Blazor performance with Bulma simplicity.";
-    private const string metaTitle = "Get started with BlazorExpress Bulma";
-    private const string metaDescription = "Build production-ready Blazor apps quickly. A lightweight, developer-focused library combining Blazor performance with Bulma simplicity.";
+    private const string pageTitle = "BlazorExpress Bulma Components <br /> Fast, Free & Open Source";
+    private const string pageDescription = "Get started with BlazorExpress Bulma. Build high-performance, responsive Blazor apps quickly with our free, open-source UI library. Developers, build in minutes!";
+    private const string metaTitle = "BlazorExpress Bulma Components: Fast, Free & Open Source";
+    private const string metaDescription = "Get started with BlazorExpress Bulma. Build high-performance, responsive Blazor apps quickly with our free, open-source UI library. Developers, build in minutes!";
     private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+
+
+    private string version = default!;
+    private string releaseShortDescription = default!;
+
+    [Inject] public IConfiguration Configuration { get; set; } = default!;
+
+    protected override void OnInitialized()
+    {
+        version = $"v{Configuration["version"]}"; // example: v0.6.1
+        releaseShortDescription = Configuration["release:short_description"]!;
+    }
 }
