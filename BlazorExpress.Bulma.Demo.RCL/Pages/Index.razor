@@ -33,41 +33,25 @@
     </div>
     <div class="has-text-centered mb-6">
         <div class="has-text-link is-size-4 has-text-left has-text-weight-semibold">
-            <div class="columns is-desktop ">
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_Block_Documentation"><BootstrapIcon Name="BootstrapIconName.Box" /> Block</a></div>
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_BootstrapIcons_Documentation"><BootstrapIcon Name="BootstrapIconName.PersonSquare" /> BootstrapIcons</a></div>
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_Box_Documentation"><BootstrapIcon Name="BootstrapIconName.Box" /> Box</a></div>
-            </div>
-            <div class="columns is-desktop">
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_Button_Documentation"><BootstrapIcon Name="BootstrapIconName.ToggleOn" /> Button</a></div>
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_ConfirmDialog_Documentation"><BootstrapIcon Name="BootstrapIconName.QuestionDiamondFill" /> ConfirmDialog</a></div>
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_DeleteButton_Documentation"><BootstrapIcon Name="BootstrapIconName.XCircleFill" /> DeleteButton</a></div>
-            </div>
-            <div class="columns is-desktop">
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_GoogleFontIcons_Documentation"><BootstrapIcon Name="BootstrapIconName.PersonSquare" /> GoogleFontIcons</a></div>
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_Grid_Documentation"><BootstrapIcon Name="BootstrapIconName.Grid3X2" /> Grid</a></div>
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_Hero_Documentation"><BootstrapIcon Name="BootstrapIconName.Box" /> Hero</a></div>
-            </div>
-            <div class="columns is-desktop">
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_Image_Documentation"><BootstrapIcon Name="BootstrapIconName.Image" /> Image</a></div>
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_GoogleMaps_Documentation"><BootstrapIcon Name="BootstrapIconName.Map" /> Maps</a></div>
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_Message_Documentation"><BootstrapIcon Name="BootstrapIconName.EnvelopeFill" /> Message</a></div>
-            </div>
-            <div class="columns is-desktop">
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_Modal_Documentation"><BootstrapIcon Name="BootstrapIconName.WindowStack" /> Modal</a></div>
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_Notification_Documentation"><BootstrapIcon Name="BootstrapIconName.ExclamationTriangleFill" /> Notification</a></div>
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_Pagination_Documentation"><BootstrapIcon Name="BootstrapIconName.ThreeDots" /> Pagination</a></div>
-            </div>
-            <div class="columns is-desktop">
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_ProgressBar_Documentation"><BootstrapIcon Name="BootstrapIconName.UsbCFill" /> ProgressBar</a></div>
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_ScriptLoader_Documentation"><BootstrapIcon Name="BootstrapIconName.CodeSlash" /> ScriptLoader</a></div>
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_Skeletons_Documentation"><BootstrapIcon Name="BootstrapIconName.ColumnsGap" /> Skeletons</a></div>
-            </div>
-            <div class="columns is-desktop">
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_Tabs_Documentation"><BootstrapIcon Name="BootstrapIconName.WindowPlus" /> Tabs</a></div>
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_Tags_Documentation"><BootstrapIcon Name="BootstrapIconName.TagFill" /> Tag</a></div>
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_Form_Input_Documentation"><BootstrapIcon Name="BootstrapIconName.InputCursorText" /> TextInput</a></div>
-            </div>
+            @for (int i = 0; i < allComponentsLinks.Count;)
+            {
+                <div class="columns is-desktop">
+                    @for (int j = 0; j < 3; j++)
+                    {
+                        var link = allComponentsLinks.ElementAtOrDefault(i);
+                        if (link == null)
+                        {
+                            <div class="column is-clickable"></div>
+                            continue;
+                        }
+                        <div class="column is-clickable">
+                            <a href="@link.Href"><BootstrapIcon Name="@link.IconName" /> @link.Text</a>
+                        </div>
+
+                        i++;
+                    }
+                </div>
+            }
         </div>
     </div>
     <div class="has-text-centered mb-4">
@@ -75,11 +59,25 @@
     </div>
     <div class="has-text-centered mb-6">
         <div class="has-text-link is-size-4 has-text-left has-text-weight-semibold">
-            <div class="columns is-desktop">
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_Form_Input_Documentation"><BootstrapIcon Name="BootstrapIconName.InputCursorText" /> TextInput</a></div>
-                <div class="column is-clickable"></div>
-                <div class="column is-clickable"></div>
-            </div>
+            @for (int i = 0; i < formComponentsLinks.Count;)
+            {
+                <div class="columns is-desktop">
+                    @for (int j = 0; j < 3; j++)
+                    {
+                        var link = formComponentsLinks.ElementAtOrDefault(i);
+                        if (link == null)
+                        {
+                            <div class="column is-clickable"></div>
+                            continue;
+                        }
+                        <div class="column is-clickable">
+                            <a href="@link.Href"><BootstrapIcon Name="@link.IconName" /> @link.Text</a>
+                        </div>
+
+                        i++;
+                    }
+                </div>
+            }
         </div>
     </div>
     <div class="has-text-centered mb-4">
@@ -87,11 +85,25 @@
     </div>
     <div class="has-text-centered mb-6">
         <div class="has-text-link is-size-4 has-text-left has-text-weight-semibold">
-            <div class="columns is-desktop">
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_BootstrapIcons_Documentation"><BootstrapIcon Name="BootstrapIconName.PersonSquare" /> BootstrapIcons</a></div>
-                <div class="column is-clickable"><a href="@RouteConstants.Demos_GoogleFontIcons_Documentation"><BootstrapIcon Name="BootstrapIconName.PersonSquare" /> GoogleFontIcons</a></div>
-                <div class="column is-clickable"></div>
-            </div>
+            @for (int i = 0; i < iconComponentsLinks.Count;)
+            {
+                <div class="columns is-desktop">
+                    @for (int j = 0; j < 3; j++)
+                    {
+                        var link = iconComponentsLinks.ElementAtOrDefault(i);
+                        if (link == null)
+                        {
+                            <div class="column is-clickable"></div>
+                            continue;
+                        }
+                        <div class="column is-clickable">
+                            <a href="@link.Href"><BootstrapIcon Name="@link.IconName" /> @link.Text</a>
+                        </div>
+
+                        i++;
+                    }
+                </div>
+            }
         </div>
     </div>
 </div>
@@ -104,9 +116,12 @@
     private const string metaDescription = "Get started with BlazorExpress Bulma. Build high-performance, responsive Blazor apps quickly with our free, open-source UI library. Developers, build in minutes!";
     private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
 
-
     private string version = default!;
     private string releaseShortDescription = default!;
+
+    private HashSet<PageLink> allComponentsLinks = null!;
+    private HashSet<PageLink> formComponentsLinks = null!;
+    private HashSet<PageLink> iconComponentsLinks = null!;
 
     [Inject] public IConfiguration Configuration { get; set; } = default!;
 
@@ -114,5 +129,8 @@
     {
         version = $"v{Configuration["version"]}"; // example: v0.6.1
         releaseShortDescription = Configuration["release:short_description"]!;
+        allComponentsLinks = PageLinkUtil.GetDemosLinks().Where(link => link.IsActive && link.Text != "Introduction").ToHashSet();
+        formComponentsLinks = PageLinkUtil.GetDemosLinks().Where(link => link.IsActive && link.Categories.Contains(PageLinkCategory.Form)).ToHashSet();
+        iconComponentsLinks = PageLinkUtil.GetDemosLinks().Where(link => link.IsActive && link.Categories.Contains(PageLinkCategory.Icons)).ToHashSet();
     }
 }
