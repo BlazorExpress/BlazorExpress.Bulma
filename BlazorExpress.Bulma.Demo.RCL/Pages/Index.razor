@@ -28,84 +28,13 @@
         <span class="px-1"></span>
         <a href="https://www.nuget.org/packages/BlazorExpress.Bulma/"><img alt="Nuget" src="https://img.shields.io/nuget/dt/Blazor.Bootstrap"></a>
     </div>
-    <div class="has-text-centered mb-4">
-        <h2 class="is-size-2">All Components</h2>
-    </div>
-    <div class="has-text-centered mb-6">
-        <div class="has-text-link is-size-4 has-text-left has-text-weight-semibold">
-            @for (int i = 0; i < allComponentsLinks.Count;)
-            {
-                <div class="columns is-desktop">
-                    @for (int j = 0; j < 3; j++)
-                    {
-                        var link = allComponentsLinks.ElementAtOrDefault(i);
-                        if (link == null)
-                        {
-                            <div class="column is-clickable"></div>
-                            continue;
-                        }
-                        <div class="column is-clickable">
-                            <a href="@link.Href"><BootstrapIcon Name="@link.IconName" /> @link.Text</a>
-                        </div>
+    
+    <IndexComponentLinks Title="All Components" Category="@PageLinkCategory.All" />
 
-                        i++;
-                    }
-                </div>
-            }
-        </div>
-    </div>
-    <div class="has-text-centered mb-4">
-        <h2 class="is-size-2">Form Components</h2>
-    </div>
-    <div class="has-text-centered mb-6">
-        <div class="has-text-link is-size-4 has-text-left has-text-weight-semibold">
-            @for (int i = 0; i < formComponentsLinks.Count;)
-            {
-                <div class="columns is-desktop">
-                    @for (int j = 0; j < 3; j++)
-                    {
-                        var link = formComponentsLinks.ElementAtOrDefault(i);
-                        if (link == null)
-                        {
-                            <div class="column is-clickable"></div>
-                            continue;
-                        }
-                        <div class="column is-clickable">
-                            <a href="@link.Href"><BootstrapIcon Name="@link.IconName" /> @link.Text</a>
-                        </div>
+    <IndexComponentLinks Title="Form Components" Category="@PageLinkCategory.Form" />
 
-                        i++;
-                    }
-                </div>
-            }
-        </div>
-    </div>
-    <div class="has-text-centered mb-4">
-        <h2 class="is-size-2">Icon Components</h2>
-    </div>
-    <div class="has-text-centered mb-6">
-        <div class="has-text-link is-size-4 has-text-left has-text-weight-semibold">
-            @for (int i = 0; i < iconComponentsLinks.Count;)
-            {
-                <div class="columns is-desktop">
-                    @for (int j = 0; j < 3; j++)
-                    {
-                        var link = iconComponentsLinks.ElementAtOrDefault(i);
-                        if (link == null)
-                        {
-                            <div class="column is-clickable"></div>
-                            continue;
-                        }
-                        <div class="column is-clickable">
-                            <a href="@link.Href"><BootstrapIcon Name="@link.IconName" /> @link.Text</a>
-                        </div>
+    <IndexComponentLinks Title="Icon Components" Category="@PageLinkCategory.Icons" />
 
-                        i++;
-                    }
-                </div>
-            }
-        </div>
-    </div>
 </div>
 
 @code {

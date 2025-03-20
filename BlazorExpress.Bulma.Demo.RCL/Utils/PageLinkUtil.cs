@@ -11,10 +11,10 @@ public static class PageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = RouteConstants.Demos_Form_AutoComplete_Documentation, Text = "AutoComplete", Categories = new() { PageLinkCategory.All, PageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = false });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Box, Href = RouteConstants.Demos_Block_Documentation, Text = "Block", Categories = new() { PageLinkCategory.All, PageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Box, Href = RouteConstants.Demos_Block_Documentation, Text = "Block", Categories = new() { PageLinkCategory.All, PageLinkCategory.Elements }, Status = PageLinkStatus.New, IsActive = true });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.PersonSquare, Href = RouteConstants.Demos_BootstrapIcons_Documentation, Text = "Bootstrap Icons", Categories = new() { PageLinkCategory.All, PageLinkCategory.Icons }, Status = PageLinkStatus.None, IsActive = true });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.PersonSquare, Href = RouteConstants.Demos_BootstrapIcons_Documentation, Text = "Bootstrap Icons", Categories = new() { PageLinkCategory.All, PageLinkCategory.Icons }, Status = PageLinkStatus.Updated, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Box, Href = RouteConstants.Demos_Box_Documentation, Text = "Box", Categories = new() { PageLinkCategory.All, PageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });
