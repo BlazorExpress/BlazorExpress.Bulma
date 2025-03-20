@@ -2,20 +2,20 @@
 
 <PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
 
-<div class="has-text-centered mb-4">
-    <div class="mb-4">
-        <Tag Color="TagColor.Success">New in @version</Tag>
-        <span class="text-muted">@releaseShortDescription</span>
-    </div>
-    <div style="justify-items: center;">
-        <Image Src="@StringConstants.StaticAssets_Icons_Logo_png"
-               Dimension="ImageDimension.Is128x128"
-               alt="BlazorExpress Logo" />
-    </div>
-</div>
 
-<div class="container mb-4">
-    <Hero Class="has-text-centered mb-4">
+<div class="container is-max-desktop px-6 mb-4">
+    <div class="has-text-centered mb-6">
+        <div class="mb-6">
+            <Tag Color="TagColor.Warning" Size="TagSize.Medium">New in @version</Tag>
+            <span class="is-size-6 text-muted">@releaseShortDescription</span>
+        </div>
+        <div style="justify-items: center;">
+            <Image Src="@StringConstants.StaticAssets_Icons_Logo_png"
+                   Dimension="ImageDimension.Is128x128"
+                   alt="BlazorExpress Logo" />
+        </div>
+    </div>
+    <Hero Class="has-text-centered mb-6">
         <HeroTitle class="mb-4">
             @((MarkupString)pageTitle)
         </HeroTitle>
@@ -32,29 +32,46 @@
         <h2 class="is-size-2">All Components</h2>
     </div>
     <div class="has-text-centered">
-        <div class="fixed-grid has-4-cols">
-            <div class="grid has-text-link is-size-5 has-text-left has-text-weight-semibold">
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.Box" /> Block</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.Box" /> Box</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.ToggleOn" /> Button</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.QuestionDiamondFill" /> ConfirmDialog</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.XCircleFill" /> DeleteButton</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.InputCursorText" /> TextInput</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.Grid3X2" /> Grid</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.Box" /> Hero</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.PersonSquare" /> GoogleFontIcons</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.PersonSquare" /> BootstrapIcons</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.Image" /> Image</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.Map" /> Maps</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.EnvelopeFill" /> Message</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.WindowStack" /> Modal</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.ExclamationTriangleFill" /> Notification</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.ThreeDots" /> Pagination</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.UsbCFill" /> ProgressBar</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.CodeSlash" /> ScriptLoader</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.ColumnsGap" /> Skeletons</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.WindowPlus" /> Tabs</div>
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.TagFill" /> Tag</div>
+        <div class="has-text-link is-size-4 has-text-left has-text-weight-semibold">
+            <div class="columns is-desktop ">
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.Box" /> Block</div>
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.Box" /> Box</div>
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.ToggleOn" /> Button</div>
+            </div>
+            <div class="columns is-desktop">
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.QuestionDiamondFill" /> ConfirmDialog</div>
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.XCircleFill" /> DeleteButton</div>
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.InputCursorText" /> TextInput</div>
+            </div>
+            <div class="columns is-desktop">
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.InputCursorText" /> TextInput</div>
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.Grid3X2" /> Grid</div>
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.Box" /> Hero</div>
+            </div>
+            <div class="columns is-desktop">
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.PersonSquare" /> GoogleFontIcons</div>
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.PersonSquare" /> BootstrapIcons</div>
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.Image" /> Image</div>
+            </div>
+            <div class="columns is-desktop">
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.Map" /> Maps</div>
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.EnvelopeFill" /> Message</div>
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.WindowStack" /> Modal</div>
+            </div>
+            <div class="columns is-desktop">
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.ExclamationTriangleFill" /> Notification</div>
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.ThreeDots" /> Pagination</div>
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.UsbCFill" /> ProgressBar</div>
+            </div>
+            <div class="columns is-desktop">
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.CodeSlash" /> ScriptLoader</div>
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.ColumnsGap" /> Skeletons</div>
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.WindowPlus" /> Tabs</div>
+            </div>
+            <div class="columns is-desktop">
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.TagFill" /> Tag</div>
+                <div class="column is-clickable"></div>
+                <div class="column is-clickable"></div>
             </div>
         </div>
     </div>
@@ -62,15 +79,15 @@
         <h2 class="is-size-2">Form Components</h2>
     </div>
     <div class="has-text-centered">
-        <div class="fixed-grid has-4-cols">
-            <div class="grid has-text-link is-size-5 has-text-left has-text-weight-semibold">
-                <div class="cell"><BootstrapIcon Name="BootstrapIconName.InputCursorText" /> TextInput</div>
+        <div class="has-text-link is-size-4 has-text-left has-text-weight-semibold">
+            <div class="columns is-desktop">
+                <div class="column is-clickable"><BootstrapIcon Name="BootstrapIconName.InputCursorText" /> TextInput</div>
+                <div class="column is-clickable"></div>
+                <div class="column is-clickable"></div>
             </div>
         </div>
     </div>
 </div>
-
-
 
 @code {
     private const string pageUrl = "/";
