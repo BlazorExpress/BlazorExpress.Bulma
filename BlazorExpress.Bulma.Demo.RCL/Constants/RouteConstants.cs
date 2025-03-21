@@ -137,15 +137,6 @@ public static class RouteConstants
     public const string Demos_ScriptLoader_Documentation = Demos_Prefix + "/script-loader";
     public const string Demos_Tabs_Documentation = Demos_Prefix + "/tabs";
 
-    // Form
-    public const string Demos_Form_General_Documentation = Demos_Prefix + "/form/general";
-    public const string Demos_Form_Input_Documentation = Demos_Prefix + "/form/input";
-    public const string Demos_Form_Textarea_Documentation = Demos_Prefix + "/form/textarea";
-    public const string Demos_Form_Select_Documentation = Demos_Prefix + "/form/select";
-    public const string Demos_Form_Checkbox_Documentation = Demos_Prefix + "/form/checkbox";
-    public const string Demos_Form_Radio_Documentation = Demos_Prefix + "/form/radio";
-    public const string Demos_Form_FileUpload_Documentation = Demos_Prefix + "/form/file-upload";
-
     // Layout
     public const string Demos_Container_Documentation = Demos_Prefix + "/container";
     public const string Demos_Hero_Documentation = Demos_Prefix + "/hero";
