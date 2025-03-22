@@ -3,48 +3,51 @@
 <PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
 
 <div class="be-bulma-masthead has-text-centered">
-    <div class="mb-6">
+    <div class="container is-max-desktop mb-4">
         <div class="mb-6">
-            <Tag Color="TagColor.Warning" Size="TagSize.Medium">New in @version</Tag>
-            <span class="is-size-6 text-muted">@releaseShortDescription</span>
+            <div class="pt-6 mb-6">
+                <Tag Color="TagColor.Warning" Size="TagSize.Medium">New in @version</Tag>
+                <span class="is-size-6 text-muted">@releaseShortDescription</span>
+            </div>
+            <div style="justify-items: center;">
+                <Image Src="@StringConstants.StaticAssets_Icons_Logo_png"
+                       Dimension="ImageDimension.Is128x128"
+                       alt="BlazorExpress Logo" />
+            </div>
         </div>
-        <div style="justify-items: center;">
-            <Image Src="@StringConstants.StaticAssets_Icons_Logo_png"
-                   Dimension="ImageDimension.Is128x128"
-                   alt="BlazorExpress Logo" />
+        <Hero Class="mb-6">
+            <HeroTitle class="mb-4">
+                @((MarkupString)pageTitle)
+            </HeroTitle>
+            <HeroSubTitle Class="has-text-dark">
+                @((MarkupString)pageDescription)
+            </HeroSubTitle>
+        </Hero>
+        <div class="mb-4">
+            <a href="https://www.nuget.org/packages/BlazorExpress.Bulma/"><img alt="Nuget" src="https://img.shields.io/nuget/v/Blazor.Bootstrap"></a>
+            <span class="px-1"></span>
+            <a href="https://www.nuget.org/packages/BlazorExpress.Bulma/"><img alt="Nuget" src="https://img.shields.io/nuget/dt/Blazor.Bootstrap"></a>
         </div>
-    </div>
-    <Hero Class="mb-6">
-        <HeroTitle class="mb-4">
-            @((MarkupString)pageTitle)
-        </HeroTitle>
-        <HeroSubTitle Class="has-text-dark">
-            @((MarkupString)pageDescription)
-        </HeroSubTitle>
-    </Hero>
-    <div class="mb-4">
-        <a href="https://www.nuget.org/packages/BlazorExpress.Bulma/"><img alt="Nuget" src="https://img.shields.io/nuget/v/Blazor.Bootstrap"></a>
-        <span class="px-1"></span>
-        <a href="https://www.nuget.org/packages/BlazorExpress.Bulma/"><img alt="Nuget" src="https://img.shields.io/nuget/dt/Blazor.Bootstrap"></a>
     </div>
 </div>
 
-<IndexComponentLinks Title="All Components" Category="@PageLinkCategory.All" />
+<div class="container is-max-desktop mb-4">
+    <IndexComponentLinks Title="All Components" Category="@PageLinkCategory.All" />
 
-<IndexComponentLinks Title="Form Components" Category="@PageLinkCategory.Form" />
+    <IndexComponentLinks Title="Form Components" Category="@PageLinkCategory.Form" />
 
-<IndexComponentLinks Title="Icon Components" Category="@PageLinkCategory.Icons" />
+    <IndexComponentLinks Title="Icon Components" Category="@PageLinkCategory.Icons" />
 
-<Message Class="mb-4" Color="MessageColor.Success">
-    <MessageBody>
-        <div class="is-size-5 has-text-weight-semibold mb-2"><BootstrapIcon Name="BootstrapIconName.Lightbulb" /> DO YOU KNOW?</div>
-        <div>
-            This demo website is built using the <strong><a href="@nugetUrl" target="_blank">BlazorExpress Bulma</a></strong> library and published on the Azure Web App.
-            See our source code on <a href="@githubUrl" target="_blank">GitHub</a>.
-        </div>
-    </MessageBody>
-</Message>
-
+    <Message Class="mb-4" Color="MessageColor.Success">
+        <MessageBody>
+            <div class="is-size-5 has-text-weight-semibold mb-2"><BootstrapIcon Name="BootstrapIconName.Lightbulb" /> DO YOU KNOW?</div>
+            <div>
+                This demo website is built using the <strong><a href="@nugetUrl" target="_blank">BlazorExpress Bulma</a></strong> library and published on the Azure Web App.
+                See our source code on <a href="@githubUrl" target="_blank">GitHub</a>.
+            </div>
+        </MessageBody>
+    </Message>
+</div>
 @code {
     private const string pageUrl = "/";
     private const string pageTitle = "BlazorExpress Bulma Components <br /> Fast, Free & Open Source";
