@@ -45,29 +45,33 @@
     </SidebarSection>
 
     <ContentSection>
-        <Button Class="bi bi-box-arrow-right menu-toggle-button ml-1 mt-0 mb-1" @onclick="ToggleSidebarSection" />
-        
-        @Body
-
-        <Notification Class="has-text-centered" Color="NotificationColor.Link" HideDeleteButton="true">
-            <a href="//github.com/BlazorExpress/BlazorExpress.Bulma" class="be-bulma-text-decoration-none">
-                <i class="bi bi-star-fill"></i>
-                <span>If you like BlazorExpress.Bulma, give it a star on GitHub!</span>
-                <i class="bi bi-star-fill"></i>
-            </a>
-        </Notification>
+        <div class="p-5">
+            <Button Class="bi bi-box-arrow-right menu-toggle-button ml-1 mt-0 mb-1" @onclick="ToggleSidebarSection" />
+            @Body
+            <Notification Class="has-text-centered" Color="NotificationColor.Link" HideDeleteButton="true">
+                <a href="//github.com/BlazorExpress/BlazorExpress.Bulma" class="be-bulma-text-decoration-none">
+                    <i class="bi bi-star-fill"></i>
+                    <span>If you like BlazorExpress.Bulma, give it a star on GitHub!</span>
+                    <i class="bi bi-star-fill"></i>
+                </a>
+            </Notification>
+            <MainLayoutBaseFooter Version="@Version"
+                                  DotNetVersion="@DotNetVersion"
+                                  DocsUrl="@DocsUrl"
+                                  BlogUrl="@BlogUrl"
+                                  GithubUrl="@GithubUrl"
+                                  NugetUrl="@NuGetUrl"
+                                  TwitterUrl="@TwitterUrl"
+                                  LinkedInUrl="@LinkedInUrl"
+                                  OpenCollectiveUrl="@OpenCollectiveUrl"
+                                  GithubIssuesUrl="@GithubIssuesUrl"
+                                  GithubDiscussionsUrl="@GithubDiscussionsUrl"
+                                  StackoverflowUrl="@StackoverflowUrl" />
+        </div>
     </ContentSection>
 
     <FooterSection>
-        <MainLayoutBaseFooter Version="@Version"
-                              DocsUrl="@DocsUrl"
-                              BlogUrl="@BlogUrl"
-                              GithubUrl="@GithubUrl"
-                              TwitterUrl="@TwitterUrl"
-                              LinkedInUrl="@LinkedInUrl"
-                              OpenCollectiveUrl="@OpenCollectiveUrl"
-                              GithubIssuesUrl="@GithubIssuesUrl"
-                              GithubDiscussionsUrl="@GithubDiscussionsUrl"
-                              StackoverflowUrl="@StackoverflowUrl" />
+        <div class="container is-max-desktop mb-4">
+        </div>
     </FooterSection>
 </BulmaLayout>

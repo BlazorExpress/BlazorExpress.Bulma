@@ -56,7 +56,7 @@ public partial class BulmaLayout : BulmaLayoutComponentBase
     private string? ContentSectionClassNames =>
         BuildClassNames(
             ContentSectionCssClass,
-            ("be-bulma-page-content p-5", true)
+            ("be-bulma-page-content", true)
         );
 
     [Parameter] public string? ContentSectionCssClass { get; set; } = null;
