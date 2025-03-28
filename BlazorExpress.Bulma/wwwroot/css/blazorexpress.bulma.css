@@ -20,6 +20,12 @@
     cursor: pointer;
 }
 
+/* input */
+/* date */
+input[type=date] {
+    display: inherit !important;
+}
+
 /* layout */
 html {
     overflow-y: hidden;
