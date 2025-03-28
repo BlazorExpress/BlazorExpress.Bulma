@@ -1,0 +1,35 @@
+@attribute [Route(pageUrl)]
+@layout DocsMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+@* <img src="https://i.imgur.com/IX3bajc.png" class="img-fluid" alt="Blazor Bar Chart - API Documentation" /> *@
+
+<DemoLink Href="@RouteConstants.Demos_Form_DateInput_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Parameters" PageUrl="@pageUrl" Link="parameters">
+    <DocxTable TItem="DateInput" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Methods" PageUrl="@pageUrl" Link="methods">
+    <DocxTable TItem="DateInput" DocType="DocType.Methods" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Events" PageUrl="@pageUrl" Link="events">
+    <DocxTable TItem="DateInput" DocType="DocType.Events" />
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Docs_Form_DateInput_Documentation;
+    private const string pageTitle = "DateInput";
+    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>DateInput</code> component, guiding you through its configuration options.";
+    private const string metaTitle = "Blazor DateInput Component";
+    private const string metaDescription = "This documentation provides a comprehensive reference for the DateInput component, guiding you through its configuration options.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}

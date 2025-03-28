@@ -1,0 +1,15 @@
+<DateInput Value="@name"
+           ValueExpression="() => name"
+           ValueChanged="(value) => NameChanged(value)"
+           BindEvent="BindEvent.OnInput" />
+<div class="mb-3">Entered name: @name</div>
+
+@code {
+    private string? name = null;
+
+    private void NameChanged(string? value)
+    {
+        name = value;
+        // do something
+    }
+}
