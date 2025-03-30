@@ -29,19 +29,16 @@ public class DateInput : BulmaComponentBase
         builder.AddAttribute(202, "id", Id);
         builder.AddAttributeIfNotNullOrWhiteSpace(203, "class", $"{ClassNames} {FieldCssClasses}");
         builder.AddAttributeIfNotNullOrWhiteSpace(204, "style", StyleNames);
-        builder.AddAttribute(205, "value", Value);
-        builder.AddAttribute(206, "disabled", Disabled);
-        builder.AddAttribute(207, "placeholder", Placeholder);
-        builder.AddAttribute(208, "maxlength", MaxLength);
-        builder.AddAttribute(209, "autocomplete", AutoCompleteAsString);
-        builder.AddMultipleAttributes(210, AdditionalAttributes);
-
-        if (BindEvent == BindEvent.OnChange)
-            builder.AddAttribute(211, "onchange", OnChange);
-        else if (BindEvent == BindEvent.OnInput)
-            builder.AddAttribute(212, "oninput", OnInput);
-
-        builder.AddElementReferenceCapture(213, __inputReference => Element = __inputReference);
+        if(EnableMaxMin)
+        {
+            builder.AddAttributeIfNotNullOrWhiteSpace(205, "max", Max);
+            builder.AddAttributeIfNotNullOrWhiteSpace(206, "min", Min);
+        }
+        builder.AddAttribute(207, "value", Value);
+        builder.AddAttribute(208, "disabled", Disabled);
+        builder.AddMultipleAttributes(209, AdditionalAttributes);
+        builder.AddAttribute(210, "onchange", OnChange);
+        builder.AddElementReferenceCapture(211, __inputReference => Element = __inputReference);
 
         builder.CloseElement(); // close: input
 
@@ -62,14 +59,14 @@ public class DateInput : BulmaComponentBase
     /// Disables the <see cref="TextInput" />.
     /// </summary>
     [AddedVersion("1.0.0")]
-    [Description("Disables the <code>TextInput</code>.")]
+    [Description("Disables the <code>DateInput</code>.")]
     public void Disable() => Disabled = true;
 
     /// <summary>
     /// Enables the <see cref="TextInput" />.
     /// </summary>
     [AddedVersion("1.0.0")]
-    [Description("Enables the <code>TextInput</code>.")]
+    [Description("Enables the <code>DateInput</code>.")]
     public void Enable() => Disabled = false;
 
     private async Task OnChange(ChangeEventArgs e)
@@ -108,32 +105,6 @@ public class DateInput : BulmaComponentBase
         );
 
     /// <summary>
-    /// If <see langword="true" />, TextInput can complete the values automatically by the browser.
-    /// <para>
-    /// Default value is <see langword="false" />.
-    /// </para>
-    /// </summary>
-    [AddedVersion("1.0.0")]
-    [DefaultValue(false)]
-    [Description("If <b>true</b>, <code>TextInput</code> can complete the values automatically by the browser.")]
-    [Parameter]
-    public bool AutoComplete { get; set; } = false;
-
-    private string AutoCompleteAsString => AutoComplete ? "true" : "false";
-
-    /// <summary>
-    /// Gets or sets the input bind event.
-    /// <para>
-    /// Default value is <see cref="BindEvent.OnChange" />.
-    /// </para>
-    /// </summary>
-    [AddedVersion("1.0.0")]
-    [DefaultValue(BindEvent.OnChange)]
-    [Description("Gets or sets the input bind event.")]
-    [Parameter]
-    public BindEvent BindEvent { get; set; } = BindEvent.OnChange;
-
-    /// <summary>
     /// Gets or sets the color.
     /// <para>
     /// Default value is <see cref="TextInputColor.None" />.
@@ -157,7 +128,11 @@ public class DateInput : BulmaComponentBase
     [Parameter]
     public bool Disabled { get; set; } = false;
 
-    [CascadingParameter] private EditContext EditContext { get; set; } = default!;
+    [CascadingParameter] 
+    private EditContext EditContext { get; set; } = default!;
+    
+    [Parameter]
+    public bool EnableMaxMin { get; set; }
 
     private string FieldCssClasses => EditContext?.FieldCssClass(fieldIdentifier) ?? "";
 
@@ -174,29 +149,13 @@ public class DateInput : BulmaComponentBase
     public bool IsRounded { get; set; } = false;
 
     /// <summary>
-    /// Gets or sets the maximum number of characters that can be entered.
-    /// <para>
-    /// Default value is <see langword="null" />.
-    /// </para>
+    /// Gets or sets the max value.
     /// </summary>
-    [AddedVersion("1.0.0")]
-    [DefaultValue(null)]
-    [Description("Gets or sets the maximum number of characters that can be entered.")]
-    [ParameterTypeName("int?")]
     [Parameter]
-    public int? MaxLength { get; set; }
+    public string? Max { get; set; }
 
-    /// <summary>
-    /// Gets or sets the placeholder text.
-    /// <para>
-    /// Default value is <see langword="null" />.
-    /// </para>
-    /// </summary>
-    [AddedVersion("1.0.0")]
-    [DefaultValue(null)]
-    [Description("Gets or sets the placeholder text.")]
     [Parameter]
-    public string? Placeholder { get; set; } = null;
+    public string? Min { get; set; }
 
     /// <summary>
     /// Gets or sets the size.
@@ -221,6 +180,19 @@ public class DateInput : BulmaComponentBase
     [Description("Gets or sets the state.")]
     [Parameter]
     public TextInputState State { get; set; } = TextInputState.None;
+
+    /// <summary>
+    /// Gets or sets the step.
+    /// <para>
+    /// For date inputs, the value of step is given in days; and is treated as a number of milliseconds equal to 86,400,000 times the step value (the underlying numeric value is in milliseconds). 
+    /// The default value of step is 1, indicating 1 day.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(1)]
+    [Description("Gets or sets the step.")]
+    [Parameter]
+    public int Step { get; set; } = 1;
 
     /// <summary>
     /// Gets or sets the text alignment.
@@ -250,7 +222,7 @@ public class DateInput : BulmaComponentBase
     /// This event fires when the <see cref="TextInput" /> value changes.
     /// </summary>
     [AddedVersion("1.0.0")]
-    [Description("This event fires when the <code>TextInput</code> value changes.")]
+    [Description("This event fires when the <code>DateInput</code> value changes.")]
     [Parameter]
     public EventCallback<string> ValueChanged { get; set; }
 
