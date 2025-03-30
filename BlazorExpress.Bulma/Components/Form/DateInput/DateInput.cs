@@ -94,7 +94,7 @@ public class DateInput<TValue> : BulmaComponentBase
         base.OnInitialized();
     }
 
-    protected override Task OnParametersSetAsync()
+    protected override void OnParametersSet()
     {
         if (IsFirstRenderComplete)
         {
@@ -118,8 +118,6 @@ public class DateInput<TValue> : BulmaComponentBase
                 valueAsString = GetDefaultFormattedValueAsString(Value);
             }
         }
-
-        return Task.CompletedTask;
     }
 
     private string? GetDefaultFormattedValueAsString(TValue value)
@@ -160,10 +158,10 @@ public class DateInput<TValue> : BulmaComponentBase
 
             if (ValueChanged.HasDelegate)
                 await ValueChanged.InvokeAsync(newValue);
+            else
+                Value = newValue;
 
             EditContext?.NotifyFieldChanged(fieldIdentifier);
-
-            oldValue = newValue;
         }
     }
 
