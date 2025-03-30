@@ -6,11 +6,28 @@
 ///     <see href="https://bulma.io/documentation/form/input/" />
 /// </para>
 /// </summary>
-public class DateInput : BulmaComponentBase
+public class DateInput<TValue> : BulmaComponentBase
 {
     #region Fields and Constants
 
+    /// <summary>
+    /// Default date format is `yyyy-MM-dd`.
+    /// </summary>
+    private readonly string defaultFormat = "yyyy-MM-dd";
+
     private FieldIdentifier fieldIdentifier = default!;
+
+    private string formattedMax = default!;
+
+    private string formattedMin = default!;
+
+    private string formattedValue = default!;
+
+    private TValue max = default!;
+
+    private TValue min = default!;
+
+    private TValue? oldValue;
 
     #endregion
 
@@ -29,16 +46,17 @@ public class DateInput : BulmaComponentBase
         builder.AddAttribute(202, "id", Id);
         builder.AddAttributeIfNotNullOrWhiteSpace(203, "class", $"{ClassNames} {FieldCssClasses}");
         builder.AddAttributeIfNotNullOrWhiteSpace(204, "style", StyleNames);
-        if(EnableMaxMin)
+        if (EnableMaxMin)
         {
             builder.AddAttributeIfNotNullOrWhiteSpace(205, "max", Max);
             builder.AddAttributeIfNotNullOrWhiteSpace(206, "min", Min);
         }
         builder.AddAttribute(207, "value", Value);
         builder.AddAttribute(208, "disabled", Disabled);
-        builder.AddMultipleAttributes(209, AdditionalAttributes);
-        builder.AddAttribute(210, "onchange", OnChange);
-        builder.AddElementReferenceCapture(211, __inputReference => Element = __inputReference);
+        builder.AddAttribute(209, "autocomplete", AutoCompleteAsString);
+        builder.AddMultipleAttributes(210, AdditionalAttributes);
+        builder.AddAttribute(211, "onchange", OnChange);
+        builder.AddElementReferenceCapture(212, __inputReference => Element = __inputReference);
 
         builder.CloseElement(); // close: input
 
@@ -74,9 +92,9 @@ public class DateInput : BulmaComponentBase
         var oldValue = Value;
         var newValue = e.Value?.ToString() ?? string.Empty; // object
 
-        await ValueChanged.InvokeAsync(newValue);
+        //await ValueChanged.InvokeAsync(newValue);
 
-        EditContext?.NotifyFieldChanged(fieldIdentifier);
+        //EditContext?.NotifyFieldChanged(fieldIdentifier);
     }
 
     private async Task OnInput(ChangeEventArgs e)
@@ -84,9 +102,9 @@ public class DateInput : BulmaComponentBase
         var oldValue = Value;
         var newValue = e.Value?.ToString() ?? string.Empty; // object
 
-        await ValueChanged.InvokeAsync(newValue);
+        //await ValueChanged.InvokeAsync(newValue);
 
-        EditContext?.NotifyFieldChanged(fieldIdentifier);
+        //EditContext?.NotifyFieldChanged(fieldIdentifier);
     }
 
     #endregion
@@ -103,6 +121,20 @@ public class DateInput : BulmaComponentBase
             (BulmaCssClass.IsRounded, IsRounded),
             (State.ToTextInputStateClass(), State != TextInputState.None)
         );
+
+    /// <summary>
+    /// If <see langword="true" />, DateInput can complete the values automatically by the browser.
+    /// <para>
+    /// Default value is <see langword="false" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If <b>true</b>, <code>DateInput</code> can complete the values automatically by the browser.")]
+    [Parameter]
+    public bool AutoComplete { get; set; } = false;
+
+    private string AutoCompleteAsString => AutoComplete ? "true" : "false";
 
     /// <summary>
     /// Gets or sets the color.
@@ -128,9 +160,9 @@ public class DateInput : BulmaComponentBase
     [Parameter]
     public bool Disabled { get; set; } = false;
 
-    [CascadingParameter] 
+    [CascadingParameter]
     private EditContext EditContext { get; set; } = default!;
-    
+
     [Parameter]
     public bool EnableMaxMin { get; set; }
 
@@ -216,7 +248,7 @@ public class DateInput : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the value.")]
     [Parameter]
-    public string Value { get; set; } = default!;
+    public TValue Value { get; set; } = default!;
 
     /// <summary>
     /// This event fires when the <see cref="TextInput" /> value changes.
@@ -224,7 +256,7 @@ public class DateInput : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [Description("This event fires when the <code>DateInput</code> value changes.")]
     [Parameter]
-    public EventCallback<string> ValueChanged { get; set; }
+    public EventCallback<TValue> ValueChanged { get; set; }
 
     /// <summary>
     /// Gets or sets the expression.
@@ -234,7 +266,7 @@ public class DateInput : BulmaComponentBase
     [Description("Gets or sets the expression.")]
     [ParameterTypeName("Expression<Func<string>>?")]
     [Parameter]
-    public Expression<Func<string>>? ValueExpression { get; set; } = default!;
+    public Expression<Func<TValue>>? ValueExpression { get; set; } = default!;
 
     #endregion
 }
