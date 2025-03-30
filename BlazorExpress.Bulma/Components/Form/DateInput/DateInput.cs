@@ -29,6 +29,8 @@ public class DateInput<TValue> : BulmaComponentBase
 
     private TValue? oldValue;
 
+    private bool resetUIValue;
+
     #endregion
 
     #region Methods
@@ -78,7 +80,9 @@ public class DateInput<TValue> : BulmaComponentBase
         oldMin = Min;
         oldValue = Value;
 
-        // TODO: check min is less than max
+        if (EnableMaxMin && IsLeftGreaterThan(Min, Max))
+            throw new InvalidOperationException("Min parameter must be less than or equal to Max parameter.");
+
         if (EnableMaxMin)
         {
             maxAsString = GetDefaultFormattedValueAsString(Max);
@@ -96,41 +100,39 @@ public class DateInput<TValue> : BulmaComponentBase
 
     protected override void OnParametersSet()
     {
-        if (IsFirstRenderComplete)
+        if (!IsFirstRenderComplete)
+            return;
+
+        Console.WriteLine("DateInput.OnParametersSet()");
+
+        if (!oldMax!.Equals(Max))
         {
-            if (oldMax!.Equals(Max))
-            {
-                oldMax = Max;
-                if (EnableMaxMin)
-                    maxAsString = GetDefaultFormattedValueAsString(Max);
-            }
-
-            if (oldMin!.Equals(Min))
-            {
-                oldMin = Min;
-                if (EnableMaxMin)
-                    minAsString = GetDefaultFormattedValueAsString(Min);
-            }
-
-            if (oldValue!.Equals(Value))
-            {
-                oldValue = Value;
-                valueAsString = GetDefaultFormattedValueAsString(Value);
-            }
+            oldMax = Max;
+            if (EnableMaxMin)
+                maxAsString = GetDefaultFormattedValueAsString(Max);
         }
-    }
 
-    private string? GetDefaultFormattedValueAsString(TValue value)
-    {
-        if (value == null)
-            return null;
-
-        return value switch
+        if (!oldMin!.Equals(Min))
         {
-            DateOnly dateOnly => dateOnly.ToString(defaultFormat, CultureInfo.CurrentCulture),
-            DateTime dateTime => dateTime.ToString(defaultFormat, CultureInfo.CurrentCulture),
-            _ => throw new InvalidOperationException($"{typeof(TValue)} is not supported.")
-        };
+            oldMin = Min;
+            if (EnableMaxMin)
+                minAsString = GetDefaultFormattedValueAsString(Min);
+        }
+
+        if (!oldValue!.Equals(Value))
+        {
+            oldValue = Value;
+            valueAsString = GetDefaultFormattedValueAsString(Value);
+
+            Console.WriteLine($"DateInput.OnParametersSet() => oldValue: {oldValue}, Value: {Value}, valueAsString: {valueAsString}");
+        }
+
+        if(resetUIValue)
+        {
+            valueAsString = string.Empty;
+            valueAsString = GetDefaultFormattedValueAsString(Value);
+            resetUIValue = false;
+        }
     }
 
     /// <summary>
@@ -147,14 +149,58 @@ public class DateInput<TValue> : BulmaComponentBase
     [Description("Enables the <code>DateInput</code>.")]
     public void Enable() => Disabled = false;
 
+    private string? GetDefaultFormattedValueAsString(TValue value)
+    {
+        if (value == null)
+            return null;
+
+        return value switch
+        {
+            DateOnly dateOnly => dateOnly.ToString(defaultFormat, CultureInfo.CurrentCulture),
+            DateTime dateTime => dateTime.ToString(defaultFormat, CultureInfo.CurrentCulture),
+            _ => throw new InvalidOperationException($"{typeof(TValue)} is not supported.")
+        };
+    }
+
+    private bool IsLeftGreaterThan(TValue left, TValue right)
+    {
+        if (left is null || right is null)
+            return false;
+
+        return left switch
+        {
+            DateOnly dateOnly => dateOnly > (DateOnly)(object)right,
+            DateTime dateTime => dateTime > (DateTime)(object)right,
+            _ => throw new InvalidOperationException($"{typeof(TValue)} is not supported.")
+        };
+    }
+
     private async Task OnChange(ChangeEventArgs e)
     {
         if (e.Value is string _value)
         {
+            Console.WriteLine($"DateInput.OnChange() => _value: {_value}");
+
             TValue newValue = default!;
 
             if (_value != string.Empty)
                 newValue = TryParseValue(_value, out var value) ? value : default!;
+            else if (EnableMaxMin && Value!.Equals(Min)) // Scenario: incorrect date value is entered second time from the UI
+            {
+                resetUIValue = true;
+                Console.WriteLine($"DateInput.OnChange() => Reset UI value");
+                newValue = Min;
+            }
+            else if (EnableMaxMin) // Scenario: incorrect date value is entered or cleared from UI
+                newValue = Min;
+
+            if (EnableMaxMin)
+            {
+                if (IsLeftGreaterThan(newValue, Max)) // newValue > Max || Max < newValue
+                    newValue = Max;
+                if (IsLeftGreaterThan(Min, newValue)) // Min > newValue || newValue < Min
+                    newValue = Min;
+            }
 
             if (ValueChanged.HasDelegate)
                 await ValueChanged.InvokeAsync(newValue);
@@ -197,6 +243,7 @@ public class DateInput<TValue> : BulmaComponentBase
         }
         catch
         {
+            Console.WriteLine($"DateInput.TryParseValue() => value: {value}, typeof(TValue): {typeof(TValue)}");
             newValue = default!;
             return false;
         }
