@@ -1,7 +1,7 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// TextInput component
+/// DateInput component
 /// <para>
 ///     <see href="https://bulma.io/documentation/form/input/" />
 /// </para>
