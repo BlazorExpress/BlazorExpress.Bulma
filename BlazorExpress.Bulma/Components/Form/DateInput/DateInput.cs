@@ -29,7 +29,7 @@ public class DateInput<TValue> : BulmaComponentBase
 
     private TValue? oldValue;
 
-    private bool resetUIValue;
+    private bool resetValue;
 
     #endregion
 
@@ -103,8 +103,6 @@ public class DateInput<TValue> : BulmaComponentBase
         if (!IsFirstRenderComplete)
             return;
 
-        Console.WriteLine("DateInput.OnParametersSet()");
-
         if (!oldMax!.Equals(Max))
         {
             oldMax = Max;
@@ -123,15 +121,17 @@ public class DateInput<TValue> : BulmaComponentBase
         {
             oldValue = Value;
             valueAsString = GetDefaultFormattedValueAsString(Value);
-
-            Console.WriteLine($"DateInput.OnParametersSet() => oldValue: {oldValue}, Value: {Value}, valueAsString: {valueAsString}");
         }
 
-        if(resetUIValue)
+        if (resetValue)
         {
-            valueAsString = string.Empty;
-            valueAsString = GetDefaultFormattedValueAsString(Value);
-            resetUIValue = false;
+            resetValue = false;
+            valueAsString = null;
+            queuedTasks.Enqueue(async () =>
+            {
+                valueAsString = GetDefaultFormattedValueAsString(Value);
+                await InvokeAsync(StateHasChanged);
+            });
         }
     }
 
@@ -179,16 +179,13 @@ public class DateInput<TValue> : BulmaComponentBase
     {
         if (e.Value is string _value)
         {
-            Console.WriteLine($"DateInput.OnChange() => _value: {_value}");
-
             TValue newValue = default!;
 
             if (_value != string.Empty)
                 newValue = TryParseValue(_value, out var value) ? value : default!;
             else if (EnableMaxMin && Value!.Equals(Min)) // Scenario: incorrect date value is entered second time from the UI
             {
-                resetUIValue = true;
-                Console.WriteLine($"DateInput.OnChange() => Reset UI value");
+                resetValue = true;
                 newValue = Min;
             }
             else if (EnableMaxMin) // Scenario: incorrect date value is entered or cleared from UI
@@ -197,9 +194,14 @@ public class DateInput<TValue> : BulmaComponentBase
             if (EnableMaxMin)
             {
                 if (IsLeftGreaterThan(newValue, Max)) // newValue > Max || Max < newValue
+                {
                     newValue = Max;
+                }
                 if (IsLeftGreaterThan(Min, newValue)) // Min > newValue || newValue < Min
+                {
+                    resetValue = true;
                     newValue = Min;
+                }
             }
 
             if (ValueChanged.HasDelegate)
