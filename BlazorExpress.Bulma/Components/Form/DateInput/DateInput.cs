@@ -195,11 +195,12 @@ public class DateInput<TValue> : BulmaComponentBase
             {
                 if (IsLeftGreaterThan(newValue, Max)) // newValue > Max || Max < newValue
                 {
+                    resetValue = true; // in browser, when user selects a date greater than Max by using keybord cursor keys
                     newValue = Max;
                 }
                 if (IsLeftGreaterThan(Min, newValue)) // Min > newValue || newValue < Min
                 {
-                    resetValue = true;
+                    resetValue = true; // in browser, when user selects a date less than Min by using keybord cursor keys
                     newValue = Min;
                 }
             }
