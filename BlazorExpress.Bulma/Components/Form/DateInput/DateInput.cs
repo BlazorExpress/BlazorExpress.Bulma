@@ -308,8 +308,17 @@ public class DateInput<TValue> : BulmaComponentBase
     [CascadingParameter]
     private EditContext EditContext { get; set; } = default!;
 
+    /// <summary>
+    /// If <see langword="true" />, the <see cref="Max" /> and <see cref="Min" /> values will be used to restrict the date range.
+    /// <para>
+    /// Default value is <see langword="false" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If <b>true</b>, the <code>Max</code> and <code>Min</code> values will be used to restrict the date range.")]
     [Parameter]
-    public bool EnableMaxMin { get; set; }
+    public bool EnableMaxMin { get; set; } = false;
 
     private string FieldCssClasses => EditContext?.FieldCssClass(fieldIdentifier) ?? "";
 
@@ -332,6 +341,7 @@ public class DateInput<TValue> : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the max value. If <code>EnableMaxMin</code> is <b>true</b>, this value will be used.")]
+    [ParameterTypeName("TValue")]
     [Parameter]
     public TValue Max { get; set; } = default!;
 
@@ -342,6 +352,7 @@ public class DateInput<TValue> : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the min value. If <code>EnableMaxMin</code> is <b>true</b>, this value will be used.")]
+    [ParameterTypeName("TValue")]
     [Parameter]
     public TValue Min { get; set; } = default!;
 
@@ -403,6 +414,7 @@ public class DateInput<TValue> : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the value.")]
+    [ParameterTypeName("TValue")]
     [Parameter]
     public TValue Value { get; set; } = default!;
 
@@ -411,6 +423,7 @@ public class DateInput<TValue> : BulmaComponentBase
     /// </summary>
     [AddedVersion("1.0.0")]
     [Description("This event fires when the <code>DateInput</code> value changes.")]
+    [ParameterTypeName("EventCallback<TValue>")]
     [Parameter]
     public EventCallback<TValue> ValueChanged { get; set; }
 
