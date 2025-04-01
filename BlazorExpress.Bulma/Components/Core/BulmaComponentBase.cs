@@ -23,7 +23,8 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
         while (queuedTasks.TryDequeue(out var taskToExecute))
             await taskToExecute.Invoke();
 
-        IsRenderComplete = true;
+        if (firstRender)
+            IsFirstRenderComplete = true;
     }
 
     /// <inheritdoc />
@@ -171,7 +172,7 @@ public abstract class BulmaComponentBase : ComponentBase, IDisposable, IAsyncDis
     [Parameter]
     public string? Id { get; set; }
 
-    protected bool IsRenderComplete { get; private set; }
+    protected bool IsFirstRenderComplete { get; private set; }
 
     [Inject] protected IJSRuntime JSRuntime { get; set; } = default!;
 

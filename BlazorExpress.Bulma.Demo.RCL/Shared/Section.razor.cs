@@ -14,7 +14,7 @@ public partial class Section : BulmaComponentBase
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (firstRender && IsRenderComplete)
+        if (firstRender && IsFirstRenderComplete)
         {
             await Task.Delay(200);
             await JSRuntime.InvokeVoidAsync("navigateToHeading");

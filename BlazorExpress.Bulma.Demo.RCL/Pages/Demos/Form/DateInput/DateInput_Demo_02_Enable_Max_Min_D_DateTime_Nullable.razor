@@ -1,0 +1,24 @@
+<div class="mb-3">
+    <strong>DateTime?</strong>:
+</div>
+<div class="mb-3">
+    <DateInput TValue="DateTime?" @bind-Value="@date4" EnableMaxMin="true" Min="@min4" Max="@max4" Placeholder="Enter Date" />
+</div>
+<div class="mb-3">Min date: @min4</div>
+<div class="mb-3">Max date: @max4</div>
+<div class="mb-3">Entered date: @date4</div>
+
+@code {
+    private DateTime date = DateTime.Now.AddMonths(3);
+    private DateTime min = DateTime.Now.AddMonths(-1);
+    private DateTime max = DateTime.Now.AddYears(1);
+
+    private DateTime? date4, min4, max4;
+
+    protected override void OnInitialized()
+    {
+        date4 = null;
+        min4 = min;
+        max4 = max;
+    }
+}

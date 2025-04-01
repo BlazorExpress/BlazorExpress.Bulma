@@ -1,0 +1,24 @@
+<div class="mb-3">
+    <strong>DateOnly?</strong>:
+</div>
+<div class="mb-3">
+    <DateInput TValue="DateOnly?" @bind-Value="@date2" EnableMaxMin="true" Min="@min2" Max="@max2" Placeholder="Enter Date" />
+</div>
+<div class="mb-3">Min date: @min2</div>
+<div class="mb-3">Max date: @max2</div>
+<div class="mb-3">Entered date: @date2</div>
+
+@code {
+    private DateTime date = DateTime.Now.AddMonths(3);
+    private DateTime min = DateTime.Now.AddMonths(-1);
+    private DateTime max = DateTime.Now.AddYears(1);
+
+    private DateOnly? date2, min2, max2;
+
+    protected override void OnInitialized()
+    {
+        date2 = null;
+        min2 = DateOnly.FromDateTime(min);
+        max2 = DateOnly.FromDateTime(max);
+    }
+}

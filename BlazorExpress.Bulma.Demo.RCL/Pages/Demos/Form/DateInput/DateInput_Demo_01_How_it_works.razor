@@ -1,0 +1,6 @@
+<DateInput TValue="DateOnly?" @bind-Value="@enteredDate" />
+<div class="mb-3">Entered date: @enteredDate</div>
+
+@code {
+    private DateOnly? enteredDate = null;
+}

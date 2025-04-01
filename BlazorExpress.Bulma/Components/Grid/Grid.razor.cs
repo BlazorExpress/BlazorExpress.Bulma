@@ -62,7 +62,7 @@ public partial class Grid<TItem> : BulmaComponentBase
         if (AllowPaging && PageSize < 0)
             throw new ArgumentException($"{nameof(PageSize)} must be greater than zero.");
 
-        if (IsRenderComplete)
+        if (IsFirstRenderComplete)
         {
             // Perform a re-query only if the data source or something else has changed
             var newDataOrDataProvider = Data ?? (object?)DataProvider;
