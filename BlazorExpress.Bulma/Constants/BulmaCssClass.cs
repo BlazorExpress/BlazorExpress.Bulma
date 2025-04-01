@@ -10,6 +10,8 @@ public static class BulmaCssClass
 
     public const string Block = "block";
 
+    public const string Breadcrumb = "breadcrumb";
+
     public const string Box = "box";
 
     public const string Button = "button";

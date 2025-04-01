@@ -87,6 +87,7 @@ public partial class DocsMainLayout : MainLayoutBase
             Name = "COMPONENTS",
             CssClass = "is-size-7 has-text-weight-bold has-text-dark",
             Links = [
+                new Link { Href = RouteConstants.Docs_Breadcrumb_Documentation, Text = "Breadcrumb" },
                 new Link { Href = RouteConstants.Docs_ConfirmDialog_Documentation, Text = "Confirm Dialog" },
                 new Link { Href = RouteConstants.Docs_GoogleMaps_Documentation, Text = "Google Maps" },
                 new Link { Href = RouteConstants.Docs_Grid_Documentation, Text = "Grid" },

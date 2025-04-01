@@ -20,7 +20,7 @@ public static class PageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Box, Href = RouteConstants.Demos_Box_Documentation, Text = "Box", Categories = new() { PageLinkCategory.All, PageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = RouteConstants.Demos_Breadcrumb_Documentation, Text = "Breadcrumb", Categories = new() { PageLinkCategory.All }, Status = PageLinkStatus.None, IsActive = false });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.SegmentedNav, Href = RouteConstants.Demos_Breadcrumb_Documentation, Text = "Breadcrumb", Categories = new() { PageLinkCategory.All }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.ToggleOn, Href = RouteConstants.Demos_Button_Documentation, Text = "Button", Categories = new() { PageLinkCategory.All, PageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });
