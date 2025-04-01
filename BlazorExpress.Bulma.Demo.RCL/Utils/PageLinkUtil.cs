@@ -44,7 +44,7 @@ public static class PageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = RouteConstants.Demos_Form_CurrencyInput_Documentation, Text = "Currency Input", Categories = new() { PageLinkCategory.All, PageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = false });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = RouteConstants.Demos_Form_DateInput_Documentation, Text = "Date Input", Categories = new() { PageLinkCategory.All, PageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = false });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.CalendarDate, Href = RouteConstants.Demos_Form_DateInput_Documentation, Text = "Date Input", Categories = new() { PageLinkCategory.All, PageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.XCircleFill, Href = RouteConstants.Demos_DeleteButton_Documentation, Text = "Delete Button", Categories = new() { PageLinkCategory.All, PageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });
