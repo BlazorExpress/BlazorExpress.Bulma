@@ -1,7 +1,7 @@
 <DateInput Class="mb-2" @bind-Value="@enteredText1" />
-<DateInput Class="mb-2" @bind-Value="@enteredText2" TextAlignment="Alignment.Start" />
-<DateInput Class="mb-2" @bind-Value="@enteredText3" TextAlignment="Alignment.Center" />
-<DateInput Class="mb-2" @bind-Value="@enteredText4" TextAlignment="Alignment.End" />
+<DateInput Class="mb-2" @bind-Value="@enteredText2" TextAlignment="TextAlignment.Left" />
+<DateInput Class="mb-2" @bind-Value="@enteredText3" TextAlignment="TextAlignment.Center" />
+<DateInput Class="mb-2" @bind-Value="@enteredText4" TextAlignment="TextAlignment.Right" />
 
 @code {
     private DateOnly? enteredText1 = new DateOnly(2025, 02, 25);

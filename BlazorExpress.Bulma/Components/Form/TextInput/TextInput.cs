@@ -101,7 +101,7 @@ public class TextInput : BulmaComponentBase
             Class,
             (BulmaCssClass.Input, true),
             (Color.ToTextInputColorClass(), Color != TextInputColor.None),
-            (TextAlignment.ToTextAlignmentClass(), TextAlignment != Alignment.None),
+            (TextAlignment.ToTextAlignmentClass(), TextAlignment != TextAlignment.None),
             (Size.ToTextInputSizeClass(), Size != TextInputSize.None),
             (BulmaCssClass.IsRounded, IsRounded),
             (State.ToTextInputStateClass(), State != TextInputState.None)
@@ -225,14 +225,14 @@ public class TextInput : BulmaComponentBase
     /// <summary>
     /// Gets or sets the text alignment.
     /// <para>
-    /// Default value is <see cref="Alignment.None" />.
+    /// Default value is <see cref="TextAlignment.None" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
-    [DefaultValue(Alignment.None)]
+    [DefaultValue(TextAlignment.None)]
     [Description("Gets or sets the text alignment.")]
     [Parameter]
-    public Alignment TextAlignment { get; set; } = Alignment.None;
+    public TextAlignment TextAlignment { get; set; } = TextAlignment.None;
 
     /// <summary>
     /// Gets or sets the value.

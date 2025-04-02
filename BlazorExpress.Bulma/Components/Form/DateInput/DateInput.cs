@@ -261,8 +261,8 @@ public class DateInput<TValue> : BulmaComponentBase
             Class,
             (BulmaCssClass.Input, true),
             (Color.ToTextInputColorClass(), Color != TextInputColor.None),
-            (TextAlignment.ToTextAlignmentClass(), TextAlignment != Alignment.None),
-            (Size.ToTextInputSizeClass(), Size != TextInputSize.None),
+            (TextAlignment.ToTextAlignmentClass(), TextAlignment != TextAlignment.None),
+            (Size.ToDateInputSizeClass(), Size != DateInputSize.None),
             (BulmaCssClass.IsRounded, IsRounded),
             (State.ToTextInputStateClass(), State != TextInputState.None)
         );
@@ -359,14 +359,14 @@ public class DateInput<TValue> : BulmaComponentBase
     /// <summary>
     /// Gets or sets the size.
     /// <para>
-    /// Default value is <see cref="TextInputSize.None" />.
+    /// Default value is <see cref="DateInputSize.None" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
-    [DefaultValue(TextInputSize.None)]
+    [DefaultValue(DateInputSize.None)]
     [Description("Gets or sets the size.")]
     [Parameter]
-    public TextInputSize Size { get; set; } = TextInputSize.None;
+    public DateInputSize Size { get; set; } = DateInputSize.None;
 
     /// <summary>
     /// Gets or sets the state.
@@ -396,14 +396,14 @@ public class DateInput<TValue> : BulmaComponentBase
     /// <summary>
     /// Gets or sets the text alignment.
     /// <para>
-    /// Default value is <see cref="Alignment.None" />.
+    /// Default value is <see cref="TextAlignment.None" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
-    [DefaultValue(Alignment.None)]
+    [DefaultValue(TextAlignment.None)]
     [Description("Gets or sets the text alignment.")]
     [Parameter]
-    public Alignment TextAlignment { get; set; } = Alignment.None;
+    public TextAlignment TextAlignment { get; set; } = TextAlignment.None;
 
     /// <summary>
     /// Gets or sets the value.

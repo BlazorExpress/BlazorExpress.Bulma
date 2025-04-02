@@ -139,6 +139,9 @@ public static class GoogleFontIconUtility
 
 
 
+            GoogleFontIconName.Home => "home",
+            GoogleFontIconName.Computer => "computer",
+            GoogleFontIconName.ThumbUp => "thumb_up",
             GoogleFontIconName.Search => "search",
 
             _ => ""

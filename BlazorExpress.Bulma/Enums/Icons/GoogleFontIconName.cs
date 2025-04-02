@@ -100,5 +100,8 @@ public enum GoogleFontIconName
     HourglassEmpty,
     HourglassPause,
 
+    Home,
+    Computer,
+    ThumbUp,
     Search
 }

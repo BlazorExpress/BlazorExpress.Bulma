@@ -32,6 +32,35 @@ public static class EnumExtensions
             _ => BulmaCssClass.IsSize4
         };
 
+    public static string? ToBreadcrumbAlignmentClass(this BreadcrumbAlignment alignment) =>
+        alignment switch
+        {
+            BreadcrumbAlignment.Center => BulmaCssClass.IsCentered,
+            BreadcrumbAlignment.Left => BulmaCssClass.IsLeft,
+            BreadcrumbAlignment.Right => BulmaCssClass.IsRight,
+            _ => null
+        };
+
+    public static string? ToBreadcrumbSeparatorClass(this BreadcrumbSeparator separator) =>
+        separator switch
+        {
+            BreadcrumbSeparator.Arrow => BulmaCssClass.HasArrowSeparator,
+            BreadcrumbSeparator.Bullet => BulmaCssClass.HasBulletSeparator,
+            BreadcrumbSeparator.Dot => BulmaCssClass.HasDotSeparator,
+            BreadcrumbSeparator.Succeeds => BulmaCssClass.HasSucceedsSeparator,
+            _ => null
+        };
+
+    public static string? ToBreadcrumbSizeClass(this BreadcrumbSize size) =>
+        size switch
+        {
+            BreadcrumbSize.Small => BulmaCssClass.IsSmall,
+            BreadcrumbSize.Normal => BulmaCssClass.IsNormal,
+            BreadcrumbSize.Medium => BulmaCssClass.IsMedium,
+            BreadcrumbSize.Large => BulmaCssClass.IsLarge,
+            _ => null
+        };
+
     public static string? ToButtonColorClass(this ButtonColor color) =>
         color switch
         {
@@ -75,6 +104,16 @@ public static class EnumExtensions
             ButtonType.Submit => BulmaCssClass.Submit,
             ButtonType.Reset => BulmaCssClass.Reset,
             _ => BulmaCssClass.Button
+        };
+
+    public static string? ToDateInputSizeClass(this DateInputSize size) =>
+        size switch
+        {
+            DateInputSize.Small => BulmaCssClass.IsSmall,
+            DateInputSize.Normal => BulmaCssClass.IsNormal,
+            DateInputSize.Medium => BulmaCssClass.IsMedium,
+            DateInputSize.Large => BulmaCssClass.IsLarge,
+            _ => null
         };
 
     public static string? ToDeleteButtonSizeClass(this DeleteButtonSize size) =>
@@ -345,12 +384,12 @@ public static class EnumExtensions
             _ => null
         };
 
-    public static string ToTextAlignmentClass(this Alignment alignment) =>
+    public static string ToTextAlignmentClass(this TextAlignment alignment) =>
         alignment switch
         {
-            Alignment.Start => BulmaCssClass.HasTextLeft,
-            Alignment.Center => BulmaCssClass.HasTextCentered,
-            Alignment.End => BulmaCssClass.HasTextRight,
+            TextAlignment.Left => BulmaCssClass.HasTextLeft,
+            TextAlignment.Center => BulmaCssClass.HasTextCentered,
+            TextAlignment.Right => BulmaCssClass.HasTextRight,
             _ => ""
         };
 

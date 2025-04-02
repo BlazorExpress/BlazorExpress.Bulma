@@ -10,6 +10,8 @@ public static class BulmaCssClass
 
     public const string Block = "block";
 
+    public const string Breadcrumb = "breadcrumb";
+
     public const string Box = "box";
 
     public const string Button = "button";
@@ -23,6 +25,8 @@ public static class BulmaCssClass
 
     public const string HasAddons = "has-addons";
 
+    public const string HasArrowSeparator = "has-arrow-separator";
+
     public const string HasBackgroundBlack = "has-background-black";
     public const string HasBackgroundDanger = "has-background-danger";
     public const string HasBackgroundDark = "has-background-dark";
@@ -34,9 +38,18 @@ public static class BulmaCssClass
     public const string HasBackgroundWarning = "has-background-warning";
     public const string HasBackgroundWhite = "has-background-white";
 
+    public const string HasBulletSeparator = "has-bullet-separator";
+
     public const string HasDropdown = "has-dropdown";
+
+    public const string HasDotSeparator = "has-dot-separator";
+
     public const string HasShadow = "has-shadow";
+
     public const string HasSkeleton = "has-skeleton";
+
+    public const string HasSucceedsSeparator = "has-succeeds-separator";
+
     public const string HasTextBlack = "has-text-black";
     public const string HasTextDanger = "has-text-danger";
     public const string HasTextDark = "has-text-dark";

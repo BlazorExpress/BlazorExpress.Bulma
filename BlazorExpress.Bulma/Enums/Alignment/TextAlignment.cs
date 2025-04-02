@@ -6,10 +6,10 @@
 ///     <see href="https://bulma.io/documentation/helpers/typography-helpers/#alignment" />
 /// </para>
 /// </summary>
-public enum Alignment
+public enum TextAlignment
 {
     None,
-    Start,
+    Left,
     Center,
-    End
+    Right
 }
