@@ -11,31 +11,63 @@
 
 <DocsLink Href="@RouteConstants.Docs_Skeletons_Documentation" />
 
+<div class="my-3">It is used to indicate that the content is being loaded and to provide a visual representation of the content that will be displayed.</div>
+<div>The <code>Skeleton</code> component can be used to create a loading state for any type of content, such as text, images, or other components.</div>
+
 <Section Class="p-0" Size="HeadingSize.H3" Name="Skeleton block" PageUrl="@pageUrl" Link="skeleton-block">
-    <Demo Type="typeof(Skeletons_Demo_01_Block_A)" Tabs="true" />
-    <Demo Type="typeof(Skeletons_Demo_01_Block_B_Text_Inside)" Tabs="true" />
+    <div class="mb-3">
+        The skeleton block is a simple block element with a pulsating animation that can be used to indicate that content is being loaded.
+        It has a minimum height of <b>4.5em</b>.
+    </div>
+    <Demo Type="typeof(Skeletons_Demo_01_Block_A)" Tabs="false" />
+    <div class="mb-3">
+        If you insert text inside this block, you can make its height dynamic:
+    </div>
+    <Demo Type="typeof(Skeletons_Demo_01_Block_B_Text_Inside)" Tabs="false" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Skeleton lines" PageUrl="@pageUrl" Link="skeleton-lines">
+    <div class="mb-3">
+        The <code>SkeletonLine</code> is a simple line element which represents a paragraph.
+        Each <code>SkeletonLine</code> will render as a separate loading line.
+    </div>
     <Demo Type="typeof(Skeletons_Demo_02_Lines_A_Default)" Tabs="true" />
 </Section>
+
 <Section Class="p-0" Size="HeadingSize.H4" Name="Width" PageUrl="@pageUrl" Link="width">
+    <div class="mb-3">
+        You can set the width of the skeleton line by using the <code>Width</code> parameter.
+    </div>
     <Demo Type="typeof(Skeletons_Demo_02_Lines_B_Width)" Tabs="true" />
 </Section>
+
 <Section Class="p-0" Size="HeadingSize.H4" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <div class="mb-3">
+        You can set the color of the skeleton line by using the <code>Color</code> parameter.
+        In the following example, we set the color to <b>Primary</b>.
+    </div>    
     <Demo Type="typeof(Skeletons_Demo_02_Lines_C_Colors_01)" Tabs="true" />
+    <div class="mb-3">
+        You can also set the color of the individual lines by using the <code>Color</code> parameter of the <code>SkeletonLine</code> component.
+        In the following example, we set the color of the individual lines to different colors.
+    </div>
     <Demo Type="typeof(Skeletons_Demo_02_Lines_C_Colors_02)" Tabs="true" />
 </Section>
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Components with skeletons" PageUrl="@pageUrl" Link="components-with-skeletons">
+@* <Section Class="p-0" Size="HeadingSize.H3" Name="Components with skeletons" PageUrl="@pageUrl" Link="components-with-skeletons">
     <div></div>
-</Section>
+</Section> *@
+
 <Section Class="p-0" Size="HeadingSize.H4" Name="Button" PageUrl="@pageUrl" Link="components-with-skeletons-button">
+    <div class="mb-3">
+        In the following example, we use IsSkeleton to show a skeleton loading state for a button.
+    </div>
     <Demo Type="typeof(Skeletons_Demo_03_Components_with_Skeletons_A_Button)" Tabs="true" />
 </Section>
-<Section Class="p-0" Size="HeadingSize.H4" Name="Icon" PageUrl="@pageUrl" Link="components-with-skeletons-icon">
+
+@* <Section Class="p-0" Size="HeadingSize.H4" Name="Icon" PageUrl="@pageUrl" Link="components-with-skeletons-icon">
     <Demo Type="typeof(Skeletons_Demo_03_Components_with_Skeletons_B_Icon)" Tabs="true" />
-</Section>
+</Section> *@
 
 @code {
     private const string pageUrl = RouteConstants.Demos_Skeletons_Documentation;
