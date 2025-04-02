@@ -10,6 +10,10 @@
     --be-bulma-pink-rgb: 214, 51, 132;
 }
 
+[data-theme=light] {
+    --be-bulma-pre-bg: #f5f2f0;
+}
+
 [data-theme=dark] {
     --be-bulma-border-color: #495057;
     --be-bulma-pre-bg: #1b1f22;
@@ -49,7 +53,7 @@ h1:focus-visible {
 }
 
     .be-bulma-doc-example-snippet pre {
-        background-color: transparent !important;
+        background-color: var(--be-bulma-pre-bg) !important;
         border: 0 !important;
         margin-top: 0 !important;
         margin-bottom: 0 !important;

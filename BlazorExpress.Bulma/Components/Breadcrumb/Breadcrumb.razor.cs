@@ -15,6 +15,7 @@ public partial class Breadcrumb : BulmaComponentBase
             Class, 
             (BulmaCssClass.Breadcrumb, true),
             (Alignment.ToBreadcrumbAlignmentClass(), Alignment != BreadcrumbAlignment.None),
+            (Separator.ToBreadcrumbSeparatorClass(), Separator != BreadcrumbSeparator.None),
             (Size.ToBreadcrumbSizeClass(), Size != BreadcrumbSize.None)
         );
 
@@ -42,6 +43,18 @@ public partial class Breadcrumb : BulmaComponentBase
     [EditorRequired]
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
+
+    /// <summary>
+    /// Gets or sets the separator.
+    /// <para>
+    /// Default value is <see cref="BreadcrumbSeparator.None" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(BreadcrumbSeparator.None)]
+    [Description("Gets or sets the separator.")]
+    [Parameter]
+    public BreadcrumbSeparator Separator { get; set; } = BreadcrumbSeparator.None;
 
     /// <summary>
     /// Gets or sets the size.

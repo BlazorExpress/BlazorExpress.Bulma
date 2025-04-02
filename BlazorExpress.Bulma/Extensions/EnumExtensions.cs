@@ -41,6 +41,16 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToBreadcrumbSeparatorClass(this BreadcrumbSeparator separator) =>
+        separator switch
+        {
+            BreadcrumbSeparator.Arrow => BulmaCssClass.HasArrowSeparator,
+            BreadcrumbSeparator.Bullet => BulmaCssClass.HasBulletSeparator,
+            BreadcrumbSeparator.Dot => BulmaCssClass.HasDotSeparator,
+            BreadcrumbSeparator.Succeeds => BulmaCssClass.HasSucceedsSeparator,
+            _ => null
+        };
+
     public static string? ToBreadcrumbSizeClass(this BreadcrumbSize size) =>
         size switch
         {
