@@ -12,16 +12,28 @@
 <DocsLink Href="@RouteConstants.Docs_BootstrapIcons_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
-    <Demo Type="typeof(BootstrapIcon_Demo_01_How_it_works)" Tabs="true" />
+    <Demo Type="typeof(BootstrapIcon_Demo_01_How_it_works)" Tabs="false" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Icon text" PageUrl="@pageUrl" Link="icon-text">
-    <Demo Type="typeof(BootstrapIcon_Demo_02_Icon_Text)" Tabs="true" />
+    <div class="mb-3">
+        You can show the icon with text by wrapping the text in a <code>BootstrapIcon</code> component.
+        In the example below, the icon is shown with text on the right.
+    </div>
+    <Demo Type="typeof(BootstrapIcon_Demo_02_Icon_Text)" Tabs="false" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
-    <Demo Type="typeof(BootstrapIcon_Demo_03_Icon_Colors_A)" Tabs="true" />
-    <Demo Type="typeof(BootstrapIcon_Demo_03_Icon_Colors_B_Text_Color)" Tabs="true" />
+    <div class="mb-3">
+        Use <code>Color</code> parameter to set the color of the icon.
+        In the example below, the icon is shown with different colors.
+    </div>
+    <Demo Type="typeof(BootstrapIcon_Demo_03_Icon_Colors_A)" Tabs="false" />
+    <div class="mb-3">
+        When icon with text is used, aldong with <code>Color</code> parameter, 
+        set <code>ApplyColorToText</code> to <code>true</code> to apply the color to the text as well.
+    </div>
+    <Demo Type="typeof(BootstrapIcon_Demo_03_Icon_Colors_B_Text_Color)" Tabs="false" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
@@ -32,7 +44,7 @@
     <Demo Type="typeof(BootstrapIcon_Demo_99_All_Icons)" Tabs="true" />
 </Section>
 
-@code{
+@code {
     private const string pageUrl = RouteConstants.Demos_BootstrapIcons_Documentation;
     private const string pageTitle = "Bootstrap Icons";
     private const string pageDescription = "The <code>BootstrapIcon</code> component will display an icon from any icon font.";
