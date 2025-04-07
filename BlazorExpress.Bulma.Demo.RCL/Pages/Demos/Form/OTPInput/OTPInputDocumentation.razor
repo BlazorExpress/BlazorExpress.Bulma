@@ -1,0 +1,25 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@RouteConstants.Docs_Form_OTPInput_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(OTPInput_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Demos_Form_OTPInput_Documentation;
+    private const string pageTitle = "OTPInput";
+    private const string pageDescription = "The <code>OTPInput</code> component allows users to enter a one-time password (OTP) in a secure and user-friendly manner. The component is designed to enhance the user experience by providing a visually appealing and functional input field for OTP entry.";
+    private const string metaTitle = "Blazor OTPInput Component";
+    private const string metaDescription = "The OTPInput component allows users to enter a one-time password (OTP) in a secure and user-friendly manner. The component is designed to enhance the user experience by providing a visually appealing and functional input field for OTP entry.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}
