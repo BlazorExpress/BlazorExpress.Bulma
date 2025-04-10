@@ -2,8 +2,19 @@
 @inherits BulmaComponentBase
 
 <div @ref="@Element" id="@Id" class="@ContainerClassNames" style="@ContainerStyleNames">
-    @for(int i = 0; i < Length; i++)
+    @for (int i = 0; i < Length; i++)
     {
-        <input type="text" class="@ClassNames" style="@StyleNames" min="0" maxlength="1" />
+        var index = i;
+        var inputId = GetInputId(index);
+
+        <input type="text" 
+                id="@inputId"
+                class="@ClassNames" 
+                style="@StyleNames" 
+                maxlength="1" 
+                inputmode="numeric"
+                value="@otpValues[index]"
+                @oninput="(e) => OnInput(e, index)"
+                @onkeyup="(e) => OnKeyUp(e, index)" />
     }
 </div>

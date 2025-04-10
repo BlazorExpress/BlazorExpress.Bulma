@@ -3,14 +3,6 @@ if (!window.blazorExpress) {
 }
 
 window.blazorExpress = {
-    menu: {
-        initialize: (elementId, dotNetHelper) => {
-            window.addEventListener("resize", () => {
-                dotNetHelper.invokeMethodAsync('WindowResizeJS', window.innerWidth);
-            });
-        },
-        windowSize: () => window.innerWidth
-    },
     googlemaps: {
         addMarker: (elementId, marker, dotNetHelper) => {
             let mapInstance = window.blazorExpress.googlemaps.get(elementId);
@@ -81,7 +73,6 @@ window.blazorExpress = {
             return window.blazorExpress.googlemaps.instances[elementId];
         },
         initialize: (elementId, zoom, center, markers, clickable, dotNetHelper) => {
-            console.log(`JS initialize called...`);
             window.blazorExpress.googlemaps.markerEls[elementId] = window.blazorExpress.googlemaps.markerEls[elementId] ?? [];
 
             let mapOptions = { center: center, zoom: zoom, mapId: elementId };
@@ -113,6 +104,14 @@ window.blazorExpress = {
                 }
             }
         }
+    },
+    menu: {
+        initialize: (elementId, dotNetHelper) => {
+            window.addEventListener("resize", () => {
+                dotNetHelper.invokeMethodAsync('WindowResizeJS', window.innerWidth);
+            });
+        },
+        windowSize: () => window.innerWidth
     },
     scriptLoader: {
         initialize: (elementId, async, defer, scriptId, source, type, dotNetHelper) => {
@@ -148,6 +147,14 @@ window.blazorExpress = {
 
             if (scriptLoaderEl != null)
                 scriptLoaderEl.appendChild(scriptEl);
+        }
+    },
+    utils: {
+        focusElement(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.focus();
+            }
         }
     }
 }
