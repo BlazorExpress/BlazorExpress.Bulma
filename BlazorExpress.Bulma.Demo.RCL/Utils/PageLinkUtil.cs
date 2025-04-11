@@ -98,6 +98,9 @@ public static class PageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = RouteConstants.Demos_Form_NumberInput_Documentation, Text = "Number Input", Categories = new() { PageLinkCategory.All, PageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = false });
 
         index += 1;
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Asterisk, Href = RouteConstants.Demos_Form_OTPInput_Documentation, Text = "OTP Input", Categories = new() { PageLinkCategory.All, PageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = true });
+
+        index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.ThreeDots, Href = RouteConstants.Demos_Pagination_Documentation, Text = "Pagination", Categories = new() { PageLinkCategory.All, PageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;

@@ -86,6 +86,8 @@ public partial class MainLayout : MainLayoutBase
             Name = "FORM",
             CssClass = "is-size-7 has-text-weight-bold has-text-primary",
             Links = [
+                new Link { Href = RouteConstants.Demos_Form_DateInput_Documentation , Text = "Date Input" },
+                new Link { Href = RouteConstants.Demos_Form_OTPInput_Documentation , Text = "OTP Input" },
                 new Link { Href = RouteConstants.Demos_Form_TextInput_Documentation , Text = "Text Input" },
             ]
         });
@@ -120,18 +122,6 @@ public partial class MainLayout : MainLayoutBase
         return groups;
     }
 
-    private Task SetAutoTheme() => SetTheme("system");
-
-    private Task SetDarkTheme() => SetTheme("dark");
-
-    private Task SetLightTheme() => SetTheme("light");
-
-    private async Task SetTheme(string themeName) => await JS.InvokeVoidAsync("setTheme", themeName);
-
-    private void ToggleSidebarSection()
-    {
-        @menuRef.Toggle();
-    }
 
     #endregion
 }
