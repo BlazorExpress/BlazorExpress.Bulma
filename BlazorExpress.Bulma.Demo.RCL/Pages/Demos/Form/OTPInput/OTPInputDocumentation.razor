@@ -12,7 +12,15 @@
 <DocsLink Href="@RouteConstants.Docs_Form_OTPInput_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
-    <Demo Type="typeof(OTPInput_Demo_01_How_it_works)" Tabs="true" />
+    <Demo Type="typeof(OTPInput_Demo_01_How_it_works)" Tabs="true"/>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Length" PageUrl="@pageUrl" Link="length">
+    <Block>
+        To change the length of the OTP input, you can use the <code>Length</code> parameter. This allows you to specify how many characters the OTP input should accept. 
+        For example, if you want to create a 5-digit OTP input, you can set the <code>Length</code> parameter to 5.
+    </Block>
+    <Demo Type="typeof(OTPInput_Demo_02_Length)" Tabs="true" />
 </Section>
 
 @code {
