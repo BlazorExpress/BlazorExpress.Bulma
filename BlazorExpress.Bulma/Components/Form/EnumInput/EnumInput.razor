@@ -1,0 +1,15 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+@typeparam TEnum
+
+<div class="@ContainerClassNames" style="@ContainerStyleNames">
+    <select  @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
+        @if (items is not null)
+        {
+            foreach (var item in items)
+            {
+                <option value="@item.Value" selected="@item.Value.Equals(Value)">@item.Text</option>
+            }
+        }
+    </select>
+</div>

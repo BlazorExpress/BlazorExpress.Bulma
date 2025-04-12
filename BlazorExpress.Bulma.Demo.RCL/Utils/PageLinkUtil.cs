@@ -53,6 +53,9 @@ public static class PageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = RouteConstants.Demos_Dropdown_Documentation, Text = "Dropdown", Categories = new() { PageLinkCategory.All, PageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = false });
 
         index += 1;
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.MenuButtonWideFill, Href = RouteConstants.Demos_Form_EnumInput_Documentation, Text = "Enum Input", Categories = new() { PageLinkCategory.All, PageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = true });
+
+        index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = RouteConstants.Demos_Footer_Documentation, Text = "Footer", Categories = new() { PageLinkCategory.All, PageLinkCategory.Layout }, Status = PageLinkStatus.None, IsActive = false });
 
         index += 1;

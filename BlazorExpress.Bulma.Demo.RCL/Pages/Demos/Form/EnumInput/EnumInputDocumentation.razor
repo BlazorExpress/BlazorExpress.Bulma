@@ -1,0 +1,53 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@RouteConstants.Docs_Form_EnumInput_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(EnumInput_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Demo Type="typeof(EnumInput_Demo_02_Colors)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="Sizes">
+    <Demo Type="typeof(EnumInput_Demo_03_Sizes)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Styles" PageUrl="@pageUrl" Link="styles">
+    <Demo Type="typeof(EnumInput_Demo_04_Styles)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="States" PageUrl="@pageUrl" Link="states">
+    <Demo Type="typeof(EnumInput_Demo_05_States)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Disabled" PageUrl="@pageUrl" Link="disabled">
+    <Demo Type="typeof(EnumInput_Demo_06_Disabled)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Validations" PageUrl="@pageUrl" Link="validations">
+    <Demo Type="typeof(EnumInput_Demo_07_Validations)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Events: ValueChanged" PageUrl="@pageUrl" Link="events-value-changed">
+    <Demo Type="typeof(EnumInput_Demo_08_Events_OnChange)" Tabs="true" />
+</Section>
+
+@code {
+    private const string pageUrl = RouteConstants.Demos_Form_EnumInput_Documentation;
+    private const string pageTitle = "EnumInput";
+    private const string pageDescription = "The <code>EnumInput</code> component is used to show enum values in a dropdown list. It is a simple and effective way to allow users to select from a predefined set of options.";
+    private const string metaTitle = "Blazor EnumInput Component";
+    private const string metaDescription = "The EnumInput component is used to show enum values in a dropdown list. It is a simple and effective way to allow users to select from a predefined set of options.";
+    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+}

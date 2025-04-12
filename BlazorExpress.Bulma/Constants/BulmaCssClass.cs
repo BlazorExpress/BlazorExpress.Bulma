@@ -163,6 +163,7 @@ public static class BulmaCssClass
     public const string IsLoading = "is-loading";
     public const string IsMedium = "is-medium";
     public const string IsMobile = "is-mobile";
+    public const string IsMultiple = "is-multiple";
     public const string IsNarrow = "is-narrow";
     public const string IsNormal = "is-normal";
     public const string IsOutlined = "is-outlined";
@@ -361,6 +362,8 @@ public static class BulmaCssClass
     public const string P5 = "p-5";
 
     public const string Reset = "reset";
+
+    public const string Select = "select";
 
     public const string Submit = "submit";
     public const string Section = "section";

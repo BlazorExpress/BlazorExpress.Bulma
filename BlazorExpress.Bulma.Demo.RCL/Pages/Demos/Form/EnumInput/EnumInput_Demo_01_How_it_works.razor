@@ -1,0 +1,13 @@
+<EnumInput TEnum="Status" @bind-Value="selectedStatus" />
+<div class="mb-3">Selected status: @selectedStatus</div>
+
+@code {
+    private int selectedStatus = (int)Status.Pending;
+
+    public enum Status
+    {
+        Active,
+        Inactive,
+        Pending
+    }
+}
