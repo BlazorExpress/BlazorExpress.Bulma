@@ -1,8 +1,18 @@
-<EnumInput TEnum="Status" @bind-Value="selectedStatus" />
-<div class="mb-3">Selected status: @selectedStatus</div>
+<EnumInput TEnum="Status" @bind-Value="@selectedStatusValue" />
+<div class="mb-3">Selected value: @selectedStatusValue</div>
+
+<EnumInput TEnum="Status" @bind-Text="@selectedStatusText" />
+<div class="mb-3">Selected text: @selectedStatusText</div>
 
 @code {
-    private int selectedStatus = (int)Status.Pending;
+    private int selectedStatusValue;
+    private string? selectedStatusText;
+
+    override protected void OnInitialized()
+    {
+        selectedStatusValue = (int)Status.Pending;
+        selectedStatusText = Status.Inactive.ToString();
+    }
 
     public enum Status
     {

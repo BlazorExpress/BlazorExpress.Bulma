@@ -10,8 +10,9 @@ public partial class EnumInput<TEnum> : BulmaComponentBase where TEnum : Enum
 {
     #region Fields and Constants
 
-    private List<EnumItem>? items;
     private FieldIdentifier fieldIdentifier = default!;
+
+    private List<EnumItem>? items;
 
     #endregion
 
@@ -23,16 +24,85 @@ public partial class EnumInput<TEnum> : BulmaComponentBase where TEnum : Enum
 
         AdditionalAttributes ??= new Dictionary<string, object>();
 
-        fieldIdentifier = FieldIdentifier.Create(ValueExpression!);
-
         base.OnInitialized();
     }
+
+    protected override void OnParametersSet()
+    {
+        if (TextExpression is not null)
+            fieldIdentifier = FieldIdentifier.Create(TextExpression);
+
+        if (ValueExpression is not null)
+            fieldIdentifier = FieldIdentifier.Create(ValueExpression!);
+    }
+
+    /// <summary>
+    /// Disables the <see cref="TextInput" />.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("Disables the <code>TextInput</code>.")]
+    public void Disable() => Disabled = true;
+
+    /// <summary>
+    /// Enables the <see cref="TextInput" />.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("Enables the <code>TextInput</code>.")]
+    public void Enable() => Disabled = false;
+
+    public void OnChange(ChangeEventArgs e)
+    {
+        if (e.Value is null)
+        {
+            Value = default!;
+            return;
+        }
+
+        var newValue = int.TryParse(e.Value.ToString(), out int _value) ? _value : default!;
+
+        // Value
+        if (ValueChanged.HasDelegate)
+            ValueChanged.InvokeAsync(newValue);
+        else
+            Value = newValue;
+
+        // Text
+        if (TextChanged.HasDelegate)
+            TextChanged.InvokeAsync(items?.FirstOrDefault(i => i.Value == newValue)?.Text ?? string.Empty);
+        else
+            Text = items?.FirstOrDefault(i => i.Value == newValue)?.Text ?? string.Empty;
+    }
+
+    #endregion
+
+    #region Properties, Indexers
+
+    protected override string? ClassNames =>
+        BuildClassNames(
+            Class,
+            (BulmaCssClass.Select, true),
+            (Color.ToTextInputColorClass(), Color != TextInputColor.None),
+            (Size.ToTextInputSizeClass(), Size != TextInputSize.None),
+            (BulmaCssClass.IsRounded, IsRounded),
+            (State.ToTextInputStateClass(), State != TextInputState.None)
+        );
+
+    /// <summary>
+    /// Gets or sets the color.
+    /// <para>
+    /// Default value is <see cref="TextInputColor.None" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(TextInputColor.None)]
+    [Description("Gets or sets the color.")]
+    [Parameter]
+    public TextInputColor Color { get; set; } = TextInputColor.None;
 
     private string? ContainerClassNames =>
         BuildClassNames(
             ContainerCssClass,
-            (BulmaCssClass.Select, true),
-            (BulmaCssClass.IsFlexDirectionRow, true)
+            (BulmaCssClass.Select, true)
         );
 
     /// <summary>
@@ -63,46 +133,6 @@ public partial class EnumInput<TEnum> : BulmaComponentBase where TEnum : Enum
         BuildClassNames(
             ContainerCssStyle
         );
-
-    /// <summary>
-    /// Disables the <see cref="TextInput" />.
-    /// </summary>
-    [AddedVersion("1.0.0")]
-    [Description("Disables the <code>TextInput</code>.")]
-    public void Disable() => Disabled = true;
-
-    /// <summary>
-    /// Enables the <see cref="TextInput" />.
-    /// </summary>
-    [AddedVersion("1.0.0")]
-    [Description("Enables the <code>TextInput</code>.")]
-    public void Enable() => Disabled = false;
-
-    #endregion
-
-    #region Properties, Indexers
-
-    protected override string? ClassNames =>
-        BuildClassNames(
-            Class,
-            (BulmaCssClass.Select, true),
-            (Color.ToTextInputColorClass(), Color != TextInputColor.None),
-            (Size.ToTextInputSizeClass(), Size != TextInputSize.None),
-            (BulmaCssClass.IsRounded, IsRounded),
-            (State.ToTextInputStateClass(), State != TextInputState.None)
-        );
-
-    /// <summary>
-    /// Gets or sets the color.
-    /// <para>
-    /// Default value is <see cref="TextInputColor.None" />.
-    /// </para>
-    /// </summary>
-    [AddedVersion("1.0.0")]
-    [DefaultValue(TextInputColor.None)]
-    [Description("Gets or sets the color.")]
-    [Parameter]
-    public TextInputColor Color { get; set; } = TextInputColor.None;
 
     /// <summary>
     /// Gets or sets the disabled state.
@@ -157,6 +187,36 @@ public partial class EnumInput<TEnum> : BulmaComponentBase where TEnum : Enum
     public TextInputState State { get; set; } = TextInputState.None;
 
     /// <summary>
+    /// Gets or sets the text.
+    /// <para>
+    /// Default value is <see langword="null"/>.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the text.")]
+    [Parameter]
+    public string Text { get; set; } = default!;
+
+    /// <summary>
+    /// This event fires when the <see cref="TextInput" /> value changes.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("This event fires when the <code>TextInput</code> value changes.")]
+    [Parameter]
+    public EventCallback<string> TextChanged { get; set; }
+
+    /// <summary>
+    /// Gets or sets the expression.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the expression.")]
+    [ParameterTypeName("Expression<Func<string>>?")]
+    [Parameter]
+    public Expression<Func<string>> TextExpression { get; set; } = default!;
+
+    /// <summary>
     /// Gets or sets the value.
     /// <para>
     /// Default value is 0.
@@ -174,7 +234,7 @@ public partial class EnumInput<TEnum> : BulmaComponentBase where TEnum : Enum
     [AddedVersion("1.0.0")]
     [Description("This event fires when the <code>TextInput</code> value changes.")]
     [Parameter]
-    public EventCallback<TEnum> ValueChanged { get; set; }
+    public EventCallback<int> ValueChanged { get; set; }
 
     /// <summary>
     /// Gets or sets the expression.
@@ -182,9 +242,9 @@ public partial class EnumInput<TEnum> : BulmaComponentBase where TEnum : Enum
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the expression.")]
-    [ParameterTypeName("Expression<Func<string>>?")]
+    [ParameterTypeName("Expression<Func<int>>")]
     [Parameter]
-    public Expression<Func<TEnum>> ValueExpression { get; set; } = default!;
+    public Expression<Func<int>> ValueExpression { get; set; } = default!;
 
     #endregion
 }
