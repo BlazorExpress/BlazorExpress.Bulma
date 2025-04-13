@@ -1,5 +1,12 @@
-<TextInput IsRounded="true" Placeholder="Rounded input text" @bind-Value="@value1" />
+<EnumInput TEnum="Status" IsRounded="true" Class="mb-2" @bind-Value="@value1" />
 
 @code {
-    private string? value1 = null;
+    private int value1 = (int)Status.Pending;
+
+    public enum Status
+    {
+        Active,
+        Inactive,
+        Pending
+    }
 }

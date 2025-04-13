@@ -136,6 +136,37 @@ public static class EnumExtensions
             (> 1407) or _ => DeviceType.FullHD
         };
 
+    public static string? ToEnumInputColorClass(this EnumInputColor color) =>
+        color switch
+        {
+            EnumInputColor.Primary => BulmaCssClass.IsPrimary,
+            EnumInputColor.Link => BulmaCssClass.IsLink,
+            EnumInputColor.Info => BulmaCssClass.IsInfo,
+            EnumInputColor.Success => BulmaCssClass.IsSuccess,
+            EnumInputColor.Warning => BulmaCssClass.IsWarning,
+            EnumInputColor.Danger => BulmaCssClass.IsDanger,
+            _ => null
+        };
+
+    public static string? ToEnumInputSizeClass(this EnumInputSize size) =>
+        size switch
+        {
+            EnumInputSize.Small => BulmaCssClass.IsSmall,
+            EnumInputSize.Normal => BulmaCssClass.IsNormal,
+            EnumInputSize.Medium => BulmaCssClass.IsMedium,
+            EnumInputSize.Large => BulmaCssClass.IsLarge,
+            _ => null
+        };
+
+    public static string? ToEnumInputStateClass(this EnumInputState size) =>
+        size switch
+        {
+            EnumInputState.Hovered => BulmaCssClass.IsHovered,
+            EnumInputState.Focused => BulmaCssClass.IsFocused,
+            EnumInputState.Loading => BulmaCssClass.IsLoading,
+            _ => null
+        };
+
     public static string? ToGoogleFontIconColorClass(this GoogleFontIconColor color) =>
         color switch
         {

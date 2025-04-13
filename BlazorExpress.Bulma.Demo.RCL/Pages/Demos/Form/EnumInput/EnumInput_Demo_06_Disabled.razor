@@ -1,5 +1,12 @@
-<TextInput Class="mb-2" Placeholder="Disabled input text" @bind-Value="@value1" Disabled="true" />
+<EnumInput TEnum="Status" Class="mb-2" @bind-Value="@value1" Disabled="true" />
 
 @code {
-    private string? value1 = null;
+    private int value1 = (int)Status.Pending;
+
+    public enum Status
+    {
+        Active,
+        Inactive,
+        Pending
+    }
 }

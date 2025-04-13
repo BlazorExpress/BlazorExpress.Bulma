@@ -80,29 +80,29 @@ public partial class EnumInput<TEnum> : BulmaComponentBase where TEnum : Enum
     protected override string? ClassNames =>
         BuildClassNames(
             Class,
-            (BulmaCssClass.Select, true),
-            (Color.ToTextInputColorClass(), Color != TextInputColor.None),
-            (Size.ToTextInputSizeClass(), Size != TextInputSize.None),
-            (BulmaCssClass.IsRounded, IsRounded),
-            (State.ToTextInputStateClass(), State != TextInputState.None)
+            (BulmaCssClass.Select, Color != EnumInputColor.None), // HACK: Bulma CSS class is not applied when color is set
+            (Color.ToEnumInputColorClass(), Color != EnumInputColor.None)
         );
 
     /// <summary>
     /// Gets or sets the color.
     /// <para>
-    /// Default value is <see cref="TextInputColor.None" />.
+    /// Default value is <see cref="EnumInputColor.None" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
-    [DefaultValue(TextInputColor.None)]
+    [DefaultValue(EnumInputColor.None)]
     [Description("Gets or sets the color.")]
     [Parameter]
-    public TextInputColor Color { get; set; } = TextInputColor.None;
+    public EnumInputColor Color { get; set; } = EnumInputColor.None;
 
     private string? ContainerClassNames =>
         BuildClassNames(
             ContainerCssClass,
-            (BulmaCssClass.Select, true)
+            (BulmaCssClass.Select, true),
+            (Size.ToEnumInputSizeClass(), Size != EnumInputSize.None),
+            (BulmaCssClass.IsRounded, IsRounded),
+            (State.ToEnumInputStateClass(), State != EnumInputState.None)
         );
 
     /// <summary>
@@ -146,7 +146,8 @@ public partial class EnumInput<TEnum> : BulmaComponentBase where TEnum : Enum
     [Parameter]
     public bool Disabled { get; set; } = false;
 
-    [CascadingParameter] private EditContext EditContext { get; set; } = default!;
+    [CascadingParameter] 
+    private EditContext EditContext { get; set; } = default!;
 
     private string FieldCssClasses => EditContext?.FieldCssClass(fieldIdentifier) ?? "";
 
@@ -165,26 +166,26 @@ public partial class EnumInput<TEnum> : BulmaComponentBase where TEnum : Enum
     /// <summary>
     /// Gets or sets the size.
     /// <para>
-    /// Default value is <see cref="TextInputSize.None" />.
+    /// Default value is <see cref="EnumInputSize.None" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
-    [DefaultValue(TextInputSize.None)]
+    [DefaultValue(EnumInputSize.None)]
     [Description("Gets or sets the size.")]
     [Parameter]
-    public TextInputSize Size { get; set; } = TextInputSize.None;
+    public EnumInputSize Size { get; set; } = EnumInputSize.None;
 
     /// <summary>
     /// Gets or sets the state.
     /// <para>
-    /// Default value is <see cref="TextInputState.None" />.
+    /// Default value is <see cref="EnumInputState.None" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
-    [DefaultValue(TextInputState.None)]
+    [DefaultValue(EnumInputState.None)]
     [Description("Gets or sets the state.")]
     [Parameter]
-    public TextInputState State { get; set; } = TextInputState.None;
+    public EnumInputState State { get; set; } = EnumInputState.None;
 
     /// <summary>
     /// Gets or sets the text.

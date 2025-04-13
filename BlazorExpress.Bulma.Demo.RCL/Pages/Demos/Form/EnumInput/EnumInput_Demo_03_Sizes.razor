@@ -1,13 +1,20 @@
-<TextInput Class="mb-2" Size="TextInputSize.Small" Placeholder="Small input text" @bind-Value="@value1" />
-<TextInput Class="mb-2" Size="TextInputSize.Normal" Placeholder="Normal input text" @bind-Value="@value2" />
-<TextInput Class="mb-2" Size="TextInputSize.Medium" Placeholder="Medium input text" @bind-Value="@value3" />
-<TextInput Class="mb-2" Size="TextInputSize.Large" Placeholder="Large input text" @bind-Value="@value4" />
+<EnumInput TEnum="Status" Class="mb-2" @bind-Value="@value1" />
+<EnumInput TEnum="Status" Class="mb-2" Size="EnumInputSize.Small" @bind-Value="@value2" />
+<EnumInput TEnum="Status" Class="mb-2" Size="EnumInputSize.Normal" @bind-Value="@value3" />
+<EnumInput TEnum="Status" Class="mb-2" Size="EnumInputSize.Medium" @bind-Value="@value4" />
+<EnumInput TEnum="Status" Class="mb-2" Size="EnumInputSize.Large" @bind-Value="@value5" />
 
 @code {
-    private string? value1 = null;
-    private string? value2 = null;
-    private string? value3 = null;
-    private string? value4 = null;
-    private string? value5 = null;
-    private string? value6 = null;
+    private int value1 = (int)Status.Pending;
+    private int value2 = (int)Status.Pending;
+    private int value3 = (int)Status.Pending;
+    private int value4 = (int)Status.Pending;
+    private int value5 = (int)Status.Pending;
+
+    public enum Status
+    {
+        Active,
+        Inactive,
+        Pending
+    }
 }
