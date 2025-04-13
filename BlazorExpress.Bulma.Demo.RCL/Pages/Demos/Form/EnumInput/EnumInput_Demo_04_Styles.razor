@@ -1,0 +1,12 @@
+<EnumInput TEnum="Status" IsRounded="true" @bind-Value="@value1" />
+
+@code {
+    private int value1 = (int)Status.Pending;
+
+    public enum Status
+    {
+        Active,
+        Inactive,
+        Pending
+    }
+}

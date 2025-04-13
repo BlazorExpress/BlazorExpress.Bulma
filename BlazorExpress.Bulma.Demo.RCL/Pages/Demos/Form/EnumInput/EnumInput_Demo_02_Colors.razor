@@ -1,0 +1,22 @@
+<EnumInput TEnum="Status" Color="EnumInputColor.Link" @bind-Value="@value1" />
+<EnumInput TEnum="Status" Color="EnumInputColor.Primary" @bind-Value="@value2" />
+<EnumInput TEnum="Status" Color="EnumInputColor.Info" @bind-Value="@value3" />
+<EnumInput TEnum="Status" Color="EnumInputColor.Success" @bind-Value="@value4" />
+<EnumInput TEnum="Status" Color="EnumInputColor.Warning" @bind-Value="@value5" />
+<EnumInput TEnum="Status" Color="EnumInputColor.Danger" @bind-Value="@value6" />
+
+@code {
+    private int value1 = (int)Status.Pending;
+    private int value2 = (int)Status.Pending;
+    private int value3 = (int)Status.Pending;
+    private int value4 = (int)Status.Pending;
+    private int value5 = (int)Status.Pending;
+    private int value6 = (int)Status.Pending;
+
+    public enum Status
+    {
+        Active,
+        Inactive,
+        Pending
+    }
+}

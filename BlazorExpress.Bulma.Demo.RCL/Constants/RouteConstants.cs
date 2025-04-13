@@ -34,6 +34,7 @@ public static class RouteConstants
     public const string Docs_Form_CheckboxInput_Documentation = Docs_Form_Prefix + "/checkbox-input";
     public const string Docs_Form_CurrencyInput_Documentation = Docs_Form_Prefix + "/currency-input";
     public const string Docs_Form_DateInput_Documentation = Docs_Form_Prefix + "/date-input";
+    public const string Docs_Form_EnumInput_Documentation = Docs_Form_Prefix + "/enum-input";
     public const string Docs_Form_NumberInput_Documentation = Docs_Form_Prefix + "/number-input";
     public const string Docs_Form_OTPInput_Documentation = Docs_Form_Prefix + "/otp-input";
     public const string Docs_Form_PasswordInput_Documentation = Docs_Form_Prefix + "/password-input";
@@ -112,6 +113,7 @@ public static class RouteConstants
     public const string Demos_Form_CheckboxInput_Documentation = Demos_Form_Prefix + "/checkbox-input";
     public const string Demos_Form_CurrencyInput_Documentation = Demos_Form_Prefix + "/currency-input";
     public const string Demos_Form_DateInput_Documentation = Demos_Form_Prefix + "/date-input";
+    public const string Demos_Form_EnumInput_Documentation = Demos_Form_Prefix + "/enum-input";
     public const string Demos_Form_NumberInput_Documentation = Demos_Form_Prefix + "/number-input";
     public const string Demos_Form_OTPInput_Documentation = Demos_Form_Prefix + "/otp-input";
     public const string Demos_Form_PasswordInput_Documentation = Demos_Form_Prefix + "/password-input";

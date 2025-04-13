@@ -1,0 +1,18 @@
+<EnumInput TEnum="Status" @bind-Value="@value1" />
+<EnumInput TEnum="Status" State="EnumInputState.Hovered" @bind-Value="@value2" />
+<EnumInput TEnum="Status" State="EnumInputState.Focused" @bind-Value="@value3" />
+<EnumInput TEnum="Status" State="EnumInputState.Loading" @bind-Value="@value4" />
+
+@code {
+    private int value1 = (int)Status.Pending;
+    private int value2 = (int)Status.Pending;
+    private int value3 = (int)Status.Pending;
+    private int value4 = (int)Status.Pending;
+
+    public enum Status
+    {
+        Active,
+        Inactive,
+        Pending
+    }
+}
