@@ -37,20 +37,20 @@ public partial class EnumInput<TEnum> : BulmaComponentBase where TEnum : Enum
     }
 
     /// <summary>
-    /// Disables the <see cref="TextInput" />.
+    /// Disables the <see cref="EnumInput" />.
     /// </summary>
     [AddedVersion("1.0.0")]
-    [Description("Disables the <code>TextInput</code>.")]
+    [Description("Disables the <code>EnumInput</code>.")]
     public void Disable() => Disabled = true;
 
     /// <summary>
-    /// Enables the <see cref="TextInput" />.
+    /// Enables the <see cref="EnumInput" />.
     /// </summary>
     [AddedVersion("1.0.0")]
-    [Description("Enables the <code>TextInput</code>.")]
+    [Description("Enables the <code>EnumInput</code>.")]
     public void Enable() => Disabled = false;
 
-    public void OnChange(ChangeEventArgs e)
+    private void OnChange(ChangeEventArgs e)
     {
         if (e.Value is null)
         {
@@ -200,10 +200,10 @@ public partial class EnumInput<TEnum> : BulmaComponentBase where TEnum : Enum
     public string Text { get; set; } = default!;
 
     /// <summary>
-    /// This event fires when the <see cref="TextInput" /> value changes.
+    /// This event fires when the <see cref="EnumInput" /> text changes.
     /// </summary>
     [AddedVersion("1.0.0")]
-    [Description("This event fires when the <code>TextInput</code> value changes.")]
+    [Description("This event fires when the <code>EnumInput</code> text changes.")]
     [Parameter]
     public EventCallback<string> TextChanged { get; set; }
 
@@ -230,10 +230,10 @@ public partial class EnumInput<TEnum> : BulmaComponentBase where TEnum : Enum
     public int Value { get; set; }
 
     /// <summary>
-    /// This event fires when the <see cref="TextInput" /> value changes.
+    /// This event fires when the <see cref="EnumInput" /> value changes.
     /// </summary>
     [AddedVersion("1.0.0")]
-    [Description("This event fires when the <code>TextInput</code> value changes.")]
+    [Description("This event fires when the <code>EnumInput</code> value changes.")]
     [Parameter]
     public EventCallback<int> ValueChanged { get; set; }
 

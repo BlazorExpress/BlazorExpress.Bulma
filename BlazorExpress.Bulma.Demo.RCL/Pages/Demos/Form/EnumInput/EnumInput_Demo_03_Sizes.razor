@@ -1,8 +1,8 @@
-<EnumInput TEnum="Status" Class="mb-2" @bind-Value="@value1" />
-<EnumInput TEnum="Status" Class="mb-2" Size="EnumInputSize.Small" @bind-Value="@value2" />
-<EnumInput TEnum="Status" Class="mb-2" Size="EnumInputSize.Normal" @bind-Value="@value3" />
-<EnumInput TEnum="Status" Class="mb-2" Size="EnumInputSize.Medium" @bind-Value="@value4" />
-<EnumInput TEnum="Status" Class="mb-2" Size="EnumInputSize.Large" @bind-Value="@value5" />
+<EnumInput TEnum="Status" @bind-Value="@value1" />
+<EnumInput TEnum="Status" Size="EnumInputSize.Small" @bind-Value="@value2" />
+<EnumInput TEnum="Status" Size="EnumInputSize.Normal" @bind-Value="@value3" />
+<EnumInput TEnum="Status" Size="EnumInputSize.Medium" @bind-Value="@value4" />
+<EnumInput TEnum="Status" Size="EnumInputSize.Large" @bind-Value="@value5" />
 
 @code {
     private int value1 = (int)Status.Pending;

@@ -1,7 +1,7 @@
-<EnumInput TEnum="Status" Class="mb-2" @bind-Value="@value1" />
-<EnumInput TEnum="Status" Class="mb-2" State="EnumInputState.Hovered" @bind-Value="@value2" />
-<EnumInput TEnum="Status" Class="mb-2" State="EnumInputState.Focused" @bind-Value="@value3" />
-<EnumInput TEnum="Status" Class="mb-2" State="EnumInputState.Loading" @bind-Value="@value4" />
+<EnumInput TEnum="Status" @bind-Value="@value1" />
+<EnumInput TEnum="Status" State="EnumInputState.Hovered" @bind-Value="@value2" />
+<EnumInput TEnum="Status" State="EnumInputState.Focused" @bind-Value="@value3" />
+<EnumInput TEnum="Status" State="EnumInputState.Loading" @bind-Value="@value4" />
 
 @code {
     private int value1 = (int)Status.Pending;

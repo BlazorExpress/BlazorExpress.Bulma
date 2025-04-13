@@ -16,14 +16,26 @@
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Block>
+        You can use the <code>Color</code> parameter to set the color of the <code>EnumInput</code> component. 
+        The available colors are: <b>Link</b>, <b>Primary</b>, <b>Info</b>, <b>Success</b>, <b>Warning</b>, and <b>Danger</b>.
+    </Block>
     <Demo Type="typeof(EnumInput_Demo_02_Colors)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="Sizes">
+    <Block>
+        You can use the <code>Size</code> parameter to set the size of the <code>EnumInput</code> component.
+        The available sizes are: <b>Small</b>, <b>Normal</b>, <b>Medium</b>, and <b>Large</b>.
+    </Block>
     <Demo Type="typeof(EnumInput_Demo_03_Sizes)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Styles" PageUrl="@pageUrl" Link="styles">
+    <Block>
+        You can create rounded <code>EnumInput</code> component by using the <code>IsRounded</code> parameter.
+        In the example below, <code>IsRounded</code> parameter is set to <b>true</b>.
+    </Block>
     <Demo Type="typeof(EnumInput_Demo_04_Styles)" Tabs="true" />
 </Section>
 
@@ -32,15 +44,42 @@
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Disabled" PageUrl="@pageUrl" Link="disabled">
+    <Block>
+        You can disable the <code>EnumInput</code> component by using the <code>Disabled</code> parameter.
+        In the example below, <code>Disabled</code> parameter is set to <b>true</b>.
+    </Block>
     <Demo Type="typeof(EnumInput_Demo_06_Disabled)" Tabs="true" />
 </Section>
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Events: ValueChanged" PageUrl="@pageUrl" Link="events-value-changed">
+<Section Class="p-0" Size="HeadingSize.H3" Name="Events" PageUrl="@pageUrl" Link="events">
+    <Block>
+        The <code>EnumInput</code> component has two events: <code>ValueChanged</code> and <code>TextChanged</code>.
+    </Block>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="ValueChanged" PageUrl="@pageUrl" Link="events-value-changed">
+    <Block>
+        The <code>ValueChanged</code> event is triggered when the value of the <code>EnumInput</code> component changes.
+    </Block>
     <Demo Type="typeof(EnumInput_Demo_07_Events_A_ValueChanged)" Tabs="true" />
 </Section>
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Events: TextChanged" PageUrl="@pageUrl" Link="events-text-changed">
+<Section Class="p-0" Size="HeadingSize.H4" Name="TextChanged" PageUrl="@pageUrl" Link="events-text-changed">
+    <Block>
+        The <code>TextChanged</code> event is triggered when the text of the <code>EnumInput</code> component changes.
+    </Block>
     <Demo Type="typeof(EnumInput_Demo_07_Events_B_TextChanged)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Mehods" PageUrl="@pageUrl" Link="methods">
+    <Block>
+        The <code>EnumInput</code> component has two methods: <code>Enable()</code> and <code>Disable()</code>.
+        You can use these methods to enable or disable the <code>EnumInput</code> component programmatically.
+    </Block>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Enable() and Disable()" PageUrl="@pageUrl" Link="methods-enable-disable">
+    <Demo Type="typeof(EnumInput_Demo_08_Methods_Enable_Disable)" Tabs="true" />
 </Section>
 
 @code {
