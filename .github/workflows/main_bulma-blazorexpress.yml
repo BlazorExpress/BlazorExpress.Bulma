@@ -1,13 +1,16 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
-name: Build and deploy ASP.Net Core app to Azure Web App - bulma-blazorexpress
+name:  WebApp (Blazor Server)
 
 on:
   push:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      prod_release:
+        description: 'Do you want to release to production?'
+        required: true
+        default: false
+        type: boolean
 
 jobs:
   build:
@@ -22,12 +25,13 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '9.x'
+          include-prerelease: false
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build ./BlazorExpress.Bulma.Demo.Server/BlazorExpress.Bulma.Demo.Server.csproj --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
+        run: dotnet publish ./BlazorExpress.Bulma.Demo.Server/BlazorExpress.Bulma.Demo.Server.csproj -c Release -o "${{env.DOTNET_ROOT}}/myapp"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -37,6 +41,7 @@ jobs:
 
   deploy:
     runs-on: windows-latest
+    if: ${{ inputs.prod_release }} 
     needs: build
     permissions:
       id-token: write #This is required for requesting the JWT
