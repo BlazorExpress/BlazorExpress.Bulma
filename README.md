@@ -40,11 +40,9 @@ Install with [NuGet](https://www.nuget.org/): `Install-Package BlazorExpress.Bul
 
 Install [Blazor Express Bulma templates](https://github.com/blazorexpress/blazorexpress-bulma-project-templates) with **.NET CLI**: `dotnet new install BlazorExpress.Bulma.Templates::1.10.0`
 
-  ![image](https://user-images.githubusercontent.com/2337067/233800604-43986ae7-27dd-4f17-9af6-c2f1a6f07097.png)
-
 - Read the [Getting started page](https://bulma.blazorexpress.com/docs/getting-started/) for information on the framework installation, contents, examples, and more.
 
 
 ## Copyright and license
 
-Code and documentation copyright 2024 [Blazor Bootstrap](https://docs.blazorbootstrap.com/) Code released under the [Apache-2.0 License](https://github.com/vikramlearning/blazorbootstrap/blob/main/LICENSE.txt).
+Code and documentation copyright 2025 [Blazor Express](https://bulma.blazorexpress.com/docs/) Code released under the [Apache-2.0 License](https://github.com/BlazorExpress/BlazorExpress.Bulma/blob/main/LICENSE).
