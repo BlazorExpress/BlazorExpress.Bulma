@@ -45,4 +45,5 @@ Install [Blazor Express Bulma templates](https://github.com/blazorexpress/blazor
 
 ## Copyright and license
 
-Code and documentation copyright 2025 [Blazor Express](https://bulma.blazorexpress.com/docs/) Code released under the [Apache-2.0 License](https://github.com/BlazorExpress/BlazorExpress.Bulma/blob/main/LICENSE).
+Code and documentation copyright 2025 [Blazor Express](https://bulma.blazorexpress.com/docs/). 
+Code released under the [Apache-2.0 License](https://github.com/BlazorExpress/BlazorExpress.Bulma/blob/main/LICENSE).
