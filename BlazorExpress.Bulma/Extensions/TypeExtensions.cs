@@ -1,4 +1,4 @@
-﻿namespace BlazorExpress.Bulma.Extensions;
+﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
 /// Various extension methods for <see cref="Type" />.

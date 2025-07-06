@@ -1,4 +1,4 @@
-﻿global using BlazorExpress.Bulma.Extensions;
+﻿global using BlazorExpress.Core;
 global using Microsoft.AspNetCore.Components;
 global using Microsoft.AspNetCore.Components.Forms;
 global using Microsoft.AspNetCore.Components.Rendering;
