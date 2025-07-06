@@ -1,4 +1,4 @@
-@namespace BlazorExpress.Bulma
+@namespace BlazorExpress.Bulma.Demo.RCL
 @inherits BulmaComponentBase
 
 <Navbar Class="px-3" HasShadow="true">
@@ -21,18 +21,18 @@
 
     <NavbarMenu Id="navbarBasicExample1" IsActive="navbarMenuActive">
         <NavbarStart>
-            <NavbarItem Class="mr-1" Href="/demos/getting-started/introduction">
+            <NavbarItem Class="mr-1" Href="/demos">
                 <i class="bi bi-display-fill has-text-primary mr-2"></i>Demos
             </NavbarItem>
-            <NavbarItem Class="mr-1" Href="/docs/skeletons">
+            <NavbarItem Class="mr-1" Href="/docs">
                 <i class="bi bi-file-text-fill has-text-link mr-2"></i>Docs
             </NavbarItem>
-            <NavbarItem Href="/blog">
+            @* <NavbarItem Href="/blog">
                 <i class="bi bi-newspaper has-text-warning mr-2"></i>Blog
-            </NavbarItem>
+            </NavbarItem> *@
         </NavbarStart>
         <NavbarEnd>
-            @* <NavbarItem Class="mr-1" Href="@GithubUrl" target="_blank">
+            <NavbarItem Class="mr-1" Href="@GithubUrl" target="_blank">
                 <i class="bi bi-github"></i>
                 <small class="is-hidden-desktop ml-2">GitHub</small>
             </NavbarItem>
@@ -46,7 +46,7 @@
             </NavbarItem>
             <NavbarItem Type="NavbarItemType.Div">
                 <span class="tag is-link">@Version</span>
-            </NavbarItem> *@
+            </NavbarItem>
 
             <NavbarItem Type="NavbarItemType.Div" HasDropdown="true">
                 <NavbarLink Class="be-bulma-theme-indicator"><i class="bi bi-sun"></i></NavbarLink>

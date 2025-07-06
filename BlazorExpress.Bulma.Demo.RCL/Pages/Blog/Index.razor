@@ -1,6 +1,5 @@
 @attribute [Route(pageUrl)]
-@attribute [Route(pageUrl2)]
-@layout DemosMainLayout
+@layout BlogMainLayout
 
 <PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
 
@@ -11,11 +10,10 @@
 </PageHero>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_Getting_Started_Introduction;
-    private const string pageUrl2 = RouteConstants.Demos_Prefix;
-    private const string pageTitle = "Get started with BlazorExpress Bulma";
+    private const string pageUrl = RouteConstants.Blog_Prefix;
+    private const string pageTitle = "The BlazorExpress Bulma Blog";
     private const string pageDescription = "Build production-ready Blazor apps quickly. A lightweight, developer-focused library combining Blazor performance with Bulma simplicity.";
-    private const string metaTitle = "Get started with BlazorExpress Bulma";
+    private const string metaTitle = "The BlazorExpress Bulma Blog";
     private const string metaDescription = "Build production-ready Blazor apps quickly. A lightweight, developer-focused library combining Blazor performance with Bulma simplicity.";
     private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
 }
