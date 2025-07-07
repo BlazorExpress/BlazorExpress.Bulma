@@ -1,6 +1,7 @@
 ﻿global using BlazorExpress.Bulma.Demo.RCL.Enums;
 global using BlazorExpress.Bulma.Demo.RCL.Models;
 global using BlazorExpress.Bulma.Demo.RCL.Utils;
+global using BlazorExpress.Core;
 global using Microsoft.AspNetCore.Components;
 global using Microsoft.Extensions.Configuration;
 global using Microsoft.JSInterop;
