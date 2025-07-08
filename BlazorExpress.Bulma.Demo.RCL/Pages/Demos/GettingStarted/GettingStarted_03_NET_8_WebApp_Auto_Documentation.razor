@@ -10,10 +10,14 @@
 </PageHero>
 
 <div class="content">
+    <h2>Prerequisites</h2>
+    <ul>
+        <li>.NET 8 SDK (<a href="https://dotnet.microsoft.com/download/dotnet/8.0" target="_blank">Download</a>)</li>
+        <li>Visual Studio 2022 (v17.8 or later) / VS Code / JetBrains Rider</li>
+        <li>Basic knowledge of Blazor WebApp (Interactive Render Mode: Auto)</li>
+    </ul>
+
     <h2>1. Using dotnet Templates</h2>
-    <p>
-        The fastest way to get started is with the official <b>BlazorExpress.Bulma</b> project template.
-    </p>
     <ol>
         <li>
             <b>Install the template:</b>
@@ -30,62 +34,68 @@ dotnet run</code></pre>
         </li>
     </ol>
     <p>
-        The template sets up everything you need, including Bulma CSS, required services, and sample components.
+        The template sets up Bulma CSS, required services, and sample components.
     </p>
 
-    <h2>2. Manual Install</h2>
-    <p>
-        To add <b>BlazorExpress.Bulma</b> to an existing Blazor project:
-    </p>
+    <h2>2. Manual Installation</h2>
     <ol>
         <li>
             <b>Add the NuGet package:</b>
             <pre><code>dotnet add package BlazorExpress.Bulma</code></pre>
         </li>
         <li>
-            <b>Add Bulma and BlazorExpress.Bulma CSS to your <code>wwwroot/index.html</code> (Blazor WASM) or <code>_Host.cshtml</code> (Blazor Server):</b>
+            <b>Add Bulma and BlazorExpress.Bulma CSS to <code>Components/Layouts/MainLayout.razor</code> or <code>_Host.cshtml</code>:</b>
             <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"&gt;
 &lt;link rel="stylesheet" href="_content/BlazorExpress.Bulma/css/blazorexpress.bulma.css"&gt;
 </code></pre>
         </li>
         <li>
-            <b>Add BlazorExpress.Bulma JS:</b>
+            <b>Add BlazorExpress.Bulma JS to <code>Components/Layouts/MainLayout.razor</code> or <code>_Host.cshtml</code>:</b>
             <pre><code>&lt;script src="_content/BlazorExpress.Bulma/js/blazorexpress.bulma.js"&gt;&lt;/script&gt;
 </code></pre>
         </li>
         <li>
-            <b>Add <code>_Imports.razor</code> references:</b>
-            <p>
-                To use BlazorExpress.Bulma components in your pages without fully qualified names, add the following to your <code>_Imports.razor</code>:
-            </p>
+            <b>Add <code>@@using BlazorExpress.Bulma</code> to <code>_Imports.razor</code>:</b>
             <pre><code>
 @using BlazorExpress.Bulma
             </code></pre>
-            <p>
-                Add any other namespaces as needed for your project.
-            </p>
         </li>
-    </ol>
-
-    <h2>3. Register Services</h2>
-    <p>
-        In your <code>Program.cs</code>, register any required services. For most scenarios, no extra registration is needed, but if the library introduces services, add them as follows:
-    </p>
-    <pre><code class="language-csharp">
+        <li>
+            <b>Register services in <code>Program.cs</code> (if required):</b>
+            <pre><code class="language-csharp">
 // Program.cs
 using BlazorExpress.Bulma;
 
-var builder = WebAssemblyHostBuilder.CreateDefault(args);
+var builder = WebApplication.CreateBuilder(args);
 // ... your existing setup
 
 // Register BlazorExpress.Bulma services (if required)
 builder.Services.AddBlazorExpressBulma();
 
-await builder.Build().RunAsync();
-</code></pre>
+var app = builder.Build();
+// ... your existing setup
+app.Run();
+            </code></pre>
+            <p>
+                <b>Note:</b> If <code>AddBlazorExpressBulma()</code> is not available, check the <a href="https://github.com/BlazorExpress/BlazorExpress.Bulma" target="_blank">official documentation</a> for the latest setup instructions.
+            </p>
+        </li>
+    </ol>
+
+    <h2>3. Usage Example</h2>
     <p>
-        <b>Note:</b> If <code>AddBlazorExpressBulma()</code> is not available, check the <a href="https://github.com/BlazorExpress/BlazorExpress.Bulma" target="_blank">official documentation</a> for the latest setup instructions.
+        Add a Bulma component to <code>Pages/Index.razor</code>:
     </p>
+    <pre><code>
+&lt;BeButton Color="Color.Primary"&gt;Hello Bulma!&lt;/BeButton&gt;
+    </code></pre>
+
+    <h2>4. Troubleshooting</h2>
+    <ul>
+        <li>Ensure all CSS and JS references are correct in your layout or host file.</li>
+        <li>Restart the development server after changes to static files.</li>
+        <li>Check browser console for errors if components do not render as expected.</li>
+    </ul>
 
     <h2>References</h2>
     <ul>
@@ -101,8 +111,8 @@ await builder.Build().RunAsync();
 @code {
     private const string pageUrl = RouteConstants.Demos_Getting_Started_WebApp_Auto_NET_8;
     private const string pageTitle = "Getting started - Blazor WebApp (.NET 8) - Interactive render mode Auto - Global location";
-    private const string pageDescription = "Learn how to quickly set up <code>BlazorExpress.Bulma</code> in your Blazor project using dotnet templates or manual installation, and how to register required services.";
+    private const string pageDescription = "Learn how to quickly set up <code>BlazorExpress.Bulma</code> in your Blazor WebApp (Auto) project using dotnet templates or manual installation, and how to register required services.";
     private const string metaTitle = "Getting started - Blazor WebApp (.NET 8) - Interactive render mode Auto - Global location";
-    private const string metaDescription = "Step-by-step guide to using BlazorExpress.Bulma: dotnet templates, manual install, and service registration for Blazor apps.";
+    private const string metaDescription = "Step-by-step guide to using BlazorExpress.Bulma: dotnet templates, manual install, and service registration for Blazor WebApp (Auto) apps.";
     private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
 }
