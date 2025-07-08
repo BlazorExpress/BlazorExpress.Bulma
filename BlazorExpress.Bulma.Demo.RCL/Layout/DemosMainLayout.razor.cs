@@ -39,6 +39,10 @@ public partial class DemosMainLayout : MainLayoutBase
             CssClass = "is-size-7 has-text-weight-bold has-text-danger",
             Links = [
                 new Link { Href = RouteConstants.Demos_Getting_Started_Introduction, Text = "Introduction" },
+                new Link { Href = RouteConstants.Demos_Getting_Started_WebAssembly_NET_8, Text = "Blazor WebAssembly (.NET 8)" },
+                new Link { Href = RouteConstants.Demos_Getting_Started_WebApp_Server_NET_8, Text = "Blazor WebApp (.NET 8) Server" },
+                new Link { Href = RouteConstants.Demos_Getting_Started_WebApp_Auto_NET_8, Text = "Blazor WebApp (.NET 8) Auto" },
+                new Link { Href = RouteConstants.Demos_Getting_Started_MAUI_NET_8, Text = "MAUI Blazor Hybrid App (.NET 8)" },
             ]
         });
 
