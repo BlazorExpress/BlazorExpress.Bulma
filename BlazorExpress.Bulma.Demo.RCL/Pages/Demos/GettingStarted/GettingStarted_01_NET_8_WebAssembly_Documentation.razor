@@ -21,16 +21,8 @@
     <ol>
         <li>
             <b>Install the template:</b>
-            <pre><code>dotnet new install BlazorExpress.Bulma.Templates</code></pre>
-        </li>
-        <li>
-            <b>Create a new project:</b>
-            <pre><code>dotnet new blazorexpress-bulma -n MyBlazorApp</code></pre>
-        </li>
-        <li>
-            <b>Run your app:</b>
-            <pre><code>cd MyBlazorApp
-dotnet run</code></pre>
+            <br />
+            <p>TODO: Update the instructions</p>
         </li>
     </ol>
     <p>
@@ -41,39 +33,23 @@ dotnet run</code></pre>
     <ol>
         <li>
             <b>Add the NuGet package:</b>
-            <pre><code>dotnet add package BlazorExpress.Bulma</code></pre>
+            <CodeChunk Class="mt-3" LanguageCode="LanguageCode.Text" FilePath="~\Pages\Demos\GettingStarted\01_A_Manual_Install_01_Snippet.razor" />
         </li>
         <li>
             <b>Add Bulma and BlazorExpress.Bulma CSS to <code>wwwroot/index.html</code>:</b>
-            <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"&gt;
-&lt;link rel="stylesheet" href="_content/BlazorExpress.Bulma/css/blazorexpress.bulma.css"&gt;
-</code></pre>
+            <CodeChunk Class="mt-3" LanguageCode="LanguageCode.HTML" FilePath="~\Pages\Demos\GettingStarted\01_A_Manual_Install_02_Snippet.html" />
         </li>
         <li>
             <b>Add BlazorExpress.Bulma JS to <code>wwwroot/index.html</code>:</b>
-            <pre><code>&lt;script src="_content/BlazorExpress.Bulma/js/blazorexpress.bulma.js"&gt;&lt;/script&gt;
-</code></pre>
+            <CodeChunk Class="mt-3" LanguageCode="LanguageCode.HTML" FilePath="~\Pages\Demos\GettingStarted\01_A_Manual_Install_03_Snippet.html" />
         </li>
         <li>
             <b>Add <code>@@using BlazorExpress.Bulma</code> to <code>_Imports.razor</code>:</b>
-            <pre><code>
-@using BlazorExpress.Bulma
-            </code></pre>
+            <CodeChunk Class="mt-3" LanguageCode="LanguageCode.Razor" FilePath="~\Pages\Demos\GettingStarted\01_A_Manual_Install_04_Snippet.razor" />
         </li>
         <li>
             <b>Register services in <code>Program.cs</code> (if required):</b>
-            <pre><code class="language-csharp">
-// Program.cs
-using BlazorExpress.Bulma;
-
-var builder = WebAssemblyHostBuilder.CreateDefault(args);
-// ... your existing setup
-
-// Register BlazorExpress.Bulma services (if required)
-builder.Services.AddBlazorExpressBulma();
-
-await builder.Build().RunAsync();
-            </code></pre>
+            <CodeChunk Class="mt-3" LanguageCode="LanguageCode.CSharp" FilePath="~\Pages\Demos\GettingStarted\01_A_Manual_Install_05_Snippet.cs" />
             <p>
                 <b>Note:</b> If <code>AddBlazorExpressBulma()</code> is not available, check the <a href="https://github.com/BlazorExpress/BlazorExpress.Bulma" target="_blank">official documentation</a> for the latest setup instructions.
             </p>
@@ -82,11 +58,9 @@ await builder.Build().RunAsync();
 
     <h2>3. Usage Example</h2>
     <p>
-        Add a Bulma component to <code>Pages/Index.razor</code>:
+        Add a Bulma component to <code>Pages/Home.razor</code>:
     </p>
-    <pre><code>
-&lt;Button Color="ButtonColor.Primary"&gt;Hello Bulma!&lt;/Button&gt;
-    </code></pre>
+    <CodeChunk Class="mt-3" LanguageCode="LanguageCode.Razor" FilePath="~\Pages\Demos\GettingStarted\01_A_Manual_Install_06_Snippet.razor" />
 
     <h2>4. Troubleshooting</h2>
     <ul>

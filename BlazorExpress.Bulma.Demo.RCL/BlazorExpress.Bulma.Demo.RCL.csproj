@@ -7,6 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Pages\Demos\GettingStarted\01_A_Manual_Install_05_Snippet.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\Demos\GettingStarted\01_A_Manual_Install_04_Snippet.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Pages\Demos\GettingStarted\01_A_Manual_Install_05_Snippet.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Demos\GettingStarted\01_A_Manual_Install_04_Snippet.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <SupportedPlatform Include="browser" />
   </ItemGroup>
 
@@ -24,7 +40,7 @@
     <ItemGroup>
       <EmbeddedResource Include="Pages\**\*Demo*.razor" />
       <EmbeddedResource Include="Pages\**\*Doc*.razor" />
-      <EmbeddedResource Include="Shared\**\*Snippet*" />
+      <EmbeddedResource Include="Pages\**\*Snippet*" />
     </ItemGroup>
   </Target>
 

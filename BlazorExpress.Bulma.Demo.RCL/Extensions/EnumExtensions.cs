@@ -10,6 +10,8 @@ public static class EnumExtensions
         {
             LanguageCode.AspNet => "language-aspnet",
             LanguageCode.CSharp => "language-csharp",
+            LanguageCode.Css => "language-csharp",
+            LanguageCode.HTML => "language-html",
             LanguageCode.JavaScript => "language-js",
             LanguageCode.JSON => "language-json",
             LanguageCode.JSONP => "language-jsonp",
@@ -26,6 +28,8 @@ public static class EnumExtensions
         {
             LanguageCode.AspNet => "ASP.NET",
             LanguageCode.CSharp => "C#",
+            LanguageCode.Css => "CSS",
+            LanguageCode.HTML => "HTML",
             LanguageCode.JavaScript => "JS",
             LanguageCode.JSON => "Json",
             LanguageCode.JSONP => "Jsonp",
