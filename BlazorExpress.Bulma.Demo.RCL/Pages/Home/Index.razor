@@ -31,23 +31,26 @@
     </div>
 </div>
 
-<div class="container is-max-desktop mb-4">
-    <IndexComponentLinks Title="All Components" Category="@PageLinkCategory.All" />
+<div class="p-5">
+    <div class="container is-max-desktop mb-4">
+        <IndexComponentLinks Title="All Components" Category="@PageLinkCategory.All" />
 
-    <IndexComponentLinks Title="Form Components" Category="@PageLinkCategory.Form" />
+        <IndexComponentLinks Title="Form Components" Category="@PageLinkCategory.Form" />
 
-    <IndexComponentLinks Title="Icon Components" Category="@PageLinkCategory.Icons" />
+        <IndexComponentLinks Title="Icon Components" Category="@PageLinkCategory.Icons" />
 
-    <Message Class="mb-4" Color="MessageColor.Success">
-        <MessageBody>
-            <div class="is-size-5 has-text-weight-semibold mb-2"><BootstrapIcon Name="BootstrapIconName.Lightbulb" /> DO YOU KNOW?</div>
-            <div>
-                This demo website is built using the <strong><a href="@nugetUrl" target="_blank">BlazorExpress Bulma</a></strong> library and published on the Azure Web App.
-                See our source code on <a href="@githubUrl" target="_blank">GitHub</a>.
-            </div>
-        </MessageBody>
-    </Message>
+        <Message Class="mb-4" Color="MessageColor.Success">
+            <MessageBody>
+                <div class="is-size-5 has-text-weight-semibold mb-2"><BootstrapIcon Name="BootstrapIconName.Lightbulb" /> DO YOU KNOW?</div>
+                <div>
+                    This demo website is built using the <strong><a href="@nugetUrl" target="_blank">BlazorExpress Bulma</a></strong> library and published on the Azure Web App.
+                    See our source code on <a href="@githubUrl" target="_blank">GitHub</a>.
+                </div>
+            </MessageBody>
+        </Message>
+    </div>
 </div>
+
 @code {
     private const string pageUrl = "/";
     private const string pageTitle = "BlazorExpress Bulma Components <br /> Fast, Free & Open Source";
