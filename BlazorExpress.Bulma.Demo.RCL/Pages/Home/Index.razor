@@ -9,13 +9,13 @@
                 <Tag Color="TagColor.Warning" Size="TagSize.Medium">New in @version</Tag>
                 <span class="is-size-6 text-muted">@releaseShortDescription</span>
             </div>
-            <div style="justify-items: center;">
+            <div style="justify-items:center !important;">
                 <Image Src="@StringConstants.StaticAssets_Icons_Logo_png"
                        Dimension="ImageDimension.Is128x128"
                        alt="BlazorExpress Logo" />
             </div>
         </div>
-        <Hero Class="mb-6">
+        <Hero Class="mb-6 px-4">
             <HeroTitle class="mb-4">
                 @((MarkupString)pageTitle)
             </HeroTitle>
