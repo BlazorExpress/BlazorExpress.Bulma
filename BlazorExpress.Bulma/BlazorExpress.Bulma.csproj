@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <PackageId>BlazorExpress.Bulma</PackageId>
-    <Version>0.0.1</Version>
-    <PackageVersion>0.0.1</PackageVersion>
+    <Version>0.1.0</Version>
+    <PackageVersion>0.1.0</PackageVersion>
     <PackageIconUrl>logo.png</PackageIconUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://bulma.blazorexpress.com/</PackageProjectUrl>
