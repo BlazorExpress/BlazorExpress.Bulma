@@ -41,8 +41,8 @@ public partial class DocsMainLayout : MainLayoutBase
                 new Link { Href = RouteConstants.Docs_Getting_Started_Introduction, Text = "Introduction" },
                 new Link { Href = RouteConstants.Docs_Getting_Started_WebAssembly_NET_8, Text = "Blazor WebAssembly (.NET 8)" },
                 new Link { Href = RouteConstants.Docs_Getting_Started_WebApp_Server_NET_8, Text = "Blazor WebApp (.NET 8) Server" },
-                new Link { Href = RouteConstants.Docs_Getting_Started_WebApp_Auto_NET_8, Text = "Blazor WebApp (.NET 8) Auto" },
-                new Link { Href = RouteConstants.Docs_Getting_Started_MAUI_NET_8, Text = "MAUI Blazor Hybrid App (.NET 8)" },
+                //new Link { Href = RouteConstants.Docs_Getting_Started_WebApp_Auto_NET_8, Text = "Blazor WebApp (.NET 8) Auto" },
+                //new Link { Href = RouteConstants.Docs_Getting_Started_MAUI_NET_8, Text = "MAUI Blazor Hybrid App (.NET 8)" },
             ]
         });
 
