@@ -8,6 +8,14 @@ public static class RouteConstants
 
     #region Docs
 
+    // Getting Started
+    public const string Docs_Getting_Started = Docs_Prefix + "/getting-started";
+    public const string Docs_Getting_Started_Introduction = Docs_Getting_Started + "/introduction";
+    public const string Docs_Getting_Started_WebAssembly_NET_8 = Docs_Getting_Started + "/blazor-webassembly-net-8";
+    public const string Docs_Getting_Started_WebApp_Server_NET_8 = Docs_Getting_Started + "/blazor-webapp-server-global-net-8";
+    public const string Docs_Getting_Started_WebApp_Auto_NET_8 = Docs_Getting_Started + "/blazor-webapp-auto-global-net-8";
+    public const string Docs_Getting_Started_MAUI_NET_8 = Docs_Getting_Started + "/maui-blazor-net-8";
+
     // Features
     public const string Docs_Skeletons_Documentation = Docs_Prefix + "/skeletons";
 
@@ -82,14 +90,6 @@ public static class RouteConstants
     #endregion
 
     #region Demos
-
-    // Getting Started
-    public const string Demos_Getting_Started = Demos_Prefix + "/getting-started";
-    public const string Demos_Getting_Started_Introduction = Demos_Getting_Started + "/introduction";
-    public const string Demos_Getting_Started_WebAssembly_NET_8 = Demos_Getting_Started + "/blazor-webassembly-net-8";
-    public const string Demos_Getting_Started_WebApp_Server_NET_8 = Demos_Getting_Started + "/blazor-webapp-server-global-net-8";
-    public const string Demos_Getting_Started_WebApp_Auto_NET_8 = Demos_Getting_Started + "/blazor-webapp-auto-global-net-8";
-    public const string Demos_Getting_Started_MAUI_NET_8 = Demos_Getting_Started + "/maui-blazor-net-8";
 
     // Features
     public const string Demos_Skeletons_Documentation = Demos_Prefix + "/skeletons";

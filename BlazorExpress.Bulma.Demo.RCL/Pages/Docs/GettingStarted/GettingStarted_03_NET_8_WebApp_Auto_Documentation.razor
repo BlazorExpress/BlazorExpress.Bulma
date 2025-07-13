@@ -1,5 +1,5 @@
 @attribute [Route(pageUrl)]
-@layout DemosMainLayout
+@layout DocsMainLayout
 
 <PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
 
@@ -13,8 +13,8 @@
     <h2>Prerequisites</h2>
     <ul>
         <li>.NET 8 SDK (<a href="https://dotnet.microsoft.com/download/dotnet/8.0" target="_blank">Download</a>)</li>
-        <li>Visual Studio 2022 or later / VS Code / JetBrains Rider</li>
-        <li>Basic knowledge of Blazor Server or Blazor Web App (Server mode)</li>
+        <li>Visual Studio 2022 (v17.8 or later) / VS Code / JetBrains Rider</li>
+        <li>Basic knowledge of Blazor WebApp (Interactive Render Mode: Auto)</li>
     </ul>
 
     <h2>1. Using dotnet Templates</h2>
@@ -44,13 +44,13 @@ dotnet run</code></pre>
             <pre><code>dotnet add package BlazorExpress.Bulma</code></pre>
         </li>
         <li>
-            <b>Add Bulma and BlazorExpress.Bulma CSS to <code>Pages/_Host.cshtml</code> (Blazor Server) or <code>Components/Layouts/MainLayout.razor</code> (Blazor Web App):</b>
+            <b>Add Bulma and BlazorExpress.Bulma CSS to <code>Components/Layouts/MainLayout.razor</code> or <code>_Host.cshtml</code>:</b>
             <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"&gt;
 &lt;link rel="stylesheet" href="_content/BlazorExpress.Bulma/css/blazorexpress.bulma.css"&gt;
 </code></pre>
         </li>
         <li>
-            <b>Add BlazorExpress.Bulma JS to <code>Pages/_Host.cshtml</code> (Blazor Server) or <code>Components/Layouts/MainLayout.razor</code> (Blazor Web App):</b>
+            <b>Add BlazorExpress.Bulma JS to <code>Components/Layouts/MainLayout.razor</code> or <code>_Host.cshtml</code>:</b>
             <pre><code>&lt;script src="_content/BlazorExpress.Bulma/js/blazorexpress.bulma.js"&gt;&lt;/script&gt;
 </code></pre>
         </li>
@@ -92,7 +92,7 @@ app.Run();
 
     <h2>4. Troubleshooting</h2>
     <ul>
-        <li>Ensure all CSS and JS references are correct in <code>_Host.cshtml</code> or your layout file.</li>
+        <li>Ensure all CSS and JS references are correct in your layout or host file.</li>
         <li>Restart the development server after changes to static files.</li>
         <li>Check browser console for errors if components do not render as expected.</li>
     </ul>
@@ -109,10 +109,10 @@ app.Run();
 </div>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_Getting_Started_WebApp_Server_NET_8;
-    private const string pageTitle = "Getting started - Blazor WebApp (.NET 8) - Interactive render mode Server - Global location";
-    private const string pageDescription = "Learn how to quickly set up <code>BlazorExpress.Bulma</code> in your Blazor WebApp (Server) project using dotnet templates or manual installation, and how to register required services.";
-    private const string metaTitle = "Getting started - Blazor WebApp (.NET 8) - Interactive render mode Server - Global location";
-    private const string metaDescription = "Step-by-step guide to using BlazorExpress.Bulma: dotnet templates, manual install, and service registration for Blazor WebApp (Server) apps.";
+    private const string pageUrl = RouteConstants.Docs_Getting_Started_WebApp_Auto_NET_8;
+    private const string pageTitle = "Getting started - Blazor WebApp (.NET 8) - Interactive render mode Auto - Global location";
+    private const string pageDescription = "Learn how to quickly set up <code>BlazorExpress.Bulma</code> in your Blazor WebApp (Auto) project using dotnet templates or manual installation, and how to register required services.";
+    private const string metaTitle = "Getting started - Blazor WebApp (.NET 8) - Interactive render mode Auto - Global location";
+    private const string metaDescription = "Step-by-step guide to using BlazorExpress.Bulma: dotnet templates, manual install, and service registration for Blazor WebApp (Auto) apps.";
     private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
 }

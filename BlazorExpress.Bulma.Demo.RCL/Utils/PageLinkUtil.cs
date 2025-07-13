@@ -74,9 +74,6 @@ public static class PageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Image, Href = RouteConstants.Demos_Image_Documentation, Text = "Image", Categories = new() { PageLinkCategory.All, PageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = RouteConstants.Demos_Getting_Started_Introduction, Text = "Introduction", Categories = new() { PageLinkCategory.All, PageLinkCategory.GettingStarted }, Status = PageLinkStatus.None, IsActive = true });
-
-        index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = RouteConstants.Demos_Level_Documentation, Text = "Level", Categories = new() { PageLinkCategory.All, PageLinkCategory.Layout }, Status = PageLinkStatus.None, IsActive = false });
 
         index += 1;

@@ -1,5 +1,4 @@
 @attribute [Route(pageUrl)]
-@attribute [Route(pageUrl2)]
 @layout DocsMainLayout
 
 <PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
@@ -24,7 +23,6 @@
 
 @code {
     private const string pageUrl = RouteConstants.Docs_Skeletons_Documentation;
-    private const string pageUrl2 = RouteConstants.Docs_Prefix;
     private const string pageTitle = "Skeleton";
     private const string pageDescription = "This documentation provides a comprehensive reference for the <code>Skeleton</code> component, guiding you through its configuration options.";
     private const string metaTitle = "Blazor Skeleton Component";

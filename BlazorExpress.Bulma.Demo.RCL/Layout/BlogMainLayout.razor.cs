@@ -38,7 +38,7 @@ public partial class BlogMainLayout : MainLayoutBase
             Name = "GETTING STARTED",
             CssClass = "is-size-7 has-text-weight-bold has-text-danger",
             Links = [
-                new Link { Href = RouteConstants.Demos_Getting_Started_Introduction, Text = "Introduction" },
+                new Link { Href = RouteConstants.Docs_Getting_Started_Introduction, Text = "Introduction" },
             ]
         });
 

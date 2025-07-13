@@ -1,6 +1,6 @@
 @attribute [Route(pageUrl)]
 @attribute [Route(pageUrl2)]
-@layout DemosMainLayout
+@layout DocsMainLayout
 
 <PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
 
@@ -28,22 +28,22 @@
                     <tr>
                         <td>1</td>
                         <td>.NET 8</td>
-                        <td><a href="/demos/getting-started/blazor-webassembly-net-8">Blazor WebAssembly (.NET 8)</a></td>
+                        <td><a href="/docs/getting-started/blazor-webassembly-net-8">Blazor WebAssembly (.NET 8)</a></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>.NET 8</td>
-                        <td><a href="/demos/getting-started/blazor-webapp-server-global-net-8">Blazor WebApp (.NET 8) - Interactive render mode Server - Global location</a></td>
+                        <td><a href="/docs/getting-started/blazor-webapp-server-global-net-8">Blazor WebApp (.NET 8) - Interactive render mode Server - Global location</a></td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>.NET 8</td>
-                        <td><a href="/demos/getting-started/blazor-webapp-auto-global-net-8">Blazor WebApp (.NET 8) - Interactive render mode Auto - Global location</a></td>
+                        <td><a href="/docs/getting-started/blazor-webapp-auto-global-net-8">Blazor WebApp (.NET 8) - Interactive render mode Auto - Global location</a></td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>.NET 8</td>
-                        <td><a href="/demos/getting-started/maui-blazor-net-8">MAUI Blazor Hybrid App (.NET 8)</a></td>
+                        <td><a href="/docs/getting-started/maui-blazor-net-8">MAUI Blazor Hybrid App (.NET 8)</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -53,8 +53,8 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_Getting_Started_Introduction;
-    private const string pageUrl2 = RouteConstants.Demos_Prefix;
+    private const string pageUrl = RouteConstants.Docs_Getting_Started_Introduction;
+    private const string pageUrl2 = RouteConstants.Docs_Prefix;
     private const string pageTitle = "Getting Started";
     private const string pageDescription = "Learn how to quickly set up <code>BlazorExpress.Bulma</code> in your Blazor project using dotnet templates or manual installation, and how to register required services.";
     private const string metaTitle = "Getting Started with BlazorExpress.Bulma";
