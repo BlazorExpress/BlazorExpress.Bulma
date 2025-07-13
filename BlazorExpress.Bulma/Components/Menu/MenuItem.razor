@@ -7,5 +7,19 @@
     style="@StyleNames"
     @attributes="@AdditionalAttributes"
     @onclick="OnMenuItemClick">
-    @ChildContent
+
+    @if (!string.IsNullOrWhiteSpace(Href))
+    {
+        <NavLink href="@Href" Match="NavLinkMatch" ActiveClass="is-active">
+            @ChildContent
+        </NavLink>
+    }
+    else
+    {
+        @ChildContent
+    }
+
+    @* <NavLink href="@Href" Match="NavLinkMatch" ActiveClass="is-active">
+        @ChildContent
+    </NavLink> *@
 </li>

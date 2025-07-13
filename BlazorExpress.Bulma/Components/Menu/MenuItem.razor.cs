@@ -44,6 +44,18 @@ public partial class MenuItem : BulmaComponentBase
     public RenderFragment? ChildContent { get; set; }
 
     /// <summary>
+    /// Gets or sets the hyperlink reference.
+    /// <para>
+    /// Default value is <see langword="null" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the hyperlink reference.")]
+    [Parameter]
+    public string? Href { get; set; }
+
+    /// <summary>
     /// Gets or sets the active state.
     /// <para>
     /// Default value is <see langword="false" />.
@@ -54,6 +66,20 @@ public partial class MenuItem : BulmaComponentBase
     [Description("Gets or sets the active state.")]
     [Parameter]
     public bool IsActive { get; set; } = false;
+
+    /// <summary>
+    /// Gets or sets the criteria used to match menu items.
+    /// <para>
+    /// Default is <see cref="MenuItemMatch.Prefix" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(MenuItemMatch.Prefix)]
+    [Description("Gets or sets the criteria used to match menu items.")]
+    [Parameter]
+    public MenuItemMatch Match { get; set; } = MenuItemMatch.Prefix;
+
+    private NavLinkMatch NavLinkMatch => Match == MenuItemMatch.All ? NavLinkMatch.All : NavLinkMatch.Prefix;
 
     /// <summary>
     /// Gets or sets the parent.
