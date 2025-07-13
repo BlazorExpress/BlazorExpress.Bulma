@@ -7,19 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Pages\Docs\GettingStarted\01_A_Manual_Install_04_Snippet.razor" />
+    <Content Remove="Pages\Docs\GettingStarted\net8\01_A_Manual_Install_04_Snippet.razor" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Pages\Docs\GettingStarted\01_A_Manual_Install_04_Snippet.razor" />
+    <None Include="Pages\Docs\GettingStarted\net8\01_A_Manual_Install_04_Snippet.razor" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Pages\Docs\GettingStarted\01_A_Manual_Install_05_Snippet.cs" />
+    <Compile Remove="Pages\Docs\GettingStarted\net8\01_A_Manual_Install_05_Snippet.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Pages\Docs\GettingStarted\01_A_Manual_Install_05_Snippet.cs" />
+    <Content Include="Pages\Docs\GettingStarted\net8\01_A_Manual_Install_05_Snippet.cs" />
   </ItemGroup>
 
   <ItemGroup>
