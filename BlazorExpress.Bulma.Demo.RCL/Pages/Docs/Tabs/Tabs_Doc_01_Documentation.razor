@@ -11,7 +11,7 @@
 
 @* <img src="https://i.imgur.com/IX3bajc.png" class="img-fluid" alt="Blazor Bar Chart - API Documentation" /> *@
 
-<DemoLink Href="@RouteConstants.Demos_Tabs_Documentation" />
+<DemoLink Href="@DemoRouteConstants.Demos_Tabs_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Tabs Parameters" PageUrl="@pageUrl" Link="tabs-parameters">
     <DocxTable TItem="Tabs" DocType="DocType.Parameters" />
@@ -30,7 +30,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Docs_Tabs_Documentation;
+    private const string pageUrl = DemoRouteConstants.Docs_Tabs_Documentation;
     private const string pageTitle = "Tabs";
     private const string pageDescription = "This documentation provides a comprehensive reference for the <code>Tabs</code> component, guiding you through its configuration options.";
     private const string metaTitle = "Blazor Tabs Component";

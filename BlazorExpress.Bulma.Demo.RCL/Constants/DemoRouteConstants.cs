@@ -1,6 +1,6 @@
 ﻿namespace BlazorExpress.Bulma.Demo.RCL;
 
-public static class RouteConstants
+public static class DemoRouteConstants
 {
     public const string Blog_Prefix = "/blog";
     public const string Docs_Prefix = "/docs";

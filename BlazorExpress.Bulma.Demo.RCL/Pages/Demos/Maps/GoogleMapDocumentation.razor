@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_GoogleMaps_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_GoogleMaps_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H2" Name="Prerequisite" PageUrl="@pageUrl" Link="prerequisite">
     Before you start using the GoogleMap component in your project, you need an API key.
@@ -70,7 +70,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_GoogleMaps_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_GoogleMaps_Documentation;
     private const string pageTitle = "Google Map";
     private const string pageDescription = "<code>Google Map</code> component will create maps to show locations anywhere in the world using the Google JavaScript API.";
     private const string metaTitle = "Blazor Google Map Component";

@@ -11,14 +11,14 @@
 
 @* <img src="https://i.imgur.com/IX3bajc.png" class="img-fluid" alt="Blazor Bar Chart - API Documentation" /> *@
 
-<DemoLink Href="@RouteConstants.Demos_Notification_Documentation" />
+<DemoLink Href="@DemoRouteConstants.Demos_Notification_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Parameters" PageUrl="@pageUrl" Link="parameters">
     <DocxTable TItem="Notification" DocType="DocType.Parameters" />
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Docs_Notification_Documentation;
+    private const string pageUrl = DemoRouteConstants.Docs_Notification_Documentation;
     private const string pageTitle = "Notification";
     private const string pageDescription = "This documentation provides a comprehensive reference for the <code>Notification</code> component, guiding you through its configuration options.";
     private const string metaTitle = "Blazor Notification Component";

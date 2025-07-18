@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_Breadcrumb_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_Breadcrumb_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <div class="mb-3">
@@ -39,7 +39,7 @@
 <Section Class="p-0" Size="HeadingSize.H3" Name="Icons" PageUrl="@pageUrl" Link="icons">
     <div class="mb-3">
         You can add icons to the <code>Breadcrumb</code> component.
-        Add <code><a href="@RouteConstants.Demos_BootstrapIcons_Documentation">BootstrapIcon</a></code> or <code><a href="@RouteConstants.Demos_GoogleFontIcons_Documentation">GoogleFontIcon</a></code> to the <code>BreadcrumbItem</code> component as a child content.
+        Add <code><a href="@DemoRouteConstants.Demos_BootstrapIcons_Documentation">BootstrapIcon</a></code> or <code><a href="@DemoRouteConstants.Demos_GoogleFontIcons_Documentation">GoogleFontIcon</a></code> to the <code>BreadcrumbItem</code> component as a child content.
     </div>
     <div class="mb-3">
         In the following example, Bootstrap icons are used.
@@ -95,7 +95,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_Breadcrumb_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_Breadcrumb_Documentation;
     private const string pageTitle = "Breadcrumb";
     private const string pageDescription = "The <code>Breadcrumb</code> component is a simple spacer tool. It allows sibling HTML elements to have a consistent margin between them.";
     private const string metaTitle = "Blazor Breadcrumb Component";

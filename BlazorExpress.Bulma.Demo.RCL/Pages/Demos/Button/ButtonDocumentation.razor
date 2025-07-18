@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_Button_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_Button_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Block>
@@ -85,7 +85,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_Button_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_Button_Documentation;
     private const string pageTitle = "Button";
     private const string pageDescription = "Use the <code>Button</code> component to style actions in forms, dialogs, and more, with support for multiple sizes, states, and other options.";
     private const string metaTitle = "Blazor Button Component";

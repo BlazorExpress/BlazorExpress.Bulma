@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_DeleteButton_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_DeleteButton_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Demo Type="typeof(DeleteButton_Demo_01_How_it_works)" Tabs="true" />
@@ -24,7 +24,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_DeleteButton_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_DeleteButton_Documentation;
     private const string pageTitle = "DeleteButton";
     private const string pageDescription = "<code>DeleteButton</code> component is a stand-alone element that can be used in different contexts.";
     private const string metaTitle = "Blazor Delete Button Component";

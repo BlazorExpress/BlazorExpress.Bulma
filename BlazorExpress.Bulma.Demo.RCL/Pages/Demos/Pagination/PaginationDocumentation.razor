@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_Pagination_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_Pagination_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Demo Type="typeof(Pagination_Demo_01_How_it_works)" Tabs="true" />
@@ -32,7 +32,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_Pagination_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_Pagination_Documentation;
     private const string pageTitle = "Pagination";
     private const string pageDescription = "A <code>Pagination</code> component is used to indicate that a series of related content exists across multiple pages.";
     private const string metaTitle = "Blazor Pagination Component";

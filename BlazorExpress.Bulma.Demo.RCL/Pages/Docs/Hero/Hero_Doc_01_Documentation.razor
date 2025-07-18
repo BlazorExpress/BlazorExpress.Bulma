@@ -11,7 +11,7 @@
 
 @* <img src="https://i.imgur.com/IX3bajc.png" class="img-fluid" alt="Blazor Bar Chart - API Documentation" /> *@
 
-<DemoLink Href="@RouteConstants.Demos_Hero_Documentation" />
+<DemoLink Href="@DemoRouteConstants.Demos_Hero_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Hero Parameters" PageUrl="@pageUrl" Link="hero-parameters">
     <DocxTable TItem="Hero" DocType="DocType.Parameters" />
@@ -38,7 +38,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Docs_Hero_Documentation;
+    private const string pageUrl = DemoRouteConstants.Docs_Hero_Documentation;
     private const string pageTitle = "Hero";
     private const string pageDescription = "This documentation provides a comprehensive reference for the <code>Hero</code> component, guiding you through its configuration options.";
     private const string metaTitle = "Blazor Hero Component";

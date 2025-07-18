@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_ConfirmDialog_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_ConfirmDialog_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Demo Type="typeof(ConfirmDialog_Demo_01_How_it_works)" />
@@ -20,7 +20,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_ConfirmDialog_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_ConfirmDialog_Documentation;
     private const string pageTitle = "Confirm Dialog";
     private const string pageDescription = "Use <code>Confirm Dialog</code> component when you want the user to verify or accept something.";
     private const string metaTitle = "Blazor Confirm Dialog Component";

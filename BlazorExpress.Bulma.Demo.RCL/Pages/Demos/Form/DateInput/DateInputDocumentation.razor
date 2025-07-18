@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_Form_DateInput_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_Form_DateInput_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Demo Type="typeof(DateInput_Demo_01_How_it_works)" Tabs="true" />
@@ -55,7 +55,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_Form_DateInput_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_Form_DateInput_Documentation;
     private const string pageTitle = "DateInput";
     private const string pageDescription = "The <code>DateInput</code> component is constructed using an HTML input of type 'date' which limits user input based on pre-defined parameters. This component enables users to input a date using a text box with validation or a special date picker interface";
     private const string metaTitle = "Blazor DateInput Component";

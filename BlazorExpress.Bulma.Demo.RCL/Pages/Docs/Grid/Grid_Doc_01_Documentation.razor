@@ -11,7 +11,7 @@
 
 @* <img src="https://i.imgur.com/IX3bajc.png" class="img-fluid" alt="Blazor Bar Chart - API Documentation" /> *@
 
-<DemoLink Href="@RouteConstants.Demos_Grid_Documentation" />
+<DemoLink Href="@DemoRouteConstants.Demos_Grid_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Grid Parameters" PageUrl="@pageUrl" Link="grid-parameters">
     <DocxTable TItem="Grid<TItem>" DocType="DocType.Parameters" />
@@ -42,7 +42,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Docs_Grid_Documentation;
+    private const string pageUrl = DemoRouteConstants.Docs_Grid_Documentation;
     private const string pageTitle = "Grid";
     private const string pageDescription = "This documentation provides a comprehensive reference for the <code>Grid</code> component, guiding you through its configuration options.";
     private const string metaTitle = "Blazor Grid Component";

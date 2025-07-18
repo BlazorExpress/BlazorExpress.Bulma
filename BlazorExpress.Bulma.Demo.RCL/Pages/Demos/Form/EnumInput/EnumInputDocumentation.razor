@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_Form_EnumInput_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_Form_EnumInput_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Demo Type="typeof(EnumInput_Demo_01_How_it_works)" Tabs="true" />
@@ -83,7 +83,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_Form_EnumInput_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_Form_EnumInput_Documentation;
     private const string pageTitle = "EnumInput";
     private const string pageDescription = "The <code>EnumInput</code> component is used to show enum values in a dropdown list. It is a simple and effective way to allow users to select from a predefined set of options.";
     private const string metaTitle = "Blazor EnumInput Component";

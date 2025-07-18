@@ -1,4 +1,6 @@
-﻿namespace BlazorExpress.Bulma.Docx;
+﻿using Microsoft.VisualBasic.FileIO;
+
+namespace BlazorExpress.Bulma.Docx;
 
 public partial class CodeChunk : BulmaComponentBase
 {
@@ -45,9 +47,9 @@ public partial class CodeChunk : BulmaComponentBase
         if (string.IsNullOrWhiteSpace(FilePath))
             return;
 
-        var resourceName = FilePath.Replace("~", typeof(CodeChunk).Assembly.GetName().Name).Replace("/", ".").Replace("\\", ".");
+        var resourceName = FilePath.Replace("~", ProjectRootClassType.Assembly.GetName().Name).Replace("/", ".").Replace("\\", ".");
 
-        using (var stream = typeof(CodeChunk).Assembly.GetManifestResourceStream(resourceName)!)
+        using (var stream = ProjectRootClassType.Assembly.GetManifestResourceStream(resourceName)!)
         {
             try
             {
@@ -111,6 +113,12 @@ public partial class CodeChunk : BulmaComponentBase
     [Parameter] public LanguageCode LanguageCode { get; set; } = LanguageCode.Razor;
 
     [Parameter] public string? FilePath { get; set; }
+
+    /// <summary>
+    /// Gets or sets the type of the project root class.
+    /// It is recommended to set this to the root class type of the project, such as <c>typeof(App)</c>, so that the demo code can render correctly on the UI as text with proper formatting.
+    /// </summary>
+    [Parameter] public Type ProjectRootClassType { get; set; } = typeof(CodeChunk);
 
     #endregion
 }

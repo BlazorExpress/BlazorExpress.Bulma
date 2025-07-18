@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_Notification_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_Notification_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Demo Type="typeof(Notification_Demo_01_How_it_works)" />
@@ -38,7 +38,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_Notification_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_Notification_Documentation;
     private const string pageTitle = "Notification";
     private const string pageDescription = "The <code>Notification</code> component is a simple colored block meant to draw the attention to the user about something. ";
     private const string metaTitle = "Blazor Notification Component";

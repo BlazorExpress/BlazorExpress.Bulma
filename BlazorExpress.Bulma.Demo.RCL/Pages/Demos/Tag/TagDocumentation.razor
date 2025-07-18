@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_Tags_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_Tags_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Demo Type="typeof(Tag_Demo_01_How_it_works)" />
@@ -56,7 +56,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_Tags_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_Tags_Documentation;
     private const string pageTitle = "Tags";
     private const string pageDescription = "The <code>Tag</code> component is a small label to insert anywhere.";
     private const string metaTitle = "Blazor Tags Component";
