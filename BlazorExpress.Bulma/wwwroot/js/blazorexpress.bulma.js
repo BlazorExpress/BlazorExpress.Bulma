@@ -2,10 +2,14 @@ if (!window.blazorExpress) {
     window.blazorExpress = {};
 }
 
-window.blazorExpress = {
+if (!window.blazorExpress.bulma) {
+    window.blazorExpress.bulma = {};
+}
+
+window.blazorExpress.bulma = {
     googlemaps: {
         addMarker: (elementId, marker, dotNetHelper) => {
-            let mapInstance = window.blazorExpress.googlemaps.get(elementId);
+            let mapInstance = window.blazorExpress.bulma.googlemaps.get(elementId);
             if (mapInstance) {
                 let map = mapInstance.map;
                 let clickable = mapInstance.clickable;
@@ -45,7 +49,7 @@ window.blazorExpress = {
                     gmpClickable: clickable
                 });
 
-                window.blazorExpress.googlemaps.markerEls[elementId].push(markerEl);
+                window.blazorExpress.bulma.googlemaps.markerEls[elementId].push(markerEl);
 
                 // add a click listener for each marker, and set up the info window.
                 if (clickable) {
@@ -61,7 +65,7 @@ window.blazorExpress = {
             }
         },
         create: (elementId, map, zoom, center, markers, clickable) => {
-            window.blazorExpress.googlemaps.instances[elementId] = {
+            window.blazorExpress.bulma.googlemaps.instances[elementId] = {
                 map: map,
                 zoom: zoom,
                 center: center,
@@ -70,26 +74,26 @@ window.blazorExpress = {
             };
         },
         get: (elementId) => {
-            return window.blazorExpress.googlemaps.instances[elementId];
+            return window.blazorExpress.bulma.googlemaps.instances[elementId];
         },
         initialize: (elementId, zoom, center, markers, clickable, dotNetHelper) => {
-            window.blazorExpress.googlemaps.markerEls[elementId] = window.blazorExpress.googlemaps.markerEls[elementId] ?? [];
+            window.blazorExpress.bulma.googlemaps.markerEls[elementId] = window.blazorExpress.bulma.googlemaps.markerEls[elementId] ?? [];
 
             let mapOptions = { center: center, zoom: zoom, mapId: elementId };
             let map = new google.maps.Map(document.getElementById(elementId), mapOptions);
 
-            window.blazorExpress.googlemaps.create(elementId, map, zoom, center, markers, clickable);
+            window.blazorExpress.bulma.googlemaps.create(elementId, map, zoom, center, markers, clickable);
 
             if (markers) {
                 for (const marker of markers) {
-                    window.blazorExpress.googlemaps.addMarker(elementId, marker, dotNetHelper);
+                    window.blazorExpress.bulma.googlemaps.addMarker(elementId, marker, dotNetHelper);
                 }
             }
         },
         instances: {},
         markerEls: {},
         updateMarkers: (elementId, markers, dotNetHelper) => {
-            let markerEls = window.blazorExpress.googlemaps.markerEls[elementId] ?? [];
+            let markerEls = window.blazorExpress.bulma.googlemaps.markerEls[elementId] ?? [];
 
             // delete the markers
             if (markerEls.length > 0) {
@@ -100,7 +104,7 @@ window.blazorExpress = {
 
             if (markers) {
                 for (const marker of markers) {
-                    window.blazorExpress.googlemaps.addMarker(elementId, marker, dotNetHelper);
+                    window.blazorExpress.bulma.googlemaps.addMarker(elementId, marker, dotNetHelper);
                 }
             }
         }

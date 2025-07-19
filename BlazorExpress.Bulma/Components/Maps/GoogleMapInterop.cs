@@ -4,7 +4,7 @@ public class GoogleMapInterop
 {
     #region Fields and Constants
 
-    private const string Prefix = "window.blazorExpress.googlemaps.";
+    private const string Prefix = "window.blazorexpress.bulma.googlemaps.";
 
     public const string Initialize = Prefix + "initialize";
 
