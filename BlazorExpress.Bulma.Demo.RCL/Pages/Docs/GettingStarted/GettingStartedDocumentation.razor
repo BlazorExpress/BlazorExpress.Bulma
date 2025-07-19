@@ -21,6 +21,7 @@
                     <tr>
                         <th scope="col" style="width:48px;">#</th>
                         <th scope="col" style="width:164px;">.NET Version</th>
+                        <th scope="col">Project Type</th>
                         <th scope="col">Documentation Link</th>
                     </tr>
                 </thead>
@@ -28,30 +29,31 @@
                     <tr>
                         <td>1</td>
                         <td>.NET 8</td>
-                        <td><a href="/docs/getting-started/blazor-webassembly-net-8">Blazor WebAssembly (.NET 8)</a></td>
+                        <td>Blazor WebAssembly (.NET 8)</td>
+                        <td><DocsLink Text="Project Setup Guide" Href="@DemoRouteConstants.Docs_Getting_Started_WebAssembly_NET_8" /></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>.NET 8</td>
                         <td><a href="/docs/getting-started/blazor-webapp-server-global-net-8">Blazor WebApp (.NET 8) - Interactive render mode Server - Global location</a></td>
+                        <td><DocsLink Text="Project Setup Guide" Href="@DemoRouteConstants.Docs_Getting_Started_WebApp_Server_NET_8" /></td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>.NET 8</td>
-                        @* <td><a href="/docs/getting-started/blazor-webapp-auto-global-net-8">Blazor WebApp (.NET 8) - Interactive render mode Auto - Global location</a></td> *@
-                        <td>TODO: Blazor WebApp (.NET 8) - Interactive render mode Auto - Global location</td>
+                        <td>Blazor WebApp (.NET 8) - Interactive render mode Auto - Global location</td>
+                        <td><DocsLink Text="TODO: Project Setup Guide" Href="#" /></td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>.NET 8</td>
-                        @* <td><a href="/docs/getting-started/maui-blazor-net-8">MAUI Blazor Hybrid App (.NET 8)</a></td> *@
-                        <td>TODO: MAUI Blazor Hybrid App (.NET 8)</td>
+                        <td>MAUI Blazor Hybrid App (.NET 8)</td>
+                        <td><DocsLink Text="TODO: Project Setup Guide" Href="#" /></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </Block>
-    <Block>&nbsp;</Block>
 </Section>
 
 @code {

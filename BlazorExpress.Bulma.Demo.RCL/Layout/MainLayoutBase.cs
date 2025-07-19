@@ -2,6 +2,8 @@
 
 public class MainLayoutBase : LayoutComponentBase
 {
+    private string nugetPackageName = default!;
+    private string nugetPackageDisplayName = default!;
     private string version = default!;
     private string dotNetVersion = default!;
     private string docsUrl = default!;
@@ -21,6 +23,8 @@ public class MainLayoutBase : LayoutComponentBase
 
     protected override void OnInitialized()
     {
+        nugetPackageName = $"{Configuration["NugetPackageName"]}";
+        nugetPackageDisplayName = $"{Configuration["NugetPackageDisplayName"]}";
         version = $"v{Configuration["version"]}"; // example: v0.6.1
         dotNetVersion = $".NET {Configuration["dotNetVersion"]}"; // example: 9.0.0
         docsUrl = $"{Configuration["urls:docs"]}";
@@ -35,6 +39,8 @@ public class MainLayoutBase : LayoutComponentBase
         stackoverflowUrl = $"{Configuration["urls:stackoverflow"]}";
     }
 
+    public string NugetPackageName => nugetPackageName;
+    public string NugetPackageDisplayName => nugetPackageDisplayName;
     public string Version => version;
     public string DotNetVersion => dotNetVersion;
     public string DocsUrl => docsUrl;
