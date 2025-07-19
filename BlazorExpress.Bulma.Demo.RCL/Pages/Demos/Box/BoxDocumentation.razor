@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_Box_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_Box_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Demo Class="mb-3" Type="typeof(Box_Demo_01_How_it_works_A)" Tabs="true" />
@@ -25,7 +25,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_Box_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_Box_Documentation;
     private const string pageTitle = "Box";
     private const string pageDescription = "The <code>Box</code> component is a simple container with a white background, some padding, and a box shadow.";
     private const string metaTitle = "Blazor Box Component";

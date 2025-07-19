@@ -9,14 +9,14 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_Hero_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_Hero_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Demo Type="typeof(Hero_Demo_01_How_it_works)" Tabs="true" />
 </Section>
 
 @code{
-    private const string pageUrl = RouteConstants.Demos_Hero_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_Hero_Documentation;
     private const string pageTitle = "Hero";
     private const string pageDescription = "The <code>Hero</code> component allows you to add a full-width banner to your webpage. Optionally, it can also span the full height of the page. Create an imposing hero banner to showcase your content.";
     private const string metaTitle = "Blazor Hero Component";

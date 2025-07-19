@@ -45,14 +45,11 @@
         <div class="p-5">
             <Button Class="bi bi-box-arrow-right menu-toggle-button ml-1 mt-0 mb-1" @onclick="ToggleSidebarSection" />
             @Body
-            <Notification Class="has-text-centered" Color="NotificationColor.Link" HideDeleteButton="true">
-                <a href="@GithubUrl" class="be-bulma-text-decoration-none" target="_blank">
-                    <i class="bi bi-star-fill"></i>
-                    <span>If you like BlazorExpress.Bulma, give it a star on GitHub!</span>
-                    <i class="bi bi-star-fill"></i>
-                </a>
-            </Notification>
-            <MainLayoutBaseFooter Version="@Version"
+            <DoYouKnow Class="mt-3" />
+            <StarOnGitHub />
+            <MainLayoutBaseFooter NugetPackageName="@NugetPackageName"
+                                  NugetPackageDisplayName="@NugetPackageDisplayName"
+                                  Version="@Version"
                                   DotNetVersion="@DotNetVersion"
                                   DocsUrl="@DocsUrl"
                                   BlogUrl="@BlogUrl"

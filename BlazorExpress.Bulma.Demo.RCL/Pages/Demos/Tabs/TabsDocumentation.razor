@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_Tabs_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_Tabs_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Demo Type="typeof(Tabs_Demo_01_How_it_works)" />
@@ -133,7 +133,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_Tabs_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_Tabs_Documentation;
     private const string pageTitle = "Tabs";
     private const string pageDescription = "Documentation and examples for how to use <b>Tabs</b> component.";
     private const string metaTitle = "Blazor Tabs Component";

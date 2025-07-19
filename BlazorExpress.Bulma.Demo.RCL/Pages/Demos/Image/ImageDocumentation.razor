@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_Image_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_Image_Documentation" />
 
 <Message Class="mt-5" Color="MessageColor.Info">
     <MessageBody>
@@ -34,7 +34,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_Image_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_Image_Documentation;
     private const string pageTitle = "Image";
     private const string pageDescription = "<code>Image</code> component is a container for responsive images.";
     private const string metaTitle = "Blazor Block Component";

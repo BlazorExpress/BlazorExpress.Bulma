@@ -10,7 +10,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_Skeletons_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_Skeletons_Documentation" />
 
 <div class="my-3">It is used to indicate that the content is being loaded and to provide a visual representation of the content that will be displayed.</div>
 <div>The <code>Skeleton</code> component can be used to create a loading state for any type of content, such as text, images, or other components.</div>
@@ -71,8 +71,8 @@
 </Section> *@
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_Skeletons_Documentation;
-    private const string pageUrl2 = RouteConstants.Demos_Prefix;
+    private const string pageUrl = DemoRouteConstants.Demos_Skeletons_Documentation;
+    private const string pageUrl2 = DemoRouteConstants.Demos_Prefix;
     private const string pageTitle = "Skeleton";
     private const string pageDescription = "A <code>Skeleton</code> component is a loading state that acts as a placeholder for content within an interface.";
     private const string metaTitle = "Blazor Skeleton Component";

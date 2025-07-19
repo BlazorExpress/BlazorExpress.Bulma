@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_ScriptLoader_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_ScriptLoader_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H2" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
     <div class="mb-3">
@@ -57,7 +57,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_ScriptLoader_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_ScriptLoader_Documentation;
     private const string pageTitle = "Script Loader";
     private const string pageDescription = "Documentation and examples for using the <code>Script Loader</code> component.";
     private const string metaTitle = "Blazor Script Loader Component";

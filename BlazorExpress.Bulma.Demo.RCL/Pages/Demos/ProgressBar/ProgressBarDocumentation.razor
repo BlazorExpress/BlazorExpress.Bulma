@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_ProgressBar_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_ProgressBar_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Demo Type="typeof(ProgressBar_Demo_01_How_it_works)" />
@@ -40,7 +40,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_ProgressBar_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_ProgressBar_Documentation;
     private const string pageTitle = "Progress Bar";
     private const string pageDescription = "The <code>Progress Bar</code> component is constructed using native <code><progress></code> HTML element.";
     private const string metaTitle = "Blazor Progress Bar Component";

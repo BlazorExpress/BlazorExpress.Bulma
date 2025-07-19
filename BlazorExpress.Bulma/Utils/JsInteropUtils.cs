@@ -4,7 +4,7 @@ public class JsInteropUtils
 {
     #region Fields and Constants
 
-    private const string Prefix = "window.blazorExpress.utils.";
+    private const string Prefix = "window.blazorExpress.bulma.utils.";
 
     public const string FocusElement = Prefix + "focusElement";
 

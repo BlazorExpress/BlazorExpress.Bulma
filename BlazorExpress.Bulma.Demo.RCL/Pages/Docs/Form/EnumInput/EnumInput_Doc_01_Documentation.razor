@@ -11,7 +11,7 @@
 
 @* <img src="https://i.imgur.com/IX3bajc.png" class="img-fluid" alt="Blazor Bar Chart - API Documentation" /> *@
 
-<DemoLink Href="@RouteConstants.Demos_Form_EnumInput_Documentation" />
+<DemoLink Href="@DemoRouteConstants.Demos_Form_EnumInput_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Parameters" PageUrl="@pageUrl" Link="parameters">
     <DocxTable TItem="EnumInput<TEnum>" DocType="DocType.Parameters" />
@@ -26,7 +26,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Docs_Form_EnumInput_Documentation;
+    private const string pageUrl = DemoRouteConstants.Docs_Form_EnumInput_Documentation;
     private const string pageTitle = "EnumInput";
     private const string pageDescription = "This documentation provides a comprehensive reference for the <code>EnumInput</code> component, guiding you through its configuration options.";
     private const string metaTitle = "Blazor EnumInput Component";

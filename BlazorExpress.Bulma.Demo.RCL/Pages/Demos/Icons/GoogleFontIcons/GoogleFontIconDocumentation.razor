@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_GoogleFontIcons_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_GoogleFontIcons_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Demo Type="typeof(GoogleFontIcon_Demo_01_How_it_works)" Tabs="true" />
@@ -52,7 +52,7 @@
 </Section>
 
 @code{
-    private const string pageUrl = RouteConstants.Demos_GoogleFontIcons_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_GoogleFontIcons_Documentation;
     private const string pageTitle = "Google Font Icons";
     private const string pageDescription = "The <code>GoogleFontIcon</code> component will display Google Material Symbols.";
     private const string metaTitle = "Blazor Icon Component";

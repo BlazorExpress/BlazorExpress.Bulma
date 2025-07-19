@@ -2,6 +2,8 @@
 
 public partial class MainLayoutBaseFooter : ComponentBase
 {
+    [Parameter] public string? NugetPackageName {  get; set; }
+    [Parameter] public string? NugetPackageDisplayName { get; set; }
     [Parameter] public string? Version { get; set; }
     [Parameter] public string? DotNetVersion { get; set; }
     [Parameter] public string? DocsUrl { get; set; }

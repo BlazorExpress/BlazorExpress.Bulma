@@ -1,0 +1,33 @@
+@namespace BlazorExpress.Bulma.Docx
+@inherits BulmaComponentBase
+
+<Notification Class="has-text-centered" Color="NotificationColor.Link" HideDeleteButton="true">
+                <a href="@githubUrl" class="be-bulma-text-decoration-none" target="_blank">
+                    <i class="bi bi-star-fill"></i>
+                        <span>If you like @nugetPackageName, give it a star on GitHub!</span>
+                    <i class="bi bi-star-fill"></i>
+                </a>
+            </Notification>
+
+@code {
+    private string nugetPackageName = default!;
+    private string nugetPackageDisplayName = default!;
+    private string githubUrl = default!;
+    private string nugetUrl = default!;
+
+    [Inject] public IConfiguration Configuration { get; set; } = default!;
+
+    protected override string ClassNames =>
+        BuildClassNames(
+            Class,
+            (BulmaCssClass.MarginBottom4, true)
+        );
+
+    protected override void OnInitialized()
+    {
+        nugetPackageName = $"{Configuration["NugetPackageName"]}";
+        nugetPackageDisplayName = $"{Configuration["NugetPackageDisplayName"]}";
+        githubUrl = $"{Configuration["urls:github"]}";
+        nugetUrl = $"{Configuration["urls:nuget"]}";
+    }
+}

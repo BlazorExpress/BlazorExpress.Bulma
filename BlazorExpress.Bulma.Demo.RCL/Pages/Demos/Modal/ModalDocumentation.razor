@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_Modal_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_Modal_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Demo Type="typeof(Modal_Demo_01_How_it_works)" Tabs="true" />
@@ -24,7 +24,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_Modal_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_Modal_Documentation;
     private const string pageTitle = "Modal";
     private const string pageDescription = "Use <code>Modal</code> component enables the inclusion of dialog boxes for various purposes, including lightboxes, user notifications, and fully customized content displays.";
     private const string metaTitle = "Blazor Modal Component";

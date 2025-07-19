@@ -29,6 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BlazorExpress.Bulma.Docx\BlazorExpress.Bulma.Docx.csproj" />
     <ProjectReference Include="..\BlazorExpress.Bulma\BlazorExpress.Bulma.csproj" />
   </ItemGroup>
 

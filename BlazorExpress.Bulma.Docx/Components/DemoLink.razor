@@ -1,0 +1,14 @@
+@namespace BlazorExpress.Bulma.Docx
+@inherits BulmaComponentBase
+
+<div>
+    <Button Color="ButtonColor.Primary" Type="ButtonType.Link" Href="@Href">
+        <span>Demos</span>
+        <BootstrapIcon Class="ml-1" Name="BootstrapIconName.BoxArrowUpRight" />
+    </Button>
+</div>
+
+@code{
+    [Parameter]
+    public string? Href { get; set; }
+}

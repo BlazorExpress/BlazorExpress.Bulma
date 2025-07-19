@@ -9,7 +9,7 @@
     </SubTitleTemplate>
 </PageHero>
 
-<DocsLink Href="@RouteConstants.Docs_BootstrapIcons_Documentation" />
+<DocsLink Href="@DemoRouteConstants.Docs_BootstrapIcons_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
     <Demo Type="typeof(BootstrapIcon_Demo_01_How_it_works)" Tabs="false" />
@@ -52,7 +52,7 @@
 </Section>
 
 @code {
-    private const string pageUrl = RouteConstants.Demos_BootstrapIcons_Documentation;
+    private const string pageUrl = DemoRouteConstants.Demos_BootstrapIcons_Documentation;
     private const string pageTitle = "Bootstrap Icons";
     private const string pageDescription = "The <code>BootstrapIcon</code> component will display an icon from any icon font.";
     private const string metaTitle = "Blazor Bootstrap Icon Component";
