@@ -4,7 +4,6 @@ public partial class DemosMainLayout : MainLayoutBase
 {
     #region Fields and Constants
     
-    private bool isSidebarVisible = false;
     private HashSet<LinkGroup> linkGroups = new();
     private Menu menuRef = default!;
 
