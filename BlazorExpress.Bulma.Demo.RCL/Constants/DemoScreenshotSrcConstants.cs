@@ -6,6 +6,9 @@ public class DemoScreenshotSrcConstants
 
     public const string DemoScreenshotSrcPrefix = $"{DemoStringConstants.StaticAssets_Images_Path}/screenshots";
 
+    // Home
+    public const string Home = DemoScreenshotSrcPrefix + "/home.png";
+
     // Fetures
     public const string Skeleton = DemoScreenshotSrcPrefix + "/skeleton.png";
 
