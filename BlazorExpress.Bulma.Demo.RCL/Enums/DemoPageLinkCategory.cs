@@ -11,6 +11,9 @@ public enum DemoPageLinkCategory
     [Description("Features")]
     Features,
 
+    [Description("Icons")]
+    Icons,
+
     [Description("Elements")]
     Elements,
 

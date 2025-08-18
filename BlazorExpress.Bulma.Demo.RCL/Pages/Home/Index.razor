@@ -33,11 +33,11 @@
 
 <div class="p-5">
     <div class="container is-max-desktop">
-        <IndexComponentLinks Title="All Components" Category="@PageLinkCategory.All" />
+        <IndexComponentLinks Title="All Components" Category="@DemoPageLinkCategory.All" />
 
-        <IndexComponentLinks Title="Form Components" Category="@PageLinkCategory.Form" />
+        <IndexComponentLinks Title="Form Components" Category="@DemoPageLinkCategory.Form" />
 
-        <IndexComponentLinks Title="Icon Components" Category="@PageLinkCategory.Icons" />
+        <IndexComponentLinks Title="Icon Components" Category="@DemoPageLinkCategory.Icons" />
 
         <DoYouKnow />
         
@@ -72,7 +72,7 @@
         nugetUrl = $"{Configuration["urls:nuget"]}";
 
         allComponentsLinks = DemoPageLinkUtil.GetDemosLinks().Where(link => link.IsActive && link.Text != "Introduction").ToHashSet();
-        formComponentsLinks = DemoPageLinkUtil.GetDemosLinks().Where(link => link.IsActive && link.Categories.Contains(PageLinkCategory.Form)).ToHashSet();
-        iconComponentsLinks = DemoPageLinkUtil.GetDemosLinks().Where(link => link.IsActive && link.Categories.Contains(PageLinkCategory.Icons)).ToHashSet();
+        formComponentsLinks = DemoPageLinkUtil.GetDemosLinks().Where(link => link.IsActive && link.Categories.Contains(DemoPageLinkCategory.Form)).ToHashSet();
+        iconComponentsLinks = DemoPageLinkUtil.GetDemosLinks().Where(link => link.IsActive && link.Categories.Contains(DemoPageLinkCategory.Icons)).ToHashSet();
     }
 }
