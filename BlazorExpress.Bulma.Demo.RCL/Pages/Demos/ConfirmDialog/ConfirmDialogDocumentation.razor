@@ -20,10 +20,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(ConfirmDialog);
     private const string pageUrl = DemoRouteConstants.Demos_ConfirmDialog_Documentation;
-    private const string pageTitle = "Confirm Dialog";
-    private const string pageDescription = "Use <code>Confirm Dialog</code> component when you want the user to verify or accept something.";
-    private const string metaTitle = "Blazor Confirm Dialog Component";
-    private const string metaDescription = "Use Confirm Dialog component when you want the user to verify or accept something.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"Use <code>{componentName}</code> component when you want the user to verify or accept something.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"Use {componentName} component when you want the user to verify or accept something.";
+    private const string imageUrl = DemoScreenshotSrcConstants.ConfirmDialog;
 }

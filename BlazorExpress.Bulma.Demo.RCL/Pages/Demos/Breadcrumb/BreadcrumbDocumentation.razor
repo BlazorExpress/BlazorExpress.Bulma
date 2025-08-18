@@ -95,10 +95,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(Breadcrumb);
     private const string pageUrl = DemoRouteConstants.Demos_Breadcrumb_Documentation;
-    private const string pageTitle = "Breadcrumb";
-    private const string pageDescription = "The <code>Breadcrumb</code> component is a simple spacer tool. It allows sibling HTML elements to have a consistent margin between them.";
-    private const string metaTitle = "Blazor Breadcrumb Component";
-    private const string metaDescription = "The Breadcrumb component is a simple spacer tool. It allows sibling HTML elements to have a consistent margin between them.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component is a simple spacer tool. It allows sibling HTML elements to have a consistent margin between them.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component is a simple spacer tool. It allows sibling HTML elements to have a consistent margin between them.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Breadcrumb;
 }

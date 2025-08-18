@@ -38,10 +38,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(Notification);
     private const string pageUrl = DemoRouteConstants.Demos_Notification_Documentation;
-    private const string pageTitle = "Notification";
-    private const string pageDescription = "The <code>Notification</code> component is a simple colored block meant to draw the attention to the user about something. ";
-    private const string metaTitle = "Blazor Notification Component";
-    private const string metaDescription = "The Notification component is a simple colored block meant to draw the attention to the user about something. ";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component is a simple colored block meant to draw the attention to the user about something. ";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component is a simple colored block meant to draw the attention to the user about something. ";
+    private const string imageUrl = DemoScreenshotSrcConstants.Notification;
 }

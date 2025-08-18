@@ -24,7 +24,7 @@ public class DemoScreenshotSrcConstants
     public const string Image = DemoScreenshotSrcPrefix + "image.png";
     public const string Notification = DemoScreenshotSrcPrefix + "notification.png";
     public const string ProgressBar = DemoScreenshotSrcPrefix + "progress-bar.png";
-    public const string Tags = DemoScreenshotSrcPrefix + "tags.png";
+    public const string Tag = DemoScreenshotSrcPrefix + "tag.png";
 
     // Form
     public const string DateInput = DemoScreenshotSrcPrefix + "date-input.png";

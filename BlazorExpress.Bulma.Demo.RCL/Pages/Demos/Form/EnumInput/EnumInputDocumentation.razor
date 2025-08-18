@@ -83,10 +83,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(EnumInput);
     private const string pageUrl = DemoRouteConstants.Demos_Form_EnumInput_Documentation;
-    private const string pageTitle = "EnumInput";
-    private const string pageDescription = "The <code>EnumInput</code> component is used to show enum values in a dropdown list. It is a simple and effective way to allow users to select from a predefined set of options.";
-    private const string metaTitle = "Blazor EnumInput Component";
-    private const string metaDescription = "The EnumInput component is used to show enum values in a dropdown list. It is a simple and effective way to allow users to select from a predefined set of options.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component is used to show enum values in a dropdown list. It is a simple and effective way to allow users to select from a predefined set of options.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component is used to show enum values in a dropdown list. It is a simple and effective way to allow users to select from a predefined set of options.";
+    private const string imageUrl = DemoScreenshotSrcConstants.EnumInput;
 }

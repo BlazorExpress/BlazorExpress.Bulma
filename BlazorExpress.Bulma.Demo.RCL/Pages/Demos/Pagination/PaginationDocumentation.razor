@@ -32,10 +32,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(Pagination);
     private const string pageUrl = DemoRouteConstants.Demos_Pagination_Documentation;
-    private const string pageTitle = "Pagination";
-    private const string pageDescription = "A <code>Pagination</code> component is used to indicate that a series of related content exists across multiple pages.";
-    private const string metaTitle = "Blazor Pagination Component";
-    private const string metaDescription = "A Pagination component is used to indicate that a series of related content exists across multiple pages.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"A <code>{componentName}</code> component is used to indicate that a series of related content exists across multiple pages.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"A {componentName} component is used to indicate that a series of related content exists across multiple pages.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Pagination;
 }

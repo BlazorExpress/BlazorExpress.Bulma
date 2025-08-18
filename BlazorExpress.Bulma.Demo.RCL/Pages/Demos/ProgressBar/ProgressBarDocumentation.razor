@@ -40,10 +40,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(ProgressBar);
     private const string pageUrl = DemoRouteConstants.Demos_ProgressBar_Documentation;
-    private const string pageTitle = "Progress Bar";
-    private const string pageDescription = "The <code>Progress Bar</code> component is constructed using native <code><progress></code> HTML element.";
-    private const string metaTitle = "Blazor Progress Bar Component";
-    private const string metaDescription = "The Progress Bar component is constructed using native <progress> HTML element.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component is constructed using native <code><progress></code> HTML element.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component is constructed using native <progress> HTML element.";
+    private const string imageUrl = DemoScreenshotSrcConstants.ProgressBar;
 }

@@ -51,11 +51,12 @@
     <Demo Type="typeof(GoogleFontIcon_Demo_99_All_Icons)" Tabs="true" />
 </Section>
 
-@code{
+@code {
+    private const string componentName = nameof(GoogleFontIcon);
     private const string pageUrl = DemoRouteConstants.Demos_GoogleFontIcons_Documentation;
-    private const string pageTitle = "Google Font Icons";
-    private const string pageDescription = "The <code>GoogleFontIcon</code> component will display Google Material Symbols.";
-    private const string metaTitle = "Blazor Icon Component";
-    private const string metaDescription = "The GoogleFontIcon component will display Google Material Symbols.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component will display Google Material Symbols.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component will display Google Material Symbols.";
+    private const string imageUrl = DemoScreenshotSrcConstants.GoogleFontIcon;
 }

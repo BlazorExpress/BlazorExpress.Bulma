@@ -133,10 +133,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(Tabs);
     private const string pageUrl = DemoRouteConstants.Demos_Tabs_Documentation;
-    private const string pageTitle = "Tabs";
-    private const string pageDescription = "Documentation and examples for how to use <b>Tabs</b> component.";
-    private const string metaTitle = "Blazor Tabs Component";
-    private const string metaDescription = "Documentation and examples for how to use Tabs component.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"Documentation and examples for how to use <b>{componentName}</b> component.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"Documentation and examples for how to use {componentName} component.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Tabs;
 }

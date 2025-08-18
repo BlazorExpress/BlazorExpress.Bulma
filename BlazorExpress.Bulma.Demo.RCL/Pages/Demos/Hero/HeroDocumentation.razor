@@ -15,11 +15,12 @@
     <Demo Type="typeof(Hero_Demo_01_How_it_works)" Tabs="true" />
 </Section>
 
-@code{
+@code {
+    private const string componentName = nameof(Hero);
     private const string pageUrl = DemoRouteConstants.Demos_Hero_Documentation;
-    private const string pageTitle = "Hero";
-    private const string pageDescription = "The <code>Hero</code> component allows you to add a full-width banner to your webpage. Optionally, it can also span the full height of the page. Create an imposing hero banner to showcase your content.";
-    private const string metaTitle = "Blazor Hero Component";
-    private const string metaDescription = "The Hero component allows you to add a full-width banner to your webpage. Optionally, it can also span the full height of the page. Create an imposing hero banner to showcase your content.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component allows you to add a full-width banner to your webpage. Optionally, it can also span the full height of the page. Create an imposing hero banner to showcase your content.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component allows you to add a full-width banner to your webpage. Optionally, it can also span the full height of the page. Create an imposing hero banner to showcase your content.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Hero;
 }

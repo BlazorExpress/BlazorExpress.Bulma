@@ -57,10 +57,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(ScriptLoader);
     private const string pageUrl = DemoRouteConstants.Demos_ScriptLoader_Documentation;
-    private const string pageTitle = "Script Loader";
-    private const string pageDescription = "Documentation and examples for using the <code>Script Loader</code> component.";
-    private const string metaTitle = "Blazor Script Loader Component";
-    private const string metaDescription = "Documentation and examples for using the Script Loader component.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"Documentation and examples for using the <code>{componentName}</code> component.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"Documentation and examples for using the {componentName} component.";
+    private const string imageUrl = DemoScreenshotSrcConstants.ScriptLoader;
 }

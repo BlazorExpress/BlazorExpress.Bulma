@@ -52,10 +52,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(BootstrapIcon);
     private const string pageUrl = DemoRouteConstants.Demos_BootstrapIcons_Documentation;
-    private const string pageTitle = "Bootstrap Icons";
-    private const string pageDescription = "The <code>BootstrapIcon</code> component will display an icon from any icon font.";
-    private const string metaTitle = "Blazor Bootstrap Icon Component";
-    private const string metaDescription = "The Bootstrap Icon component will display an icon from any icon font.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component will display an icon from any icon font.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component will display an icon from any icon font.";
+    private const string imageUrl = DemoScreenshotSrcConstants.BootstrapIcon;
 }
