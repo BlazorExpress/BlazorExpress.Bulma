@@ -4,6 +4,9 @@ public static class DemoStringConstants
 {
     #region Fields and Constants
 
+    public const string NugetPackageName = "BlazorExpress.Bulma";
+    public const string NugetPackageDisplayName = "BlazorExpress Bulma";
+
     public const string PageTitle_Suffix = " | Blazor Bulma: An enterprise-grade open-source component library from the Blazor Express team.";
 
     public const string StaticAssets_RootPath = "_content/BlazorExpress.Bulma.Demo.RCL";
