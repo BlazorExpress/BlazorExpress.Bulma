@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorExpress.Bulma.Demo.We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorExpress.Bulma.Demo.Server", "BlazorExpress.Bulma.Demo.Server\BlazorExpress.Bulma.Demo.Server.csproj", "{576EB613-772F-4852-8256-78C5F18EB2E4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demos", "demos", "{9A9EF042-62AA-4ED1-93BD-6A4E96177912}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +40,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BF6A6768-711F-4421-B241-BDD272E1F40D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{97AD3AEC-E189-42EA-BBE5-0B3C00666452} = {9A9EF042-62AA-4ED1-93BD-6A4E96177912}
+		{FBF6F3A1-B00A-4FF8-B018-44159EF3576C} = {9A9EF042-62AA-4ED1-93BD-6A4E96177912}
+		{576EB613-772F-4852-8256-78C5F18EB2E4} = {9A9EF042-62AA-4ED1-93BD-6A4E96177912}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {362D814E-6297-4A48-A562-D870C80DCE4A}
