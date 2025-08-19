@@ -70,10 +70,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(GoogleMap);
     private const string pageUrl = DemoRouteConstants.Demos_GoogleMaps_Documentation;
-    private const string pageTitle = "Google Map";
-    private const string pageDescription = "<code>Google Map</code> component will create maps to show locations anywhere in the world using the Google JavaScript API.";
-    private const string metaTitle = "Blazor Google Map Component";
-    private const string metaDescription = "Google Map component will create maps to show locations anywhere in the world using the Google JavaScript API.";
-    private const string imageUrl = "https://i.imgur.com/AbyDP51.png";
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"<code>{componentName}</code> component will create maps to show locations anywhere in the world using the Google JavaScript API.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"{componentName} component will create maps to show locations anywhere in the world using the Google JavaScript API.";
+    private const string imageUrl = DemoScreenshotSrcConstants.GoogleMap;
 }

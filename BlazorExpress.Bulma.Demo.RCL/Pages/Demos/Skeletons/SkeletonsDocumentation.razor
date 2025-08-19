@@ -71,11 +71,12 @@
 </Section> *@
 
 @code {
+    private const string componentName = nameof(Skeleton);
     private const string pageUrl = DemoRouteConstants.Demos_Skeletons_Documentation;
     private const string pageUrl2 = DemoRouteConstants.Demos_Prefix;
-    private const string pageTitle = "Skeleton";
-    private const string pageDescription = "A <code>Skeleton</code> component is a loading state that acts as a placeholder for content within an interface.";
-    private const string metaTitle = "Blazor Skeleton Component";
-    private const string metaDescription = "A Skeleton component is a loading state that acts as a placeholder for content within an interface.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"A <code>{componentName}</code> component is a loading state that acts as a placeholder for content within an interface.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"A {componentName} component is a loading state that acts as a placeholder for content within an interface.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Skeleton;
 }

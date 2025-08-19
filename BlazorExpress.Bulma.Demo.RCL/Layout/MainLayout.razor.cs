@@ -2,6 +2,13 @@
 
 public partial class MainLayout : MainLayoutBase
 {
+    #region Fields and Constants
+
+    private bool isSidebarVisible = false;
+    private Menu menuRef = default!;
+
+    #endregion
+
     #region Methods
 
     protected override async Task OnAfterRenderAsync(bool firstRender)

@@ -4,4 +4,4 @@ global using BlazorExpress.Bulma.Docx;
 global using Microsoft.AspNetCore.Components;
 global using Microsoft.Extensions.Configuration;
 global using Microsoft.JSInterop;
-global using System.Reflection;
+global using System.ComponentModel;

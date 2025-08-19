@@ -25,10 +25,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(Box);
     private const string pageUrl = DemoRouteConstants.Demos_Box_Documentation;
-    private const string pageTitle = "Box";
-    private const string pageDescription = "The <code>Box</code> component is a simple container with a white background, some padding, and a box shadow.";
-    private const string metaTitle = "Blazor Box Component";
-    private const string metaDescription = "The Box component is a simple container with a white background, some padding, and a box shadow.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component is a simple container with a white background, some padding, and a box shadow.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component is a simple container with a white background, some padding, and a box shadow.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Box;
 }

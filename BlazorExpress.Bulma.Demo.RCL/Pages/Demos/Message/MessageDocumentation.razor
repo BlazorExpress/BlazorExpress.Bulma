@@ -50,10 +50,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(Message);
     private const string pageUrl = DemoRouteConstants.Demos_Message_Documentation;
-    private const string pageTitle = "Message";
-    private const string pageDescription = "The <code>Message</code> component is a simple, colored message block used to emphasize part of your page.";
-    private const string metaTitle = "Blazor Message Component";
-    private const string metaDescription = "The Message component is a simple, colored message block used to emphasize part of your page.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component is a simple, colored message block used to emphasize part of your page.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component is a simple, colored message block used to emphasize part of your page.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Message;
 }

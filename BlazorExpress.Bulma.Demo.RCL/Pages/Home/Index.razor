@@ -33,11 +33,11 @@
 
 <div class="p-5">
     <div class="container is-max-desktop">
-        <IndexComponentLinks Title="All Components" Category="@PageLinkCategory.All" />
+        <IndexComponentLinks Title="All Components" Category="@DemoPageLinkCategory.All" />
 
-        <IndexComponentLinks Title="Form Components" Category="@PageLinkCategory.Form" />
+        <IndexComponentLinks Title="Form Components" Category="@DemoPageLinkCategory.Form" />
 
-        <IndexComponentLinks Title="Icon Components" Category="@PageLinkCategory.Icons" />
+        <IndexComponentLinks Title="Icon Components" Category="@DemoPageLinkCategory.Icons" />
 
         <DoYouKnow />
         
@@ -47,11 +47,11 @@
 
 @code {
     private const string pageUrl = "/";
-    private const string pageTitle = "BlazorExpress Bulma Components <br /> Fast, Free & Open Source";
-    private const string pageDescription = "Get started with BlazorExpress Bulma. Build high-performance, responsive Blazor apps quickly with our free, open-source UI library. Developers, build in minutes!";
-    private const string metaTitle = "BlazorExpress Bulma Components: Fast, Free & Open Source";
-    private const string metaDescription = "Get started with BlazorExpress Bulma. Build high-performance, responsive Blazor apps quickly with our free, open-source UI library. Developers, build in minutes!";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = $"{DemoStringConstants.NugetPackageName} Components <br /> Fast, Free & Open Source";
+    private const string pageDescription = $"Get started with {DemoStringConstants.NugetPackageDisplayName}. Build high-performance, responsive Blazor apps quickly with our free, open-source UI library. Developers, build in minutes!";
+    private const string metaTitle = $"{DemoStringConstants.NugetPackageName} Components: Fast, Free & Open Source";
+    private const string metaDescription = $"Get started with {DemoStringConstants.NugetPackageDisplayName}. Build high-performance, responsive Blazor apps quickly with our free, open-source UI library. Developers, build in minutes!";
+    private const string imageUrl = DemoScreenshotSrcConstants.Home;
 
     private string version = default!;
     private string releaseShortDescription = default!;
@@ -71,8 +71,8 @@
         githubUrl = $"{Configuration["urls:github"]}";
         nugetUrl = $"{Configuration["urls:nuget"]}";
 
-        allComponentsLinks = PageLinkUtil.GetDemosLinks().Where(link => link.IsActive && link.Text != "Introduction").ToHashSet();
-        formComponentsLinks = PageLinkUtil.GetDemosLinks().Where(link => link.IsActive && link.Categories.Contains(PageLinkCategory.Form)).ToHashSet();
-        iconComponentsLinks = PageLinkUtil.GetDemosLinks().Where(link => link.IsActive && link.Categories.Contains(PageLinkCategory.Icons)).ToHashSet();
+        allComponentsLinks = DemoPageLinkUtil.GetDemosLinks().Where(link => link.IsActive && link.Text != "Introduction").ToHashSet();
+        formComponentsLinks = DemoPageLinkUtil.GetDemosLinks().Where(link => link.IsActive && link.Categories.Contains(DemoPageLinkCategory.Form)).ToHashSet();
+        iconComponentsLinks = DemoPageLinkUtil.GetDemosLinks().Where(link => link.IsActive && link.Categories.Contains(DemoPageLinkCategory.Icons)).ToHashSet();
     }
 }

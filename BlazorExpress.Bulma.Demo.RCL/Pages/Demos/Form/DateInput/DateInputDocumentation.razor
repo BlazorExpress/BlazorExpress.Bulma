@@ -55,10 +55,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(DateInput);
     private const string pageUrl = DemoRouteConstants.Demos_Form_DateInput_Documentation;
-    private const string pageTitle = "DateInput";
-    private const string pageDescription = "The <code>DateInput</code> component is constructed using an HTML input of type 'date' which limits user input based on pre-defined parameters. This component enables users to input a date using a text box with validation or a special date picker interface";
-    private const string metaTitle = "Blazor DateInput Component";
-    private const string metaDescription = "The DateInput component is constructed using an HTML input of type 'date' which limits user input based on pre-defined parameters. This component enables users to input a date using a text box with validation or a special date picker interface";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component is constructed using an HTML input of type 'date' which limits user input based on pre-defined parameters. This component enables users to input a date using a text box with validation or a special date picker interface";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component is constructed using an HTML input of type 'date' which limits user input based on pre-defined parameters. This component enables users to input a date using a text box with validation or a special date picker interface";
+    private const string imageUrl = DemoScreenshotSrcConstants.DateInput;
 }

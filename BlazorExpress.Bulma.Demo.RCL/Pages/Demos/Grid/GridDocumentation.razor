@@ -27,7 +27,7 @@
     <Demo Type="typeof(Grid_Demo_04_Sorting)" Tabs="true" />
 </Section>
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Filters" PageUrl="@pageUrl" Link="filters">
+@* <Section Class="p-0" Size="HeadingSize.H3" Name="Filters" PageUrl="@pageUrl" Link="filters">
     <div>TODO: Add demo</div>
 </Section>
 
@@ -41,7 +41,7 @@
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Nested grid" PageUrl="@pageUrl" Link="nested-grid">
     <div>TODO: Add demo</div>
-</Section>
+</Section> *@
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Footer template" PageUrl="@pageUrl" Link="footer-template">
 </Section>
@@ -58,7 +58,7 @@
     <Demo Type="typeof(Grid_Demo_12_Loading_template)" Tabs="true" />
 </Section>
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Set row height" PageUrl="@pageUrl" Link="set-row-height">
+@* <Section Class="p-0" Size="HeadingSize.H3" Name="Set row height" PageUrl="@pageUrl" Link="set-row-height">
     <div>TODO: Add demo</div>
 </Section>
 
@@ -80,13 +80,14 @@
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="B) Cell formating" PageUrl="@pageUrl" Link="cell-formating">
     <div>TODO: Add demo</div>
-</Section>
+</Section> *@
 
 @code {
+    private const string componentName = nameof(Grid);
     private const string pageUrl = DemoRouteConstants.Demos_Grid_Documentation;
-    private const string pageTitle = "Grid";
-    private const string pageDescription = "Use <code>Grid</code> component to display tabular data from the data source. And it supports client-side and server-side filtering, paging, and sorting.";
-    private const string metaTitle = "Blazor Grid Component";
-    private const string metaDescription = "Use Grid component to display tabular data from the data source. And it supports client-side and server-side filtering, paging, and sorting.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"Use <code>{componentName}</code> component to display tabular data from the data source. And it supports client-side and server-side filtering, paging, and sorting.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"Use {componentName} component to display tabular data from the data source. And it supports client-side and server-side filtering, paging, and sorting.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Grid;
 }
