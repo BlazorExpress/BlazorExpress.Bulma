@@ -26,10 +26,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(Message);
     private const string pageUrl = DemoRouteConstants.Docs_Message_Documentation;
-    private const string pageTitle = "Message";
-    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>Message</code> component, guiding you through its configuration options.";
-    private const string metaTitle = "Blazor Message Component";
-    private const string metaDescription = "This documentation provides a comprehensive reference for the Message component, guiding you through its configuration options.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component, guiding you through its configuration options.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component, guiding you through its configuration options.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Message;
 }

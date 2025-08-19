@@ -62,7 +62,7 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.PersonSquare, Href = DemoRouteConstants.Demos_GoogleFontIcons_Documentation, Text = "Google Font Icons", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Icons }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Map, Href = DemoRouteConstants.Demos_GoogleMaps_Documentation, Text = "Google Maps", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = true });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Map, Href = DemoRouteConstants.Demos_GoogleMap_Documentation, Text = "Google Maps", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Grid3X2, Href = DemoRouteConstants.Demos_Grid_Documentation, Text = "Grid", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = true });

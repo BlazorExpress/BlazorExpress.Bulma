@@ -26,12 +26,13 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(EnumInput);
     private const string pageUrl = DemoRouteConstants.Docs_Form_EnumInput_Documentation;
-    private const string pageTitle = "EnumInput";
-    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>EnumInput</code> component, guiding you through its configuration options.";
-    private const string metaTitle = "Blazor EnumInput Component";
-    private const string metaDescription = "This documentation provides a comprehensive reference for the EnumInput component, guiding you through its configuration options.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component, guiding you through its configuration options.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component, guiding you through its configuration options.";
+    private const string imageUrl = DemoScreenshotSrcConstants.EnumInput;
 
     public enum TEnum{}; // Added for documentation purposes only
 }

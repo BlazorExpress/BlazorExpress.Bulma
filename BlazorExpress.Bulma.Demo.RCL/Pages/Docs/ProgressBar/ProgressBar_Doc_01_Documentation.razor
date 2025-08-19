@@ -18,10 +18,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(ProgressBar);
     private const string pageUrl = DemoRouteConstants.Docs_ProgressBar_Documentation;
-    private const string pageTitle = "Progress Bar";
-    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>ProgressBar</code> component, guiding you through its configuration options.";
-    private const string metaTitle = "Blazor Progress Bar Component";
-    private const string metaDescription = "This documentation provides a comprehensive reference for the ProgressBar component, guiding you through its configuration options.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component, guiding you through its configuration options.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component, guiding you through its configuration options.";
+    private const string imageUrl = DemoScreenshotSrcConstants.ProgressBar;
 }

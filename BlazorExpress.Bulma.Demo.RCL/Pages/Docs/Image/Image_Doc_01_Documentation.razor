@@ -18,10 +18,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(Image);
     private const string pageUrl = DemoRouteConstants.Docs_Image_Documentation;
-    private const string pageTitle = "Block";
-    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>Image</code> component, guiding you through its configuration options.";
-    private const string metaTitle = "Blazor Block Component";
-    private const string metaDescription = "This documentation provides a comprehensive reference for the Image component, guiding you through its configuration options.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component, guiding you through its configuration options.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component, guiding you through its configuration options.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Image;
 }

@@ -11,7 +11,7 @@
 
 @* <img src="https://i.imgur.com/IX3bajc.png" class="img-fluid" alt="Blazor Bar Chart - API Documentation" /> *@
 
-<DemoLink Href="@DemoRouteConstants.Demos_GoogleMaps_Documentation" />
+<DemoLink Href="@DemoRouteConstants.Demos_GoogleMap_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Parameters" PageUrl="@pageUrl" Link="parameters">
     <DocxTable TItem="GoogleMap" DocType="DocType.Parameters" />
@@ -26,10 +26,11 @@
 </Section>
 
 @code {
-    private const string pageUrl = DemoRouteConstants.Docs_GoogleMaps_Documentation;
-    private const string pageTitle = "GoogleMap";
-    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>GoogleMap</code> component, guiding you through its configuration options.";
-    private const string metaTitle = "Blazor GoogleMap Component";
-    private const string metaDescription = "This documentation provides a comprehensive reference for the GoogleMap component, guiding you through its configuration options.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string componentName = nameof(GoogleMap);
+    private const string pageUrl = DemoRouteConstants.Docs_GoogleMap_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component, guiding you through its configuration options.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component, guiding you through its configuration options.";
+    private const string imageUrl = DemoScreenshotSrcConstants.GoogleMap;
 }

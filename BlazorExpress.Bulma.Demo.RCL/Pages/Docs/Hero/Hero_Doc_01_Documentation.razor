@@ -38,10 +38,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(Hero);
     private const string pageUrl = DemoRouteConstants.Docs_Hero_Documentation;
-    private const string pageTitle = "Hero";
-    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>Hero</code> component, guiding you through its configuration options.";
-    private const string metaTitle = "Blazor Hero Component";
-    private const string metaDescription = "This documentation provides a comprehensive reference for the Hero component, guiding you through its configuration options.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component, guiding you through its configuration options.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component, guiding you through its configuration options.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Hero;
 }
