@@ -1,0 +1,26 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_Navbar_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(Navbar_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+@code {
+    private const string componentName = nameof(Navbar);
+    private const string pageUrl = DemoRouteConstants.Demos_Navbar_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"Use <code>{componentName}</code> component enables the inclusion of dialog boxes for various purposes, including lightboxes, user notifications, and fully customized content displays.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component enables the inclusion of dialog boxes for various purposes, including lightboxes, user notifications, and fully customized content displays.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Navbar;
+}
