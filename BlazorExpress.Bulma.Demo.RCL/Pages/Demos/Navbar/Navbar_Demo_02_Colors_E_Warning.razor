@@ -1,0 +1,34 @@
+<Navbar Class="px-3" Color="NavbarColor.Warning">
+    <NavbarBrand>
+        <NavbarItem Href="/" IsHoverable="false">
+            <img src="https://bulma.blazorexpress.com/_content/BlazorExpress.Bulma.Demo.RCL/icons/logo.png" alt="BlazorExpress Bulma" />
+            <span class="ml-2 is-size-5 has-text-weight-bold">Bulma</span>
+        </NavbarItem>
+    </NavbarBrand>
+
+    <NavbarMenu Id="navbarBasicExample1">
+        <NavbarStart>
+            <NavbarItem Class="mr-1" Href="/">
+                <i class="bi bi-file-text-fill has-text-link mr-2"></i>Home
+            </NavbarItem>
+            <NavbarItem Class="mr-1" Href="/docs">
+                <i class="bi bi-display-fill has-text-primary mr-2"></i>Docs
+            </NavbarItem>
+
+            <NavbarItem Type="NavbarItemType.Div" HasDropdown="true">
+                <NavbarLink Class="be-bulma-theme-indicator">More</NavbarLink>
+                <NavbarDropdown Position="NavbarDropdownPosition.Right">
+                    <NavbarItem Class="be-bulma-theme-item is-clickable" Type="NavbarItemType.Link">About</NavbarItem>
+                    <NavbarItem Class="be-bulma-theme-item is-clickable my-1" Type="NavbarItemType.Link">Jobs</NavbarItem>
+                    <NavbarItem Class="be-bulma-theme-item is-clickable" Type="NavbarItemType.Link">Contact</NavbarItem>
+                </NavbarDropdown>
+            </NavbarItem>
+        </NavbarStart>
+        <NavbarEnd>
+            <Buttons Size="ButtonSize.Small">
+                <Button Color="ButtonColor.Warning" IsSoftVersion="true">Sign up</Button>
+                <Button Color="ButtonColor.Warning" IsLightVersion="true">Log in</Button>
+            </Buttons>
+        </NavbarEnd>
+    </NavbarMenu>
+</Navbar>

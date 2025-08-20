@@ -252,6 +252,22 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToNavbarColorClass(this NavbarColor color) =>
+        color switch
+        {
+            NavbarColor.Primary => BulmaCssClass.IsPrimary,
+            NavbarColor.Link => BulmaCssClass.IsLink,
+            NavbarColor.Info => BulmaCssClass.IsInfo,
+            NavbarColor.Success => BulmaCssClass.IsSuccess,
+            NavbarColor.Warning => BulmaCssClass.IsWarning,
+            NavbarColor.Danger => BulmaCssClass.IsDanger,
+            NavbarColor.White => BulmaCssClass.IsWhite,
+            NavbarColor.Light => BulmaCssClass.IsLight,
+            NavbarColor.Dark => BulmaCssClass.IsDark,
+            NavbarColor.Black => BulmaCssClass.IsBlack,
+            _ => null
+        };
+
     public static string? ToNavbarDropdownPositionClass(this NavbarDropdownPosition position) =>
         position switch
         {
