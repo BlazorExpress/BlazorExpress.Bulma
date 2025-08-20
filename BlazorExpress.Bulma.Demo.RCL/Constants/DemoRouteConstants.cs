@@ -51,7 +51,7 @@ public static class DemoRouteConstants
     public const string Demos_Card_Documentation = Demos_Prefix + "/card";
     public const string Demos_ConfirmDialog_Documentation = Demos_Prefix + "/confirm-dialog";
     public const string Demos_Dropdown_Documentation = Demos_Prefix + "/dropdown";
-    public const string Demos_GoogleMaps_Documentation = Demos_Prefix + "/google-maps";
+    public const string Demos_GoogleMap_Documentation = Demos_Prefix + "/google-maps";
     public const string Demos_Grid_Documentation = Demos_Prefix + "/grid";
     public const string Demos_Menu_Documentation = Demos_Prefix + "/menu";
     public const string Demos_Message_Documentation = Demos_Prefix + "/message";
@@ -125,7 +125,7 @@ public static class DemoRouteConstants
     public const string Docs_Card_Documentation = Docs_Prefix + "/card";
     public const string Docs_ConfirmDialog_Documentation = Docs_Prefix + "/confirm-dialog";
     public const string Docs_Dropdown_Documentation = Docs_Prefix + "/dropdown";
-    public const string Docs_GoogleMaps_Documentation = Docs_Prefix + "/google-maps";
+    public const string Docs_GoogleMap_Documentation = Docs_Prefix + "/google-maps";
     public const string Docs_Grid_Documentation = Docs_Prefix + "/grid";
     public const string Docs_Menu_Documentation = Docs_Prefix + "/menu";
     public const string Docs_Message_Documentation = Docs_Prefix + "/message";

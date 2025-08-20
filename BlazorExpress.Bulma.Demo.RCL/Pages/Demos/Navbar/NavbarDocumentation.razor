@@ -1,0 +1,73 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_Navbar_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(Navbar_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Primary" PageUrl="@pageUrl" Link="colors-primary">
+    <Demo Type="typeof(Navbar_Demo_02_Colors_A_Primary)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Link" PageUrl="@pageUrl" Link="colors-link">
+    <Demo Type="typeof(Navbar_Demo_02_Colors_B_Link)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Info" PageUrl="@pageUrl" Link="colors-info">
+    <Demo Type="typeof(Navbar_Demo_02_Colors_C_Info)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Success" PageUrl="@pageUrl" Link="colors-success">
+    <Demo Type="typeof(Navbar_Demo_02_Colors_D_Success)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Warning" PageUrl="@pageUrl" Link="colors-warning">
+    <Demo Type="typeof(Navbar_Demo_02_Colors_E_Warning)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Danger" PageUrl="@pageUrl" Link="colors-danger">
+    <Demo Type="typeof(Navbar_Demo_02_Colors_F_Danger)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Black" PageUrl="@pageUrl" Link="colors-black">
+    <Demo Type="typeof(Navbar_Demo_02_Colors_G_Black)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Dark" PageUrl="@pageUrl" Link="colors-dark">
+    <Demo Type="typeof(Navbar_Demo_02_Colors_H_Dark)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Light" PageUrl="@pageUrl" Link="colors-light">
+    <Demo Type="typeof(Navbar_Demo_02_Colors_I_Light)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="White" PageUrl="@pageUrl" Link="colors-white">
+    <Demo Type="typeof(Navbar_Demo_02_Colors_J_White)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Transparent" PageUrl="@pageUrl" Link="transparent">
+    <Demo Type="typeof(Navbar_Demo_99_Transparent)" Tabs="true" />
+</Section>
+
+@code {
+    private const string componentName = nameof(Navbar);
+    private const string pageUrl = DemoRouteConstants.Demos_Navbar_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"A responsive horizontal <code>{componentName}</code> that can support images, links, buttons, and dropdowns";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"A responsive horizontal {componentName} that can support images, links, buttons, and dropdowns";
+    private const string imageUrl = DemoScreenshotSrcConstants.Navbar;
+}

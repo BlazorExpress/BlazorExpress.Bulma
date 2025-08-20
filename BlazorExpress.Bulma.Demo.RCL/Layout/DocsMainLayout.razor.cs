@@ -105,10 +105,11 @@ public partial class DocsMainLayout : MainLayoutBase
             Links = [
                 new Link { Href = DemoRouteConstants.Docs_Breadcrumb_Documentation, Text = "Breadcrumb" },
                 new Link { Href = DemoRouteConstants.Docs_ConfirmDialog_Documentation, Text = "Confirm Dialog" },
-                new Link { Href = DemoRouteConstants.Docs_GoogleMaps_Documentation, Text = "Google Maps" },
+                new Link { Href = DemoRouteConstants.Docs_GoogleMap_Documentation, Text = "Google Maps" },
                 new Link { Href = DemoRouteConstants.Docs_Grid_Documentation, Text = "Grid" },
                 new Link { Href = DemoRouteConstants.Docs_Message_Documentation, Text = "Message" },
                 new Link { Href = DemoRouteConstants.Docs_Modal_Documentation, Text = "Modal" },
+                new Link { Href = DemoRouteConstants.Docs_Navbar_Documentation, Text = "Navbar" },
                 new Link { Href = DemoRouteConstants.Docs_Pagination_Documentation, Text = "Pagination" },
                 new Link { Href = DemoRouteConstants.Docs_ScriptLoader_Documentation, Text = "Script Loader" },
                 new Link { Href = DemoRouteConstants.Docs_Tabs_Documentation, Text = "Tabs" }

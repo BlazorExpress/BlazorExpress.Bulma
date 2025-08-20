@@ -42,12 +42,13 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(Grid);
     private const string pageUrl = DemoRouteConstants.Docs_Grid_Documentation;
-    private const string pageTitle = "Grid";
-    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>Grid</code> component, guiding you through its configuration options.";
-    private const string metaTitle = "Blazor Grid Component";
-    private const string metaDescription = "This documentation provides a comprehensive reference for the Grid component, guiding you through its configuration options.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component, guiding you through its configuration options.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component, guiding you through its configuration options.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Grid;
 
     public record TItem(); // Added for documentation purposes only
 }

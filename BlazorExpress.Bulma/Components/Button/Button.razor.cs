@@ -28,6 +28,7 @@ public partial class Button : BulmaComponentBase
             (Color.ToButtonColorClass(), true),
             (BulmaCssClass.IsLight, IsLightVersion),
             (BulmaCssClass.IsDark, IsDarkVersion),
+            (BulmaCssClass.IsSoft, IsSoftVersion),
             (Size.ToButtonSizeClass(), Size != ButtonSize.None),
             (BulmaCssClass.IsFullWidth, IsFullWidth),
             (BulmaCssClass.IsResponsive, IsResponsive),
@@ -195,6 +196,18 @@ public partial class Button : BulmaComponentBase
     [Description("If true, the skeleton variant will be enabled.")]
     [Parameter]
     public bool IsSkeleton { get; set; } = false;
+
+    /// <summary>
+    /// If true, the soft variant will be enabled.
+    /// <para>
+    /// The default value is <see langword="false" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If true, the soft variant will be enabled.")]
+    [Parameter]
+    public bool IsSoftVersion { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the size.

@@ -26,10 +26,11 @@
 </Section>
 
 @code {
+    private const string componentName = nameof(OTPInput);
     private const string pageUrl = DemoRouteConstants.Docs_Form_OTPInput_Documentation;
-    private const string pageTitle = "OTPInput";
-    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>OTPInput</code> component, guiding you through its configuration options.";
-    private const string metaTitle = "Blazor OTPInput Component";
-    private const string metaDescription = "This documentation provides a comprehensive reference for the OTPInput component, guiding you through its configuration options.";
-    private const string imageUrl = "https://i.imgur.com/FGgEMp6.jpg"; // TODO: update
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component, guiding you through its configuration options.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component, guiding you through its configuration options.";
+    private const string imageUrl = DemoScreenshotSrcConstants.OTPInput;
 }

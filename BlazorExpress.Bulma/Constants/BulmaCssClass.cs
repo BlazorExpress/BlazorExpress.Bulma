@@ -180,6 +180,7 @@ public static class BulmaCssClass
     public const string IsSize7 = "is-size-7";
     public const string IsSkeleton = "is-skeleton";
     public const string IsSmall = "is-small";
+    public const string IsSoft = "is-soft";
     public const string IsSpaced = "is-spaced";
     public const string IsSquare = "is-square";
     public const string IsStriped = "is-striped";
@@ -187,6 +188,7 @@ public static class BulmaCssClass
     public const string IsText = "is-text";
     public const string IsToggle = "is-toggle";
     public const string IsToggleRounded = "is-toggle-rounded";
+    public const string IsTransparent = "is-transparent";
     public const string IsResponsive = "is-responsive";
     public const string IsWarning = "is-warning";
     public const string IsWhite = "is-white";

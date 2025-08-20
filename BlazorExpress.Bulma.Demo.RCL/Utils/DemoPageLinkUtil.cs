@@ -62,7 +62,7 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.PersonSquare, Href = DemoRouteConstants.Demos_GoogleFontIcons_Documentation, Text = "Google Font Icons", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Icons }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Map, Href = DemoRouteConstants.Demos_GoogleMaps_Documentation, Text = "Google Maps", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = true });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Map, Href = DemoRouteConstants.Demos_GoogleMap_Documentation, Text = "Google Maps", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Grid3X2, Href = DemoRouteConstants.Demos_Grid_Documentation, Text = "Grid", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = true });
@@ -89,7 +89,7 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.WindowStack, Href = DemoRouteConstants.Demos_Modal_Documentation, Text = "Modal", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Navbar_Documentation, Text = "Navbar", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = false });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.CardHeading, Href = DemoRouteConstants.Demos_Navbar_Documentation, Text = "Navbar", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.New, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.ExclamationTriangleFill, Href = DemoRouteConstants.Demos_Notification_Documentation, Text = "Notification", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });

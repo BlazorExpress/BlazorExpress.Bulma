@@ -1,0 +1,56 @@
+@attribute [Route(pageUrl)]
+@layout DocsMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+@* <img src="https://i.imgur.com/IX3bajc.png" class="img-fluid" alt="Blazor Bar Chart - API Documentation" /> *@
+
+<DemoLink Href="@DemoRouteConstants.Demos_Navbar_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Navbar Parameters" PageUrl="@pageUrl" Link="parameters">
+    <DocxTable TItem="Navbar" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="NavbarBrand Parameters" PageUrl="@pageUrl" Link="parameters">
+    <DocxTable TItem="NavbarBrand" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="NavbarMenu Parameters" PageUrl="@pageUrl" Link="parameters">
+    <DocxTable TItem="NavbarMenu" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="NavbarStart Parameters" PageUrl="@pageUrl" Link="parameters">
+    <DocxTable TItem="NavbarStart" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="NavbarEnd Parameters" PageUrl="@pageUrl" Link="parameters">
+    <DocxTable TItem="NavbarEnd" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="NavbarItem Parameters" PageUrl="@pageUrl" Link="parameters">
+    <DocxTable TItem="NavbarItem" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="NavbarLink Parameters" PageUrl="@pageUrl" Link="parameters">
+    <DocxTable TItem="NavbarLink" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="NavbarDropdown Parameters" PageUrl="@pageUrl" Link="parameters">
+    <DocxTable TItem="NavbarDropdown" DocType="DocType.Parameters" />
+</Section>
+
+@code {
+    private const string componentName = nameof(Navbar);
+    private const string pageUrl = DemoRouteConstants.Docs_Navbar_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component, guiding you through its configuration options.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component, guiding you through its configuration options.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Navbar;
+}
