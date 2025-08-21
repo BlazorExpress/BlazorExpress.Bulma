@@ -4,17 +4,17 @@ public class DemoScreenshotSrcConstants
 {
     #region Fields and Constants
 
-    public const string DemoScreenshotSrcPrefix = $"{DemoStringConstants.StaticAssets_Images_Path}/screenshots";
+    public const string DemoScreenshotSrcPrefix = $"{DemoStringConstants.StaticAssets_Images_Path}/screenshots/";
 
     // Home
-    public const string Home = DemoScreenshotSrcPrefix + "/home.png";
+    public const string Home = DemoScreenshotSrcPrefix + "home.png";
 
     // Fetures
-    public const string Skeleton = DemoScreenshotSrcPrefix + "/skeleton.png";
+    public const string Skeleton = DemoScreenshotSrcPrefix + "skeleton.png";
 
     // Icons
-    public const string BootstrapIcon = DemoScreenshotSrcPrefix + "/bootstrap-icon.png";
-    public const string GoogleFontIcon = DemoScreenshotSrcPrefix + "/google-font-icon.png";
+    public const string BootstrapIcon = DemoScreenshotSrcPrefix + "bootstrap-icon.png";
+    public const string GoogleFontIcon = DemoScreenshotSrcPrefix + "google-font-icon.png";
 
     // Elements
     public const string Block = DemoScreenshotSrcPrefix  + "block.png";
