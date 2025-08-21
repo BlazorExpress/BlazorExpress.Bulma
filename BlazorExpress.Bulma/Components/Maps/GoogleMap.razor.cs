@@ -32,7 +32,7 @@ public partial class GoogleMap : BulmaComponentBase
     [Description("Adds a marker to the GoogleMap.")]
     public ValueTask AddMarkerAsync(GoogleMapMarker marker)
     {
-        JSRuntime.InvokeVoidAsync(GoogleMapInterop.AddMarker, Id, marker, objRef);
+        JSRuntime.InvokeVoidAsync(GoogleMapJsInterop.AddMarker, Id, marker, objRef);
 
         return ValueTask.CompletedTask;
     }
@@ -52,7 +52,7 @@ public partial class GoogleMap : BulmaComponentBase
     [Description("Refreshes the Google Maps component.")]
     public ValueTask RefreshAsync()
     {
-        JSRuntime.InvokeVoidAsync(GoogleMapInterop.Initialize, Id, Zoom, Center, Markers, Clickable, objRef);
+        JSRuntime.InvokeVoidAsync(GoogleMapJsInterop.Initialize, Id, Zoom, Center, Markers, Clickable, objRef);
 
         return ValueTask.CompletedTask;
     }
@@ -65,7 +65,7 @@ public partial class GoogleMap : BulmaComponentBase
     [Description("Updates the markers on the Google Map.")]
     public ValueTask UpdateMarkersAsync(IEnumerable<GoogleMapMarker> markers)
     {
-        JSRuntime.InvokeVoidAsync(GoogleMapInterop.UpdateMarkers, Id, markers, objRef);
+        JSRuntime.InvokeVoidAsync(GoogleMapJsInterop.UpdateMarkers, Id, markers, objRef);
 
         return ValueTask.CompletedTask;
     }
@@ -73,7 +73,7 @@ public partial class GoogleMap : BulmaComponentBase
     private void OnScriptLoad()
     {
         Console.WriteLine("OnScriptLoad called...");
-        Task.Run(async () => await JSRuntime.InvokeVoidAsync(GoogleMapInterop.Initialize, Id, Zoom, Center, Markers, Clickable, objRef));
+        Task.Run(async () => await JSRuntime.InvokeVoidAsync(GoogleMapJsInterop.Initialize, Id, Zoom, Center, Markers, Clickable, objRef));
     }
 
     #endregion

@@ -1,4 +1,4 @@
-<Block>
+@* <Block>
     This text is within a <strong>block</strong>.
 </Block>
 <Block>
@@ -7,3 +7,22 @@
 <Block>
     This text is within a <strong>third block</strong>. This block has no margin at the bottom.
 </Block>
+ *@
+
+
+<p>@eventLog</p>
+
+<PdfViewer Class="mb-3"
+           Url="https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf"
+           OnDocumentLoaded="OnDocumentLoaded"
+           OnPageChanged="OnPageChanged" />
+
+@code {
+    private string eventLog { get; set; } = $"Last event: ..., CurrentPage: 0, TotalPages: 0";
+
+    private void OnDocumentLoaded(PdfViewerEventArgs args)
+        => eventLog = $"Last event: OnDocumentLoaded, CurrentPage: {args.CurrentPage}, TotalPages: {args.TotalPages}";
+
+    private void OnPageChanged(PdfViewerEventArgs args)
+        => eventLog = $"Last event: OnPageChanged, CurrentPage: {args.CurrentPage}, TotalPages: {args.TotalPages}";
+}

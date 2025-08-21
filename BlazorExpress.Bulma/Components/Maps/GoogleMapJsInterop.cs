@@ -1,6 +1,6 @@
 ﻿namespace BlazorExpress.Bulma;
 
-public class GoogleMapInterop
+public class GoogleMapJsInterop
 {
     #region Fields and Constants
 

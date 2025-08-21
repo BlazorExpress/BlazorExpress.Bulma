@@ -1,0 +1,43 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+
+<div class="@ClassNames" style="@StyleNames">
+    <div class="d-flex justify-content-between bg-body-tertiary py-2 px-2">
+        <div class="d-flex align-items-center">
+            <BootstrapIcon Name="BootstrapIconName.ChevronUp" Size="BootstrapIconSize.XLarge" @onclick="PreviousPageAsync" title="Previous Page" />
+            <BootstrapIcon Name="BootstrapIconName.ChevronDown" Size="BootstrapIconSize.XLarge" @onclick="NextPageAsync" title="Next Page" />
+            @* <NumberInput Class="form-control-sm text-center" TValue="int" Style="width:60px;" Value="@pageNumber" ValueExpression="() => pageNumber" ValueChanged="(value) => PageNumberChangedAsync(value)" Placeholder="Enter page number" /> *@
+            <div class="pl-2">of @pagesCount</div>
+            <div class="pl-2">of @pagesCount</div>
+        </div>
+        <div class="d-flex align-items-center">
+            <BootstrapIcon Name="BootstrapIconName.Dash" Size="BootstrapIconSize.XLarge" @onclick="ZoomOutAsync" title="Zoom Out" />
+            <span class="badge rounded-pill text-bg-light me-2">@zoomPercentage</span>
+            <BootstrapIcon Name="BootstrapIconName.Plus" Size="BootstrapIconSize.XLarge" @onclick="ZoomInAsync" title="Zoom In" />
+        </div>
+        <div class="d-flex align-items-center">
+            @* <Tooltip Class="me-2" Title="Print" role="button">
+                <Icon Name="IconName.Printer" Size="IconSize.x5" @onclick="PrintAsync" />
+            </Tooltip> *@
+            <div class="dropdown">
+                <i class="bi bi-three-dots-vertical fs-5 dropdown-toggle pdf-viewer-dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                </i>
+                <ul class="dropdown-menu">
+                    <li><span class="dropdown-item d-flex align-items-center" role="button" @onclick="RotateClockwiseAsync"><BootstrapIcon Class="mx-2" Name="BootstrapIconName.ArrowClockwise" Size="BootstrapIconSize.XLarge" /> Rotate Clockwise</span></li>
+                    <li><span class="dropdown-item d-flex align-items-center" role="button" @onclick="RotateCounterclockwiseAsync"><BootstrapIcon Class="mx-2" Name="BootstrapIconName.ArrowCounterclockwise" Size="BootstrapIconSize.XLarge" /> Rotate Counterclockwise</span></li>
+                    <li><span class="dropdown-item d-flex align-items-center" role="button" @onclick="SwitchOrientationAsync"><BootstrapIcon Class="mx-2" Name="BootstrapIconName.Compass" Size="BootstrapIconSize.XLarge" /> Switch Orientation</span></li>
+                    <li><span class="dropdown-item d-flex align-items-center" role="button" @onclick="FirstPageAsync"><BootstrapIcon Class="mx-2" Name="BootstrapIconName.ChevronBarUp" Size="BootstrapIconSize.XLarge" /> Go to First Page</span></li>
+                    <li><span class="dropdown-item d-flex align-items-center" role="button" @onclick="LastPageAsync"><BootstrapIcon Class="mx-2" Name="BootstrapIconName.ChevronBarDown" Size="BootstrapIconSize.XLarge" /> Go to Last Page</span></li>
+                    <li><span class="dropdown-item d-flex align-items-center" role="button" @onclick="ResetZoomAsync"><BootstrapIcon Class="mx-2" Name="BootstrapIconName.PlusSlashMinus" Size="BootstrapIconSize.XLarge" /> Reset Zoom</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-secondary-subtle text-center py-3 overflow-auto">
+        <canvas @ref="@Element"
+                id="@Id"
+                @attributes="@AdditionalAttributes">
+        </canvas>
+    </div>
+</div>

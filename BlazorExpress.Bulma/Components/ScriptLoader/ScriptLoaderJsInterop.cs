@@ -1,6 +1,6 @@
 ﻿namespace BlazorExpress.Bulma;
 
-public class ScriptLoaderInterop
+public class ScriptLoaderJsInterop
 {
     #region Fields and Constants
 
