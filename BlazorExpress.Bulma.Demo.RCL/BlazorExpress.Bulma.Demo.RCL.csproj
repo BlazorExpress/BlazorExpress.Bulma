@@ -17,6 +17,11 @@
     <None Include="Pages\Docs\GettingStarted\net8\02_A_Manual_Install_04_Snippet.razor" />
     <Compile Remove="Pages\Docs\GettingStarted\net8\02_A_Manual_Install_05_Snippet.cs" />
     <Content Include="Pages\Docs\GettingStarted\net8\02_A_Manual_Install_05_Snippet.cs" />
+    <!-- Icons -->
+    <Content Remove="Pages\Docs\Icons\BootstrapIcons\BootstrapIcons_Install_Snippet.razor" />
+    <Content Include="Pages\Docs\Icons\BootstrapIcons\BootstrapIcons_Install_Snippet.razor" />
+    <Content Remove="Pages\Docs\Icons\GoogleFontIcons\GoogleFontIcons_Install_Snippet.razor" />
+    <Content Include="Pages\Docs\Icons\GoogleFontIcons\GoogleFontIcons_Install_Snippet.razor" />
   </ItemGroup>
 
   <ItemGroup>
