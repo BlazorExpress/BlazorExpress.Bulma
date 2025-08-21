@@ -9,9 +9,11 @@
     </SubTitleTemplate>
 </PageHero>
 
-@* <img src="https://i.imgur.com/IX3bajc.png" class="img-fluid" alt="Blazor Bar Chart - API Documentation" /> *@
-
 <DemoLink Href="@DemoRouteConstants.Demos_Form_EnumInput_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Screenshot" PageUrl="@pageUrl" Link="screenshot">
+    <img src="@imageUrl" class="img-fluid" alt="@metaTitle" />
+</Section>
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Parameters" PageUrl="@pageUrl" Link="parameters">
     <DocxTable TItem="EnumInput<TEnum>" DocType="DocType.Parameters" />
