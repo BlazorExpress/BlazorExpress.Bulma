@@ -18,7 +18,11 @@ public partial class Dropdown : BulmaComponentBase
 
     #region Methods
 
-    private void OnClick() => isActive = !isActive;
+    private void OnClick()
+    {
+        if (!IsHoverable)
+            isActive = !isActive;
+    }
 
     #endregion
 
@@ -28,7 +32,8 @@ public partial class Dropdown : BulmaComponentBase
         BuildClassNames(
             Class,
             (BulmaCssClass.Dropdown, true),
-            (BulmaCssClass.IsActive, IsActive),
+            (BulmaCssClass.IsActive, !IsHoverable && IsActive),
+            (BulmaCssClass.IsHoverable, IsHoverable),
             (BulmaCssClass.IsRight, IsRight),
             (BulmaCssClass.IsUp, IsUp)
         );
@@ -74,6 +79,18 @@ public partial class Dropdown : BulmaComponentBase
         get => isActive;
         set => isActive = value;
     }
+
+    /// <summary>
+    /// If <see langword="true"/>, the dropdown will be activated on hover.
+    /// <para>
+    /// Default value is <see langword="false" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If <b>true</b>, the <code>Dropdown</code> will be activated on hover.")]
+    [Parameter]
+    public bool IsHoverable { get; set; }
 
     /// <summary>
     /// If <see langword="true"/>, the dropdown menu will be aligned to the right side of its parent.
