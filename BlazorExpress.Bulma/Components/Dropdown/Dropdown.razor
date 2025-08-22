@@ -2,10 +2,26 @@
 @inherits BulmaComponentBase
 
 <div @ref="@Element" 
-    id="@Id" 
-    class="@ClassNames" 
-    style="@StyleNames" 
-    @attributes="@AdditionalAttributes"
-    @onclick="OnClick">
-    @ChildContent
+     id="@Id" 
+     class="@ClassNames" 
+     style="@StyleNames" 
+     @attributes="@AdditionalAttributes"
+     @onclick="OnClick">
+    
+    @if(DropdownTrigger is not null)
+    {
+        <div class="dropdown-trigger">
+            @DropdownTrigger
+        </div>
+    }
+
+    @if(DropdownContent is not null)
+    {
+        <div class="dropdown-menu" id="@dropdownContentId" role="menu">
+            <div class="dropdown-content">
+                @DropdownContent
+            </div>
+        </div>
+    }
+
 </div>

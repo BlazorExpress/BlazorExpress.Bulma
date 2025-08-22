@@ -199,6 +199,7 @@ public static class BulmaCssClass
     public const string IsToggleRounded = "is-toggle-rounded";
     public const string IsTransparent = "is-transparent";
     public const string IsResponsive = "is-responsive";
+    public const string IsUp = "is-up";
     public const string IsWarning = "is-warning";
     public const string IsWhite = "is-white";
 

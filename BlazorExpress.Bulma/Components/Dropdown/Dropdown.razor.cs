@@ -10,6 +10,8 @@ public partial class Dropdown : BulmaComponentBase
 {
     #region Fields and Constants
 
+    private string dropdownContentId => IdUtility.GetNextId();
+
     private bool isActive;
 
     #endregion
@@ -26,21 +28,36 @@ public partial class Dropdown : BulmaComponentBase
         BuildClassNames(
             Class,
             (BulmaCssClass.Dropdown, true),
-            (BulmaCssClass.IsActive, IsActive)
+            (BulmaCssClass.IsActive, IsActive),
+            (BulmaCssClass.IsRight, IsRight),
+            (BulmaCssClass.IsUp, IsUp)
         );
 
     /// <summary>
-    /// Gets or sets the child content.
+    /// Gets or sets the dropdown trigger.
     /// <para>
     /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
-    [Description("Gets or sets the child content.")]
+    [Description("Gets or sets the dropdown trigger.")]
     [EditorRequired]
     [Parameter]
-    public RenderFragment? ChildContent { get; set; }
+    public RenderFragment? DropdownTrigger { get; set; }
+
+    /// <summary>
+    /// Gets or sets the dropdown content.
+    /// <para>
+    /// Default value is <see langword="null" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the dropdown content.")]
+    [EditorRequired]
+    [Parameter]
+    public RenderFragment? DropdownContent { get; set; }
 
     /// <summary>
     /// If <see langword="true"/>, the <see cref="Dropdown" /> will show the menu.
@@ -57,6 +74,30 @@ public partial class Dropdown : BulmaComponentBase
         get => isActive;
         set => isActive = value;
     }
+
+    /// <summary>
+    /// If <see langword="true"/>, the dropdown menu will be aligned to the right side of its parent.
+    /// <para>
+    /// Default value is <see langword="false" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If <b>true</b>, the dropdown menu will be aligned to the right side of its parent.")]
+    [Parameter]
+    public bool IsRight { get; set; }
+
+    /// <summary>
+    /// If <see langword="true"/>, the dropdown menu will be displayed above its parent.
+    /// <para>
+    /// Deafault value is <see langword="false" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("If <b>true</b>, the dropdown menu will be displayed above its parent.")]
+    [Parameter]
+    public bool IsUp { get; set; }
 
     #endregion
 }
