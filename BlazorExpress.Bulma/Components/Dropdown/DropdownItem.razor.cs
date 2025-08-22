@@ -8,18 +8,6 @@
 /// </summary>
 public partial class DropdownItem : BulmaComponentBase
 {
-    #region Fields and Constants
-
-    private bool isActive;
-
-    #endregion
-
-    #region Methods
-
-    private void OnClick() => isActive = !isActive;
-
-    #endregion
-
     #region Properties, Indexers
 
     protected override string? ClassNames =>
@@ -52,11 +40,7 @@ public partial class DropdownItem : BulmaComponentBase
     [DefaultValue(false)]
     [Description("If <b>true</b>, the <code>DropdownItem</code> will show the menu.")]
     [Parameter]
-    public bool IsActive
-    {
-        get => isActive;
-        set => isActive = value;
-    }
+    public bool IsActive { get; set; }
 
     #endregion
 }
