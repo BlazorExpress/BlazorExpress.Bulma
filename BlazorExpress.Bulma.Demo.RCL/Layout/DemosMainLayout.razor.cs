@@ -97,6 +97,7 @@ public partial class DemosMainLayout : MainLayoutBase
                 new Link { Href = DemoRouteConstants.Demos_Modal_Documentation, Text = "Modal" },
                 new Link { Href = DemoRouteConstants.Demos_Navbar_Documentation, Text = "Navbar" },
                 new Link { Href = DemoRouteConstants.Demos_Pagination_Documentation, Text = "Pagination" },
+                new Link { Href = DemoRouteConstants.Demos_PdfViewer_Documentation, Text = "Pdf Viewer" },
                 new Link { Href = DemoRouteConstants.Demos_ScriptLoader_Documentation, Text = "Script Loader" },
                 new Link { Href = DemoRouteConstants.Demos_Tabs_Documentation, Text = "Tabs" }
             ]

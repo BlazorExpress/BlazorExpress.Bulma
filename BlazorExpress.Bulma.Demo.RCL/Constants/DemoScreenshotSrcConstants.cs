@@ -41,6 +41,7 @@ public class DemoScreenshotSrcConstants
     public const string Modal = DemoScreenshotSrcPrefix + "modal.png";
     public const string Navbar = DemoScreenshotSrcPrefix + "navbar.png";
     public const string Pagination = DemoScreenshotSrcPrefix + "pagination.png";
+    public const string PdfViewer = DemoScreenshotSrcPrefix + "pdf-viewer.png";
     public const string ScriptLoader = DemoScreenshotSrcPrefix + "script-loader.png";
     public const string Tabs = DemoScreenshotSrcPrefix + "tabs.png";
 

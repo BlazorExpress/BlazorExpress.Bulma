@@ -110,6 +110,9 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Form_PasswordInput_Documentation, Text = "Password Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = false });
 
         index += 1;
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_PdfViewer_Documentation, Text = "Pdf Viewer", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.New, IsActive = true });
+
+        index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.UsbCFill, Href = DemoRouteConstants.Demos_ProgressBar_Documentation, Text = "Progress Bar", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;

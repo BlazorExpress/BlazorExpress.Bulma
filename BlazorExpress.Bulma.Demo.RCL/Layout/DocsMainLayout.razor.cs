@@ -111,6 +111,7 @@ public partial class DocsMainLayout : MainLayoutBase
                 new Link { Href = DemoRouteConstants.Docs_Modal_Documentation, Text = "Modal" },
                 new Link { Href = DemoRouteConstants.Docs_Navbar_Documentation, Text = "Navbar" },
                 new Link { Href = DemoRouteConstants.Docs_Pagination_Documentation, Text = "Pagination" },
+                new Link { Href = DemoRouteConstants.Docs_PdfViewer_Documentation, Text = "Pdf Viewer" },
                 new Link { Href = DemoRouteConstants.Docs_ScriptLoader_Documentation, Text = "Script Loader" },
                 new Link { Href = DemoRouteConstants.Docs_Tabs_Documentation, Text = "Tabs" }
             ]
