@@ -1,6 +1,9 @@
+using BlazorExpress.Bulma;
 using BlazorExpress.Bulma.Demo.Server.Components;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddBlazorExpressBulma();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()

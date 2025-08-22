@@ -1,6 +1,6 @@
 ﻿namespace BlazorExpress.Bulma;
 
-internal class MenuInterop
+internal class MenuJsInterop
 {
     #region Fields and Constants
 

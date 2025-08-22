@@ -1,0 +1,26 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_PdfViewer_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Demo Type="typeof(PdfViewer_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+@code {
+    private const string componentName = nameof(PdfViewer);
+    private const string pageUrl = DemoRouteConstants.Demos_PdfViewer_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The Blazor <code>{componentName}</code> component allows users to view PDF files directly in the browser without relying on third-party browser tools or extensions.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The Blazor {componentName} component allows users to view PDF files directly in the browser without relying on third-party browser tools or extensions.";
+    private const string imageUrl = DemoScreenshotSrcConstants.PdfViewer;
+}

@@ -1,0 +1,44 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+
+<div class="@PdfContainerClassNames">
+
+    <nav class="level m-0 p-2">
+        <div class="level-left">
+            <div class="level-item">
+                <BootstrapIcon Class="@BulmaExpressCssClass.CursorPointer" Name="BootstrapIconName.ChevronUp" Size="BootstrapIconSize.Medium" @onclick="PreviousPageAsync" title="Previous Page" />
+                <BootstrapIcon Class="@BulmaExpressCssClass.CursorPointer" Name="BootstrapIconName.ChevronDown" Size="BootstrapIconSize.Medium" @onclick="NextPageAsync" title="Next Page" />
+            </div>
+            <div class="level-item">
+                <input class="input is-small" style="width:60px;" type="number" @bind-value="pageNumber" placeholder="Enter page number" />
+                <div class="pl-2">of @pagesCount</div>
+            </div>
+        </div>
+
+        <p class="level-item">
+            <BootstrapIcon Class="@BulmaExpressCssClass.CursorPointer" Name="BootstrapIconName.Dash" Size="BootstrapIconSize.Medium" @onclick="ZoomOutAsync" title="Zoom Out" />
+            <span class="px-3"><strong>@zoomPercentage</strong></span>
+            <BootstrapIcon Class="@BulmaExpressCssClass.CursorPointer" Name="BootstrapIconName.Plus" Size="BootstrapIconSize.Medium" @onclick="ZoomInAsync" title="Zoom In" />
+        </p>
+
+        <div class="level-right">
+            <div class="navbar-item has-dropdown is-hoverable is-right">
+                <a class="navbar-link">Tools</a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" @onclick="RotateClockwiseAsync"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.ArrowClockwise" /> Rotate Clockwise</a>
+                    <a class="navbar-item" @onclick="RotateCounterclockwiseAsync"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.ArrowCounterclockwise" /> Rotate Counterclockwise</a>
+                    <a class="navbar-item" @onclick="SwitchOrientationAsync"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.Compass" /> Switch Orientation</a>
+                    <a class="navbar-item" @onclick="FirstPageAsync"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.ChevronBarUp" /> Go to First Page</a>
+                    <a class="navbar-item" @onclick="LastPageAsync"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.ChevronBarDown" /> Go to Last Page</a>
+                    <a class="navbar-item" @onclick="ResetZoomAsync"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.PlusSlashMinus" /> Reset Zoom</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="has-background-white-ter has-text-centered py-3" style="overflow-x: auto;">
+        <canvas @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
+        </canvas>
+    </div>
+</div>

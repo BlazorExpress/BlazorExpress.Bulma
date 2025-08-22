@@ -58,6 +58,7 @@ public static class DemoRouteConstants
     public const string Demos_Modal_Documentation = Demos_Prefix + "/modal";
     public const string Demos_Navbar_Documentation = Demos_Prefix + "/navbar";
     public const string Demos_Pagination_Documentation = Demos_Prefix + "/pagination";
+    public const string Demos_PdfViewer_Documentation = Demos_Prefix + "/pdf-viewer";
     public const string Demos_Panel_Documentation = Demos_Prefix + "/panel";
     public const string Demos_ScriptLoader_Documentation = Demos_Prefix + "/script-loader";
     public const string Demos_Tabs_Documentation = Demos_Prefix + "/tabs";
@@ -132,6 +133,7 @@ public static class DemoRouteConstants
     public const string Docs_Modal_Documentation = Docs_Prefix + "/modal";
     public const string Docs_Navbar_Documentation = Docs_Prefix + "/navbar";
     public const string Docs_Pagination_Documentation = Docs_Prefix + "/pagination";
+    public const string Docs_PdfViewer_Documentation = Docs_Prefix + "/pdf-viewer";
     public const string Docs_Panel_Documentation = Docs_Prefix + "/panel";
     public const string Docs_ScriptLoader_Documentation = Docs_Prefix + "/script-loader";
     public const string Docs_Tabs_Documentation = Docs_Prefix + "/tabs";

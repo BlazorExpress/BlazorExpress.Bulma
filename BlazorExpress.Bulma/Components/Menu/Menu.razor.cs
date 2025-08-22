@@ -22,9 +22,9 @@ public partial class Menu : BulmaComponentBase
     {
         if (firstRender)
         {
-            await JSRuntime.InvokeVoidAsync(MenuInterop.Initialize, Id, objRef);
+            await JSRuntime.InvokeVoidAsync(MenuJsInterop.Initialize, Id, objRef);
 
-            var width = await JSRuntime.InvokeAsync<float>(MenuInterop.WindowSize);
+            var width = await JSRuntime.InvokeAsync<float>(MenuJsInterop.WindowSize);
 
             WindowResizeJS(width);
         }

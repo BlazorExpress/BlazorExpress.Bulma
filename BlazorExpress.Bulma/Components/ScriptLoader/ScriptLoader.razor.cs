@@ -24,7 +24,7 @@ public partial class ScriptLoader : BulmaComponentBase
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
-            await JSRuntime.InvokeVoidAsync(ScriptLoaderInterop.Initialize, Id, Async, Defer, ScriptId, Source, ScriptType, objRef);
+            await JSRuntime.InvokeVoidAsync(ScriptLoaderJsInterop.Initialize, Id, Async, Defer, ScriptId, Source, ScriptType, objRef);
 
         await base.OnAfterRenderAsync(firstRender);
     }
