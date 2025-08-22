@@ -23,6 +23,13 @@ public static class BulmaCssClass
 
     public const string Delete = "delete";
 
+    public const string Dropdown = "dropdown";
+    public const string DropdownContent = "dropdown-content";
+    public const string DropdownDivider = "dropdown-divider";
+    public const string DropdownItem = "dropdown-item";
+    public const string DropdownMenu = "dropdown-menu";
+    public const string DropdownTrigger = "dropdown-trigger";
+
     public const string Field = "field";
 
     public const string HasAddons = "has-addons";

@@ -1,0 +1,31 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_Dropdown_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+    <Block>
+        In this example, we will use the <code>Block</code> component to create a consistent margin between sibling HTML elements.
+        As you can see, the first two blocks have a margin bottom applied, but the last block does not. 
+        This is because the <code>Block</code> component applies a space on all the blocks, excpt the last one.
+    </Block>
+    <Demo Type="typeof(Dropdown_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+@code {
+    private const string componentName = nameof(Dropdown);
+    private const string pageUrl = DemoRouteConstants.Demos_Dropdown_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"An interactive <code>{componentName}</code> component for discoverable content.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"An interactive {componentName} component for discoverable content.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Dropdown;
+}

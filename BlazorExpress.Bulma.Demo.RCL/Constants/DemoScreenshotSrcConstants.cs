@@ -35,6 +35,7 @@ public class DemoScreenshotSrcConstants
     // Components
     public const string Breadcrumb = DemoScreenshotSrcPrefix + "breadcrumb.png";
     public const string ConfirmDialog = DemoScreenshotSrcPrefix + "confirm-dialog.png";
+    public const string Dropdown = DemoScreenshotSrcPrefix + "dropdown.png";
     public const string GoogleMap = DemoScreenshotSrcPrefix + "google-map.png";
     public const string Grid = DemoScreenshotSrcPrefix + "grid.png";
     public const string Message = DemoScreenshotSrcPrefix + "message.png";

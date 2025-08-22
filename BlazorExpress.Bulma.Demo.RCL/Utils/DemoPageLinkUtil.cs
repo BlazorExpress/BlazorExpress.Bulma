@@ -50,7 +50,7 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.XCircleFill, Href = DemoRouteConstants.Demos_DeleteButton_Documentation, Text = "Delete Button", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Dropdown_Documentation, Text = "Dropdown", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = false });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.MenuButtonWideFill, Href = DemoRouteConstants.Demos_Dropdown_Documentation, Text = "Dropdown", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.New, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.MenuButtonWideFill, Href = DemoRouteConstants.Demos_Form_EnumInput_Documentation, Text = "Enum Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = true });
@@ -110,7 +110,7 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Form_PasswordInput_Documentation, Text = "Password Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = false });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_PdfViewer_Documentation, Text = "Pdf Viewer", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.New, IsActive = true });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.FilePdfFill, Href = DemoRouteConstants.Demos_PdfViewer_Documentation, Text = "Pdf Viewer", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.New, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.UsbCFill, Href = DemoRouteConstants.Demos_ProgressBar_Documentation, Text = "Progress Bar", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });
