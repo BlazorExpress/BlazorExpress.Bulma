@@ -1,12 +1,12 @@
 ﻿namespace BlazorExpress.Bulma;
 
 /// <summary>
-/// Dropdown component
+/// DropdownItem component
 /// <para>
 /// <see href="https://bulma.io/documentation/components/dropdown/" />
 /// </para>
 /// </summary>
-public partial class Dropdown : BulmaComponentBase
+public partial class DropdownItem : BulmaComponentBase
 {
     #region Fields and Constants
 
@@ -25,7 +25,7 @@ public partial class Dropdown : BulmaComponentBase
     protected override string? ClassNames =>
         BuildClassNames(
             Class,
-            (BulmaCssClass.Dropdown, true),
+            (BulmaCssClass.DropdownItem, true),
             (BulmaCssClass.IsActive, IsActive)
         );
 
@@ -43,14 +43,14 @@ public partial class Dropdown : BulmaComponentBase
     public RenderFragment? ChildContent { get; set; }
 
     /// <summary>
-    /// If <see langword="true"/>, the <see cref="Dropdown" /> will show the menu.
+    /// If <see langword="true"/>, the <see cref="DropdownItem" /> will show the menu.
     /// <para>
     /// Default value is <see langword="false" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
-    [Description("If <b>true</b>, the <code>Dropdown</code> will show the menu.")]
+    [Description("If <b>true</b>, the <code>DropdownItem</code> will show the menu.")]
     [Parameter]
     public bool IsActive
     {
