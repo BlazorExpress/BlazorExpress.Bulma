@@ -1,14 +1,13 @@
 @namespace BlazorExpress.Bulma
 @inherits BulmaComponentBase
 
-<div class="@ClassNames" style="@StyleNames">
+<div class="@PdfContainerClassNames">
 
-    <nav class="level">
-
+    <nav class="level m-0 p-2">
         <div class="level-left">
             <div class="level-item">
-                <BootstrapIcon Name="BootstrapIconName.ChevronUp" Size="BootstrapIconSize.Medium" @onclick="PreviousPageAsync" title="Previous Page" />
-                <BootstrapIcon Name="BootstrapIconName.ChevronDown" Size="BootstrapIconSize.Medium" @onclick="NextPageAsync" title="Next Page" />
+                <BootstrapIcon Class="@BulmaExpressCssClass.CursorPointer" Name="BootstrapIconName.ChevronUp" Size="BootstrapIconSize.Medium" @onclick="PreviousPageAsync" title="Previous Page" />
+                <BootstrapIcon Class="@BulmaExpressCssClass.CursorPointer" Name="BootstrapIconName.ChevronDown" Size="BootstrapIconSize.Medium" @onclick="NextPageAsync" title="Next Page" />
             </div>
             <div class="level-item">
                 <input class="input is-small" style="width:60px;" type="number" @bind-value="pageNumber" placeholder="Enter page number" />
@@ -17,9 +16,9 @@
         </div>
 
         <p class="level-item">
-            <BootstrapIcon Name="BootstrapIconName.Dash" Size="BootstrapIconSize.Medium" @onclick="ZoomOutAsync" title="Zoom Out" />
+            <BootstrapIcon Class="@BulmaExpressCssClass.CursorPointer" Name="BootstrapIconName.Dash" Size="BootstrapIconSize.Medium" @onclick="ZoomOutAsync" title="Zoom Out" />
             <span class="px-3"><strong>@zoomPercentage</strong></span>
-            <BootstrapIcon Name="BootstrapIconName.Plus" Size="BootstrapIconSize.Medium" @onclick="ZoomInAsync" title="Zoom In" />
+            <BootstrapIcon Class="@BulmaExpressCssClass.CursorPointer" Name="BootstrapIconName.Plus" Size="BootstrapIconSize.Medium" @onclick="ZoomInAsync" title="Zoom In" />
         </p>
 
         <div class="level-right">
@@ -39,7 +38,7 @@
     </nav>
 
     <div class="has-background-white-ter has-text-centered py-3" style="overflow-x: auto;">
-        <canvas @ref="@Element" id="@Id" @attributes="@AdditionalAttributes">
+        <canvas @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
         </canvas>
     </div>
 </div>

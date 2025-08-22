@@ -17,6 +17,8 @@ public static class BulmaCssClass
     public const string Button = "button";
     public const string Buttons = "buttons";
 
+    public const string Card = "card";
+
     public const string Control = "control";
 
     public const string Delete = "delete";

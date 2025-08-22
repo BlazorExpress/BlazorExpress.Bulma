@@ -133,3 +133,7 @@ html {
 .be-bulma-text-decoration-none {
     text-decoration: none !important;
 }
+
+.be-bulma-cursor-pointer {
+    cursor: pointer !important;
+}

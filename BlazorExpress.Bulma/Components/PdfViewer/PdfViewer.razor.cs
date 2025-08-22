@@ -201,6 +201,25 @@ public partial class PdfViewer : BulmaComponentBase
 
     #region Properties, Indexers
 
+    private string? PdfContainerClassNames =>
+        BuildClassNames(
+            PdfContainerCssClass,
+            (BulmaCssClass.Card, true)
+        );
+
+    /// <summary>
+    /// Gets or sets the pdf container css class.
+    /// <para>
+    /// Default value is <see langword="null" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the pdf container css class.")]
+    [Parameter]
+    [ParameterTypeName("string?")]
+    public string? PdfContainerCssClass { get; set; } = null;
+
     /// <summary>
     /// This event fires immediately after the PDF document is loaded.
     /// </summary>
