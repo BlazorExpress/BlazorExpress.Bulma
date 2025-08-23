@@ -18,55 +18,170 @@
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
-    <div class="mb-3">This example demonstrates how to use a simple Google Maps component.</div>
+    <Block>
+        The <strong>GoogleMap</strong> component displays an interactive map using the Google Maps JavaScript API, allowing you to show locations, add markers, and customize the map’s appearance.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>GoogleMap</code> component to your page.</li>
+                <li>Set the <code>ApiKey</code> property with your Google Maps API key.</li>
+                <li>Configure the <code>Center</code> property to set the initial map location (latitude and longitude).</li>
+                <li>Adjust <code>Height</code>, <code>Width</code>, and <code>Zoom</code> as needed for your layout and desired zoom level.</li>
+            </ol>
+        </div>
+        This demo shows the basic setup for rendering a map. You can further enhance it by adding markers and customizing map options.
+    </Block>
     <Demo Type="typeof(GoogleMap_Demo_01_Examples)" Tabs="true"/>
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H2" Name="Add a marker to a map" PageUrl="@pageUrl" Link="add-a-marker-to-a-map">
-    <div class="mb-3">This example demonstrates how to use a simple Google Maps component with marker.</div>
+    <Block>
+        The <strong>GoogleMap</strong> component supports adding markers to highlight specific locations.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Create a <code>List&lt;GoogleMapMarker&gt;</code> with one or more markers, each specifying a <code>Position</code> (latitude and longitude) and an optional <code>Title</code>.</li>
+                <li>Assign this list to the <code>Markers</code> property of the <code>GoogleMap</code> component.</li>
+            </ol>
+        </div>
+        This demo illustrates how to display multiple markers on the map, each representing a different location.
+    </Block>
     <Demo Type="typeof(GoogleMap_Demo_02_Marker)" Tabs="true" />
 </Section>
 
-<Section Class="p-0" Size="HeadingSize.H2" Name="Marker customization" PageUrl="@pageUrl" Link="marker-customization" />
+<Section Class="p-0" Size="HeadingSize.H2" Name="Marker customization" PageUrl="@pageUrl" Link="marker-customization">
+    <Block>
+        You can customize the appearance of map markers using the <code>PinElement</code> property of <code>GoogleMapMarker</code>. This allows you to change the marker’s scale, background color, border color, glyph (icon), and more.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>For each <code>GoogleMapMarker</code>, set the <code>PinElement</code> property with your desired customization options.</li>
+                <li>Customize properties such as <code>Scale</code>, <code>Background</code>, <code>BorderColor</code>, <code>Glyph</code>, <code>GlyphColor</code>, and <code>UseIconFonts</code> as needed.</li>
+            </ol>
+        </div>
+        The following sections demonstrate specific marker customizations.
+    </Block>
+</Section>
+
 <Section Class="p-0" Size="HeadingSize.H3" Name="Scale the marker" PageUrl="@pageUrl" Link="scale-the-marker">
-    <div class="mb-3">To scale a marker, use the <b>PinElement.Scale</b> option.</div>
+    <Block>
+        You can adjust the size of a marker by setting the <code>Scale</code> property in the <code>PinElement</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>PinElement.Scale</code> to your desired value (e.g., <code>1.5</code> for 150% size).</li>
+            </ol>
+        </div>
+        This demo shows how to make markers larger for better visibility.
+    </Block>
     <Demo Type="typeof(GoogleMap_Demo_03_Marker_Customization_A_Scale_the_marker)" Tabs="true" />
 </Section>
 <Section Class="p-0" Size="HeadingSize.H3" Name="Change the background color" PageUrl="@pageUrl" Link="change-the-background-color">
-    <div class="mb-3">Use the <b>PinElement.Background</b> option to change the background color of a marker.</div>
+    <Block>
+        The marker’s background color can be customized using the <code>Background</code> property in <code>PinElement</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>PinElement.Background</code> to a valid CSS color value (e.g., <code>"#FBBC04"</code>).</li>
+            </ol>
+        </div>
+        This demo demonstrates how to apply a custom background color to your markers.
+    </Block>
     <Demo Type="typeof(GoogleMap_Demo_03_Marker_Customization_B_Change_the_background_color)" Tabs="true" />
 </Section>
 <Section Class="p-0" Size="HeadingSize.H3" Name="Change the border color" PageUrl="@pageUrl" Link="change-the-border-color">
-    <div class="mb-3">Use the <b>PinElement.BorderColor</b> option to change the border color of a marker.</div>
+    <Block>
+        The marker’s border color can be set using the <code>BorderColor</code> property in <code>PinElement</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>PinElement.BorderColor</code> to a valid CSS color value (e.g., <code>"#137333"</code>).</li>
+            </ol>
+        </div>
+        This demo shows how to highlight markers with a custom border color.
+    </Block>
     <Demo Type="typeof(GoogleMap_Demo_03_Marker_Customization_C_Change_the_border_color)" Tabs="true" />
 </Section>
 <Section Class="p-0" Size="HeadingSize.H3" Name="Change the glyph color" PageUrl="@pageUrl" Link="change-the-glyph-color">
-    <div class="mb-3">Use the <b>PinElement.GlyphColor</b> option to change the glyph color of a marker.</div>
+    <Block>
+        The glyph (icon) color of a marker can be changed using the <code>GlyphColor</code> property in <code>PinElement</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>PinElement.GlyphColor</code> to your preferred color (e.g., <code>"white"</code>).</li>
+            </ol>
+        </div>
+        This demo illustrates how to customize the icon color for better contrast or branding.
+    </Block>
     <Demo Type="typeof(GoogleMap_Demo_03_Marker_Customization_D_Change_the_glyph_color)" Tabs="true" />
 </Section>
 <Section Class="p-0" Size="HeadingSize.H3" Name="Hide the glyph" PageUrl="@pageUrl" Link="hide-the-glyph">
-    <div class="mb-3">Set the <b>PinElement.Glyph</b> option to an empty string to hide a marker's glyph.</div>
+    <Block>
+        To hide the marker’s glyph (icon), set the <code>Glyph</code> property in <code>PinElement</code> to an empty string.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>PinElement.Glyph</code> to <code>""</code> (empty string) to remove the icon from the marker.</li>
+            </ol>
+        </div>
+        This demo shows how to display markers without any icon.
+    </Block>
     <Demo Type="typeof(GoogleMap_Demo_03_Marker_Customization_E_Hide_the_glyph)" Tabs="true" />
 </Section>
 <Section Class="p-0" Size="HeadingSize.H3" Name="Use icon fonts" PageUrl="@pageUrl" Link="use-icon-fonts">
-    <div class="mb-3">Use the <b>PinElement.UseIconFonts</b> and <b>PinElement.Glyph</b> options to use the icon fonts.</div>
+    <Block>
+        You can use icon fonts (such as Bootstrap Icons) for marker glyphs by setting <code>UseIconFonts</code> to <code>true</code> and providing a valid icon class in <code>Glyph</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>PinElement.UseIconFonts</code> to <code>true</code>.</li>
+                <li>Set <code>PinElement.Glyph</code> to the desired icon class (e.g., <code>"bi bi-cloud-drizzle-fill fs-6 text-white"</code>).</li>
+            </ol>
+        </div>
+        This demo demonstrates how to use icon fonts for visually rich markers.
+    </Block>
     <Demo Type="typeof(GoogleMap_Demo_03_Marker_Customization_F_Use_icon_fonts)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H2" Name="Markers with HTML and CSS" PageUrl="@pageUrl" Link="markers-with-html-and-css">
+    <Block>
+        Markers can display custom HTML and CSS content by setting the <code>Content</code> property of <code>GoogleMapMarker</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Content</code> property to your desired HTML markup (e.g., an <code>&lt;i&gt;</code> tag with icon classes).</li>
+                <li>Style the content using CSS classes as needed.</li>
+            </ol>
+        </div>
+        This demo shows how to create markers with fully custom HTML and CSS for maximum flexibility.
+    </Block>
     <Demo Type="typeof(GoogleMap_Demo_04_Markers_with_HTML_and_CSS)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H2" Name="Make a marker clickable" PageUrl="@pageUrl" Link="make-a-marker-clickable">
-    <div class="mb-3">
-        This example shows you how to make markers respond to click events. To make a marker clickable:
-        Set the <b>Clickable</b> parameter to <b>true</b>.
-    </div>
+    <Block>
+        Markers can be made interactive by enabling the <code>Clickable</code> property and handling the <code>OnMarkerClick</code> event.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Clickable</code> property of <code>GoogleMap</code> to <code>true</code>.</li>
+                <li>Handle the <code>OnMarkerClick</code> event to respond when a user clicks a marker.</li>
+            </ol>
+        </div>
+        This demo demonstrates how to make markers respond to user clicks, enabling interactive map experiences.
+    </Block>
     <Demo Type="typeof(GoogleMap_Demo_05_Make_a_marker_clickable)" Tabs="true" />
-</Section>
-
-<Section Class="p-0" Size="HeadingSize.H2" Name="Dynamic markers" PageUrl="@pageUrl" Link="dynamic-markers">
-    <Demo Type="typeof(GoogleMap_Demo_06_Dynamic_markers)" Tabs="true" />
 </Section>
 
 @code {
