@@ -1,16 +1,16 @@
 ﻿@inherits GoogleMapDemoComponentBase
 
-<div>
+<Buttons>
     <Button Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="(async () => await AddWeatherMarkerAsync())">
-        <Icon Name="IconName.GeoAltFill" /> Add Marker
+        <BootstrapIcon IconContainerCssClass="mr-1" Name="BootstrapIconName.GeoAltFill" /> Add Marker
     </Button>
-    <Button Color="ButtonColor.Danger" Size="ButtonSize.Small" @onclick="(async () => await UpdateWeatherMarkersAsync())">
-        <Icon Name="IconName.GeoAltFill" /> Update Markers
+    <Button Color="ButtonColor.Danger" Size="ButtonSize.Small" @onclick="(async () => await RandomWeatherMarkersAsync())">
+        <BootstrapIcon IconContainerCssClass="mr-1" Name="BootstrapIconName.GeoAltFill" /> Random Markers
     </Button>
     <Button Color="ButtonColor.Warning" Size="ButtonSize.Small" @onclick="(async () => await RefreshMapAsync())">
-        <Icon Name="IconName.MapFill" /> Refresh Map
+        <BootstrapIcon IconContainerCssClass="mr-1" Name="BootstrapIconName.MapFill" /> Refresh Map
     </Button>
-</div>
+</Buttons>
 
 <GoogleMap @ref="googleMapRef" 
            ApiKey="@ApiKey"
@@ -27,7 +27,7 @@
 
     private async ValueTask AddWeatherMarkerAsync() => await googleMapRef.AddMarkerAsync(GetRandomMarker());
 
-    private async Task UpdateWeatherMarkersAsync()
+    private async Task RandomWeatherMarkersAsync()
     {
         var markerList = new List<GoogleMapMarker>
         {
