@@ -12,22 +12,84 @@
 <DocsLink Href="@DemoRouteConstants.Docs_Pagination_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>Pagination</strong> component provides navigation for content split across multiple pages, allowing users to move between them easily.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Pagination</code> component to your page.</li>
+                <li>Set the <code>TotalPages</code> parameter to specify the number of pages.</li>
+                <li>Optionally, set <code>ActivePageNumber</code> to control which page is currently selected.</li>
+            </ol>
+        </div>
+        This demo shows several basic pagination setups with different page counts, demonstrating how the component adapts to various scenarios.
+    </Block>
     <Demo Type="typeof(Pagination_Demo_01_How_it_works)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Alignment" PageUrl="@pageUrl" Link="alignment">
+    <Block>
+        The <strong>Pagination</strong> component supports alignment options to fit your layout needs.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Use the <code>Alignment</code> parameter to set the pagination's position: <code>Left</code> (default), <code>Center</code>, or <code>Right</code>.</li>
+                <li>Combine with <code>ActivePageNumber</code> and <code>TotalPages</code> as needed.</li>
+            </ol>
+        </div>
+        This demo illustrates left, center, and right-aligned pagination controls.
+    </Block>
     <Demo Type="typeof(Pagination_Demo_02_Alignment)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Styles" PageUrl="@pageUrl" Link="styles">
+    <Block>
+        The <strong>Pagination</strong> component can be styled for a rounded appearance.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>IsRounded</code> parameter to <code>true</code> for rounded pagination buttons.</li>
+                <li>Adjust <code>ActivePageNumber</code> and <code>TotalPages</code> as needed for your scenario.</li>
+            </ol>
+        </div>
+        This demo displays pagination with rounded styles at different active pages.
+    </Block>
     <Demo Type="typeof(Pagination_Demo_03_Styles)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
+    <Block>
+        The <strong>Pagination</strong> component supports different sizes to match your UI requirements.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Use the <code>Size</code> parameter to set the pagination size: <code>PaginationSize.Small</code>, default (medium), or <code>PaginationSize.Large</code>.</li>
+                <li>Combine with other parameters like <code>ActivePageNumber</code> and <code>TotalPages</code> as needed.</li>
+            </ol>
+        </div>
+        This demo shows small, default, and large pagination controls for comparison.
+    </Block>
     <Demo Type="typeof(Pagination_Demo_04_Sizes)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Events" PageUrl="@pageUrl" Link="events">
+    <Block>
+        The <strong>Pagination</strong> component supports event handling to respond to page changes.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Bind the <code>ActivePageNumber</code> parameter to a variable in your code.</li>
+                <li>Handle the <code>PageChanged</code> event to update your state when the user selects a different page.</li>
+                <li>Update your UI or perform actions in the event handler as needed.</li>
+            </ol>
+        </div>
+        This demo demonstrates how to track and respond to page changes using event callbacks.
+    </Block>
     <Demo Type="typeof(Pagination_Demo_05_Events)" Tabs="true" />
 </Section>
 
