@@ -19,42 +19,95 @@
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>BootstrapIcon</strong> component allows you to easily display any icon from the Bootstrap Icons library in your Blazor application.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>BootstrapIcon</code> component to your page.</li>
+                <li>Set the <code>Name</code> parameter to the desired icon from <code>BootstrapIconName</code> (e.g., <code>BootstrapIconName.HouseDoorFill</code>).</li>
+            </ol>
+        </div>
+        This demo shows the minimal setup required to render a Bootstrap icon.
+    </Block>
     <Demo Type="typeof(BootstrapIcon_Demo_01_How_it_works)" Tabs="false" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Icon text" PageUrl="@pageUrl" Link="icon-text">
-    <div class="mb-3">
-        You can show the icon with text by wrapping the text in a <code>BootstrapIcon</code> component.
-        In the example below, the icon is shown with text on the right.
-    </div>
+    <Block>
+        You can display text alongside your icon by placing content inside the <code>BootstrapIcon</code> component tags.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap the text you want to display with the <code>BootstrapIcon</code> component.</li>
+                <li>The icon will appear before the text, making it easy to label buttons, links, or other UI elements.</li>
+            </ol>
+        </div>
+        This demo illustrates how to combine an icon with descriptive text.
+    </Block>
     <Demo Type="typeof(BootstrapIcon_Demo_02_Icon_Text)" Tabs="false" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
-    <div class="mb-3">
-        Use <code>Color</code> parameter to set the color of the icon.
-        In the example below, the icon is shown with different colors.
-    </div>
+    <Block>
+        The <code>BootstrapIcon</code> component supports color customization using the <code>Color</code> parameter.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Color</code> parameter to a value from <code>BootstrapIconColor</code> (e.g., <code>Primary</code>, <code>Success</code>, <code>Danger</code>).</li>
+                <li>This will apply the selected color to the icon, matching your application's theme.</li>
+            </ol>
+        </div>
+        The demo below shows several icons with different color options.
+    </Block>
     <Demo Type="typeof(BootstrapIcon_Demo_03_Icon_Colors_A)" Tabs="false" />
-    <div class="mb-3">
-        When icon with text is used, aldong with <code>Color</code> parameter, 
-        set <code>ApplyColorToText</code> to <code>true</code> to apply the color to the text as well.
-    </div>
+    <Block>
+        You can also apply the icon color to the accompanying text by setting <code>ApplyColorToText="true"</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>ApplyColorToText="true"</code> on the <code>BootstrapIcon</code> component.</li>
+                <li>Both the icon and its text content will inherit the specified color.</li>
+            </ol>
+        </div>
+        This demo demonstrates how icon and text colors can be unified for consistent styling.
+    </Block>
     <Demo Type="typeof(BootstrapIcon_Demo_03_Icon_Colors_B_Text_Color)" Tabs="false" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
-    <div class="mb-3">
-        Use <code>Size</code> parameter to set the size of the icon.
-        In the example below, the icon is shown with different sizes.
-    </div>
+    <Block>
+        The <code>BootstrapIcon</code> component supports multiple predefined sizes via the <code>Size</code> parameter.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Size</code> parameter to one of the available <code>BootstrapIconSize</code> values (e.g., <code>XSmall</code>, <code>Small</code>, <code>Medium</code>, <code>Large</code>, <code>XLarge</code>, <code>XXLarge</code>).</li>
+                <li>Choose the size that best fits your UI requirements.</li>
+            </ol>
+        </div>
+        The demo below displays the same icon in all supported sizes for easy comparison.
+    </Block>
     <Demo Type="typeof(BootstrapIcon_Demo_04_Icon_Sizes)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="All icons" PageUrl="@pageUrl" Link="all-icons">
-    <div class="mb-3">
-        In the example below, all icons are shown with their names.
-    </div>
+    <Block>
+        You can browse and select from all available Bootstrap icons using the <code>BootstrapIconName</code> enumeration.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Iterate through <code>BootstrapIconName</code> values to display a grid of all icons.</li>
+                <li>Use this as a reference to find the icon name you want to use in your project.</li>
+            </ol>
+        </div>
+        The demo below presents a gallery of every icon included in the Bootstrap Icons set.
+    </Block>
     <Demo Type="typeof(BootstrapIcon_Demo_99_All_Icons)" Tabs="true" />
 </Section>
 
