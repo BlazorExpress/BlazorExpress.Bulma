@@ -55,16 +55,16 @@ public partial class Message : BulmaComponentBase
     public MessageColor Color { get; set; } = MessageColor.None;
 
     /// <summary>
-    /// If <see langword="true" />, shows the delete button in the message header.
+    /// If <see langword="true" />, hides the close button.
     /// <para>
     /// Default value is <see langword="true" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
-    [DefaultValue(true)]
-    [Description("If <b>true</b>, shows the delete button in the message header.")]
+    [DefaultValue(false)]
+    [Description("If <b>true</b>, hides the close button.")]
     [Parameter]
-    public bool ShowDeleteButton { get; set; } = true;
+    public bool HideCloseButton { get; set; }
 
     /// <summary>
     /// Gets or sets the size.
