@@ -12,14 +12,54 @@
 <DocsLink Href="@DemoRouteConstants.Docs_Modal_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>Modal</strong> component provides a flexible dialog box for displaying content, notifications, or custom UI overlays in your Blazor application.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Modal</code> component to your page and assign it a <code>@@ref</code> variable.</li>
+                <li>Place your modal content inside the <code>Modal</code> tags. You can use any Blazor or HTML elements.</li>
+                <li>Trigger the modal to open by calling <code>modalRef.Show()</code> from your code (e.g., in a button click handler).</li>
+                <li>Optionally, customize the close button using the <code>CloseButtonCssClass</code> parameter.</li>
+            </ol>
+        </div>
+        This demo shows the simplest way to display a modal with custom content and how to open it programmatically.
+    </Block>
     <Demo Type="typeof(Modal_Demo_01_How_it_works)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Classic modal" PageUrl="@pageUrl" Link="classic-modal">
+    <Block>
+        The <strong>Classic Modal</strong> example demonstrates a modal with a structured layout, including a title, body, and footer with action buttons.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Use the <code>TitleContent</code>, <code>BodyContent</code>, and <code>FootContent</code> named fragments to organize your modal's sections.</li>
+                <li>Add action buttons to the footer, such as "Save changes" or "Cancel".</li>
+                <li>Control the modal's visibility by calling <code>modalRef.Show()</code> and <code>modalRef.Hide()</code> in your event handlers.</li>
+            </ol>
+        </div>
+        This demo illustrates a typical modal dialog pattern, suitable for forms, confirmations, or any scenario requiring user interaction.
+    </Block>
     <Demo Type="typeof(Modal_Demo_02_Classic_Modal)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Events" PageUrl="@pageUrl" Link="events">
+    <Block>
+        The <strong>Modal Events</strong> example shows how to handle modal lifecycle events, such as when the modal is shown or hidden.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Attach event handlers to the <code>OnShown</code> and <code>OnHidden</code> parameters of the <code>Modal</code> component.</li>
+                <li>Use these handlers to perform actions or update state when the modal opens or closes (e.g., logging, refreshing data).</li>
+                <li>Display or process event information as needed in your UI.</li>
+            </ol>
+        </div>
+        This demo logs modal events to the page, helping you track user interactions and respond to modal state changes.
+    </Block>
     <Demo Type="typeof(Modal_Demo_03_Events)" Tabs="true" />
 </Section>
 
