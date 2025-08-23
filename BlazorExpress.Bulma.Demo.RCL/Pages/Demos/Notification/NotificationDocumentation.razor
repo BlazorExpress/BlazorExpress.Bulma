@@ -12,29 +12,109 @@
 <DocsLink Href="@DemoRouteConstants.Docs_Notification_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>Notification</strong> component displays a colored message box to draw the user's attention to important information or feedback.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Notification</code> component to your page.</li>
+                <li>Place your message or content inside the <code>Notification</code> tags.</li>
+                <li>Optionally, customize the appearance using parameters such as <code>Color</code>, <code>ShowLightVersion</code>, or <code>HideDeleteButton</code> as needed.</li>
+            </ol>
+        </div>
+        This demo shows the default usage of the Notification component with simple content.
+    </Block>
     <Demo Type="typeof(Notification_Demo_01_How_it_works)" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Block>
+        The <strong>Notification</strong> component supports various color themes to indicate different types of messages, such as informational, success, warning, or danger.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Color</code> parameter to one of the predefined values (e.g., <code>NotificationColor.Link</code>, <code>NotificationColor.Primary</code>, <code>NotificationColor.Info</code>, <code>NotificationColor.Success</code>, <code>NotificationColor.Warning</code>, <code>NotificationColor.Danger</code>).</li>
+                <li>Place your message or content inside the <code>Notification</code> tags.</li>
+            </ol>
+        </div>
+        The following demos show how to apply different color themes to notifications.
+    </Block>
     <Demo Type="typeof(Notification_Demo_02_Colors_A_Link)" Tabs="true" />
+    <Block>
+        This example uses the <code>Primary</code> color to highlight the notification.
+    </Block>
     <Demo Type="typeof(Notification_Demo_02_Colors_B_Primary)" Tabs="true" />
+    <Block>
+        This example uses the <code>Info</code> color for informational messages.
+    </Block>
     <Demo Type="typeof(Notification_Demo_02_Colors_C_Info)" Tabs="true" />
+    <Block>
+        This example uses the <code>Success</code> color to indicate successful operations.
+    </Block>
     <Demo Type="typeof(Notification_Demo_02_Colors_D_Success)" Tabs="true" />
+    <Block>
+        This example uses the <code>Warning</code> color to alert users to potential issues.
+    </Block>
     <Demo Type="typeof(Notification_Demo_02_Colors_E_Warning)" Tabs="true" />
+    <Block>
+        This example uses the <code>Danger</code> color to indicate errors or critical messages.
+    </Block>
     <Demo Type="typeof(Notification_Demo_02_Colors_F_Danger)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Light colors" PageUrl="@pageUrl" Link="light-colors">
+    <Block>
+        The <strong>Notification</strong> component can be displayed in a lighter color variant for a softer appearance.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>ShowLightVersion</code> parameter to <code>true</code> on the <code>Notification</code> component.</li>
+                <li>Choose a <code>Color</code> as desired.</li>
+                <li>Place your message or content inside the <code>Notification</code> tags.</li>
+            </ol>
+        </div>
+        The following demos show notifications with light color variants.
+    </Block>
     <Demo Type="typeof(Notification_Demo_03_LightColors_A_Link)" Tabs="true" />
+    <Block>
+        This example uses the <code>Primary</code> color in its light variant.
+    </Block>
     <Demo Type="typeof(Notification_Demo_03_LightColors_B_Primary)" Tabs="true" />
+    <Block>
+        This example uses the <code>Info</code> color in its light variant.
+    </Block>
     <Demo Type="typeof(Notification_Demo_03_LightColors_C_Info)" Tabs="true" />
+    <Block>
+        This example uses the <code>Success</code> color in its light variant.
+    </Block>
     <Demo Type="typeof(Notification_Demo_03_LightColors_D_Success)" Tabs="true" />
+    <Block>
+        This example uses the <code>Warning</code> color in its light variant.
+    </Block>
     <Demo Type="typeof(Notification_Demo_03_LightColors_E_Warning)" Tabs="true" />
+    <Block>
+        This example uses the <code>Danger</code> color in its light variant.
+    </Block>
     <Demo Type="typeof(Notification_Demo_03_LightColors_F_Danger)" Tabs="true" />
 </Section>
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Hide delete button" PageUrl="@pageUrl" Link="hide-delete-button">
-    <Demo Type="typeof(Notification_Demo_04_Hide_delete_button)" />
+<Section Class="p-0" Size="HeadingSize.H3" Name="Hide close button" PageUrl="@pageUrl" Link="hide-close-button">
+    <Block>
+        The <strong>Notification</strong> component includes a close button by default, allowing users to dismiss the notification. You can hide this button if you want the notification to remain visible.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>HideCloseButton</code> parameter to <code>true</code> on the <code>Notification</code> component.</li>
+                <li>Place your message or content inside the <code>Notification</code> tags.</li>
+            </ol>
+        </div>
+        This demo shows a notification without the close button.
+    </Block>
+    <Demo Type="typeof(Notification_Demo_04_Hide_Close_Button)" Tabs="true" />
 </Section>
 
 @code {

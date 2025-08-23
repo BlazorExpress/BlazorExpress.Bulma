@@ -55,16 +55,16 @@ public partial class Notification : BulmaComponentBase
     public NotificationColor Color { get; set; } = NotificationColor.None;
 
     /// <summary>
-    /// If <see langword="true" />, shows the delete button.
+    /// If <see langword="true" />, hides the close button.
     /// <para>
     /// Default value is <see langword="false" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
     [DefaultValue(false)]
-    [Description("If <b>true</b>, shows the delete button.")]
+    [Description("If <b>true</b>, hides the close button.")]
     [Parameter]
-    public bool HideDeleteButton { get; set; } = false;
+    public bool HideCloseButton { get; set; } = false;
 
     /// <summary>
     /// If <see langword="true" />, shows the color in its light version.

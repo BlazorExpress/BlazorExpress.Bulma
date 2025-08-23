@@ -4,7 +4,7 @@
 @if (Visible)
 {
     <div @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
-        @if (!HideDeleteButton)
+        @if (!HideCloseButton)
         {
             <DeleteButton @onclick="CloseNotification" />
         }
