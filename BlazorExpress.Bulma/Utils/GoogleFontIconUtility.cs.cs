@@ -48,7 +48,7 @@ public static class GoogleFontIconUtility
     {
         return name switch
         {
-            GoogleFontIconName.Rotation3D => "3d_rotation",
+            GoogleFontIconName.ThreeDRotation => "3d_rotation",
             GoogleFontIconName.Accessibility => "accessibility",
             GoogleFontIconName.AccessibilityNew => "accessibility_new",
             GoogleFontIconName.Accessible => "accessible",
@@ -70,7 +70,6 @@ public static class GoogleFontIconUtility
             GoogleFontIconName.AllOut => "all_out",
             GoogleFontIconName.Anchor => "anchor",
             GoogleFontIconName.Api => "api",
-            GoogleFontIconName.AppShortcut => "app_shortcut",
             GoogleFontIconName.Approval => "approval",
             GoogleFontIconName.AutoDelete => "auto_delete",
             GoogleFontIconName.AwardStar => "award_star",
