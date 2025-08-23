@@ -125,6 +125,24 @@
     <Demo Type="typeof(Skeletons_Demo_03_Components_with_Skeletons_A_Button)" Tabs="true" />
 </Section>
 
+<Section Class="p-0" Size="HeadingSize.H4" Name="Icon" PageUrl="@pageUrl" Link="components-with-skeletons-icon">
+    <Block>
+        The <strong>Skeleton</strong> feature can be applied to icon components to indicate that an icon is loading or unavailable, providing a visual placeholder that matches the expected icon's size and shape.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add your icon component (e.g., <code>BootstrapIcon</code>) to the page.</li>
+                <li>Set the <code>IsSkeleton</code> parameter to <code>true</code> on the <code>BootstrapIcon</code> component or <code>GoogleFontIcon</code>to display its skeleton state.</li>
+                <li>Toggle the <code>IsSkeleton</code> property in your code to control when the skeleton is shown (for example, during asynchronous loading operations).</li>
+                <li>Once loading is complete, set <code>IsSkeleton</code> to <code>false</code> to display the actual icon.</li>
+            </ol>
+        </div>
+        This demo shows how to use skeleton placeholders for icons and how to toggle their loading state programmatically.
+    </Block>
+    <Demo Type="typeof(Skeletons_Demo_03_Components_with_Skeletons_B_Icon)" Tabs="true" />
+</Section>
+
 @code {
     private const string componentName = nameof(Skeleton);
     private const string pageUrl = DemoRouteConstants.Demos_Skeletons_Documentation;
