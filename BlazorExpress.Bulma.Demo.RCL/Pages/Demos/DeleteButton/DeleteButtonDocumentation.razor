@@ -12,13 +12,35 @@
 <DocsLink Href="@DemoRouteConstants.Docs_DeleteButton_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>DeleteButton</strong> component provides a simple, reusable button for delete actions, following the Bulma design system. It is typically used to allow users to remove items, dismiss notifications, or trigger delete operations in your UI.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>DeleteButton</code> component to your page where a delete or close action is needed.</li>
+                <li>Optionally, handle its <code>onclick</code> event to perform custom logic when the button is pressed.</li>
+                <li>Style or position the button as needed within your layout.</li>
+            </ol>
+        </div>
+        This demo shows the default usage of the <code>DeleteButton</code> component, making it easy to integrate a consistent delete action into your application.
+    </Block>
     <Demo Type="typeof(DeleteButton_Demo_01_How_it_works)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
     <Block>
-        The <code>DeleteButton</code> component comes in 4 sizes: Small, Normal, Medium, and Large. 
-        The default size is <b>Normal</b>.
+        The <strong>DeleteButton</strong> component supports multiple sizes to fit different UI contexts. You can specify the size using the <code>Size</code> parameter with values such as <code>Small</code>, <code>Medium</code>, or <code>Large</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Size</code> parameter on the <code>DeleteButton</code> to adjust its appearance. For example: <code>&lt;DeleteButton Size="DeleteButtonSize.Small" /&gt;</code>.</li>
+                <li>If no size is specified, the button uses the default size.</li>
+                <li>Choose the size that best matches your design requirements.</li>
+            </ol>
+        </div>
+        This demo illustrates the available size options for the <code>DeleteButton</code> component, helping you select the appropriate size for your use case.
     </Block>
     <Demo Type="typeof(DeleteButton_Demo_03_Sizes_A)" Tabs="true" />
 </Section>
