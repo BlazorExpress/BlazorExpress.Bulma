@@ -11,31 +11,118 @@
 
 <DocsLink Href="@DemoRouteConstants.Docs_ProgressBar_Documentation" />
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>ProgressBar</strong> component displays progress for a task using a horizontal bar, built on the native <code>&lt;progress&gt;</code> HTML element.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>ProgressBar</code> component to your page.</li>
+                <li>Set the <code>Max</code> property to define the total value representing 100% completion.</li>
+                <li>Set the <code>Value</code> property to indicate the current progress.</li>
+            </ol>
+        </div>
+        This demo shows a basic progress bar with a value and maximum, suitable for most progress-tracking scenarios.
+    </Block>
     <Demo Type="typeof(ProgressBar_Demo_01_How_it_works)" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Block>
+        The <strong>ProgressBar</strong> supports multiple color options to visually indicate status or context, such as success, warning, or danger.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Use the <code>Color</code> property to set the progress bar’s color.</li>
+                <li>Choose from predefined values like <code>Primary</code>, <code>Link</code>, <code>Info</code>, <code>Success</code>, <code>Warning</code>, or <code>Danger</code>.</li>
+            </ol>
+        </div>
+        This demo illustrates how to apply different colors to progress bars for various use cases.
+    </Block>
     <Demo Type="typeof(ProgressBar_Demo_02_Colors)" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
+    <Block>
+        The <strong>ProgressBar</strong> component can be displayed in different sizes to fit your layout and design needs.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Size</code> property to adjust the height of the progress bar.</li>
+                <li>Available sizes include <code>Small</code>, <code>Normal</code>, <code>Medium</code>, and <code>Large</code>.</li>
+            </ol>
+        </div>
+        This demo shows progress bars in all supported sizes for easy comparison.
+    </Block>
     <Demo Type="typeof(ProgressBar_Demo_03_Sizes)" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Indeterminate" PageUrl="@pageUrl" Link="indeterminate">
+    <Block>
+        The <strong>ProgressBar</strong> can be shown in an indeterminate state to indicate ongoing activity when the exact progress is unknown.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Omit the <code>Value</code> property to display an indeterminate progress bar.</li>
+                <li>Set the <code>Color</code> property as needed to match your context.</li>
+            </ol>
+        </div>
+        This demo displays several indeterminate progress bars in different colors.
+    </Block>
     <Demo Type="typeof(ProgressBar_Demo_04_Indeterminate)" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Set width dynamically" PageUrl="@pageUrl" Link="set-width-dynamically">
+    <Block>
+        The <strong>ProgressBar</strong> value can be updated dynamically to reflect real-time progress changes.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Bind the <code>Value</code> property to a variable in your component.</li>
+                <li>Update this variable in response to user actions or application events (e.g., button clicks).</li>
+                <li>Optionally, use the <code>Max</code> property to set the maximum value for the progress bar.</li>
+            </ol>
+        </div>
+        This demo demonstrates increasing, decreasing, and resetting the progress bar’s value interactively.
+    </Block>
     <Demo Type="typeof(ProgressBar_Demo_05_Set_width_dynamically)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Set color dynamically" PageUrl="@pageUrl" Link="set-color-dynamically">
+    <Block>
+        The <strong>ProgressBar</strong> color can be changed at runtime to reflect different statuses or outcomes.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Bind the <code>Color</code> property to a variable in your component.</li>
+                <li>Update this variable in response to user actions or application logic to change the progress bar’s color.</li>
+            </ol>
+        </div>
+        This demo shows how to switch the progress bar’s color interactively using buttons.
+    </Block>
     <Demo Type="typeof(ProgressBar_Demo_06_Set_color_dynamically)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Dynamic progress" PageUrl="@pageUrl" Link="dynamic-progress">
+    <Block>
+        The <strong>ProgressBar</strong> can be fully controlled in both value and color, allowing for advanced dynamic scenarios such as status feedback or multi-stage progress.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Bind both the <code>Value</code> and <code>Color</code> properties to variables in your component.</li>
+                <li>Update these variables in your logic to reflect progress and status changes (e.g., success, warning, danger).</li>
+                <li>Use buttons or other UI elements to trigger updates to the progress bar’s value and color.</li>
+            </ol>
+        </div>
+        This demo provides a complete example of a progress bar that updates its value and color dynamically based on user interaction and progress state.
+    </Block>
     <Demo Type="typeof(ProgressBar_Demo_07_Dynamically_progress)" Tabs="true" />
 </Section>
 

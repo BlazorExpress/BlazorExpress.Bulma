@@ -11,36 +11,130 @@
 
 <DocsLink Href="@DemoRouteConstants.Docs_Tabs_Documentation" />
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>Tabs</strong> component organizes content into multiple panels, each accessible by clicking its corresponding tab. This allows users to switch between different sections without leaving the page.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Tabs</code> component to your page.</li>
+                <li>Define one or more <code>Tab</code> child components inside <code>Tabs</code>, each with a <code>Title</code> and content.</li>
+                <li>Optionally, set <code>IsActive="true"</code> on the tab you want to be selected by default.</li>
+            </ol>
+        </div>
+        This demo shows a basic tabbed interface with four tabs. Only one tab's content is visible at a time, and users can switch between them by clicking the tab headers.
+    </Block>
     <Demo Type="typeof(Tabs_Demo_01_How_it_works)" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Alignment" PageUrl="@pageUrl" Link="alignment">
+    <Block>
+        The <strong>Tabs</strong> component supports alignment options to control the position of the tab headers. Use the <code>Alignment</code> parameter to center or right-align the tabs.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Alignment</code> parameter on the <code>Tabs</code> component to <code>TabsAlignment.Center</code> or <code>TabsAlignment.Right</code>.</li>
+                <li>Add your <code>Tab</code> components as usual.</li>
+            </ol>
+        </div>
+        The following demo centers the tab headers using <code>Alignment="TabsAlignment.Center"</code>.
+    </Block>
     <Demo Type="typeof(Tabs_Demo_02_Alignment_A_Centered)" />
+    <Block>
+        This demo shows the tab headers aligned to the right using <code>Alignment="TabsAlignment.Right"</code>. Adjust alignment to match your layout needs.
+    </Block>
     <Demo Type="typeof(Tabs_Demo_02_Alignment_B_Right)" />
 </Section>
 
 <!-- TODO: tabs with icons -->
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
+    <Block>
+        The <strong>Tabs</strong> component can be displayed in different sizes to fit your design. Use the <code>Size</code> parameter to set the tab size to small, medium, or large.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Size</code> parameter on the <code>Tabs</code> component to <code>TabsSize.Small</code>, <code>TabsSize.Medium</code>, or <code>TabsSize.Large</code>.</li>
+                <li>Add your <code>Tab</code> components as needed.</li>
+            </ol>
+        </div>
+        This demo uses <code>Size="TabsSize.Small"</code> to render compact tabs.
+    </Block>
     <Demo Type="typeof(Tabs_Demo_03_Sizes_A_Small)" />
+    <Block>
+        This demo uses <code>Size="TabsSize.Medium"</code> for medium-sized tabs, suitable for most layouts.
+    </Block>
     <Demo Type="typeof(Tabs_Demo_03_Sizes_B_Medium)" />
+    <Block>
+        This demo uses <code>Size="TabsSize.Large"</code> for prominent, easy-to-click tabs.
+    </Block>
     <Demo Type="typeof(Tabs_Demo_03_Sizes_C_Large)" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Styles" PageUrl="@pageUrl" Link="styles">
+    <Block>
+        The <strong>Tabs</strong> component supports different visual styles. Use the <code>Type</code> parameter to switch between default, boxed, and rounded tab styles.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Type</code> parameter on the <code>Tabs</code> component to <code>TabsType.Boxed</code> or <code>TabsType.Rounded</code>.</li>
+                <li>Add your <code>Tab</code> components as usual.</li>
+            </ol>
+        </div>
+        This demo uses <code>Type="TabsType.Boxed"</code> for boxed tab headers.
+    </Block>
     <Demo Type="typeof(Tabs_Demo_04_Styles_A_Boxed)" />
+    <Block>
+        This demo uses <code>Type="TabsType.Rounded"</code> for rounded tab headers, giving a softer appearance.
+    </Block>
     <Demo Type="typeof(Tabs_Demo_04_Styles_B_Rounded)" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Full width" PageUrl="@pageUrl" Link="full-width">
+    <Block>
+        To make the <strong>Tabs</strong> component span the entire width of its container, set the <code>IsFullWidth</code> parameter to <code>true</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Tabs</code> component and set <code>IsFullWidth="true"</code>.</li>
+                <li>Add your <code>Tab</code> components as needed.</li>
+            </ol>
+        </div>
+        This demo shows tabs stretched to fill the available horizontal space.
+    </Block>
     <Demo Type="typeof(Tabs_Demo_05_Full_Width)" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Combined" PageUrl="@pageUrl" Link="combined">
+    <Block>
+        You can combine alignment, style, size, and full-width options to create custom tab layouts. Set multiple parameters on the <code>Tabs</code> component to achieve the desired appearance.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set any combination of <code>Alignment</code>, <code>Type</code>, <code>Size</code>, and <code>IsFullWidth</code> on the <code>Tabs</code> component.</li>
+                <li>Add your <code>Tab</code> components as usual.</li>
+            </ol>
+        </div>
+        This demo combines centered alignment and boxed style.
+    </Block>
     <Demo Type="typeof(Tabs_Demo_06_Combined_A_Centered_Boxed)" />
+    <Block>
+        This demo combines boxed style with full-width tabs.
+    </Block>
     <Demo Type="typeof(Tabs_Demo_06_Combined_B_Boxed_Full_Width)" />
+    <Block>
+        This demo combines rounded style with full-width tabs.
+    </Block>
     <Demo Type="typeof(Tabs_Demo_06_Combined_C_Rounded_Full_Width)" />
+    <Block>
+        This demo combines centered alignment, boxed style, and medium size for a distinct look.
+    </Block>
     <Demo Type="typeof(Tabs_Demo_06_Combined_D_Centered_Boxed_Medium)" />
 </Section>
 
@@ -93,6 +187,19 @@
             </tbody>
         </table>
     </div>
+    <Block>
+        The <strong>Tabs</strong> component exposes methods for programmatically controlling tab selection and management. You can use a <code>@@ref</code> to access these methods from your code.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add <code>@@ref="tabsRef"</code> to your <code>Tabs</code> component.</li>
+                <li>Call methods like <code>ShowFirstTab()</code>, <code>ShowTabByIndex(index)</code>, or <code>ShowTabByName(name)</code> from your code to change the active tab.</li>
+                <li>Use <code>RemoveTabByIndex</code> or <code>RemoveTabByName</code> to remove tabs dynamically.</li>
+            </ol>
+        </div>
+        This demo provides buttons to switch between tabs and demonstrates how to control tabs from code.
+    </Block>
     <Demo Type="typeof(Tabs_Demo_07_Methods)" />
 </Section>
 
@@ -129,6 +236,19 @@
             </table>
         </div>
     </div>
+    <Block>
+        The <strong>Tabs</strong> component provides events to respond to tab changes. You can handle <code>OnHidden</code>, <code>OnShown</code>, and <code>OnTabChanged</code> to perform actions when tabs are switched.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add <code>OnHidden</code>, <code>OnShown</code>, or <code>OnTabChanged</code> event handlers to your <code>Tabs</code> component.</li>
+                <li>Implement the corresponding methods in your code to handle tab events and update your UI or state as needed.</li>
+                <li>Use the event arguments to access information about the active or previous tab.</li>
+            </ol>
+        </div>
+        This demo logs tab events and displays them in a list, showing how to react to tab changes in your application.
+    </Block>
     <Demo Type="typeof(Tabs_Demo_08_Events)" />
 </Section>
 

@@ -11,11 +11,37 @@
 
 <DocsLink Href="@DemoRouteConstants.Docs_ConfirmDialog_Documentation" />
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>ConfirmDialog</strong> component displays a modal dialog prompting the user to confirm or cancel an action, such as deleting an item. It is ideal for scenarios where user verification is required before proceeding.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>ConfirmDialog</code> component to your page and assign it a reference using <code>@@ref</code>.</li>
+                <li>Trigger the dialog by calling <code>ShowAsync</code> on the referenced component, passing a <code>title</code> and <code>message</code> as needed.</li>
+                <li>Await the result of <code>ShowAsync</code> to determine if the user confirmed (<code>true</code>) or canceled (<code>false</code>), and handle the outcome accordingly.</li>
+            </ol>
+        </div>
+        This demo shows the basic usage of <code>ConfirmDialog</code> for confirming a delete operation.
+    </Block>
     <Demo Type="typeof(ConfirmDialog_Demo_01_How_it_works)" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Change buttons text and color" PageUrl="@pageUrl" Link="change-buttons-text-and-color">
+    <Block>
+        You can customize the <strong>ConfirmDialog</strong> buttons to match your application's language and style. The button text and color can be changed using the <code>ConfirmDialogOptions</code> parameter.
+        <br /><br />
+        <strong>How to customize:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Create a <code>ConfirmDialogOptions</code> object and set properties like <code>YesButtonText</code>, <code>NoButtonText</code>, <code>YesButtonColor</code>, and <code>NoButtonColor</code>.</li>
+                <li>Pass the options object to <code>ShowAsync</code> when displaying the dialog.</li>
+                <li>The dialog will reflect your custom button labels and colors, providing a tailored user experience.</li>
+            </ol>
+        </div>
+        This demo demonstrates how to change the button text and color for the confirmation dialog.
+    </Block>
     <Demo Type="typeof(ConfirmDialog_Demo_02_Change_buttons_text_and_color)" />
 </Section>
 

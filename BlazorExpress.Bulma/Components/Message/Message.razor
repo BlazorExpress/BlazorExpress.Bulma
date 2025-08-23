@@ -2,7 +2,7 @@
 @inherits BulmaComponentBase
 
 <CascadingValue Value="@(this)" IsFixed="true">
-    <CascadingValue Name="ShowDeleteButton" Value="@ShowDeleteButton" IsFixed="true">
+    <CascadingValue Name="HideCloseButton" Value="@HideCloseButton" IsFixed="true">
         @if (Visible)
         {
             <div @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">

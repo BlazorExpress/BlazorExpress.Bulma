@@ -11,54 +11,214 @@
 
 <DocsLink Href="@DemoRouteConstants.Docs_Navbar_Documentation" />
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>Navbar</strong> component provides a responsive horizontal navigation bar that supports branding, navigation links, dropdown menus, and action buttons.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Navbar</code> component to your page.</li>
+                <li>Use <code>NavbarBrand</code> for your logo or brand name.</li>
+                <li>Place navigation links inside <code>NavbarMenu</code> using <code>NavbarStart</code> and <code>NavbarEnd</code> for left and right alignment.</li>
+                <li>Add <code>NavbarItem</code> for each link or menu item. Use <code>HasDropdown</code> and <code>NavbarDropdown</code> for dropdown menus.</li>
+                <li>Include action buttons (e.g., sign up, log in) using the <code>Buttons</code> and <code>Button</code> components inside <code>NavbarEnd</code>.</li>
+            </ol>
+        </div>
+        This demo shows a typical setup with branding, navigation links, a dropdown menu, and action buttons.
+    </Block>
     <Demo Type="typeof(Navbar_Demo_01_How_it_works)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Block>
+        The <strong>Navbar</strong> component supports multiple color themes to match your application's style. You can set the <code>Color</code> parameter to apply Bulma's built-in color schemes, such as <code>Primary</code>, <code>Link</code>, <code>Info</code>, <code>Success</code>, <code>Warning</code>, <code>Danger</code>, <code>Black</code>, <code>Dark</code>, <code>Light</code>, and <code>White</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Color</code> parameter on the <code>Navbar</code> component to the desired <code>NavbarColor</code> value.</li>
+                <li>Each color option provides a different visual style for the navbar background and text.</li>
+                <li>Use the demos below to preview each color variant and see how it affects the navbar appearance.</li>
+            </ol>
+        </div>
+        The following sections demonstrate each available color option.
+    </Block>
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Primary" PageUrl="@pageUrl" Link="colors-primary">
+    <Block>
+        The <strong>Primary</strong> color theme applies your application's primary color to the navbar background.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color="NavbarColor.Primary"</code> on the <code>Navbar</code> component.</li>
+                <li>Use <code>ButtonColor.Primary</code> for buttons to match the navbar style.</li>
+            </ol>
+        </div>
+        This demo shows a navbar with the primary color scheme.
+    </Block>
     <Demo Type="typeof(Navbar_Demo_02_Colors_A_Primary)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Link" PageUrl="@pageUrl" Link="colors-link">
+    <Block>
+        The <strong>Link</strong> color theme uses the link color for the navbar background, providing a distinct accent.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color="NavbarColor.Link"</code> on the <code>Navbar</code> component.</li>
+                <li>Style buttons with <code>ButtonColor.Link</code> for a consistent look.</li>
+            </ol>
+        </div>
+        This demo displays the navbar with the link color scheme.
+    </Block>
     <Demo Type="typeof(Navbar_Demo_02_Colors_B_Link)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Info" PageUrl="@pageUrl" Link="colors-info">
+    <Block>
+        The <strong>Info</strong> color theme gives the navbar an informational blue background.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color="NavbarColor.Info"</code> on the <code>Navbar</code> component.</li>
+                <li>Use <code>ButtonColor.Info</code> for action buttons to match the navbar.</li>
+            </ol>
+        </div>
+        This demo shows the info color applied to the navbar.
+    </Block>
     <Demo Type="typeof(Navbar_Demo_02_Colors_C_Info)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Success" PageUrl="@pageUrl" Link="colors-success">
+    <Block>
+        The <strong>Success</strong> color theme applies a green background, ideal for positive or confirmation contexts.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color="NavbarColor.Success"</code> on the <code>Navbar</code> component.</li>
+                <li>Style buttons with <code>ButtonColor.Success</code> for a unified appearance.</li>
+            </ol>
+        </div>
+        This demo features the success color scheme.
+    </Block>
     <Demo Type="typeof(Navbar_Demo_02_Colors_D_Success)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Warning" PageUrl="@pageUrl" Link="colors-warning">
+    <Block>
+        The <strong>Warning</strong> color theme uses a yellow background to draw attention or indicate caution.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color="NavbarColor.Warning"</code> on the <code>Navbar</code> component.</li>
+                <li>Use <code>ButtonColor.Warning</code> for matching action buttons.</li>
+            </ol>
+        </div>
+        This demo highlights the warning color style.
+    </Block>
     <Demo Type="typeof(Navbar_Demo_02_Colors_E_Warning)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Danger" PageUrl="@pageUrl" Link="colors-danger">
+    <Block>
+        The <strong>Danger</strong> color theme applies a red background, suitable for error or alert contexts.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color="NavbarColor.Danger"</code> on the <code>Navbar</code> component.</li>
+                <li>Style buttons with <code>ButtonColor.Danger</code> for consistency.</li>
+            </ol>
+        </div>
+        This demo demonstrates the danger color scheme.
+    </Block>
     <Demo Type="typeof(Navbar_Demo_02_Colors_F_Danger)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Black" PageUrl="@pageUrl" Link="colors-black">
+    <Block>
+        The <strong>Black</strong> color theme gives the navbar a solid black background for a bold look.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color="NavbarColor.Black"</code> on the <code>Navbar</code> component.</li>
+                <li>Use <code>ButtonColor.Black</code> for matching buttons.</li>
+            </ol>
+        </div>
+        This demo shows the black color applied to the navbar.
+    </Block>
     <Demo Type="typeof(Navbar_Demo_02_Colors_G_Black)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Dark" PageUrl="@pageUrl" Link="colors-dark">
+    <Block>
+        The <strong>Dark</strong> color theme provides a dark gray background for a modern, subtle appearance.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color="NavbarColor.Dark"</code> on the <code>Navbar</code> component.</li>
+                <li>Style buttons with <code>ButtonColor.Dark</code> for a cohesive look.</li>
+            </ol>
+        </div>
+        This demo features the dark color scheme.
+    </Block>
     <Demo Type="typeof(Navbar_Demo_02_Colors_H_Dark)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Light" PageUrl="@pageUrl" Link="colors-light">
+    <Block>
+        The <strong>Light</strong> color theme applies a light gray background, ideal for clean and minimal interfaces.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color="NavbarColor.Light"</code> on the <code>Navbar</code> component.</li>
+                <li>Use <code>ButtonColor.Light</code> for action buttons to match the navbar.</li>
+            </ol>
+        </div>
+        This demo displays the light color scheme.
+    </Block>
     <Demo Type="typeof(Navbar_Demo_02_Colors_I_Light)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="White" PageUrl="@pageUrl" Link="colors-white">
+    <Block>
+        The <strong>White</strong> color theme gives the navbar a white background for a classic, clean look.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color="NavbarColor.White"</code> on the <code>Navbar</code> component.</li>
+                <li>Style buttons with <code>ButtonColor.White</code> for a unified appearance.</li>
+            </ol>
+        </div>
+        This demo shows the white color applied to the navbar.
+    </Block>
     <Demo Type="typeof(Navbar_Demo_02_Colors_J_White)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Transparent" PageUrl="@pageUrl" Link="transparent">
+    <Block>
+        The <strong>Transparent</strong> option allows the navbar to have a transparent background, making it blend seamlessly with the page content or background images.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>IsTransparent="true"</code> on the <code>Navbar</code> component.</li>
+                <li>Combine with custom classes or styles for further visual customization.</li>
+            </ol>
+        </div>
+        This demo illustrates a transparent navbar overlaying the page content.
+    </Block>
     <Demo Type="typeof(Navbar_Demo_99_Transparent)" Tabs="true" />
 </Section>
 

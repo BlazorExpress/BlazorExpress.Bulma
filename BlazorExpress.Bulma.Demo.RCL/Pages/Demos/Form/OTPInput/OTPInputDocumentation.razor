@@ -11,14 +11,37 @@
 
 <DocsLink Href="@DemoRouteConstants.Docs_Form_OTPInput_Documentation" />
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>OTPInput</strong> component provides a user-friendly interface for entering one-time passwords (OTP), commonly used for authentication and verification flows.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>OTPInput</code> component to your page.</li>
+                <li>Handle the <code>OnOTPChanged</code> event to capture the OTP value as the user types.</li>
+                <li>Handle the <code>OnOTPCompleted</code> event to respond when the user has entered the complete OTP.</li>
+                <li>Bind the entered OTP to a variable for display or further processing as needed.</li>
+            </ol>
+        </div>
+        This demo illustrates the basic usage of the OTPInput component, including event handling for OTP entry and completion.
+    </Block>
     <Demo Type="typeof(OTPInput_Demo_01_How_it_works)" Tabs="true"/>
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Length" PageUrl="@pageUrl" Link="length">
     <Block>
-        To change the length of the OTP input, you can use the <code>Length</code> parameter. This allows you to specify how many characters the OTP input should accept. 
-        For example, if you want to create a 5-digit OTP input, you can set the <code>Length</code> parameter to 5.
+        The <strong>OTPInput</strong> component allows you to specify the required OTP length, adapting the number of input fields accordingly.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Length</code> parameter to define how many digits or characters the OTP should have (e.g., <code>Length="5"</code>).</li>
+                <li>Handle the <code>OnOTPChanged</code> and <code>OnOTPCompleted</code> events as shown in the demo to process the OTP input.</li>
+                <li>Display or use the entered OTP value as needed in your application.</li>
+            </ol>
+        </div>
+        This demo demonstrates how to configure the OTPInput component for a custom OTP length and handle user input accordingly.
     </Block>
     <Demo Type="typeof(OTPInput_Demo_02_Length)" Tabs="true" />
 </Section>

@@ -11,87 +11,140 @@
 
 <DocsLink Href="@DemoRouteConstants.Docs_Breadcrumb_Documentation" />
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
-    <div class="mb-3">
-        The <b>Breadcrumb</b> component is a simple spacer tool. It allows sibling HTML elements to have a consistent margin between them.
-    </div>
-    <Demo Type="typeof(Breadcrumb_Demo_01_How_it_works)" Tabs="false" />
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>Breadcrumb</strong> component displays a navigation trail, helping users understand their current location within the application hierarchy and easily navigate back to previous sections.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Breadcrumb</code> component to your page.</li>
+                <li>Define each navigation step using <code>BreadcrumbItem</code> components, setting the <code>Href</code> for navigation and <code>IsActive="true"</code> for the current page.</li>
+                <li>Customize the breadcrumb by adding, removing, or reordering <code>BreadcrumbItem</code> elements as needed.</li>
+            </ol>
+        </div>
+        This demo shows a basic breadcrumb setup with four navigation steps, highlighting the current page.
+    </Block>
+    <Demo Type="typeof(Breadcrumb_Demo_01_How_it_works)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Alignment" PageUrl="@pageUrl" Link="alignment">
-    <div class="mb-3">
-        By default, the <code>Breadcrumb</code> component aligns its children to the left.
-        For alternate alignment use the <code>Alignment</code> parameter. The <b>Alignment</b> parameter accepts the following values: <b>Default</b>, <b>Center</b>, and <b>Right</b>.
-    </div>
-    <Demo Type="typeof(Breadcrumb_Demo_02_Alignment_A_Default)" Tabs="false" />
-    <div class="mb-3">
-        In the following examples, the <code>Breadcrumb</code> component is aligned to the center.
-        For this to work, the <code>Alignment</code> parameter must be set to <b>Center</b>.
-    </div>
-    <Demo Type="typeof(Breadcrumb_Demo_02_Alignment_B_Center)" Tabs="false" />
-    <div class="mb-3">
-        In the following examples, the <code>Breadcrumb</code> component is aligned to the right.
-        For this to work, the <code>Alignment</code> parameter must be set to <b>Right</b>.
-    </div>
-    <Demo Type="typeof(Breadcrumb_Demo_02_Alignment_C_Right)" Tabs="false" />
+    <Block>
+        The <strong>Breadcrumb</strong> component supports alignment options to fit your layout needs.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Use the <code>Alignment</code> parameter to control breadcrumb alignment.</li>
+                <li>Omit the parameter for default (left) alignment.</li>
+            </ol>
+        </div>
+        The following demo shows the default (left-aligned) breadcrumb.
+    </Block>
+    <Demo Type="typeof(Breadcrumb_Demo_02_Alignment_A_Default)" Tabs="true" />
+    <Block>
+        To center the breadcrumb, set <code>Alignment="BreadcrumbAlignment.Center"</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Alignment</code> parameter with value <code>BreadcrumbAlignment.Center</code> to the <code>Breadcrumb</code> component.</li>
+            </ol>
+        </div>
+        This demo displays a centered breadcrumb navigation.
+    </Block>
+    <Demo Type="typeof(Breadcrumb_Demo_02_Alignment_B_Center)" Tabs="true" />
+    <Block>
+        To right-align the breadcrumb, set <code>Alignment="BreadcrumbAlignment.Right"</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Alignment</code> parameter with value <code>BreadcrumbAlignment.Right</code> to the <code>Breadcrumb</code> component.</li>
+            </ol>
+        </div>
+        This demo shows a right-aligned breadcrumb navigation.
+    </Block>
+    <Demo Type="typeof(Breadcrumb_Demo_02_Alignment_C_Right)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Icons" PageUrl="@pageUrl" Link="icons">
-    <div class="mb-3">
-        You can add icons to the <code>Breadcrumb</code> component.
-        Add <code><a href="@DemoRouteConstants.Demos_BootstrapIcons_Documentation">BootstrapIcon</a></code> or <code><a href="@DemoRouteConstants.Demos_GoogleFontIcons_Documentation">GoogleFontIcon</a></code> to the <code>BreadcrumbItem</code> component as a child content.
-    </div>
-    <div class="mb-3">
-        In the following example, Bootstrap icons are used.
-    </div>
-    <Demo Type="typeof(Breadcrumb_Demo_03_Icons_A_BootstrapIcons)" Tabs="false" />
-    <div class="mb-3">
-        In the following example, Google Font icons are used.
-    </div>
-    <Demo Type="typeof(Breadcrumb_Demo_03_Icons_B_GoogleFontIcons)" Tabs="false" />
+    <Block>
+        You can enhance breadcrumbs with icons for better visual context.
+        <br /><br />
+        <strong>How to use Bootstrap Icons:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap the breadcrumb label inside a <code>BootstrapIcon</code> component within each <code>BreadcrumbItem</code>.</li>
+                <li>Set the <code>Name</code> property to the desired icon.</li>
+            </ol>
+        </div>
+        This demo uses Bootstrap icons for each breadcrumb step.
+    </Block>
+    <Demo Type="typeof(Breadcrumb_Demo_03_Icons_A_BootstrapIcons)" Tabs="true" />
+    <Block>
+        <strong>How to use Google Font Icons:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap the breadcrumb label inside a <code>GoogleFontIcon</code> component within each <code>BreadcrumbItem</code>.</li>
+                <li>Set the <code>Name</code> property to the desired Google Font icon.</li>
+            </ol>
+        </div>
+        This demo uses Google Font icons for each breadcrumb step.
+    </Block>
+    <Demo Type="typeof(Breadcrumb_Demo_03_Icons_B_GoogleFontIcons)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Alternative seperators" PageUrl="@pageUrl" Link="alternative-seperators">
-    <div class="mb-3">
-        You can change the default separator between <code>BreadcrumbItem</code> components.
-        Use the <code>Separator</code> parameter to change the separator.
-        The <code>Separator</code> parameter accepts the following values: <b>Arrow</b>, <b>Bullet</b>, <b>Dot</b>, and <b>Succeeds</b>.
-    </div>
-    <div class="mb-3">
-        In the following example, the separator is set to <b>Arrow</b>.
-    </div>
-    <Demo Type="typeof(Breadcrumb_Demo_04_Alternative_seperators_A_Arrow)" Tabs="false" />
-    <div class="mb-3">
-        In the following example, the separator is set to <b>Bullet</b>.
-    </div>
-    <Demo Type="typeof(Breadcrumb_Demo_04_Alternative_seperators_B_Bullet)" Tabs="false" />
-    <div class="mb-3">
-        In the following example, the separator is set to <b>Dot</b>.
-    </div>
-    <Demo Type="typeof(Breadcrumb_Demo_04_Alternative_seperators_C_Dot)" Tabs="false" />
-    <div class="mb-3">
-        In the following example, the separator is set to <b>Succeeds</b>.
-    </div>
-    <Demo Type="typeof(Breadcrumb_Demo_04_Alternative_seperators_D_Succeeds)" Tabs="false" />
+    <Block>
+        The <strong>Breadcrumb</strong> component supports different separator styles to match your application's design.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Separator</code> parameter on the <code>Breadcrumb</code> component.</li>
+                <li>Choose from <code>BreadcrumbSeparator.Arrow</code>, <code>Bullet</code>, <code>Dot</code>, or <code>Succeeds</code>.</li>
+            </ol>
+        </div>
+        This demo uses the <code>Arrow</code> separator.
+    </Block>
+    <Demo Type="typeof(Breadcrumb_Demo_04_Alternative_seperators_A_Arrow)" Tabs="true" />
+    <Block>
+        This demo uses the <code>Bullet</code> separator. Set <code>Separator="BreadcrumbSeparator.Bullet"</code> to apply this style.
+    </Block>
+    <Demo Type="typeof(Breadcrumb_Demo_04_Alternative_seperators_B_Bullet)" Tabs="true" />
+    <Block>
+        This demo uses the <code>Dot</code> separator. Set <code>Separator="BreadcrumbSeparator.Dot"</code> to apply this style.
+    </Block>
+    <Demo Type="typeof(Breadcrumb_Demo_04_Alternative_seperators_C_Dot)" Tabs="true" />
+    <Block>
+        This demo uses the <code>Succeds</code> separator. Set <code>Separator="BreadcrumbSeparator.Succeeds"</code> to apply this style.
+    </Block>
+    <Demo Type="typeof(Breadcrumb_Demo_04_Alternative_seperators_D_Succeeds)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
-    <div class="mb-3">
-        The <code>Breadcrumb</code> component has three sizes: <b>Small</b>, <b>Medium</b>, and <b>Large</b>.
-        Use the <code>Size</code> parameter to change the size.
-    </div>
-    <div class="mb-3">
-        In the following example, the size is set to <b>Small</b>.
-    </div>
-    <Demo Type="typeof(Breadcrumb_Demo_05_Sizes_A_Small)" Tabs="false" />
-    <div class="mb-3">
-        In the following example, the size is set to <b>Medium</b>.
-    </div>
-    <Demo Type="typeof(Breadcrumb_Demo_05_Sizes_B_Medium)" Tabs="false" />
-    <div class="mb-3">
-        In the following example, the size is set to <b>Large</b>.
-    </div>
-    <Demo Type="typeof(Breadcrumb_Demo_05_Sizes_C_Large)" Tabs="false" />
+    <Block>
+        The <strong>Breadcrumb</strong> component can be displayed in different sizes to fit your UI.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Size</code> parameter on the <code>Breadcrumb</code> component.</li>
+                <li>Choose from <code>BreadcrumbSize.Small</code>, <code>Medium</code>, or <code>Large</code>.</li>
+            </ol>
+        </div>
+        This demo shows a small breadcrumb (<code>Size="BreadcrumbSize.Small"</code>).
+    </Block>
+    <Demo Type="typeof(Breadcrumb_Demo_05_Sizes_A_Small)" Tabs="true" />
+    <Block>
+        This demo shows a medium breadcrumb (<code>Size="BreadcrumbSize.Medium"</code>).
+    </Block>
+    <Demo Type="typeof(Breadcrumb_Demo_05_Sizes_B_Medium)" Tabs="true" />
+    <Block>
+        This demo shows a large breadcrumb (<code>Size="BreadcrumbSize.Large"</code>).
+    </Block>
+    <Demo Type="typeof(Breadcrumb_Demo_05_Sizes_C_Large)" Tabs="true" />
 </Section>
 
 @code {

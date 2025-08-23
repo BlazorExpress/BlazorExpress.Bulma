@@ -4,8 +4,8 @@
 <div @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
     @ChildContent
 
-    @if (ShowDeleteButton)
+    @if (!HideCloseButton)
     {
-        <button class="delete" aria-label="delete" @onclick="CloseMessage"></button>
+        <DeleteButton @onclick="CloseMessage" />
     }
 </div>

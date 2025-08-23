@@ -11,76 +11,127 @@
 
 <DocsLink Href="@DemoRouteConstants.Docs_Grid_Documentation" />
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>Grid</strong> component displays tabular data with customizable columns and supports responsive layouts.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Grid</code> component to your page and specify the <code>TItem</code> type for your data model.</li>
+                <li>Bind your data collection to the <code>Data</code> parameter.</li>
+                <li>Define columns using <code>GridColumns</code> and <code>GridColumn</code> for each property you want to display.</li>
+                <li>Optionally, enable features like borders and responsiveness using <code>IsBordered</code> and <code>IsResponsive</code>.</li>
+            </ol>
+        </div>
+        This demo shows the basic setup for rendering a simple data table using the Grid component.
+    </Block>
     <Demo Type="typeof(Grid_Demo_01_How_it_works)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Data provider" PageUrl="@pageUrl" Link="data-provider">
+    <Block>
+        The <strong>DataProvider</strong> feature allows the Grid to fetch and manage data dynamically, supporting scenarios like server-side paging, filtering, and sorting.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>DataProvider</code> parameter to an async method that returns data based on a <code>GridDataProviderRequest&lt;TItem&gt;</code>.</li>
+                <li>Implement your data fetching logic inside the provider method (e.g., call an API or service).</li>
+                <li>Return a <code>GridDataProviderResult&lt;TItem&gt;</code> containing the data and total count.</li>
+                <li>Define columns as usual with <code>GridColumns</code> and <code>GridColumn</code>.</li>
+            </ol>
+        </div>
+        This demo demonstrates how to connect the Grid to a data provider for dynamic data loading.
+    </Block>
     <Demo Type="typeof(Grid_Demo_02_DataProvider)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Paging" PageUrl="@pageUrl" Link="paging">
+    <Block>
+        The <strong>Paging</strong> feature enables users to navigate large datasets by dividing them into pages.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Enable paging by setting <code>AllowPaging="true"</code> on the <code>Grid</code> component.</li>
+                <li>Set the <code>PageSize</code> parameter to control the number of items per page.</li>
+                <li>Optionally, provide <code>PageSizeSelectorItems</code> to let users select different page sizes.</li>
+                <li>Bind your data using a <code>DataProvider</code> for efficient paging, or use <code>Data</code> for client-side paging.</li>
+            </ol>
+        </div>
+        This demo illustrates how to enable and configure paging in the Grid component.
+    </Block>
     <Demo Type="typeof(Grid_Demo_03_Paging)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Sorting" PageUrl="@pageUrl" Link="sorting">
+    <Block>
+        The <strong>Sorting</strong> feature allows users to sort data by clicking on column headers.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Enable sorting by setting <code>AllowSorting="true"</code> on the <code>Grid</code> component.</li>
+                <li>For each <code>GridColumn</code>, specify the <code>SortKeySelector</code> to indicate which property to sort by.</li>
+                <li>Use a <code>DataProvider</code> to support server-side or client-side sorting logic.</li>
+            </ol>
+        </div>
+        This demo shows how to enable sorting and configure sortable columns in the Grid.
+    </Block>
     <Demo Type="typeof(Grid_Demo_04_Sorting)" Tabs="true" />
 </Section>
 
-@* <Section Class="p-0" Size="HeadingSize.H3" Name="Filters" PageUrl="@pageUrl" Link="filters">
-    <div>TODO: Add demo</div>
-</Section>
-
-<Section Class="p-0" Size="HeadingSize.H3" Name="Grid state" PageUrl="@pageUrl" Link="grid-state">
-    <div>TODO: Add demo</div>
-</Section>
-
-<Section Class="p-0" Size="HeadingSize.H3" Name="Detail view" PageUrl="@pageUrl" Link="detail-view">
-    <div>TODO: Add demo</div>
-</Section>
-
-<Section Class="p-0" Size="HeadingSize.H3" Name="Nested grid" PageUrl="@pageUrl" Link="nested-grid">
-    <div>TODO: Add demo</div>
-</Section> *@
-
-<Section Class="p-0" Size="HeadingSize.H3" Name="Footer template" PageUrl="@pageUrl" Link="footer-template">
-</Section>
-
 <Section Class="p-0" Size="HeadingSize.H3" Name="Empty data text" PageUrl="@pageUrl" Link="empty-data-text">
+    <Block>
+        The <strong>Empty Data Text</strong> feature displays a default message when there are no records to show in the Grid.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Bind the <code>Data</code> parameter to an empty or null collection.</li>
+                <li>The Grid will automatically display a default "No data available" message when there are no items.</li>
+                <li>Use this feature for simple scenarios where a custom template is not required.</li>
+            </ol>
+        </div>
+        This demo demonstrates the default empty data message when the data source is empty.
+    </Block>
     <Demo Type="typeof(Grid_Demo_10_Empty_data_text)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Empty data template" PageUrl="@pageUrl" Link="empty-data-template">
+    <Block>
+        The <strong>Empty Data Template</strong> feature lets you customize the content shown when the Grid has no data.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Bind the <code>Data</code> parameter to an empty or null collection.</li>
+                <li>Define a <code>GridEmptyDataTemplate</code> inside the <code>Grid</code> to provide custom markup (e.g., images, messages).</li>
+                <li>The template will be displayed whenever there are no items in the data source.</li>
+            </ol>
+        </div>
+        This demo shows how to use a custom template for empty data scenarios in the Grid.
+    </Block>
     <Demo Type="typeof(Grid_Demo_11_Empty_data_template)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Loading template" PageUrl="@pageUrl" Link="loading-template">
+    <Block>
+        The <strong>Loading Template</strong> feature allows you to display custom content while the Grid is loading data.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Use a <code>DataProvider</code> that loads data asynchronously (e.g., with a delay or API call).</li>
+                <li>Define a <code>GridLoadingTemplate</code> inside the <code>Grid</code> to show custom loading indicators or messages.</li>
+                <li>The template will be shown automatically while data is being fetched.</li>
+            </ol>
+        </div>
+        This demo demonstrates how to provide a custom loading template for a better user experience during data fetch operations.
+    </Block>
     <Demo Type="typeof(Grid_Demo_12_Loading_template)" Tabs="true" />
 </Section>
-
-@* <Section Class="p-0" Size="HeadingSize.H3" Name="Set row height" PageUrl="@pageUrl" Link="set-row-height">
-    <div>TODO: Add demo</div>
-</Section>
-
-<Section Class="p-0" Size="HeadingSize.H3" Name="Translations" PageUrl="@pageUrl" Link="translations">
-    <div>TODO: Add demo</div>
-</Section>
-
-<Section Class="p-0" Size="HeadingSize.H3" Name="Events" PageUrl="@pageUrl" Link="events">
-    <div>TODO: Add demo</div>
-</Section>
-
-<Section Class="p-0" Size="HeadingSize.H3" Name="Customizations" PageUrl="@pageUrl" Link="customizations">
-    <div>TODO: Add demo</div>
-</Section>
-
-<Section Class="p-0" Size="HeadingSize.H4" Name="A) Custom column headers" PageUrl="@pageUrl" Link="custom-column-headers">
-    <div>TODO: Add demo</div>
-</Section>
-
-<Section Class="p-0" Size="HeadingSize.H4" Name="B) Cell formating" PageUrl="@pageUrl" Link="cell-formating">
-    <div>TODO: Add demo</div>
-</Section> *@
 
 @code {
     private const string componentName = nameof(Grid);

@@ -11,11 +11,19 @@
 
 <DocsLink Href="@DemoRouteConstants.Docs_Block_Documentation" />
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
     <Block>
-        In this example, we will use the <code>Block</code> component to create a consistent margin between sibling HTML elements.
-        As you can see, the first two blocks have a margin bottom applied, but the last block does not. 
-        This is because the <code>Block</code> component applies a space on all the blocks, excpt the last one.
+        The <strong>Block</strong> component is a simple layout utility that provides vertical spacing between sibling elements. It helps organize content by visually separating sections or groups of content with consistent margins.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap your content inside the <code>&lt;Block&gt;</code> component to create a visually separated section.</li>
+                <li>Place multiple <code>Block</code> components as siblings to automatically add spacing between them.</li>
+                <li>Each <code>Block</code> will apply margin at the bottom, except for the last one, ensuring clean separation without extra space at the end.</li>
+            </ol>
+        </div>
+        This demo illustrates how to use the <code>Block</code> component to structure your page with clear, consistent spacing between content sections.
     </Block>
     <Demo Type="typeof(Block_Demo_01_How_it_works)" Tabs="true" />
 </Section>

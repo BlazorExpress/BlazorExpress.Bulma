@@ -18,43 +18,93 @@
     <CodeChunk Class="mt-3" LanguageCode="LanguageCode.HTML" ProjectRootClassType="DemoAppConstants.ProjectRootClassType" FilePath="~\Pages\Docs\Icons\GoogleFontIcons\GoogleFontIcons_Install_Snippet.razor" />
 </Section>
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>GoogleFontIcon</strong> component displays a Google Material Symbol icon in your Blazor application.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>GoogleFontIcon</code> component to your page.</li>
+                <li>Set the <code>Name</code> parameter to the desired icon from <code>GoogleFontIconName</code> (e.g., <code>GoogleFontIconName.Search</code>).</li>
+            </ol>
+        </div>
+        This demo shows the minimal setup required to render a Google Material Symbol icon.
+    </Block>
     <Demo Type="typeof(GoogleFontIcon_Demo_01_How_it_works)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Icon text" PageUrl="@pageUrl" Link="icon-text">
-    <div class="mb-3">
-        You can show the icon with text by wrapping the text in a <code>GoogleFontIcon</code> component.
-        In the example below, the icon is shown with text on the right.
-    </div>
+    <Block>
+        The <strong>GoogleFontIcon</strong> component can display text alongside the icon, making it easy to label or describe the icon’s purpose.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Place your desired text between the opening and closing <code>GoogleFontIcon</code> tags.</li>
+                <li>The icon and text will be rendered together, allowing for clear labeling.</li>
+            </ol>
+        </div>
+        This demo illustrates how to combine an icon with descriptive text.
+    </Block>
     <Demo Type="typeof(GoogleFontIcon_Demo_02_Icon_Text)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
-    <div class="mb-3">
-        Use <code>Color</code> parameter to set the color of the icon.
-        In the example below, the icon is shown with different colors.
-    </div>
+    <Block>
+        The <strong>GoogleFontIcon</strong> component supports color customization using the <code>Color</code> parameter, which applies theme-based colors to the icon.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Color</code> parameter to a value from <code>GoogleFontIconColor</code> (e.g., <code>Primary</code>, <code>Link</code>, <code>Info</code>, etc.).</li>
+            </ol>
+        </div>
+        This demo shows how to apply different theme colors to your icons.
+    </Block>
     <Demo Type="typeof(GoogleFontIcon_Demo_03_Icon_Colors_A)" Tabs="true" />
-    <div class="mb-3">
-        When icon with text is used, aldong with <code>Color</code> parameter, 
-        set <code>ApplyColorToText</code> to <code>true</code> to apply the color to the text as well.
-    </div>
+    <Block>
+        You can also apply the selected color to the icon’s text by setting the <code>ApplyColorToText</code> parameter to <code>true</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>ApplyColorToText="true"</code> to color both the icon and its text label.</li>
+            </ol>
+        </div>
+        This demo demonstrates how to color both the icon and its associated text.
+    </Block>
     <Demo Type="typeof(GoogleFontIcon_Demo_03_Icon_Colors_B_Text_Color)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
-    <div class="mb-3">
-        Use <code>Size</code> parameter to set the size of the icon.
-        In the example below, the icon is shown with different sizes.
-    </div>
+    <Block>
+        The <strong>GoogleFontIcon</strong> component allows you to adjust the icon size using the <code>Size</code> parameter.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Size</code> parameter to a value from <code>GoogleFontIconSize</code> (e.g., <code>None</code>, <code>XSmall</code>, <code>Small</code>, <code>Medium</code>, <code>Large</code>, <code>XLarge</code>, <code>XXLarge</code>).</li>
+            </ol>
+        </div>
+        This demo displays the available icon sizes and how to apply them.
+    </Block>
     <Demo Type="typeof(GoogleFontIcon_Demo_04_Icon_Sizes)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="All icons" PageUrl="@pageUrl" Link="all-icons">
-    <div class="mb-3">
-        In the example below, all icons are shown with their names.
-    </div>
+    <Block>
+        The <strong>GoogleFontIcon</strong> component supports a wide range of Google Material Symbol icons, accessible via the <code>GoogleFontIconName</code> enum.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Browse all available icons by iterating through the <code>GoogleFontIconName</code> enum (excluding <code>None</code>).</li>
+                <li>Use the desired icon name as the <code>Name</code> parameter in your component.</li>
+            </ol>
+        </div>
+        This demo lists all supported icons and their corresponding enum names for easy reference.
+    </Block>
     <Demo Type="typeof(GoogleFontIcon_Demo_99_All_Icons)" Tabs="true" />
 </Section>
 

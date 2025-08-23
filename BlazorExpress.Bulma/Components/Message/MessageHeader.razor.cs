@@ -16,7 +16,11 @@ public partial class MessageHeader : BulmaComponentBase
 
     #region Properties, Indexers
 
-    protected override string? ClassNames => BuildClassNames(Class, (BulmaCssClass.MessageHeader, true));
+    protected override string? ClassNames => 
+        BuildClassNames(
+            Class, 
+            (BulmaCssClass.MessageHeader, true)
+        );
 
     /// <summary>
     /// Gets or sets the child content.
@@ -31,9 +35,11 @@ public partial class MessageHeader : BulmaComponentBase
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
-    [CascadingParameter] public Message Parent { get; set; } = default!;
+    [CascadingParameter] 
+    public Message Parent { get; set; } = default!;
 
-    [CascadingParameter(Name = "ShowDeleteButton")] public bool ShowDeleteButton { get; set; } = true;
+    [CascadingParameter(Name = "HideCloseButton")] 
+    public bool HideCloseButton { get; set; }
 
     #endregion
 }

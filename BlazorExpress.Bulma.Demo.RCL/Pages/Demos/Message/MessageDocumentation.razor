@@ -11,41 +11,280 @@
 
 <DocsLink Href="@DemoRouteConstants.Docs_Message_Documentation" />
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>Message</strong> component provides a simple, styled message box for highlighting important information or content on your page.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Message</code> component to your page.</li>
+                <li>Optionally include a <code>MessageHeader</code> for a title or heading.</li>
+                <li>Place your main content inside the <code>MessageBody</code> section.</li>
+            </ol>
+        </div>
+        This demo shows the basic structure of a message with a header and body, suitable for general notifications or information.
+    </Block>
     <Demo Type="typeof(Message_Demo_01_How_it_works)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
-    <div class="mb-3">The message component supports multiple colors.</div>
+    <Block>
+        The <strong>Message</strong> component supports different color themes to convey various types of information. Use the <code>Color</code> parameter to set the message style.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Color</code> property to <code>MessageColor.Dark</code> for a dark-themed message.</li>
+                <li>Include <code>MessageHeader</code> and <code>MessageBody</code> as needed.</li>
+            </ol>
+        </div>
+        This demo displays a message with the <code>Dark</code> color style.
+    </Block>
     <Demo Type="typeof(Message_Demo_02_Colors_A_Dark)" Tabs="true" />
+    <Block>
+        Set the <code>Color</code> property to <code>MessageColor.Link</code> for a link-themed message, often used for informational or navigational content.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Use <code>Color="MessageColor.Link"</code> on the <code>Message</code> component.</li>
+                <li>Structure your content with <code>MessageHeader</code> and <code>MessageBody</code>.</li>
+            </ol>
+        </div>
+        This demo shows a message styled with the <code>Link</code> color.
+    </Block>
     <Demo Type="typeof(Message_Demo_02_Colors_B_Link)" Tabs="true" />
+    <Block>
+        Use <code>Color="MessageColor.Primary"</code> to highlight primary actions or information.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Apply <code>Color="MessageColor.Primary"</code> to the <code>Message</code> component.</li>
+                <li>Include header and body as needed.</li>
+            </ol>
+        </div>
+        This demo presents a message with the <code>Primary</code> color.
+    </Block>
     <Demo Type="typeof(Message_Demo_02_Colors_C_Primary)" Tabs="true" />
+    <Block>
+        The <code>Info</code> color is ideal for neutral or informational messages. Set <code>Color="MessageColor.Info"</code> to use this style.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color="MessageColor.Info"</code> on the <code>Message</code> component.</li>
+                <li>Use <code>MessageHeader</code> and <code>MessageBody</code> for your content.</li>
+            </ol>
+        </div>
+        This demo displays a message with the <code>Info</code> color.
+    </Block>
     <Demo Type="typeof(Message_Demo_02_Colors_D_Info)" Tabs="true" />
+    <Block>
+        Use <code>Color="MessageColor.Success"</code> to indicate successful operations or positive feedback.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Apply <code>Color="MessageColor.Success"</code> to the <code>Message</code> component.</li>
+                <li>Structure your message as needed.</li>
+            </ol>
+        </div>
+        This demo shows a message with the <code>Success</code> color.
+    </Block>
     <Demo Type="typeof(Message_Demo_02_Colors_E_Success)" Tabs="true" />
+    <Block>
+        The <code>Warning</code> color is used for cautionary or warning messages. Set <code>Color="MessageColor.Warning"</code> to apply this style.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Use <code>Color="MessageColor.Warning"</code> on the <code>Message</code> component.</li>
+                <li>Include header and body as appropriate.</li>
+            </ol>
+        </div>
+        This demo presents a message with the <code>Warning</code> color.
+    </Block>
     <Demo Type="typeof(Message_Demo_02_Colors_F_Warning)" Tabs="true" />
+    <Block>
+        Use <code>Color="MessageColor.Danger"</code> for error or critical messages that require user attention.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color="MessageColor.Danger"</code> on the <code>Message</code> component.</li>
+                <li>Structure your content with header and body as needed.</li>
+            </ol>
+        </div>
+        This demo displays a message with the <code>Danger</code> color.
+    </Block>
     <Demo Type="typeof(Message_Demo_02_Colors_G_Danger)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Message body only" PageUrl="@pageUrl" Link="message-body-only">
-    <div class="mb-3">You can remove the <code>MessageHeader</code> if you don't need it, which will add a left border to the <code>MessageBody</code>.</div>
+    <Block>
+        The <strong>Message</strong> component can be used with only a <code>MessageBody</code> section, omitting the header for simpler notifications.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add a <code>Message</code> component with your desired <code>Color</code> (optional).</li>
+                <li>Place your content inside <code>MessageBody</code> without a <code>MessageHeader</code>.</li>
+            </ol>
+        </div>
+        This demo shows a dark message with only a body section.
+    </Block>
     <Demo Type="typeof(Message_Demo_03_Message_Body_Only_A_Dark)" Tabs="true" />
+    <Block>
+        This example uses the <code>Link</code> color for a message with only a body, suitable for simple informational notes.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color="MessageColor.Link"</code> on the <code>Message</code> component.</li>
+                <li>Include only the <code>MessageBody</code> section.</li>
+            </ol>
+        </div>
+        This demo displays a link-colored message body only.
+    </Block>
     <Demo Type="typeof(Message_Demo_03_Message_Body_Only_B_Link)" Tabs="true" />
+    <Block>
+        Use the <code>Primary</code> color for a message body only, ideal for highlighting key information.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Apply <code>Color="MessageColor.Primary"</code> to the <code>Message</code> component.</li>
+                <li>Use only the <code>MessageBody</code> section.</li>
+            </ol>
+        </div>
+        This demo shows a primary-colored message body only.
+    </Block>
     <Demo Type="typeof(Message_Demo_03_Message_Body_Only_C_Primary)" Tabs="true" />
+    <Block>
+        The <code>Info</code> color can be used for neutral messages with only a body section.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color="MessageColor.Info"</code> on the <code>Message</code> component.</li>
+                <li>Include only the <code>MessageBody</code> section.</li>
+            </ol>
+        </div>
+        This demo presents an info-colored message body only.
+    </Block>
     <Demo Type="typeof(Message_Demo_03_Message_Body_Only_D_Info)" Tabs="true" />
+    <Block>
+        Use the <code>Success</code> color for positive feedback or confirmation messages with only a body.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Apply <code>Color="MessageColor.Success"</code> to the <code>Message</code> component.</li>
+                <li>Use only the <code>MessageBody</code> section.</li>
+            </ol>
+        </div>
+        This demo displays a success-colored message body only.
+    </Block>
     <Demo Type="typeof(Message_Demo_03_Message_Body_Only_E_Success)" Tabs="true" />
+    <Block>
+        The <code>Warning</code> color is suitable for cautionary messages with only a body section.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color="MessageColor.Warning"</code> on the <code>Message</code> component.</li>
+                <li>Include only the <code>MessageBody</code> section.</li>
+            </ol>
+        </div>
+        This demo shows a warning-colored message body only.
+    </Block>
     <Demo Type="typeof(Message_Demo_03_Message_Body_Only_F_Warning)" Tabs="true" />
+    <Block>
+        Use the <code>Danger</code> color for error or alert messages with only a body section.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Apply <code>Color="MessageColor.Danger"</code> to the <code>Message</code> component.</li>
+                <li>Use only the <code>MessageBody</code> section.</li>
+            </ol>
+        </div>
+        This demo presents a danger-colored message body only.
+    </Block>
     <Demo Type="typeof(Message_Demo_03_Message_Body_Only_G_Danger)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
-    <div class="mb-3"></div>
+    <Block>
+        The <strong>Message</strong> component supports different sizes to fit various UI needs. Use the <code>Size</code> parameter to adjust the message's scale.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Size</code> property to <code>MessageSize.Small</code> for a compact message.</li>
+                <li>Include <code>MessageHeader</code> and <code>MessageBody</code> as needed.</li>
+            </ol>
+        </div>
+        This demo shows a small-sized message.
+    </Block>
     <Demo Type="typeof(Message_Demo_04_Sizes_A_Small)" Tabs="true" />
+    <Block>
+        The default message size is <code>Normal</code>. Omit the <code>Size</code> property or set it to <code>MessageSize.Normal</code> for standard sizing.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Use the <code>Message</code> component without specifying the <code>Size</code> property, or set <code>Size="MessageSize.Normal"</code>.</li>
+                <li>Structure your content as usual.</li>
+            </ol>
+        </div>
+        This demo displays a normal-sized message.
+    </Block>
     <Demo Type="typeof(Message_Demo_04_Sizes_B_Normal)" Tabs="true" />
+    <Block>
+        Set <code>Size="MessageSize.Medium"</code> for a medium-sized message, useful for drawing more attention.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Apply <code>Size="MessageSize.Medium"</code> to the <code>Message</code> component.</li>
+                <li>Include header and body as needed.</li>
+            </ol>
+        </div>
+        This demo shows a medium-sized message.
+    </Block>
     <Demo Type="typeof(Message_Demo_04_Sizes_C_Medium)" Tabs="true" />
+    <Block>
+        Use <code>Size="MessageSize.Large"</code> for a prominent, large message.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Size="MessageSize.Large"</code> on the <code>Message</code> component.</li>
+                <li>Structure your content as needed.</li>
+            </ol>
+        </div>
+        This demo displays a large-sized message.
+    </Block>
     <Demo Type="typeof(Message_Demo_04_Sizes_D_Large)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Hide close button" PageUrl="@pageUrl" Link="hide-close-button">
+    <Block>
+        The <strong>Message</strong> component includes a close button by default. You can hide this button by setting the <code>HideCloseButton</code> parameter to <code>true</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Message</code> component to your page.</li>
+                <li>Set <code>HideCloseButton="true"</code> to hide the close button.</li>
+                <li>Include <code>MessageHeader</code> and <code>MessageBody</code> as needed.</li>
+            </ol>
+        </div>
+        This demo shows a message without the close button.
+    </Block>
     <Demo Type="typeof(Message_Demo_05_Hide_Close_Button)" Tabs="true" />
 </Section>
 
