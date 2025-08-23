@@ -12,46 +12,243 @@
 <DocsLink Href="@DemoRouteConstants.Docs_Tags_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
-    <Demo Type="typeof(Tag_Demo_01_How_it_works)" />
+    <Block>
+        The <strong>Tag</strong> component is a small, flexible label used to highlight information, categorize content, or display status indicators in your Blazor application.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Tag</code> component to your page wherever you want to display a label.</li>
+                <li>Set the tag's content by placing text or markup between the opening and closing <code>&lt;Tag&gt;</code> tags.</li>
+                <li>Optionally, customize the tag using parameters such as <code>Color</code>, <code>Size</code>, <code>IsRounded</code>, and more.</li>
+            </ol>
+        </div>
+        This demo shows the simplest usage of the <code>Tag</code> component with default settings.
+    </Block>
+    <Demo Type="typeof(Tag_Demo_01_How_it_works)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
-    <Demo Type="typeof(Tag_Demo_02_Colors_A)" />
-    <Demo Type="typeof(Tag_Demo_02_Colors_B_Light_version)" />
+    <Block>
+        The <strong>Tag</strong> component supports a variety of color options to match your application's theme or to convey meaning (such as status or category).
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Color</code> parameter to one of the predefined <code>TagColor</code> values (e.g., <code>Primary</code>, <code>Info</code>, <code>Success</code>, etc.).</li>
+                <li>Use different colors to visually distinguish tags for different purposes.</li>
+            </ol>
+        </div>
+        This demo displays tags with various color options.
+    </Block>
+    <Demo Type="typeof(Tag_Demo_02_Colors_A)" Tabs="true" />
+    <Block>
+        You can also display a lighter version of each color by setting the <code>ShowLightVersion</code> parameter to <code>true</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set both the <code>Color</code> and <code>ShowLightVersion="true"</code> parameters on the <code>Tag</code> component.</li>
+                <li>Use light tags for subtle emphasis or to reduce visual weight.</li>
+            </ol>
+        </div>
+        This demo shows tags using the light color variants.
+    </Block>
+    <Demo Type="typeof(Tag_Demo_02_Colors_B_Light_version)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
-    <Demo Type="typeof(Tag_Demo_03_Sizes_A)" />
-    <Demo Type="typeof(Tag_Demo_03_Sizes_B_Are_Medium)" />
-    <Demo Type="typeof(Tag_Demo_03_Sizes_C_Are_Large)" />
-    <Demo Type="typeof(Tag_Demo_03_Sizes_D_Are_Medium_Mixed)" />
+    <Block>
+        The <strong>Tag</strong> component supports multiple sizes to fit different UI needs.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Size</code> parameter to <code>TagSize.Normal</code>, <code>TagSize.Medium</code>, or <code>TagSize.Large</code> to adjust the tag's size.</li>
+                <li>Choose a size that best fits your layout and content.</li>
+            </ol>
+        </div>
+        This demo shows individual tags with different sizes.
+    </Block>
+    <Demo Type="typeof(Tag_Demo_03_Sizes_A)" Tabs="true" />
+    <Block>
+        You can apply a size to a group of tags by setting the <code>Size</code> parameter on the <code>Tags</code> container. All child tags will inherit this size unless overridden.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap multiple <code>Tag</code> components in a <code>Tags</code> container.</li>
+                <li>Set the <code>Size</code> parameter on the <code>Tags</code> container to apply the size to all child tags.</li>
+            </ol>
+        </div>
+        This demo shows a group of medium-sized tags.
+    </Block>
+    <Demo Type="typeof(Tag_Demo_03_Sizes_B_Are_Medium)" Tabs="true" />
+    <Block>
+        This example demonstrates a group of large tags using the <code>Tags</code> container with <code>Size="TagSize.Large"</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Use the <code>Tags</code> container and set <code>Size="TagSize.Large"</code> to make all tags large.</li>
+            </ol>
+        </div>
+        Useful for prominent labels or headers.
+    </Block>
+    <Demo Type="typeof(Tag_Demo_03_Sizes_C_Are_Large)" Tabs="true" />
+    <Block>
+        You can mix tag sizes within a group by setting the <code>Size</code> parameter on individual <code>Tag</code> components, even if the <code>Tags</code> container has a default size.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set a default <code>Size</code> on the <code>Tags</code> container.</li>
+                <li>Override the size for specific <code>Tag</code> components as needed.</li>
+            </ol>
+        </div>
+        This demo shows a group of medium tags with some tags using the normal size.
+    </Block>
+    <Demo Type="typeof(Tag_Demo_03_Sizes_D_Are_Medium_Mixed)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Rounded" PageUrl="@pageUrl" Link="rounded">
-    <Demo Type="typeof(Tag_Demo_04_Rounded)" />
+    <Block>
+        The <strong>Tag</strong> component can be displayed with rounded corners for a softer appearance.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>IsRounded</code> parameter to <code>true</code> on the <code>Tag</code> component.</li>
+            </ol>
+        </div>
+        This demo shows tags with the <code>IsRounded</code> option enabled.
+    </Block>
+    <Demo Type="typeof(Tag_Demo_04_Rounded)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Hover state" PageUrl="@pageUrl" Link="hover-state">
-    <Demo Type="typeof(Tag_Demo_05_Hover)" />
+    <Block>
+        The <strong>Tag</strong> component supports a hover state, allowing you to highlight tags when users move their cursor over them.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>IsHoverable</code> parameter to <code>true</code> on the <code>Tag</code> component.</li>
+            </ol>
+        </div>
+        This demo shows tags that visually respond to mouse hover.
+    </Block>
+    <Demo Type="typeof(Tag_Demo_05_Hover)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Delete" PageUrl="@pageUrl" Link="delete">
-    <Demo Type="typeof(Tag_Demo_06_Delete_A)" />
-    <Demo Type="typeof(Tag_Demo_06_Delete_B_Rounded)" />
+    <Block>
+        The <strong>Tag</strong> component can be used as a delete button, providing a small, clickable "X" for removing items or tags.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>IsDelete</code> parameter to <code>true</code> on the <code>Tag</code> component.</li>
+                <li>Optionally, combine with <code>Color</code> and <code>IsHoverable</code> for additional styling and interactivity.</li>
+            </ol>
+        </div>
+        This demo shows delete tags in various colors.
+    </Block>
+    <Demo Type="typeof(Tag_Demo_06_Delete_A)" Tabs="true" />
+    <Block>
+        You can also create rounded delete tags by combining <code>IsDelete="true"</code> and <code>IsRounded="true"</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set both <code>IsDelete="true"</code> and <code>IsRounded="true"</code> on the <code>Tag</code> component.</li>
+            </ol>
+        </div>
+        This demo shows rounded delete tags.
+    </Block>
+    <Demo Type="typeof(Tag_Demo_06_Delete_B_Rounded)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="List of tags" PageUrl="@pageUrl" Link="list-of-tags">
-    <Demo Type="typeof(Tag_Demo_07_List_of_tags_A)" />
+    <Block>
+        The <strong>Tags</strong> container allows you to display a list or group of tags together, making it easy to present related labels in a compact format.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap multiple <code>Tag</code> components inside a <code>Tags</code> container.</li>
+            </ol>
+        </div>
+        This demo shows a small group of tags.
+    </Block>
+    <Demo Type="typeof(Tag_Demo_07_List_of_tags_A)" Tabs="true" />
+    <Block>
+        You can display a larger set of tags by adding more <code>Tag</code> components inside the <code>Tags</code> container.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add as many <code>Tag</code> components as needed within the <code>Tags</code> container to represent your data.</li>
+            </ol>
+        </div>
+        This demo shows a long list of tags.
+    </Block>
     <Demo Type="typeof(Tag_Demo_07_List_of_tags_B)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Addon tags" PageUrl="@pageUrl" Link="addon-tags">
+    <Block>
+        The <strong>AddonTags</strong> container allows you to group two or more tags together as a single visual unit, often used to display related information side by side.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap two or more <code>Tag</code> components inside an <code>AddonTags</code> container.</li>
+                <li>Use different <code>Color</code> values to distinguish each tag within the group.</li>
+            </ol>
+        </div>
+        This demo shows how to group tags as addons.
+    </Block>
     <Demo Type="typeof(Tag_Demo_08_Addon_Tags_A)" Tabs="true" />
+    <Block>
+        You can also include a delete tag within an <code>AddonTags</code> group to allow users to remove the entire group or a specific tag.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add a <code>Tag</code> with <code>IsDelete="true"</code> inside the <code>AddonTags</code> container.</li>
+            </ol>
+        </div>
+        This demo shows an addon group with a delete tag.
+    </Block>
     <Demo Type="typeof(Tag_Demo_08_Addon_Tags_B)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Grouped addon tags" PageUrl="@pageUrl" Link="grouped-addon-tags">
+    <Block>
+        The <strong>GroupedAddonTags</strong> container allows you to display multiple <code>AddonTags</code> groups together, making it easy to present sets of related tag pairs or triplets in a structured layout.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap several <code>AddonTags</code> groups inside a <code>GroupedAddonTags</code> container.</li>
+                <li>Each <code>AddonTags</code> group can contain two or more <code>Tag</code> components, styled as needed.</li>
+            </ol>
+        </div>
+        This demo shows multiple addon tag groups, each representing related information.
+    </Block>
     <Demo Type="typeof(Tag_Demo_09_Grouped_Addon_Tags_A)" Tabs="true" />
+    <Block>
+        You can also include delete tags within each <code>AddonTags</code> group inside a <code>GroupedAddonTags</code> container, allowing users to remove individual tag groups.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>For each <code>AddonTags</code> group, add a <code>Tag</code> with <code>IsDelete="true"</code> to provide a delete action for that group.</li>
+            </ol>
+        </div>
+        This demo shows grouped addon tags with delete buttons for each group.
+    </Block>
     <Demo Type="typeof(Tag_Demo_09_Grouped_Addon_Tags_B)" Tabs="true" />
 </Section>
 
