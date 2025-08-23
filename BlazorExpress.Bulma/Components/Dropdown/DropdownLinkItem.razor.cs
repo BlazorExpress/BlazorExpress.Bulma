@@ -49,7 +49,7 @@ public partial class DropdownLinkItem : BulmaComponentBase
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
-    [DefaultValue("<b>#</b>")]
+    [DefaultValue("#")]
     [Description("Gets or sets the hyperlink reference (href) value.")]
     [EditorRequired]
     [Parameter]
