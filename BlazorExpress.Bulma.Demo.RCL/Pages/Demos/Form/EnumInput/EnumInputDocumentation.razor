@@ -12,73 +12,143 @@
 <DocsLink Href="@DemoRouteConstants.Docs_Form_EnumInput_Documentation" />
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>EnumInput</strong> component displays enum values in a dropdown, allowing users to select from a predefined set of options.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Define an <code>enum</code> representing your options.</li>
+                <li>Add the <code>EnumInput</code> component to your page, specifying the <code>TEnum</code> type parameter.</li>
+                <li>Bind the selected value using <code>@@bind-Value</code> or <code>@@bind-Text</code> as needed.</li>
+                <li>Use the selected value or text in your logic as shown in the demo.</li>
+            </ol>
+        </div>
+        This demo shows how to bind both the enum value and text, and how to display the selected result.
+    </Block>
     <Demo Type="typeof(EnumInput_Demo_01_How_it_works)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
     <Block>
-        You can use the <code>Color</code> parameter to set the color of the <code>EnumInput</code> component. 
-        The available colors are: <b>Link</b>, <b>Primary</b>, <b>Info</b>, <b>Success</b>, <b>Warning</b>, and <b>Danger</b>.
+        The <strong>EnumInput</strong> component supports multiple color themes to match your application's style.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Color</code> parameter to one of the available <code>EnumInputColor</code> values (e.g., <code>Primary</code>, <code>Success</code>, <code>Danger</code>).</li>
+                <li>Bind the selected value as usual.</li>
+            </ol>
+        </div>
+        This demo demonstrates how to apply different color styles to the EnumInput dropdown.
     </Block>
     <Demo Type="typeof(EnumInput_Demo_02_Colors)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="Sizes">
     <Block>
-        You can use the <code>Size</code> parameter to set the size of the <code>EnumInput</code> component.
-        The available sizes are: <b>Small</b>, <b>Normal</b>, <b>Medium</b>, and <b>Large</b>.
+        The <strong>EnumInput</strong> component can be rendered in various sizes to fit different UI requirements.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Size</code> parameter to one of the <code>EnumInputSize</code> values (<code>Small</code>, <code>Normal</code>, <code>Medium</code>, <code>Large</code>).</li>
+                <li>Bind the selected value as needed.</li>
+            </ol>
+        </div>
+        This demo shows how to display EnumInput in different sizes for flexible layout integration.
     </Block>
     <Demo Type="typeof(EnumInput_Demo_03_Sizes)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Styles" PageUrl="@pageUrl" Link="styles">
     <Block>
-        You can create rounded <code>EnumInput</code> component by using the <code>IsRounded</code> parameter.
-        In the example below, <code>IsRounded</code> parameter is set to <b>true</b>.
+        The <strong>EnumInput</strong> component supports additional style options, such as rounded corners.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>IsRounded</code> parameter to <code>true</code> to enable rounded styling.</li>
+                <li>Bind the selected value as usual.</li>
+            </ol>
+        </div>
+        This demo illustrates how to apply a rounded style to the EnumInput dropdown.
     </Block>
     <Demo Type="typeof(EnumInput_Demo_04_Styles)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="States" PageUrl="@pageUrl" Link="states">
+    <Block>
+        The <strong>EnumInput</strong> component can visually reflect different UI states, such as hovered, focused, or loading.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>State</code> parameter to <code>EnumInputState.Hovered</code>, <code>Focused</code>, or <code>Loading</code> as needed.</li>
+                <li>Bind the selected value for each state to observe the visual effect.</li>
+            </ol>
+        </div>
+        This demo shows how to display EnumInput in various UI states for enhanced user feedback.
+    </Block>
     <Demo Type="typeof(EnumInput_Demo_05_States)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Disabled" PageUrl="@pageUrl" Link="disabled">
     <Block>
-        You can disable the <code>EnumInput</code> component by using the <code>Disabled</code> parameter.
-        In the example below, <code>Disabled</code> parameter is set to <b>true</b>.
+        The <strong>EnumInput</strong> component can be disabled to prevent user interaction.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Disabled</code> parameter to <code>true</code> to make the dropdown non-interactive.</li>
+                <li>Bind the value as usual; the user will not be able to change it.</li>
+            </ol>
+        </div>
+        This demo demonstrates how to render EnumInput in a disabled state.
     </Block>
     <Demo Type="typeof(EnumInput_Demo_06_Disabled)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Events" PageUrl="@pageUrl" Link="events">
     <Block>
-        The <code>EnumInput</code> component has two events: <code>ValueChanged</code> and <code>TextChanged</code>.
-    </Block>
-</Section>
-
-<Section Class="p-0" Size="HeadingSize.H4" Name="ValueChanged" PageUrl="@pageUrl" Link="events-value-changed">
-    <Block>
-        The <code>ValueChanged</code> event is triggered when the value of the <code>EnumInput</code> component changes.
+        The <strong>EnumInput</strong> component supports event callbacks for value and text changes, enabling custom logic when the selection changes.
+        <br /><br />
+        <strong>How to use (ValueChanged):</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Value</code> parameter and handle the <code>ValueChanged</code> event to respond to selection changes.</li>
+                <li>Update your logic based on the new value in the event handler.</li>
+            </ol>
+        </div>
+        This demo shows how to handle value changes using the ValueChanged event.
     </Block>
     <Demo Type="typeof(EnumInput_Demo_07_Events_A_ValueChanged)" Tabs="true" />
-</Section>
-
-<Section Class="p-0" Size="HeadingSize.H4" Name="TextChanged" PageUrl="@pageUrl" Link="events-text-changed">
     <Block>
-        The <code>TextChanged</code> event is triggered when the text of the <code>EnumInput</code> component changes.
+        <strong>How to use (TextChanged):</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Text</code> parameter and handle the <code>TextChanged</code> event to respond to text changes.</li>
+                <li>Update your logic based on the new text in the event handler.</li>
+            </ol>
+        </div>
+        This demo shows how to handle text changes using the TextChanged event.
     </Block>
     <Demo Type="typeof(EnumInput_Demo_07_Events_B_TextChanged)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Mehods" PageUrl="@pageUrl" Link="methods">
     <Block>
-        The <code>EnumInput</code> component has two methods: <code>Enable()</code> and <code>Disable()</code>.
-        You can use these methods to enable or disable the <code>EnumInput</code> component programmatically.
+        The <strong>EnumInput</strong> component can be enabled or disabled dynamically at runtime.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Bind the <code>Disabled</code> parameter to a boolean property in your component.</li>
+                <li>Update the property in your code (e.g., via button click) to enable or disable the EnumInput as needed.</li>
+            </ol>
+        </div>
+        This demo demonstrates how to programmatically enable or disable the EnumInput component.
     </Block>
-</Section>
-
-<Section Class="p-0" Size="HeadingSize.H4" Name="Enable() and Disable()" PageUrl="@pageUrl" Link="methods-enable-disable">
     <Demo Type="typeof(EnumInput_Demo_08_Methods_Enable_Disable)" Tabs="true" />
 </Section>
 
