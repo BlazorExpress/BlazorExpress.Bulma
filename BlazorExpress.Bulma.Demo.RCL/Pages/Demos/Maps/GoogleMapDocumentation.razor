@@ -186,7 +186,19 @@
 
 <Section Class="p-0" Size="HeadingSize.H2" Name="Dynamic markers" PageUrl="@pageUrl" Link="dynamic-markers">
     <Block>
-        TODO: Dynamic markers content
+        The <strong>GoogleMap</strong> component supports dynamic marker management, allowing you to add, update, and refresh markers on the map at runtime. This is useful for scenarios where marker data changes frequently, such as live weather updates or real-time tracking.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Maintain a <code>List&lt;GoogleMapMarker&gt;</code> in your component to represent the current markers.</li>
+                <li>Use <code>AddMarkerAsync</code> to add a single marker dynamically to the map.</li>
+                <li>Use <code>UpdateMarkersAsync</code> to replace all markers with a new set (e.g., for batch updates).</li>
+                <li>Call <code>RefreshAsync</code> to re-render the map and update marker display if you modify the marker list directly.</li>
+                <li>Optionally, handle the <code>OnMarkerClick</code> event to respond to user interactions with markers.</li>
+            </ol>
+        </div>
+        This demo shows how to add individual markers, update the entire marker set, and refresh the map interactively using buttons. It demonstrates real-time marker management for dynamic data scenarios.
     </Block>
     <Demo Type="typeof(GoogleMap_Demo_06_Dynamic_markers)" Tabs="true" />
 </Section>
