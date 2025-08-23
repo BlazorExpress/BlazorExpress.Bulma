@@ -22,18 +22,19 @@
         </p>
 
         <div class="level-right">
-            <div class="navbar-item has-dropdown is-hoverable is-right">
-                <a class="navbar-link">Tools</a>
-
-                <div class="navbar-dropdown">
-                    <a class="navbar-item" @onclick="RotateClockwiseAsync"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.ArrowClockwise" /> Rotate Clockwise</a>
-                    <a class="navbar-item" @onclick="RotateCounterclockwiseAsync"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.ArrowCounterclockwise" /> Rotate Counterclockwise</a>
-                    <a class="navbar-item" @onclick="SwitchOrientationAsync"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.Compass" /> Switch Orientation</a>
-                    <a class="navbar-item" @onclick="FirstPageAsync"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.ChevronBarUp" /> Go to First Page</a>
-                    <a class="navbar-item" @onclick="LastPageAsync"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.ChevronBarDown" /> Go to Last Page</a>
-                    <a class="navbar-item" @onclick="ResetZoomAsync"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.PlusSlashMinus" /> Reset Zoom</a>
-                </div>
-            </div>
+            <Dropdown IsRight="true" IsHoverable="true">
+                <DropdownTrigger>
+                    <BootstrapIcon Name="BootstrapIconName.ThreeDotsVertical" role="button" />
+                </DropdownTrigger>
+                <DropdownContent>
+                    <DropdownItem @onclick="RotateClockwiseAsync" role="button"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.ArrowClockwise" /> Rotate Clockwise </DropdownItem>
+                    <DropdownItem @onclick="RotateCounterclockwiseAsync" role="button"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.ArrowCounterclockwise" /> Rotate Counterclockwise </DropdownItem>
+                    <DropdownItem @onclick="SwitchOrientationAsync" role="button"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.Compass" /> Switch Orientation </DropdownItem>
+                    <DropdownItem @onclick="FirstPageAsync" role="button"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.ChevronBarUp" /> Go to First Page </DropdownItem>
+                    <DropdownItem @onclick="LastPageAsync" role="button"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.ChevronBarDown" /> Go to Last Page </DropdownItem>
+                    <DropdownItem @onclick="ResetZoomAsync" role="button"><BootstrapIcon Class="mr-2" Name="BootstrapIconName.PlusSlashMinus" /> Reset Zoom </DropdownItem>
+                </DropdownContent>
+            </Dropdown>
         </div>
     </nav>
 

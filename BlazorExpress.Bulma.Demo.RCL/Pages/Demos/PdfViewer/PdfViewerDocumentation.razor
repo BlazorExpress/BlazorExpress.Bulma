@@ -11,8 +11,58 @@
 
 <DocsLink Href="@DemoRouteConstants.Docs_PdfViewer_Documentation" />
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Example" PageUrl="@pageUrl" Link="example">
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>PdfViewer</strong> component enables users to display PDF documents directly within a Blazor WebAssembly application, without requiring external browser plugins or tools.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>PdfViewer</code> component to your page.</li>
+                <li>Set the <code>Url</code> parameter to the PDF file's URL or a data URI.</li>
+                <li>Optionally, handle the <code>OnDocumentLoaded</code> and <code>OnPageChanged</code> events to respond to document load and page navigation.</li>
+                <li>Observe the demo for a basic setup, including event handling for tracking the current and total pages.</li>
+            </ol>
+        </div>
+        This demo illustrates the minimal configuration required to embed a PDF viewer and monitor user navigation within the document.
+    </Block>
     <Demo Type="typeof(PdfViewer_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Orientation" PageUrl="@pageUrl" Link="orientation">
+    <Block>
+        The <strong>PdfViewer</strong> component supports different page orientations to enhance the viewing experience for various document layouts.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Use the <code>Orientation</code> parameter to specify the desired layout, such as <code>Orientation.Landscape</code> for wide documents.</li>
+                <li>Combine with the <code>Url</code> parameter to load your PDF file.</li>
+                <li>Optionally, handle <code>OnDocumentLoaded</code> and <code>OnPageChanged</code> events as needed.</li>
+                <li>Refer to the demo for an example of setting the orientation to landscape and tracking page events.</li>
+            </ol>
+        </div>
+        This demo demonstrates how to adjust the PDF viewer's orientation for optimal display of landscape-oriented documents.
+    </Block>
+    <Demo Type="typeof(PdfViewer_Demo_02_Orientation)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Base64String" PageUrl="@pageUrl" Link="base64-string">
+    <Block>
+        The <strong>PdfViewer</strong> component can render PDF files provided as Base64-encoded strings, making it easy to display dynamically generated or in-memory documents.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Obtain or generate a Base64-encoded string representing your PDF file.</li>
+                <li>Set the <code>Url</code> parameter to a data URI in the format <code>data:application/pdf;base64,{yourBase64String}</code>.</li>
+                <li>Optionally, handle <code>OnDocumentLoaded</code> and <code>OnPageChanged</code> events to track document state.</li>
+                <li>See the demo for an example of loading and displaying a PDF from a Base64 string.</li>
+            </ol>
+        </div>
+        This demo shows how to use the component with Base64-encoded PDF data, useful for scenarios where files are not hosted as static URLs.
+    </Block>
+    <Demo Type="typeof(PdfViewer_Demo_03_Base64String)" Tabs="true" />
 </Section>
 
 @code {

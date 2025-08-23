@@ -1,0 +1,42 @@
+@attribute [Route(pageUrl)]
+@layout DocsMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DemoLink Href="@DemoRouteConstants.Demos_Dropdown_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Screenshot" PageUrl="@pageUrl" Link="screenshot">
+    <img src="@imageUrl" class="img-fluid" alt="@metaTitle" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Dropdown Parameters" PageUrl="@pageUrl" Link="dropdown-parameters">
+    <DocxTable TItem="Dropdown" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="DropdownItem Parameters" PageUrl="@pageUrl" Link="dropdown-item-parameters">
+    <DocxTable TItem="DropdownItem" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="DropdownLinkItem Parameters" PageUrl="@pageUrl" Link="dropdown-link-item-parameters">
+    <DocxTable TItem="DropdownLinkItem" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="DropdownDivider Parameters" PageUrl="@pageUrl" Link="dropdown-divider-parameters">
+    <DocxTable TItem="DropdownDivider" DocType="DocType.Parameters" />
+</Section>
+
+@code {
+    private const string componentName = nameof(Dropdown);
+    private const string pageUrl = DemoRouteConstants.Docs_Dropdown_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component, guiding you through its configuration options.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component, guiding you through its configuration options.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Dropdown;
+}

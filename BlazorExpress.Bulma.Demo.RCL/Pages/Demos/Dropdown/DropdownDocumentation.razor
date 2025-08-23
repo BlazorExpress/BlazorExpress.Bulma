@@ -1,0 +1,131 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_Dropdown_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>Dropdown</strong> component displays a menu of actions or links that appears when triggered, providing a compact way to present options to users.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content">
+            <ol>
+                <li>Add the <code>Dropdown</code> component to your page.</li>
+                <li>Place your trigger element (such as a button) inside <code>&lt;DropdownTrigger&gt;</code>.</li>
+                <li>Define the dropdown menu items inside <code>&lt;DropdownContent&gt;</code> using <code>DropdownLinkItem</code> for links and <code>DropdownDivider</code> for separators.</li>
+                <li>Use the <code>IsActive</code> parameter on a <code>DropdownLinkItem</code> to highlight the active item if needed.</li>
+                <li>Refer to the demo code for a basic dropdown setup and customization options.</li>
+            </ol>
+        </div>
+        This demo shows the essential structure for a dropdown menu and how to organize its content for user interaction.
+    </Block>
+    <Demo Type="typeof(Dropdown_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Dropdown content" PageUrl="@pageUrl" Link="dropdown-content">
+    <Block>
+        The <strong>Dropdown</strong> menu supports any type of content, not just links, allowing for flexible layouts and custom markup.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content">
+            <ol>
+                <li>Place any markup (such as paragraphs, divs, or custom components) inside <code>&lt;DropdownContent&gt;</code>.</li>
+                <li>Use <code>DropdownItem</code> for custom content and <code>DropdownLinkItem</code> for navigational links.</li>
+                <li>Insert <code>DropdownDivider</code> to visually separate groups of items.</li>
+                <li>Refer to the demo code for examples of mixed content and layout options.</li>
+            </ol>
+        </div>
+        This demo illustrates how to combine different content types within a dropdown for advanced scenarios.
+    </Block>
+    <Demo Type="typeof(Dropdown_Demo_02_Content)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Hoverable" PageUrl="@pageUrl" Link="hoverable">
+    <Block>
+        The <strong>Hoverable Dropdown</strong> opens automatically when the user hovers over the trigger, offering a seamless and interactive experience.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content">
+            <ol>
+                <li>Add the <code>Dropdown</code> component and set <code>IsHoverable="true"</code>.</li>
+                <li>Place your trigger element inside <code>&lt;DropdownTrigger&gt;</code> and menu items inside <code>&lt;DropdownContent&gt;</code>.</li>
+                <li>The dropdown will open on mouse hover without requiring a click.</li>
+                <li>Refer to the demo code for a working example of a hoverable dropdown.</li>
+            </ol>
+        </div>
+        This demo demonstrates how to enable hover-based activation for dropdown menus.
+    </Block>
+    <Demo Type="typeof(Dropdown_Demo_03_Hoverable)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Right aligned" PageUrl="@pageUrl" Link="right-aligned">
+    <Block>
+        The <strong>Right-aligned Dropdown</strong> positions the dropdown menu to the right edge of the trigger, useful for aligning menus in toolbars or layouts.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content">
+            <ol>
+                <li>Add the <code>Dropdown</code> component and set <code>IsRight="true"</code> to align the menu to the right.</li>
+                <li>Place your trigger and menu items as usual.</li>
+                <li>By default, dropdowns are left-aligned; use <code>IsRight</code> for right alignment.</li>
+                <li>Refer to the demo code for both left and right-aligned dropdown examples.</li>
+            </ol>
+        </div>
+        This demo shows how to control the alignment of dropdown menus for different UI needs.
+    </Block>
+    <Demo Type="typeof(Dropdown_Demo_04_Right_aligned)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Dropup" PageUrl="@pageUrl" Link="dropup">
+    <Block>
+        The <strong>Dropup</strong> variant displays the dropdown menu above the trigger, ideal for use near the bottom of the viewport.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content">
+            <ol>
+                <li>Add the <code>Dropdown</code> component and set <code>IsUp="true"</code>.</li>
+                <li>Place your trigger and menu items as usual.</li>
+                <li>The dropdown menu will appear above the trigger button.</li>
+                <li>Refer to the demo code for a dropup configuration example.</li>
+            </ol>
+        </div>
+        This demo demonstrates how to create a dropup menu for improved usability in certain layouts.
+    </Block>
+    <Demo Type="typeof(Dropdown_Demo_05_Dropup)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Icon only" PageUrl="@pageUrl" Link="icon-only">
+    <Block>
+        The <strong>Icon-only Dropdown</strong> uses an icon as the trigger, providing a compact and modern way to access menu actions.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content">
+            <ol>
+                <li>Add the <code>Dropdown</code> component and set <code>IsRight="true"</code> if you want right alignment.</li>
+                <li>Place an icon component (such as <code>BootstrapIcon</code>) inside <code>&lt;DropdownTrigger&gt;</code> to use it as the clickable element.</li>
+                <li>Define your menu items inside <code>&lt;DropdownContent&gt;</code> as usual.</li>
+                <li>Refer to the demo code for an example of an icon-only dropdown menu.</li>
+            </ol>
+        </div>
+        This demo shows how to implement a dropdown menu triggered by an icon for streamlined interfaces.
+    </Block>
+    <Demo Type="typeof(Dropdown_Demo_06_Icon_only)" Tabs="true" />
+</Section>
+
+@code {
+    private const string componentName = nameof(Dropdown);
+    private const string pageUrl = DemoRouteConstants.Demos_Dropdown_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"An interactive <code>{componentName}</code> component for discoverable content.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"An interactive {componentName} component for discoverable content.";
+    private const string imageUrl = DemoScreenshotSrcConstants.Dropdown;
+}

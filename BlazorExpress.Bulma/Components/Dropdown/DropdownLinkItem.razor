@@ -1,0 +1,14 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+
+<a @ref="@Element" 
+    id="@Id" 
+    class="@ClassNames" 
+    style="@StyleNames"
+    href="@Href"
+    @attributes="@AdditionalAttributes"
+    @onclick="OnClick">
+
+    @ChildContent
+
+</a>
