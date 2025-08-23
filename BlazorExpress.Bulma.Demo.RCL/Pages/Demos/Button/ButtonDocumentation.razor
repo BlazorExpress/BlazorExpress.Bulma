@@ -13,74 +13,260 @@
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
     <Block>
-        The <code>Button</code> component can be used like <b>link</b>, <b>button</b>, <b>submit button</b>, and <b>reset button</b>.
+        The <strong>Button</strong> component provides styled buttons for various actions such as navigation, form submission, and resetting forms.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Button</code> component to your page.</li>
+                <li>Set the <code>Type</code> property to <code>ButtonType.Link</code>, <code>ButtonType.Submit</code>, or <code>ButtonType.Reset</code> as needed.</li>
+                <li>Customize the button label by setting the content between the opening and closing <code>&lt;Button&gt;</code> tags.</li>
+            </ol>
+        </div>
+        This demo shows how to create different types of buttons for common UI actions.
     </Block>
     <Demo Type="typeof(Button_Demo_01_How_it_works)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
     <Block>
-        The <code>Button</code> component is available in a variety of colors.
-        You can use the <code>Color</code> parameter to set the color of the button.
+        The <strong>Button</strong> component supports a variety of color options to match your application's theme or to indicate different actions.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Color</code> property to one of the available color values such as <code>ButtonColor.White</code>, <code>ButtonColor.Light</code>, <code>ButtonColor.Dark</code>, <code>ButtonColor.Black</code>, <code>ButtonColor.Text</code>, or <code>ButtonColor.Ghost</code>.</li>
+                <li>Place your button label between the <code>&lt;Button&gt;</code> tags.</li>
+            </ol>
+        </div>
+        This demo displays the basic color options for the button component.
     </Block>
     <Demo Type="typeof(Button_Demo_02_Colors_A)" Tabs="true" />
+    <Block>
+        Use semantic color options to indicate the purpose of each button, such as primary actions, links, information, success, warnings, or danger.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Color</code> property to <code>ButtonColor.Primary</code>, <code>ButtonColor.Link</code>, <code>ButtonColor.Info</code>, <code>ButtonColor.Success</code>, <code>ButtonColor.Warning</code>, or <code>ButtonColor.Danger</code>.</li>
+            </ol>
+        </div>
+        This demo shows how to apply semantic colors to buttons for better user guidance.
+    </Block>
     <Demo Type="typeof(Button_Demo_02_Colors_B)" Tabs="true" />
     <Block>
-        Use <code>IsLightVersion</code> parameter to set the light version of the button with the <code>Color</code> parameter.
+        The <strong>IsLightVersion</strong> property provides a lighter variant of the button color, useful for subtle emphasis or lighter backgrounds.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>IsLightVersion</code> property to <code>true</code> on your <code>Button</code> component.</li>
+                <li>Combine with the <code>Color</code> property for the desired color.</li>
+            </ol>
+        </div>
+        This demo demonstrates the light color variants for each button.
     </Block>
     <Demo Type="typeof(Button_Demo_02_Colors_C_Light_Version)" Tabs="true" />
     <Block>
-        Use <code>IsDarkVersion</code> parameter to set the dark version of the button with the <code>Color</code> parameter.
+        The <strong>IsDarkVersion</strong> property provides a darker variant of the button color, ideal for dark themes or strong emphasis.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>IsDarkVersion</code> property to <code>true</code> on your <code>Button</code> component.</li>
+                <li>Combine with the <code>Color</code> property for the desired color.</li>
+            </ol>
+        </div>
+        This demo shows the dark color variants for each button.
     </Block>
     <Demo Type="typeof(Button_Demo_02_Colors_D_Dark_Version)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
     <Block>
-        The <code>Button</code> component is available in 4 sizes: Small, Normal, Medium, and Large.
-        Default value is <b>Normal</b>.
+        The <strong>Button</strong> component supports multiple sizes to fit different UI needs, from small to large.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Size</code> property to <code>ButtonSize.Small</code>, <code>ButtonSize.Normal</code>, <code>ButtonSize.Medium</code>, or <code>ButtonSize.Large</code> as needed.</li>
+            </ol>
+        </div>
+        This demo shows how to use different button sizes.
     </Block>
     <Demo Type="typeof(Button_Demo_03_Sizes_A)" Tabs="true" />
+    <Block>
+        You can set the size for a group of buttons by applying the <code>Size</code> property to the <code>Buttons</code> container.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap your <code>Button</code> components in a <code>Buttons</code> container.</li>
+                <li>Set the <code>Size</code> property on the <code>Buttons</code> container to apply the size to all child buttons.</li>
+            </ol>
+        </div>
+        This demo shows a group of small buttons.
+    </Block>
     <Demo Type="typeof(Button_Demo_03_Sizes_B_Multiple_Buttons_Size_Small)" Tabs="true" />
+    <Block>
+        This demo demonstrates a group of medium-sized buttons using the <code>Size</code> property on the <code>Buttons</code> container.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap your <code>Button</code> components in a <code>Buttons</code> container.</li>
+                <li>Set <code>Size="ButtonSize.Medium"</code> on the <code>Buttons</code> container.</li>
+            </ol>
+        </div>
+    </Block>
     <Demo Type="typeof(Button_Demo_03_Sizes_C_Multiple_Buttons_Size_Medium)" Tabs="true" />
+    <Block>
+        This demo demonstrates a group of large buttons using the <code>Size</code> property on the <code>Buttons</code> container.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap your <code>Button</code> components in a <code>Buttons</code> container.</li>
+                <li>Set <code>Size="ButtonSize.Large"</code> on the <code>Buttons</code> container.</li>
+            </ol>
+        </div>
+    </Block>
     <Demo Type="typeof(Button_Demo_03_Sizes_D_Multiple_Buttons_Size_Large)" Tabs="true" />
+    <Block>
+        You can override the group size for individual buttons by setting the <code>Size</code> property on a specific <code>Button</code> inside a <code>Buttons</code> container.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Size</code> property on the <code>Buttons</code> container for a default group size.</li>
+                <li>Override the size for any <code>Button</code> by setting its own <code>Size</code> property.</li>
+            </ol>
+        </div>
+        This demo shows a group of large buttons with one button using a custom size.
+    </Block>
     <Demo Type="typeof(Button_Demo_03_Sizes_E_Multiple_Buttons_Size_And_Custom)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Full width" PageUrl="@pageUrl" Link="full-width">
     <Block>
-        Use <code>IsFullWidth</code> parameter to set the full width of the button.
-        The button will take the full width of its parent container.
+        The <strong>IsFullWidth</strong> property makes a button expand to fill the width of its container, useful for responsive layouts or call-to-action buttons.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>IsFullWidth</code> property to <code>true</code> on your <code>Button</code> component.</li>
+                <li>Optionally, set the <code>Size</code> property for different button heights.</li>
+            </ol>
+        </div>
+        This demo shows buttons of various sizes set to full width.
     </Block>
     <Demo Type="typeof(Button_Demo_04_Full_Width)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Responsive sizes" PageUrl="@pageUrl" Link="responsive-sizes">
+    <Block>
+        The <strong>IsResponsive</strong> property allows buttons to automatically adjust their size based on the screen size, improving usability on different devices.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>IsResponsive</code> property to <code>true</code> on your <code>Button</code> component.</li>
+                <li>Combine with the <code>Size</code> property for more control over the default size.</li>
+            </ol>
+        </div>
+        This demo compares fixed-size and responsive-size buttons in a table layout.
+    </Block>
     <Demo Type="typeof(Button_Demo_05_Responsive_Sizes)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Styles" PageUrl="@pageUrl" Link="styles">
+    <Block>
+        The <strong>IsOutlined</strong> property gives buttons an outlined style, making them less prominent while still interactive.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>IsOutlined</code> property to <code>true</code> on your <code>Button</code> component.</li>
+                <li>Combine with the <code>Color</code> property for different outlined color styles.</li>
+            </ol>
+        </div>
+        This demo shows outlined buttons in various colors.
+    </Block>
     <Demo Type="typeof(Button_Demo_06_Styles_A_Outlined)" Tabs="true" />
+    <Block>
+        The <strong>IsInverted</strong> property inverts the button's color scheme, making it suitable for use on colored backgrounds.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>IsInverted</code> property to <code>true</code> on your <code>Button</code> component.</li>
+                <li>Combine with the <code>Color</code> property for different inverted color styles.</li>
+            </ol>
+        </div>
+        This demo shows inverted buttons in various colors.
+    </Block>
     <Demo Type="typeof(Button_Demo_06_Styles_B_Inverted)" Tabs="true" />
+    <Block>
+        The <strong>IsRounded</strong> property gives buttons fully rounded corners for a pill-shaped appearance.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>IsRounded</code> property to <code>true</code> on your <code>Button</code> component.</li>
+                <li>Combine with the <code>Color</code> property for different rounded color styles.</li>
+            </ol>
+        </div>
+        This demo shows rounded buttons in various colors.
+    </Block>
     <Demo Type="typeof(Button_Demo_06_Styles_C_Rounded)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Loading" PageUrl="@pageUrl" Link="loading">
     <Block>
-        The <code>Button</code> component can be used to show a loading state.
-        Set <code>IsLoading</code> parameter to <b>true</b> to show the loading state.
+        The <strong>IsLoading</strong> property displays a loading spinner inside the button, indicating that an action is in progress.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>IsLoading</code> property to <code>true</code> on your <code>Button</code> component when an operation is running.</li>
+                <li>Optionally, combine with the <code>Color</code> property for different loading button styles.</li>
+            </ol>
+        </div>
+        This demo shows loading buttons in various colors.
     </Block>
     <Demo Type="typeof(Button_Demo_07_Loading)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Disabled" PageUrl="@pageUrl" Link="disabled">
     <Block>
-        Set <code>IsDisabled</code> parameter to <b>true</b> to disable the button.
+        The <strong>IsDisabled</strong> property disables the button, preventing user interaction and visually indicating its inactive state.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>IsDisabled</code> property to <code>true</code> on your <code>Button</code> component.</li>
+                <li>Combine with the <code>Color</code> or <code>Type</code> property as needed.</li>
+            </ol>
+        </div>
+        This demo shows disabled buttons in various styles and colors.
     </Block>
     <Demo Type="typeof(Button_Demo_08_Disabled)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Click events" PageUrl="@pageUrl" Link="click-events">
+    <Block>
+        The <strong>Button</strong> component supports click and double-click events, allowing you to handle user interactions with custom logic.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Attach an <code>@@onclick</code> or <code>@@ondblclick</code> event handler to your <code>Button</code> component.</li>
+                <li>Define the corresponding event handler method in your <code>@@code</code> block.</li>
+                <li>You can also pass additional arguments to your event handler as needed.</li>
+            </ol>
+        </div>
+        This demo shows handling single click, double click, and click events with custom arguments.
+    </Block>
     <Demo Type="typeof(Button_Demo_09_Click_Events)" Tabs="true" />
 </Section>
 
