@@ -18,18 +18,71 @@
 </Message>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>Image</strong> component provides a simple way to display images in your Blazor application, supporting Bulma's responsive image container styles.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Image</code> component to your page.</li>
+                <li>Set the <code>Src</code> property to the image URL or static asset you want to display.</li>
+                <li>Optionally, use the <code>Dimension</code> property to control the image size (e.g., <code>ImageDimension.Is128x128</code>).</li>
+            </ol>
+        </div>
+        This demo shows the basic usage of the <code>Image</code> component with a static image source and a fixed dimension.
+    </Block>
     <Demo Type="typeof(Image_Demo_01_How_it_works)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Fixed square images" PageUrl="@pageUrl" Link="fixed-square-images">
+    <Block>
+        The <strong>Image</strong> component supports a range of fixed square sizes, making it easy to maintain consistent layouts for avatars, icons, or thumbnails.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Use the <code>Image</code> component for each image you want to display.</li>
+                <li>Set the <code>Dimension</code> property to one of the predefined square sizes (e.g., <code>Is16x16</code>, <code>Is24x24</code>, <code>Is32x32</code>, etc.).</li>
+                <li>Provide the <code>Src</code> property with the image source.</li>
+            </ol>
+        </div>
+        This demo illustrates how to render images at various fixed square sizes for consistent presentation.
+    </Block>
     <Demo Type="typeof(Image_Demo_02_Fixed_square_images)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Rounded images" PageUrl="@pageUrl" Link="rounded-images">
+    <Block>
+        The <strong>Image</strong> component can display images with rounded (circular) borders, ideal for profile pictures or avatars.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Image</code> component to your page.</li>
+                <li>Set the <code>Dimension</code> property to the desired size (e.g., <code>Is128x128</code>).</li>
+                <li>Set <code>IsRounded="true"</code> to apply a circular style to the image.</li>
+                <li>Provide the <code>Src</code> property with the image source.</li>
+            </ol>
+        </div>
+        This demo shows how to create a perfectly rounded image using the <code>IsRounded</code> property.
+    </Block>
     <Demo Type="typeof(Image_Demo_03_Rounded_images)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Responsive images with ratios" PageUrl="@pageUrl" Link="responsive-images-with-ratios">
+    <Block>
+        The <strong>Image</strong> component supports responsive aspect ratios, allowing images to scale while maintaining a consistent width-to-height ratio.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Image</code> component inside a container with a fixed width (e.g., using a <code>div</code> with a <code>style</code> attribute).</li>
+                <li>Set the <code>Ratio</code> property to the desired aspect ratio (e.g., <code>Is16by9</code>, <code>Is4by3</code>, <code>Is1by1</code>, etc.).</li>
+                <li>Provide the <code>Src</code> property with the image source.</li>
+            </ol>
+        </div>
+        This demo demonstrates how to use different aspect ratios to create responsive images that adapt to their container's width.
+    </Block>
     <Demo Type="typeof(Image_Demo_04_Responsive_images_with_ratios)" Tabs="true" />
 </Section>
 
