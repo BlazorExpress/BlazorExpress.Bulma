@@ -16,59 +16,114 @@
 <div>The <code>Skeleton</code> component can be used to create a loading state for any type of content, such as text, images, or other components.</div>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
-    <div class="mb-3">
-        The skeleton block is a simple block element with a pulsating animation that can be used to indicate that content is being loaded.
-        It has a minimum height of <b>4.5em</b>.
-    </div>
+    <Block>
+        The <strong>Skeleton</strong> component provides a placeholder UI while content is loading, improving perceived performance and user experience.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Skeleton</code> component where you want to display a loading placeholder.</li>
+                <li>Use it as a self-closing tag for a generic block, or wrap your content inside <code>&lt;Skeleton&gt;...&lt;/Skeleton&gt;</code> to show a skeleton overlay until the content is ready.</li>
+                <li>Replace the skeleton with your actual content once loading is complete.</li>
+            </ol>
+        </div>
+        The demo below shows a basic skeleton block and a skeleton overlaying text content.
+    </Block>
     <Demo Type="typeof(Skeletons_Demo_01_Block_A)" Tabs="false" />
-    <div class="mb-3">
-        If you insert text inside this block, you can make its height dynamic:
-    </div>
+    <Block>
+        The <strong>Skeleton</strong> component can wrap any content, such as text or paragraphs, to indicate that the content is loading.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap your content inside the <code>Skeleton</code> component.</li>
+                <li>While loading, the skeleton will be shown in place of the content.</li>
+                <li>Once loading is complete, display the actual content.</li>
+            </ol>
+        </div>
+        This demo illustrates a skeleton overlaying a block of text.
+    </Block>
     <Demo Type="typeof(Skeletons_Demo_01_Block_B_Text_Inside)" Tabs="false" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Skeleton lines" PageUrl="@pageUrl" Link="skeleton-lines">
-    <div class="mb-3">
-        The <code>SkeletonLine</code> is a simple line element which represents a paragraph.
-        Each <code>SkeletonLine</code> will render as a separate loading line.
-    </div>
+    <Block>
+        The <strong>Skeleton</strong> component supports a "lines" type for simulating loading text or lists using multiple horizontal lines.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Type="SkeletonType.Lines"</code> on the <code>Skeleton</code> component.</li>
+                <li>Add one or more <code>SkeletonLine</code> elements as children to represent each line.</li>
+                <li>Customize each line as needed (e.g., width, color).</li>
+            </ol>
+        </div>
+        The demo below shows the default usage with several skeleton lines.
+    </Block>
     <Demo Type="typeof(Skeletons_Demo_02_Lines_A_Default)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Width" PageUrl="@pageUrl" Link="width">
-    <div class="mb-3">
-        You can set the width of the skeleton line by using the <code>Width</code> parameter.
-    </div>
+    <Block>
+        You can customize the width of each skeleton line to better match the expected content layout.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Within a <code>Skeleton</code> of type <code>Lines</code>, set the <code>Width</code> parameter on each <code>SkeletonLine</code> (value is a percentage).</li>
+                <li>Use different widths for a more realistic loading effect.</li>
+            </ol>
+        </div>
+        The demo below shows skeleton lines with varying widths.
+    </Block>
     <Demo Type="typeof(Skeletons_Demo_02_Lines_B_Width)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Colors" PageUrl="@pageUrl" Link="colors">
-    <div class="mb-3">
-        You can set the color of the skeleton line by using the <code>Color</code> parameter.
-        In the following example, we set the color to <b>Primary</b>.
-    </div>    
+    <Block>
+        The <strong>Skeleton</strong> component supports color customization to match your application's theme.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Color</code> parameter on the <code>Skeleton</code> component to apply a color to the entire skeleton block.</li>
+                <li>Choose from predefined color options such as <code>Primary</code>, <code>Link</code>, <code>Success</code>, etc.</li>
+            </ol>
+        </div>
+        The demo below shows a skeleton block with a primary color.
+    </Block>
     <Demo Type="typeof(Skeletons_Demo_02_Lines_C_Colors_01)" Tabs="true" />
-    <div class="mb-3">
-        You can also set the color of the individual lines by using the <code>Color</code> parameter of the <code>SkeletonLine</code> component.
-        In the following example, we set the color of the individual lines to different colors.
-    </div>
+    <Block>
+        You can also set different colors for individual skeleton lines for more granular control.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Within a <code>Skeleton</code> of type <code>Lines</code>, set the <code>Color</code> parameter on each <code>SkeletonLine</code> to customize its color.</li>
+                <li>Mix and match colors to simulate various content types or highlight specific areas.</li>
+            </ol>
+        </div>
+        The demo below shows skeleton lines with different colors.
+    </Block>
     <Demo Type="typeof(Skeletons_Demo_02_Lines_C_Colors_02)" Tabs="true" />
 </Section>
 
-@* <Section Class="p-0" Size="HeadingSize.H3" Name="Components with skeletons" PageUrl="@pageUrl" Link="components-with-skeletons">
-    <div></div>
-</Section> *@
-
 <Section Class="p-0" Size="HeadingSize.H4" Name="Button" PageUrl="@pageUrl" Link="components-with-skeletons-button">
-    <div class="mb-3">
-        In the following example, we set <code>IsSkeleton</code> to <b>true</b> to show the skeleton state of the button.
-    </div>
+    <Block>
+        The <strong>Skeleton</strong> feature can be applied to interactive components like buttons to indicate loading states.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>IsSkeleton</code> parameter to <code>true</code> on the <code>Button</code> component to display its skeleton state.</li>
+                <li>Toggle the <code>IsSkeleton</code> property in your code to control when the skeleton is shown (e.g., during async operations).</li>
+                <li>Use this approach for any button style or color.</li>
+            </ol>
+        </div>
+        The demo below shows multiple buttons with skeleton states and a toggle to simulate loading.
+    </Block>
     <Demo Type="typeof(Skeletons_Demo_03_Components_with_Skeletons_A_Button)" Tabs="true" />
 </Section>
-
-@* <Section Class="p-0" Size="HeadingSize.H4" Name="Icon" PageUrl="@pageUrl" Link="components-with-skeletons-icon">
-    <Demo Type="typeof(Skeletons_Demo_03_Components_with_Skeletons_B_Icon)" Tabs="true" />
-</Section> *@
 
 @code {
     private const string componentName = nameof(Skeleton);
