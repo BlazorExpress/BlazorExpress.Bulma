@@ -1,4 +1,4 @@
-﻿namespace BlazorExpress.Bulma;
+namespace BlazorExpress.Bulma;
 
 /// <summary>
 /// Represents the name of a Google Font Icon.
@@ -795,6 +795,110 @@ public enum GoogleFontIconName
     /// </summary>
     Android,
     /// <summary>
+    /// android_cell_4_bar
+    /// </summary>
+    AndroidCell4Bar,
+    /// <summary>
+    /// android_cell_4_bar_alert
+    /// </summary>
+    AndroidCell4BarAlert,
+    /// <summary>
+    /// android_cell_4_bar_off
+    /// </summary>
+    AndroidCell4BarOff,
+    /// <summary>
+    /// android_cell_4_bar_plus
+    /// </summary>
+    AndroidCell4BarPlus,
+    /// <summary>
+    /// android_cell_5_bar
+    /// </summary>
+    AndroidCell5Bar,
+    /// <summary>
+    /// android_cell_5_bar_alert
+    /// </summary>
+    AndroidCell5BarAlert,
+    /// <summary>
+    /// android_cell_5_bar_off
+    /// </summary>
+    AndroidCell5BarOff,
+    /// <summary>
+    /// android_cell_5_bar_plus
+    /// </summary>
+    AndroidCell5BarPlus,
+    /// <summary>
+    /// android_cell_dual_4_bar
+    /// </summary>
+    AndroidCellDual4Bar,
+    /// <summary>
+    /// android_cell_dual_4_bar_alert
+    /// </summary>
+    AndroidCellDual4BarAlert,
+    /// <summary>
+    /// android_cell_dual_4_bar_plus
+    /// </summary>
+    AndroidCellDual4BarPlus,
+    /// <summary>
+    /// android_cell_dual_5_bar
+    /// </summary>
+    AndroidCellDual5Bar,
+    /// <summary>
+    /// android_cell_dual_5_bar_alert
+    /// </summary>
+    AndroidCellDual5BarAlert,
+    /// <summary>
+    /// android_cell_dual_5_bar_plus
+    /// </summary>
+    AndroidCellDual5BarPlus,
+    /// <summary>
+    /// android_wifi_3_bar
+    /// </summary>
+    AndroidWifi3Bar,
+    /// <summary>
+    /// android_wifi_3_bar_alert
+    /// </summary>
+    AndroidWifi3BarAlert,
+    /// <summary>
+    /// android_wifi_3_bar_lock
+    /// </summary>
+    AndroidWifi3BarLock,
+    /// <summary>
+    /// android_wifi_3_bar_off
+    /// </summary>
+    AndroidWifi3BarOff,
+    /// <summary>
+    /// android_wifi_3_bar_plus
+    /// </summary>
+    AndroidWifi3BarPlus,
+    /// <summary>
+    /// android_wifi_3_bar_question
+    /// </summary>
+    AndroidWifi3BarQuestion,
+    /// <summary>
+    /// android_wifi_4_bar
+    /// </summary>
+    AndroidWifi4Bar,
+    /// <summary>
+    /// android_wifi_4_bar_alert
+    /// </summary>
+    AndroidWifi4BarAlert,
+    /// <summary>
+    /// android_wifi_4_bar_lock
+    /// </summary>
+    AndroidWifi4BarLock,
+    /// <summary>
+    /// android_wifi_4_bar_off
+    /// </summary>
+    AndroidWifi4BarOff,
+    /// <summary>
+    /// android_wifi_4_bar_plus
+    /// </summary>
+    AndroidWifi4BarPlus,
+    /// <summary>
+    /// android_wifi_4_bar_question
+    /// </summary>
+    AndroidWifi4BarQuestion,
+    /// <summary>
     /// animated_images
     /// </summary>
     AnimatedImages,
@@ -847,6 +951,10 @@ public enum GoogleFontIconName
     /// </summary>
     ApprovalDelegation,
     /// <summary>
+    /// approval_delegation_off
+    /// </summary>
+    ApprovalDelegationOff,
+    /// <summary>
     /// apps
     /// </summary>
     Apps,
@@ -887,9 +995,17 @@ public enum GoogleFontIconName
     /// </summary>
     ArmingCountdown,
     /// <summary>
+    /// arrow_and_edge
+    /// </summary>
+    ArrowAndEdge,
+    /// <summary>
     /// arrow_back
     /// </summary>
     ArrowBack,
+    /// <summary>
+    /// arrow_back_2
+    /// </summary>
+    ArrowBack2,
     /// <summary>
     /// arrow_back_ios
     /// </summary>
@@ -915,9 +1031,17 @@ public enum GoogleFontIconName
     /// </summary>
     ArrowCircleUp,
     /// <summary>
+    /// arrow_cool_down
+    /// </summary>
+    ArrowCoolDown,
+    /// <summary>
     /// arrow_downward
     /// </summary>
     ArrowDownward,
+    /// <summary>
+    /// arrow_downward_alt
+    /// </summary>
+    ArrowDownwardAlt,
     /// <summary>
     /// arrow_drop_down
     /// </summary>
@@ -939,13 +1063,37 @@ public enum GoogleFontIconName
     /// </summary>
     ArrowForwardIos,
     /// <summary>
+    /// arrow_insert
+    /// </summary>
+    ArrowInsert,
+    /// <summary>
     /// arrow_left
     /// </summary>
     ArrowLeft,
     /// <summary>
+    /// arrow_left_alt
+    /// </summary>
+    ArrowLeftAlt,
+    /// <summary>
+    /// arrow_menu_close
+    /// </summary>
+    ArrowMenuClose,
+    /// <summary>
+    /// arrow_menu_open
+    /// </summary>
+    ArrowMenuOpen,
+    /// <summary>
+    /// arrow_or_edge
+    /// </summary>
+    ArrowOrEdge,
+    /// <summary>
     /// arrow_outward
     /// </summary>
     ArrowOutward,
+    /// <summary>
+    /// arrow_range
+    /// </summary>
+    ArrowRange,
     /// <summary>
     /// arrow_right
     /// </summary>
@@ -959,9 +1107,65 @@ public enum GoogleFontIconName
     /// </summary>
     ArrowSelectorTool,
     /// <summary>
+    /// arrow_shape_up
+    /// </summary>
+    ArrowShapeUp,
+    /// <summary>
+    /// arrow_shape_up_stack
+    /// </summary>
+    ArrowShapeUpStack,
+    /// <summary>
+    /// arrow_shape_up_stack_2
+    /// </summary>
+    ArrowShapeUpStack2,
+    /// <summary>
+    /// arrow_split
+    /// </summary>
+    ArrowSplit,
+    /// <summary>
+    /// arrow_top_left
+    /// </summary>
+    ArrowTopLeft,
+    /// <summary>
+    /// arrow_top_right
+    /// </summary>
+    ArrowTopRight,
+    /// <summary>
+    /// arrow_upload_progress
+    /// </summary>
+    ArrowUploadProgress,
+    /// <summary>
+    /// arrow_upload_ready
+    /// </summary>
+    ArrowUploadReady,
+    /// <summary>
     /// arrow_upward
     /// </summary>
     ArrowUpward,
+    /// <summary>
+    /// arrow_upward_alt
+    /// </summary>
+    ArrowUpwardAlt,
+    /// <summary>
+    /// arrow_warm_up
+    /// </summary>
+    ArrowWarmUp,
+    /// <summary>
+    /// arrows_input
+    /// </summary>
+    ArrowsInput,
+    /// <summary>
+    /// arrows_more_down
+    /// </summary>
+    ArrowsMoreDown,
+    /// <summary>
+    /// arrows_more_up
+    /// </summary>
+    ArrowsMoreUp,
+    /// <summary>
+    /// arrows_output
+    /// </summary>
+    ArrowsOutput,
     /// <summary>
     /// arrows_outward
     /// </summary>
@@ -975,9 +1179,17 @@ public enum GoogleFontIconName
     /// </summary>
     Article,
     /// <summary>
+    /// article_person
+    /// </summary>
+    ArticlePerson,
+    /// <summary>
     /// article_shortcut
     /// </summary>
     ArticleShortcut,
+    /// <summary>
+    /// artist
+    /// </summary>
+    Artist,
     /// <summary>
     /// aspect_ratio
     /// </summary>
@@ -1015,6 +1227,10 @@ public enum GoogleFontIconName
     /// </summary>
     AssistWalker,
     /// <summary>
+    /// assistant_device
+    /// </summary>
+    AssistantDevice,
+    /// <summary>
     /// assistant_direction
     /// </summary>
     AssistantDirection,
@@ -1023,13 +1239,25 @@ public enum GoogleFontIconName
     /// </summary>
     AssistantNavigation,
     /// <summary>
+    /// assistant_on_hub
+    /// </summary>
+    AssistantOnHub,
+    /// <summary>
     /// assured_workload
     /// </summary>
     AssuredWorkload,
     /// <summary>
+    /// asterisk
+    /// </summary>
+    Asterisk,
+    /// <summary>
     /// atm
     /// </summary>
     Atm,
+    /// <summary>
+    /// atr
+    /// </summary>
+    Atr,
     /// <summary>
     /// attach_email
     /// </summary>
@@ -1042,6 +1270,10 @@ public enum GoogleFontIconName
     /// attach_file_add
     /// </summary>
     AttachFileAdd,
+    /// <summary>
+    /// attach_file_off
+    /// </summary>
+    AttachFileOff,
     /// <summary>
     /// attach_money
     /// </summary>
@@ -1059,9 +1291,17 @@ public enum GoogleFontIconName
     /// </summary>
     Attribution,
     /// <summary>
+    /// audio_description
+    /// </summary>
+    AudioDescription,
+    /// <summary>
     /// audio_file
     /// </summary>
     AudioFile,
+    /// <summary>
+    /// audio_video_receiver
+    /// </summary>
+    AudioVideoReceiver,
     /// <summary>
     /// auto_awesome_mosaic
     /// </summary>
@@ -1087,17 +1327,73 @@ public enum GoogleFontIconName
     /// </summary>
     AutoStories,
     /// <summary>
+    /// auto_stories_off
+    /// </summary>
+    AutoStoriesOff,
+    /// <summary>
+    /// auto_towing
+    /// </summary>
+    AutoTowing,
+    /// <summary>
+    /// auto_transmission
+    /// </summary>
+    AutoTransmission,
+    /// <summary>
     /// autofps_select
     /// </summary>
     AutofpsSelect,
+    /// <summary>
+    /// automation
+    /// </summary>
+    Automation,
+    /// <summary>
+    /// autopause
+    /// </summary>
+    Autopause,
+    /// <summary>
+    /// autoplay
+    /// </summary>
+    Autoplay,
     /// <summary>
     /// autorenew
     /// </summary>
     Autorenew,
     /// <summary>
+    /// autostop
+    /// </summary>
+    Autostop,
+    /// <summary>
     /// av_timer
     /// </summary>
     AvTimer,
+    /// <summary>
+    /// av1
+    /// </summary>
+    Av1,
+    /// <summary>
+    /// avc
+    /// </summary>
+    Avc,
+    /// <summary>
+    /// avg_pace
+    /// </summary>
+    AvgPace,
+    /// <summary>
+    /// avg_time
+    /// </summary>
+    AvgTime,
+    /// <summary>
+    /// award_meal
+    /// </summary>
+    AwardMeal,
+    /// <summary>
+    /// award_star
+    /// </summary>
+    AwardStar,
+    /// <summary>
+    /// azm
+    /// </summary>
+    Azm,
     /// <summary>
     /// baby_changing_station
     /// </summary>
@@ -1107,9 +1403,37 @@ public enum GoogleFontIconName
     /// </summary>
     BackHand,
     /// <summary>
+    /// back_to_tab
+    /// </summary>
+    BackToTab,
+    /// <summary>
+    /// background_dot_large
+    /// </summary>
+    BackgroundDotLarge,
+    /// <summary>
+    /// background_dot_small
+    /// </summary>
+    BackgroundDotSmall,
+    /// <summary>
+    /// background_grid_small
+    /// </summary>
+    BackgroundGridSmall,
+    /// <summary>
     /// background_replace
     /// </summary>
     BackgroundReplace,
+    /// <summary>
+    /// backlight_high
+    /// </summary>
+    BacklightHigh,
+    /// <summary>
+    /// backlight_high_off
+    /// </summary>
+    BacklightHighOff,
+    /// <summary>
+    /// backlight_low
+    /// </summary>
+    BacklightLow,
     /// <summary>
     /// backpack
     /// </summary>
@@ -1130,6 +1454,10 @@ public enum GoogleFontIconName
     /// badge
     /// </summary>
     Badge,
+    /// <summary>
+    /// badge_critical_battery
+    /// </summary>
+    BadgeCriticalBattery,
     /// <summary>
     /// badminton
     /// </summary>
@@ -1155,6 +1483,14 @@ public enum GoogleFontIconName
     /// </summary>
     BarChart,
     /// <summary>
+    /// bar_chart_4_bars
+    /// </summary>
+    BarChart4Bars,
+    /// <summary>
+    /// bar_chart_off
+    /// </summary>
+    BarChartOff,
+    /// <summary>
     /// barcode
     /// </summary>
     Barcode,
@@ -1167,9 +1503,33 @@ public enum GoogleFontIconName
     /// </summary>
     BarcodeScanner,
     /// <summary>
+    /// barefoot
+    /// </summary>
+    Barefoot,
+    /// <summary>
     /// batch_prediction
     /// </summary>
     BatchPrediction,
+    /// <summary>
+    /// bath_bedrock
+    /// </summary>
+    BathBedrock,
+    /// <summary>
+    /// bath_outdoor
+    /// </summary>
+    BathOutdoor,
+    /// <summary>
+    /// bath_private
+    /// </summary>
+    BathPrivate,
+    /// <summary>
+    /// bath_public_large
+    /// </summary>
+    BathPublicLarge,
+    /// <summary>
+    /// bath_soak
+    /// </summary>
+    BathSoak,
     /// <summary>
     /// bathroom
     /// </summary>
@@ -1210,6 +1570,114 @@ public enum GoogleFontIconName
     /// battery_alert
     /// </summary>
     BatteryAlert,
+    /// <summary>
+    /// battery_android_0
+    /// </summary>
+    BatteryAndroid0,
+    /// <summary>
+    /// battery_android_1
+    /// </summary>
+    BatteryAndroid1,
+    /// <summary>
+    /// battery_android_2
+    /// </summary>
+    BatteryAndroid2,
+    /// <summary>
+    /// battery_android_3
+    /// </summary>
+    BatteryAndroid3,
+    /// <summary>
+    /// battery_android_4
+    /// </summary>
+    BatteryAndroid4,
+    /// <summary>
+    /// battery_android_5
+    /// </summary>
+    BatteryAndroid5,
+    /// <summary>
+    /// battery_android_6
+    /// </summary>
+    BatteryAndroid6,
+    /// <summary>
+    /// battery_android_alert
+    /// </summary>
+    BatteryAndroidAlert,
+    /// <summary>
+    /// battery_android_bolt
+    /// </summary>
+    BatteryAndroidBolt,
+    /// <summary>
+    /// battery_android_frame_1
+    /// </summary>
+    BatteryAndroidFrame1,
+    /// <summary>
+    /// battery_android_frame_2
+    /// </summary>
+    BatteryAndroidFrame2,
+    /// <summary>
+    /// battery_android_frame_3
+    /// </summary>
+    BatteryAndroidFrame3,
+    /// <summary>
+    /// battery_android_frame_4
+    /// </summary>
+    BatteryAndroidFrame4,
+    /// <summary>
+    /// battery_android_frame_5
+    /// </summary>
+    BatteryAndroidFrame5,
+    /// <summary>
+    /// battery_android_frame_6
+    /// </summary>
+    BatteryAndroidFrame6,
+    /// <summary>
+    /// battery_android_frame_alert
+    /// </summary>
+    BatteryAndroidFrameAlert,
+    /// <summary>
+    /// battery_android_frame_bolt
+    /// </summary>
+    BatteryAndroidFrameBolt,
+    /// <summary>
+    /// battery_android_frame_full
+    /// </summary>
+    BatteryAndroidFrameFull,
+    /// <summary>
+    /// battery_android_frame_plus
+    /// </summary>
+    BatteryAndroidFramePlus,
+    /// <summary>
+    /// battery_android_frame_question
+    /// </summary>
+    BatteryAndroidFrameQuestion,
+    /// <summary>
+    /// battery_android_frame_share
+    /// </summary>
+    BatteryAndroidFrameShare,
+    /// <summary>
+    /// battery_android_frame_shield
+    /// </summary>
+    BatteryAndroidFrameShield,
+    /// <summary>
+    /// battery_android_full
+    /// </summary>
+    BatteryAndroidFull,
+    /// <summary>
+    /// battery_android_plus
+    /// </summary>
+    BatteryAndroidPlus,
+    /// <summary>
+    /// battery_android_question
+    /// </summary>
+    BatteryAndroidQuestion,
+    /// <summary>
+    /// battery_android_share
+    /// </summary>
+    BatteryAndroidShare,
+    /// <summary>
+    /// battery_android_shield
+    /// </summary>
+    BatteryAndroidShield,
     /// <summary>
     /// battery_change
     /// </summary>
@@ -1255,6 +1723,18 @@ public enum GoogleFontIconName
     /// </summary>
     BatteryFullAlt,
     /// <summary>
+    /// battery_horiz_000
+    /// </summary>
+    BatteryHoriz000,
+    /// <summary>
+    /// battery_horiz_050
+    /// </summary>
+    BatteryHoriz050,
+    /// <summary>
+    /// battery_horiz_075
+    /// </summary>
+    BatteryHoriz075,
+    /// <summary>
     /// battery_low
     /// </summary>
     BatteryLow,
@@ -1263,9 +1743,21 @@ public enum GoogleFontIconName
     /// </summary>
     BatteryPlus,
     /// <summary>
+    /// battery_profile
+    /// </summary>
+    BatteryProfile,
+    /// <summary>
     /// battery_saver
     /// </summary>
     BatterySaver,
+    /// <summary>
+    /// battery_share
+    /// </summary>
+    BatteryShare,
+    /// <summary>
+    /// battery_status_good
+    /// </summary>
+    BatteryStatusGood,
     /// <summary>
     /// battery_unknown
     /// </summary>
@@ -1303,93 +1795,69 @@ public enum GoogleFontIconName
     /// </summary>
     BedtimeOff,
     /// <summary>
-    /// beehive
+    /// beenhere
     /// </summary>
-    Beehive,
+    Beenhere,
     /// <summary>
-    /// bell_scope
+    /// beer_meal
     /// </summary>
-    BellScope,
-    /// <summary>
-    /// bell_scope_off
-    /// </summary>
-    BellScopeOff,
-    /// <summary>
-    /// bell_snow_cone
-    /// </summary>
-    BellSnowCone,
-    /// <summary>
-    /// below_sensor
-    /// </summary>
-    BelowSensor,
-    /// <summary>
-    /// below_sensor_not_allowed
-    /// </summary>
-    BelowSensorNotAllowed,
-    /// <summary>
-    /// bench
-    /// </summary>
-    Bench,
+    BeerMeal,
     /// <summary>
     /// bento
     /// </summary>
     Bento,
     /// <summary>
-    /// bezier_curve
+    /// bia
     /// </summary>
-    BezierCurve,
+    Bia,
+    /// <summary>
+    /// bid_landscape
+    /// </summary>
+    BidLandscape,
+    /// <summary>
+    /// bid_landscape_disabled
+    /// </summary>
+    BidLandscapeDisabled,
+    /// <summary>
+    /// bigtop_updates
+    /// </summary>
+    BigtopUpdates,
+    /// <summary>
+    /// bike_dock
+    /// </summary>
+    BikeDock,
+    /// <summary>
+    /// bike_lane
+    /// </summary>
+    BikeLane,
     /// <summary>
     /// bike_scooter
     /// </summary>
     BikeScooter,
     /// <summary>
-    /// bill
+    /// biotech
     /// </summary>
-    Bill,
+    Biotech,
     /// <summary>
-    /// bill_off
+    /// blanket
     /// </summary>
-    BillOff,
+    Blanket,
     /// <summary>
-    /// billing
+    /// blender
     /// </summary>
-    Billing,
+    Blender,
     /// <summary>
-    /// binoculars
+    /// blind
     /// </summary>
-    Binoculars,
+    Blind,
     /// <summary>
-    /// biohazard
+    /// blinds
     /// </summary>
-    Biohazard,
+    Blinds,
     /// <summary>
-    /// bipolar
+    /// blinds_closed
     /// </summary>
-    Bipolar,
-    /// <summary>
-    /// biometric_fingerprint
-    /// </summary>
-    BiometricFingerprint,
-    /// <summary>
-    /// biometrics
-    /// </summary>
-    Biometrics,
-    /// <summary>
-    /// biometrics_lock
-    /// </summary>
-    BiometricsLock,
-    /// <summary>
-    /// biometrics_lock_off
-    /// </summary>
-    BiometricsLockOff,
-    /// <summary>
-    /// biometrics_off
-    /// </summary>
-    BiometricsOff,
-    /// <summary>
-    /// birdie
-    /// </summary>
-    Birdie,
+    BlindsClosed,
     /// <summary>
     /// block
     /// </summary>
@@ -1447,6 +1915,14 @@ public enum GoogleFontIconName
     /// </summary>
     BlurShort,
     /// <summary>
+    /// boat_bus
+    /// </summary>
+    BoatBus,
+    /// <summary>
+    /// boat_railway
+    /// </summary>
+    BoatRailway,
+    /// <summary>
     /// body_fat
     /// </summary>
     BodyFat,
@@ -1459,6 +1935,10 @@ public enum GoogleFontIconName
     /// </summary>
     Bolt,
     /// <summary>
+    /// bomb
+    /// </summary>
+    Bomb,
+    /// <summary>
     /// book
     /// </summary>
     Book,
@@ -1467,9 +1947,25 @@ public enum GoogleFontIconName
     /// </summary>
     Book2,
     /// <summary>
-    /// book_online
+    /// book_3
     /// </summary>
-    BookOnline,
+    Book3,
+    /// <summary>
+    /// book_4
+    /// </summary>
+    Book4,
+    /// <summary>
+    /// book_5
+    /// </summary>
+    Book5,
+    /// <summary>
+    /// book_6
+    /// </summary>
+    Book6,
+    /// <summary>
+    /// book_ribbon
+    /// </summary>
+    BookRibbon,
     /// <summary>
     /// bookmark
     /// </summary>
@@ -1483,17 +1979,41 @@ public enum GoogleFontIconName
     /// </summary>
     BookmarkAdded,
     /// <summary>
-    /// bookmark_border
+    /// bookmark_bag
     /// </summary>
-    BookmarkBorder,
+    BookmarkBag,
+    /// <summary>
+    /// bookmark_check
+    /// </summary>
+    BookmarkCheck,
+    /// <summary>
+    /// bookmark_flag
+    /// </summary>
+    BookmarkFlag,
+    /// <summary>
+    /// bookmark_heart
+    /// </summary>
+    BookmarkHeart,
+    /// <summary>
+    /// bookmark_manager
+    /// </summary>
+    BookmarkManager,
     /// <summary>
     /// bookmark_remove
     /// </summary>
     BookmarkRemove,
     /// <summary>
+    /// bookmark_star
+    /// </summary>
+    BookmarkStar,
+    /// <summary>
     /// bookmarks
     /// </summary>
     Bookmarks,
+    /// <summary>
+    /// books_movies_and_music
+    /// </summary>
+    BooksMoviesAndMusic,
     /// <summary>
     /// border_all
     /// </summary>
@@ -1543,6 +2063,10 @@ public enum GoogleFontIconName
     /// </summary>
     BorderVertical,
     /// <summary>
+    /// borg
+    /// </summary>
+    Borg,
+    /// <summary>
     /// bottom_app_bar
     /// </summary>
     BottomAppBar,
@@ -1583,17 +2107,21 @@ public enum GoogleFontIconName
     /// </summary>
     BoxEdit,
     /// <summary>
-    /// box_off
+    /// boy
     /// </summary>
-    BoxOff,
+    Boy,
     /// <summary>
-    /// box_public
+    /// brand_awareness
     /// </summary>
-    BoxPublic,
+    BrandAwareness,
     /// <summary>
-    /// branch
+    /// brand_family
     /// </summary>
-    Branch,
+    BrandFamily,
+    /// <summary>
+    /// branding_watermark
+    /// </summary>
+    BrandingWatermark,
     /// <summary>
     /// breakfast_dining
     /// </summary>
@@ -1607,9 +2135,17 @@ public enum GoogleFontIconName
     /// </summary>
     BreakingNewsAlt1,
     /// <summary>
-    /// breastpump
+    /// breastfeeding
     /// </summary>
-    Breastpump,
+    Breastfeeding,
+    /// <summary>
+    /// brick
+    /// </summary>
+    Brick,
+    /// <summary>
+    /// briefcase_meal
+    /// </summary>
+    BriefcaseMeal,
     /// <summary>
     /// brightness_1
     /// </summary>
@@ -1647,17 +2183,17 @@ public enum GoogleFontIconName
     /// </summary>
     BrightnessAuto,
     /// <summary>
-    /// brightness_high
+    /// brightness_empty
     /// </summary>
-    BrightnessHigh,
-    /// <summary>
-    /// brightness_low
-    /// </summary>
-    BrightnessLow,
+    BrightnessEmpty,
     /// <summary>
     /// brightness_medium
     /// </summary>
     BrightnessMedium,
+    /// <summary>
+    /// bring_your_own_ip
+    /// </summary>
+    BringYourOwnIp,
     /// <summary>
     /// broadcast_on_home
     /// </summary>
@@ -1683,10 +2219,6 @@ public enum GoogleFontIconName
     /// </summary>
     BrowseGallery,
     /// <summary>
-    /// browser_not_supported
-    /// </summary>
-    BrowserNotSupported,
-    /// <summary>
     /// browser_updated
     /// </summary>
     BrowserUpdated,
@@ -1711,6 +2243,10 @@ public enum GoogleFontIconName
     /// </summary>
     Bubbles,
     /// <summary>
+    /// bucket_check
+    /// </summary>
+    BucketCheck,
+    /// <summary>
     /// bug_report
     /// </summary>
     BugReport,
@@ -1723,41 +2259,21 @@ public enum GoogleFontIconName
     /// </summary>
     BuildCircle,
     /// <summary>
-    /// building
+    /// bungalow
     /// </summary>
-    Building,
+    Bungalow,
     /// <summary>
-    /// building_2
+    /// burst_mode
     /// </summary>
-    Building2,
-    /// <summary>
-    /// building_3
-    /// </summary>
-    Building3,
-    /// <summary>
-    /// buildings
-    /// </summary>
-    Buildings,
-    /// <summary>
-    /// buildings_with_garden
-    /// </summary>
-    BuildingsWithGarden,
-    /// <summary>
-    /// bulk_container
-    /// </summary>
-    BulkContainer,
-    /// <summary>
-    /// bumper_truck
-    /// </summary>
-    BumperTruck,
-    /// <summary>
-    /// bundled_case
-    /// </summary>
-    BundledCase,
+    BurstMode,
     /// <summary>
     /// bus_alert
     /// </summary>
     BusAlert,
+    /// <summary>
+    /// bus_railway
+    /// </summary>
+    BusRailway,
     /// <summary>
     /// business_center
     /// </summary>
@@ -1771,9 +2287,13 @@ public enum GoogleFontIconName
     /// </summary>
     BusinessMessages,
     /// <summary>
-    /// buttons
+    /// buttons_alt
     /// </summary>
-    Buttons,
+    ButtonsAlt,
+    /// <summary>
+    /// cabin
+    /// </summary>
+    Cabin,
     /// <summary>
     /// cable
     /// </summary>
@@ -1787,13 +2307,9 @@ public enum GoogleFontIconName
     /// </summary>
     Cached,
     /// <summary>
-    /// cactus
+    /// cadence
     /// </summary>
-    Cactus,
-    /// <summary>
-    /// cafe
-    /// </summary>
-    Cafe,
+    Cadence,
     /// <summary>
     /// cake
     /// </summary>
@@ -1811,9 +2327,29 @@ public enum GoogleFontIconName
     /// </summary>
     CalendarAddOn,
     /// <summary>
-    /// calendar_apps
+    /// calendar_apps_script
     /// </summary>
-    CalendarApps,
+    CalendarAppsScript,
+    /// <summary>
+    /// calendar_check
+    /// </summary>
+    CalendarCheck,
+    /// <summary>
+    /// calendar_clock
+    /// </summary>
+    CalendarClock,
+    /// <summary>
+    /// calendar_lock
+    /// </summary>
+    CalendarLock,
+    /// <summary>
+    /// calendar_meal
+    /// </summary>
+    CalendarMeal,
+    /// <summary>
+    /// calendar_meal_2
+    /// </summary>
+    CalendarMeal2,
     /// <summary>
     /// calendar_month
     /// </summary>
@@ -1834,10 +2370,6 @@ public enum GoogleFontIconName
     /// calendar_view_week
     /// </summary>
     CalendarViewWeek,
-    /// <summary>
-    /// calendars
-    /// </summary>
-    Calendars,
     /// <summary>
     /// call
     /// </summary>
@@ -1867,6 +2399,10 @@ public enum GoogleFontIconName
     /// </summary>
     CallMissedOutgoing,
     /// <summary>
+    /// call_quality
+    /// </summary>
+    CallQuality,
+    /// <summary>
     /// call_received
     /// </summary>
     CallReceived,
@@ -1883,13 +2419,13 @@ public enum GoogleFontIconName
     /// </summary>
     Camera,
     /// <summary>
-    /// camera_front
+    /// camera_indoor
     /// </summary>
-    CameraFront,
+    CameraIndoor,
     /// <summary>
-    /// camera_rear
+    /// camera_outdoor
     /// </summary>
-    CameraRear,
+    CameraOutdoor,
     /// <summary>
     /// camera_roll
     /// </summary>
@@ -1898,6 +2434,10 @@ public enum GoogleFontIconName
     /// camera_video
     /// </summary>
     CameraVideo,
+    /// <summary>
+    /// cameraswitch
+    /// </summary>
+    Cameraswitch,
     /// <summary>
     /// campaign
     /// </summary>
@@ -1919,29 +2459,125 @@ public enum GoogleFontIconName
     /// </summary>
     CancelScheduleSend,
     /// <summary>
+    /// candle
+    /// </summary>
+    Candle,
+    /// <summary>
     /// candlestick_chart
     /// </summary>
     CandlestickChart,
     /// <summary>
-    /// cardio_bot
+    /// cannabis
     /// </summary>
-    CardioBot,
+    Cannabis,
     /// <summary>
-    /// cardiac_pedometer
+    /// captive_portal
     /// </summary>
-    CardiacPedometer,
+    CaptivePortal,
     /// <summary>
-    /// carousel
+    /// capture
     /// </summary>
-    Carousel,
-    /// <summary>
-    /// carport
-    /// </summary>
-    Carport,
+    Capture,
     /// <summary>
     /// car_crash
     /// </summary>
     CarCrash,
+    /// <summary>
+    /// car_defrost_left
+    /// </summary>
+    CarDefrostLeft,
+    /// <summary>
+    /// car_defrost_low_left
+    /// </summary>
+    CarDefrostLowLeft,
+    /// <summary>
+    /// car_defrost_low_right
+    /// </summary>
+    CarDefrostLowRight,
+    /// <summary>
+    /// car_defrost_mid_left
+    /// </summary>
+    CarDefrostMidLeft,
+    /// <summary>
+    /// car_defrost_mid_low_left
+    /// </summary>
+    CarDefrostMidLowLeft,
+    /// <summary>
+    /// car_defrost_mid_low_right
+    /// </summary>
+    CarDefrostMidLowRight,
+    /// <summary>
+    /// car_defrost_mid_right
+    /// </summary>
+    CarDefrostMidRight,
+    /// <summary>
+    /// car_defrost_right
+    /// </summary>
+    CarDefrostRight,
+    /// <summary>
+    /// car_fan_low_left
+    /// </summary>
+    CarFanLowLeft,
+    /// <summary>
+    /// car_fan_low_mid_left
+    /// </summary>
+    CarFanLowMidLeft,
+    /// <summary>
+    /// car_fan_low_right
+    /// </summary>
+    CarFanLowRight,
+    /// <summary>
+    /// car_fan_mid_left
+    /// </summary>
+    CarFanMidLeft,
+    /// <summary>
+    /// car_fan_mid_low_right
+    /// </summary>
+    CarFanMidLowRight,
+    /// <summary>
+    /// car_fan_mid_right
+    /// </summary>
+    CarFanMidRight,
+    /// <summary>
+    /// car_fan_recirculate
+    /// </summary>
+    CarFanRecirculate,
+    /// <summary>
+    /// car_gear
+    /// </summary>
+    CarGear,
+    /// <summary>
+    /// car_lock
+    /// </summary>
+    CarLock,
+    /// <summary>
+    /// car_mirror_heat
+    /// </summary>
+    CarMirrorHeat,
+    /// <summary>
+    /// car_rental
+    /// </summary>
+    CarRental,
+    /// <summary>
+    /// car_repair
+    /// </summary>
+    CarRepair,
+    /// <summary>
+    /// car_tag
+    /// </summary>
+    CarTag,
+    /// <summary>
+    /// card_membership
+    /// </summary>
+    CardMembership,
+    /// <summary>
+    /// card_travel
+    /// </summary>
+    CardTravel,
+    /// <summary>
+    /// cardio_load
+    /// </summary>
+    CardioLoad,
     /// <summary>
     /// cardiology
     /// </summary>
@@ -1951,89 +2587,93 @@ public enum GoogleFontIconName
     /// </summary>
     Cards,
     /// <summary>
-    /// career_shuttle
+    /// cards_star
     /// </summary>
-    CareerShuttle,
+    CardsStar,
     /// <summary>
-    /// car_tag
+    /// carpenter
     /// </summary>
-    CarTag,
+    Carpenter,
     /// <summary>
-    /// car_tire_skid
+    /// carry_on_bag
     /// </summary>
-    CarTireSkid,
+    CarryOnBag,
     /// <summary>
-    /// car_wash
+    /// carry_on_bag_checked
     /// </summary>
-    CarWash,
+    CarryOnBagChecked,
     /// <summary>
-    /// carousel_satellite
+    /// carry_on_bag_inactive
     /// </summary>
-    CarouselSatellite,
+    CarryOnBagInactive,
     /// <summary>
-    /// carrot
+    /// carry_on_bag_question
     /// </summary>
-    Carrot,
+    CarryOnBagQuestion,
     /// <summary>
-    /// case_study
+    /// cases
     /// </summary>
-    CaseStudy,
+    Cases,
     /// <summary>
-    /// cassette_tape
+    /// casino
     /// </summary>
-    CassetteTape,
+    Casino,
     /// <summary>
-    /// casting
+    /// cast
     /// </summary>
-    Casting,
+    Cast,
     /// <summary>
-    /// casting_button
+    /// cast_connected
     /// </summary>
-    CastingButton,
+    CastConnected,
     /// <summary>
-    /// casting_circles
+    /// cast_for_education
     /// </summary>
-    CastingCircles,
+    CastForEducation,
     /// <summary>
-    /// casting_off
+    /// cast_pause
     /// </summary>
-    CastingOff,
+    CastPause,
     /// <summary>
-    /// casual_games
+    /// cast_warning
     /// </summary>
-    CasualGames,
+    CastWarning,
     /// <summary>
-    /// catch_up
+    /// castle
     /// </summary>
-    CatchUp,
+    Castle,
     /// <summary>
     /// category
     /// </summary>
     Category,
     /// <summary>
+    /// category_search
+    /// </summary>
+    CategorySearch,
+    /// <summary>
     /// celebration
     /// </summary>
     Celebration,
     /// <summary>
-    /// cemetery
+    /// cell_merge
     /// </summary>
-    Cemetery,
+    CellMerge,
     /// <summary>
-    /// cfc
+    /// cell_tower
     /// </summary>
-    Cfc,
+    CellTower,
     /// <summary>
-    /// chain
+    /// cell_wifi
     /// </summary>
-    Chain,
+    CellWifi,
     /// <summary>
-    /// chain_end
+    /// center_focus_strong
     /// </summary>
-    ChainEnd,
+    CenterFocusStrong,
     /// <summary>
-    /// chain_start
+    /// center_focus_weak
     /// </summary>
-    ChainStart,
+    CenterFocusWeak,
     /// <summary>
     /// chair
     /// </summary>
@@ -2042,6 +2682,18 @@ public enum GoogleFontIconName
     /// chair_alt
     /// </summary>
     ChairAlt,
+    /// <summary>
+    /// chair_counter
+    /// </summary>
+    ChairCounter,
+    /// <summary>
+    /// chair_fireplace
+    /// </summary>
+    ChairFireplace,
+    /// <summary>
+    /// chair_umbrella
+    /// </summary>
+    ChairUmbrella,
     /// <summary>
     /// chalet
     /// </summary>
@@ -2059,10 +2711,6 @@ public enum GoogleFontIconName
     /// </summary>
     Charger,
     /// <summary>
-    /// charging_station
-    /// </summary>
-    ChargingStation,
-    /// <summary>
     /// chart_data
     /// </summary>
     ChartData,
@@ -2071,33 +2719,17 @@ public enum GoogleFontIconName
     /// </summary>
     Chat,
     /// <summary>
-    /// chat_add
+    /// chat_add_on
     /// </summary>
-    ChatAdd,
+    ChatAddOn,
     /// <summary>
-    /// chat_apps
+    /// chat_apps_script
     /// </summary>
-    ChatApps,
+    ChatAppsScript,
     /// <summary>
     /// chat_bubble
     /// </summary>
     ChatBubble,
-    /// <summary>
-    /// chat_bubble_add
-    /// </summary>
-    ChatBubbleAdd,
-    /// <summary>
-    /// chat_bubble_minus
-    /// </summary>
-    ChatBubbleMinus,
-    /// <summary>
-    /// chat_bubble_off
-    /// </summary>
-    ChatBubbleOff,
-    /// <summary>
-    /// chat_delete
-    /// </summary>
-    ChatDelete,
     /// <summary>
     /// chat_error
     /// </summary>
@@ -2107,9 +2739,57 @@ public enum GoogleFontIconName
     /// </summary>
     ChatInfo,
     /// <summary>
-    /// chat_paste
+    /// chat_paste_go
     /// </summary>
-    ChatPaste,
+    ChatPasteGo,
+    /// <summary>
+    /// chat_paste_go_2
+    /// </summary>
+    ChatPasteGo2,
+    /// <summary>
+    /// check
+    /// </summary>
+    Check,
+    /// <summary>
+    /// check_box
+    /// </summary>
+    CheckBox,
+    /// <summary>
+    /// check_box_outline_blank
+    /// </summary>
+    CheckBoxOutlineBlank,
+    /// <summary>
+    /// check_circle
+    /// </summary>
+    CheckCircle,
+    /// <summary>
+    /// check_circle_unread
+    /// </summary>
+    CheckCircleUnread,
+    /// <summary>
+    /// check_in_out
+    /// </summary>
+    CheckInOut,
+    /// <summary>
+    /// check_indeterminate_small
+    /// </summary>
+    CheckIndeterminateSmall,
+    /// <summary>
+    /// check_small
+    /// </summary>
+    CheckSmall,
+    /// <summary>
+    /// checkbook
+    /// </summary>
+    Checkbook,
+    /// <summary>
+    /// checked_bag
+    /// </summary>
+    CheckedBag,
+    /// <summary>
+    /// checked_bag_question
+    /// </summary>
+    CheckedBagQuestion,
     /// <summary>
     /// checklist
     /// </summary>
@@ -2127,17 +2807,57 @@ public enum GoogleFontIconName
     /// </summary>
     Cheer,
     /// <summary>
-    /// checkered_flag
+    /// chef_hat
     /// </summary>
-    CheckeredFlag,
-    /// <summary>
-    /// checkout
-    /// </summary>
-    Checkout,
+    ChefHat,
     /// <summary>
     /// chess
     /// </summary>
     Chess,
+    /// <summary>
+    /// chess_bishop
+    /// </summary>
+    ChessBishop,
+    /// <summary>
+    /// chess_bishop_2
+    /// </summary>
+    ChessBishop2,
+    /// <summary>
+    /// chess_king
+    /// </summary>
+    ChessKing,
+    /// <summary>
+    /// chess_king_2
+    /// </summary>
+    ChessKing2,
+    /// <summary>
+    /// chess_knight
+    /// </summary>
+    ChessKnight,
+    /// <summary>
+    /// chess_pawn
+    /// </summary>
+    ChessPawn,
+    /// <summary>
+    /// chess_pawn_2
+    /// </summary>
+    ChessPawn2,
+    /// <summary>
+    /// chess_queen
+    /// </summary>
+    ChessQueen,
+    /// <summary>
+    /// chess_rook
+    /// </summary>
+    ChessRook,
+    /// <summary>
+    /// chevron_backward
+    /// </summary>
+    ChevronBackward,
+    /// <summary>
+    /// chevron_forward
+    /// </summary>
+    ChevronForward,
     /// <summary>
     /// chevron_left
     /// </summary>
@@ -2147,21 +2867,17 @@ public enum GoogleFontIconName
     /// </summary>
     ChevronRight,
     /// <summary>
+    /// child_care
+    /// </summary>
+    ChildCare,
+    /// <summary>
     /// child_friendly
     /// </summary>
     ChildFriendly,
     /// <summary>
-    /// child_safety_lock
+    /// child_hat
     /// </summary>
-    ChildSafetyLock,
-    /// <summary>
-    /// child_track
-    /// </summary>
-    ChildTrack,
-    /// <summary>
-    /// children_only
-    /// </summary>
-    ChildrenOnly,
+    ChildHat,
     /// <summary>
     /// chip_extraction
     /// </summary>
@@ -2175,6 +2891,14 @@ public enum GoogleFontIconName
     /// </summary>
     ChromeReaderMode,
     /// <summary>
+    /// chromecast_2
+    /// </summary>
+    Chromecast2,
+    /// <summary>
+    /// chromecast_device
+    /// </summary>
+    ChromecastDevice,
+    /// <summary>
     /// chronic
     /// </summary>
     Chronic,
@@ -2182,6 +2906,10 @@ public enum GoogleFontIconName
     /// church
     /// </summary>
     Church,
+    /// <summary>
+    /// cinematic_blur
+    /// </summary>
+    CinematicBlur,
     /// <summary>
     /// circle
     /// </summary>
@@ -2199,17 +2927,17 @@ public enum GoogleFontIconName
     /// </summary>
     CirclesExt,
     /// <summary>
-    /// city
+    /// clarify
     /// </summary>
-    City,
-    /// <summary>
-    /// clarity
-    /// </summary>
-    Clarity,
+    Clarify,
     /// <summary>
     /// clean_hands
     /// </summary>
     CleanHands,
+    /// <summary>
+    /// cleaning
+    /// </summary>
+    Cleaning,
     /// <summary>
     /// cleaning_bucket
     /// </summary>
@@ -2219,10 +2947,6 @@ public enum GoogleFontIconName
     /// </summary>
     CleaningServices,
     /// <summary>
-    /// clear
-    /// </summary>
-    Clear,
-    /// <summary>
     /// clear_all
     /// </summary>
     ClearAll,
@@ -2230,10 +2954,6 @@ public enum GoogleFontIconName
     /// clear_day
     /// </summary>
     ClearDay,
-    /// <summary>
-    /// clear_night
-    /// </summary>
-    ClearNight,
     /// <summary>
     /// climate_mini_split
     /// </summary>
@@ -2243,37 +2963,69 @@ public enum GoogleFontIconName
     /// </summary>
     ClinicalNotes,
     /// <summary>
-    /// clip_board
+    /// clock_arrow_down
     /// </summary>
-    ClipBoard,
+    ClockArrowDown,
     /// <summary>
-    /// clip_board_list
+    /// clock_arrow_up
     /// </summary>
-    ClipBoardList,
+    ClockArrowUp,
     /// <summary>
-    /// clip_board_paste
+    /// clock_loader_10
     /// </summary>
-    ClipBoardPaste,
+    ClockLoader10,
     /// <summary>
-    /// content_paste_go
+    /// clock_loader_20
     /// </summary>
-    ContentPasteGo,
+    ClockLoader20,
     /// <summary>
-    /// content_paste_off
+    /// clock_loader_40
     /// </summary>
-    ContentPasteOff,
+    ClockLoader40,
     /// <summary>
-    /// content_paste_search
+    /// clock_loader_60
     /// </summary>
-    ContentPasteSearch,
+    ClockLoader60,
     /// <summary>
-    /// clover
+    /// clock_loader_80
     /// </summary>
-    Clover,
+    ClockLoader80,
+    /// <summary>
+    /// clock_loader_90
+    /// </summary>
+    ClockLoader90,
+    /// <summary>
+    /// close
+    /// </summary>
+    Close,
+    /// <summary>
+    /// close_fullscreen
+    /// </summary>
+    CloseFullscreen,
+    /// <summary>
+    /// close_small
+    /// </summary>
+    CloseSmall,
+    /// <summary>
+    /// closed_caption
+    /// </summary>
+    ClosedCaption,
+    /// <summary>
+    /// closed_caption_add
+    /// </summary>
+    ClosedCaptionAdd,
+    /// <summary>
+    /// closed_caption_disabled
+    /// </summary>
+    ClosedCaptionDisabled,
     /// <summary>
     /// cloud
     /// </summary>
     Cloud,
+    /// <summary>
+    /// cloud_alert
+    /// </summary>
+    CloudAlert,
     /// <summary>
     /// cloud_circle
     /// </summary>
@@ -2287,13 +3039,13 @@ public enum GoogleFontIconName
     /// </summary>
     CloudDownload,
     /// <summary>
+    /// cloud_lock
+    /// </summary>
+    CloudLock,
+    /// <summary>
     /// cloud_off
     /// </summary>
     CloudOff,
-    /// <summary>
-    /// cloud_queue
-    /// </summary>
-    CloudQueue,
     /// <summary>
     /// cloud_sync
     /// </summary>
@@ -2303,25 +3055,13 @@ public enum GoogleFontIconName
     /// </summary>
     CloudUpload,
     /// <summary>
-    /// cloudy_filled
+    /// co_present
     /// </summary>
-    CloudyFilled,
-    /// <summary>
-    /// cloudy_snowing
-    /// </summary>
-    CloudySnowing,
+    CoPresent,
     /// <summary>
     /// co2
     /// </summary>
     Co2,
-    /// <summary>
-    /// co2_sensor
-    /// </summary>
-    Co2Sensor,
-    /// <summary>
-    /// cockpit
-    /// </summary>
-    Cockpit,
     /// <summary>
     /// code
     /// </summary>
@@ -2343,21 +3083,25 @@ public enum GoogleFontIconName
     /// </summary>
     CoffeeMaker,
     /// <summary>
-    /// cohort
+    /// cognition
     /// </summary>
-    Cohort,
+    Cognition,
     /// <summary>
-    /// collections
+    /// cognition_2
     /// </summary>
-    Collections,
+    Cognition2,
+    /// <summary>
+    /// collapse_all
+    /// </summary>
+    CollapseAll,
+    /// <summary>
+    /// collapse_content
+    /// </summary>
+    CollapseContent,
     /// <summary>
     /// collections_bookmark
     /// </summary>
     CollectionsBookmark,
-    /// <summary>
-    /// color_lens
-    /// </summary>
-    ColorLens,
     /// <summary>
     /// colorize
     /// </summary>
@@ -2367,29 +3111,45 @@ public enum GoogleFontIconName
     /// </summary>
     Colors,
     /// <summary>
-    /// combo_chart
+    /// combine_columns
     /// </summary>
-    ComboChart,
+    CombineColumns,
     /// <summary>
-    /// commotion
+    /// comedy_mask
     /// </summary>
-    Commotion,
+    ComedyMask,
     /// <summary>
-    /// communication_analytics
+    /// comic_bubble
     /// </summary>
-    CommunicationAnalytics,
+    ComicBubble,
     /// <summary>
-    /// commutation
+    /// comment
     /// </summary>
-    Commutation,
+    Comment,
     /// <summary>
-    /// compact
+    /// comment_bank
     /// </summary>
-    Compact,
+    CommentBank,
     /// <summary>
-    /// compact_disc
+    /// comments_disabled
     /// </summary>
-    CompactDisc,
+    CommentsDisabled,
+    /// <summary>
+    /// commit
+    /// </summary>
+    Commit,
+    /// <summary>
+    /// communication
+    /// </summary>
+    Communication,
+    /// <summary>
+    /// communities
+    /// </summary>
+    Communities,
+    /// <summary>
+    /// commute
+    /// </summary>
+    Commute,
     /// <summary>
     /// compare
     /// </summary>
@@ -2407,6 +3167,10 @@ public enum GoogleFontIconName
     /// </summary>
     ComponentExchange,
     /// <summary>
+    /// compost
+    /// </summary>
+    Compost,
+    /// <summary>
     /// compress
     /// </summary>
     Compress,
@@ -2415,25 +3179,29 @@ public enum GoogleFontIconName
     /// </summary>
     Computer,
     /// <summary>
+    /// computer_arrow_up
+    /// </summary>
+    ComputerArrowUp,
+    /// <summary>
+    /// computer_cancel
+    /// </summary>
+    ComputerCancel,
+    /// <summary>
+    /// concierge
+    /// </summary>
+    Concierge,
+    /// <summary>
     /// conditions
     /// </summary>
     Conditions,
-    /// <summary>
-    /// confirm_key
-    /// </summary>
-    ConfirmKey,
     /// <summary>
     /// confirmation_number
     /// </summary>
     ConfirmationNumber,
     /// <summary>
-    /// congested
+    /// congenital
     /// </summary>
-    Congested,
-    /// <summary>
-    /// congratulations
-    /// </summary>
-    Congratulations,
+    Congenital,
     /// <summary>
     /// connect_without_contact
     /// </summary>
@@ -2455,9 +3223,9 @@ public enum GoogleFontIconName
     /// </summary>
     ContactEmergency,
     /// <summary>
-    /// contact_less
+    /// contact_mail
     /// </summary>
-    ContactLess,
+    ContactMail,
     /// <summary>
     /// contact_page
     /// </summary>
@@ -2471,17 +3239,21 @@ public enum GoogleFontIconName
     /// </summary>
     ContactSupport,
     /// <summary>
-    /// contact_trash
-    /// </summary>
-    ContactTrash,
-    /// <summary>
     /// contactless
     /// </summary>
     Contactless,
     /// <summary>
+    /// contactless_off
+    /// </summary>
+    ContactlessOff,
+    /// <summary>
     /// contacts
     /// </summary>
     Contacts,
+    /// <summary>
+    /// contacts_product
+    /// </summary>
+    ContactsProduct,
     /// <summary>
     /// content_copy
     /// </summary>
@@ -2495,9 +3267,53 @@ public enum GoogleFontIconName
     /// </summary>
     ContentPaste,
     /// <summary>
+    /// content_paste_go
+    /// </summary>
+    ContentPasteGo,
+    /// <summary>
     /// content_paste_off
     /// </summary>
     ContentPasteOff,
+    /// <summary>
+    /// content_paste_search
+    /// </summary>
+    ContentPasteSearch,
+    /// <summary>
+    /// contextual_token
+    /// </summary>
+    ContextualToken,
+    /// <summary>
+    /// contextual_token_add
+    /// </summary>
+    ContextualTokenAdd,
+    /// <summary>
+    /// contract
+    /// </summary>
+    Contract,
+    /// <summary>
+    /// contract_delete
+    /// </summary>
+    ContractDelete,
+    /// <summary>
+    /// contract_edit
+    /// </summary>
+    ContractEdit,
+    /// <summary>
+    /// contrast
+    /// </summary>
+    Contrast,
+    /// <summary>
+    /// contrast_circle
+    /// </summary>
+    ContrastCircle,
+    /// <summary>
+    /// contrast_rtl_off
+    /// </summary>
+    ContrastRtlOff,
+    /// <summary>
+    /// contrast_square
+    /// </summary>
+    ContrastSquare,
     /// <summary>
     /// control_camera
     /// </summary>
@@ -2507,25 +3323,57 @@ public enum GoogleFontIconName
     /// </summary>
     ControlPointDuplicate,
     /// <summary>
-    /// controller
+    /// controller_gen
     /// </summary>
-    Controller,
+    ControllerGen,
     /// <summary>
-    /// cooperative_learning
+    /// conversation
     /// </summary>
-    CooperativeLearning,
+    Conversation,
     /// <summary>
-    /// core_apps
+    /// conversion_path
     /// </summary>
-    CoreApps,
+    ConversionPath,
     /// <summary>
-    /// corn
+    /// conversion_path_off
     /// </summary>
-    Corn,
+    ConversionPathOff,
     /// <summary>
-    /// coronation
+    /// convert_to_text
     /// </summary>
-    Coronation,
+    ConvertToText,
+    /// <summary>
+    /// conveyor_belt
+    /// </summary>
+    ConveyorBelt,
+    /// <summary>
+    /// cookie
+    /// </summary>
+    Cookie,
+    /// <summary>
+    /// cookie_off
+    /// </summary>
+    CookieOff,
+    /// <summary>
+    /// cooking
+    /// </summary>
+    Cooking,
+    /// <summary>
+    /// cool_to_dry
+    /// </summary>
+    CoolToDry,
+    /// <summary>
+    /// copy_all
+    /// </summary>
+    CopyAll,
+    /// <summary>
+    /// copyright
+    /// </summary>
+    Copyright,
+    /// <summary>
+    /// coronavirus
+    /// </summary>
+    Coronavirus,
     /// <summary>
     /// corporate_fare
     /// </summary>
@@ -2534,6 +3382,10 @@ public enum GoogleFontIconName
     /// cottage
     /// </summary>
     Cottage,
+    /// <summary>
+    /// counter_0
+    /// </summary>
+    Counter0,
     /// <summary>
     /// counter_1
     /// </summary>
@@ -2571,41 +3423,33 @@ public enum GoogleFontIconName
     /// </summary>
     Counter9,
     /// <summary>
-    /// counter_9_plus
+    /// countertops
     /// </summary>
-    Counter9Plus,
+    Countertops,
     /// <summary>
-    /// counter_tops
+    /// create_new_folder
     /// </summary>
-    CounterTops,
-    /// <summary>
-    /// creative_commons
-    /// </summary>
-    CreativeCommons,
+    CreateNewFolder,
     /// <summary>
     /// credit_card
     /// </summary>
     CreditCard,
     /// <summary>
+    /// credit_card_clock
+    /// </summary>
+    CreditCardClock,
+    /// <summary>
     /// credit_card_gear
     /// </summary>
     CreditCardGear,
     /// <summary>
+    /// credit_card_heart
+    /// </summary>
+    CreditCardHeart,
+    /// <summary>
     /// credit_card_off
     /// </summary>
     CreditCardOff,
-    /// <summary>
-    /// credit_card_person
-    /// </summary>
-    CreditCardPerson,
-    /// <summary>
-    /// credit_card_refresh
-    /// </summary>
-    CreditCardRefresh,
-    /// <summary>
-    /// credit_card_slash
-    /// </summary>
-    CreditCardSlash,
     /// <summary>
     /// credit_score
     /// </summary>
@@ -2639,6 +3483,10 @@ public enum GoogleFontIconName
     /// </summary>
     Crop75,
     /// <summary>
+    /// crop_9_16
+    /// </summary>
+    Crop916,
+    /// <summary>
     /// crop_free
     /// </summary>
     CropFree,
@@ -2659,41 +3507,29 @@ public enum GoogleFontIconName
     /// </summary>
     CropSquare,
     /// <summary>
-    /// crossroad
+    /// crossword
     /// </summary>
-    Crossroad,
+    Crossword,
     /// <summary>
     /// crowdsource
     /// </summary>
     Crowdsource,
     /// <summary>
-    /// cruising
+    /// crown
     /// </summary>
-    Cruising,
+    Crown,
     /// <summary>
-    /// cryo_room
+    /// cruelty_free
     /// </summary>
-    CryoRoom,
+    CrueltyFree,
     /// <summary>
-    /// crypto_asset
+    /// css
     /// </summary>
-    CryptoAsset,
+    Css,
     /// <summary>
-    /// cube
+    /// csv
     /// </summary>
-    Cube,
-    /// <summary>
-    /// cube_off
-    /// </summary>
-    CubeOff,
-    /// <summary>
-    /// cup
-    /// </summary>
-    Cup,
-    /// <summary>
-    /// curiosity
-    /// </summary>
-    Curiosity,
+    Csv,
     /// <summary>
     /// currency_bitcoin
     /// </summary>
@@ -2702,6 +3538,10 @@ public enum GoogleFontIconName
     /// currency_exchange
     /// </summary>
     CurrencyExchange,
+    /// <summary>
+    /// currency_franc
+    /// </summary>
+    CurrencyFranc,
     /// <summary>
     /// currency_lira
     /// </summary>
@@ -2719,6 +3559,10 @@ public enum GoogleFontIconName
     /// </summary>
     CurrencyRupee,
     /// <summary>
+    /// currency_rupee_circle
+    /// </summary>
+    CurrencyRupeeCircle,
+    /// <summary>
     /// currency_yen
     /// </summary>
     CurrencyYen,
@@ -2727,17 +3571,41 @@ public enum GoogleFontIconName
     /// </summary>
     CurrencyYuan,
     /// <summary>
-    /// curriculum
+    /// curtains
     /// </summary>
-    Curriculum,
+    Curtains,
     /// <summary>
-    /// cutting
+    /// curtains_closed
     /// </summary>
-    Cutting,
+    CurtainsClosed,
+    /// <summary>
+    /// custom_typography
+    /// </summary>
+    CustomTypography,
+    /// <summary>
+    /// cycle
+    /// </summary>
+    Cycle,
+    /// <summary>
+    /// cyclone
+    /// </summary>
+    Cyclone,
+    /// <summary>
+    /// dangerous
+    /// </summary>
+    Dangerous,
+    /// <summary>
+    /// dark_mode
+    /// </summary>
+    DarkMode,
     /// <summary>
     /// dashboard
     /// </summary>
     Dashboard,
+    /// <summary>
+    /// dashboard_2
+    /// </summary>
+    Dashboard2,
     /// <summary>
     /// dashboard_customize
     /// </summary>
@@ -2763,13 +3631,13 @@ public enum GoogleFontIconName
     /// </summary>
     DataInfoAlert,
     /// <summary>
+    /// data_loss_prevention
+    /// </summary>
+    DataLossPrevention,
+    /// <summary>
     /// data_object
     /// </summary>
     DataObject,
-    /// <summary>
-    /// data_saver_off
-    /// </summary>
-    DataSaverOff,
     /// <summary>
     /// data_saver_on
     /// </summary>
@@ -2791,29 +3659,53 @@ public enum GoogleFontIconName
     /// </summary>
     Database,
     /// <summary>
+    /// database_off
+    /// </summary>
+    DatabaseOff,
+    /// <summary>
+    /// database_search
+    /// </summary>
+    DatabaseSearch,
+    /// <summary>
+    /// database_upload
+    /// </summary>
+    DatabaseUpload,
+    /// <summary>
+    /// dataset
+    /// </summary>
+    Dataset,
+    /// <summary>
+    /// dataset_linked
+    /// </summary>
+    DatasetLinked,
+    /// <summary>
     /// date_range
     /// </summary>
     DateRange,
     /// <summary>
-    /// dav
+    /// deblur
     /// </summary>
-    Dav,
+    Deblur,
     /// <summary>
-    /// debit_card
+    /// deceased
     /// </summary>
-    DebitCard,
+    Deceased,
     /// <summary>
-    /// decor
+    /// decimal_decrease
     /// </summary>
-    Decor,
+    DecimalDecrease,
     /// <summary>
-    /// decoration
+    /// decimal_increase
     /// </summary>
-    Decoration,
+    DecimalIncrease,
     /// <summary>
-    /// deep_fake
+    /// deck
     /// </summary>
-    DeepFake,
+    Deck,
+    /// <summary>
+    /// dehaze
+    /// </summary>
+    Dehaze,
     /// <summary>
     /// delete
     /// </summary>
@@ -2823,13 +3715,37 @@ public enum GoogleFontIconName
     /// </summary>
     DeleteForever,
     /// <summary>
-    /// delete_off
+    /// delete_history
     /// </summary>
-    DeleteOff,
+    DeleteHistory,
     /// <summary>
-    /// dental
+    /// delete_sweep
     /// </summary>
-    Dental,
+    DeleteSweep,
+    /// <summary>
+    /// delivery_truck_bolt
+    /// </summary>
+    DeliveryTruckBolt,
+    /// <summary>
+    /// delivery_truck_speed
+    /// </summary>
+    DeliveryTruckSpeed,
+    /// <summary>
+    /// demography
+    /// </summary>
+    Demography,
+    /// <summary>
+    /// density_large
+    /// </summary>
+    DensityLarge,
+    /// <summary>
+    /// density_medium
+    /// </summary>
+    DensityMedium,
+    /// <summary>
+    /// density_small
+    /// </summary>
+    DensitySmall,
     /// <summary>
     /// dentistry
     /// </summary>
@@ -2839,37 +3755,29 @@ public enum GoogleFontIconName
     /// </summary>
     DepartureBoard,
     /// <summary>
-    /// deploy
+    /// deployed_code
     /// </summary>
-    Deploy,
+    DeployedCode,
     /// <summary>
-    /// deployment_cluster
+    /// deployed_code_account
     /// </summary>
-    DeploymentCluster,
+    DeployedCodeAccount,
     /// <summary>
-    /// deployment_cluster_off
+    /// deployed_code_alert
     /// </summary>
-    DeploymentClusterOff,
+    DeployedCodeAlert,
     /// <summary>
-    /// deployment_incidents
+    /// deployed_code_history
     /// </summary>
-    DeploymentIncidents,
+    DeployedCodeHistory,
     /// <summary>
-    /// deployment_incidents_alert
+    /// deployed_code_update
     /// </summary>
-    DeploymentIncidentsAlert,
+    DeployedCodeUpdate,
     /// <summary>
-    /// deployment_off
+    /// dermatology
     /// </summary>
-    DeploymentOff,
-    /// <summary>
-    /// dermatologist
-    /// </summary>
-    Dermatologist,
-    /// <summary>
-    /// desalination
-    /// </summary>
-    Desalination,
+    Dermatology,
     /// <summary>
     /// description
     /// </summary>
@@ -2887,17 +3795,45 @@ public enum GoogleFontIconName
     /// </summary>
     Desk,
     /// <summary>
+    /// deskphone
+    /// </summary>
+    Deskphone,
+    /// <summary>
     /// desktop_access_disabled
     /// </summary>
     DesktopAccessDisabled,
+    /// <summary>
+    /// desktop_cloud
+    /// </summary>
+    DesktopCloud,
+    /// <summary>
+    /// desktop_cloud_stack
+    /// </summary>
+    DesktopCloudStack,
+    /// <summary>
+    /// desktop_landscape
+    /// </summary>
+    DesktopLandscape,
+    /// <summary>
+    /// desktop_landscape_add
+    /// </summary>
+    DesktopLandscapeAdd,
     /// <summary>
     /// desktop_mac
     /// </summary>
     DesktopMac,
     /// <summary>
+    /// desktop_portrait
+    /// </summary>
+    DesktopPortrait,
+    /// <summary>
     /// desktop_windows
     /// </summary>
     DesktopWindows,
+    /// <summary>
+    /// destruction
+    /// </summary>
+    Destruction,
     /// <summary>
     /// details
     /// </summary>
@@ -2915,13 +3851,25 @@ public enum GoogleFontIconName
     /// </summary>
     DetectorAlarm,
     /// <summary>
+    /// detector_battery
+    /// </summary>
+    DetectorBattery,
+    /// <summary>
+    /// detector_co
+    /// </summary>
+    DetectorCo,
+    /// <summary>
+    /// detector_offline
+    /// </summary>
+    DetectorOffline,
+    /// <summary>
+    /// detector_smoke
+    /// </summary>
+    DetectorSmoke,
+    /// <summary>
     /// detector_status
     /// </summary>
     DetectorStatus,
-    /// <summary>
-    /// detox
-    /// </summary>
-    Detox,
     /// <summary>
     /// developer_board
     /// </summary>
@@ -2931,17 +3879,37 @@ public enum GoogleFontIconName
     /// </summary>
     DeveloperBoardOff,
     /// <summary>
-    /// developer_mode
+    /// developer_guide
     /// </summary>
-    DeveloperMode,
+    DeveloperGuide,
+    /// <summary>
+    /// developer_mode_tv
+    /// </summary>
+    DeveloperModeTv,
+    /// <summary>
+    /// device_band
+    /// </summary>
+    DeviceBand,
+    /// <summary>
+    /// device_hub
+    /// </summary>
+    DeviceHub,
+    /// <summary>
+    /// device_thermostat
+    /// </summary>
+    DeviceThermostat,
     /// <summary>
     /// devices
     /// </summary>
     Devices,
     /// <summary>
-    /// devices_access
+    /// devices_fold
     /// </summary>
-    DevicesAccess,
+    DevicesFold,
+    /// <summary>
+    /// devices_fold_2
+    /// </summary>
+    DevicesFold2,
     /// <summary>
     /// devices_off
     /// </summary>
@@ -2955,33 +3923,65 @@ public enum GoogleFontIconName
     /// </summary>
     DevicesWearables,
     /// <summary>
+    /// dew_point
+    /// </summary>
+    DewPoint,
+    /// <summary>
     /// diagnosis
     /// </summary>
     Diagnosis,
+    /// <summary>
+    /// diagonal_line
+    /// </summary>
+    DiagonalLine,
+    /// <summary>
+    /// dialer_sip
+    /// </summary>
+    DialerSip,
     /// <summary>
     /// dialogs
     /// </summary>
     Dialogs,
     /// <summary>
+    /// dialpad
+    /// </summary>
+    Dialpad,
+    /// <summary>
     /// diamond
     /// </summary>
     Diamond,
+    /// <summary>
+    /// diamond_shine
+    /// </summary>
+    DiamondShine,
     /// <summary>
     /// dictionary
     /// </summary>
     Dictionary,
     /// <summary>
-    /// diet
+    /// difference
     /// </summary>
-    Diet,
+    Difference,
     /// <summary>
-    /// diff
+    /// digital_out_of_home
     /// </summary>
-    Diff,
+    DigitalOutOfHome,
     /// <summary>
     /// digital_wellbeing
     /// </summary>
     DigitalWellbeing,
+    /// <summary>
+    /// dine_heart
+    /// </summary>
+    DineHeart,
+    /// <summary>
+    /// dine_in
+    /// </summary>
+    DineIn,
+    /// <summary>
+    /// dine_lamp
+    /// </summary>
+    DineLamp,
     /// <summary>
     /// dining
     /// </summary>
@@ -3027,6 +4027,10 @@ public enum GoogleFontIconName
     /// </summary>
     DirectionsRailway,
     /// <summary>
+    /// directions_railway_2
+    /// </summary>
+    DirectionsRailway2,
+    /// <summary>
     /// directions_run
     /// </summary>
     DirectionsRun,
@@ -3039,13 +4043,13 @@ public enum GoogleFontIconName
     /// </summary>
     DirectionsWalk,
     /// <summary>
-    /// dirt
+    /// directory_sync
     /// </summary>
-    Dirt,
+    DirectorySync,
     /// <summary>
-    /// dirt_road
+    /// dirty_lens
     /// </summary>
-    DirtRoad,
+    DirtyLens,
     /// <summary>
     /// disabled_by_default
     /// </summary>
@@ -3063,13 +4067,13 @@ public enum GoogleFontIconName
     /// </summary>
     DiscoverTune,
     /// <summary>
-    /// dish
+    /// dishwasher
     /// </summary>
-    Dish,
+    Dishwasher,
     /// <summary>
-    /// dish_spaghetti
+    /// dishwasher_gen
     /// </summary>
-    DishSpaghetti,
+    DishwasherGen,
     /// <summary>
     /// display_external_input
     /// </summary>
@@ -3082,6 +4086,10 @@ public enum GoogleFontIconName
     /// distance
     /// </summary>
     Distance,
+    /// <summary>
+    /// diversity_1
+    /// </summary>
+    Diversity1,
     /// <summary>
     /// diversity_2
     /// </summary>
@@ -3119,21 +4127,37 @@ public enum GoogleFontIconName
     /// </summary>
     DoNotTouch,
     /// <summary>
-    /// doc_scanner
+    /// dock_to_bottom
     /// </summary>
-    DocScanner,
+    DockToBottom,
     /// <summary>
-    /// dock
+    /// dock_to_left
     /// </summary>
-    Dock,
+    DockToLeft,
+    /// <summary>
+    /// dock_to_right
+    /// </summary>
+    DockToRight,
+    /// <summary>
+    /// docs
+    /// </summary>
+    Docs,
+    /// <summary>
+    /// docs_add_on
+    /// </summary>
+    DocsAddOn,
+    /// <summary>
+    /// docs_apps_script
+    /// </summary>
+    DocsAppsScript,
     /// <summary>
     /// document_scanner
     /// </summary>
     DocumentScanner,
     /// <summary>
-    /// dogs_and_cats
+    /// document_search
     /// </summary>
-    DogsAndCats,
+    DocumentSearch,
     /// <summary>
     /// domain
     /// </summary>
@@ -3151,9 +4175,13 @@ public enum GoogleFontIconName
     /// </summary>
     DomainVerification,
     /// <summary>
-    /// done
+    /// domain_verification_off
     /// </summary>
-    Done,
+    DomainVerificationOff,
+    /// <summary>
+    /// domino_mask
+    /// </summary>
+    DominoMask,
     /// <summary>
     /// done_all
     /// </summary>
@@ -3163,9 +4191,13 @@ public enum GoogleFontIconName
     /// </summary>
     DoneOutline,
     /// <summary>
-    /// donuts
+    /// donut_large
     /// </summary>
-    Donuts,
+    DonutLarge,
+    /// <summary>
+    /// donut_small
+    /// </summary>
+    DonutSmall,
     /// <summary>
     /// door_back
     /// </summary>
@@ -3183,13 +4215,17 @@ public enum GoogleFontIconName
     /// </summary>
     DoorSensor,
     /// <summary>
+    /// door_sliding
+    /// </summary>
+    DoorSliding,
+    /// <summary>
     /// doorbell
     /// </summary>
     Doorbell,
     /// <summary>
-    /// doorbell_3
+    /// doorbell_3p
     /// </summary>
-    Doorbell3,
+    Doorbell3P,
     /// <summary>
     /// doorbell_chime
     /// </summary>
@@ -3207,6 +4243,10 @@ public enum GoogleFontIconName
     /// </summary>
     Download,
     /// <summary>
+    /// download_2
+    /// </summary>
+    Download2,
+    /// <summary>
     /// download_done
     /// </summary>
     DownloadDone,
@@ -3219,53 +4259,69 @@ public enum GoogleFontIconName
     /// </summary>
     Downloading,
     /// <summary>
+    /// draft
+    /// </summary>
+    Draft,
+    /// <summary>
+    /// draft_orders
+    /// </summary>
+    DraftOrders,
+    /// <summary>
     /// drafts
     /// </summary>
     Drafts,
     /// <summary>
-    /// drag_and_drop
+    /// drag_click
     /// </summary>
-    DragAndDrop,
+    DragClick,
     /// <summary>
-    /// drag_and_drop_fill
+    /// drag_handle
     /// </summary>
-    DragAndDropFill,
+    DragHandle,
     /// <summary>
-    /// drain
+    /// drag_indicator
     /// </summary>
-    Drain,
+    DragIndicator,
     /// <summary>
-    /// drain_service
+    /// drag_pan
     /// </summary>
-    DrainService,
+    DragPan,
     /// <summary>
     /// draw
     /// </summary>
     Draw,
     /// <summary>
-    /// drawing_pin
+    /// draw_abstract
     /// </summary>
-    DrawingPin,
+    DrawAbstract,
+    /// <summary>
+    /// draw_collage
+    /// </summary>
+    DrawCollage,
+    /// <summary>
+    /// dresser
+    /// </summary>
+    Dresser,
+    /// <summary>
+    /// drive_export
+    /// </summary>
+    DriveExport,
     /// <summary>
     /// drive_file_move
     /// </summary>
     DriveFileMove,
     /// <summary>
-    /// drive_file_move_rtl
-    /// </summary>
-    DriveFileMoveRtl,
-    /// <summary>
-    /// drive_file_rename
-    /// </summary>
-    DriveFileRename,
-    /// <summary>
     /// drive_folder_upload
     /// </summary>
     DriveFolderUpload,
     /// <summary>
-    /// drowning
+    /// drone
     /// </summary>
-    Drowning,
+    Drone,
+    /// <summary>
+    /// drone_2
+    /// </summary>
+    Drone2,
     /// <summary>
     /// dry
     /// </summary>
@@ -3295,9 +4351,121 @@ public enum GoogleFontIconName
     /// </summary>
     DynamicForm,
     /// <summary>
-    /// eager
+    /// e_mobiledata
     /// </summary>
-    Eager,
+    EMobiledata,
+    /// <summary>
+    /// e_mobiledata_badge
+    /// </summary>
+    EMobiledataBadge,
+    /// <summary>
+    /// e911_avatar
+    /// </summary>
+    E911Avatar,
+    /// <summary>
+    /// e911_emergency
+    /// </summary>
+    E911Emergency,
+    /// <summary>
+    /// ear_sound
+    /// </summary>
+    EarSound,
+    /// <summary>
+    /// earbud_case
+    /// </summary>
+    EarbudCase,
+    /// <summary>
+    /// earbud_left
+    /// </summary>
+    EarbudLeft,
+    /// <summary>
+    /// earbud_right
+    /// </summary>
+    EarbudRight,
+    /// <summary>
+    /// earbuds
+    /// </summary>
+    Earbuds,
+    /// <summary>
+    /// earbuds_2
+    /// </summary>
+    Earbuds2,
+    /// <summary>
+    /// earbuds_battery
+    /// </summary>
+    EarbudsBattery,
+    /// <summary>
+    /// early_on
+    /// </summary>
+    EarlyOn,
+    /// <summary>
+    /// earthquake
+    /// </summary>
+    Earthquake,
+    /// <summary>
+    /// east
+    /// </summary>
+    East,
+    /// <summary>
+    /// ecg
+    /// </summary>
+    Ecg,
+    /// <summary>
+    /// ecg_heart
+    /// </summary>
+    EcgHeart,
+    /// <summary>
+    /// eco
+    /// </summary>
+    Eco,
+    /// <summary>
+    /// eda
+    /// </summary>
+    Eda,
+    /// <summary>
+    /// edit
+    /// </summary>
+    Edit,
+    /// <summary>
+    /// edit_arrow_down
+    /// </summary>
+    EditArrowDown,
+    /// <summary>
+    /// edit_arrow_up
+    /// </summary>
+    EditArrowUp,
+    /// <summary>
+    /// edit_attributes
+    /// </summary>
+    EditAttributes,
+    /// <summary>
+    /// edit_audio
+    /// </summary>
+    EditAudio,
+    /// <summary>
+    /// edit_calendar
+    /// </summary>
+    EditCalendar,
+    /// <summary>
+    /// edit_document
+    /// </summary>
+    EditDocument,
+    /// <summary>
+    /// edit_location
+    /// </summary>
+    EditLocation,
+    /// <summary>
+    /// edit_location_alt
+    /// </summary>
+    EditLocationAlt,
+    /// <summary>
+    /// edit_note
+    /// </summary>
+    EditNote,
+    /// <summary>
+    /// edit_notifications
+    /// </summary>
+    EditNotifications,
     /// <summary>
     /// edit_off
     /// </summary>
@@ -3311,6 +4479,10 @@ public enum GoogleFontIconName
     /// </summary>
     EditSquare,
     /// <summary>
+    /// editor_choice
+    /// </summary>
+    EditorChoice,
+    /// <summary>
     /// egg
     /// </summary>
     Egg,
@@ -3319,13 +4491,9 @@ public enum GoogleFontIconName
     /// </summary>
     EggAlt,
     /// <summary>
-    /// egg_fried
+    /// eject
     /// </summary>
-    EggFried,
-    /// <summary>
-    /// ekg
-    /// </summary>
-    Ekg,
+    Eject,
     /// <summary>
     /// elderly
     /// </summary>
@@ -3367,17 +4535,13 @@ public enum GoogleFontIconName
     /// </summary>
     ElectricalServices,
     /// <summary>
+    /// elevation
+    /// </summary>
+    Elevation,
+    /// <summary>
     /// elevator
     /// </summary>
     Elevator,
-    /// <summary>
-    /// ellipsis
-    /// </summary>
-    Ellipsis,
-    /// <summary>
-    /// ellipsis_h
-    /// </summary>
-    EllipsisH,
     /// <summary>
     /// emergency
     /// </summary>
@@ -3386,6 +4550,10 @@ public enum GoogleFontIconName
     /// emergency_heat
     /// </summary>
     EmergencyHeat,
+    /// <summary>
+    /// emergency_heat_2
+    /// </summary>
+    EmergencyHeat2,
     /// <summary>
     /// emergency_home
     /// </summary>
@@ -3399,9 +4567,41 @@ public enum GoogleFontIconName
     /// </summary>
     EmergencyShare,
     /// <summary>
-    /// emotikon
+    /// emergency_share_off
     /// </summary>
-    Emotikon,
+    EmergencyShareOff,
+    /// <summary>
+    /// emoji_food_beverage
+    /// </summary>
+    EmojiFoodBeverage,
+    /// <summary>
+    /// emoji_language
+    /// </summary>
+    EmojiLanguage,
+    /// <summary>
+    /// emoji_nature
+    /// </summary>
+    EmojiNature,
+    /// <summary>
+    /// emoji_objects
+    /// </summary>
+    EmojiObjects,
+    /// <summary>
+    /// emoji_people
+    /// </summary>
+    EmojiPeople,
+    /// <summary>
+    /// emoji_symbols
+    /// </summary>
+    EmojiSymbols,
+    /// <summary>
+    /// emoji_transportation
+    /// </summary>
+    EmojiTransportation,
+    /// <summary>
+    /// emoticon
+    /// </summary>
+    Emoticon,
     /// <summary>
     /// empty_dashboard
     /// </summary>
@@ -3415,9 +4615,41 @@ public enum GoogleFontIconName
     /// </summary>
     Encrypted,
     /// <summary>
-    /// end_of_line
+    /// encrypted_add
     /// </summary>
-    EndOfLine,
+    EncryptedAdd,
+    /// <summary>
+    /// encrypted_add_circle
+    /// </summary>
+    EncryptedAddCircle,
+    /// <summary>
+    /// encrypted_minus_circle
+    /// </summary>
+    EncryptedMinusCircle,
+    /// <summary>
+    /// encrypted_off
+    /// </summary>
+    EncryptedOff,
+    /// <summary>
+    /// endocrinology
+    /// </summary>
+    Endocrinology,
+    /// <summary>
+    /// energy
+    /// </summary>
+    Energy,
+    /// <summary>
+    /// energy_program_saving
+    /// </summary>
+    EnergyProgramSaving,
+    /// <summary>
+    /// energy_program_time_used
+    /// </summary>
+    EnergyProgramTimeUsed,
+    /// <summary>
+    /// energy_savings_leaf
+    /// </summary>
+    EnergySavingsLeaf,
     /// <summary>
     /// engineering
     /// </summary>
@@ -3431,10 +4663,6 @@ public enum GoogleFontIconName
     /// </summary>
     Ent,
     /// <summary>
-    /// enter_key
-    /// </summary>
-    EnterKey,
-    /// <summary>
     /// enterprise
     /// </summary>
     Enterprise,
@@ -3443,33 +4671,49 @@ public enum GoogleFontIconName
     /// </summary>
     EnterpriseOff,
     /// <summary>
+    /// equal
+    /// </summary>
+    Equal,
+    /// <summary>
     /// equalizer
     /// </summary>
     Equalizer,
     /// <summary>
-    /// equity
+    /// eraser_size_1
     /// </summary>
-    Equity,
+    EraserSize1,
     /// <summary>
-    /// equity_risk_end
+    /// eraser_size_2
     /// </summary>
-    EquityRiskEnd,
+    EraserSize2,
     /// <summary>
-    /// equity_risk_start
+    /// eraser_size_3
     /// </summary>
-    EquityRiskStart,
+    EraserSize3,
     /// <summary>
-    /// erosion
+    /// eraser_size_4
     /// </summary>
-    Erosion,
+    EraserSize4,
+    /// <summary>
+    /// eraser_size_5
+    /// </summary>
+    EraserSize5,
+    /// <summary>
+    /// error
+    /// </summary>
+    Error,
+    /// <summary>
+    /// error_med
+    /// </summary>
+    ErrorMed,
     /// <summary>
     /// escalator
     /// </summary>
     Escalator,
     /// <summary>
-    /// estimate
+    /// escalator_warning
     /// </summary>
-    Estimate,
+    EscalatorWarning,
     /// <summary>
     /// euro
     /// </summary>
@@ -3478,6 +4722,26 @@ public enum GoogleFontIconName
     /// euro_symbol
     /// </summary>
     EuroSymbol,
+    /// <summary>
+    /// ev_mobiledata_badge
+    /// </summary>
+    EvMobiledataBadge,
+    /// <summary>
+    /// ev_shadow
+    /// </summary>
+    EvShadow,
+    /// <summary>
+    /// ev_shadow_add
+    /// </summary>
+    EvShadowAdd,
+    /// <summary>
+    /// ev_shadow_minus
+    /// </summary>
+    EvShadowMinus,
+    /// <summary>
+    /// ev_station
+    /// </summary>
+    EvStation,
     /// <summary>
     /// event
     /// </summary>
@@ -3491,9 +4755,17 @@ public enum GoogleFontIconName
     /// </summary>
     EventBusy,
     /// <summary>
+    /// event_list
+    /// </summary>
+    EventList,
+    /// <summary>
     /// event_note
     /// </summary>
     EventNote,
+    /// <summary>
+    /// event_repeat
+    /// </summary>
+    EventRepeat,
     /// <summary>
     /// event_seat
     /// </summary>
@@ -3503,21 +4775,13 @@ public enum GoogleFontIconName
     /// </summary>
     EventUpcoming,
     /// <summary>
-    /// evil
+    /// exclamation
     /// </summary>
-    Evil,
+    Exclamation,
     /// <summary>
-    /// exchange
+    /// exercise
     /// </summary>
-    Exchange,
-    /// <summary>
-    /// exfoliate
-    /// </summary>
-    Exfoliate,
-    /// <summary>
-    /// exfoliate_rounded
-    /// </summary>
-    ExfoliateRounded,
+    Exercise,
     /// <summary>
     /// exit_to_app
     /// </summary>
@@ -3527,21 +4791,29 @@ public enum GoogleFontIconName
     /// </summary>
     Expand,
     /// <summary>
+    /// expand_all
+    /// </summary>
+    ExpandAll,
+    /// <summary>
     /// expand_circle_down
     /// </summary>
     ExpandCircleDown,
+    /// <summary>
+    /// expand_circle_right
+    /// </summary>
+    ExpandCircleRight,
+    /// <summary>
+    /// expand_circle_up
+    /// </summary>
+    ExpandCircleUp,
     /// <summary>
     /// expand_content
     /// </summary>
     ExpandContent,
     /// <summary>
-    /// expand_less
+    /// expansion_panels
     /// </summary>
-    ExpandLess,
-    /// <summary>
-    /// expand_more
-    /// </summary>
-    ExpandMore,
+    ExpansionPanels,
     /// <summary>
     /// experiment
     /// </summary>
@@ -3554,6 +4826,10 @@ public enum GoogleFontIconName
     /// explore
     /// </summary>
     Explore,
+    /// <summary>
+    /// explore_nearby
+    /// </summary>
+    ExploreNearby,
     /// <summary>
     /// explore_off
     /// </summary>
@@ -3587,6 +4863,10 @@ public enum GoogleFontIconName
     /// </summary>
     ExposurePlus2,
     /// <summary>
+    /// exposure_zero
+    /// </summary>
+    ExposureZero,
+    /// <summary>
     /// extension
     /// </summary>
     Extension,
@@ -3594,6 +4874,26 @@ public enum GoogleFontIconName
     /// extension_off
     /// </summary>
     ExtensionOff,
+    /// <summary>
+    /// eye_tracking
+    /// </summary>
+    EyeTracking,
+    /// <summary>
+    /// eyeglasses
+    /// </summary>
+    Eyeglasses,
+    /// <summary>
+    /// eyeglasses_2
+    /// </summary>
+    Eyeglasses2,
+    /// <summary>
+    /// eyeglasses_2_sound
+    /// </summary>
+    Eyeglasses2Sound,
+    /// <summary>
+    /// face
+    /// </summary>
+    Face,
     /// <summary>
     /// face_2
     /// </summary>
@@ -3615,6 +4915,34 @@ public enum GoogleFontIconName
     /// </summary>
     Face6,
     /// <summary>
+    /// face_down
+    /// </summary>
+    FaceDown,
+    /// <summary>
+    /// face_left
+    /// </summary>
+    FaceLeft,
+    /// <summary>
+    /// face_nod
+    /// </summary>
+    FaceNod,
+    /// <summary>
+    /// face_retouching_off
+    /// </summary>
+    FaceRetouchingOff,
+    /// <summary>
+    /// face_right
+    /// </summary>
+    FaceRight,
+    /// <summary>
+    /// face_shake
+    /// </summary>
+    FaceShake,
+    /// <summary>
+    /// face_up
+    /// </summary>
+    FaceUp,
+    /// <summary>
     /// fact_check
     /// </summary>
     FactCheck,
@@ -3627,13 +4955,41 @@ public enum GoogleFontIconName
     /// </summary>
     Falling,
     /// <summary>
-    /// fan
+    /// familiar_face_and_zone
     /// </summary>
-    Fan,
+    FamiliarFaceAndZone,
     /// <summary>
-    /// farm
+    /// family_history
     /// </summary>
-    Farm,
+    FamilyHistory,
+    /// <summary>
+    /// family_home
+    /// </summary>
+    FamilyHome,
+    /// <summary>
+    /// family_link
+    /// </summary>
+    FamilyLink,
+    /// <summary>
+    /// family_restroom
+    /// </summary>
+    FamilyRestroom,
+    /// <summary>
+    /// family_star
+    /// </summary>
+    FamilyStar,
+    /// <summary>
+    /// fan_focus
+    /// </summary>
+    FanFocus,
+    /// <summary>
+    /// fan_indirect
+    /// </summary>
+    FanIndirect,
+    /// <summary>
+    /// farsight_digital
+    /// </summary>
+    FarsightDigital,
     /// <summary>
     /// fast_forward
     /// </summary>
@@ -3647,13 +5003,57 @@ public enum GoogleFontIconName
     /// </summary>
     Fastfood,
     /// <summary>
-    /// feather
+    /// faucet
     /// </summary>
-    Feather,
+    Faucet,
+    /// <summary>
+    /// favorite
+    /// </summary>
+    Favorite,
+    /// <summary>
+    /// fax
+    /// </summary>
+    Fax,
+    /// <summary>
+    /// feature_search
+    /// </summary>
+    FeatureSearch,
+    /// <summary>
+    /// featured_play_list
+    /// </summary>
+    FeaturedPlayList,
+    /// <summary>
+    /// featured_seasonal_and_gifts
+    /// </summary>
+    FeaturedSeasonalAndGifts,
+    /// <summary>
+    /// featured_video
+    /// </summary>
+    FeaturedVideo,
+    /// <summary>
+    /// feedback
+    /// </summary>
+    Feedback,
+    /// <summary>
+    /// female
+    /// </summary>
+    Female,
+    /// <summary>
+    /// femur
+    /// </summary>
+    Femur,
+    /// <summary>
+    /// femur_alt
+    /// </summary>
+    FemurAlt,
     /// <summary>
     /// fence
     /// </summary>
     Fence,
+    /// <summary>
+    /// fertile
+    /// </summary>
+    Fertile,
     /// <summary>
     /// festival
     /// </summary>
@@ -3683,21 +5083,41 @@ public enum GoogleFontIconName
     /// </summary>
     FileCopy,
     /// <summary>
-    /// file_download
+    /// file_copy_off
     /// </summary>
-    FileDownload,
-    /// <summary>
-    /// file_download_done
-    /// </summary>
-    FileDownloadDone,
+    FileCopyOff,
     /// <summary>
     /// file_download_off
     /// </summary>
     FileDownloadOff,
     /// <summary>
+    /// file_export
+    /// </summary>
+    FileExport,
+    /// <summary>
+    /// file_json
+    /// </summary>
+    FileJson,
+    /// <summary>
+    /// file_map
+    /// </summary>
+    FileMap,
+    /// <summary>
+    /// file_map_stack
+    /// </summary>
+    FileMapStack,
+    /// <summary>
     /// file_open
     /// </summary>
     FileOpen,
+    /// <summary>
+    /// file_png
+    /// </summary>
+    FilePng,
+    /// <summary>
+    /// file_present
+    /// </summary>
+    FilePresent,
     /// <summary>
     /// file_save
     /// </summary>
@@ -3707,9 +5127,9 @@ public enum GoogleFontIconName
     /// </summary>
     FileSaveOff,
     /// <summary>
-    /// file_upload
+    /// file_upload_off
     /// </summary>
-    FileUpload,
+    FileUploadOff,
     /// <summary>
     /// files
     /// </summary>
@@ -3767,6 +5187,10 @@ public enum GoogleFontIconName
     /// </summary>
     FilterAltOff,
     /// <summary>
+    /// filter_arrow_right
+    /// </summary>
+    FilterArrowRight,
+    /// <summary>
     /// filter_b_and_w
     /// </summary>
     FilterBAndW,
@@ -3782,10 +5206,6 @@ public enum GoogleFontIconName
     /// filter_frames
     /// </summary>
     FilterFrames,
-    /// <summary>
-    /// filter_hdr
-    /// </summary>
-    FilterHdr,
     /// <summary>
     /// filter_list
     /// </summary>
@@ -3823,13 +5243,21 @@ public enum GoogleFontIconName
     /// </summary>
     FinanceMode,
     /// <summary>
-    /// financial_product
+    /// find_in_page
     /// </summary>
-    FinancialProduct,
+    FindInPage,
+    /// <summary>
+    /// find_replace
+    /// </summary>
+    FindReplace,
     /// <summary>
     /// fingerprint
     /// </summary>
     Fingerprint,
+    /// <summary>
+    /// fingerprint_off
+    /// </summary>
+    FingerprintOff,
     /// <summary>
     /// fire_extinguisher
     /// </summary>
@@ -3843,10 +5271,6 @@ public enum GoogleFontIconName
     /// </summary>
     FireTruck,
     /// <summary>
-    /// fire_truck_2
-    /// </summary>
-    FireTruck2,
-    /// <summary>
     /// fireplace
     /// </summary>
     Fireplace,
@@ -3855,13 +5279,17 @@ public enum GoogleFontIconName
     /// </summary>
     FirstPage,
     /// <summary>
-    /// first_page_media
-    /// </summary>
-    FirstPageMedia,
-    /// <summary>
     /// fit_page
     /// </summary>
     FitPage,
+    /// <summary>
+    /// fit_page_height
+    /// </summary>
+    FitPageHeight,
+    /// <summary>
+    /// fit_page_width
+    /// </summary>
+    FitPageWidth,
     /// <summary>
     /// fit_screen
     /// </summary>
@@ -3875,25 +5303,33 @@ public enum GoogleFontIconName
     /// </summary>
     FitnessCenter,
     /// <summary>
+    /// fitness_tracker
+    /// </summary>
+    FitnessTracker,
+    /// <summary>
     /// flag
     /// </summary>
     Flag,
+    /// <summary>
+    /// flag_2
+    /// </summary>
+    Flag2,
+    /// <summary>
+    /// flag_check
+    /// </summary>
+    FlagCheck,
     /// <summary>
     /// flag_circle
     /// </summary>
     FlagCircle,
     /// <summary>
-    /// flag_filled
+    /// flaky
     /// </summary>
-    FlagFilled,
+    Flaky,
     /// <summary>
-    /// flame
+    /// flare
     /// </summary>
-    Flame,
-    /// <summary>
-    /// flame_hydrant
-    /// </summary>
-    FlameHydrant,
+    Flare,
     /// <summary>
     /// flash_auto
     /// </summary>
@@ -3919,13 +5355,17 @@ public enum GoogleFontIconName
     /// </summary>
     Flatware,
     /// <summary>
-    /// flex_end
+    /// flex_direction
     /// </summary>
-    FlexEnd,
+    FlexDirection,
     /// <summary>
-    /// flex_start
+    /// flex_no_wrap
     /// </summary>
-    FlexStart,
+    FlexNoWrap,
+    /// <summary>
+    /// flex_wrap
+    /// </summary>
+    FlexWrap,
     /// <summary>
     /// flight
     /// </summary>
@@ -3947,13 +5387,17 @@ public enum GoogleFontIconName
     /// </summary>
     FlightsAndHotels,
     /// <summary>
-    /// flightsmode
-    /// </summary>
-    Flightsmode,
-    /// <summary>
     /// flip
     /// </summary>
     Flip,
+    /// <summary>
+    /// flip_camera_android
+    /// </summary>
+    FlipCameraAndroid,
+    /// <summary>
+    /// flip_camera_ios
+    /// </summary>
+    FlipCameraIos,
     /// <summary>
     /// flip_to_back
     /// </summary>
@@ -3963,6 +5407,14 @@ public enum GoogleFontIconName
     /// </summary>
     FlipToFront,
     /// <summary>
+    /// float_landscape_2
+    /// </summary>
+    FloatLandscape2,
+    /// <summary>
+    /// float_portrait_2
+    /// </summary>
+    FloatPortrait2,
+    /// <summary>
     /// flood
     /// </summary>
     Flood,
@@ -3971,45 +5423,73 @@ public enum GoogleFontIconName
     /// </summary>
     Floor,
     /// <summary>
+    /// floor_lamp
+    /// </summary>
+    FloorLamp,
+    /// <summary>
+    /// flowchart
+    /// </summary>
+    Flowchart,
+    /// <summary>
+    /// flowsheet
+    /// </summary>
+    Flowsheet,
+    /// <summary>
     /// fluid
     /// </summary>
     Fluid,
     /// <summary>
-    /// fluid_brakes
+    /// fluid_balance
     /// </summary>
-    FluidBrakes,
+    FluidBalance,
     /// <summary>
-    /// fluid_coolant
+    /// fluid_med
     /// </summary>
-    FluidCoolant,
+    FluidMed,
     /// <summary>
-    /// fluid_level
+    /// fluorescent
     /// </summary>
-    FluidLevel,
-    /// <summary>
-    /// fluid_transmission
-    /// </summary>
-    FluidTransmission,
-    /// <summary>
-    /// fluid_window_wash
-    /// </summary>
-    FluidWindowWash,
-    /// <summary>
-    /// flushed
-    /// </summary>
-    Flushed,
+    Fluorescent,
     /// <summary>
     /// flutter
     /// </summary>
     Flutter,
     /// <summary>
-    /// focal_length
+    /// flutter_dash
     /// </summary>
-    FocalLength,
+    FlutterDash,
+    /// <summary>
+    /// flyover
+    /// </summary>
+    Flyover,
+    /// <summary>
+    /// fmd_bad
+    /// </summary>
+    FmdBad,
+    /// <summary>
+    /// foggy
+    /// </summary>
+    Foggy,
+    /// <summary>
+    /// folded_hands
+    /// </summary>
+    FoldedHands,
     /// <summary>
     /// folder
     /// </summary>
     Folder,
+    /// <summary>
+    /// folder_check
+    /// </summary>
+    FolderCheck,
+    /// <summary>
+    /// folder_check_2
+    /// </summary>
+    FolderCheck2,
+    /// <summary>
+    /// folder_code
+    /// </summary>
+    FolderCode,
     /// <summary>
     /// folder_copy
     /// </summary>
@@ -4023,9 +5503,29 @@ public enum GoogleFontIconName
     /// </summary>
     FolderDelete,
     /// <summary>
+    /// folder_eye
+    /// </summary>
+    FolderEye,
+    /// <summary>
+    /// folder_info
+    /// </summary>
+    FolderInfo,
+    /// <summary>
+    /// folder_limited
+    /// </summary>
+    FolderLimited,
+    /// <summary>
     /// folder_managed
     /// </summary>
     FolderManaged,
+    /// <summary>
+    /// folder_match
+    /// </summary>
+    FolderMatch,
+    /// <summary>
+    /// folder_off
+    /// </summary>
+    FolderOff,
     /// <summary>
     /// folder_open
     /// </summary>
@@ -4047,14 +5547,6 @@ public enum GoogleFontIconName
     /// </summary>
     FolderZip,
     /// <summary>
-    /// folder_zip_off
-    /// </summary>
-    FolderZipOff,
-    /// <summary>
-    /// folders
-    /// </summary>
-    Folders,
-    /// <summary>
     /// follow_the_signs
     /// </summary>
     FollowTheSigns,
@@ -4070,6 +5562,10 @@ public enum GoogleFontIconName
     /// food_bank
     /// </summary>
     FoodBank,
+    /// <summary>
+    /// foot_bones
+    /// </summary>
+    FootBones,
     /// <summary>
     /// footprint
     /// </summary>
@@ -4090,6 +5586,10 @@ public enum GoogleFontIconName
     /// fork_right
     /// </summary>
     ForkRight,
+    /// <summary>
+    /// fork_spoon
+    /// </summary>
+    ForkSpoon,
     /// <summary>
     /// forklift
     /// </summary>
@@ -4122,6 +5622,10 @@ public enum GoogleFontIconName
     /// format_color_fill
     /// </summary>
     FormatColorFill,
+    /// <summary>
+    /// format_color_reset
+    /// </summary>
+    FormatColorReset,
     /// <summary>
     /// format_color_text
     /// </summary>
@@ -4167,9 +5671,33 @@ public enum GoogleFontIconName
     /// </summary>
     FormatIndentIncrease,
     /// <summary>
+    /// format_ink_highlighter
+    /// </summary>
+    FormatInkHighlighter,
+    /// <summary>
     /// format_italic
     /// </summary>
     FormatItalic,
+    /// <summary>
+    /// format_letter_spacing
+    /// </summary>
+    FormatLetterSpacing,
+    /// <summary>
+    /// format_letter_spacing_2
+    /// </summary>
+    FormatLetterSpacing2,
+    /// <summary>
+    /// format_letter_spacing_standard
+    /// </summary>
+    FormatLetterSpacingStandard,
+    /// <summary>
+    /// format_letter_spacing_wide
+    /// </summary>
+    FormatLetterSpacingWide,
+    /// <summary>
+    /// format_letter_spacing_wider
+    /// </summary>
+    FormatLetterSpacingWider,
     /// <summary>
     /// format_line_spacing
     /// </summary>
@@ -4191,6 +5719,10 @@ public enum GoogleFontIconName
     /// </summary>
     FormatListNumberedRtl,
     /// <summary>
+    /// format_overline
+    /// </summary>
+    FormatOverline,
+    /// <summary>
     /// format_paint
     /// </summary>
     FormatPaint,
@@ -4202,6 +5734,10 @@ public enum GoogleFontIconName
     /// format_quote
     /// </summary>
     FormatQuote,
+    /// <summary>
+    /// format_quote_off
+    /// </summary>
+    FormatQuoteOff,
     /// <summary>
     /// format_shapes
     /// </summary>
@@ -4215,29 +5751,53 @@ public enum GoogleFontIconName
     /// </summary>
     FormatStrikethrough,
     /// <summary>
-    /// format_strikethrough_s
+    /// format_text_clip
     /// </summary>
-    FormatStrikethroughS,
+    FormatTextClip,
+    /// <summary>
+    /// format_text_overflow
+    /// </summary>
+    FormatTextOverflow,
     /// <summary>
     /// format_text_wrap
     /// </summary>
     FormatTextWrap,
     /// <summary>
+    /// format_textdirection_l_to_r
+    /// </summary>
+    FormatTextdirectionLToR,
+    /// <summary>
+    /// format_textdirection_r_to_l
+    /// </summary>
+    FormatTextdirectionRToL,
+    /// <summary>
+    /// format_textdirection_vertical
+    /// </summary>
+    FormatTextdirectionVertical,
+    /// <summary>
     /// format_underlined
     /// </summary>
     FormatUnderlined,
     /// <summary>
-    /// format_underlined_sq
+    /// format_underlined_squiggle
     /// </summary>
-    FormatUnderlinedSq,
+    FormatUnderlinedSquiggle,
     /// <summary>
     /// forms_add_on
     /// </summary>
     FormsAddOn,
     /// <summary>
-    /// fortress
+    /// forms_apps_script
     /// </summary>
-    Fortress,
+    FormsAppsScript,
+    /// <summary>
+    /// fort
+    /// </summary>
+    Fort,
+    /// <summary>
+    /// forum
+    /// </summary>
+    Forum,
     /// <summary>
     /// forward
     /// </summary>
@@ -4259,61 +5819,93 @@ public enum GoogleFontIconName
     /// </summary>
     ForwardCircle,
     /// <summary>
-    /// forwarding
+    /// forward_media
     /// </summary>
-    Forwarding,
+    ForwardMedia,
     /// <summary>
-    /// fountain_pen
+    /// forward_to_inbox
     /// </summary>
-    FountainPen,
+    ForwardToInbox,
     /// <summary>
-    /// frame
+    /// foundation
     /// </summary>
-    Frame,
+    Foundation,
+    /// <summary>
+    /// fragrance
+    /// </summary>
+    Fragrance,
+    /// <summary>
+    /// frame_inspect
+    /// </summary>
+    FrameInspect,
     /// <summary>
     /// frame_person
     /// </summary>
     FramePerson,
     /// <summary>
+    /// frame_person_mic
+    /// </summary>
+    FramePersonMic,
+    /// <summary>
     /// frame_person_off
     /// </summary>
     FramePersonOff,
+    /// <summary>
+    /// frame_reload
+    /// </summary>
+    FrameReload,
+    /// <summary>
+    /// frame_source
+    /// </summary>
+    FrameSource,
     /// <summary>
     /// free_cancellation
     /// </summary>
     FreeCancellation,
     /// <summary>
-    /// free_form_mode
+    /// front_hand
     /// </summary>
-    FreeFormMode,
-    /// <summary>
-    /// free_mode
-    /// </summary>
-    FreeMode,
-    /// <summary>
-    /// freezes
-    /// </summary>
-    Freezes,
-    /// <summary>
-    /// freight_container
-    /// </summary>
-    FreightContainer,
-    /// <summary>
-    /// frizz
-    /// </summary>
-    Frizz,
+    FrontHand,
     /// <summary>
     /// front_loader
     /// </summary>
     FrontLoader,
     /// <summary>
-    /// functionality
+    /// full_coverage
     /// </summary>
-    Functionality,
+    FullCoverage,
     /// <summary>
-    /// fusion_table
+    /// full_hd
     /// </summary>
-    FusionTable,
+    FullHd,
+    /// <summary>
+    /// full_stacked_bar_chart
+    /// </summary>
+    FullStackedBarChart,
+    /// <summary>
+    /// fullscreen
+    /// </summary>
+    Fullscreen,
+    /// <summary>
+    /// fullscreen_exit
+    /// </summary>
+    FullscreenExit,
+    /// <summary>
+    /// fullscreen_portrait
+    /// </summary>
+    FullscreenPortrait,
+    /// <summary>
+    /// function
+    /// </summary>
+    Function,
+    /// <summary>
+    /// functions
+    /// </summary>
+    Functions,
+    /// <summary>
+    /// funicular
+    /// </summary>
+    Funicular,
     /// <summary>
     /// g_mobiledata
     /// </summary>
@@ -4323,21 +5915,13 @@ public enum GoogleFontIconName
     /// </summary>
     GMobiledataBadge,
     /// <summary>
-    /// gaggle
+    /// g_translate
     /// </summary>
-    Gaggle,
+    GTranslate,
     /// <summary>
     /// gallery_thumbnail
     /// </summary>
     GalleryThumbnail,
-    /// <summary>
-    /// game_controller
-    /// </summary>
-    GameController,
-    /// <summary>
-    /// game_controller_off
-    /// </summary>
-    GameControllerOff,
     /// <summary>
     /// gamepad
     /// </summary>
@@ -4347,6 +5931,10 @@ public enum GoogleFontIconName
     /// </summary>
     Garage,
     /// <summary>
+    /// garage_check
+    /// </summary>
+    GarageCheck,
+    /// <summary>
     /// garage_door
     /// </summary>
     GarageDoor,
@@ -4355,25 +5943,25 @@ public enum GoogleFontIconName
     /// </summary>
     GarageHome,
     /// <summary>
+    /// garage_money
+    /// </summary>
+    GarageMoney,
+    /// <summary>
     /// garden_cart
     /// </summary>
     GardenCart,
-    /// <summary>
-    /// gastroenterology
-    /// </summary>
-    Gastroenterology,
     /// <summary>
     /// gas_meter
     /// </summary>
     GasMeter,
     /// <summary>
-    /// gather
+    /// gastroenterology
     /// </summary>
-    Gather,
+    Gastroenterology,
     /// <summary>
-    /// gauging
+    /// gate
     /// </summary>
-    Gauging,
+    Gate,
     /// <summary>
     /// gavel
     /// </summary>
@@ -4383,33 +5971,29 @@ public enum GoogleFontIconName
     /// </summary>
     GeneralDevice,
     /// <summary>
-    /// generating_tokens
+    /// genetics
     /// </summary>
-    GeneratingTokens,
+    Genetics,
     /// <summary>
-    /// gastroenterology
+    /// genres
     /// </summary>
-    Gastroenterology,
-    /// <summary>
-    /// gauge
-    /// </summary>
-    Gauge,
-    /// <summary>
-    /// gavel
-    /// </summary>
-    Gavel,
+    Genres,
     /// <summary>
     /// gesture
     /// </summary>
     Gesture,
     /// <summary>
-    /// gesture_hand
+    /// gesture_select
     /// </summary>
-    GestureHand,
+    GestureSelect,
     /// <summary>
     /// gif
     /// </summary>
     Gif,
+    /// <summary>
+    /// gif_2
+    /// </summary>
+    Gif2,
     /// <summary>
     /// gif_box
     /// </summary>
@@ -4419,9 +6003,13 @@ public enum GoogleFontIconName
     /// </summary>
     Girl,
     /// <summary>
-    /// glasses
+    /// gite
     /// </summary>
-    Glasses,
+    Gite,
+    /// <summary>
+    /// glass_cup
+    /// </summary>
+    GlassCup,
     /// <summary>
     /// globe
     /// </summary>
@@ -4431,9 +6019,25 @@ public enum GoogleFontIconName
     /// </summary>
     GlobeAsia,
     /// <summary>
-    /// globe_europe
+    /// globe_book
     /// </summary>
-    GlobeEurope,
+    GlobeBook,
+    /// <summary>
+    /// globe_location_pin
+    /// </summary>
+    GlobeLocationPin,
+    /// <summary>
+    /// globe_uk
+    /// </summary>
+    GlobeUk,
+    /// <summary>
+    /// glucose
+    /// </summary>
+    Glucose,
+    /// <summary>
+    /// glyphs
+    /// </summary>
+    Glyphs,
     /// <summary>
     /// go_to_line
     /// </summary>
@@ -4443,33 +6047,29 @@ public enum GoogleFontIconName
     /// </summary>
     GolfCourse,
     /// <summary>
-    /// google_plus_reshare
+    /// gondola_lift
     /// </summary>
-    GooglePlusReshare,
+    GondolaLift,
     /// <summary>
-    /// google_travel
+    /// google_home_devices
     /// </summary>
-    GoogleTravel,
+    GoogleHomeDevices,
     /// <summary>
-    /// gps_fixed
+    /// google_tv_remote
     /// </summary>
-    GpsFixed,
+    GoogleTvRemote,
     /// <summary>
-    /// gps_not_fixed
+    /// google_wifi
     /// </summary>
-    GpsNotFixed,
+    GoogleWifi,
     /// <summary>
-    /// gps_off
+    /// gpp_bad
     /// </summary>
-    GpsOff,
+    GppBad,
     /// <summary>
-    /// grab_handle
+    /// gpp_maybe
     /// </summary>
-    GrabHandle,
-    /// <summary>
-    /// grade
-    /// </summary>
-    Grade,
+    GppMaybe,
     /// <summary>
     /// gradient
     /// </summary>
@@ -4482,6 +6082,34 @@ public enum GoogleFontIconName
     /// grain
     /// </summary>
     Grain,
+    /// <summary>
+    /// graph_1
+    /// </summary>
+    Graph1,
+    /// <summary>
+    /// graph_2
+    /// </summary>
+    Graph2,
+    /// <summary>
+    /// graph_3
+    /// </summary>
+    Graph3,
+    /// <summary>
+    /// graph_4
+    /// </summary>
+    Graph4,
+    /// <summary>
+    /// graph_5
+    /// </summary>
+    Graph5,
+    /// <summary>
+    /// graph_6
+    /// </summary>
+    Graph6,
+    /// <summary>
+    /// graph_7
+    /// </summary>
+    Graph7,
     /// <summary>
     /// graphic_eq
     /// </summary>
@@ -4507,13 +6135,25 @@ public enum GoogleFontIconName
     /// </summary>
     GridGoldenratio,
     /// <summary>
+    /// grid_guides
+    /// </summary>
+    GridGuides,
+    /// <summary>
     /// grid_off
     /// </summary>
     GridOff,
     /// <summary>
+    /// grid_on
+    /// </summary>
+    GridOn,
+    /// <summary>
     /// grid_view
     /// </summary>
     GridView,
+    /// <summary>
+    /// grocery
+    /// </summary>
+    Grocery,
     /// <summary>
     /// group
     /// </summary>
@@ -4531,9 +6171,17 @@ public enum GoogleFontIconName
     /// </summary>
     GroupRemove,
     /// <summary>
+    /// group_search
+    /// </summary>
+    GroupSearch,
+    /// <summary>
     /// group_work
     /// </summary>
     GroupWork,
+    /// <summary>
+    /// grouped_bar_chart
+    /// </summary>
+    GroupedBarChart,
     /// <summary>
     /// groups
     /// </summary>
@@ -4547,37 +6195,41 @@ public enum GoogleFontIconName
     /// </summary>
     Groups3,
     /// <summary>
-    /// groups_with_stories
+    /// guardian
     /// </summary>
-    GroupsWithStories,
-    /// <summary>
-    /// guest_star
-    /// </summary>
-    GuestStar,
-    /// <summary>
-    /// guesthouse
-    /// </summary>
-    Guesthouse,
+    Guardian,
     /// <summary>
     /// gynecology
     /// </summary>
     Gynecology,
     /// <summary>
+    /// h_mobiledata
+    /// </summary>
+    HMobiledata,
+    /// <summary>
+    /// h_mobiledata_badge
+    /// </summary>
+    HMobiledataBadge,
+    /// <summary>
+    /// h_plus_mobiledata
+    /// </summary>
+    HPlusMobiledata,
+    /// <summary>
+    /// h_plus_mobiledata_badge
+    /// </summary>
+    HPlusMobiledataBadge,
+    /// <summary>
     /// hail
     /// </summary>
     Hail,
     /// <summary>
-    /// hair
+    /// hallway
     /// </summary>
-    Hair,
+    Hallway,
     /// <summary>
-    /// hairdryer
+    /// hanami_dango
     /// </summary>
-    Hairdryer,
-    /// <summary>
-    /// hairdryer_front
-    /// </summary>
-    HairdryerFront,
+    HanamiDango,
     /// <summary>
     /// hand_bones
     /// </summary>
@@ -4587,29 +6239,41 @@ public enum GoogleFontIconName
     /// </summary>
     HandGesture,
     /// <summary>
-    /// hand_wave
+    /// hand_gesture_off
     /// </summary>
-    HandWave,
+    HandGestureOff,
     /// <summary>
-    /// hand_writing
+    /// hand_meal
     /// </summary>
-    HandWriting,
+    HandMeal,
     /// <summary>
-    /// handball
+    /// hand_package
     /// </summary>
-    Handball,
+    HandPackage,
     /// <summary>
-    /// handshakes
+    /// handheld_controller
     /// </summary>
-    Handshakes,
+    HandheldController,
     /// <summary>
-    /// handwashing
+    /// handshake
     /// </summary>
-    Handwashing,
+    Handshake,
     /// <summary>
-    /// handwashing_bubbles
+    /// handyman
     /// </summary>
-    HandwashingBubbles,
+    Handyman,
+    /// <summary>
+    /// hangout_video
+    /// </summary>
+    HangoutVideo,
+    /// <summary>
+    /// hangout_video_off
+    /// </summary>
+    HangoutVideoOff,
+    /// <summary>
+    /// hard_disk
+    /// </summary>
+    HardDisk,
     /// <summary>
     /// hard_drive
     /// </summary>
@@ -4619,21 +6283,61 @@ public enum GoogleFontIconName
     /// </summary>
     HardDrive2,
     /// <summary>
-    /// hardwood
+    /// hardware
     /// </summary>
-    Hardwood,
+    Hardware,
     /// <summary>
-    /// hats
+    /// hd
     /// </summary>
-    Hats,
+    Hd,
     /// <summary>
-    /// haze
+    /// hdr_auto
     /// </summary>
-    Haze,
+    HdrAuto,
     /// <summary>
-    /// haze_night
+    /// hdr_auto_select
     /// </summary>
-    HazeNight,
+    HdrAutoSelect,
+    /// <summary>
+    /// hdr_enhanced_select
+    /// </summary>
+    HdrEnhancedSelect,
+    /// <summary>
+    /// hdr_off
+    /// </summary>
+    HdrOff,
+    /// <summary>
+    /// hdr_off_select
+    /// </summary>
+    HdrOffSelect,
+    /// <summary>
+    /// hdr_on
+    /// </summary>
+    HdrOn,
+    /// <summary>
+    /// hdr_on_select
+    /// </summary>
+    HdrOnSelect,
+    /// <summary>
+    /// hdr_plus
+    /// </summary>
+    HdrPlus,
+    /// <summary>
+    /// hdr_plus_off
+    /// </summary>
+    HdrPlusOff,
+    /// <summary>
+    /// hdr_strong
+    /// </summary>
+    HdrStrong,
+    /// <summary>
+    /// hdr_weak
+    /// </summary>
+    HdrWeak,
+    /// <summary>
+    /// head_mounted_device
+    /// </summary>
+    HeadMountedDevice,
     /// <summary>
     /// headphones
     /// </summary>
@@ -4642,10 +6346,6 @@ public enum GoogleFontIconName
     /// headphones_battery
     /// </summary>
     HeadphonesBattery,
-    /// <summary>
-    /// headphones_off
-    /// </summary>
-    HeadphonesOff,
     /// <summary>
     /// headset_mic
     /// </summary>
@@ -4659,13 +6359,81 @@ public enum GoogleFontIconName
     /// </summary>
     Healing,
     /// <summary>
+    /// health_and_beauty
+    /// </summary>
+    HealthAndBeauty,
+    /// <summary>
     /// health_and_safety
     /// </summary>
     HealthAndSafety,
     /// <summary>
+    /// health_cross
+    /// </summary>
+    HealthCross,
+    /// <summary>
     /// health_metrics
     /// </summary>
     HealthMetrics,
+    /// <summary>
+    /// heap_snapshot_large
+    /// </summary>
+    HeapSnapshotLarge,
+    /// <summary>
+    /// heap_snapshot_multiple
+    /// </summary>
+    HeapSnapshotMultiple,
+    /// <summary>
+    /// heap_snapshot_thumbnail
+    /// </summary>
+    HeapSnapshotThumbnail,
+    /// <summary>
+    /// hearing
+    /// </summary>
+    Hearing,
+    /// <summary>
+    /// hearing_aid
+    /// </summary>
+    HearingAid,
+    /// <summary>
+    /// hearing_aid_disabled
+    /// </summary>
+    HearingAidDisabled,
+    /// <summary>
+    /// hearing_aid_disabled_left
+    /// </summary>
+    HearingAidDisabledLeft,
+    /// <summary>
+    /// hearing_aid_left
+    /// </summary>
+    HearingAidLeft,
+    /// <summary>
+    /// hearing_disabled
+    /// </summary>
+    HearingDisabled,
+    /// <summary>
+    /// heart_broken
+    /// </summary>
+    HeartBroken,
+    /// <summary>
+    /// heart_check
+    /// </summary>
+    HeartCheck,
+    /// <summary>
+    /// heart_minus
+    /// </summary>
+    HeartMinus,
+    /// <summary>
+    /// heart_plus
+    /// </summary>
+    HeartPlus,
+    /// <summary>
+    /// heart_smile
+    /// </summary>
+    HeartSmile,
+    /// <summary>
+    /// heat
+    /// </summary>
+    Heat,
     /// <summary>
     /// heat_pump
     /// </summary>
@@ -4679,6 +6447,10 @@ public enum GoogleFontIconName
     /// </summary>
     Height,
     /// <summary>
+    /// helicopter
+    /// </summary>
+    Helicopter,
+    /// <summary>
     /// help
     /// </summary>
     Help,
@@ -4691,41 +6463,101 @@ public enum GoogleFontIconName
     /// </summary>
     HelpClinic,
     /// <summary>
-    /// help_circle
-    /// </summary>
-    HelpCircle,
-    /// <summary>
-    /// help_desk
-    /// </summary>
-    HelpDesk,
-    /// <summary>
-    /// help_outline
-    /// </summary>
-    HelpOutline,
-    /// <summary>
     /// hematology
     /// </summary>
     Hematology,
+    /// <summary>
+    /// hevc
+    /// </summary>
+    Hevc,
     /// <summary>
     /// hexagon
     /// </summary>
     Hexagon,
     /// <summary>
-    /// hexagon_off
+    /// hide
     /// </summary>
-    HexagonOff,
+    Hide,
     /// <summary>
-    /// highway
+    /// hide_image
     /// </summary>
-    Highway,
+    HideImage,
+    /// <summary>
+    /// hide_source
+    /// </summary>
+    HideSource,
+    /// <summary>
+    /// high_chair
+    /// </summary>
+    HighChair,
+    /// <summary>
+    /// high_density
+    /// </summary>
+    HighDensity,
+    /// <summary>
+    /// high_quality
+    /// </summary>
+    HighQuality,
+    /// <summary>
+    /// high_res
+    /// </summary>
+    HighRes,
+    /// <summary>
+    /// highlight
+    /// </summary>
+    Highlight,
+    /// <summary>
+    /// highlight_keyboard_focus
+    /// </summary>
+    HighlightKeyboardFocus,
+    /// <summary>
+    /// highlight_mouse_cursor
+    /// </summary>
+    HighlightMouseCursor,
+    /// <summary>
+    /// highlight_text_cursor
+    /// </summary>
+    HighlightTextCursor,
+    /// <summary>
+    /// highlighter_size_1
+    /// </summary>
+    HighlighterSize1,
+    /// <summary>
+    /// highlighter_size_2
+    /// </summary>
+    HighlighterSize2,
+    /// <summary>
+    /// highlighter_size_3
+    /// </summary>
+    HighlighterSize3,
+    /// <summary>
+    /// highlighter_size_4
+    /// </summary>
+    HighlighterSize4,
+    /// <summary>
+    /// highlighter_size_5
+    /// </summary>
+    HighlighterSize5,
+    /// <summary>
+    /// hiking
+    /// </summary>
+    Hiking,
     /// <summary>
     /// history
     /// </summary>
     History,
     /// <summary>
+    /// history_2
+    /// </summary>
+    History2,
+    /// <summary>
     /// history_edu
     /// </summary>
     HistoryEdu,
+    /// <summary>
+    /// history_off
+    /// </summary>
+    HistoryOff,
     /// <summary>
     /// history_toggle_off
     /// </summary>
@@ -4735,17 +6567,57 @@ public enum GoogleFontIconName
     /// </summary>
     Hive,
     /// <summary>
+    /// hls
+    /// </summary>
+    Hls,
+    /// <summary>
+    /// hls_off
+    /// </summary>
+    HlsOff,
+    /// <summary>
+    /// holiday_village
+    /// </summary>
+    HolidayVillage,
+    /// <summary>
     /// home
     /// </summary>
     Home,
+    /// <summary>
+    /// home_and_garden
+    /// </summary>
+    HomeAndGarden,
     /// <summary>
     /// home_app_logo
     /// </summary>
     HomeAppLogo,
     /// <summary>
+    /// home_health
+    /// </summary>
+    HomeHealth,
+    /// <summary>
+    /// home_improvement_and_tools
+    /// </summary>
+    HomeImprovementAndTools,
+    /// <summary>
+    /// home_iot_device
+    /// </summary>
+    HomeIotDevice,
+    /// <summary>
+    /// home_max
+    /// </summary>
+    HomeMax,
+    /// <summary>
+    /// home_max_dots
+    /// </summary>
+    HomeMaxDots,
+    /// <summary>
     /// home_mini
     /// </summary>
     HomeMini,
+    /// <summary>
+    /// home_pin
+    /// </summary>
+    HomePin,
     /// <summary>
     /// home_repair_service
     /// </summary>
@@ -4775,6 +6647,10 @@ public enum GoogleFontIconName
     /// </summary>
     HorizontalSplit,
     /// <summary>
+    /// host
+    /// </summary>
+    Host,
+    /// <summary>
     /// hot_tub
     /// </summary>
     HotTub,
@@ -4783,13 +6659,21 @@ public enum GoogleFontIconName
     /// </summary>
     Hotel,
     /// <summary>
-    /// hotel_services
+    /// hotel_class
     /// </summary>
-    HotelServices,
+    HotelClass,
     /// <summary>
     /// hourglass
     /// </summary>
     Hourglass,
+    /// <summary>
+    /// hourglass_arrow_down
+    /// </summary>
+    HourglassArrowDown,
+    /// <summary>
+    /// hourglass_arrow_up
+    /// </summary>
+    HourglassArrowUp,
     /// <summary>
     /// hourglass_bottom
     /// </summary>
@@ -4803,9 +6687,9 @@ public enum GoogleFontIconName
     /// </summary>
     HourglassEmpty,
     /// <summary>
-    /// hourglass_full
+    /// hourglass_pause
     /// </summary>
-    HourglassFull,
+    HourglassPause,
     /// <summary>
     /// hourglass_top
     /// </summary>
@@ -4823,37 +6707,77 @@ public enum GoogleFontIconName
     /// </summary>
     HouseWithShield,
     /// <summary>
-    /// humidifier
+    /// houseboat
     /// </summary>
-    Humidifier,
+    Houseboat,
     /// <summary>
-    /// hurricane
+    /// household_supplies
     /// </summary>
-    Hurricane,
+    HouseholdSupplies,
     /// <summary>
-    /// hybrid
+    /// hov
     /// </summary>
-    Hybrid,
+    Hov,
     /// <summary>
-    /// hydration
+    /// how_to_reg
     /// </summary>
-    Hydration,
+    HowToReg,
     /// <summary>
-    /// hydroelectric_power
+    /// how_to_vote
     /// </summary>
-    HydroelectricPower,
+    HowToVote,
     /// <summary>
-    /// hydrant
+    /// hr_resting
     /// </summary>
-    Hydrant,
+    HrResting,
     /// <summary>
-    /// hypnosis
+    /// html
     /// </summary>
-    Hypnosis,
+    Html,
     /// <summary>
-    /// i_mode
+    /// http
     /// </summary>
-    IMode,
+    Http,
+    /// <summary>
+    /// hub
+    /// </summary>
+    Hub,
+    /// <summary>
+    /// humerus
+    /// </summary>
+    Humerus,
+    /// <summary>
+    /// humerus_alt
+    /// </summary>
+    HumerusAlt,
+    /// <summary>
+    /// humidity_high
+    /// </summary>
+    HumidityHigh,
+    /// <summary>
+    /// humidity_indoor
+    /// </summary>
+    HumidityIndoor,
+    /// <summary>
+    /// humidity_low
+    /// </summary>
+    HumidityLow,
+    /// <summary>
+    /// humidity_mid
+    /// </summary>
+    HumidityMid,
+    /// <summary>
+    /// humidity_percentage
+    /// </summary>
+    HumidityPercentage,
+    /// <summary>
+    /// hvac
+    /// </summary>
+    Hvac,
+    /// <summary>
+    /// hvac_max_defrost
+    /// </summary>
+    HvacMaxDefrost,
     /// <summary>
     /// ice_skating
     /// </summary>
@@ -4863,69 +6787,141 @@ public enum GoogleFontIconName
     /// </summary>
     Icecream,
     /// <summary>
-    /// image_not_supported
+    /// id_card
     /// </summary>
-    ImageNotSupported,
+    IdCard,
+    /// <summary>
+    /// identity_aware_proxy
+    /// </summary>
+    IdentityAwareProxy,
+    /// <summary>
+    /// identity_platform
+    /// </summary>
+    IdentityPlatform,
+    /// <summary>
+    /// ifl
+    /// </summary>
+    Ifl,
+    /// <summary>
+    /// iframe
+    /// </summary>
+    Iframe,
+    /// <summary>
+    /// iframe_off
+    /// </summary>
+    IframeOff,
+    /// <summary>
+    /// image
+    /// </summary>
+    Image,
+    /// <summary>
+    /// image_arrow_up
+    /// </summary>
+    ImageArrowUp,
+    /// <summary>
+    /// image_aspect_ratio
+    /// </summary>
+    ImageAspectRatio,
+    /// <summary>
+    /// image_inset
+    /// </summary>
+    ImageInset,
     /// <summary>
     /// image_search
     /// </summary>
     ImageSearch,
     /// <summary>
+    /// imagesearch_roller
+    /// </summary>
+    ImagesearchRoller,
+    /// <summary>
     /// imagesmode
     /// </summary>
     Imagesmode,
+    /// <summary>
+    /// immunology
+    /// </summary>
+    Immunology,
+    /// <summary>
+    /// import_contacts
+    /// </summary>
+    ImportContacts,
+    /// <summary>
+    /// important_devices
+    /// </summary>
+    ImportantDevices,
+    /// <summary>
+    /// in_home_mode
+    /// </summary>
+    InHomeMode,
+    /// <summary>
+    /// inactive_order
+    /// </summary>
+    InactiveOrder,
     /// <summary>
     /// inbox
     /// </summary>
     Inbox,
     /// <summary>
-    /// inbox_full
+    /// inbox_customize
     /// </summary>
-    InboxFull,
+    InboxCustomize,
     /// <summary>
-    /// incense
+    /// inbox_text
     /// </summary>
-    Incense,
+    InboxText,
     /// <summary>
-    /// indent_decrease
+    /// inbox_text_asterisk
     /// </summary>
-    IndentDecrease,
+    InboxTextAsterisk,
     /// <summary>
-    /// indent_increase
+    /// inbox_text_person
     /// </summary>
-    IndentIncrease,
+    InboxTextPerson,
     /// <summary>
-    /// individual_track
+    /// inbox_text_share
     /// </summary>
-    IndividualTrack,
+    InboxTextShare,
     /// <summary>
-    /// indoor_garden
+    /// incomplete_circle
     /// </summary>
-    IndoorGarden,
+    IncompleteCircle,
     /// <summary>
-    /// indoor_grill
+    /// indeterminate_check_box
     /// </summary>
-    IndoorGrill,
+    IndeterminateCheckBox,
+    /// <summary>
+    /// indeterminate_question_box
+    /// </summary>
+    IndeterminateQuestionBox,
+    /// <summary>
+    /// info
+    /// </summary>
+    Info,
+    /// <summary>
+    /// info_i
+    /// </summary>
+    InfoI,
     /// <summary>
     /// infrared
     /// </summary>
     Infrared,
     /// <summary>
-    /// injection
-    /// </summary>
-    Injection,
-    /// <summary>
-    /// ink_bottle
-    /// </summary>
-    InkBottle,
-    /// <summary>
     /// ink_eraser
     /// </summary>
     InkEraser,
     /// <summary>
+    /// ink_eraser_off
+    /// </summary>
+    InkEraserOff,
+    /// <summary>
     /// ink_highlighter
     /// </summary>
     InkHighlighter,
+    /// <summary>
+    /// ink_highlighter_move
+    /// </summary>
+    InkHighlighterMove,
     /// <summary>
     /// ink_marker
     /// </summary>
@@ -4935,9 +6931,13 @@ public enum GoogleFontIconName
     /// </summary>
     InkPen,
     /// <summary>
-    /// inking_tool
+    /// ink_selection
     /// </summary>
-    InkingTool,
+    InkSelection,
+    /// <summary>
+    /// inpatient
+    /// </summary>
+    Inpatient,
     /// <summary>
     /// input
     /// </summary>
@@ -4947,25 +6947,25 @@ public enum GoogleFontIconName
     /// </summary>
     InputCircle,
     /// <summary>
+    /// insert_chart
+    /// </summary>
+    InsertChart,
+    /// <summary>
     /// insert_page_break
     /// </summary>
     InsertPageBreak,
+    /// <summary>
+    /// insert_text
+    /// </summary>
+    InsertText,
     /// <summary>
     /// install_desktop
     /// </summary>
     InstallDesktop,
     /// <summary>
-    /// install_mobile
-    /// </summary>
-    InstallMobile,
-    /// <summary>
     /// instant_mix
     /// </summary>
     InstantMix,
-    /// <summary>
-    /// instant_standby
-    /// </summary>
-    InstantStandby,
     /// <summary>
     /// integration_instructions
     /// </summary>
@@ -4979,9 +6979,9 @@ public enum GoogleFontIconName
     /// </summary>
     Interests,
     /// <summary>
-    /// intersections
+    /// interpreter_mode
     /// </summary>
-    Intersections,
+    InterpreterMode,
     /// <summary>
     /// inventory
     /// </summary>
@@ -4999,9 +6999,13 @@ public enum GoogleFontIconName
     /// </summary>
     InvertColorsOff,
     /// <summary>
-    /// invert_device
+    /// ios
     /// </summary>
-    InvertDevice,
+    Ios,
+    /// <summary>
+    /// ios_share
+    /// </summary>
+    IosShare,
     /// <summary>
     /// iron
     /// </summary>
@@ -5011,25 +7015,21 @@ public enum GoogleFontIconName
     /// </summary>
     JamboardKiosk,
     /// <summary>
-    /// jewelry
+    /// japanese_curry
     /// </summary>
-    Jewelry,
+    JapaneseCurry,
     /// <summary>
-    /// job_applicant
+    /// japanese_flag
     /// </summary>
-    JobApplicant,
+    JapaneseFlag,
     /// <summary>
-    /// job_yield
+    /// javascript
     /// </summary>
-    JobYield,
+    Javascript,
     /// <summary>
-    /// jogging
+    /// join
     /// </summary>
-    Jogging,
-    /// <summary>
-    /// join_full
-    /// </summary>
-    JoinFull,
+    Join,
     /// <summary>
     /// join_inner
     /// </summary>
@@ -5043,13 +7043,41 @@ public enum GoogleFontIconName
     /// </summary>
     JoinRight,
     /// <summary>
-    /// kayak
+    /// joystick
     /// </summary>
-    Kayak,
+    Joystick,
     /// <summary>
-    /// kennel
+    /// jump_to_element
     /// </summary>
-    Kennel,
+    JumpToElement,
+    /// <summary>
+    /// kanji_alcohol
+    /// </summary>
+    KanjiAlcohol,
+    /// <summary>
+    /// kayaking
+    /// </summary>
+    Kayaking,
+    /// <summary>
+    /// kebab_dining
+    /// </summary>
+    KebabDining,
+    /// <summary>
+    /// keep
+    /// </summary>
+    Keep,
+    /// <summary>
+    /// keep_off
+    /// </summary>
+    KeepOff,
+    /// <summary>
+    /// keep_public
+    /// </summary>
+    KeepPublic,
+    /// <summary>
+    /// kettle
+    /// </summary>
+    Kettle,
     /// <summary>
     /// key
     /// </summary>
@@ -5062,6 +7090,10 @@ public enum GoogleFontIconName
     /// key_vertical
     /// </summary>
     KeyVertical,
+    /// <summary>
+    /// key_visualizer
+    /// </summary>
+    KeyVisualizer,
     /// <summary>
     /// keyboard
     /// </summary>
@@ -5095,13 +7127,17 @@ public enum GoogleFontIconName
     /// </summary>
     KeyboardCapslock,
     /// <summary>
+    /// keyboard_capslock_badge
+    /// </summary>
+    KeyboardCapslockBadge,
+    /// <summary>
     /// keyboard_command_key
     /// </summary>
     KeyboardCommandKey,
     /// <summary>
-    /// keyboard_control
+    /// keyboard_control_key
     /// </summary>
-    KeyboardControl,
+    KeyboardControlKey,
     /// <summary>
     /// keyboard_double_arrow_down
     /// </summary>
@@ -5119,17 +7155,45 @@ public enum GoogleFontIconName
     /// </summary>
     KeyboardDoubleArrowUp,
     /// <summary>
+    /// keyboard_external_input
+    /// </summary>
+    KeyboardExternalInput,
+    /// <summary>
+    /// keyboard_full
+    /// </summary>
+    KeyboardFull,
+    /// <summary>
     /// keyboard_hide
     /// </summary>
     KeyboardHide,
     /// <summary>
-    /// keyboard_key
+    /// keyboard_keys
     /// </summary>
-    KeyboardKey,
+    KeyboardKeys,
+    /// <summary>
+    /// keyboard_lock
+    /// </summary>
+    KeyboardLock,
+    /// <summary>
+    /// keyboard_lock_off
+    /// </summary>
+    KeyboardLockOff,
     /// <summary>
     /// keyboard_off
     /// </summary>
     KeyboardOff,
+    /// <summary>
+    /// keyboard_onscreen
+    /// </summary>
+    KeyboardOnscreen,
+    /// <summary>
+    /// keyboard_option_key
+    /// </summary>
+    KeyboardOptionKey,
+    /// <summary>
+    /// keyboard_previous_language
+    /// </summary>
+    KeyboardPreviousLanguage,
     /// <summary>
     /// keyboard_return
     /// </summary>
@@ -5139,21 +7203,25 @@ public enum GoogleFontIconName
     /// </summary>
     KeyboardTab,
     /// <summary>
-    /// keyboard_voice
+    /// keyboard_tab_rtl
     /// </summary>
-    KeyboardVoice,
+    KeyboardTabRtl,
+    /// <summary>
+    /// kid_star
+    /// </summary>
+    KidStar,
+    /// <summary>
+    /// king_bed
+    /// </summary>
+    KingBed,
     /// <summary>
     /// kitchen
     /// </summary>
     Kitchen,
     /// <summary>
-    /// ktx
+    /// kitesurfing
     /// </summary>
-    Ktx,
-    /// <summary>
-    /// ktx_alt
-    /// </summary>
-    KtxAlt,
+    Kitesurfing,
     /// <summary>
     /// lab_panel
     /// </summary>
@@ -5179,6 +7247,1255 @@ public enum GoogleFontIconName
     /// </summary>
     LabelOff,
     /// <summary>
+    /// labs
+    /// </summary>
+    Labs,
+    /// <summary>
+    /// lan
+    /// </summary>
+    Lan,
+    /// <summary>
+    /// landscape
+    /// </summary>
+    Landscape,
+    /// <summary>
+    /// landscape_2
+    /// </summary>
+    Landscape2,
+    /// <summary>
+    /// landscape_2_edit
+    /// </summary>
+    Landscape2Edit,
+    /// <summary>
+    /// landscape_2_off
+    /// </summary>
+    Landscape2Off,
+    /// <summary>
+    /// landslide
+    /// </summary>
+    Landslide,
+    /// <summary>
+    /// language
+    /// </summary>
+    Language,
+    /// <summary>
+    /// language_chinese_array
+    /// </summary>
+    LanguageChineseArray,
+    /// <summary>
+    /// language_chinese_cangjie
+    /// </summary>
+    LanguageChineseCangjie,
+    /// <summary>
+    /// language_chinese_dayi
+    /// </summary>
+    LanguageChineseDayi,
+    /// <summary>
+    /// language_chinese_pinyin
+    /// </summary>
+    LanguageChinesePinyin,
+    /// <summary>
+    /// language_chinese_quick
+    /// </summary>
+    LanguageChineseQuick,
+    // Legacy/extra icons retained (not present in JSON)
+    /// <summary>
+    /// beehive
+    /// </summary>
+    Beehive,
+    /// <summary>
+    /// bell_scope
+    /// </summary>
+    BellScope,
+    /// <summary>
+    /// bell_scope_off
+    /// </summary>
+    BellScopeOff,
+    /// <summary>
+    /// bell_snow_cone
+    /// </summary>
+    BellSnowCone,
+    /// <summary>
+    /// below_sensor
+    /// </summary>
+    BelowSensor,
+    /// <summary>
+    /// below_sensor_not_allowed
+    /// </summary>
+    BelowSensorNotAllowed,
+    /// <summary>
+    /// bench
+    /// </summary>
+    Bench,
+    /// <summary>
+    /// bezier_curve
+    /// </summary>
+    BezierCurve,
+    /// <summary>
+    /// bill
+    /// </summary>
+    Bill,
+    /// <summary>
+    /// bill_off
+    /// </summary>
+    BillOff,
+    /// <summary>
+    /// billing
+    /// </summary>
+    Billing,
+    /// <summary>
+    /// binoculars
+    /// </summary>
+    Binoculars,
+    /// <summary>
+    /// biohazard
+    /// </summary>
+    Biohazard,
+    /// <summary>
+    /// bipolar
+    /// </summary>
+    Bipolar,
+    /// <summary>
+    /// biometric_fingerprint
+    /// </summary>
+    BiometricFingerprint,
+    /// <summary>
+    /// biometrics
+    /// </summary>
+    Biometrics,
+    /// <summary>
+    /// biometrics_lock
+    /// </summary>
+    BiometricsLock,
+    /// <summary>
+    /// biometrics_lock_off
+    /// </summary>
+    BiometricsLockOff,
+    /// <summary>
+    /// biometrics_off
+    /// </summary>
+    BiometricsOff,
+    /// <summary>
+    /// birdie
+    /// </summary>
+    Birdie,
+    /// <summary>
+    /// book_online
+    /// </summary>
+    BookOnline,
+    /// <summary>
+    /// bookmark_border
+    /// </summary>
+    BookmarkBorder,
+    /// <summary>
+    /// box_off
+    /// </summary>
+    BoxOff,
+    /// <summary>
+    /// box_public
+    /// </summary>
+    BoxPublic,
+    /// <summary>
+    /// branch
+    /// </summary>
+    Branch,
+    /// <summary>
+    /// breastpump
+    /// </summary>
+    Breastpump,
+    /// <summary>
+    /// brightness_high
+    /// </summary>
+    BrightnessHigh,
+    /// <summary>
+    /// brightness_low
+    /// </summary>
+    BrightnessLow,
+    /// <summary>
+    /// browser_not_supported
+    /// </summary>
+    BrowserNotSupported,
+    /// <summary>
+    /// building
+    /// </summary>
+    Building,
+    /// <summary>
+    /// building_2
+    /// </summary>
+    Building2,
+    /// <summary>
+    /// building_3
+    /// </summary>
+    Building3,
+    /// <summary>
+    /// buildings
+    /// </summary>
+    Buildings,
+    /// <summary>
+    /// buildings_with_garden
+    /// </summary>
+    BuildingsWithGarden,
+    /// <summary>
+    /// bulk_container
+    /// </summary>
+    BulkContainer,
+    /// <summary>
+    /// bumper_truck
+    /// </summary>
+    BumperTruck,
+    /// <summary>
+    /// bundled_case
+    /// </summary>
+    BundledCase,
+    /// <summary>
+    /// buttons
+    /// </summary>
+    Buttons,
+    /// <summary>
+    /// cactus
+    /// </summary>
+    Cactus,
+    /// <summary>
+    /// cafe
+    /// </summary>
+    Cafe,
+    /// <summary>
+    /// calendar_apps
+    /// </summary>
+    CalendarApps,
+    /// <summary>
+    /// calendars
+    /// </summary>
+    Calendars,
+    /// <summary>
+    /// camera_front
+    /// </summary>
+    CameraFront,
+    /// <summary>
+    /// camera_rear
+    /// </summary>
+    CameraRear,
+    /// <summary>
+    /// cardio_bot
+    /// </summary>
+    CardioBot,
+    /// <summary>
+    /// cardiac_pedometer
+    /// </summary>
+    CardiacPedometer,
+    /// <summary>
+    /// carousel
+    /// </summary>
+    Carousel,
+    /// <summary>
+    /// carport
+    /// </summary>
+    Carport,
+    /// <summary>
+    /// career_shuttle
+    /// </summary>
+    CareerShuttle,
+    /// <summary>
+    /// car_tire_skid
+    /// </summary>
+    CarTireSkid,
+    /// <summary>
+    /// car_wash
+    /// </summary>
+    CarWash,
+    /// <summary>
+    /// carousel_satellite
+    /// </summary>
+    CarouselSatellite,
+    /// <summary>
+    /// carrot
+    /// </summary>
+    Carrot,
+    /// <summary>
+    /// case_study
+    /// </summary>
+    CaseStudy,
+    /// <summary>
+    /// cassette_tape
+    /// </summary>
+    CassetteTape,
+    /// <summary>
+    /// casting
+    /// </summary>
+    Casting,
+    /// <summary>
+    /// casting_button
+    /// </summary>
+    CastingButton,
+    /// <summary>
+    /// casting_circles
+    /// </summary>
+    CastingCircles,
+    /// <summary>
+    /// casting_off
+    /// </summary>
+    CastingOff,
+    /// <summary>
+    /// casual_games
+    /// </summary>
+    CasualGames,
+    /// <summary>
+    /// catch_up
+    /// </summary>
+    CatchUp,
+    /// <summary>
+    /// cemetery
+    /// </summary>
+    Cemetery,
+    /// <summary>
+    /// cfc
+    /// </summary>
+    Cfc,
+    /// <summary>
+    /// chain
+    /// </summary>
+    Chain,
+    /// <summary>
+    /// chain_end
+    /// </summary>
+    ChainEnd,
+    /// <summary>
+    /// chain_start
+    /// </summary>
+    ChainStart,
+    /// <summary>
+    /// charging_station
+    /// </summary>
+    ChargingStation,
+    /// <summary>
+    /// chat_add
+    /// </summary>
+    ChatAdd,
+    /// <summary>
+    /// chat_apps
+    /// </summary>
+    ChatApps,
+    /// <summary>
+    /// chat_bubble_add
+    /// </summary>
+    ChatBubbleAdd,
+    /// <summary>
+    /// chat_bubble_minus
+    /// </summary>
+    ChatBubbleMinus,
+    /// <summary>
+    /// chat_bubble_off
+    /// </summary>
+    ChatBubbleOff,
+    /// <summary>
+    /// chat_delete
+    /// </summary>
+    ChatDelete,
+    /// <summary>
+    /// chat_paste
+    /// </summary>
+    ChatPaste,
+    /// <summary>
+    /// checkered_flag
+    /// </summary>
+    CheckeredFlag,
+    /// <summary>
+    /// checkout
+    /// </summary>
+    Checkout,
+    /// <summary>
+    /// child_safety_lock
+    /// </summary>
+    ChildSafetyLock,
+    /// <summary>
+    /// child_track
+    /// </summary>
+    ChildTrack,
+    /// <summary>
+    /// children_only
+    /// </summary>
+    ChildrenOnly,
+    /// <summary>
+    /// city
+    /// </summary>
+    City,
+    /// <summary>
+    /// clarity
+    /// </summary>
+    Clarity,
+    /// <summary>
+    /// clear
+    /// </summary>
+    Clear,
+    /// <summary>
+    /// clear_night
+    /// </summary>
+    ClearNight,
+    /// <summary>
+    /// clip_board
+    /// </summary>
+    ClipBoard,
+    /// <summary>
+    /// clip_board_list
+    /// </summary>
+    ClipBoardList,
+    /// <summary>
+    /// clip_board_paste
+    /// </summary>
+    ClipBoardPaste,
+    /// <summary>
+    /// clover
+    /// </summary>
+    Clover,
+    /// <summary>
+    /// cloud_queue
+    /// </summary>
+    CloudQueue,
+    /// <summary>
+    /// cloudy_filled
+    /// </summary>
+    CloudyFilled,
+    /// <summary>
+    /// cloudy_snowing
+    /// </summary>
+    CloudySnowing,
+    /// <summary>
+    /// co2_sensor
+    /// </summary>
+    Co2Sensor,
+    /// <summary>
+    /// cockpit
+    /// </summary>
+    Cockpit,
+    /// <summary>
+    /// cohort
+    /// </summary>
+    Cohort,
+    /// <summary>
+    /// collections
+    /// </summary>
+    Collections,
+    /// <summary>
+    /// color_lens
+    /// </summary>
+    ColorLens,
+    /// <summary>
+    /// combo_chart
+    /// </summary>
+    ComboChart,
+    /// <summary>
+    /// commotion
+    /// </summary>
+    Commotion,
+    /// <summary>
+    /// communication_analytics
+    /// </summary>
+    CommunicationAnalytics,
+    /// <summary>
+    /// commutation
+    /// </summary>
+    Commutation,
+    /// <summary>
+    /// compact
+    /// </summary>
+    Compact,
+    /// <summary>
+    /// compact_disc
+    /// </summary>
+    CompactDisc,
+    /// <summary>
+    /// confirm_key
+    /// </summary>
+    ConfirmKey,
+    /// <summary>
+    /// congested
+    /// </summary>
+    Congested,
+    /// <summary>
+    /// congratulations
+    /// </summary>
+    Congratulations,
+    /// <summary>
+    /// contact_less
+    /// </summary>
+    ContactLess,
+    /// <summary>
+    /// contact_trash
+    /// </summary>
+    ContactTrash,
+    /// <summary>
+    /// controller
+    /// </summary>
+    Controller,
+    /// <summary>
+    /// cooperative_learning
+    /// </summary>
+    CooperativeLearning,
+    /// <summary>
+    /// core_apps
+    /// </summary>
+    CoreApps,
+    /// <summary>
+    /// corn
+    /// </summary>
+    Corn,
+    /// <summary>
+    /// coronation
+    /// </summary>
+    Coronation,
+    /// <summary>
+    /// counter_9_plus
+    /// </summary>
+    Counter9Plus,
+    /// <summary>
+    /// counter_tops
+    /// </summary>
+    CounterTops,
+    /// <summary>
+    /// creative_commons
+    /// </summary>
+    CreativeCommons,
+    /// <summary>
+    /// credit_card_person
+    /// </summary>
+    CreditCardPerson,
+    /// <summary>
+    /// credit_card_refresh
+    /// </summary>
+    CreditCardRefresh,
+    /// <summary>
+    /// credit_card_slash
+    /// </summary>
+    CreditCardSlash,
+    /// <summary>
+    /// crossroad
+    /// </summary>
+    Crossroad,
+    /// <summary>
+    /// cruising
+    /// </summary>
+    Cruising,
+    /// <summary>
+    /// cryo_room
+    /// </summary>
+    CryoRoom,
+    /// <summary>
+    /// crypto_asset
+    /// </summary>
+    CryptoAsset,
+    /// <summary>
+    /// cube
+    /// </summary>
+    Cube,
+    /// <summary>
+    /// cube_off
+    /// </summary>
+    CubeOff,
+    /// <summary>
+    /// cup
+    /// </summary>
+    Cup,
+    /// <summary>
+    /// curiosity
+    /// </summary>
+    Curiosity,
+    /// <summary>
+    /// curriculum
+    /// </summary>
+    Curriculum,
+    /// <summary>
+    /// cutting
+    /// </summary>
+    Cutting,
+    /// <summary>
+    /// data_saver_off
+    /// </summary>
+    DataSaverOff,
+    /// <summary>
+    /// dav
+    /// </summary>
+    Dav,
+    /// <summary>
+    /// debit_card
+    /// </summary>
+    DebitCard,
+    /// <summary>
+    /// decor
+    /// </summary>
+    Decor,
+    /// <summary>
+    /// decoration
+    /// </summary>
+    Decoration,
+    /// <summary>
+    /// deep_fake
+    /// </summary>
+    DeepFake,
+    /// <summary>
+    /// delete_off
+    /// </summary>
+    DeleteOff,
+    /// <summary>
+    /// dental
+    /// </summary>
+    Dental,
+    /// <summary>
+    /// deploy
+    /// </summary>
+    Deploy,
+    /// <summary>
+    /// deployment_cluster
+    /// </summary>
+    DeploymentCluster,
+    /// <summary>
+    /// deployment_cluster_off
+    /// </summary>
+    DeploymentClusterOff,
+    /// <summary>
+    /// deployment_incidents
+    /// </summary>
+    DeploymentIncidents,
+    /// <summary>
+    /// deployment_incidents_alert
+    /// </summary>
+    DeploymentIncidentsAlert,
+    /// <summary>
+    /// deployment_off
+    /// </summary>
+    DeploymentOff,
+    /// <summary>
+    /// dermatologist
+    /// </summary>
+    Dermatologist,
+    /// <summary>
+    /// desalination
+    /// </summary>
+    Desalination,
+    /// <summary>
+    /// detox
+    /// </summary>
+    Detox,
+    /// <summary>
+    /// developer_mode
+    /// </summary>
+    DeveloperMode,
+    /// <summary>
+    /// devices_access
+    /// </summary>
+    DevicesAccess,
+    /// <summary>
+    /// diet
+    /// </summary>
+    Diet,
+    /// <summary>
+    /// diff
+    /// </summary>
+    Diff,
+    /// <summary>
+    /// dirt
+    /// </summary>
+    Dirt,
+    /// <summary>
+    /// dirt_road
+    /// </summary>
+    DirtRoad,
+    /// <summary>
+    /// dish
+    /// </summary>
+    Dish,
+    /// <summary>
+    /// dish_spaghetti
+    /// </summary>
+    DishSpaghetti,
+    /// <summary>
+    /// doc_scanner
+    /// </summary>
+    DocScanner,
+    /// <summary>
+    /// dock
+    /// </summary>
+    Dock,
+    /// <summary>
+    /// dogs_and_cats
+    /// </summary>
+    DogsAndCats,
+    /// <summary>
+    /// done
+    /// </summary>
+    Done,
+    /// <summary>
+    /// donuts
+    /// </summary>
+    Donuts,
+    /// <summary>
+    /// doorbell_3
+    /// </summary>
+    Doorbell3,
+    /// <summary>
+    /// drag_and_drop
+    /// </summary>
+    DragAndDrop,
+    /// <summary>
+    /// drag_and_drop_fill
+    /// </summary>
+    DragAndDropFill,
+    /// <summary>
+    /// drain
+    /// </summary>
+    Drain,
+    /// <summary>
+    /// drain_service
+    /// </summary>
+    DrainService,
+    /// <summary>
+    /// drawing_pin
+    /// </summary>
+    DrawingPin,
+    /// <summary>
+    /// drive_file_move_rtl
+    /// </summary>
+    DriveFileMoveRtl,
+    /// <summary>
+    /// drive_file_rename
+    /// </summary>
+    DriveFileRename,
+    /// <summary>
+    /// drowning
+    /// </summary>
+    Drowning,
+    /// <summary>
+    /// eager
+    /// </summary>
+    Eager,
+    /// <summary>
+    /// egg_fried
+    /// </summary>
+    EggFried,
+    /// <summary>
+    /// ekg
+    /// </summary>
+    Ekg,
+    /// <summary>
+    /// ellipsis
+    /// </summary>
+    Ellipsis,
+    /// <summary>
+    /// ellipsis_h
+    /// </summary>
+    EllipsisH,
+    /// <summary>
+    /// emotikon
+    /// </summary>
+    Emotikon,
+    /// <summary>
+    /// end_of_line
+    /// </summary>
+    EndOfLine,
+    /// <summary>
+    /// enter_key
+    /// </summary>
+    EnterKey,
+    /// <summary>
+    /// equity
+    /// </summary>
+    Equity,
+    /// <summary>
+    /// equity_risk_end
+    /// </summary>
+    EquityRiskEnd,
+    /// <summary>
+    /// equity_risk_start
+    /// </summary>
+    EquityRiskStart,
+    /// <summary>
+    /// erosion
+    /// </summary>
+    Erosion,
+    /// <summary>
+    /// estimate
+    /// </summary>
+    Estimate,
+    /// <summary>
+    /// evil
+    /// </summary>
+    Evil,
+    /// <summary>
+    /// exchange
+    /// </summary>
+    Exchange,
+    /// <summary>
+    /// exfoliate
+    /// </summary>
+    Exfoliate,
+    /// <summary>
+    /// exfoliate_rounded
+    /// </summary>
+    ExfoliateRounded,
+    /// <summary>
+    /// expand_less
+    /// </summary>
+    ExpandLess,
+    /// <summary>
+    /// expand_more
+    /// </summary>
+    ExpandMore,
+    /// <summary>
+    /// fan
+    /// </summary>
+    Fan,
+    /// <summary>
+    /// farm
+    /// </summary>
+    Farm,
+    /// <summary>
+    /// feather
+    /// </summary>
+    Feather,
+    /// <summary>
+    /// file_download
+    /// </summary>
+    FileDownload,
+    /// <summary>
+    /// file_download_done
+    /// </summary>
+    FileDownloadDone,
+    /// <summary>
+    /// file_upload
+    /// </summary>
+    FileUpload,
+    /// <summary>
+    /// filter_hdr
+    /// </summary>
+    FilterHdr,
+    /// <summary>
+    /// financial_product
+    /// </summary>
+    FinancialProduct,
+    /// <summary>
+    /// fire_truck_2
+    /// </summary>
+    FireTruck2,
+    /// <summary>
+    /// first_page_media
+    /// </summary>
+    FirstPageMedia,
+    /// <summary>
+    /// flag_filled
+    /// </summary>
+    FlagFilled,
+    /// <summary>
+    /// flame
+    /// </summary>
+    Flame,
+    /// <summary>
+    /// flame_hydrant
+    /// </summary>
+    FlameHydrant,
+    /// <summary>
+    /// flex_end
+    /// </summary>
+    FlexEnd,
+    /// <summary>
+    /// flex_start
+    /// </summary>
+    FlexStart,
+    /// <summary>
+    /// flightsmode
+    /// </summary>
+    Flightsmode,
+    /// <summary>
+    /// fluid_brakes
+    /// </summary>
+    FluidBrakes,
+    /// <summary>
+    /// fluid_coolant
+    /// </summary>
+    FluidCoolant,
+    /// <summary>
+    /// fluid_level
+    /// </summary>
+    FluidLevel,
+    /// <summary>
+    /// fluid_transmission
+    /// </summary>
+    FluidTransmission,
+    /// <summary>
+    /// fluid_window_wash
+    /// </summary>
+    FluidWindowWash,
+    /// <summary>
+    /// flushed
+    /// </summary>
+    Flushed,
+    /// <summary>
+    /// focal_length
+    /// </summary>
+    FocalLength,
+    /// <summary>
+    /// folder_zip_off
+    /// </summary>
+    FolderZipOff,
+    /// <summary>
+    /// folders
+    /// </summary>
+    Folders,
+    /// <summary>
+    /// format_strikethrough_s
+    /// </summary>
+    FormatStrikethroughS,
+    /// <summary>
+    /// format_underlined_sq
+    /// </summary>
+    FormatUnderlinedSq,
+    /// <summary>
+    /// fortress
+    /// </summary>
+    Fortress,
+    /// <summary>
+    /// forwarding
+    /// </summary>
+    Forwarding,
+    /// <summary>
+    /// fountain_pen
+    /// </summary>
+    FountainPen,
+    /// <summary>
+    /// frame
+    /// </summary>
+    Frame,
+    /// <summary>
+    /// free_form_mode
+    /// </summary>
+    FreeFormMode,
+    /// <summary>
+    /// free_mode
+    /// </summary>
+    FreeMode,
+    /// <summary>
+    /// freezes
+    /// </summary>
+    Freezes,
+    /// <summary>
+    /// freight_container
+    /// </summary>
+    FreightContainer,
+    /// <summary>
+    /// frizz
+    /// </summary>
+    Frizz,
+    /// <summary>
+    /// functionality
+    /// </summary>
+    Functionality,
+    /// <summary>
+    /// fusion_table
+    /// </summary>
+    FusionTable,
+    /// <summary>
+    /// gaggle
+    /// </summary>
+    Gaggle,
+    /// <summary>
+    /// game_controller
+    /// </summary>
+    GameController,
+    /// <summary>
+    /// game_controller_off
+    /// </summary>
+    GameControllerOff,
+    /// <summary>
+    /// gather
+    /// </summary>
+    Gather,
+    /// <summary>
+    /// gauging
+    /// </summary>
+    Gauging,
+    /// <summary>
+    /// generating_tokens
+    /// </summary>
+    GeneratingTokens,
+    /// <summary>
+    /// gauge
+    /// </summary>
+    Gauge,
+    /// <summary>
+    /// gesture_hand
+    /// </summary>
+    GestureHand,
+    /// <summary>
+    /// glasses
+    /// </summary>
+    Glasses,
+    /// <summary>
+    /// globe_europe
+    /// </summary>
+    GlobeEurope,
+    /// <summary>
+    /// google_plus_reshare
+    /// </summary>
+    GooglePlusReshare,
+    /// <summary>
+    /// google_travel
+    /// </summary>
+    GoogleTravel,
+    /// <summary>
+    /// gps_fixed
+    /// </summary>
+    GpsFixed,
+    /// <summary>
+    /// gps_not_fixed
+    /// </summary>
+    GpsNotFixed,
+    /// <summary>
+    /// gps_off
+    /// </summary>
+    GpsOff,
+    /// <summary>
+    /// grab_handle
+    /// </summary>
+    GrabHandle,
+    /// <summary>
+    /// grade
+    /// </summary>
+    Grade,
+    /// <summary>
+    /// groups_with_stories
+    /// </summary>
+    GroupsWithStories,
+    /// <summary>
+    /// guest_star
+    /// </summary>
+    GuestStar,
+    /// <summary>
+    /// guesthouse
+    /// </summary>
+    Guesthouse,
+    /// <summary>
+    /// hair
+    /// </summary>
+    Hair,
+    /// <summary>
+    /// hairdryer
+    /// </summary>
+    Hairdryer,
+    /// <summary>
+    /// hairdryer_front
+    /// </summary>
+    HairdryerFront,
+    /// <summary>
+    /// hand_wave
+    /// </summary>
+    HandWave,
+    /// <summary>
+    /// hand_writing
+    /// </summary>
+    HandWriting,
+    /// <summary>
+    /// handball
+    /// </summary>
+    Handball,
+    /// <summary>
+    /// handshakes
+    /// </summary>
+    Handshakes,
+    /// <summary>
+    /// handwashing
+    /// </summary>
+    Handwashing,
+    /// <summary>
+    /// handwashing_bubbles
+    /// </summary>
+    HandwashingBubbles,
+    /// <summary>
+    /// hardwood
+    /// </summary>
+    Hardwood,
+    /// <summary>
+    /// hats
+    /// </summary>
+    Hats,
+    /// <summary>
+    /// haze
+    /// </summary>
+    Haze,
+    /// <summary>
+    /// haze_night
+    /// </summary>
+    HazeNight,
+    /// <summary>
+    /// headphones_off
+    /// </summary>
+    HeadphonesOff,
+    /// <summary>
+    /// help_circle
+    /// </summary>
+    HelpCircle,
+    /// <summary>
+    /// help_desk
+    /// </summary>
+    HelpDesk,
+    /// <summary>
+    /// help_outline
+    /// </summary>
+    HelpOutline,
+    /// <summary>
+    /// hexagon_off
+    /// </summary>
+    HexagonOff,
+    /// <summary>
+    /// highway
+    /// </summary>
+    Highway,
+    /// <summary>
+    /// hotel_services
+    /// </summary>
+    HotelServices,
+    /// <summary>
+    /// hourglass_full
+    /// </summary>
+    HourglassFull,
+    /// <summary>
+    /// humidifier
+    /// </summary>
+    Humidifier,
+    /// <summary>
+    /// hurricane
+    /// </summary>
+    Hurricane,
+    /// <summary>
+    /// hybrid
+    /// </summary>
+    Hybrid,
+    /// <summary>
+    /// hydration
+    /// </summary>
+    Hydration,
+    /// <summary>
+    /// hydroelectric_power
+    /// </summary>
+    HydroelectricPower,
+    /// <summary>
+    /// hydrant
+    /// </summary>
+    Hydrant,
+    /// <summary>
+    /// hypnosis
+    /// </summary>
+    Hypnosis,
+    /// <summary>
+    /// i_mode
+    /// </summary>
+    IMode,
+    /// <summary>
+    /// image_not_supported
+    /// </summary>
+    ImageNotSupported,
+    /// <summary>
+    /// inbox_full
+    /// </summary>
+    InboxFull,
+    /// <summary>
+    /// incense
+    /// </summary>
+    Incense,
+    /// <summary>
+    /// indent_decrease
+    /// </summary>
+    IndentDecrease,
+    /// <summary>
+    /// indent_increase
+    /// </summary>
+    IndentIncrease,
+    /// <summary>
+    /// individual_track
+    /// </summary>
+    IndividualTrack,
+    /// <summary>
+    /// indoor_garden
+    /// </summary>
+    IndoorGarden,
+    /// <summary>
+    /// indoor_grill
+    /// </summary>
+    IndoorGrill,
+    /// <summary>
+    /// injection
+    /// </summary>
+    Injection,
+    /// <summary>
+    /// ink_bottle
+    /// </summary>
+    InkBottle,
+    /// <summary>
+    /// inking_tool
+    /// </summary>
+    InkingTool,
+    /// <summary>
+    /// install_mobile
+    /// </summary>
+    InstallMobile,
+    /// <summary>
+    /// instant_standby
+    /// </summary>
+    InstantStandby,
+    /// <summary>
+    /// intersections
+    /// </summary>
+    Intersections,
+    /// <summary>
+    /// invert_device
+    /// </summary>
+    InvertDevice,
+    /// <summary>
+    /// jewelry
+    /// </summary>
+    Jewelry,
+    /// <summary>
+    /// job_applicant
+    /// </summary>
+    JobApplicant,
+    /// <summary>
+    /// job_yield
+    /// </summary>
+    JobYield,
+    /// <summary>
+    /// jogging
+    /// </summary>
+    Jogging,
+    /// <summary>
+    /// join_full
+    /// </summary>
+    JoinFull,
+    /// <summary>
+    /// kayak
+    /// </summary>
+    Kayak,
+    /// <summary>
+    /// kennel
+    /// </summary>
+    Kennel,
+    /// <summary>
+    /// keyboard_control
+    /// </summary>
+    KeyboardControl,
+    /// <summary>
+    /// keyboard_key
+    /// </summary>
+    KeyboardKey,
+    /// <summary>
+    /// keyboard_voice
+    /// </summary>
+    KeyboardVoice,
+    /// <summary>
+    /// ktx
+    /// </summary>
+    Ktx,
+    /// <summary>
+    /// ktx_alt
+    /// </summary>
+    KtxAlt,
+    /// <summary>
     /// label_outline
     /// </summary>
     LabelOutline,
@@ -5186,22 +8503,6 @@ public enum GoogleFontIconName
     /// laboratory
     /// </summary>
     Laboratory,
-    /// <summary>
-    /// landscape
-    /// </summary>
-    Landscape,
-    /// <summary>
-    /// landslide
-    /// </summary>
-    Landslide,
-    /// <summary>
-    /// language_chinese_array
-    /// </summary>
-    LanguageChineseArray,
-    /// <summary>
-    /// language_chinese_pinyin
-    /// </summary>
-    LanguageChinesePinyin,
     /// <summary>
     /// language_us
     /// </summary>
@@ -5651,10 +8952,6 @@ public enum GoogleFontIconName
     /// </summary>
     Medication,
     /// <summary>
-    /// medication_liquid
-    /// </summary>
-    MedicationLiquid,
-    /// <summary>
     /// membership
     /// </summary>
     Membership,
@@ -5746,10 +9043,6 @@ public enum GoogleFontIconName
     /// mobile_screen_share
     /// </summary>
     MobileScreenShare,
-    /// <summary>
-    /// mobiledata_off
-    /// </summary>
-    MobiledataOff,
     /// <summary>
     /// mode_fan
     /// </summary>
@@ -8274,10 +11567,6 @@ public enum GoogleFontIconName
     /// things_to_do
     /// </summary>
     ThingsToDo,
-    /// <summary>
-    /// three_d_rotation
-    /// </summary>
-    ThreeDRotation,
     /// <summary>
     /// thunderstorm
     /// </summary>
