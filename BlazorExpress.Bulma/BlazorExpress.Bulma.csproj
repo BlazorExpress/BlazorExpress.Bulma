@@ -13,7 +13,7 @@
     <Authors>Vikram Reddy</Authors>
     <Company>Blazor Express</Company>
     <Copyright>Copyright © 2025 Blazor Express</Copyright>    
-    <TargetFrameworks>net8.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <OutputType>Library</OutputType>
