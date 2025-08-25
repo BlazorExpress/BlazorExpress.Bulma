@@ -7426,10 +7426,10 @@ public enum GoogleFontIconName
     ///  lens_blur
     /// </summary>
     LensBlur,
-/// <summary>
-///  letter_switch
-/// </summary>
-,
+    /// <summary>
+    ///  letter_switch
+    /// </summary>
+    LetterSwitch,
     /// <summary>
     ///  library_add
     /// </summary>
@@ -7534,14 +7534,14 @@ public enum GoogleFontIconName
     ///  line_start_circle
     /// </summary>
     LineStartCircle,
-/// <summary>
-///  line_start_diamond
-/// </summary>
-,
-/// <summary>
-///  line_start_square
-/// </summary>
-,
+    /// <summary>
+    ///  line_start_diamond
+    /// </summary>
+    LineStartDiamond,
+    /// <summary>
+    ///  line_start_square
+    /// </summary>
+    LineStartSquare,
     /// <summary>
     ///  line_style
     /// </summary>
@@ -7562,18 +7562,18 @@ public enum GoogleFontIconName
     ///  link_off
     /// </summary>
     LinkOff,
-/// <summary>
-///  linked_camera
-/// </summary>
-,
+    /// <summary>
+    ///  linked_camera
+    /// </summary>
+    LinkedCamera,
     /// <summary>
     ///  linked_services
     /// </summary>
     LinkedServices,
-/// <summary>
-///  liquor
-/// </summary>
-,
+    /// <summary>
+    ///  liquor
+    /// </summary>
+    Liquor,
     /// <summary>
     ///  list
     /// </summary>
@@ -7586,66 +7586,66 @@ public enum GoogleFontIconName
     ///  list_alt_add
     /// </summary>
     ListAltAdd,
-/// <summary>
-///  list_alt_check
-/// </summary>
-,
-/// <summary>
-///  lists
-/// </summary>
-,
-/// <summary>
-///  live_help
-/// </summary>
-,
-/// <summary>
-///  live_tv
-/// </summary>
-,
-/// <summary>
-///  living
-/// </summary>
-,
-/// <summary>
-///  local_activity
-/// </summary>
-,
-/// <summary>
-///  local_atm
-/// </summary>
-,
-/// <summary>
-///  local_bar
-/// </summary>
-,
-/// <summary>
-///  local_cafe
-/// </summary>
-,
-/// <summary>
-///  local_car_wash
-/// </summary>
-,
-/// <summary>
-///  local_convenience_store
-/// </summary>
-,
-/// <summary>
-///  local_dining
-/// </summary>
-,
-/// <summary>
-///  local_drink
-/// </summary>
-,
-/// <summary>
-///  local_fire_department
-/// </summary>
-,
-/// <summary>
-///  local_florist
-/// </summary>
-,
+    /// <summary>
+    ///  list_alt_check
+    /// </summary>
+    ListAltCheck,
+    /// <summary>
+    ///  lists
+    /// </summary>
+    Lists,
+    /// <summary>
+    ///  live_help
+    /// </summary>
+    LiveHelp,
+    /// <summary>
+    ///  live_tv
+    /// </summary>
+    LiveTv,
+    /// <summary>
+    ///  living
+    /// </summary>
+    Living,
+    /// <summary>
+    ///  local_activity
+    /// </summary>
+    LocalActivity,
+    /// <summary>
+    ///  local_atm
+    /// </summary>
+    LocalAtm,
+    /// <summary>
+    ///  local_bar
+    /// </summary>
+    LocalBar,
+    /// <summary>
+    ///  local_cafe
+    /// </summary>
+    LocalCafe,
+    /// <summary>
+    ///  local_car_wash
+    /// </summary>
+    LocalCarWash,
+    /// <summary>
+    ///  local_convenience_store
+    /// </summary>
+    LocalConvenienceStore,
+    /// <summary>
+    ///  local_dining
+    /// </summary>
+    LocalDining,
+    /// <summary>
+    ///  local_drink
+    /// </summary>
+    LocalDrink,
+    /// <summary>
+    ///  local_fire_department
+    /// </summary>
+    LocalFireDepartment,
+    /// <summary>
+    ///  local_florist
+    /// </summary>
+    LocalFlorist,
 /// <summary>
 ///  local_gas_station
 /// </summary>
