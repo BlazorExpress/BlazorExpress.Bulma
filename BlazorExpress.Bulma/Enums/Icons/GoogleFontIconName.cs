@@ -8242,126 +8242,126 @@ public enum GoogleFontIconName
     ///  mobile_arrow_down
     /// </summary>
     MobileArrowDown,
-/// <summary>
-///  mobile_arrow_right
-/// </summary>
-,
-/// <summary>
-///  mobile_arrow_up_right
-/// </summary>
-,
-/// <summary>
-///  mobile_block
-/// </summary>
-,
-/// <summary>
-///  mobile_camera
-/// </summary>
-,
-/// <summary>
-///  mobile_camera_front
-/// </summary>
-,
-/// <summary>
-///  mobile_camera_rear
-/// </summary>
-,
-/// <summary>
-///  mobile_cancel
-/// </summary>
-,
-/// <summary>
-///  mobile_cast
-/// </summary>
-,
-/// <summary>
-///  mobile_charge
-/// </summary>
-,
-/// <summary>
-///  mobile_chat
-/// </summary>
-,
-/// <summary>
-///  mobile_check
-/// </summary>
-,
-/// <summary>
-///  mobile_code
-/// </summary>
-,
-/// <summary>
-///  mobile_dots
-/// </summary>
-,
-/// <summary>
-///  mobile_gear
-/// </summary>
-,
-/// <summary>
-///  mobile_hand
-/// </summary>
-,
-/// <summary>
-///  mobile_hand_left
-/// </summary>
-,
-/// <summary>
-///  mobile_hand_left_off
-/// </summary>
-,
-/// <summary>
-///  mobile_hand_off
-/// </summary>
-,
-/// <summary>
-///  mobile_info
-/// </summary>
-,
-/// <summary>
-///  mobile_landscape
-/// </summary>
-,
-/// <summary>
-///  mobile_layout
-/// </summary>
-,
-/// <summary>
-///  mobile_lock_landscape
-/// </summary>
-,
-/// <summary>
-///  mobile_lock_portrait
-/// </summary>
-,
-/// <summary>
-///  mobile_loupe
-/// </summary>
-,
-/// <summary>
-///  mobile_menu
-/// </summary>
-,
+    /// <summary>
+    ///  mobile_arrow_right
+    /// </summary>
+    MobileArrowRight,
+    /// <summary>
+    ///  mobile_arrow_up_right
+    /// </summary>
+    MobileArrowUpRight,
+    /// <summary>
+    ///  mobile_block
+    /// </summary>
+    MobileBlock,
+    /// <summary>
+    ///  mobile_camera
+    /// </summary>
+    MobileCamera,
+    /// <summary>
+    ///  mobile_camera_front
+    /// </summary>
+    MobileCameraFront,
+    /// <summary>
+    ///  mobile_camera_rear
+    /// </summary>
+    MobileCameraRear,
+    /// <summary>
+    ///  mobile_cancel
+    /// </summary>
+    MobileCancel,
+    /// <summary>
+    ///  mobile_cast
+    /// </summary>
+    MobileCast,
+    /// <summary>
+    ///  mobile_charge
+    /// </summary>
+    MobileCharge,
+    /// <summary>
+    ///  mobile_chat
+    /// </summary>
+    MobileChat,
+    /// <summary>
+    ///  mobile_check
+    /// </summary>
+    MobileCheck,
+    /// <summary>
+    ///  mobile_code
+    /// </summary>
+    MobileCode,
+    /// <summary>
+    ///  mobile_dots
+    /// </summary>
+    MobileDots,
+    /// <summary>
+    ///  mobile_gear
+    /// </summary>
+    MobileGear,
+    /// <summary>
+    ///  mobile_hand
+    /// </summary>
+    MobileHand,
+    /// <summary>
+    ///  mobile_hand_left
+    /// </summary>
+    MobileHandLeft,
+    /// <summary>
+    ///  mobile_hand_left_off
+    /// </summary>
+    MobileHandLeftOff,
+    /// <summary>
+    ///  mobile_hand_off
+    /// </summary>
+    MobileHandOff,
+    /// <summary>
+    ///  mobile_info
+    /// </summary>
+    MobileInfo,
+    /// <summary>
+    ///  mobile_landscape
+    /// </summary>
+    MobileLandscape,
+    /// <summary>
+    ///  mobile_layout
+    /// </summary>
+    MobileLayout,
+    /// <summary>
+    ///  mobile_lock_landscape
+    /// </summary>
+    MobileLockLandscape,
+    /// <summary>
+    ///  mobile_lock_portrait
+    /// </summary>
+    MobileLockPortrait,
+    /// <summary>
+    ///  mobile_loupe
+    /// </summary>
+    MobileLoupe,
+    /// <summary>
+    ///  mobile_menu
+    /// </summary>
+    MobileMenu,
     /// <summary>
     ///  mobile_off
     /// </summary>
     MobileOff,
-/// <summary>
-///  mobile_question
-/// </summary>
-,
-/// <summary>
-///  mobile_rotate
-/// </summary>
-,
-/// <summary>
-///  mobile_rotate_lock
-/// </summary>
-,
-/// <summary>
-///  mobile_screensaver
-/// </summary>
-,
+    /// <summary>
+    ///  mobile_question
+    /// </summary>
+    MobileQuestion,
+    /// <summary>
+    ///  mobile_rotate
+    /// </summary>
+    MobileRotate,
+    /// <summary>
+    ///  mobile_rotate_lock
+    /// </summary>
+    MobileRotateLock,
+    /// <summary>
+    ///  mobile_screensaver
+    /// </summary>
+    MobileScreensaver,
 /// <summary>
 ///  mobile_sensor_hi
 /// </summary>
