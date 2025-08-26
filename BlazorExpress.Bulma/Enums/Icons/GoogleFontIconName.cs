@@ -8550,62 +8550,62 @@ public enum GoogleFontIconName
     ///  moped_package
     /// </summary>
     MopedPackage,
-/// <summary>
-///  more
-/// </summary>
-,
-/// <summary>
-///  more_down
-/// </summary>
-,
-/// <summary>
-///  more_horiz
-/// </summary>
-,
-/// <summary>
-///  more_time
-/// </summary>
-,
-/// <summary>
-///  more_up
-/// </summary>
-,
-/// <summary>
-///  more_vert
-/// </summary>
-,
-/// <summary>
-///  mosque
-/// </summary>
-,
-/// <summary>
-///  motion_blur
-/// </summary>
-,
-/// <summary>
-///  motion_mode
-/// </summary>
-,
-/// <summary>
-///  motion_photos_auto
-/// </summary>
-,
-/// <summary>
-///  motion_photos_off
-/// </summary>
-,
-/// <summary>
-///  motion_photos_on
-/// </summary>
-,
-/// <summary>
-///  motion_photos_paused
-/// </summary>
-,
-/// <summary>
-///  motion_play
-/// </summary>
-,
+    /// <summary>
+    ///  more
+    /// </summary>
+    More,
+    /// <summary>
+    ///  more_down
+    /// </summary>
+    MoreDown,
+    /// <summary>
+    ///  more_horiz
+    /// </summary>
+    MoreHoriz,
+    /// <summary>
+    ///  more_time
+    /// </summary>
+    MoreTime,
+    /// <summary>
+    ///  more_up
+    /// </summary>
+    MoreUp,
+    /// <summary>
+    ///  more_vert
+    /// </summary>
+    MoreVert,
+    /// <summary>
+    ///  mosque
+    /// </summary>
+    Mosque,
+    /// <summary>
+    ///  motion_blur
+    /// </summary>
+    MotionBlur,
+    /// <summary>
+    ///  motion_mode
+    /// </summary>
+    MotionMode,
+    /// <summary>
+    ///  motion_photos_auto
+    /// </summary>
+    MotionPhotosAuto,
+    /// <summary>
+    ///  motion_photos_off
+    /// </summary>
+    MotionPhotosOff,
+    /// <summary>
+    ///  motion_photos_on
+    /// </summary>
+    MotionPhotosOn,
+    /// <summary>
+    ///  motion_photos_paused
+    /// </summary>
+    MotionPhotosPaused,
+    /// <summary>
+    ///  motion_play
+    /// </summary>
+    MotionPlay,
     /// <summary>
     ///  motion_sensor_active
     /// </summary>
@@ -8630,94 +8630,94 @@ public enum GoogleFontIconName
     ///  mountain_flag
     /// </summary>
     MountainFlag,
-/// <summary>
-///  mountain_steam
-/// </summary>
-,
-/// <summary>
-///  mouse
-/// </summary>
-,
-/// <summary>
-///  mouse_lock
-/// </summary>
-,
-/// <summary>
-///  mouse_lock_off
-/// </summary>
-,
-/// <summary>
-///  move
-/// </summary>
-,
-/// <summary>
-///  move_down
-/// </summary>
-,
-/// <summary>
-///  move_group
-/// </summary>
-,
-/// <summary>
-///  move_item
-/// </summary>
-,
-/// <summary>
-///  move_location
-/// </summary>
-,
-/// <summary>
-///  move_selection_down
-/// </summary>
-,
-/// <summary>
-///  move_selection_left
-/// </summary>
-,
-/// <summary>
-///  move_selection_right
-/// </summary>
-,
-/// <summary>
-///  move_selection_up
-/// </summary>
-,
-/// <summary>
-///  move_to_inbox
-/// </summary>
-,
-/// <summary>
-///  move_up
-/// </summary>
-,
-/// <summary>
-///  moved_location
-/// </summary>
-,
+    /// <summary>
+    ///  mountain_steam
+    /// </summary>
+    MountainSteam,
+    /// <summary>
+    ///  mouse
+    /// </summary>
+    Mouse,
+    /// <summary>
+    ///  mouse_lock
+    /// </summary>
+    MouseLock,
+    /// <summary>
+    ///  mouse_lock_off
+    /// </summary>
+    MouseLockOff,
+    /// <summary>
+    ///  move
+    /// </summary>
+    Move,
+    /// <summary>
+    ///  move_down
+    /// </summary>
+    MoveDown,
+    /// <summary>
+    ///  move_group
+    /// </summary>
+    MoveGroup,
+    /// <summary>
+    ///  move_item
+    /// </summary>
+    MoveItem,
+    /// <summary>
+    ///  move_location
+    /// </summary>
+    MoveLocation,
+    /// <summary>
+    ///  move_selection_down
+    /// </summary>
+    MoveSelectionDown,
+    /// <summary>
+    ///  move_selection_left
+    /// </summary>
+    MoveSelectionLeft,
+    /// <summary>
+    ///  move_selection_right
+    /// </summary>
+    MoveSelectionRight,
+    /// <summary>
+    ///  move_selection_up
+    /// </summary>
+    MoveSelectionUp,
+    /// <summary>
+    ///  move_to_inbox
+    /// </summary>
+    MoveToInbox,
+    /// <summary>
+    ///  move_up
+    /// </summary>
+    MoveUp,
+    /// <summary>
+    ///  moved_location
+    /// </summary>
+    MovedLocation,
     /// <summary>
     ///  movie
     /// </summary>
     Movie,
-/// <summary>
-///  movie_edit
-/// </summary>
-,
-/// <summary>
-///  movie_info
-/// </summary>
-,
-/// <summary>
-///  movie_off
-/// </summary>
-,
-/// <summary>
-///  movie_speaker
-/// </summary>
-,
-/// <summary>
-///  moving
-/// </summary>
-,
+    /// <summary>
+    ///  movie_edit
+    /// </summary>
+    MovieEdit,
+    /// <summary>
+    ///  movie_info
+    /// </summary>
+    MovieInfo,
+    /// <summary>
+    ///  movie_off
+    /// </summary>
+    MovieOff,
+    /// <summary>
+    ///  movie_speaker
+    /// </summary>
+    MovieSpeaker,
+    /// <summary>
+    ///  moving
+    /// </summary>
+    Moving,
     /// <summary>
     ///  moving_beds
     /// </summary>
