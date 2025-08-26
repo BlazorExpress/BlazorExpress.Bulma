@@ -8506,22 +8506,22 @@ public enum GoogleFontIconName
     ///  monitor_weight
     /// </summary>
     MonitorWeight,
-/// <summary>
-///  monitor_weight_gain
-/// </summary>
-,
-/// <summary>
-///  monitor_weight_loss
-/// </summary>
-,
+    /// <summary>
+    ///  monitor_weight_gain
+    /// </summary>
+    MonitorWeightGain,
+    /// <summary>
+    ///  monitor_weight_loss
+    /// </summary>
+    MonitorWeightLoss,
     /// <summary>
     ///  monitoring
     /// </summary>
     Monitoring,
-/// <summary>
-///  monochrome_photos
-/// </summary>
-,
+    /// <summary>
+    ///  monochrome_photos
+    /// </summary>
+    MonochromePhotos,
     /// <summary>
     ///  monorail
     /// </summary>
@@ -8534,22 +8534,22 @@ public enum GoogleFontIconName
     ///  mood_bad
     /// </summary>
     MoodBad,
-/// <summary>
-///  moon_stars
-/// </summary>
-,
-/// <summary>
-///  mop
-/// </summary>
-,
+    /// <summary>
+    ///  moon_stars
+    /// </summary>
+    MoonStars,
+    /// <summary>
+    ///  mop
+    /// </summary>
+    Mop,
     /// <summary>
     ///  moped
     /// </summary>
     Moped,
-/// <summary>
-///  moped_package
-/// </summary>
-,
+    /// <summary>
+    ///  moped_package
+    /// </summary>
+    MopedPackage,
 /// <summary>
 ///  more
 /// </summary>
