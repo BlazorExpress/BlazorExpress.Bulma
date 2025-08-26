@@ -7646,94 +7646,94 @@ public enum GoogleFontIconName
     ///  local_florist
     /// </summary>
     LocalFlorist,
-/// <summary>
-///  local_gas_station
-/// </summary>
-,
-/// <summary>
-///  local_hospital
-/// </summary>
-,
-/// <summary>
-///  local_laundry_service
-/// </summary>
-,
-/// <summary>
-///  local_library
-/// </summary>
-,
-/// <summary>
-///  local_mall
-/// </summary>
-,
-/// <summary>
-///  local_parking
-/// </summary>
-,
-/// <summary>
-///  local_pharmacy
-/// </summary>
-,
-/// <summary>
-///  local_pizza
-/// </summary>
-,
-/// <summary>
-///  local_police
-/// </summary>
-,
-/// <summary>
-///  local_post_office
-/// </summary>
-,
-/// <summary>
-///  local_see
-/// </summary>
-,
-/// <summary>
-///  local_shipping
-/// </summary>
-,
-/// <summary>
-///  local_taxi
-/// </summary>
-,
-/// <summary>
-///  location_away
-/// </summary>
-,
-/// <summary>
-///  location_chip
-/// </summary>
-,
-/// <summary>
-///  location_city
-/// </summary>
-,
-/// <summary>
-///  location_disabled
-/// </summary>
-,
-/// <summary>
-///  location_home
-/// </summary>
-,
-/// <summary>
-///  location_off
-/// </summary>
-,
-/// <summary>
-///  location_on
-/// </summary>
-,
-/// <summary>
-///  location_searching
-/// </summary>
-,
-/// <summary>
-///  lock
-/// </summary>
-,
+    /// <summary>
+    ///  local_gas_station
+    /// </summary>
+    LocalGasStation,
+    /// <summary>
+    ///  local_hospital
+    /// </summary>
+    LocalHospital,
+    /// <summary>
+    ///  local_laundry_service
+    /// </summary>
+    LocalLaundryService,
+    /// <summary>
+    ///  local_library
+    /// </summary>
+    LocalLibrary,
+    /// <summary>
+    ///  local_mall
+    /// </summary>
+    LocalMall,
+    /// <summary>
+    ///  local_parking
+    /// </summary>
+    LocalParking,
+    /// <summary>
+    ///  local_pharmacy
+    /// </summary>
+    LocalPharmacy,
+    /// <summary>
+    ///  local_pizza
+    /// </summary>
+    LocalPizza,
+    /// <summary>
+    ///  local_police
+    /// </summary>
+    LocalPolice,
+    /// <summary>
+    ///  local_post_office
+    /// </summary>
+    LocalPostOffice,
+    /// <summary>
+    ///  local_see
+    /// </summary>
+    LocalSee,
+    /// <summary>
+    ///  local_shipping
+    /// </summary>
+    LocalShipping,
+    /// <summary>
+    ///  local_taxi
+    /// </summary>
+    LocalTaxi,
+    /// <summary>
+    ///  location_away
+    /// </summary>
+    LocationAway,
+    /// <summary>
+    ///  location_chip
+    /// </summary>
+    LocationChip,
+    /// <summary>
+    ///  location_city
+    /// </summary>
+    LocationCity,
+    /// <summary>
+    ///  location_disabled
+    /// </summary>
+    LocationDisabled,
+    /// <summary>
+    ///  location_home
+    /// </summary>
+    LocationHome,
+    /// <summary>
+    ///  location_off
+    /// </summary>
+    LocationOff,
+    /// <summary>
+    ///  location_on
+    /// </summary>
+    LocationOn,
+    /// <summary>
+    ///  location_searching
+    /// </summary>
+    LocationSearching,
+    /// <summary>
+    ///  lock
+    /// </summary>
+    Lock,
     /// <summary>
     ///  lock_clock
     /// </summary>
@@ -7742,14 +7742,14 @@ public enum GoogleFontIconName
     ///  lock_open
     /// </summary>
     LockOpen,
-/// <summary>
-///  lock_open_circle
-/// </summary>
-,
-/// <summary>
-///  lock_open_right
-/// </summary>
-,
+    /// <summary>
+    ///  lock_open_circle
+    /// </summary>
+    LockOpenCircle,
+    /// <summary>
+    ///  lock_open_right
+    /// </summary>
+    LockOpenRight,
     /// <summary>
     ///  lock_person
     /// </summary>
@@ -7758,10 +7758,10 @@ public enum GoogleFontIconName
     ///  lock_reset
     /// </summary>
     LockReset,
-/// <summary>
-///  login
-/// </summary>
-,
+    /// <summary>
+    ///  login
+    /// </summary>
+    Login,
     /// <summary>
     ///  logo_dev
     /// </summary>
@@ -7770,70 +7770,70 @@ public enum GoogleFontIconName
     ///  logout
     /// </summary>
     Logout,
-/// <summary>
-///  looks
-/// </summary>
-,
-/// <summary>
-///  looks_3
-/// </summary>
-,
-/// <summary>
-///  looks_4
-/// </summary>
-,
-/// <summary>
-///  looks_5
-/// </summary>
-,
-/// <summary>
-///  looks_6
-/// </summary>
-,
-/// <summary>
-///  looks_one
-/// </summary>
-,
-/// <summary>
-///  looks_two
-/// </summary>
-,
-/// <summary>
-///  loupe
-/// </summary>
-,
-/// <summary>
-///  low_density
-/// </summary>
-,
-/// <summary>
-///  low_priority
-/// </summary>
-,
-/// <summary>
-///  lowercase
-/// </summary>
-,
-/// <summary>
-///  loyalty
-/// </summary>
-,
-/// <summary>
-///  lte_mobiledata
-/// </summary>
-,
-/// <summary>
-///  lte_mobiledata_badge
-/// </summary>
-,
-/// <summary>
-///  lte_plus_mobiledata
-/// </summary>
-,
-/// <summary>
-///  lte_plus_mobiledata_badge
-/// </summary>
-,
+    /// <summary>
+    ///  looks
+    /// </summary>
+    Looks,
+    /// <summary>
+    ///  looks_3
+    /// </summary>
+    Looks3,
+    /// <summary>
+    ///  looks_4
+    /// </summary>
+    Looks4,
+    /// <summary>
+    ///  looks_5
+    /// </summary>
+    Looks5,
+    /// <summary>
+    ///  looks_6
+    /// </summary>
+    Looks6,
+    /// <summary>
+    ///  looks_one
+    /// </summary>
+    LooksOne,
+    /// <summary>
+    ///  looks_two
+    /// </summary>
+    LooksTwo,
+    /// <summary>
+    ///  loupe
+    /// </summary>
+    Loupe,
+    /// <summary>
+    ///  low_density
+    /// </summary>
+    LowDensity,
+    /// <summary>
+    ///  low_priority
+    /// </summary>
+    LowPriority,
+    /// <summary>
+    ///  lowercase
+    /// </summary>
+    lowercase,
+    /// <summary>
+    ///  loyalty
+    /// </summary>
+    Loyalty,
+    /// <summary>
+    ///  lte_mobiledata
+    /// </summary>
+    LteMobiledata,
+    /// <summary>
+    ///  lte_mobiledata_badge
+    /// </summary>
+    LteMobiledataBadge,
+    /// <summary>
+    ///  lte_plus_mobiledata
+    /// </summary>
+    LtePlusMobiledata,
+    /// <summary>
+    ///  lte_plus_mobiledata_badge
+    /// </summary>
+    LtePlusMobiledataBadge,
     /// <summary>
     ///  luggage
     /// </summary>
@@ -7842,34 +7842,34 @@ public enum GoogleFontIconName
     ///  lunch_dining
     /// </summary>
     LunchDining,
-/// <summary>
-///  lyrics
-/// </summary>
-,
-/// <summary>
-///  macro_auto
-/// </summary>
-,
-/// <summary>
-///  macro_off
-/// </summary>
-,
-/// <summary>
-///  magnification_large
-/// </summary>
-,
-/// <summary>
-///  magnification_small
-/// </summary>
-,
-/// <summary>
-///  magnify_docked
-/// </summary>
-,
-/// <summary>
-///  magnify_fullscreen
-/// </summary>
-,
+    /// <summary>
+    ///  lyrics
+    /// </summary>
+    Lyrics,
+    /// <summary>
+    ///  macro_auto
+    /// </summary>
+    MacroAuto,
+    /// <summary>
+    ///  macro_off
+    /// </summary>
+    MacroOff,
+    /// <summary>
+    ///  magnification_large
+    /// </summary>
+    MagnificationLarge,
+    /// <summary>
+    ///  magnification_small
+    /// </summary>
+    MagnificationSmall,
+    /// <summary>
+    ///  magnify_docked
+    /// </summary>
+    MagnifyDocked,
+    /// <summary>
+    ///  magnify_fullscreen
+    /// </summary>
+    MagnifyFullscreen,
     /// <summary>
     ///  mail
     /// </summary>
@@ -7882,30 +7882,30 @@ public enum GoogleFontIconName
     ///  mail_off
     /// </summary>
     MailOff,
-/// <summary>
-///  mail_shield
-/// </summary>
-,
-/// <summary>
-///  male
-/// </summary>
-,
-/// <summary>
-///  man
-/// </summary>
-,
-/// <summary>
-///  man_2
-/// </summary>
-,
-/// <summary>
-///  man_3
-/// </summary>
-,
-/// <summary>
-///  man_4
-/// </summary>
-,
+    /// <summary>
+    ///  mail_shield
+    /// </summary>
+    MailShield,
+    /// <summary>
+    ///  male
+    /// </summary>
+    Male,
+    /// <summary>
+    ///  man
+    /// </summary>
+    Man,
+    /// <summary>
+    ///  man_2
+    /// </summary>
+    Man2,
+    /// <summary>
+    ///  man_3
+    /// </summary>
+    Man3,
+    /// <summary>
+    ///  man_4
+    /// </summary>
+    Man4,
     /// <summary>
     ///  manage_accounts
     /// </summary>
@@ -7918,38 +7918,38 @@ public enum GoogleFontIconName
     ///  manage_search
     /// </summary>
     ManageSearch,
-/// <summary>
-///  manga
-/// </summary>
-,
-/// <summary>
-///  manufacturing
-/// </summary>
-,
+    /// <summary>
+    ///  manga
+    /// </summary>
+    Manga,
+    /// <summary>
+    ///  manufacturing
+    /// </summary>
+    manufacturing,
     /// <summary>
     ///  map
     /// </summary>
     Map,
-/// <summary>
-///  map_pin_heart
-/// </summary>
-,
-/// <summary>
-///  map_pin_review
-/// </summary>
-,
-/// <summary>
-///  map_search
-/// </summary>
-,
-/// <summary>
-///  maps_ugc
-/// </summary>
-,
-/// <summary>
-///  margin
-/// </summary>
-,
+    /// <summary>
+    ///  map_pin_heart
+    /// </summary>
+    MapPinHeart,
+    /// <summary>
+    ///  map_pin_review
+    /// </summary>
+    MapPinReview,
+    /// <summary>
+    ///  map_search
+    /// </summary>
+    MapSearch,
+    /// <summary>
+    ///  maps_ugc
+    /// </summary>
+    MapsUgc,
+    /// <summary>
+    ///  margin
+    /// </summary>
+    Margin,
     /// <summary>
     ///  mark_as_unread
     /// </summary>
@@ -7974,98 +7974,98 @@ public enum GoogleFontIconName
     ///  mark_unread_chat_alt
     /// </summary>
     MarkUnreadChatAlt,
-/// <summary>
-///  markdown
-/// </summary>
-,
-/// <summary>
-///  markdown_copy
-/// </summary>
-,
-/// <summary>
-///  markdown_paste
-/// </summary>
-,
-/// <summary>
-///  markunread_mailbox
-/// </summary>
-,
-/// <summary>
-///  masked_transitions
-/// </summary>
-,
-/// <summary>
-///  masked_transitions_add
-/// </summary>
-,
-/// <summary>
-///  masks
-/// </summary>
-,
-/// <summary>
-///  massage
-/// </summary>
-,
-/// <summary>
-///  match_case
-/// </summary>
-,
-/// <summary>
-///  match_case_off
-/// </summary>
-,
-/// <summary>
-///  match_word
-/// </summary>
-,
-/// <summary>
-///  matter
-/// </summary>
-,
-/// <summary>
-///  maximize
-/// </summary>
-,
-/// <summary>
-///  meal_dinner
-/// </summary>
-,
-/// <summary>
-///  meal_lunch
-/// </summary>
-,
-/// <summary>
-///  measuring_tape
-/// </summary>
-,
-/// <summary>
-///  media_bluetooth_off
-/// </summary>
-,
-/// <summary>
-///  media_bluetooth_on
-/// </summary>
-,
-/// <summary>
-///  media_link
-/// </summary>
-,
-/// <summary>
-///  media_output
-/// </summary>
-,
-/// <summary>
-///  media_output_off
-/// </summary>
-,
-/// <summary>
-///  mediation
-/// </summary>
-,
-/// <summary>
-///  medical_information
-/// </summary>
-,
+    /// <summary>
+    ///  markdown
+    /// </summary>
+    Markdown,
+    /// <summary>
+    ///  markdown_copy
+    /// </summary>
+    MarkdownCopy,
+    /// <summary>
+    ///  markdown_paste
+    /// </summary>
+    MarkdownPaste,
+    /// <summary>
+    ///  markunread_mailbox
+    /// </summary>
+    MarkunreadMailbox,
+    /// <summary>
+    ///  masked_transitions
+    /// </summary>
+    MaskedTransitions,
+    /// <summary>
+    ///  masked_transitions_add
+    /// </summary>
+    MaskedTransitionsAdd,
+    /// <summary>
+    ///  masks
+    /// </summary>
+    Masks,
+    /// <summary>
+    ///  massage
+    /// </summary>
+    Massage,
+    /// <summary>
+    ///  match_case
+    /// </summary>
+    MatchCase,
+    /// <summary>
+    ///  match_case_off
+    /// </summary>
+    MatchCaseOff,
+    /// <summary>
+    ///  match_word
+    /// </summary>
+    MatchWord,
+    /// <summary>
+    ///  matter
+    /// </summary>
+    Matter,
+    /// <summary>
+    ///  maximize
+    /// </summary>
+    Maximize,
+    /// <summary>
+    ///  meal_dinner
+    /// </summary>
+    MealDinner,
+    /// <summary>
+    ///  meal_lunch
+    /// </summary>
+    MealLunch,
+    /// <summary>
+    ///  measuring_tape
+    /// </summary>
+    MeasuringTape,
+    /// <summary>
+    ///  media_bluetooth_off
+    /// </summary>
+    MediaBluetoothOff,
+    /// <summary>
+    ///  media_bluetooth_on
+    /// </summary>
+    MediaBluetoothOn,
+    /// <summary>
+    ///  media_link
+    /// </summary>
+    MediaLink,
+    /// <summary>
+    ///  media_output
+    /// </summary>
+    MediaOutput,
+    /// <summary>
+    ///  media_output_off
+    /// </summary>
+    MediaOutputOff,
+    /// <summary>
+    ///  mediation
+    /// </summary>
+    Mediation,
+    /// <summary>
+    ///  medical_information
+    /// </summary>
+    MedicalInformation,
     /// <summary>
     ///  medical_mask
     /// </summary>
@@ -8078,26 +8078,26 @@ public enum GoogleFontIconName
     ///  medication
     /// </summary>
     Medication,
-/// <summary>
-///  medication_liquid
-/// </summary>
-,
-/// <summary>
-///  meeting_room
-/// </summary>
-,
+    /// <summary>
+    ///  medication_liquid
+    /// </summary>
+    MedicationLiquid,
+    /// <summary>
+    ///  meeting_room
+    /// </summary>
+    MeetingRoom,
     /// <summary>
     ///  memory
     /// </summary>
     Memory,
-/// <summary>
-///  memory_alt
-/// </summary>
-,
-/// <summary>
-///  menstrual_health
-/// </summary>
-,
+    /// <summary>
+    ///  memory_alt
+    /// </summary>
+    MemoryAlt,
+    /// <summary>
+    ///  menstrual_health
+    /// </summary>
+    MenstrualHealth,
     /// <summary>
     ///  menu
     /// </summary>
@@ -8106,10 +8106,10 @@ public enum GoogleFontIconName
     ///  menu_book
     /// </summary>
     MenuBook,
-/// <summary>
-///  menu_book_2
-/// </summary>
-,
+    /// <summary>
+    ///  menu_book_2
+    /// </summary>
+    MenuBook2,
     /// <summary>
     ///  menu_open
     /// </summary>
@@ -8122,26 +8122,26 @@ public enum GoogleFontIconName
     ///  merge_type
     /// </summary>
     MergeType,
-/// <summary>
-///  metabolism
-/// </summary>
-,
+    /// <summary>
+    ///  metabolism
+    /// </summary>
+    Metabolism,
     /// <summary>
     ///  metro
     /// </summary>
     Metro,
-/// <summary>
-///  mfg_nest_yale_lock
-/// </summary>
-,
+    /// <summary>
+    ///  mfg_nest_yale_lock
+    /// </summary>
+    MfgNestYaleLock,
     /// <summary>
     ///  mic
     /// </summary>
     Mic,
-/// <summary>
-///  mic_alert
-/// </summary>
-,
+    /// <summary>
+    ///  mic_alert
+    /// </summary>
+    MicAlert,
 /// <summary>
 ///  mic_double
 /// </summary>
@@ -8158,10 +8158,10 @@ public enum GoogleFontIconName
     ///  mic_off
     /// </summary>
     MicOff,
-/// <summary>
-///  microbiology
-/// </summary>
-,
+    /// <summary>
+    ///  microbiology
+    /// </summary>
+    Microbiology,
     /// <summary>
     ///  microwave
     /// </summary>
@@ -8174,74 +8174,74 @@ public enum GoogleFontIconName
     ///  military_tech
     /// </summary>
     MilitaryTech,
-/// <summary>
-///  mimo
-/// </summary>
-,
-/// <summary>
-///  mimo_disconnect
-/// </summary>
-,
-/// <summary>
-///  mindfulness
-/// </summary>
-,
-/// <summary>
-///  minimize
-/// </summary>
-,
-/// <summary>
-///  minor_crash
-/// </summary>
-,
-/// <summary>
-///  mintmark
-/// </summary>
-,
-/// <summary>
-///  missed_video_call
-/// </summary>
-,
-/// <summary>
-///  missing_controller
-/// </summary>
-,
-/// <summary>
-///  mist
-/// </summary>
-,
-/// <summary>
-///  mitre
-/// </summary>
-,
-/// <summary>
-///  mixture_med
-/// </summary>
-,
+    /// <summary>
+    ///  mimo
+    /// </summary>
+    Mimo,
+    /// <summary>
+    ///  mimo_disconnect
+    /// </summary>
+    MimoDisconnect,
+    /// <summary>
+    ///  mindfulness
+    /// </summary>
+    Mindfulness,
+    /// <summary>
+    ///  minimize
+    /// </summary>
+    Minimize,
+    /// <summary>
+    ///  minor_crash
+    /// </summary>
+    MinorCrash,
+    /// <summary>
+    ///  mintmark
+    /// </summary>
+    Mintmark,
+    /// <summary>
+    ///  missed_video_call
+    /// </summary>
+    MissedVideoCall,
+    /// <summary>
+    ///  missing_controller
+    /// </summary>
+    MissingController,
+    /// <summary>
+    ///  mist
+    /// </summary>
+    Mist,
+    /// <summary>
+    ///  mitre
+    /// </summary>
+    Mitre,
+    /// <summary>
+    ///  mixture_med
+    /// </summary>
+    MixtureMed,
     /// <summary>
     ///  mms
     /// </summary>
     Mms,
-/// <summary>
-///  mobile
-/// </summary>
-,
-/// <summary>
-///  mobile_2
-/// </summary>
-,
-/// <summary>
-///  mobile_3
-/// </summary>
-,
-/// <summary>
-///  mobile_alert
-/// </summary>
-,
-/// <summary>
-///  mobile_arrow_down
-/// </summary>
-,
+    /// <summary>
+    ///  mobile
+    /// </summary>
+    Mobile,
+    /// <summary>
+    ///  mobile_2
+    /// </summary>
+    Mobile2,
+    /// <summary>
+    ///  mobile_3
+    /// </summary>
+    Mobile3,
+    /// <summary>
+    ///  mobile_alert
+    /// </summary>
+    MobileAlert,
+    /// <summary>
+    ///  mobile_arrow_down
+    /// </summary>
+    MobileArrowDown,
 /// <summary>
 ///  mobile_arrow_right
 /// </summary>
