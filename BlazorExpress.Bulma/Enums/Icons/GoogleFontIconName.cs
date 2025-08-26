@@ -8362,106 +8362,106 @@ public enum GoogleFontIconName
     ///  mobile_screensaver
     /// </summary>
     MobileScreensaver,
-/// <summary>
-///  mobile_sensor_hi
-/// </summary>
-,
-/// <summary>
-///  mobile_sensor_lo
-/// </summary>
-,
-/// <summary>
-///  mobile_share
-/// </summary>
-,
-/// <summary>
-///  mobile_share_stack
-/// </summary>
-,
-/// <summary>
-///  mobile_sound
-/// </summary>
-,
-/// <summary>
-///  mobile_sound_2
-/// </summary>
-,
-/// <summary>
-///  mobile_sound_off
-/// </summary>
-,
-/// <summary>
-///  mobile_speaker
-/// </summary>
-,
-/// <summary>
-///  mobile_text
-/// </summary>
-,
-/// <summary>
-///  mobile_text_2
-/// </summary>
-,
-/// <summary>
-///  mobile_ticket
-/// </summary>
-,
-/// <summary>
-///  mobile_vibrate
-/// </summary>
-,
-/// <summary>
-///  mobile_wrench
-/// </summary>
-,
-/// <summary>
-///  mobiledata_off
-/// </summary>
-,
-/// <summary>
-///  mode_comment
-/// </summary>
-,
-/// <summary>
-///  mode_cool
-/// </summary>
-,
-/// <summary>
-///  mode_cool_off
-/// </summary>
-,
-/// <summary>
-///  mode_dual
-/// </summary>
-,
+    /// <summary>
+    ///  mobile_sensor_hi
+    /// </summary>
+    MobileSensorHi,
+    /// <summary>
+    ///  mobile_sensor_lo
+    /// </summary>
+    MobileSensorLo,
+    /// <summary>
+    ///  mobile_share
+    /// </summary>
+    MobileShare,
+    /// <summary>
+    ///  mobile_share_stack
+    /// </summary>
+    MobileShareStack,
+    /// <summary>
+    ///  mobile_sound
+    /// </summary>
+    MobileSound,
+    /// <summary>
+    ///  mobile_sound_2
+    /// </summary>
+    MobileSound2,
+    /// <summary>
+    ///  mobile_sound_off
+    /// </summary>
+    MobileSoundOff,
+    /// <summary>
+    ///  mobile_speaker
+    /// </summary>
+    MobileSpeaker,
+    /// <summary>
+    ///  mobile_text
+    /// </summary>
+    MobileText,
+    /// <summary>
+    ///  mobile_text_2
+    /// </summary>
+    MobileText2,
+    /// <summary>
+    ///  mobile_ticket
+    /// </summary>
+    MobileTicket,
+    /// <summary>
+    ///  mobile_vibrate
+    /// </summary>
+    MobileVibrate,
+    /// <summary>
+    ///  mobile_wrench
+    /// </summary>
+    MobileWrench,
+    /// <summary>
+    ///  mobiledata_off
+    /// </summary>
+    MobiledataOff,
+    /// <summary>
+    ///  mode_comment
+    /// </summary>
+    ModeComment,
+    /// <summary>
+    ///  mode_cool
+    /// </summary>
+    ModeCool,
+    /// <summary>
+    ///  mode_cool_off
+    /// </summary>
+    ModeCoolOff,
+    /// <summary>
+    ///  mode_dual
+    /// </summary>
+    ModeDual,
     /// <summary>
     ///  mode_fan
     /// </summary>
     ModeFan,
-/// <summary>
-///  mode_fan_off
-/// </summary>
-,
+    /// <summary>
+    ///  mode_fan_off
+    /// </summary>
+    ModeFanOff,
     /// <summary>
     ///  mode_heat
     /// </summary>
     ModeHeat,
-/// <summary>
-///  mode_heat_cool
-/// </summary>
-,
-/// <summary>
-///  mode_heat_off
-/// </summary>
-,
-/// <summary>
-///  mode_night
-/// </summary>
-,
-/// <summary>
-///  mode_of_travel
-/// </summary>
-,
+    /// <summary>
+    ///  mode_heat_cool
+    /// </summary>
+    ModeHeatCool,
+    /// <summary>
+    ///  mode_heat_off
+    /// </summary>
+    ModeHeatOff,
+    /// <summary>
+    ///  mode_night
+    /// </summary>
+    ModeNight,
+    /// <summary>
+    ///  mode_of_travel
+    /// </summary>
+    ModeOfTravel,
     /// <summary>
     ///  mode_off_on
     /// </summary>
@@ -8470,30 +8470,30 @@ public enum GoogleFontIconName
     ///  mode_standby
     /// </summary>
     ModeStandby,
-/// <summary>
-///  model_training
-/// </summary>
-,
-/// <summary>
-///  modeling
-/// </summary>
-,
+    /// <summary>
+    ///  model_training
+    /// </summary>
+    ModelTraining,
+    /// <summary>
+    ///  modeling
+    /// </summary>
+    Modeling,
     /// <summary>
     ///  money
     /// </summary>
     Money,
-/// <summary>
-///  money_bag
-/// </summary>
-,
+    /// <summary>
+    ///  money_bag
+    /// </summary>
+    MoneyBag,
     /// <summary>
     ///  money_off
     /// </summary>
     MoneyOff,
-/// <summary>
-///  money_range
-/// </summary>
-,
+    /// <summary>
+    ///  money_range
+    /// </summary>
+    MoneyRange,
     /// <summary>
     ///  monitor
     /// </summary>
