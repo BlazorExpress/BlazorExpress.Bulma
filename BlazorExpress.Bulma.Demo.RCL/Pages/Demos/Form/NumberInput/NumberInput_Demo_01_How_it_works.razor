@@ -1,6 +1,6 @@
-<TextInput @bind-Value="@enteredText" />
-<div class="mb-3">Entered text: @enteredText</div>
+<NumberInput @bind-Value="enteredValue" />
+<div class="mb-3">Entered text: @enteredValue</div>
 
 @code {
-    private string? enteredText = null;
+    private int? enteredValue = null;
 }

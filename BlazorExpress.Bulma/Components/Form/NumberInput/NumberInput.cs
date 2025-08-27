@@ -1,4 +1,6 @@
-﻿namespace BlazorExpress.Bulma;
+﻿using System.Numerics;
+
+namespace BlazorExpress.Bulma;
 
 /// <summary>
 /// NumberInput component
@@ -6,7 +8,7 @@
 ///     <see href="https://bulma.io/documentation/form/input/" />
 /// </para>
 /// </summary>
-public class NumberInput : BulmaComponentBase
+public class NumberInput<TValue> : BulmaComponentBase where TValue : INumber<TValue>
 {
     #region Fields and Constants
 
@@ -25,7 +27,7 @@ public class NumberInput : BulmaComponentBase
         }
 
         builder.OpenElement(200, "input"); // open input
-        builder.AddAttribute(201, "type", "text");
+        builder.AddAttribute(201, "type", "number");
         builder.AddAttribute(202, "id", Id);
         builder.AddAttributeIfNotNullOrWhiteSpace(203, "class", $"{ClassNames} {FieldCssClasses}");
         builder.AddAttributeIfNotNullOrWhiteSpace(204, "style", StyleNames);
@@ -75,7 +77,7 @@ public class NumberInput : BulmaComponentBase
     private async Task OnChange(ChangeEventArgs e)
     {
         var oldValue = Value;
-        var newValue = e.Value?.ToString() ?? string.Empty; // object
+        var newValue = e.Value; // object
 
         await ValueChanged.InvokeAsync(newValue);
 
@@ -90,6 +92,79 @@ public class NumberInput : BulmaComponentBase
         await ValueChanged.InvokeAsync(newValue);
 
         EditContext?.NotifyFieldChanged(fieldIdentifier);
+    }
+
+    private bool TryParseValue(object value, out TValue newValue)
+    {
+        try
+        {
+            // sbyte? / sbyte
+            if (typeof(TValue) == typeof(sbyte?) || typeof(TValue) == typeof(sbyte))
+            {
+                newValue = (TValue)Convert.ChangeType(value, typeof(sbyte));
+
+                return true;
+            }
+            // short? / short
+
+            if (typeof(TValue) == typeof(short?) || typeof(TValue) == typeof(short))
+            {
+                newValue = (TValue)Convert.ChangeType(value, typeof(short));
+
+                return true;
+            }
+            // int? / int
+
+            if (typeof(TValue) == typeof(int?) || typeof(TValue) == typeof(int))
+            {
+                newValue = (TValue)Convert.ChangeType(value, typeof(int));
+
+                return true;
+            }
+            // long? / long
+
+            if (typeof(TValue) == typeof(long?) || typeof(TValue) == typeof(long))
+            {
+                newValue = (TValue)Convert.ChangeType(value, typeof(long));
+
+                return true;
+            }
+            // float? / float
+
+            if (typeof(TValue) == typeof(float?) || typeof(TValue) == typeof(float))
+            {
+                newValue = (TValue)Convert.ChangeType(value, typeof(float), CultureInfo.InvariantCulture);
+
+                return true;
+            }
+            // double? / double
+
+            if (typeof(TValue) == typeof(double?) || typeof(TValue) == typeof(double))
+            {
+                newValue = (TValue)Convert.ChangeType(value, typeof(double), CultureInfo.InvariantCulture);
+
+                return true;
+            }
+            // decimal? / decimal
+
+            if (typeof(TValue) == typeof(decimal?) || typeof(TValue) == typeof(decimal))
+            {
+                newValue = (TValue)Convert.ChangeType(value, typeof(decimal), CultureInfo.InvariantCulture);
+
+                return true;
+            }
+
+            newValue = default!;
+
+            return false;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"exception: {ex.Message}");
+            newValue = default!;
+
+            return false;
+        }
     }
 
     #endregion
@@ -244,7 +319,7 @@ public class NumberInput : BulmaComponentBase
     [DefaultValue(null)]
     [Description("Gets or sets the value.")]
     [Parameter]
-    public string Value { get; set; } = default!;
+    public TValue Value { get; set; } = default!;
 
     /// <summary>
     /// This event fires when the <see cref="TextInput" /> value changes.
@@ -252,7 +327,7 @@ public class NumberInput : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [Description("This event fires when the <code>TextInput</code> value changes.")]
     [Parameter]
-    public EventCallback<string> ValueChanged { get; set; }
+    public EventCallback<TValue> ValueChanged { get; set; }
 
     /// <summary>
     /// Gets or sets the expression.
@@ -262,7 +337,7 @@ public class NumberInput : BulmaComponentBase
     [Description("Gets or sets the expression.")]
     [ParameterTypeName("Expression<Func<string>>?")]
     [Parameter]
-    public Expression<Func<string>>? ValueExpression { get; set; } = default!;
+    public Expression<Func<TValue>>? ValueExpression { get; set; } = default!;
 
     #endregion
 }
