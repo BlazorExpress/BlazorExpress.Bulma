@@ -34,7 +34,7 @@ public static class GoogleFontIconUtility
             GoogleFontIconStyle.Outlined => "outlined",
             GoogleFontIconStyle.Rounded => "rounded",
             GoogleFontIconStyle.Sharp => "sharp",
-
+            
             _ => ""
         };
     }
