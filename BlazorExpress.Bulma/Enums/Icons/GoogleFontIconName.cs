@@ -11,12256 +11,14919 @@ public enum GoogleFontIconName
 {
     None = 0,
     /// <summary>
-    /// 10k
+    ///  10k
     /// </summary>
     TenK,
     /// <summary>
-    /// 10mp
+    ///  10mp
     /// </summary>
     TenMp,
     /// <summary>
-    /// 11mp
+    ///  11mp
     /// </summary>
     ElevenMp,
     /// <summary>
-    /// 123
+    ///  123
     /// </summary>
     OneTwoThree,
     /// <summary>
-    /// 12mp
+    ///  12mp
     /// </summary>
     TwelveMp,
     /// <summary>
-    /// 13mp
+    ///  13mp
     /// </summary>
     ThirteenMp,
     /// <summary>
-    /// 14mp
+    ///  14mp
     /// </summary>
     FourteenMp,
     /// <summary>
-    /// 15mp
+    ///  15mp
     /// </summary>
     FifteenMp,
     /// <summary>
-    /// 16mp
+    ///  16mp
     /// </summary>
     SixteenMp,
     /// <summary>
-    /// 17mp
+    ///  17mp
     /// </summary>
     SeventeenMp,
     /// <summary>
-    /// 18_up_rating
+    ///  18_up_rating
     /// </summary>
     EighteenUpRating,
     /// <summary>
-    /// 18mp
+    ///  18mp
     /// </summary>
     EighteenMp,
     /// <summary>
-    /// 19mp
+    ///  19mp
     /// </summary>
     NineteenMp,
     /// <summary>
-    /// 1k
+    ///  1k
     /// </summary>
     OneK,
     /// <summary>
-    /// 1k_plus
+    ///  1k_plus
     /// </summary>
     OneKPlus,
     /// <summary>
-    /// 1x_mobiledata
+    ///  1x_mobiledata
     /// </summary>
     OneXMobiledata,
     /// <summary>
-    /// 1x_mobiledata_badge
+    ///  1x_mobiledata_badge
     /// </summary>
     OneXMobiledataBadge,
     /// <summary>
-    /// 20mp
+    ///  20mp
     /// </summary>
     TwentyMp,
     /// <summary>
-    /// 21mp
+    ///  21mp
     /// </summary>
     TwentyOneMp,
     /// <summary>
-    /// 22mp
+    ///  22mp
     /// </summary>
     TwentyTwoMp,
     /// <summary>
-    /// 23mp
+    ///  23mp
     /// </summary>
     TwentyThreeMp,
     /// <summary>
-    /// 24fps_select
+    ///  24fps_select
     /// </summary>
     TwentyFourFpsSelect,
     /// <summary>
-    /// 24mp
+    ///  24mp
     /// </summary>
     TwentyFourMp,
     /// <summary>
-    /// 2d
+    ///  2d
     /// </summary>
     TwoD,
     /// <summary>
-    /// 2k
+    ///  2k
     /// </summary>
     TwoK,
     /// <summary>
-    /// 2k_plus
+    ///  2k_plus
     /// </summary>
     TwoKPlus,
     /// <summary>
-    /// 2mp
+    ///  2mp
     /// </summary>
     TwoMp,
     /// <summary>
-    /// 30fps
+    ///  30fps
     /// </summary>
     ThirtyFps,
     /// <summary>
-    /// 30fps_select
+    ///  30fps_select
     /// </summary>
     ThirtyFpsSelect,
     /// <summary>
-    /// 360
+    ///  360
     /// </summary>
     ThreeSixty,
     /// <summary>
-    /// 3d
+    ///  3d
     /// </summary>
     ThreeD,
     /// <summary>
-    /// 3d_rotation
+    ///  3d_rotation
     /// </summary>
     ThreeDRotation,
     /// <summary>
-    /// 3g_mobiledata
+    ///  3g_mobiledata
     /// </summary>
     ThreeGMobiledata,
     /// <summary>
-    /// 3g_mobiledata_badge
+    ///  3g_mobiledata_badge
     /// </summary>
     ThreeGMobiledataBadge,
     /// <summary>
-    /// 3k
+    ///  3k
     /// </summary>
     ThreeK,
     /// <summary>
-    /// 3k_plus
+    ///  3k_plus
     /// </summary>
     ThreeKPlus,
     /// <summary>
-    /// 3mp
+    ///  3mp
     /// </summary>
     ThreeMp,
     /// <summary>
-    /// 3p
+    ///  3p
     /// </summary>
     ThreeP,
     /// <summary>
-    /// 4g_mobiledata
+    ///  4g_mobiledata
     /// </summary>
     FourGMobiledata,
     /// <summary>
-    /// 4g_mobiledata_badge
+    ///  4g_mobiledata_badge
     /// </summary>
     FourGMobiledataBadge,
     /// <summary>
-    /// 4g_plus_mobiledata
+    ///  4g_plus_mobiledata
     /// </summary>
     FourGPlusMobiledata,
     /// <summary>
-    /// 4k
+    ///  4k
     /// </summary>
     FourK,
     /// <summary>
-    /// 4k_plus
+    ///  4k_plus
     /// </summary>
     FourKPlus,
     /// <summary>
-    /// 4mp
+    ///  4mp
     /// </summary>
     FourMp,
     /// <summary>
-    /// 50mp
+    ///  50mp
     /// </summary>
     FiftyMp,
     /// <summary>
-    /// 5g
+    ///  5g
     /// </summary>
     FiveG,
     /// <summary>
-    /// 5g_mobiledata_badge
+    ///  5g_mobiledata_badge
     /// </summary>
     FiveGMobiledataBadge,
     /// <summary>
-    /// 5k
+    ///  5k
     /// </summary>
     FiveK,
     /// <summary>
-    /// 5k_plus
+    ///  5k_plus
     /// </summary>
     FiveKPlus,
     /// <summary>
-    /// 5mp
+    ///  5mp
     /// </summary>
     FiveMp,
     /// <summary>
-    /// 6_ft_apart
+    ///  6_ft_apart
     /// </summary>
     SixFtApart,
     /// <summary>
-    /// 60fps
+    ///  60fps
     /// </summary>
     SixtyFps,
     /// <summary>
-    /// 60fps_select
+    ///  60fps_select
     /// </summary>
     SixtyFpsSelect,
     /// <summary>
-    /// 6k
+    ///  6k
     /// </summary>
     SixK,
     /// <summary>
-    /// 6k_plus
+    ///  6k_plus
     /// </summary>
     SixKPlus,
     /// <summary>
-    /// 6mp
+    ///  6mp
     /// </summary>
     SixMp,
     /// <summary>
-    /// 7k
+    ///  7k
     /// </summary>
     SevenK,
     /// <summary>
-    /// 7k_plus
+    ///  7k_plus
     /// </summary>
     SevenKPlus,
     /// <summary>
-    /// 7mp
+    ///  7mp
     /// </summary>
     SevenMp,
     /// <summary>
-    /// 8k
+    ///  8k
     /// </summary>
     EightK,
     /// <summary>
-    /// 8k_plus
+    ///  8k_plus
     /// </summary>
     EightKPlus,
     /// <summary>
-    /// 8mp
+    ///  8mp
     /// </summary>
     EightMp,
     /// <summary>
-    /// 9k
+    ///  9k
     /// </summary>
     NineK,
     /// <summary>
-    /// 9k_plus
+    ///  9k_plus
     /// </summary>
     NineKPlus,
     /// <summary>
-    /// 9mp
+    ///  9mp
     /// </summary>
     NineMp,
     /// <summary>
-    /// abc
+    ///  abc
     /// </summary>
     Abc,
     /// <summary>
-    /// ac_unit
+    ///  ac_unit
     /// </summary>
     AcUnit,
     /// <summary>
-    /// accessibility
+    ///  accessibility
     /// </summary>
     Accessibility,
     /// <summary>
-    /// accessibility_new
+    ///  accessibility_new
     /// </summary>
     AccessibilityNew,
     /// <summary>
-    /// accessible
+    ///  accessible
     /// </summary>
     Accessible,
     /// <summary>
-    /// accessible_forward
+    ///  accessible_forward
     /// </summary>
     AccessibleForward,
     /// <summary>
-    /// accessible_menu
+    ///  accessible_menu
     /// </summary>
     AccessibleMenu,
     /// <summary>
-    /// account_balance
+    ///  account_balance
     /// </summary>
     AccountBalance,
     /// <summary>
-    /// account_balance_wallet
+    ///  account_balance_wallet
     /// </summary>
     AccountBalanceWallet,
     /// <summary>
-    /// account_box
+    ///  account_box
     /// </summary>
     AccountBox,
     /// <summary>
-    /// account_child
+    ///  account_child
     /// </summary>
     AccountChild,
     /// <summary>
-    /// account_child_invert
+    ///  account_child_invert
     /// </summary>
     AccountChildInvert,
     /// <summary>
-    /// account_circle
+    ///  account_circle
     /// </summary>
     AccountCircle,
     /// <summary>
-    /// account_circle_off
+    ///  account_circle_off
     /// </summary>
     AccountCircleOff,
     /// <summary>
-    /// account_tree
+    ///  account_tree
     /// </summary>
     AccountTree,
     /// <summary>
-    /// action_key
+    ///  action_key
     /// </summary>
     ActionKey,
     /// <summary>
-    /// activity_zone
+    ///  activity_zone
     /// </summary>
     ActivityZone,
     /// <summary>
-    /// acupuncture
+    ///  acupuncture
     /// </summary>
     Acupuncture,
     /// <summary>
-    /// acute
+    ///  acute
     /// </summary>
     Acute,
     /// <summary>
-    /// ad
+    ///  ad
     /// </summary>
     Ad,
     /// <summary>
-    /// ad_group
+    ///  ad_group
     /// </summary>
     AdGroup,
     /// <summary>
-    /// ad_group_off
+    ///  ad_group_off
     /// </summary>
     AdGroupOff,
     /// <summary>
-    /// ad_off
+    ///  ad_off
     /// </summary>
     AdOff,
     /// <summary>
-    /// adaptive_audio_mic
+    ///  adaptive_audio_mic
     /// </summary>
     AdaptiveAudioMic,
     /// <summary>
-    /// adaptive_audio_mic_off
+    ///  adaptive_audio_mic_off
     /// </summary>
     AdaptiveAudioMicOff,
     /// <summary>
-    /// adb
+    ///  adb
     /// </summary>
     Adb,
     /// <summary>
-    /// add
+    ///  add
     /// </summary>
     Add,
     /// <summary>
-    /// add_2
+    ///  add_2
     /// </summary>
     Add2,
     /// <summary>
-    /// add_a_photo
+    ///  add_a_photo
     /// </summary>
     AddAPhoto,
     /// <summary>
-    /// add_ad
+    ///  add_ad
     /// </summary>
     AddAd,
     /// <summary>
-    /// add_alert
+    ///  add_alert
     /// </summary>
     AddAlert,
     /// <summary>
-    /// add_box
+    ///  add_box
     /// </summary>
     AddBox,
     /// <summary>
-    /// add_business
+    ///  add_business
     /// </summary>
     AddBusiness,
     /// <summary>
-    /// add_call
+    ///  add_call
     /// </summary>
     AddCall,
     /// <summary>
-    /// add_card
+    ///  add_card
     /// </summary>
     AddCard,
     /// <summary>
-    /// add_chart
+    ///  add_chart
     /// </summary>
     AddChart,
     /// <summary>
-    /// add_circle
+    ///  add_circle
     /// </summary>
     AddCircle,
     /// <summary>
-    /// add_column_left
+    ///  add_column_left
     /// </summary>
     AddColumnLeft,
     /// <summary>
-    /// add_column_right
+    ///  add_column_right
     /// </summary>
     AddColumnRight,
     /// <summary>
-    /// add_comment
+    ///  add_comment
     /// </summary>
     AddComment,
     /// <summary>
-    /// add_diamond
+    ///  add_diamond
     /// </summary>
     AddDiamond,
     /// <summary>
-    /// add_home
+    ///  add_home
     /// </summary>
     AddHome,
     /// <summary>
-    /// add_home_work
+    ///  add_home_work
     /// </summary>
     AddHomeWork,
     /// <summary>
-    /// add_link
+    ///  add_link
     /// </summary>
     AddLink,
     /// <summary>
-    /// add_location
+    ///  add_location
     /// </summary>
     AddLocation,
     /// <summary>
-    /// add_location_alt
+    ///  add_location_alt
     /// </summary>
     AddLocationAlt,
     /// <summary>
-    /// add_moderator
+    ///  add_moderator
     /// </summary>
     AddModerator,
     /// <summary>
-    /// add_notes
+    ///  add_notes
     /// </summary>
     AddNotes,
     /// <summary>
-    /// add_photo_alternate
+    ///  add_photo_alternate
     /// </summary>
     AddPhotoAlternate,
     /// <summary>
-    /// add_reaction
+    ///  add_reaction
     /// </summary>
     AddReaction,
     /// <summary>
-    /// add_road
+    ///  add_road
     /// </summary>
     AddRoad,
     /// <summary>
-    /// add_row_above
+    ///  add_row_above
     /// </summary>
     AddRowAbove,
     /// <summary>
-    /// add_row_below
+    ///  add_row_below
     /// </summary>
     AddRowBelow,
     /// <summary>
-    /// add_shopping_cart
+    ///  add_shopping_cart
     /// </summary>
     AddShoppingCart,
     /// <summary>
-    /// add_task
+    ///  add_task
     /// </summary>
     AddTask,
     /// <summary>
-    /// add_to_drive
+    ///  add_to_drive
     /// </summary>
     AddToDrive,
     /// <summary>
-    /// add_to_queue
+    ///  add_to_queue
     /// </summary>
     AddToQueue,
     /// <summary>
-    /// add_triangle
+    ///  add_triangle
     /// </summary>
     AddTriangle,
     /// <summary>
-    /// adf_scanner
+    ///  adf_scanner
     /// </summary>
     AdfScanner,
     /// <summary>
-    /// adjust
+    ///  adjust
     /// </summary>
     Adjust,
     /// <summary>
-    /// admin_meds
+    ///  admin_meds
     /// </summary>
     AdminMeds,
     /// <summary>
-    /// admin_panel_settings
+    ///  admin_panel_settings
     /// </summary>
     AdminPanelSettings,
     /// <summary>
-    /// ads_click
+    ///  ads_click
     /// </summary>
     AdsClick,
     /// <summary>
-    /// agender
+    ///  agender
     /// </summary>
     Agender,
     /// <summary>
-    /// agriculture
+    ///  agriculture
     /// </summary>
     Agriculture,
     /// <summary>
-    /// air
+    ///  air
     /// </summary>
     Air,
     /// <summary>
-    /// air_freshener
+    ///  air_freshener
     /// </summary>
     AirFreshener,
     /// <summary>
-    /// air_purifier
+    ///  air_purifier
     /// </summary>
     AirPurifier,
     /// <summary>
-    /// air_purifier_gen
+    ///  air_purifier_gen
     /// </summary>
     AirPurifierGen,
     /// <summary>
-    /// airline_seat_flat
+    ///  airline_seat_flat
     /// </summary>
     AirlineSeatFlat,
     /// <summary>
-    /// airline_seat_flat_angled
+    ///  airline_seat_flat_angled
     /// </summary>
     AirlineSeatFlatAngled,
     /// <summary>
-    /// airline_seat_individual_suite
+    ///  airline_seat_individual_suite
     /// </summary>
     AirlineSeatIndividualSuite,
     /// <summary>
-    /// airline_seat_legroom_extra
+    ///  airline_seat_legroom_extra
     /// </summary>
     AirlineSeatLegroomExtra,
     /// <summary>
-    /// airline_seat_legroom_normal
+    ///  airline_seat_legroom_normal
     /// </summary>
     AirlineSeatLegroomNormal,
     /// <summary>
-    /// airline_seat_legroom_reduced
+    ///  airline_seat_legroom_reduced
     /// </summary>
     AirlineSeatLegroomReduced,
     /// <summary>
-    /// airline_seat_recline_extra
+    ///  airline_seat_recline_extra
     /// </summary>
     AirlineSeatReclineExtra,
     /// <summary>
-    /// airline_seat_recline_normal
+    ///  airline_seat_recline_normal
     /// </summary>
     AirlineSeatReclineNormal,
     /// <summary>
-    /// airline_stops
+    ///  airline_stops
     /// </summary>
     AirlineStops,
     /// <summary>
-    /// airlines
+    ///  airlines
     /// </summary>
     Airlines,
     /// <summary>
-    /// airplane_ticket
+    ///  airplane_ticket
     /// </summary>
     AirplaneTicket,
     /// <summary>
-    /// airplanemode_inactive
+    ///  airplanemode_inactive
     /// </summary>
     AirplanemodeInactive,
     /// <summary>
-    /// airplay
+    ///  airplay
     /// </summary>
     Airplay,
     /// <summary>
-    /// airport_shuttle
+    ///  airport_shuttle
     /// </summary>
     AirportShuttle,
     /// <summary>
-    /// airwave
+    ///  airwave
     /// </summary>
     Airwave,
     /// <summary>
-    /// alarm
+    ///  alarm
     /// </summary>
     Alarm,
     /// <summary>
-    /// alarm_add
+    ///  alarm_add
     /// </summary>
     AlarmAdd,
     /// <summary>
-    /// alarm_off
+    ///  alarm_off
     /// </summary>
     AlarmOff,
     /// <summary>
-    /// alarm_on
+    ///  alarm_on
     /// </summary>
     AlarmOn,
     /// <summary>
-    /// alarm_pause
+    ///  alarm_pause
     /// </summary>
     AlarmPause,
     /// <summary>
-    /// alarm_smart_wake
+    ///  alarm_smart_wake
     /// </summary>
     AlarmSmartWake,
     /// <summary>
-    /// album
+    ///  album
     /// </summary>
     Album,
     /// <summary>
-    /// align_center
+    ///  align_center
     /// </summary>
     AlignCenter,
     /// <summary>
-    /// align_end
+    ///  align_end
     /// </summary>
     AlignEnd,
     /// <summary>
-    /// align_flex_center
+    ///  align_flex_center
     /// </summary>
     AlignFlexCenter,
     /// <summary>
-    /// align_flex_end
+    ///  align_flex_end
     /// </summary>
     AlignFlexEnd,
     /// <summary>
-    /// align_flex_start
+    ///  align_flex_start
     /// </summary>
     AlignFlexStart,
     /// <summary>
-    /// align_horizontal_center
+    ///  align_horizontal_center
     /// </summary>
     AlignHorizontalCenter,
     /// <summary>
-    /// align_horizontal_left
+    ///  align_horizontal_left
     /// </summary>
     AlignHorizontalLeft,
     /// <summary>
-    /// align_horizontal_right
+    ///  align_horizontal_right
     /// </summary>
     AlignHorizontalRight,
     /// <summary>
-    /// align_items_stretch
+    ///  align_items_stretch
     /// </summary>
     AlignItemsStretch,
     /// <summary>
-    /// align_justify_center
+    ///  align_justify_center
     /// </summary>
     AlignJustifyCenter,
     /// <summary>
-    /// align_justify_flex_end
+    ///  align_justify_flex_end
     /// </summary>
     AlignJustifyFlexEnd,
     /// <summary>
-    /// align_justify_flex_start
+    ///  align_justify_flex_start
     /// </summary>
     AlignJustifyFlexStart,
     /// <summary>
-    /// align_justify_space_around
+    ///  align_justify_space_around
     /// </summary>
     AlignJustifySpaceAround,
     /// <summary>
-    /// align_justify_space_between
+    ///  align_justify_space_between
     /// </summary>
     AlignJustifySpaceBetween,
     /// <summary>
-    /// align_justify_space_even
+    ///  align_justify_space_even
     /// </summary>
     AlignJustifySpaceEven,
     /// <summary>
-    /// align_justify_stretch
+    ///  align_justify_stretch
     /// </summary>
     AlignJustifyStretch,
     /// <summary>
-    /// align_self_stretch
+    ///  align_self_stretch
     /// </summary>
     AlignSelfStretch,
     /// <summary>
-    /// align_space_around
+    ///  align_space_around
     /// </summary>
     AlignSpaceAround,
     /// <summary>
-    /// align_space_between
+    ///  align_space_between
     /// </summary>
     AlignSpaceBetween,
     /// <summary>
-    /// align_space_even
+    ///  align_space_even
     /// </summary>
     AlignSpaceEven,
     /// <summary>
-    /// align_start
+    ///  align_start
     /// </summary>
     AlignStart,
     /// <summary>
-    /// align_stretch
+    ///  align_stretch
     /// </summary>
     AlignStretch,
     /// <summary>
-    /// align_vertical_bottom
+    ///  align_vertical_bottom
     /// </summary>
     AlignVerticalBottom,
     /// <summary>
-    /// align_vertical_center
+    ///  align_vertical_center
     /// </summary>
     AlignVerticalCenter,
     /// <summary>
-    /// align_vertical_top
+    ///  align_vertical_top
     /// </summary>
     AlignVerticalTop,
     /// <summary>
-    /// all_inbox
+    ///  all_inbox
     /// </summary>
     AllInbox,
     /// <summary>
-    /// all_inclusive
+    ///  all_inclusive
     /// </summary>
     AllInclusive,
     /// <summary>
-    /// all_match
+    ///  all_match
     /// </summary>
     AllMatch,
     /// <summary>
-    /// all_out
+    ///  all_out
     /// </summary>
     AllOut,
     /// <summary>
-    /// allergies
+    ///  allergies
     /// </summary>
     Allergies,
     /// <summary>
-    /// allergy
+    ///  allergy
     /// </summary>
     Allergy,
     /// <summary>
-    /// alt_route
+    ///  alt_route
     /// </summary>
     AltRoute,
     /// <summary>
-    /// alternate_email
+    ///  alternate_email
     /// </summary>
     AlternateEmail,
     /// <summary>
-    /// altitude
+    ///  altitude
     /// </summary>
     Altitude,
     /// <summary>
-    /// ambulance
+    ///  ambulance
     /// </summary>
     Ambulance,
     /// <summary>
-    /// amend
+    ///  amend
     /// </summary>
     Amend,
     /// <summary>
-    /// amp_stories
+    ///  amp_stories
     /// </summary>
     AmpStories,
     /// <summary>
-    /// analytics
+    ///  analytics
     /// </summary>
     Analytics,
     /// <summary>
-    /// anchor
+    ///  anchor
     /// </summary>
     Anchor,
     /// <summary>
-    /// android
+    ///  android
     /// </summary>
     Android,
     /// <summary>
-    /// android_cell_4_bar
+    ///  android_cell_4_bar
     /// </summary>
     AndroidCell4Bar,
     /// <summary>
-    /// android_cell_4_bar_alert
+    ///  android_cell_4_bar_alert
     /// </summary>
     AndroidCell4BarAlert,
     /// <summary>
-    /// android_cell_4_bar_off
+    ///  android_cell_4_bar_off
     /// </summary>
     AndroidCell4BarOff,
     /// <summary>
-    /// android_cell_4_bar_plus
+    ///  android_cell_4_bar_plus
     /// </summary>
     AndroidCell4BarPlus,
     /// <summary>
-    /// android_cell_5_bar
+    ///  android_cell_5_bar
     /// </summary>
     AndroidCell5Bar,
     /// <summary>
-    /// android_cell_5_bar_alert
+    ///  android_cell_5_bar_alert
     /// </summary>
     AndroidCell5BarAlert,
     /// <summary>
-    /// android_cell_5_bar_off
+    ///  android_cell_5_bar_off
     /// </summary>
     AndroidCell5BarOff,
     /// <summary>
-    /// android_cell_5_bar_plus
+    ///  android_cell_5_bar_plus
     /// </summary>
     AndroidCell5BarPlus,
     /// <summary>
-    /// android_cell_dual_4_bar
+    ///  android_cell_dual_4_bar
     /// </summary>
     AndroidCellDual4Bar,
     /// <summary>
-    /// android_cell_dual_4_bar_alert
+    ///  android_cell_dual_4_bar_alert
     /// </summary>
     AndroidCellDual4BarAlert,
     /// <summary>
-    /// android_cell_dual_4_bar_plus
+    ///  android_cell_dual_4_bar_plus
     /// </summary>
     AndroidCellDual4BarPlus,
     /// <summary>
-    /// android_cell_dual_5_bar
+    ///  android_cell_dual_5_bar
     /// </summary>
     AndroidCellDual5Bar,
     /// <summary>
-    /// android_cell_dual_5_bar_alert
+    ///  android_cell_dual_5_bar_alert
     /// </summary>
     AndroidCellDual5BarAlert,
     /// <summary>
-    /// android_cell_dual_5_bar_plus
+    ///  android_cell_dual_5_bar_plus
     /// </summary>
     AndroidCellDual5BarPlus,
     /// <summary>
-    /// android_wifi_3_bar
+    ///  android_wifi_3_bar
     /// </summary>
     AndroidWifi3Bar,
     /// <summary>
-    /// android_wifi_3_bar_alert
+    ///  android_wifi_3_bar_alert
     /// </summary>
     AndroidWifi3BarAlert,
     /// <summary>
-    /// android_wifi_3_bar_lock
+    ///  android_wifi_3_bar_lock
     /// </summary>
     AndroidWifi3BarLock,
     /// <summary>
-    /// android_wifi_3_bar_off
+    ///  android_wifi_3_bar_off
     /// </summary>
     AndroidWifi3BarOff,
     /// <summary>
-    /// android_wifi_3_bar_plus
+    ///  android_wifi_3_bar_plus
     /// </summary>
     AndroidWifi3BarPlus,
     /// <summary>
-    /// android_wifi_3_bar_question
+    ///  android_wifi_3_bar_question
     /// </summary>
     AndroidWifi3BarQuestion,
     /// <summary>
-    /// android_wifi_4_bar
+    ///  android_wifi_4_bar
     /// </summary>
     AndroidWifi4Bar,
     /// <summary>
-    /// android_wifi_4_bar_alert
+    ///  android_wifi_4_bar_alert
     /// </summary>
     AndroidWifi4BarAlert,
     /// <summary>
-    /// android_wifi_4_bar_lock
+    ///  android_wifi_4_bar_lock
     /// </summary>
     AndroidWifi4BarLock,
     /// <summary>
-    /// android_wifi_4_bar_off
+    ///  android_wifi_4_bar_off
     /// </summary>
     AndroidWifi4BarOff,
     /// <summary>
-    /// android_wifi_4_bar_plus
+    ///  android_wifi_4_bar_plus
     /// </summary>
     AndroidWifi4BarPlus,
     /// <summary>
-    /// android_wifi_4_bar_question
+    ///  android_wifi_4_bar_question
     /// </summary>
     AndroidWifi4BarQuestion,
     /// <summary>
-    /// animated_images
+    ///  animated_images
     /// </summary>
     AnimatedImages,
     /// <summary>
-    /// animation
+    ///  animation
     /// </summary>
     Animation,
     /// <summary>
-    /// aod_tablet
+    ///  aod_tablet
     /// </summary>
     AodTablet,
     /// <summary>
-    /// aod_watch
+    ///  aod_watch
     /// </summary>
     AodWatch,
     /// <summary>
-    /// apartment
+    ///  apartment
     /// </summary>
     Apartment,
     /// <summary>
-    /// api
+    ///  api
     /// </summary>
     Api,
     /// <summary>
-    /// apk_document
+    ///  apk_document
     /// </summary>
     ApkDocument,
     /// <summary>
-    /// apk_install
+    ///  apk_install
     /// </summary>
     ApkInstall,
     /// <summary>
-    /// app_badging
+    ///  app_badging
     /// </summary>
     AppBadging,
     /// <summary>
-    /// app_registration
+    ///  app_registration
     /// </summary>
     AppRegistration,
     /// <summary>
-    /// apparel
+    ///  apparel
     /// </summary>
     Apparel,
     /// <summary>
-    /// approval
+    ///  approval
     /// </summary>
     Approval,
     /// <summary>
-    /// approval_delegation
+    ///  approval_delegation
     /// </summary>
     ApprovalDelegation,
     /// <summary>
-    /// approval_delegation_off
+    ///  approval_delegation_off
     /// </summary>
     ApprovalDelegationOff,
     /// <summary>
-    /// apps
+    ///  apps
     /// </summary>
     Apps,
     /// <summary>
-    /// apps_outage
+    ///  apps_outage
     /// </summary>
     AppsOutage,
     /// <summary>
-    /// aq
+    ///  aq
     /// </summary>
     Aq,
     /// <summary>
-    /// aq_indoor
+    ///  aq_indoor
     /// </summary>
     AqIndoor,
     /// <summary>
-    /// ar_on_you
+    ///  ar_on_you
     /// </summary>
     ArOnYou,
     /// <summary>
-    /// ar_stickers
+    ///  ar_stickers
     /// </summary>
     ArStickers,
     /// <summary>
-    /// architecture
+    ///  architecture
     /// </summary>
     Architecture,
     /// <summary>
-    /// archive
+    ///  archive
     /// </summary>
     Archive,
     /// <summary>
-    /// area_chart
+    ///  area_chart
     /// </summary>
     AreaChart,
     /// <summary>
-    /// arming_countdown
+    ///  arming_countdown
     /// </summary>
     ArmingCountdown,
     /// <summary>
-    /// arrow_and_edge
+    ///  arrow_and_edge
     /// </summary>
     ArrowAndEdge,
     /// <summary>
-    /// arrow_back
+    ///  arrow_back
     /// </summary>
     ArrowBack,
     /// <summary>
-    /// arrow_back_2
+    ///  arrow_back_2
     /// </summary>
     ArrowBack2,
     /// <summary>
-    /// arrow_back_ios
+    ///  arrow_back_ios
     /// </summary>
     ArrowBackIos,
     /// <summary>
-    /// arrow_back_ios_new
+    ///  arrow_back_ios_new
     /// </summary>
     ArrowBackIosNew,
     /// <summary>
-    /// arrow_circle_down
+    ///  arrow_circle_down
     /// </summary>
     ArrowCircleDown,
     /// <summary>
-    /// arrow_circle_left
+    ///  arrow_circle_left
     /// </summary>
     ArrowCircleLeft,
     /// <summary>
-    /// arrow_circle_right
+    ///  arrow_circle_right
     /// </summary>
     ArrowCircleRight,
     /// <summary>
-    /// arrow_circle_up
+    ///  arrow_circle_up
     /// </summary>
     ArrowCircleUp,
     /// <summary>
-    /// arrow_cool_down
+    ///  arrow_cool_down
     /// </summary>
     ArrowCoolDown,
     /// <summary>
-    /// arrow_downward
+    ///  arrow_downward
     /// </summary>
     ArrowDownward,
     /// <summary>
-    /// arrow_downward_alt
+    ///  arrow_downward_alt
     /// </summary>
     ArrowDownwardAlt,
     /// <summary>
-    /// arrow_drop_down
+    ///  arrow_drop_down
     /// </summary>
     ArrowDropDown,
     /// <summary>
-    /// arrow_drop_down_circle
+    ///  arrow_drop_down_circle
     /// </summary>
     ArrowDropDownCircle,
     /// <summary>
-    /// arrow_drop_up
+    ///  arrow_drop_up
     /// </summary>
     ArrowDropUp,
     /// <summary>
-    /// arrow_forward
+    ///  arrow_forward
     /// </summary>
     ArrowForward,
     /// <summary>
-    /// arrow_forward_ios
+    ///  arrow_forward_ios
     /// </summary>
     ArrowForwardIos,
     /// <summary>
-    /// arrow_insert
+    ///  arrow_insert
     /// </summary>
     ArrowInsert,
     /// <summary>
-    /// arrow_left
+    ///  arrow_left
     /// </summary>
     ArrowLeft,
     /// <summary>
-    /// arrow_left_alt
+    ///  arrow_left_alt
     /// </summary>
     ArrowLeftAlt,
     /// <summary>
-    /// arrow_menu_close
+    ///  arrow_menu_close
     /// </summary>
     ArrowMenuClose,
     /// <summary>
-    /// arrow_menu_open
+    ///  arrow_menu_open
     /// </summary>
     ArrowMenuOpen,
     /// <summary>
-    /// arrow_or_edge
+    ///  arrow_or_edge
     /// </summary>
     ArrowOrEdge,
     /// <summary>
-    /// arrow_outward
+    ///  arrow_outward
     /// </summary>
     ArrowOutward,
     /// <summary>
-    /// arrow_range
+    ///  arrow_range
     /// </summary>
     ArrowRange,
     /// <summary>
-    /// arrow_right
+    ///  arrow_right
     /// </summary>
     ArrowRight,
     /// <summary>
-    /// arrow_right_alt
+    ///  arrow_right_alt
     /// </summary>
     ArrowRightAlt,
     /// <summary>
-    /// arrow_selector_tool
+    ///  arrow_selector_tool
     /// </summary>
     ArrowSelectorTool,
     /// <summary>
-    /// arrow_shape_up
+    ///  arrow_shape_up
     /// </summary>
     ArrowShapeUp,
     /// <summary>
-    /// arrow_shape_up_stack
+    ///  arrow_shape_up_stack
     /// </summary>
     ArrowShapeUpStack,
     /// <summary>
-    /// arrow_shape_up_stack_2
+    ///  arrow_shape_up_stack_2
     /// </summary>
     ArrowShapeUpStack2,
     /// <summary>
-    /// arrow_split
+    ///  arrow_split
     /// </summary>
     ArrowSplit,
     /// <summary>
-    /// arrow_top_left
+    ///  arrow_top_left
     /// </summary>
     ArrowTopLeft,
     /// <summary>
-    /// arrow_top_right
+    ///  arrow_top_right
     /// </summary>
     ArrowTopRight,
     /// <summary>
-    /// arrow_upload_progress
+    ///  arrow_upload_progress
     /// </summary>
     ArrowUploadProgress,
     /// <summary>
-    /// arrow_upload_ready
+    ///  arrow_upload_ready
     /// </summary>
     ArrowUploadReady,
     /// <summary>
-    /// arrow_upward
+    ///  arrow_upward
     /// </summary>
     ArrowUpward,
     /// <summary>
-    /// arrow_upward_alt
+    ///  arrow_upward_alt
     /// </summary>
     ArrowUpwardAlt,
     /// <summary>
-    /// arrow_warm_up
+    ///  arrow_warm_up
     /// </summary>
     ArrowWarmUp,
     /// <summary>
-    /// arrows_input
+    ///  arrows_input
     /// </summary>
     ArrowsInput,
     /// <summary>
-    /// arrows_more_down
+    ///  arrows_more_down
     /// </summary>
     ArrowsMoreDown,
     /// <summary>
-    /// arrows_more_up
+    ///  arrows_more_up
     /// </summary>
     ArrowsMoreUp,
     /// <summary>
-    /// arrows_output
+    ///  arrows_output
     /// </summary>
     ArrowsOutput,
     /// <summary>
-    /// arrows_outward
+    ///  arrows_outward
     /// </summary>
     ArrowsOutward,
     /// <summary>
-    /// art_track
+    ///  art_track
     /// </summary>
     ArtTrack,
     /// <summary>
-    /// article
+    ///  article
     /// </summary>
     Article,
     /// <summary>
-    /// article_person
+    ///  article_person
     /// </summary>
     ArticlePerson,
     /// <summary>
-    /// article_shortcut
+    ///  article_shortcut
     /// </summary>
     ArticleShortcut,
     /// <summary>
-    /// artist
+    ///  artist
     /// </summary>
     Artist,
     /// <summary>
-    /// aspect_ratio
+    ///  aspect_ratio
     /// </summary>
     AspectRatio,
     /// <summary>
-    /// assignment
+    ///  assignment
     /// </summary>
     Assignment,
     /// <summary>
-    /// assignment_add
+    ///  assignment_add
     /// </summary>
     AssignmentAdd,
     /// <summary>
-    /// assignment_ind
+    ///  assignment_ind
     /// </summary>
     AssignmentInd,
     /// <summary>
-    /// assignment_late
+    ///  assignment_late
     /// </summary>
     AssignmentLate,
     /// <summary>
-    /// assignment_return
+    ///  assignment_return
     /// </summary>
     AssignmentReturn,
     /// <summary>
-    /// assignment_returned
+    ///  assignment_returned
     /// </summary>
     AssignmentReturned,
     /// <summary>
-    /// assignment_turned_in
+    ///  assignment_turned_in
     /// </summary>
     AssignmentTurnedIn,
     /// <summary>
-    /// assist_walker
+    ///  assist_walker
     /// </summary>
     AssistWalker,
     /// <summary>
-    /// assistant_device
+    ///  assistant_device
     /// </summary>
     AssistantDevice,
     /// <summary>
-    /// assistant_direction
+    ///  assistant_direction
     /// </summary>
     AssistantDirection,
     /// <summary>
-    /// assistant_navigation
+    ///  assistant_navigation
     /// </summary>
     AssistantNavigation,
     /// <summary>
-    /// assistant_on_hub
+    ///  assistant_on_hub
     /// </summary>
     AssistantOnHub,
     /// <summary>
-    /// assured_workload
+    ///  assured_workload
     /// </summary>
     AssuredWorkload,
     /// <summary>
-    /// asterisk
+    ///  asterisk
     /// </summary>
     Asterisk,
     /// <summary>
-    /// atm
+    ///  atm
     /// </summary>
     Atm,
     /// <summary>
-    /// atr
+    ///  atr
     /// </summary>
     Atr,
     /// <summary>
-    /// attach_email
+    ///  attach_email
     /// </summary>
     AttachEmail,
     /// <summary>
-    /// attach_file
+    ///  attach_file
     /// </summary>
     AttachFile,
     /// <summary>
-    /// attach_file_add
+    ///  attach_file_add
     /// </summary>
     AttachFileAdd,
     /// <summary>
-    /// attach_file_off
+    ///  attach_file_off
     /// </summary>
     AttachFileOff,
     /// <summary>
-    /// attach_money
+    ///  attach_money
     /// </summary>
     AttachMoney,
     /// <summary>
-    /// attachment
+    ///  attachment
     /// </summary>
     Attachment,
     /// <summary>
-    /// attractions
+    ///  attractions
     /// </summary>
     Attractions,
     /// <summary>
-    /// attribution
+    ///  attribution
     /// </summary>
     Attribution,
     /// <summary>
-    /// audio_description
+    ///  audio_description
     /// </summary>
     AudioDescription,
     /// <summary>
-    /// audio_file
+    ///  audio_file
     /// </summary>
     AudioFile,
     /// <summary>
-    /// audio_video_receiver
+    ///  audio_video_receiver
     /// </summary>
     AudioVideoReceiver,
     /// <summary>
-    /// auto_awesome_mosaic
+    ///  auto_awesome_mosaic
     /// </summary>
     AutoAwesomeMosaic,
     /// <summary>
-    /// auto_awesome_motion
+    ///  auto_awesome_motion
     /// </summary>
     AutoAwesomeMotion,
     /// <summary>
-    /// auto_delete
+    ///  auto_delete
     /// </summary>
     AutoDelete,
     /// <summary>
-    /// auto_read_pause
+    ///  auto_read_pause
     /// </summary>
     AutoReadPause,
     /// <summary>
-    /// auto_read_play
+    ///  auto_read_play
     /// </summary>
     AutoReadPlay,
     /// <summary>
-    /// auto_stories
+    ///  auto_stories
     /// </summary>
     AutoStories,
     /// <summary>
-    /// auto_stories_off
+    ///  auto_stories_off
     /// </summary>
     AutoStoriesOff,
     /// <summary>
-    /// auto_towing
+    ///  auto_towing
     /// </summary>
     AutoTowing,
     /// <summary>
-    /// auto_transmission
+    ///  auto_transmission
     /// </summary>
     AutoTransmission,
     /// <summary>
-    /// autofps_select
+    ///  autofps_select
     /// </summary>
     AutofpsSelect,
     /// <summary>
-    /// automation
+    ///  automation
     /// </summary>
     Automation,
     /// <summary>
-    /// autopause
+    ///  autopause
     /// </summary>
     Autopause,
     /// <summary>
-    /// autoplay
+    ///  autoplay
     /// </summary>
     Autoplay,
     /// <summary>
-    /// autorenew
+    ///  autorenew
     /// </summary>
     Autorenew,
     /// <summary>
-    /// autostop
+    ///  autostop
     /// </summary>
     Autostop,
     /// <summary>
-    /// av_timer
+    ///  av_timer
     /// </summary>
     AvTimer,
     /// <summary>
-    /// av1
+    ///  av1
     /// </summary>
     Av1,
     /// <summary>
-    /// avc
+    ///  avc
     /// </summary>
     Avc,
     /// <summary>
-    /// avg_pace
+    ///  avg_pace
     /// </summary>
     AvgPace,
     /// <summary>
-    /// avg_time
+    ///  avg_time
     /// </summary>
     AvgTime,
     /// <summary>
-    /// award_meal
+    ///  award_meal
     /// </summary>
     AwardMeal,
     /// <summary>
-    /// award_star
+    ///  award_star
     /// </summary>
     AwardStar,
     /// <summary>
-    /// azm
+    ///  azm
     /// </summary>
     Azm,
     /// <summary>
-    /// baby_changing_station
+    ///  baby_changing_station
     /// </summary>
     BabyChangingStation,
     /// <summary>
-    /// back_hand
+    ///  back_hand
     /// </summary>
     BackHand,
     /// <summary>
-    /// back_to_tab
+    ///  back_to_tab
     /// </summary>
     BackToTab,
     /// <summary>
-    /// background_dot_large
+    ///  background_dot_large
     /// </summary>
     BackgroundDotLarge,
     /// <summary>
-    /// background_dot_small
+    ///  background_dot_small
     /// </summary>
     BackgroundDotSmall,
     /// <summary>
-    /// background_grid_small
+    ///  background_grid_small
     /// </summary>
     BackgroundGridSmall,
     /// <summary>
-    /// background_replace
+    ///  background_replace
     /// </summary>
     BackgroundReplace,
     /// <summary>
-    /// backlight_high
+    ///  backlight_high
     /// </summary>
     BacklightHigh,
     /// <summary>
-    /// backlight_high_off
+    ///  backlight_high_off
     /// </summary>
     BacklightHighOff,
     /// <summary>
-    /// backlight_low
+    ///  backlight_low
     /// </summary>
     BacklightLow,
     /// <summary>
-    /// backpack
+    ///  backpack
     /// </summary>
     Backpack,
     /// <summary>
-    /// backspace
+    ///  backspace
     /// </summary>
     Backspace,
     /// <summary>
-    /// backup
+    ///  backup
     /// </summary>
     Backup,
     /// <summary>
-    /// backup_table
+    ///  backup_table
     /// </summary>
     BackupTable,
     /// <summary>
-    /// badge
+    ///  badge
     /// </summary>
     Badge,
     /// <summary>
-    /// badge_critical_battery
+    ///  badge_critical_battery
     /// </summary>
     BadgeCriticalBattery,
     /// <summary>
-    /// badminton
+    ///  badminton
     /// </summary>
     Badminton,
     /// <summary>
-    /// bakery_dining
+    ///  bakery_dining
     /// </summary>
     BakeryDining,
     /// <summary>
-    /// balance
+    ///  balance
     /// </summary>
     Balance,
     /// <summary>
-    /// balcony
+    ///  balcony
     /// </summary>
     Balcony,
     /// <summary>
-    /// ballot
+    ///  ballot
     /// </summary>
     Ballot,
     /// <summary>
-    /// bar_chart
+    ///  bar_chart
     /// </summary>
     BarChart,
     /// <summary>
-    /// bar_chart_4_bars
+    ///  bar_chart_4_bars
     /// </summary>
     BarChart4Bars,
     /// <summary>
-    /// bar_chart_off
+    ///  bar_chart_off
     /// </summary>
     BarChartOff,
     /// <summary>
-    /// barcode
+    ///  barcode
     /// </summary>
     Barcode,
     /// <summary>
-    /// barcode_reader
+    ///  barcode_reader
     /// </summary>
     BarcodeReader,
     /// <summary>
-    /// barcode_scanner
+    ///  barcode_scanner
     /// </summary>
     BarcodeScanner,
     /// <summary>
-    /// barefoot
+    ///  barefoot
     /// </summary>
     Barefoot,
     /// <summary>
-    /// batch_prediction
+    ///  batch_prediction
     /// </summary>
     BatchPrediction,
     /// <summary>
-    /// bath_bedrock
+    ///  bath_bedrock
     /// </summary>
     BathBedrock,
     /// <summary>
-    /// bath_outdoor
+    ///  bath_outdoor
     /// </summary>
     BathOutdoor,
     /// <summary>
-    /// bath_private
+    ///  bath_private
     /// </summary>
     BathPrivate,
     /// <summary>
-    /// bath_public_large
+    ///  bath_public_large
     /// </summary>
     BathPublicLarge,
     /// <summary>
-    /// bath_soak
+    ///  bath_soak
     /// </summary>
     BathSoak,
     /// <summary>
-    /// bathroom
+    ///  bathroom
     /// </summary>
     Bathroom,
     /// <summary>
-    /// bathtub
+    ///  bathtub
     /// </summary>
     Bathtub,
     /// <summary>
-    /// battery_0_bar
+    ///  battery_0_bar
     /// </summary>
     Battery0Bar,
     /// <summary>
-    /// battery_1_bar
+    ///  battery_1_bar
     /// </summary>
     Battery1Bar,
     /// <summary>
-    /// battery_2_bar
+    ///  battery_2_bar
     /// </summary>
     Battery2Bar,
     /// <summary>
-    /// battery_3_bar
+    ///  battery_3_bar
     /// </summary>
     Battery3Bar,
     /// <summary>
-    /// battery_4_bar
+    ///  battery_4_bar
     /// </summary>
     Battery4Bar,
     /// <summary>
-    /// battery_5_bar
+    ///  battery_5_bar
     /// </summary>
     Battery5Bar,
     /// <summary>
-    /// battery_6_bar
+    ///  battery_6_bar
     /// </summary>
     Battery6Bar,
     /// <summary>
-    /// battery_alert
+    ///  battery_alert
     /// </summary>
     BatteryAlert,
     /// <summary>
-    /// battery_android_0
+    ///  battery_android_0
     /// </summary>
     BatteryAndroid0,
     /// <summary>
-    /// battery_android_1
+    ///  battery_android_1
     /// </summary>
     BatteryAndroid1,
     /// <summary>
-    /// battery_android_2
+    ///  battery_android_2
     /// </summary>
     BatteryAndroid2,
     /// <summary>
-    /// battery_android_3
+    ///  battery_android_3
     /// </summary>
     BatteryAndroid3,
     /// <summary>
-    /// battery_android_4
+    ///  battery_android_4
     /// </summary>
     BatteryAndroid4,
     /// <summary>
-    /// battery_android_5
+    ///  battery_android_5
     /// </summary>
     BatteryAndroid5,
     /// <summary>
-    /// battery_android_6
+    ///  battery_android_6
     /// </summary>
     BatteryAndroid6,
     /// <summary>
-    /// battery_android_alert
+    ///  battery_android_alert
     /// </summary>
     BatteryAndroidAlert,
     /// <summary>
-    /// battery_android_bolt
+    ///  battery_android_bolt
     /// </summary>
     BatteryAndroidBolt,
     /// <summary>
-    /// battery_android_frame_1
+    ///  battery_android_frame_1
     /// </summary>
     BatteryAndroidFrame1,
     /// <summary>
-    /// battery_android_frame_2
+    ///  battery_android_frame_2
     /// </summary>
     BatteryAndroidFrame2,
     /// <summary>
-    /// battery_android_frame_3
+    ///  battery_android_frame_3
     /// </summary>
     BatteryAndroidFrame3,
     /// <summary>
-    /// battery_android_frame_4
+    ///  battery_android_frame_4
     /// </summary>
     BatteryAndroidFrame4,
     /// <summary>
-    /// battery_android_frame_5
+    ///  battery_android_frame_5
     /// </summary>
     BatteryAndroidFrame5,
     /// <summary>
-    /// battery_android_frame_6
+    ///  battery_android_frame_6
     /// </summary>
     BatteryAndroidFrame6,
     /// <summary>
-    /// battery_android_frame_alert
+    ///  battery_android_frame_alert
     /// </summary>
     BatteryAndroidFrameAlert,
     /// <summary>
-    /// battery_android_frame_bolt
+    ///  battery_android_frame_bolt
     /// </summary>
     BatteryAndroidFrameBolt,
     /// <summary>
-    /// battery_android_frame_full
+    ///  battery_android_frame_full
     /// </summary>
     BatteryAndroidFrameFull,
     /// <summary>
-    /// battery_android_frame_plus
+    ///  battery_android_frame_plus
     /// </summary>
     BatteryAndroidFramePlus,
     /// <summary>
-    /// battery_android_frame_question
+    ///  battery_android_frame_question
     /// </summary>
     BatteryAndroidFrameQuestion,
     /// <summary>
-    /// battery_android_frame_share
+    ///  battery_android_frame_share
     /// </summary>
     BatteryAndroidFrameShare,
     /// <summary>
-    /// battery_android_frame_shield
+    ///  battery_android_frame_shield
     /// </summary>
     BatteryAndroidFrameShield,
     /// <summary>
-    /// battery_android_full
+    ///  battery_android_full
     /// </summary>
     BatteryAndroidFull,
     /// <summary>
-    /// battery_android_plus
+    ///  battery_android_plus
     /// </summary>
     BatteryAndroidPlus,
     /// <summary>
-    /// battery_android_question
+    ///  battery_android_question
     /// </summary>
     BatteryAndroidQuestion,
     /// <summary>
-    /// battery_android_share
+    ///  battery_android_share
     /// </summary>
     BatteryAndroidShare,
     /// <summary>
-    /// battery_android_shield
+    ///  battery_android_shield
     /// </summary>
     BatteryAndroidShield,
     /// <summary>
-    /// battery_change
+    ///  battery_change
     /// </summary>
     BatteryChange,
     /// <summary>
-    /// battery_charging_20
+    ///  battery_charging_20
     /// </summary>
     BatteryCharging20,
     /// <summary>
-    /// battery_charging_30
+    ///  battery_charging_30
     /// </summary>
     BatteryCharging30,
     /// <summary>
-    /// battery_charging_50
+    ///  battery_charging_50
     /// </summary>
     BatteryCharging50,
     /// <summary>
-    /// battery_charging_60
+    ///  battery_charging_60
     /// </summary>
     BatteryCharging60,
     /// <summary>
-    /// battery_charging_80
+    ///  battery_charging_80
     /// </summary>
     BatteryCharging80,
     /// <summary>
-    /// battery_charging_90
+    ///  battery_charging_90
     /// </summary>
     BatteryCharging90,
     /// <summary>
-    /// battery_charging_full
+    ///  battery_charging_full
     /// </summary>
     BatteryChargingFull,
     /// <summary>
-    /// battery_error
+    ///  battery_error
     /// </summary>
     BatteryError,
     /// <summary>
-    /// battery_full
+    ///  battery_full
     /// </summary>
     BatteryFull,
     /// <summary>
-    /// battery_full_alt
+    ///  battery_full_alt
     /// </summary>
     BatteryFullAlt,
     /// <summary>
-    /// battery_horiz_000
+    ///  battery_horiz_000
     /// </summary>
     BatteryHoriz000,
     /// <summary>
-    /// battery_horiz_050
+    ///  battery_horiz_050
     /// </summary>
     BatteryHoriz050,
     /// <summary>
-    /// battery_horiz_075
+    ///  battery_horiz_075
     /// </summary>
     BatteryHoriz075,
     /// <summary>
-    /// battery_low
+    ///  battery_low
     /// </summary>
     BatteryLow,
     /// <summary>
-    /// battery_plus
+    ///  battery_plus
     /// </summary>
     BatteryPlus,
     /// <summary>
-    /// battery_profile
+    ///  battery_profile
     /// </summary>
     BatteryProfile,
     /// <summary>
-    /// battery_saver
+    ///  battery_saver
     /// </summary>
     BatterySaver,
     /// <summary>
-    /// battery_share
+    ///  battery_share
     /// </summary>
     BatteryShare,
     /// <summary>
-    /// battery_status_good
+    ///  battery_status_good
     /// </summary>
     BatteryStatusGood,
     /// <summary>
-    /// battery_unknown
+    ///  battery_unknown
     /// </summary>
     BatteryUnknown,
     /// <summary>
-    /// battery_very_low
+    ///  battery_very_low
     /// </summary>
     BatteryVeryLow,
     /// <summary>
-    /// beach_access
+    ///  beach_access
     /// </summary>
     BeachAccess,
     /// <summary>
-    /// bed
+    ///  bed
     /// </summary>
     Bed,
     /// <summary>
-    /// bedroom_baby
+    ///  bedroom_baby
     /// </summary>
     BedroomBaby,
     /// <summary>
-    /// bedroom_child
+    ///  bedroom_child
     /// </summary>
     BedroomChild,
     /// <summary>
-    /// bedroom_parent
+    ///  bedroom_parent
     /// </summary>
     BedroomParent,
     /// <summary>
-    /// bedtime
+    ///  bedtime
     /// </summary>
     Bedtime,
     /// <summary>
-    /// bedtime_off
+    ///  bedtime_off
     /// </summary>
     BedtimeOff,
     /// <summary>
-    /// beenhere
+    ///  beenhere
     /// </summary>
     Beenhere,
     /// <summary>
-    /// beer_meal
+    ///  beer_meal
     /// </summary>
     BeerMeal,
     /// <summary>
-    /// bento
+    ///  bento
     /// </summary>
     Bento,
     /// <summary>
-    /// bia
+    ///  bia
     /// </summary>
     Bia,
     /// <summary>
-    /// bid_landscape
+    ///  bid_landscape
     /// </summary>
     BidLandscape,
     /// <summary>
-    /// bid_landscape_disabled
+    ///  bid_landscape_disabled
     /// </summary>
     BidLandscapeDisabled,
     /// <summary>
-    /// bigtop_updates
+    ///  bigtop_updates
     /// </summary>
     BigtopUpdates,
     /// <summary>
-    /// bike_dock
+    ///  bike_dock
     /// </summary>
     BikeDock,
     /// <summary>
-    /// bike_lane
+    ///  bike_lane
     /// </summary>
     BikeLane,
     /// <summary>
-    /// bike_scooter
+    ///  bike_scooter
     /// </summary>
     BikeScooter,
     /// <summary>
-    /// biotech
+    ///  biotech
     /// </summary>
     Biotech,
     /// <summary>
-    /// blanket
+    ///  blanket
     /// </summary>
     Blanket,
     /// <summary>
-    /// blender
+    ///  blender
     /// </summary>
     Blender,
     /// <summary>
-    /// blind
+    ///  blind
     /// </summary>
     Blind,
     /// <summary>
-    /// blinds
+    ///  blinds
     /// </summary>
     Blinds,
     /// <summary>
-    /// blinds_closed
+    ///  blinds_closed
     /// </summary>
     BlindsClosed,
     /// <summary>
-    /// block
+    ///  block
     /// </summary>
     Block,
     /// <summary>
-    /// blood_pressure
+    ///  blood_pressure
     /// </summary>
     BloodPressure,
     /// <summary>
-    /// bloodtype
+    ///  bloodtype
     /// </summary>
     Bloodtype,
     /// <summary>
-    /// bluetooth
+    ///  bluetooth
     /// </summary>
     Bluetooth,
     /// <summary>
-    /// bluetooth_connected
+    ///  bluetooth_connected
     /// </summary>
     BluetoothConnected,
     /// <summary>
-    /// bluetooth_disabled
+    ///  bluetooth_disabled
     /// </summary>
     BluetoothDisabled,
     /// <summary>
-    /// bluetooth_drive
+    ///  bluetooth_drive
     /// </summary>
     BluetoothDrive,
     /// <summary>
-    /// bluetooth_searching
+    ///  bluetooth_searching
     /// </summary>
     BluetoothSearching,
     /// <summary>
-    /// blur_circular
+    ///  blur_circular
     /// </summary>
     BlurCircular,
     /// <summary>
-    /// blur_linear
+    ///  blur_linear
     /// </summary>
     BlurLinear,
     /// <summary>
-    /// blur_medium
+    ///  blur_medium
     /// </summary>
     BlurMedium,
     /// <summary>
-    /// blur_off
+    ///  blur_off
     /// </summary>
     BlurOff,
     /// <summary>
-    /// blur_on
+    ///  blur_on
     /// </summary>
     BlurOn,
     /// <summary>
-    /// blur_short
+    ///  blur_short
     /// </summary>
     BlurShort,
     /// <summary>
-    /// boat_bus
+    ///  boat_bus
     /// </summary>
     BoatBus,
     /// <summary>
-    /// boat_railway
+    ///  boat_railway
     /// </summary>
     BoatRailway,
     /// <summary>
-    /// body_fat
+    ///  body_fat
     /// </summary>
     BodyFat,
     /// <summary>
-    /// body_system
+    ///  body_system
     /// </summary>
     BodySystem,
     /// <summary>
-    /// bolt
+    ///  bolt
     /// </summary>
     Bolt,
     /// <summary>
-    /// bomb
+    ///  bomb
     /// </summary>
     Bomb,
     /// <summary>
-    /// book
+    ///  book
     /// </summary>
     Book,
     /// <summary>
-    /// book_2
+    ///  book_2
     /// </summary>
     Book2,
     /// <summary>
-    /// book_3
+    ///  book_3
     /// </summary>
     Book3,
     /// <summary>
-    /// book_4
+    ///  book_4
     /// </summary>
     Book4,
     /// <summary>
-    /// book_5
+    ///  book_5
     /// </summary>
     Book5,
     /// <summary>
-    /// book_6
+    ///  book_6
     /// </summary>
     Book6,
     /// <summary>
-    /// book_ribbon
+    ///  book_ribbon
     /// </summary>
     BookRibbon,
     /// <summary>
-    /// bookmark
+    ///  bookmark
     /// </summary>
     Bookmark,
     /// <summary>
-    /// bookmark_add
+    ///  bookmark_add
     /// </summary>
     BookmarkAdd,
     /// <summary>
-    /// bookmark_added
+    ///  bookmark_added
     /// </summary>
     BookmarkAdded,
     /// <summary>
-    /// bookmark_bag
+    ///  bookmark_bag
     /// </summary>
     BookmarkBag,
     /// <summary>
-    /// bookmark_check
+    ///  bookmark_check
     /// </summary>
     BookmarkCheck,
     /// <summary>
-    /// bookmark_flag
+    ///  bookmark_flag
     /// </summary>
     BookmarkFlag,
     /// <summary>
-    /// bookmark_heart
+    ///  bookmark_heart
     /// </summary>
     BookmarkHeart,
     /// <summary>
-    /// bookmark_manager
+    ///  bookmark_manager
     /// </summary>
     BookmarkManager,
     /// <summary>
-    /// bookmark_remove
+    ///  bookmark_remove
     /// </summary>
     BookmarkRemove,
     /// <summary>
-    /// bookmark_star
+    ///  bookmark_star
     /// </summary>
     BookmarkStar,
     /// <summary>
-    /// bookmarks
+    ///  bookmarks
     /// </summary>
     Bookmarks,
     /// <summary>
-    /// books_movies_and_music
+    ///  books_movies_and_music
     /// </summary>
     BooksMoviesAndMusic,
     /// <summary>
-    /// border_all
+    ///  border_all
     /// </summary>
     BorderAll,
     /// <summary>
-    /// border_bottom
+    ///  border_bottom
     /// </summary>
     BorderBottom,
     /// <summary>
-    /// border_clear
+    ///  border_clear
     /// </summary>
     BorderClear,
     /// <summary>
-    /// border_color
+    ///  border_color
     /// </summary>
     BorderColor,
     /// <summary>
-    /// border_horizontal
+    ///  border_horizontal
     /// </summary>
     BorderHorizontal,
     /// <summary>
-    /// border_inner
+    ///  border_inner
     /// </summary>
     BorderInner,
     /// <summary>
-    /// border_left
+    ///  border_left
     /// </summary>
     BorderLeft,
     /// <summary>
-    /// border_outer
+    ///  border_outer
     /// </summary>
     BorderOuter,
     /// <summary>
-    /// border_right
+    ///  border_right
     /// </summary>
     BorderRight,
     /// <summary>
-    /// border_style
+    ///  border_style
     /// </summary>
     BorderStyle,
     /// <summary>
-    /// border_top
+    ///  border_top
     /// </summary>
     BorderTop,
     /// <summary>
-    /// border_vertical
+    ///  border_vertical
     /// </summary>
     BorderVertical,
     /// <summary>
-    /// borg
+    ///  borg
     /// </summary>
     Borg,
     /// <summary>
-    /// bottom_app_bar
+    ///  bottom_app_bar
     /// </summary>
     BottomAppBar,
     /// <summary>
-    /// bottom_drawer
+    ///  bottom_drawer
     /// </summary>
     BottomDrawer,
     /// <summary>
-    /// bottom_navigation
+    ///  bottom_navigation
     /// </summary>
     BottomNavigation,
     /// <summary>
-    /// bottom_panel_close
+    ///  bottom_panel_close
     /// </summary>
     BottomPanelClose,
     /// <summary>
-    /// bottom_panel_open
+    ///  bottom_panel_open
     /// </summary>
     BottomPanelOpen,
     /// <summary>
-    /// bottom_right_click
+    ///  bottom_right_click
     /// </summary>
     BottomRightClick,
     /// <summary>
-    /// bottom_sheets
+    ///  bottom_sheets
     /// </summary>
     BottomSheets,
     /// <summary>
-    /// box
+    ///  box
     /// </summary>
     Box,
     /// <summary>
-    /// box_add
+    ///  box_add
     /// </summary>
     BoxAdd,
     /// <summary>
-    /// box_edit
+    ///  box_edit
     /// </summary>
     BoxEdit,
     /// <summary>
-    /// boy
+    ///  boy
     /// </summary>
     Boy,
     /// <summary>
-    /// brand_awareness
+    ///  brand_awareness
     /// </summary>
     BrandAwareness,
     /// <summary>
-    /// brand_family
+    ///  brand_family
     /// </summary>
     BrandFamily,
     /// <summary>
-    /// branding_watermark
+    ///  branding_watermark
     /// </summary>
     BrandingWatermark,
     /// <summary>
-    /// breakfast_dining
+    ///  breakfast_dining
     /// </summary>
     BreakfastDining,
     /// <summary>
-    /// breaking_news
+    ///  breaking_news
     /// </summary>
     BreakingNews,
     /// <summary>
-    /// breaking_news_alt_1
+    ///  breaking_news_alt_1
     /// </summary>
     BreakingNewsAlt1,
     /// <summary>
-    /// breastfeeding
+    ///  breastfeeding
     /// </summary>
     Breastfeeding,
     /// <summary>
-    /// brick
+    ///  brick
     /// </summary>
     Brick,
     /// <summary>
-    /// briefcase_meal
+    ///  briefcase_meal
     /// </summary>
     BriefcaseMeal,
     /// <summary>
-    /// brightness_1
+    ///  brightness_1
     /// </summary>
     Brightness1,
     /// <summary>
-    /// brightness_2
+    ///  brightness_2
     /// </summary>
     Brightness2,
     /// <summary>
-    /// brightness_3
+    ///  brightness_3
     /// </summary>
     Brightness3,
     /// <summary>
-    /// brightness_4
+    ///  brightness_4
     /// </summary>
     Brightness4,
     /// <summary>
-    /// brightness_5
+    ///  brightness_5
     /// </summary>
     Brightness5,
     /// <summary>
-    /// brightness_6
+    ///  brightness_6
     /// </summary>
     Brightness6,
     /// <summary>
-    /// brightness_7
+    ///  brightness_7
     /// </summary>
     Brightness7,
     /// <summary>
-    /// brightness_alert
+    ///  brightness_alert
     /// </summary>
     BrightnessAlert,
     /// <summary>
-    /// brightness_auto
+    ///  brightness_auto
     /// </summary>
     BrightnessAuto,
     /// <summary>
-    /// brightness_empty
+    ///  brightness_empty
     /// </summary>
     BrightnessEmpty,
     /// <summary>
-    /// brightness_medium
+    ///  brightness_medium
     /// </summary>
     BrightnessMedium,
     /// <summary>
-    /// bring_your_own_ip
+    ///  bring_your_own_ip
     /// </summary>
     BringYourOwnIp,
     /// <summary>
-    /// broadcast_on_home
+    ///  broadcast_on_home
     /// </summary>
     BroadcastOnHome,
     /// <summary>
-    /// broadcast_on_personal
+    ///  broadcast_on_personal
     /// </summary>
     BroadcastOnPersonal,
     /// <summary>
-    /// broken_image
+    ///  broken_image
     /// </summary>
     BrokenImage,
     /// <summary>
-    /// browse
+    ///  browse
     /// </summary>
     Browse,
     /// <summary>
-    /// browse_activity
+    ///  browse_activity
     /// </summary>
     BrowseActivity,
     /// <summary>
-    /// browse_gallery
+    ///  browse_gallery
     /// </summary>
     BrowseGallery,
     /// <summary>
-    /// browser_updated
+    ///  browser_updated
     /// </summary>
     BrowserUpdated,
     /// <summary>
-    /// brunch_dining
+    ///  brunch_dining
     /// </summary>
     BrunchDining,
     /// <summary>
-    /// brush
+    ///  brush
     /// </summary>
     Brush,
     /// <summary>
-    /// bubble
+    ///  bubble
     /// </summary>
     Bubble,
     /// <summary>
-    /// bubble_chart
+    ///  bubble_chart
     /// </summary>
     BubbleChart,
     /// <summary>
-    /// bubbles
+    ///  bubbles
     /// </summary>
     Bubbles,
     /// <summary>
-    /// bucket_check
+    ///  bucket_check
     /// </summary>
     BucketCheck,
     /// <summary>
-    /// bug_report
+    ///  bug_report
     /// </summary>
     BugReport,
     /// <summary>
-    /// build
+    ///  build
     /// </summary>
     Build,
     /// <summary>
-    /// build_circle
+    ///  build_circle
     /// </summary>
     BuildCircle,
     /// <summary>
-    /// bungalow
+    ///  bungalow
     /// </summary>
     Bungalow,
     /// <summary>
-    /// burst_mode
+    ///  burst_mode
     /// </summary>
     BurstMode,
     /// <summary>
-    /// bus_alert
+    ///  bus_alert
     /// </summary>
     BusAlert,
     /// <summary>
-    /// bus_railway
+    ///  bus_railway
     /// </summary>
     BusRailway,
     /// <summary>
-    /// business_center
+    ///  business_center
     /// </summary>
     BusinessCenter,
     /// <summary>
-    /// business_chip
+    ///  business_chip
     /// </summary>
     BusinessChip,
     /// <summary>
-    /// business_messages
+    ///  business_messages
     /// </summary>
     BusinessMessages,
     /// <summary>
-    /// buttons_alt
+    ///  buttons_alt
     /// </summary>
     ButtonsAlt,
     /// <summary>
-    /// cabin
+    ///  cabin
     /// </summary>
     Cabin,
     /// <summary>
-    /// cable
+    ///  cable
     /// </summary>
     Cable,
     /// <summary>
-    /// cable_car
+    ///  cable_car
     /// </summary>
     CableCar,
     /// <summary>
-    /// cached
+    ///  cached
     /// </summary>
     Cached,
     /// <summary>
-    /// cadence
+    ///  cadence
     /// </summary>
     Cadence,
     /// <summary>
-    /// cake
+    ///  cake
     /// </summary>
     Cake,
     /// <summary>
-    /// cake_add
+    ///  cake_add
     /// </summary>
     CakeAdd,
     /// <summary>
-    /// calculate
+    ///  calculate
     /// </summary>
     Calculate,
     /// <summary>
-    /// calendar_add_on
+    ///  calendar_add_on
     /// </summary>
     CalendarAddOn,
     /// <summary>
-    /// calendar_apps_script
+    ///  calendar_apps_script
     /// </summary>
     CalendarAppsScript,
     /// <summary>
-    /// calendar_check
+    ///  calendar_check
     /// </summary>
     CalendarCheck,
     /// <summary>
-    /// calendar_clock
+    ///  calendar_clock
     /// </summary>
     CalendarClock,
     /// <summary>
-    /// calendar_lock
+    ///  calendar_lock
     /// </summary>
     CalendarLock,
     /// <summary>
-    /// calendar_meal
+    ///  calendar_meal
     /// </summary>
     CalendarMeal,
     /// <summary>
-    /// calendar_meal_2
+    ///  calendar_meal_2
     /// </summary>
     CalendarMeal2,
     /// <summary>
-    /// calendar_month
+    ///  calendar_month
     /// </summary>
     CalendarMonth,
     /// <summary>
-    /// calendar_today
+    ///  calendar_today
     /// </summary>
     CalendarToday,
     /// <summary>
-    /// calendar_view_day
+    ///  calendar_view_day
     /// </summary>
     CalendarViewDay,
     /// <summary>
-    /// calendar_view_month
+    ///  calendar_view_month
     /// </summary>
     CalendarViewMonth,
     /// <summary>
-    /// calendar_view_week
+    ///  calendar_view_week
     /// </summary>
     CalendarViewWeek,
     /// <summary>
-    /// call
+    ///  call
     /// </summary>
     Call,
     /// <summary>
-    /// call_end
+    ///  call_end
     /// </summary>
     CallEnd,
     /// <summary>
-    /// call_log
+    ///  call_log
     /// </summary>
     CallLog,
     /// <summary>
-    /// call_made
+    ///  call_made
     /// </summary>
     CallMade,
     /// <summary>
-    /// call_merge
+    ///  call_merge
     /// </summary>
     CallMerge,
     /// <summary>
-    /// call_missed
+    ///  call_missed
     /// </summary>
     CallMissed,
     /// <summary>
-    /// call_missed_outgoing
+    ///  call_missed_outgoing
     /// </summary>
     CallMissedOutgoing,
     /// <summary>
-    /// call_quality
+    ///  call_quality
     /// </summary>
     CallQuality,
     /// <summary>
-    /// call_received
+    ///  call_received
     /// </summary>
     CallReceived,
     /// <summary>
-    /// call_split
+    ///  call_split
     /// </summary>
     CallSplit,
     /// <summary>
-    /// call_to_action
+    ///  call_to_action
     /// </summary>
     CallToAction,
     /// <summary>
-    /// camera
+    ///  camera
     /// </summary>
     Camera,
     /// <summary>
-    /// camera_indoor
+    ///  camera_indoor
     /// </summary>
     CameraIndoor,
     /// <summary>
-    /// camera_outdoor
+    ///  camera_outdoor
     /// </summary>
     CameraOutdoor,
     /// <summary>
-    /// camera_roll
+    ///  camera_roll
     /// </summary>
     CameraRoll,
     /// <summary>
-    /// camera_video
+    ///  camera_video
     /// </summary>
     CameraVideo,
     /// <summary>
-    /// cameraswitch
+    ///  cameraswitch
     /// </summary>
     Cameraswitch,
     /// <summary>
-    /// campaign
+    ///  campaign
     /// </summary>
     Campaign,
     /// <summary>
-    /// camping
+    ///  camping
     /// </summary>
     Camping,
     /// <summary>
-    /// cancel
+    ///  cancel
     /// </summary>
     Cancel,
     /// <summary>
-    /// cancel_presentation
+    ///  cancel_presentation
     /// </summary>
     CancelPresentation,
     /// <summary>
-    /// cancel_schedule_send
+    ///  cancel_schedule_send
     /// </summary>
     CancelScheduleSend,
     /// <summary>
-    /// candle
+    ///  candle
     /// </summary>
     Candle,
     /// <summary>
-    /// candlestick_chart
+    ///  candlestick_chart
     /// </summary>
     CandlestickChart,
     /// <summary>
-    /// cannabis
+    ///  cannabis
     /// </summary>
     Cannabis,
     /// <summary>
-    /// captive_portal
+    ///  captive_portal
     /// </summary>
     CaptivePortal,
     /// <summary>
-    /// capture
+    ///  capture
     /// </summary>
     Capture,
     /// <summary>
-    /// car_crash
+    ///  car_crash
     /// </summary>
     CarCrash,
     /// <summary>
-    /// car_defrost_left
+    ///  car_defrost_left
     /// </summary>
     CarDefrostLeft,
     /// <summary>
-    /// car_defrost_low_left
+    ///  car_defrost_low_left
     /// </summary>
     CarDefrostLowLeft,
     /// <summary>
-    /// car_defrost_low_right
+    ///  car_defrost_low_right
     /// </summary>
     CarDefrostLowRight,
     /// <summary>
-    /// car_defrost_mid_left
+    ///  car_defrost_mid_left
     /// </summary>
     CarDefrostMidLeft,
     /// <summary>
-    /// car_defrost_mid_low_left
+    ///  car_defrost_mid_low_left
     /// </summary>
     CarDefrostMidLowLeft,
     /// <summary>
-    /// car_defrost_mid_low_right
+    ///  car_defrost_mid_low_right
     /// </summary>
     CarDefrostMidLowRight,
     /// <summary>
-    /// car_defrost_mid_right
+    ///  car_defrost_mid_right
     /// </summary>
     CarDefrostMidRight,
     /// <summary>
-    /// car_defrost_right
+    ///  car_defrost_right
     /// </summary>
     CarDefrostRight,
     /// <summary>
-    /// car_fan_low_left
+    ///  car_fan_low_left
     /// </summary>
     CarFanLowLeft,
     /// <summary>
-    /// car_fan_low_mid_left
+    ///  car_fan_low_mid_left
     /// </summary>
     CarFanLowMidLeft,
     /// <summary>
-    /// car_fan_low_right
+    ///  car_fan_low_right
     /// </summary>
     CarFanLowRight,
     /// <summary>
-    /// car_fan_mid_left
+    ///  car_fan_mid_left
     /// </summary>
     CarFanMidLeft,
     /// <summary>
-    /// car_fan_mid_low_right
+    ///  car_fan_mid_low_right
     /// </summary>
     CarFanMidLowRight,
     /// <summary>
-    /// car_fan_mid_right
+    ///  car_fan_mid_right
     /// </summary>
     CarFanMidRight,
     /// <summary>
-    /// car_fan_recirculate
+    ///  car_fan_recirculate
     /// </summary>
     CarFanRecirculate,
     /// <summary>
-    /// car_gear
+    ///  car_gear
     /// </summary>
     CarGear,
     /// <summary>
-    /// car_lock
+    ///  car_lock
     /// </summary>
     CarLock,
     /// <summary>
-    /// car_mirror_heat
+    ///  car_mirror_heat
     /// </summary>
     CarMirrorHeat,
     /// <summary>
-    /// car_rental
+    ///  car_rental
     /// </summary>
     CarRental,
     /// <summary>
-    /// car_repair
+    ///  car_repair
     /// </summary>
     CarRepair,
     /// <summary>
-    /// car_tag
+    ///  car_tag
     /// </summary>
     CarTag,
     /// <summary>
-    /// card_membership
+    ///  card_membership
     /// </summary>
     CardMembership,
     /// <summary>
-    /// card_travel
+    ///  card_travel
     /// </summary>
     CardTravel,
     /// <summary>
-    /// cardio_load
+    ///  cardio_load
     /// </summary>
     CardioLoad,
     /// <summary>
-    /// cardiology
+    ///  cardiology
     /// </summary>
     Cardiology,
     /// <summary>
-    /// cards
+    ///  cards
     /// </summary>
     Cards,
     /// <summary>
-    /// cards_star
+    ///  cards_star
     /// </summary>
     CardsStar,
     /// <summary>
-    /// carpenter
+    ///  carpenter
     /// </summary>
     Carpenter,
     /// <summary>
-    /// carry_on_bag
+    ///  carry_on_bag
     /// </summary>
     CarryOnBag,
     /// <summary>
-    /// carry_on_bag_checked
+    ///  carry_on_bag_checked
     /// </summary>
     CarryOnBagChecked,
     /// <summary>
-    /// carry_on_bag_inactive
+    ///  carry_on_bag_inactive
     /// </summary>
     CarryOnBagInactive,
     /// <summary>
-    /// carry_on_bag_question
+    ///  carry_on_bag_question
     /// </summary>
     CarryOnBagQuestion,
     /// <summary>
-    /// cases
+    ///  cases
     /// </summary>
     Cases,
     /// <summary>
-    /// casino
+    ///  casino
     /// </summary>
     Casino,
     /// <summary>
-    /// cast
+    ///  cast
     /// </summary>
     Cast,
     /// <summary>
-    /// cast_connected
+    ///  cast_connected
     /// </summary>
     CastConnected,
     /// <summary>
-    /// cast_for_education
+    ///  cast_for_education
     /// </summary>
     CastForEducation,
     /// <summary>
-    /// cast_pause
+    ///  cast_pause
     /// </summary>
     CastPause,
     /// <summary>
-    /// cast_warning
+    ///  cast_warning
     /// </summary>
     CastWarning,
     /// <summary>
-    /// castle
+    ///  castle
     /// </summary>
     Castle,
     /// <summary>
-    /// category
+    ///  category
     /// </summary>
     Category,
     /// <summary>
-    /// category_search
+    ///  category_search
     /// </summary>
     CategorySearch,
     /// <summary>
-    /// celebration
+    ///  celebration
     /// </summary>
     Celebration,
     /// <summary>
-    /// cell_merge
+    ///  cell_merge
     /// </summary>
     CellMerge,
     /// <summary>
-    /// cell_tower
+    ///  cell_tower
     /// </summary>
     CellTower,
     /// <summary>
-    /// cell_wifi
+    ///  cell_wifi
     /// </summary>
     CellWifi,
     /// <summary>
-    /// center_focus_strong
+    ///  center_focus_strong
     /// </summary>
     CenterFocusStrong,
     /// <summary>
-    /// center_focus_weak
+    ///  center_focus_weak
     /// </summary>
     CenterFocusWeak,
     /// <summary>
-    /// chair
+    ///  chair
     /// </summary>
     Chair,
     /// <summary>
-    /// chair_alt
+    ///  chair_alt
     /// </summary>
     ChairAlt,
     /// <summary>
-    /// chair_counter
+    ///  chair_counter
     /// </summary>
     ChairCounter,
     /// <summary>
-    /// chair_fireplace
+    ///  chair_fireplace
     /// </summary>
     ChairFireplace,
     /// <summary>
-    /// chair_umbrella
+    ///  chair_umbrella
     /// </summary>
     ChairUmbrella,
     /// <summary>
-    /// chalet
+    ///  chalet
     /// </summary>
     Chalet,
     /// <summary>
-    /// change_circle
+    ///  change_circle
     /// </summary>
     ChangeCircle,
     /// <summary>
-    /// change_history
+    ///  change_history
     /// </summary>
     ChangeHistory,
     /// <summary>
-    /// charger
+    ///  charger
     /// </summary>
     Charger,
     /// <summary>
-    /// chart_data
+    ///  chart_data
     /// </summary>
     ChartData,
     /// <summary>
-    /// chat
+    ///  chat
     /// </summary>
     Chat,
     /// <summary>
-    /// chat_add_on
+    ///  chat_add_on
     /// </summary>
     ChatAddOn,
     /// <summary>
-    /// chat_apps_script
+    ///  chat_apps_script
     /// </summary>
     ChatAppsScript,
     /// <summary>
-    /// chat_bubble
+    ///  chat_bubble
     /// </summary>
     ChatBubble,
     /// <summary>
-    /// chat_error
+    ///  chat_error
     /// </summary>
     ChatError,
     /// <summary>
-    /// chat_info
+    ///  chat_info
     /// </summary>
     ChatInfo,
     /// <summary>
-    /// chat_paste_go
+    ///  chat_paste_go
     /// </summary>
     ChatPasteGo,
     /// <summary>
-    /// chat_paste_go_2
+    ///  chat_paste_go_2
     /// </summary>
     ChatPasteGo2,
     /// <summary>
-    /// check
+    ///  check
     /// </summary>
     Check,
     /// <summary>
-    /// check_box
+    ///  check_box
     /// </summary>
     CheckBox,
     /// <summary>
-    /// check_box_outline_blank
+    ///  check_box_outline_blank
     /// </summary>
     CheckBoxOutlineBlank,
     /// <summary>
-    /// check_circle
+    ///  check_circle
     /// </summary>
     CheckCircle,
     /// <summary>
-    /// check_circle_unread
+    ///  check_circle_unread
     /// </summary>
     CheckCircleUnread,
     /// <summary>
-    /// check_in_out
+    ///  check_in_out
     /// </summary>
     CheckInOut,
     /// <summary>
-    /// check_indeterminate_small
+    ///  check_indeterminate_small
     /// </summary>
     CheckIndeterminateSmall,
     /// <summary>
-    /// check_small
+    ///  check_small
     /// </summary>
     CheckSmall,
     /// <summary>
-    /// checkbook
+    ///  checkbook
     /// </summary>
     Checkbook,
     /// <summary>
-    /// checked_bag
+    ///  checked_bag
     /// </summary>
     CheckedBag,
     /// <summary>
-    /// checked_bag_question
+    ///  checked_bag_question
     /// </summary>
     CheckedBagQuestion,
     /// <summary>
-    /// checklist
+    ///  checklist
     /// </summary>
     Checklist,
     /// <summary>
-    /// checklist_rtl
+    ///  checklist_rtl
     /// </summary>
     ChecklistRtl,
     /// <summary>
-    /// checkroom
+    ///  checkroom
     /// </summary>
     Checkroom,
     /// <summary>
-    /// cheer
+    ///  cheer
     /// </summary>
     Cheer,
     /// <summary>
-    /// chef_hat
+    ///  chef_hat
     /// </summary>
     ChefHat,
     /// <summary>
-    /// chess
+    ///  chess
     /// </summary>
     Chess,
     /// <summary>
-    /// chess_bishop
+    ///  chess_bishop
     /// </summary>
     ChessBishop,
     /// <summary>
-    /// chess_bishop_2
+    ///  chess_bishop_2
     /// </summary>
     ChessBishop2,
     /// <summary>
-    /// chess_king
+    ///  chess_king
     /// </summary>
     ChessKing,
     /// <summary>
-    /// chess_king_2
+    ///  chess_king_2
     /// </summary>
     ChessKing2,
     /// <summary>
-    /// chess_knight
+    ///  chess_knight
     /// </summary>
     ChessKnight,
     /// <summary>
-    /// chess_pawn
+    ///  chess_pawn
     /// </summary>
     ChessPawn,
     /// <summary>
-    /// chess_pawn_2
+    ///  chess_pawn_2
     /// </summary>
     ChessPawn2,
     /// <summary>
-    /// chess_queen
+    ///  chess_queen
     /// </summary>
     ChessQueen,
     /// <summary>
-    /// chess_rook
+    ///  chess_rook
     /// </summary>
     ChessRook,
     /// <summary>
-    /// chevron_backward
+    ///  chevron_backward
     /// </summary>
     ChevronBackward,
     /// <summary>
-    /// chevron_forward
+    ///  chevron_forward
     /// </summary>
     ChevronForward,
     /// <summary>
-    /// chevron_left
+    ///  chevron_left
     /// </summary>
     ChevronLeft,
     /// <summary>
-    /// chevron_right
+    ///  chevron_right
     /// </summary>
     ChevronRight,
     /// <summary>
-    /// child_care
+    ///  child_care
     /// </summary>
     ChildCare,
     /// <summary>
-    /// child_friendly
+    ///  child_friendly
     /// </summary>
     ChildFriendly,
     /// <summary>
-    /// child_hat
+    ///  child_hat
     /// </summary>
     ChildHat,
     /// <summary>
-    /// chip_extraction
+    ///  chip_extraction
     /// </summary>
     ChipExtraction,
     /// <summary>
-    /// chips
+    ///  chips
     /// </summary>
     Chips,
     /// <summary>
-    /// chrome_reader_mode
+    ///  chrome_reader_mode
     /// </summary>
     ChromeReaderMode,
     /// <summary>
-    /// chromecast_2
+    ///  chromecast_2
     /// </summary>
     Chromecast2,
     /// <summary>
-    /// chromecast_device
+    ///  chromecast_device
     /// </summary>
     ChromecastDevice,
     /// <summary>
-    /// chronic
+    ///  chronic
     /// </summary>
     Chronic,
     /// <summary>
-    /// church
+    ///  church
     /// </summary>
     Church,
     /// <summary>
-    /// cinematic_blur
+    ///  cinematic_blur
     /// </summary>
     CinematicBlur,
     /// <summary>
-    /// circle
+    ///  circle
     /// </summary>
     Circle,
     /// <summary>
-    /// circle_notifications
+    ///  circle_notifications
     /// </summary>
     CircleNotifications,
     /// <summary>
-    /// circles
+    ///  circles
     /// </summary>
     Circles,
     /// <summary>
-    /// circles_ext
+    ///  circles_ext
     /// </summary>
     CirclesExt,
     /// <summary>
-    /// clarify
+    ///  clarify
     /// </summary>
     Clarify,
     /// <summary>
-    /// clean_hands
+    ///  clean_hands
     /// </summary>
     CleanHands,
     /// <summary>
-    /// cleaning
+    ///  cleaning
     /// </summary>
     Cleaning,
     /// <summary>
-    /// cleaning_bucket
+    ///  cleaning_bucket
     /// </summary>
     CleaningBucket,
     /// <summary>
-    /// cleaning_services
+    ///  cleaning_services
     /// </summary>
     CleaningServices,
     /// <summary>
-    /// clear_all
+    ///  clear_all
     /// </summary>
     ClearAll,
     /// <summary>
-    /// clear_day
+    ///  clear_day
     /// </summary>
     ClearDay,
     /// <summary>
-    /// climate_mini_split
+    ///  climate_mini_split
     /// </summary>
     ClimateMiniSplit,
     /// <summary>
-    /// clinical_notes
+    ///  clinical_notes
     /// </summary>
     ClinicalNotes,
     /// <summary>
-    /// clock_arrow_down
+    ///  clock_arrow_down
     /// </summary>
     ClockArrowDown,
     /// <summary>
-    /// clock_arrow_up
+    ///  clock_arrow_up
     /// </summary>
     ClockArrowUp,
     /// <summary>
-    /// clock_loader_10
+    ///  clock_loader_10
     /// </summary>
     ClockLoader10,
     /// <summary>
-    /// clock_loader_20
+    ///  clock_loader_20
     /// </summary>
     ClockLoader20,
     /// <summary>
-    /// clock_loader_40
+    ///  clock_loader_40
     /// </summary>
     ClockLoader40,
     /// <summary>
-    /// clock_loader_60
+    ///  clock_loader_60
     /// </summary>
     ClockLoader60,
     /// <summary>
-    /// clock_loader_80
+    ///  clock_loader_80
     /// </summary>
     ClockLoader80,
     /// <summary>
-    /// clock_loader_90
+    ///  clock_loader_90
     /// </summary>
     ClockLoader90,
     /// <summary>
-    /// close
+    ///  close
     /// </summary>
     Close,
     /// <summary>
-    /// close_fullscreen
+    ///  close_fullscreen
     /// </summary>
     CloseFullscreen,
     /// <summary>
-    /// close_small
+    ///  close_small
     /// </summary>
     CloseSmall,
     /// <summary>
-    /// closed_caption
+    ///  closed_caption
     /// </summary>
     ClosedCaption,
     /// <summary>
-    /// closed_caption_add
+    ///  closed_caption_add
     /// </summary>
     ClosedCaptionAdd,
     /// <summary>
-    /// closed_caption_disabled
+    ///  closed_caption_disabled
     /// </summary>
     ClosedCaptionDisabled,
     /// <summary>
-    /// cloud
+    ///  cloud
     /// </summary>
     Cloud,
     /// <summary>
-    /// cloud_alert
+    ///  cloud_alert
     /// </summary>
     CloudAlert,
     /// <summary>
-    /// cloud_circle
+    ///  cloud_circle
     /// </summary>
     CloudCircle,
     /// <summary>
-    /// cloud_done
+    ///  cloud_done
     /// </summary>
     CloudDone,
     /// <summary>
-    /// cloud_download
+    ///  cloud_download
     /// </summary>
     CloudDownload,
     /// <summary>
-    /// cloud_lock
+    ///  cloud_lock
     /// </summary>
     CloudLock,
     /// <summary>
-    /// cloud_off
+    ///  cloud_off
     /// </summary>
     CloudOff,
     /// <summary>
-    /// cloud_sync
+    ///  cloud_sync
     /// </summary>
     CloudSync,
     /// <summary>
-    /// cloud_upload
+    ///  cloud_upload
     /// </summary>
     CloudUpload,
     /// <summary>
-    /// co_present
+    ///  co_present
     /// </summary>
     CoPresent,
     /// <summary>
-    /// co2
+    ///  co2
     /// </summary>
     Co2,
     /// <summary>
-    /// code
+    ///  code
     /// </summary>
     Code,
     /// <summary>
-    /// code_blocks
+    ///  code_blocks
     /// </summary>
     CodeBlocks,
     /// <summary>
-    /// code_off
+    ///  code_off
     /// </summary>
     CodeOff,
     /// <summary>
-    /// coffee
+    ///  coffee
     /// </summary>
     Coffee,
     /// <summary>
-    /// coffee_maker
+    ///  coffee_maker
     /// </summary>
     CoffeeMaker,
     /// <summary>
-    /// cognition
+    ///  cognition
     /// </summary>
     Cognition,
     /// <summary>
-    /// cognition_2
+    ///  cognition_2
     /// </summary>
     Cognition2,
     /// <summary>
-    /// collapse_all
+    ///  collapse_all
     /// </summary>
     CollapseAll,
     /// <summary>
-    /// collapse_content
+    ///  collapse_content
     /// </summary>
     CollapseContent,
     /// <summary>
-    /// collections_bookmark
+    ///  collections_bookmark
     /// </summary>
     CollectionsBookmark,
     /// <summary>
-    /// colorize
+    ///  colorize
     /// </summary>
     Colorize,
     /// <summary>
-    /// colors
+    ///  colors
     /// </summary>
     Colors,
     /// <summary>
-    /// combine_columns
+    ///  combine_columns
     /// </summary>
     CombineColumns,
     /// <summary>
-    /// comedy_mask
+    ///  comedy_mask
     /// </summary>
     ComedyMask,
     /// <summary>
-    /// comic_bubble
+    ///  comic_bubble
     /// </summary>
     ComicBubble,
     /// <summary>
-    /// comment
+    ///  comment
     /// </summary>
     Comment,
     /// <summary>
-    /// comment_bank
+    ///  comment_bank
     /// </summary>
     CommentBank,
     /// <summary>
-    /// comments_disabled
+    ///  comments_disabled
     /// </summary>
     CommentsDisabled,
     /// <summary>
-    /// commit
+    ///  commit
     /// </summary>
     Commit,
     /// <summary>
-    /// communication
+    ///  communication
     /// </summary>
     Communication,
     /// <summary>
-    /// communities
+    ///  communities
     /// </summary>
     Communities,
     /// <summary>
-    /// commute
+    ///  commute
     /// </summary>
     Commute,
     /// <summary>
-    /// compare
+    ///  compare
     /// </summary>
     Compare,
     /// <summary>
-    /// compare_arrows
+    ///  compare_arrows
     /// </summary>
     CompareArrows,
     /// <summary>
-    /// compass_calibration
+    ///  compass_calibration
     /// </summary>
     CompassCalibration,
     /// <summary>
-    /// component_exchange
+    ///  component_exchange
     /// </summary>
     ComponentExchange,
     /// <summary>
-    /// compost
+    ///  compost
     /// </summary>
     Compost,
     /// <summary>
-    /// compress
+    ///  compress
     /// </summary>
     Compress,
     /// <summary>
-    /// computer
+    ///  computer
     /// </summary>
     Computer,
     /// <summary>
-    /// computer_arrow_up
+    ///  computer_arrow_up
     /// </summary>
     ComputerArrowUp,
     /// <summary>
-    /// computer_cancel
+    ///  computer_cancel
     /// </summary>
     ComputerCancel,
     /// <summary>
-    /// concierge
+    ///  concierge
     /// </summary>
     Concierge,
     /// <summary>
-    /// conditions
+    ///  conditions
     /// </summary>
     Conditions,
     /// <summary>
-    /// confirmation_number
+    ///  confirmation_number
     /// </summary>
     ConfirmationNumber,
     /// <summary>
-    /// congenital
+    ///  congenital
     /// </summary>
     Congenital,
     /// <summary>
-    /// connect_without_contact
+    ///  connect_without_contact
     /// </summary>
     ConnectWithoutContact,
     /// <summary>
-    /// connected_tv
+    ///  connected_tv
     /// </summary>
     ConnectedTv,
     /// <summary>
-    /// connecting_airports
+    ///  connecting_airports
     /// </summary>
     ConnectingAirports,
     /// <summary>
-    /// construction
+    ///  construction
     /// </summary>
     Construction,
     /// <summary>
-    /// contact_emergency
+    ///  contact_emergency
     /// </summary>
     ContactEmergency,
     /// <summary>
-    /// contact_mail
+    ///  contact_mail
     /// </summary>
     ContactMail,
     /// <summary>
-    /// contact_page
+    ///  contact_page
     /// </summary>
     ContactPage,
     /// <summary>
-    /// contact_phone
+    ///  contact_phone
     /// </summary>
     ContactPhone,
     /// <summary>
-    /// contact_support
+    ///  contact_support
     /// </summary>
     ContactSupport,
     /// <summary>
-    /// contactless
+    ///  contactless
     /// </summary>
     Contactless,
     /// <summary>
-    /// contactless_off
+    ///  contactless_off
     /// </summary>
     ContactlessOff,
     /// <summary>
-    /// contacts
+    ///  contacts
     /// </summary>
     Contacts,
     /// <summary>
-    /// contacts_product
+    ///  contacts_product
     /// </summary>
     ContactsProduct,
     /// <summary>
-    /// content_copy
+    ///  content_copy
     /// </summary>
     ContentCopy,
     /// <summary>
-    /// content_cut
+    ///  content_cut
     /// </summary>
     ContentCut,
     /// <summary>
-    /// content_paste
+    ///  content_paste
     /// </summary>
     ContentPaste,
     /// <summary>
-    /// content_paste_go
+    ///  content_paste_go
     /// </summary>
     ContentPasteGo,
     /// <summary>
-    /// content_paste_off
+    ///  content_paste_off
     /// </summary>
     ContentPasteOff,
     /// <summary>
-    /// content_paste_search
+    ///  content_paste_search
     /// </summary>
     ContentPasteSearch,
     /// <summary>
-    /// contextual_token
+    ///  contextual_token
     /// </summary>
     ContextualToken,
     /// <summary>
-    /// contextual_token_add
+    ///  contextual_token_add
     /// </summary>
     ContextualTokenAdd,
     /// <summary>
-    /// contract
+    ///  contract
     /// </summary>
     Contract,
     /// <summary>
-    /// contract_delete
+    ///  contract_delete
     /// </summary>
     ContractDelete,
     /// <summary>
-    /// contract_edit
+    ///  contract_edit
     /// </summary>
     ContractEdit,
     /// <summary>
-    /// contrast
+    ///  contrast
     /// </summary>
     Contrast,
     /// <summary>
-    /// contrast_circle
+    ///  contrast_circle
     /// </summary>
     ContrastCircle,
     /// <summary>
-    /// contrast_rtl_off
+    ///  contrast_rtl_off
     /// </summary>
     ContrastRtlOff,
     /// <summary>
-    /// contrast_square
+    ///  contrast_square
     /// </summary>
     ContrastSquare,
     /// <summary>
-    /// control_camera
+    ///  control_camera
     /// </summary>
     ControlCamera,
     /// <summary>
-    /// control_point_duplicate
+    ///  control_point_duplicate
     /// </summary>
     ControlPointDuplicate,
     /// <summary>
-    /// controller_gen
+    ///  controller_gen
     /// </summary>
     ControllerGen,
     /// <summary>
-    /// conversation
+    ///  conversation
     /// </summary>
     Conversation,
     /// <summary>
-    /// conversion_path
+    ///  conversion_path
     /// </summary>
     ConversionPath,
     /// <summary>
-    /// conversion_path_off
+    ///  conversion_path_off
     /// </summary>
     ConversionPathOff,
     /// <summary>
-    /// convert_to_text
+    ///  convert_to_text
     /// </summary>
     ConvertToText,
     /// <summary>
-    /// conveyor_belt
+    ///  conveyor_belt
     /// </summary>
     ConveyorBelt,
     /// <summary>
-    /// cookie
+    ///  cookie
     /// </summary>
     Cookie,
     /// <summary>
-    /// cookie_off
+    ///  cookie_off
     /// </summary>
     CookieOff,
     /// <summary>
-    /// cooking
+    ///  cooking
     /// </summary>
     Cooking,
     /// <summary>
-    /// cool_to_dry
+    ///  cool_to_dry
     /// </summary>
     CoolToDry,
     /// <summary>
-    /// copy_all
+    ///  copy_all
     /// </summary>
     CopyAll,
     /// <summary>
-    /// copyright
+    ///  copyright
     /// </summary>
     Copyright,
     /// <summary>
-    /// coronavirus
+    ///  coronavirus
     /// </summary>
     Coronavirus,
     /// <summary>
-    /// corporate_fare
+    ///  corporate_fare
     /// </summary>
     CorporateFare,
     /// <summary>
-    /// cottage
+    ///  cottage
     /// </summary>
     Cottage,
     /// <summary>
-    /// counter_0
+    ///  counter_0
     /// </summary>
     Counter0,
     /// <summary>
-    /// counter_1
+    ///  counter_1
     /// </summary>
     Counter1,
     /// <summary>
-    /// counter_2
+    ///  counter_2
     /// </summary>
     Counter2,
     /// <summary>
-    /// counter_3
+    ///  counter_3
     /// </summary>
     Counter3,
     /// <summary>
-    /// counter_4
+    ///  counter_4
     /// </summary>
     Counter4,
     /// <summary>
-    /// counter_5
+    ///  counter_5
     /// </summary>
     Counter5,
     /// <summary>
-    /// counter_6
+    ///  counter_6
     /// </summary>
     Counter6,
     /// <summary>
-    /// counter_7
+    ///  counter_7
     /// </summary>
     Counter7,
     /// <summary>
-    /// counter_8
+    ///  counter_8
     /// </summary>
     Counter8,
     /// <summary>
-    /// counter_9
+    ///  counter_9
     /// </summary>
     Counter9,
     /// <summary>
-    /// countertops
+    ///  countertops
     /// </summary>
     Countertops,
     /// <summary>
-    /// create_new_folder
+    ///  create_new_folder
     /// </summary>
     CreateNewFolder,
     /// <summary>
-    /// credit_card
+    ///  credit_card
     /// </summary>
     CreditCard,
     /// <summary>
-    /// credit_card_clock
+    ///  credit_card_clock
     /// </summary>
     CreditCardClock,
     /// <summary>
-    /// credit_card_gear
+    ///  credit_card_gear
     /// </summary>
     CreditCardGear,
     /// <summary>
-    /// credit_card_heart
+    ///  credit_card_heart
     /// </summary>
     CreditCardHeart,
     /// <summary>
-    /// credit_card_off
+    ///  credit_card_off
     /// </summary>
     CreditCardOff,
     /// <summary>
-    /// credit_score
+    ///  credit_score
     /// </summary>
     CreditScore,
     /// <summary>
-    /// crib
+    ///  crib
     /// </summary>
     Crib,
     /// <summary>
-    /// crisis_alert
+    ///  crisis_alert
     /// </summary>
     CrisisAlert,
     /// <summary>
-    /// crop
+    ///  crop
     /// </summary>
     Crop,
     /// <summary>
-    /// crop_16_9
+    ///  crop_16_9
     /// </summary>
     Crop169,
     /// <summary>
-    /// crop_3_2
+    ///  crop_3_2
     /// </summary>
     Crop32,
     /// <summary>
-    /// crop_5_4
+    ///  crop_5_4
     /// </summary>
     Crop54,
     /// <summary>
-    /// crop_7_5
+    ///  crop_7_5
     /// </summary>
     Crop75,
     /// <summary>
-    /// crop_9_16
+    ///  crop_9_16
     /// </summary>
     Crop916,
     /// <summary>
-    /// crop_free
+    ///  crop_free
     /// </summary>
     CropFree,
     /// <summary>
-    /// crop_landscape
+    ///  crop_landscape
     /// </summary>
     CropLandscape,
     /// <summary>
-    /// crop_portrait
+    ///  crop_portrait
     /// </summary>
     CropPortrait,
     /// <summary>
-    /// crop_rotate
+    ///  crop_rotate
     /// </summary>
     CropRotate,
     /// <summary>
-    /// crop_square
+    ///  crop_square
     /// </summary>
     CropSquare,
     /// <summary>
-    /// crossword
+    ///  crossword
     /// </summary>
     Crossword,
     /// <summary>
-    /// crowdsource
+    ///  crowdsource
     /// </summary>
     Crowdsource,
     /// <summary>
-    /// crown
+    ///  crown
     /// </summary>
     Crown,
     /// <summary>
-    /// cruelty_free
+    ///  cruelty_free
     /// </summary>
     CrueltyFree,
     /// <summary>
-    /// css
+    ///  css
     /// </summary>
     Css,
     /// <summary>
-    /// csv
+    ///  csv
     /// </summary>
     Csv,
     /// <summary>
-    /// currency_bitcoin
+    ///  currency_bitcoin
     /// </summary>
     CurrencyBitcoin,
     /// <summary>
-    /// currency_exchange
+    ///  currency_exchange
     /// </summary>
     CurrencyExchange,
     /// <summary>
-    /// currency_franc
+    ///  currency_franc
     /// </summary>
     CurrencyFranc,
     /// <summary>
-    /// currency_lira
+    ///  currency_lira
     /// </summary>
     CurrencyLira,
     /// <summary>
-    /// currency_pound
+    ///  currency_pound
     /// </summary>
     CurrencyPound,
     /// <summary>
-    /// currency_ruble
+    ///  currency_ruble
     /// </summary>
     CurrencyRuble,
     /// <summary>
-    /// currency_rupee
+    ///  currency_rupee
     /// </summary>
     CurrencyRupee,
     /// <summary>
-    /// currency_rupee_circle
+    ///  currency_rupee_circle
     /// </summary>
     CurrencyRupeeCircle,
     /// <summary>
-    /// currency_yen
+    ///  currency_yen
     /// </summary>
     CurrencyYen,
     /// <summary>
-    /// currency_yuan
+    ///  currency_yuan
     /// </summary>
     CurrencyYuan,
     /// <summary>
-    /// curtains
+    ///  curtains
     /// </summary>
     Curtains,
     /// <summary>
-    /// curtains_closed
+    ///  curtains_closed
     /// </summary>
     CurtainsClosed,
     /// <summary>
-    /// custom_typography
+    ///  custom_typography
     /// </summary>
     CustomTypography,
     /// <summary>
-    /// cycle
+    ///  cycle
     /// </summary>
     Cycle,
     /// <summary>
-    /// cyclone
+    ///  cyclone
     /// </summary>
     Cyclone,
     /// <summary>
-    /// dangerous
+    ///  dangerous
     /// </summary>
     Dangerous,
     /// <summary>
-    /// dark_mode
+    ///  dark_mode
     /// </summary>
     DarkMode,
     /// <summary>
-    /// dashboard
+    ///  dashboard
     /// </summary>
     Dashboard,
     /// <summary>
-    /// dashboard_2
+    ///  dashboard_2
     /// </summary>
     Dashboard2,
     /// <summary>
-    /// dashboard_customize
+    ///  dashboard_customize
     /// </summary>
     DashboardCustomize,
     /// <summary>
-    /// data_alert
+    ///  data_alert
     /// </summary>
     DataAlert,
     /// <summary>
-    /// data_array
+    ///  data_array
     /// </summary>
     DataArray,
     /// <summary>
-    /// data_check
+    ///  data_check
     /// </summary>
     DataCheck,
     /// <summary>
-    /// data_exploration
+    ///  data_exploration
     /// </summary>
     DataExploration,
     /// <summary>
-    /// data_info_alert
+    ///  data_info_alert
     /// </summary>
     DataInfoAlert,
     /// <summary>
-    /// data_loss_prevention
+    ///  data_loss_prevention
     /// </summary>
     DataLossPrevention,
     /// <summary>
-    /// data_object
+    ///  data_object
     /// </summary>
     DataObject,
     /// <summary>
-    /// data_saver_on
+    ///  data_saver_on
     /// </summary>
     DataSaverOn,
     /// <summary>
-    /// data_table
+    ///  data_table
     /// </summary>
     DataTable,
     /// <summary>
-    /// data_thresholding
+    ///  data_thresholding
     /// </summary>
     DataThresholding,
     /// <summary>
-    /// data_usage
+    ///  data_usage
     /// </summary>
     DataUsage,
     /// <summary>
-    /// database
+    ///  database
     /// </summary>
     Database,
     /// <summary>
-    /// database_off
+    ///  database_off
     /// </summary>
     DatabaseOff,
     /// <summary>
-    /// database_search
+    ///  database_search
     /// </summary>
     DatabaseSearch,
     /// <summary>
-    /// database_upload
+    ///  database_upload
     /// </summary>
     DatabaseUpload,
     /// <summary>
-    /// dataset
+    ///  dataset
     /// </summary>
     Dataset,
     /// <summary>
-    /// dataset_linked
+    ///  dataset_linked
     /// </summary>
     DatasetLinked,
     /// <summary>
-    /// date_range
+    ///  date_range
     /// </summary>
     DateRange,
     /// <summary>
-    /// deblur
+    ///  deblur
     /// </summary>
     Deblur,
     /// <summary>
-    /// deceased
+    ///  deceased
     /// </summary>
     Deceased,
     /// <summary>
-    /// decimal_decrease
+    ///  decimal_decrease
     /// </summary>
     DecimalDecrease,
     /// <summary>
-    /// decimal_increase
+    ///  decimal_increase
     /// </summary>
     DecimalIncrease,
     /// <summary>
-    /// deck
+    ///  deck
     /// </summary>
     Deck,
     /// <summary>
-    /// dehaze
+    ///  dehaze
     /// </summary>
     Dehaze,
     /// <summary>
-    /// delete
+    ///  delete
     /// </summary>
     Delete,
     /// <summary>
-    /// delete_forever
+    ///  delete_forever
     /// </summary>
     DeleteForever,
     /// <summary>
-    /// delete_history
+    ///  delete_history
     /// </summary>
     DeleteHistory,
     /// <summary>
-    /// delete_sweep
+    ///  delete_sweep
     /// </summary>
     DeleteSweep,
     /// <summary>
-    /// delivery_truck_bolt
+    ///  delivery_truck_bolt
     /// </summary>
     DeliveryTruckBolt,
     /// <summary>
-    /// delivery_truck_speed
+    ///  delivery_truck_speed
     /// </summary>
     DeliveryTruckSpeed,
     /// <summary>
-    /// demography
+    ///  demography
     /// </summary>
     Demography,
     /// <summary>
-    /// density_large
+    ///  density_large
     /// </summary>
     DensityLarge,
     /// <summary>
-    /// density_medium
+    ///  density_medium
     /// </summary>
     DensityMedium,
     /// <summary>
-    /// density_small
+    ///  density_small
     /// </summary>
     DensitySmall,
     /// <summary>
-    /// dentistry
+    ///  dentistry
     /// </summary>
     Dentistry,
     /// <summary>
-    /// departure_board
+    ///  departure_board
     /// </summary>
     DepartureBoard,
     /// <summary>
-    /// deployed_code
+    ///  deployed_code
     /// </summary>
     DeployedCode,
     /// <summary>
-    /// deployed_code_account
+    ///  deployed_code_account
     /// </summary>
     DeployedCodeAccount,
     /// <summary>
-    /// deployed_code_alert
+    ///  deployed_code_alert
     /// </summary>
     DeployedCodeAlert,
     /// <summary>
-    /// deployed_code_history
+    ///  deployed_code_history
     /// </summary>
     DeployedCodeHistory,
     /// <summary>
-    /// deployed_code_update
+    ///  deployed_code_update
     /// </summary>
     DeployedCodeUpdate,
     /// <summary>
-    /// dermatology
+    ///  dermatology
     /// </summary>
     Dermatology,
     /// <summary>
-    /// description
+    ///  description
     /// </summary>
     Description,
     /// <summary>
-    /// deselect
+    ///  deselect
     /// </summary>
     Deselect,
     /// <summary>
-    /// design_services
+    ///  design_services
     /// </summary>
     DesignServices,
     /// <summary>
-    /// desk
+    ///  desk
     /// </summary>
     Desk,
     /// <summary>
-    /// deskphone
+    ///  deskphone
     /// </summary>
     Deskphone,
     /// <summary>
-    /// desktop_access_disabled
+    ///  desktop_access_disabled
     /// </summary>
     DesktopAccessDisabled,
     /// <summary>
-    /// desktop_cloud
+    ///  desktop_cloud
     /// </summary>
     DesktopCloud,
     /// <summary>
-    /// desktop_cloud_stack
+    ///  desktop_cloud_stack
     /// </summary>
     DesktopCloudStack,
     /// <summary>
-    /// desktop_landscape
+    ///  desktop_landscape
     /// </summary>
     DesktopLandscape,
     /// <summary>
-    /// desktop_landscape_add
+    ///  desktop_landscape_add
     /// </summary>
     DesktopLandscapeAdd,
     /// <summary>
-    /// desktop_mac
+    ///  desktop_mac
     /// </summary>
     DesktopMac,
     /// <summary>
-    /// desktop_portrait
+    ///  desktop_portrait
     /// </summary>
     DesktopPortrait,
     /// <summary>
-    /// desktop_windows
+    ///  desktop_windows
     /// </summary>
     DesktopWindows,
     /// <summary>
-    /// destruction
+    ///  destruction
     /// </summary>
     Destruction,
     /// <summary>
-    /// details
+    ///  details
     /// </summary>
     Details,
     /// <summary>
-    /// detection_and_zone
+    ///  detection_and_zone
     /// </summary>
     DetectionAndZone,
     /// <summary>
-    /// detector
+    ///  detector
     /// </summary>
     Detector,
     /// <summary>
-    /// detector_alarm
+    ///  detector_alarm
     /// </summary>
     DetectorAlarm,
     /// <summary>
-    /// detector_battery
+    ///  detector_battery
     /// </summary>
     DetectorBattery,
     /// <summary>
-    /// detector_co
+    ///  detector_co
     /// </summary>
     DetectorCo,
     /// <summary>
-    /// detector_offline
+    ///  detector_offline
     /// </summary>
     DetectorOffline,
     /// <summary>
-    /// detector_smoke
+    ///  detector_smoke
     /// </summary>
     DetectorSmoke,
     /// <summary>
-    /// detector_status
+    ///  detector_status
     /// </summary>
     DetectorStatus,
     /// <summary>
-    /// developer_board
+    ///  developer_board
     /// </summary>
     DeveloperBoard,
     /// <summary>
-    /// developer_board_off
+    ///  developer_board_off
     /// </summary>
     DeveloperBoardOff,
     /// <summary>
-    /// developer_guide
+    ///  developer_guide
     /// </summary>
     DeveloperGuide,
     /// <summary>
-    /// developer_mode_tv
+    ///  developer_mode_tv
     /// </summary>
     DeveloperModeTv,
     /// <summary>
-    /// device_band
+    ///  device_band
     /// </summary>
     DeviceBand,
     /// <summary>
-    /// device_hub
+    ///  device_hub
     /// </summary>
     DeviceHub,
     /// <summary>
-    /// device_thermostat
+    ///  device_thermostat
     /// </summary>
     DeviceThermostat,
     /// <summary>
-    /// devices
+    ///  devices
     /// </summary>
     Devices,
     /// <summary>
-    /// devices_fold
+    ///  devices_fold
     /// </summary>
     DevicesFold,
     /// <summary>
-    /// devices_fold_2
+    ///  devices_fold_2
     /// </summary>
     DevicesFold2,
     /// <summary>
-    /// devices_off
+    ///  devices_off
     /// </summary>
     DevicesOff,
     /// <summary>
-    /// devices_other
+    ///  devices_other
     /// </summary>
     DevicesOther,
     /// <summary>
-    /// devices_wearables
+    ///  devices_wearables
     /// </summary>
     DevicesWearables,
     /// <summary>
-    /// dew_point
+    ///  dew_point
     /// </summary>
     DewPoint,
     /// <summary>
-    /// diagnosis
+    ///  diagnosis
     /// </summary>
     Diagnosis,
     /// <summary>
-    /// diagonal_line
+    ///  diagonal_line
     /// </summary>
     DiagonalLine,
     /// <summary>
-    /// dialer_sip
+    ///  dialer_sip
     /// </summary>
     DialerSip,
     /// <summary>
-    /// dialogs
+    ///  dialogs
     /// </summary>
     Dialogs,
     /// <summary>
-    /// dialpad
+    ///  dialpad
     /// </summary>
     Dialpad,
     /// <summary>
-    /// diamond
+    ///  diamond
     /// </summary>
     Diamond,
     /// <summary>
-    /// diamond_shine
+    ///  diamond_shine
     /// </summary>
     DiamondShine,
     /// <summary>
-    /// dictionary
+    ///  dictionary
     /// </summary>
     Dictionary,
     /// <summary>
-    /// difference
+    ///  difference
     /// </summary>
     Difference,
     /// <summary>
-    /// digital_out_of_home
+    ///  digital_out_of_home
     /// </summary>
     DigitalOutOfHome,
     /// <summary>
-    /// digital_wellbeing
+    ///  digital_wellbeing
     /// </summary>
     DigitalWellbeing,
     /// <summary>
-    /// dine_heart
+    ///  dine_heart
     /// </summary>
     DineHeart,
     /// <summary>
-    /// dine_in
+    ///  dine_in
     /// </summary>
     DineIn,
     /// <summary>
-    /// dine_lamp
+    ///  dine_lamp
     /// </summary>
     DineLamp,
     /// <summary>
-    /// dining
+    ///  dining
     /// </summary>
     Dining,
     /// <summary>
-    /// dinner_dining
+    ///  dinner_dining
     /// </summary>
     DinnerDining,
     /// <summary>
-    /// directions
+    ///  directions
     /// </summary>
     Directions,
     /// <summary>
-    /// directions_alt
+    ///  directions_alt
     /// </summary>
     DirectionsAlt,
     /// <summary>
-    /// directions_alt_off
+    ///  directions_alt_off
     /// </summary>
     DirectionsAltOff,
     /// <summary>
-    /// directions_bike
+    ///  directions_bike
     /// </summary>
     DirectionsBike,
     /// <summary>
-    /// directions_boat
+    ///  directions_boat
     /// </summary>
     DirectionsBoat,
     /// <summary>
-    /// directions_bus
+    ///  directions_bus
     /// </summary>
     DirectionsBus,
     /// <summary>
-    /// directions_car
+    ///  directions_car
     /// </summary>
     DirectionsCar,
     /// <summary>
-    /// directions_off
+    ///  directions_off
     /// </summary>
     DirectionsOff,
     /// <summary>
-    /// directions_railway
+    ///  directions_railway
     /// </summary>
     DirectionsRailway,
     /// <summary>
-    /// directions_railway_2
+    ///  directions_railway_2
     /// </summary>
     DirectionsRailway2,
     /// <summary>
-    /// directions_run
+    ///  directions_run
     /// </summary>
     DirectionsRun,
     /// <summary>
-    /// directions_subway
+    ///  directions_subway
     /// </summary>
     DirectionsSubway,
     /// <summary>
-    /// directions_walk
+    ///  directions_walk
     /// </summary>
     DirectionsWalk,
     /// <summary>
-    /// directory_sync
+    ///  directory_sync
     /// </summary>
     DirectorySync,
     /// <summary>
-    /// dirty_lens
+    ///  dirty_lens
     /// </summary>
     DirtyLens,
     /// <summary>
-    /// disabled_by_default
+    ///  disabled_by_default
     /// </summary>
     DisabledByDefault,
     /// <summary>
-    /// disabled_visible
+    ///  disabled_visible
     /// </summary>
     DisabledVisible,
     /// <summary>
-    /// disc_full
+    ///  disc_full
     /// </summary>
     DiscFull,
     /// <summary>
-    /// discover_tune
+    ///  discover_tune
     /// </summary>
     DiscoverTune,
     /// <summary>
-    /// dishwasher
+    ///  dishwasher
     /// </summary>
     Dishwasher,
     /// <summary>
-    /// dishwasher_gen
+    ///  dishwasher_gen
     /// </summary>
     DishwasherGen,
     /// <summary>
-    /// display_external_input
+    ///  display_external_input
     /// </summary>
     DisplayExternalInput,
     /// <summary>
-    /// display_settings
+    ///  display_settings
     /// </summary>
     DisplaySettings,
     /// <summary>
-    /// distance
+    ///  distance
     /// </summary>
     Distance,
     /// <summary>
-    /// diversity_1
+    ///  diversity_1
     /// </summary>
     Diversity1,
     /// <summary>
-    /// diversity_2
+    ///  diversity_2
     /// </summary>
     Diversity2,
     /// <summary>
-    /// diversity_3
+    ///  diversity_3
     /// </summary>
     Diversity3,
     /// <summary>
-    /// diversity_4
+    ///  diversity_4
     /// </summary>
     Diversity4,
     /// <summary>
-    /// dns
+    ///  dns
     /// </summary>
     Dns,
     /// <summary>
-    /// do_not_disturb_off
+    ///  do_not_disturb_off
     /// </summary>
     DoNotDisturbOff,
     /// <summary>
-    /// do_not_disturb_on
+    ///  do_not_disturb_on
     /// </summary>
     DoNotDisturbOn,
     /// <summary>
-    /// do_not_disturb_on_total_silence
+    ///  do_not_disturb_on_total_silence
     /// </summary>
     DoNotDisturbOnTotalSilence,
     /// <summary>
-    /// do_not_step
+    ///  do_not_step
     /// </summary>
     DoNotStep,
     /// <summary>
-    /// do_not_touch
+    ///  do_not_touch
     /// </summary>
     DoNotTouch,
     /// <summary>
-    /// dock_to_bottom
+    ///  dock_to_bottom
     /// </summary>
     DockToBottom,
     /// <summary>
-    /// dock_to_left
+    ///  dock_to_left
     /// </summary>
     DockToLeft,
     /// <summary>
-    /// dock_to_right
+    ///  dock_to_right
     /// </summary>
     DockToRight,
     /// <summary>
-    /// docs
+    ///  docs
     /// </summary>
     Docs,
     /// <summary>
-    /// docs_add_on
+    ///  docs_add_on
     /// </summary>
     DocsAddOn,
     /// <summary>
-    /// docs_apps_script
+    ///  docs_apps_script
     /// </summary>
     DocsAppsScript,
     /// <summary>
-    /// document_scanner
+    ///  document_scanner
     /// </summary>
     DocumentScanner,
     /// <summary>
-    /// document_search
+    ///  document_search
     /// </summary>
     DocumentSearch,
     /// <summary>
-    /// domain
+    ///  domain
     /// </summary>
     Domain,
     /// <summary>
-    /// domain_add
+    ///  domain_add
     /// </summary>
     DomainAdd,
     /// <summary>
-    /// domain_disabled
+    ///  domain_disabled
     /// </summary>
     DomainDisabled,
     /// <summary>
-    /// domain_verification
+    ///  domain_verification
     /// </summary>
     DomainVerification,
     /// <summary>
-    /// domain_verification_off
+    ///  domain_verification_off
     /// </summary>
     DomainVerificationOff,
     /// <summary>
-    /// domino_mask
+    ///  domino_mask
     /// </summary>
     DominoMask,
     /// <summary>
-    /// done_all
+    ///  done_all
     /// </summary>
     DoneAll,
     /// <summary>
-    /// done_outline
+    ///  done_outline
     /// </summary>
     DoneOutline,
     /// <summary>
-    /// donut_large
+    ///  donut_large
     /// </summary>
     DonutLarge,
     /// <summary>
-    /// donut_small
+    ///  donut_small
     /// </summary>
     DonutSmall,
     /// <summary>
-    /// door_back
+    ///  door_back
     /// </summary>
     DoorBack,
     /// <summary>
-    /// door_front
+    ///  door_front
     /// </summary>
     DoorFront,
     /// <summary>
-    /// door_open
+    ///  door_open
     /// </summary>
     DoorOpen,
     /// <summary>
-    /// door_sensor
+    ///  door_sensor
     /// </summary>
     DoorSensor,
     /// <summary>
-    /// door_sliding
+    ///  door_sliding
     /// </summary>
     DoorSliding,
     /// <summary>
-    /// doorbell
+    ///  doorbell
     /// </summary>
     Doorbell,
     /// <summary>
-    /// doorbell_3p
+    ///  doorbell_3p
     /// </summary>
     Doorbell3P,
     /// <summary>
-    /// doorbell_chime
+    ///  doorbell_chime
     /// </summary>
     DoorbellChime,
     /// <summary>
-    /// double_arrow
+    ///  double_arrow
     /// </summary>
     DoubleArrow,
     /// <summary>
-    /// downhill_skiing
+    ///  downhill_skiing
     /// </summary>
     DownhillSkiing,
     /// <summary>
-    /// download
+    ///  download
     /// </summary>
     Download,
     /// <summary>
-    /// download_2
+    ///  download_2
     /// </summary>
     Download2,
     /// <summary>
-    /// download_done
+    ///  download_done
     /// </summary>
     DownloadDone,
     /// <summary>
-    /// download_for_offline
+    ///  download_for_offline
     /// </summary>
     DownloadForOffline,
     /// <summary>
-    /// downloading
+    ///  downloading
     /// </summary>
     Downloading,
     /// <summary>
-    /// draft
+    ///  draft
     /// </summary>
     Draft,
     /// <summary>
-    /// draft_orders
+    ///  draft_orders
     /// </summary>
     DraftOrders,
     /// <summary>
-    /// drafts
+    ///  drafts
     /// </summary>
     Drafts,
     /// <summary>
-    /// drag_click
+    ///  drag_click
     /// </summary>
     DragClick,
     /// <summary>
-    /// drag_handle
+    ///  drag_handle
     /// </summary>
     DragHandle,
     /// <summary>
-    /// drag_indicator
+    ///  drag_indicator
     /// </summary>
     DragIndicator,
     /// <summary>
-    /// drag_pan
+    ///  drag_pan
     /// </summary>
     DragPan,
     /// <summary>
-    /// draw
+    ///  draw
     /// </summary>
     Draw,
     /// <summary>
-    /// draw_abstract
+    ///  draw_abstract
     /// </summary>
     DrawAbstract,
     /// <summary>
-    /// draw_collage
+    ///  draw_collage
     /// </summary>
     DrawCollage,
     /// <summary>
-    /// dresser
+    ///  dresser
     /// </summary>
     Dresser,
     /// <summary>
-    /// drive_export
+    ///  drive_export
     /// </summary>
     DriveExport,
     /// <summary>
-    /// drive_file_move
+    ///  drive_file_move
     /// </summary>
     DriveFileMove,
     /// <summary>
-    /// drive_folder_upload
+    ///  drive_folder_upload
     /// </summary>
     DriveFolderUpload,
     /// <summary>
-    /// drone
+    ///  drone
     /// </summary>
     Drone,
     /// <summary>
-    /// drone_2
+    ///  drone_2
     /// </summary>
     Drone2,
     /// <summary>
-    /// dry
+    ///  dropdown
+    /// </summary>
+    Dropdown,
+    /// <summary>
+    ///  dropper_eye
+    /// </summary>
+    DropperEye,
+    /// <summary>
+    ///  dry
     /// </summary>
     Dry,
     /// <summary>
-    /// dry_cleaning
+    ///  dry_cleaning
     /// </summary>
     DryCleaning,
     /// <summary>
-    /// dual_screen
+    ///  dual_screen
     /// </summary>
     DualScreen,
     /// <summary>
-    /// duo
+    ///  duo
     /// </summary>
     Duo,
     /// <summary>
-    /// dvr
+    ///  dvr
     /// </summary>
     Dvr,
     /// <summary>
-    /// dynamic_feed
+    ///  dynamic_feed
     /// </summary>
     DynamicFeed,
     /// <summary>
-    /// dynamic_form
+    ///  dynamic_form
     /// </summary>
     DynamicForm,
     /// <summary>
-    /// e_mobiledata
+    ///  e_mobiledata
     /// </summary>
     EMobiledata,
     /// <summary>
-    /// e_mobiledata_badge
+    ///  e_mobiledata_badge
     /// </summary>
     EMobiledataBadge,
     /// <summary>
-    /// e911_avatar
+    ///  e911_avatar
     /// </summary>
     E911Avatar,
     /// <summary>
-    /// e911_emergency
+    ///  e911_emergency
     /// </summary>
     E911Emergency,
     /// <summary>
-    /// ear_sound
+    ///  ear_sound
     /// </summary>
     EarSound,
     /// <summary>
-    /// earbud_case
+    ///  earbud_case
     /// </summary>
     EarbudCase,
     /// <summary>
-    /// earbud_left
+    ///  earbud_left
     /// </summary>
     EarbudLeft,
     /// <summary>
-    /// earbud_right
+    ///  earbud_right
     /// </summary>
     EarbudRight,
     /// <summary>
-    /// earbuds
+    ///  earbuds
     /// </summary>
     Earbuds,
     /// <summary>
-    /// earbuds_2
+    ///  earbuds_2
     /// </summary>
     Earbuds2,
     /// <summary>
-    /// earbuds_battery
+    ///  earbuds_battery
     /// </summary>
     EarbudsBattery,
     /// <summary>
-    /// early_on
+    ///  early_on
     /// </summary>
     EarlyOn,
     /// <summary>
-    /// earthquake
+    ///  earthquake
     /// </summary>
     Earthquake,
     /// <summary>
-    /// east
+    ///  east
     /// </summary>
     East,
     /// <summary>
-    /// ecg
+    ///  ecg
     /// </summary>
     Ecg,
     /// <summary>
-    /// ecg_heart
+    ///  ecg_heart
     /// </summary>
     EcgHeart,
     /// <summary>
-    /// eco
+    ///  eco
     /// </summary>
     Eco,
     /// <summary>
-    /// eda
+    ///  eda
     /// </summary>
     Eda,
     /// <summary>
-    /// edit
+    ///  edit
     /// </summary>
     Edit,
     /// <summary>
-    /// edit_arrow_down
+    ///  edit_arrow_down
     /// </summary>
     EditArrowDown,
     /// <summary>
-    /// edit_arrow_up
+    ///  edit_arrow_up
     /// </summary>
     EditArrowUp,
     /// <summary>
-    /// edit_attributes
+    ///  edit_attributes
     /// </summary>
     EditAttributes,
     /// <summary>
-    /// edit_audio
+    ///  edit_audio
     /// </summary>
     EditAudio,
     /// <summary>
-    /// edit_calendar
+    ///  edit_calendar
     /// </summary>
     EditCalendar,
     /// <summary>
-    /// edit_document
+    ///  edit_document
     /// </summary>
     EditDocument,
     /// <summary>
-    /// edit_location
+    ///  edit_location
     /// </summary>
     EditLocation,
     /// <summary>
-    /// edit_location_alt
+    ///  edit_location_alt
     /// </summary>
     EditLocationAlt,
     /// <summary>
-    /// edit_note
+    ///  edit_note
     /// </summary>
     EditNote,
     /// <summary>
-    /// edit_notifications
+    ///  edit_notifications
     /// </summary>
     EditNotifications,
     /// <summary>
-    /// edit_off
+    ///  edit_off
     /// </summary>
     EditOff,
     /// <summary>
-    /// edit_road
+    ///  edit_road
     /// </summary>
     EditRoad,
     /// <summary>
-    /// edit_square
+    ///  edit_square
     /// </summary>
     EditSquare,
     /// <summary>
-    /// editor_choice
+    ///  editor_choice
     /// </summary>
     EditorChoice,
     /// <summary>
-    /// egg
+    ///  egg
     /// </summary>
     Egg,
     /// <summary>
-    /// egg_alt
+    ///  egg_alt
     /// </summary>
     EggAlt,
     /// <summary>
-    /// eject
+    ///  eject
     /// </summary>
     Eject,
     /// <summary>
-    /// elderly
+    ///  elderly
     /// </summary>
     Elderly,
     /// <summary>
-    /// elderly_woman
+    ///  elderly_woman
     /// </summary>
     ElderlyWoman,
     /// <summary>
-    /// electric_bike
+    ///  electric_bike
     /// </summary>
     ElectricBike,
     /// <summary>
-    /// electric_bolt
+    ///  electric_bolt
     /// </summary>
     ElectricBolt,
     /// <summary>
-    /// electric_car
+    ///  electric_car
     /// </summary>
     ElectricCar,
     /// <summary>
-    /// electric_meter
+    ///  electric_meter
     /// </summary>
     ElectricMeter,
     /// <summary>
-    /// electric_moped
+    ///  electric_moped
     /// </summary>
     ElectricMoped,
     /// <summary>
-    /// electric_rickshaw
+    ///  electric_rickshaw
     /// </summary>
     ElectricRickshaw,
     /// <summary>
-    /// electric_scooter
+    ///  electric_scooter
     /// </summary>
     ElectricScooter,
     /// <summary>
-    /// electrical_services
+    ///  electrical_services
     /// </summary>
     ElectricalServices,
     /// <summary>
-    /// elevation
+    ///  elevation
     /// </summary>
     Elevation,
     /// <summary>
-    /// elevator
+    ///  elevator
     /// </summary>
     Elevator,
     /// <summary>
-    /// emergency
+    ///  emergency
     /// </summary>
     Emergency,
     /// <summary>
-    /// emergency_heat
+    ///  emergency_heat
     /// </summary>
     EmergencyHeat,
     /// <summary>
-    /// emergency_heat_2
+    ///  emergency_heat_2
     /// </summary>
     EmergencyHeat2,
     /// <summary>
-    /// emergency_home
+    ///  emergency_home
     /// </summary>
     EmergencyHome,
     /// <summary>
-    /// emergency_recording
+    ///  emergency_recording
     /// </summary>
     EmergencyRecording,
     /// <summary>
-    /// emergency_share
+    ///  emergency_share
     /// </summary>
     EmergencyShare,
     /// <summary>
-    /// emergency_share_off
+    ///  emergency_share_off
     /// </summary>
     EmergencyShareOff,
     /// <summary>
-    /// emoji_food_beverage
+    ///  emoji_food_beverage
     /// </summary>
     EmojiFoodBeverage,
     /// <summary>
-    /// emoji_language
+    ///  emoji_language
     /// </summary>
     EmojiLanguage,
     /// <summary>
-    /// emoji_nature
+    ///  emoji_nature
     /// </summary>
     EmojiNature,
     /// <summary>
-    /// emoji_objects
+    ///  emoji_objects
     /// </summary>
     EmojiObjects,
     /// <summary>
-    /// emoji_people
+    ///  emoji_people
     /// </summary>
     EmojiPeople,
     /// <summary>
-    /// emoji_symbols
+    ///  emoji_symbols
     /// </summary>
     EmojiSymbols,
     /// <summary>
-    /// emoji_transportation
+    ///  emoji_transportation
     /// </summary>
     EmojiTransportation,
     /// <summary>
-    /// emoticon
+    ///  emoticon
     /// </summary>
     Emoticon,
     /// <summary>
-    /// empty_dashboard
+    ///  empty_dashboard
     /// </summary>
     EmptyDashboard,
     /// <summary>
-    /// enable
+    ///  enable
     /// </summary>
     Enable,
     /// <summary>
-    /// encrypted
+    ///  encrypted
     /// </summary>
     Encrypted,
     /// <summary>
-    /// encrypted_add
+    ///  encrypted_add
     /// </summary>
     EncryptedAdd,
     /// <summary>
-    /// encrypted_add_circle
+    ///  encrypted_add_circle
     /// </summary>
     EncryptedAddCircle,
     /// <summary>
-    /// encrypted_minus_circle
+    ///  encrypted_minus_circle
     /// </summary>
     EncryptedMinusCircle,
     /// <summary>
-    /// encrypted_off
+    ///  encrypted_off
     /// </summary>
     EncryptedOff,
     /// <summary>
-    /// endocrinology
+    ///  endocrinology
     /// </summary>
     Endocrinology,
     /// <summary>
-    /// energy
+    ///  energy
     /// </summary>
     Energy,
     /// <summary>
-    /// energy_program_saving
+    ///  energy_program_saving
     /// </summary>
     EnergyProgramSaving,
     /// <summary>
-    /// energy_program_time_used
+    ///  energy_program_time_used
     /// </summary>
     EnergyProgramTimeUsed,
     /// <summary>
-    /// energy_savings_leaf
+    ///  energy_savings_leaf
     /// </summary>
     EnergySavingsLeaf,
     /// <summary>
-    /// engineering
+    ///  engineering
     /// </summary>
     Engineering,
     /// <summary>
-    /// enhanced_encryption
+    ///  enhanced_encryption
     /// </summary>
     EnhancedEncryption,
     /// <summary>
-    /// ent
+    ///  ent
     /// </summary>
     Ent,
     /// <summary>
-    /// enterprise
+    ///  enterprise
     /// </summary>
     Enterprise,
     /// <summary>
-    /// enterprise_off
+    ///  enterprise_off
     /// </summary>
     EnterpriseOff,
     /// <summary>
-    /// equal
+    ///  equal
     /// </summary>
     Equal,
     /// <summary>
-    /// equalizer
+    ///  equalizer
     /// </summary>
     Equalizer,
     /// <summary>
-    /// eraser_size_1
+    ///  eraser_size_1
     /// </summary>
     EraserSize1,
     /// <summary>
-    /// eraser_size_2
+    ///  eraser_size_2
     /// </summary>
     EraserSize2,
     /// <summary>
-    /// eraser_size_3
+    ///  eraser_size_3
     /// </summary>
     EraserSize3,
     /// <summary>
-    /// eraser_size_4
+    ///  eraser_size_4
     /// </summary>
     EraserSize4,
     /// <summary>
-    /// eraser_size_5
+    ///  eraser_size_5
     /// </summary>
     EraserSize5,
     /// <summary>
-    /// error
+    ///  error
     /// </summary>
     Error,
     /// <summary>
-    /// error_med
+    ///  error_med
     /// </summary>
     ErrorMed,
     /// <summary>
-    /// escalator
+    ///  escalator
     /// </summary>
     Escalator,
     /// <summary>
-    /// escalator_warning
+    ///  escalator_warning
     /// </summary>
     EscalatorWarning,
     /// <summary>
-    /// euro
+    ///  euro
     /// </summary>
     Euro,
     /// <summary>
-    /// euro_symbol
+    ///  euro_symbol
     /// </summary>
     EuroSymbol,
     /// <summary>
-    /// ev_mobiledata_badge
+    ///  ev_mobiledata_badge
     /// </summary>
     EvMobiledataBadge,
     /// <summary>
-    /// ev_shadow
+    ///  ev_shadow
     /// </summary>
     EvShadow,
     /// <summary>
-    /// ev_shadow_add
+    ///  ev_shadow_add
     /// </summary>
     EvShadowAdd,
     /// <summary>
-    /// ev_shadow_minus
+    ///  ev_shadow_minus
     /// </summary>
     EvShadowMinus,
     /// <summary>
-    /// ev_station
+    ///  ev_station
     /// </summary>
     EvStation,
     /// <summary>
-    /// event
+    ///  event
     /// </summary>
     Event,
     /// <summary>
-    /// event_available
+    ///  event_available
     /// </summary>
     EventAvailable,
     /// <summary>
-    /// event_busy
+    ///  event_busy
     /// </summary>
     EventBusy,
     /// <summary>
-    /// event_list
+    ///  event_list
     /// </summary>
     EventList,
     /// <summary>
-    /// event_note
+    ///  event_note
     /// </summary>
     EventNote,
     /// <summary>
-    /// event_repeat
+    ///  event_repeat
     /// </summary>
     EventRepeat,
     /// <summary>
-    /// event_seat
+    ///  event_seat
     /// </summary>
     EventSeat,
     /// <summary>
-    /// event_upcoming
+    ///  event_upcoming
     /// </summary>
     EventUpcoming,
     /// <summary>
-    /// exclamation
+    ///  exclamation
     /// </summary>
     Exclamation,
     /// <summary>
-    /// exercise
+    ///  exercise
     /// </summary>
     Exercise,
     /// <summary>
-    /// exit_to_app
+    ///  exit_to_app
     /// </summary>
     ExitToApp,
     /// <summary>
-    /// expand
+    ///  expand
     /// </summary>
     Expand,
     /// <summary>
-    /// expand_all
+    ///  expand_all
     /// </summary>
     ExpandAll,
     /// <summary>
-    /// expand_circle_down
+    ///  expand_circle_down
     /// </summary>
     ExpandCircleDown,
     /// <summary>
-    /// expand_circle_right
+    ///  expand_circle_right
     /// </summary>
     ExpandCircleRight,
     /// <summary>
-    /// expand_circle_up
+    ///  expand_circle_up
     /// </summary>
     ExpandCircleUp,
     /// <summary>
-    /// expand_content
+    ///  expand_content
     /// </summary>
     ExpandContent,
     /// <summary>
-    /// expansion_panels
+    ///  expansion_panels
     /// </summary>
     ExpansionPanels,
     /// <summary>
-    /// experiment
+    ///  experiment
     /// </summary>
     Experiment,
     /// <summary>
-    /// explicit
+    ///  explicit
     /// </summary>
     Explicit,
     /// <summary>
-    /// explore
+    ///  explore
     /// </summary>
     Explore,
     /// <summary>
-    /// explore_nearby
+    ///  explore_nearby
     /// </summary>
     ExploreNearby,
     /// <summary>
-    /// explore_off
+    ///  explore_off
     /// </summary>
     ExploreOff,
     /// <summary>
-    /// explosion
+    ///  explosion
     /// </summary>
     Explosion,
     /// <summary>
-    /// export_notes
+    ///  export_notes
     /// </summary>
     ExportNotes,
     /// <summary>
-    /// exposure
+    ///  exposure
     /// </summary>
     Exposure,
     /// <summary>
-    /// exposure_neg_1
+    ///  exposure_neg_1
     /// </summary>
     ExposureNeg1,
     /// <summary>
-    /// exposure_neg_2
+    ///  exposure_neg_2
     /// </summary>
     ExposureNeg2,
     /// <summary>
-    /// exposure_plus_1
+    ///  exposure_plus_1
     /// </summary>
     ExposurePlus1,
     /// <summary>
-    /// exposure_plus_2
+    ///  exposure_plus_2
     /// </summary>
     ExposurePlus2,
     /// <summary>
-    /// exposure_zero
+    ///  exposure_zero
     /// </summary>
     ExposureZero,
     /// <summary>
-    /// extension
+    ///  extension
     /// </summary>
     Extension,
     /// <summary>
-    /// extension_off
+    ///  extension_off
     /// </summary>
     ExtensionOff,
     /// <summary>
-    /// eye_tracking
+    ///  eye_tracking
     /// </summary>
     EyeTracking,
     /// <summary>
-    /// eyeglasses
+    ///  eyeglasses
     /// </summary>
     Eyeglasses,
     /// <summary>
-    /// eyeglasses_2
+    ///  eyeglasses_2
     /// </summary>
     Eyeglasses2,
     /// <summary>
-    /// eyeglasses_2_sound
+    ///  eyeglasses_2_sound
     /// </summary>
     Eyeglasses2Sound,
     /// <summary>
-    /// face
+    ///  face
     /// </summary>
     Face,
     /// <summary>
-    /// face_2
+    ///  face_2
     /// </summary>
     Face2,
     /// <summary>
-    /// face_3
+    ///  face_3
     /// </summary>
     Face3,
     /// <summary>
-    /// face_4
+    ///  face_4
     /// </summary>
     Face4,
     /// <summary>
-    /// face_5
+    ///  face_5
     /// </summary>
     Face5,
     /// <summary>
-    /// face_6
+    ///  face_6
     /// </summary>
     Face6,
     /// <summary>
-    /// face_down
+    ///  face_down
     /// </summary>
     FaceDown,
     /// <summary>
-    /// face_left
+    ///  face_left
     /// </summary>
     FaceLeft,
     /// <summary>
-    /// face_nod
+    ///  face_nod
     /// </summary>
     FaceNod,
     /// <summary>
-    /// face_retouching_off
+    ///  face_retouching_off
     /// </summary>
     FaceRetouchingOff,
     /// <summary>
-    /// face_right
+    ///  face_right
     /// </summary>
     FaceRight,
     /// <summary>
-    /// face_shake
+    ///  face_shake
     /// </summary>
     FaceShake,
     /// <summary>
-    /// face_up
+    ///  face_up
     /// </summary>
     FaceUp,
     /// <summary>
-    /// fact_check
+    ///  fact_check
     /// </summary>
     FactCheck,
     /// <summary>
-    /// factory
+    ///  factory
     /// </summary>
     Factory,
     /// <summary>
-    /// falling
+    ///  falling
     /// </summary>
     Falling,
     /// <summary>
-    /// familiar_face_and_zone
+    ///  familiar_face_and_zone
     /// </summary>
     FamiliarFaceAndZone,
     /// <summary>
-    /// family_history
+    ///  family_history
     /// </summary>
     FamilyHistory,
     /// <summary>
-    /// family_home
+    ///  family_home
     /// </summary>
     FamilyHome,
     /// <summary>
-    /// family_link
+    ///  family_link
     /// </summary>
     FamilyLink,
     /// <summary>
-    /// family_restroom
+    ///  family_restroom
     /// </summary>
     FamilyRestroom,
     /// <summary>
-    /// family_star
+    ///  family_star
     /// </summary>
     FamilyStar,
     /// <summary>
-    /// fan_focus
+    ///  fan_focus
     /// </summary>
     FanFocus,
     /// <summary>
-    /// fan_indirect
+    ///  fan_indirect
     /// </summary>
     FanIndirect,
     /// <summary>
-    /// farsight_digital
+    ///  farsight_digital
     /// </summary>
     FarsightDigital,
     /// <summary>
-    /// fast_forward
+    ///  fast_forward
     /// </summary>
     FastForward,
     /// <summary>
-    /// fast_rewind
+    ///  fast_rewind
     /// </summary>
     FastRewind,
     /// <summary>
-    /// fastfood
+    ///  fastfood
     /// </summary>
     Fastfood,
     /// <summary>
-    /// faucet
+    ///  faucet
     /// </summary>
     Faucet,
     /// <summary>
-    /// favorite
+    ///  favorite
     /// </summary>
     Favorite,
     /// <summary>
-    /// fax
+    ///  fax
     /// </summary>
     Fax,
     /// <summary>
-    /// feature_search
+    ///  feature_search
     /// </summary>
     FeatureSearch,
     /// <summary>
-    /// featured_play_list
+    ///  featured_play_list
     /// </summary>
     FeaturedPlayList,
     /// <summary>
-    /// featured_seasonal_and_gifts
+    ///  featured_seasonal_and_gifts
     /// </summary>
     FeaturedSeasonalAndGifts,
     /// <summary>
-    /// featured_video
+    ///  featured_video
     /// </summary>
     FeaturedVideo,
     /// <summary>
-    /// feedback
+    ///  feedback
     /// </summary>
     Feedback,
     /// <summary>
-    /// female
+    ///  female
     /// </summary>
     Female,
     /// <summary>
-    /// femur
+    ///  femur
     /// </summary>
     Femur,
     /// <summary>
-    /// femur_alt
+    ///  femur_alt
     /// </summary>
     FemurAlt,
     /// <summary>
-    /// fence
+    ///  fence
     /// </summary>
     Fence,
     /// <summary>
-    /// fertile
+    ///  fertile
     /// </summary>
     Fertile,
     /// <summary>
-    /// festival
+    ///  festival
     /// </summary>
     Festival,
     /// <summary>
-    /// fiber_dvr
+    ///  fiber_dvr
     /// </summary>
     FiberDvr,
     /// <summary>
-    /// fiber_manual_record
+    ///  fiber_manual_record
     /// </summary>
     FiberManualRecord,
     /// <summary>
-    /// fiber_new
+    ///  fiber_new
     /// </summary>
     FiberNew,
     /// <summary>
-    /// fiber_pin
+    ///  fiber_pin
     /// </summary>
     FiberPin,
     /// <summary>
-    /// fiber_smart_record
+    ///  fiber_smart_record
     /// </summary>
     FiberSmartRecord,
     /// <summary>
-    /// file_copy
+    ///  file_copy
     /// </summary>
     FileCopy,
     /// <summary>
-    /// file_copy_off
+    ///  file_copy_off
     /// </summary>
     FileCopyOff,
     /// <summary>
-    /// file_download_off
+    ///  file_download_off
     /// </summary>
     FileDownloadOff,
     /// <summary>
-    /// file_export
+    ///  file_export
     /// </summary>
     FileExport,
     /// <summary>
-    /// file_json
+    ///  file_json
     /// </summary>
     FileJson,
     /// <summary>
-    /// file_map
+    ///  file_map
     /// </summary>
     FileMap,
     /// <summary>
-    /// file_map_stack
+    ///  file_map_stack
     /// </summary>
     FileMapStack,
     /// <summary>
-    /// file_open
+    ///  file_open
     /// </summary>
     FileOpen,
     /// <summary>
-    /// file_png
+    ///  file_png
     /// </summary>
     FilePng,
     /// <summary>
-    /// file_present
+    ///  file_present
     /// </summary>
     FilePresent,
     /// <summary>
-    /// file_save
+    ///  file_save
     /// </summary>
     FileSave,
     /// <summary>
-    /// file_save_off
+    ///  file_save_off
     /// </summary>
     FileSaveOff,
     /// <summary>
-    /// file_upload_off
+    ///  file_upload_off
     /// </summary>
     FileUploadOff,
     /// <summary>
-    /// files
+    ///  files
     /// </summary>
     Files,
     /// <summary>
-    /// filter
+    ///  filter
     /// </summary>
     Filter,
     /// <summary>
-    /// filter_1
+    ///  filter_1
     /// </summary>
     Filter1,
     /// <summary>
-    /// filter_2
+    ///  filter_2
     /// </summary>
     Filter2,
     /// <summary>
-    /// filter_3
+    ///  filter_3
     /// </summary>
     Filter3,
     /// <summary>
-    /// filter_4
+    ///  filter_4
     /// </summary>
     Filter4,
     /// <summary>
-    /// filter_5
+    ///  filter_5
     /// </summary>
     Filter5,
     /// <summary>
-    /// filter_6
+    ///  filter_6
     /// </summary>
     Filter6,
     /// <summary>
-    /// filter_7
+    ///  filter_7
     /// </summary>
     Filter7,
     /// <summary>
-    /// filter_8
+    ///  filter_8
     /// </summary>
     Filter8,
     /// <summary>
-    /// filter_9
+    ///  filter_9
     /// </summary>
     Filter9,
     /// <summary>
-    /// filter_9_plus
+    ///  filter_9_plus
     /// </summary>
     Filter9Plus,
     /// <summary>
-    /// filter_alt
+    ///  filter_alt
     /// </summary>
     FilterAlt,
     /// <summary>
-    /// filter_alt_off
+    ///  filter_alt_off
     /// </summary>
     FilterAltOff,
     /// <summary>
-    /// filter_arrow_right
+    ///  filter_arrow_right
     /// </summary>
     FilterArrowRight,
     /// <summary>
-    /// filter_b_and_w
+    ///  filter_b_and_w
     /// </summary>
     FilterBAndW,
     /// <summary>
-    /// filter_center_focus
+    ///  filter_center_focus
     /// </summary>
     FilterCenterFocus,
     /// <summary>
-    /// filter_drama
+    ///  filter_drama
     /// </summary>
     FilterDrama,
     /// <summary>
-    /// filter_frames
+    ///  filter_frames
     /// </summary>
     FilterFrames,
     /// <summary>
-    /// filter_list
+    ///  filter_list
     /// </summary>
     FilterList,
     /// <summary>
-    /// filter_list_off
+    ///  filter_list_off
     /// </summary>
     FilterListOff,
     /// <summary>
-    /// filter_none
+    ///  filter_none
     /// </summary>
     FilterNone,
     /// <summary>
-    /// filter_retrolux
+    ///  filter_retrolux
     /// </summary>
     FilterRetrolux,
     /// <summary>
-    /// filter_tilt_shift
+    ///  filter_tilt_shift
     /// </summary>
     FilterTiltShift,
     /// <summary>
-    /// filter_vintage
+    ///  filter_vintage
     /// </summary>
     FilterVintage,
     /// <summary>
-    /// finance
+    ///  finance
     /// </summary>
     Finance,
     /// <summary>
-    /// finance_chip
+    ///  finance_chip
     /// </summary>
     FinanceChip,
     /// <summary>
-    /// finance_mode
+    ///  finance_mode
     /// </summary>
     FinanceMode,
     /// <summary>
-    /// find_in_page
+    ///  find_in_page
     /// </summary>
     FindInPage,
     /// <summary>
-    /// find_replace
+    ///  find_replace
     /// </summary>
     FindReplace,
     /// <summary>
-    /// fingerprint
+    ///  fingerprint
     /// </summary>
     Fingerprint,
     /// <summary>
-    /// fingerprint_off
+    ///  fingerprint_off
     /// </summary>
     FingerprintOff,
     /// <summary>
-    /// fire_extinguisher
+    ///  fire_extinguisher
     /// </summary>
     FireExtinguisher,
     /// <summary>
-    /// fire_hydrant
+    ///  fire_hydrant
     /// </summary>
     FireHydrant,
     /// <summary>
-    /// fire_truck
+    ///  fire_truck
     /// </summary>
     FireTruck,
     /// <summary>
-    /// fireplace
+    ///  fireplace
     /// </summary>
     Fireplace,
     /// <summary>
-    /// first_page
+    ///  first_page
     /// </summary>
     FirstPage,
     /// <summary>
-    /// fit_page
+    ///  fit_page
     /// </summary>
     FitPage,
     /// <summary>
-    /// fit_page_height
+    ///  fit_page_height
     /// </summary>
     FitPageHeight,
     /// <summary>
-    /// fit_page_width
+    ///  fit_page_width
     /// </summary>
     FitPageWidth,
     /// <summary>
-    /// fit_screen
+    ///  fit_screen
     /// </summary>
     FitScreen,
     /// <summary>
-    /// fit_width
+    ///  fit_width
     /// </summary>
     FitWidth,
     /// <summary>
-    /// fitness_center
+    ///  fitness_center
     /// </summary>
     FitnessCenter,
     /// <summary>
-    /// fitness_tracker
+    ///  fitness_tracker
     /// </summary>
     FitnessTracker,
     /// <summary>
-    /// flag
+    ///  flag
     /// </summary>
     Flag,
     /// <summary>
-    /// flag_2
+    ///  flag_2
     /// </summary>
     Flag2,
     /// <summary>
-    /// flag_check
+    ///  flag_check
     /// </summary>
     FlagCheck,
     /// <summary>
-    /// flag_circle
+    ///  flag_circle
     /// </summary>
     FlagCircle,
     /// <summary>
-    /// flaky
+    ///  flaky
     /// </summary>
     Flaky,
     /// <summary>
-    /// flare
+    ///  flare
     /// </summary>
     Flare,
     /// <summary>
-    /// flash_auto
+    ///  flash_auto
     /// </summary>
     FlashAuto,
     /// <summary>
-    /// flash_off
+    ///  flash_off
     /// </summary>
     FlashOff,
     /// <summary>
-    /// flash_on
+    ///  flash_on
     /// </summary>
     FlashOn,
     /// <summary>
-    /// flashlight_off
+    ///  flashlight_off
     /// </summary>
     FlashlightOff,
     /// <summary>
-    /// flashlight_on
+    ///  flashlight_on
     /// </summary>
     FlashlightOn,
     /// <summary>
-    /// flatware
+    ///  flatware
     /// </summary>
     Flatware,
     /// <summary>
-    /// flex_direction
+    ///  flex_direction
     /// </summary>
     FlexDirection,
     /// <summary>
-    /// flex_no_wrap
+    ///  flex_no_wrap
     /// </summary>
     FlexNoWrap,
     /// <summary>
-    /// flex_wrap
+    ///  flex_wrap
     /// </summary>
     FlexWrap,
     /// <summary>
-    /// flight
+    ///  flight
     /// </summary>
     Flight,
     /// <summary>
-    /// flight_class
+    ///  flight_class
     /// </summary>
     FlightClass,
     /// <summary>
-    /// flight_land
+    ///  flight_land
     /// </summary>
     FlightLand,
     /// <summary>
-    /// flight_takeoff
+    ///  flight_takeoff
     /// </summary>
     FlightTakeoff,
     /// <summary>
-    /// flights_and_hotels
+    ///  flights_and_hotels
     /// </summary>
     FlightsAndHotels,
     /// <summary>
-    /// flip
+    ///  flip
     /// </summary>
     Flip,
     /// <summary>
-    /// flip_camera_android
+    ///  flip_camera_android
     /// </summary>
     FlipCameraAndroid,
     /// <summary>
-    /// flip_camera_ios
+    ///  flip_camera_ios
     /// </summary>
     FlipCameraIos,
     /// <summary>
-    /// flip_to_back
+    ///  flip_to_back
     /// </summary>
     FlipToBack,
     /// <summary>
-    /// flip_to_front
+    ///  flip_to_front
     /// </summary>
     FlipToFront,
     /// <summary>
-    /// float_landscape_2
+    ///  float_landscape_2
     /// </summary>
     FloatLandscape2,
     /// <summary>
-    /// float_portrait_2
+    ///  float_portrait_2
     /// </summary>
     FloatPortrait2,
     /// <summary>
-    /// flood
+    ///  flood
     /// </summary>
     Flood,
     /// <summary>
-    /// floor
+    ///  floor
     /// </summary>
     Floor,
     /// <summary>
-    /// floor_lamp
+    ///  floor_lamp
     /// </summary>
     FloorLamp,
     /// <summary>
-    /// flowchart
+    ///  flowchart
     /// </summary>
     Flowchart,
     /// <summary>
-    /// flowsheet
+    ///  flowsheet
     /// </summary>
     Flowsheet,
     /// <summary>
-    /// fluid
+    ///  fluid
     /// </summary>
     Fluid,
     /// <summary>
-    /// fluid_balance
+    ///  fluid_balance
     /// </summary>
     FluidBalance,
     /// <summary>
-    /// fluid_med
+    ///  fluid_med
     /// </summary>
     FluidMed,
     /// <summary>
-    /// fluorescent
+    ///  fluorescent
     /// </summary>
     Fluorescent,
     /// <summary>
-    /// flutter
+    ///  flutter
     /// </summary>
     Flutter,
     /// <summary>
-    /// flutter_dash
+    ///  flutter_dash
     /// </summary>
     FlutterDash,
     /// <summary>
-    /// flyover
+    ///  flyover
     /// </summary>
     Flyover,
     /// <summary>
-    /// fmd_bad
+    ///  fmd_bad
     /// </summary>
     FmdBad,
     /// <summary>
-    /// foggy
+    ///  foggy
     /// </summary>
     Foggy,
     /// <summary>
-    /// folded_hands
+    ///  folded_hands
     /// </summary>
     FoldedHands,
     /// <summary>
-    /// folder
+    ///  folder
     /// </summary>
     Folder,
     /// <summary>
-    /// folder_check
+    ///  folder_check
     /// </summary>
     FolderCheck,
     /// <summary>
-    /// folder_check_2
+    ///  folder_check_2
     /// </summary>
     FolderCheck2,
     /// <summary>
-    /// folder_code
+    ///  folder_code
     /// </summary>
     FolderCode,
     /// <summary>
-    /// folder_copy
+    ///  folder_copy
     /// </summary>
     FolderCopy,
     /// <summary>
-    /// folder_data
+    ///  folder_data
     /// </summary>
     FolderData,
     /// <summary>
-    /// folder_delete
+    ///  folder_delete
     /// </summary>
     FolderDelete,
     /// <summary>
-    /// folder_eye
+    ///  folder_eye
     /// </summary>
     FolderEye,
     /// <summary>
-    /// folder_info
+    ///  folder_info
     /// </summary>
     FolderInfo,
     /// <summary>
-    /// folder_limited
+    ///  folder_limited
     /// </summary>
     FolderLimited,
     /// <summary>
-    /// folder_managed
+    ///  folder_managed
     /// </summary>
     FolderManaged,
     /// <summary>
-    /// folder_match
+    ///  folder_match
     /// </summary>
     FolderMatch,
     /// <summary>
-    /// folder_off
+    ///  folder_off
     /// </summary>
     FolderOff,
     /// <summary>
-    /// folder_open
+    ///  folder_open
     /// </summary>
     FolderOpen,
     /// <summary>
-    /// folder_shared
+    ///  folder_shared
     /// </summary>
     FolderShared,
     /// <summary>
-    /// folder_special
+    ///  folder_special
     /// </summary>
     FolderSpecial,
     /// <summary>
-    /// folder_supervised
+    ///  folder_supervised
     /// </summary>
     FolderSupervised,
     /// <summary>
-    /// folder_zip
+    ///  folder_zip
     /// </summary>
     FolderZip,
     /// <summary>
-    /// follow_the_signs
+    ///  follow_the_signs
     /// </summary>
     FollowTheSigns,
     /// <summary>
-    /// font_download
+    ///  font_download
     /// </summary>
     FontDownload,
     /// <summary>
-    /// font_download_off
+    ///  font_download_off
     /// </summary>
     FontDownloadOff,
     /// <summary>
-    /// food_bank
+    ///  food_bank
     /// </summary>
     FoodBank,
     /// <summary>
-    /// foot_bones
+    ///  foot_bones
     /// </summary>
     FootBones,
     /// <summary>
-    /// footprint
+    ///  footprint
     /// </summary>
     Footprint,
     /// <summary>
-    /// for_you
+    ///  for_you
     /// </summary>
     ForYou,
     /// <summary>
-    /// forest
+    ///  forest
     /// </summary>
     Forest,
     /// <summary>
-    /// fork_left
+    ///  fork_left
     /// </summary>
     ForkLeft,
     /// <summary>
-    /// fork_right
+    ///  fork_right
     /// </summary>
     ForkRight,
     /// <summary>
-    /// fork_spoon
+    ///  fork_spoon
     /// </summary>
     ForkSpoon,
     /// <summary>
-    /// forklift
+    ///  forklift
     /// </summary>
     Forklift,
     /// <summary>
-    /// format_align_center
+    ///  format_align_center
     /// </summary>
     FormatAlignCenter,
     /// <summary>
-    /// format_align_justify
+    ///  format_align_justify
     /// </summary>
     FormatAlignJustify,
     /// <summary>
-    /// format_align_left
+    ///  format_align_left
     /// </summary>
     FormatAlignLeft,
     /// <summary>
-    /// format_align_right
+    ///  format_align_right
     /// </summary>
     FormatAlignRight,
     /// <summary>
-    /// format_bold
+    ///  format_bold
     /// </summary>
     FormatBold,
     /// <summary>
-    /// format_clear
+    ///  format_clear
     /// </summary>
     FormatClear,
     /// <summary>
-    /// format_color_fill
+    ///  format_color_fill
     /// </summary>
     FormatColorFill,
     /// <summary>
-    /// format_color_reset
+    ///  format_color_reset
     /// </summary>
     FormatColorReset,
     /// <summary>
-    /// format_color_text
+    ///  format_color_text
     /// </summary>
     FormatColorText,
     /// <summary>
-    /// format_h1
+    ///  format_h1
     /// </summary>
     FormatH1,
     /// <summary>
-    /// format_h2
+    ///  format_h2
     /// </summary>
     FormatH2,
     /// <summary>
-    /// format_h3
+    ///  format_h3
     /// </summary>
     FormatH3,
     /// <summary>
-    /// format_h4
+    ///  format_h4
     /// </summary>
     FormatH4,
     /// <summary>
-    /// format_h5
+    ///  format_h5
     /// </summary>
     FormatH5,
     /// <summary>
-    /// format_h6
+    ///  format_h6
     /// </summary>
     FormatH6,
     /// <summary>
-    /// format_image_left
+    ///  format_image_left
     /// </summary>
     FormatImageLeft,
     /// <summary>
-    /// format_image_right
+    ///  format_image_right
     /// </summary>
     FormatImageRight,
     /// <summary>
-    /// format_indent_decrease
+    ///  format_indent_decrease
     /// </summary>
     FormatIndentDecrease,
     /// <summary>
-    /// format_indent_increase
+    ///  format_indent_increase
     /// </summary>
     FormatIndentIncrease,
     /// <summary>
-    /// format_ink_highlighter
+    ///  format_ink_highlighter
     /// </summary>
     FormatInkHighlighter,
     /// <summary>
-    /// format_italic
+    ///  format_italic
     /// </summary>
     FormatItalic,
     /// <summary>
-    /// format_letter_spacing
+    ///  format_letter_spacing
     /// </summary>
     FormatLetterSpacing,
     /// <summary>
-    /// format_letter_spacing_2
+    ///  format_letter_spacing_2
     /// </summary>
     FormatLetterSpacing2,
     /// <summary>
-    /// format_letter_spacing_standard
+    ///  format_letter_spacing_standard
     /// </summary>
     FormatLetterSpacingStandard,
     /// <summary>
-    /// format_letter_spacing_wide
+    ///  format_letter_spacing_wide
     /// </summary>
     FormatLetterSpacingWide,
     /// <summary>
-    /// format_letter_spacing_wider
+    ///  format_letter_spacing_wider
     /// </summary>
     FormatLetterSpacingWider,
     /// <summary>
-    /// format_line_spacing
+    ///  format_line_spacing
     /// </summary>
     FormatLineSpacing,
     /// <summary>
-    /// format_list_bulleted
+    ///  format_list_bulleted
     /// </summary>
     FormatListBulleted,
     /// <summary>
-    /// format_list_bulleted_add
+    ///  format_list_bulleted_add
     /// </summary>
     FormatListBulletedAdd,
     /// <summary>
-    /// format_list_numbered
+    ///  format_list_numbered
     /// </summary>
     FormatListNumbered,
     /// <summary>
-    /// format_list_numbered_rtl
+    ///  format_list_numbered_rtl
     /// </summary>
     FormatListNumberedRtl,
     /// <summary>
-    /// format_overline
+    ///  format_overline
     /// </summary>
     FormatOverline,
     /// <summary>
-    /// format_paint
+    ///  format_paint
     /// </summary>
     FormatPaint,
     /// <summary>
-    /// format_paragraph
+    ///  format_paragraph
     /// </summary>
     FormatParagraph,
     /// <summary>
-    /// format_quote
+    ///  format_quote
     /// </summary>
     FormatQuote,
     /// <summary>
-    /// format_quote_off
+    ///  format_quote_off
     /// </summary>
     FormatQuoteOff,
     /// <summary>
-    /// format_shapes
+    ///  format_shapes
     /// </summary>
     FormatShapes,
     /// <summary>
-    /// format_size
+    ///  format_size
     /// </summary>
     FormatSize,
     /// <summary>
-    /// format_strikethrough
+    ///  format_strikethrough
     /// </summary>
     FormatStrikethrough,
     /// <summary>
-    /// format_text_clip
+    ///  format_text_clip
     /// </summary>
     FormatTextClip,
     /// <summary>
-    /// format_text_overflow
+    ///  format_text_overflow
     /// </summary>
     FormatTextOverflow,
     /// <summary>
-    /// format_text_wrap
+    ///  format_text_wrap
     /// </summary>
     FormatTextWrap,
     /// <summary>
-    /// format_textdirection_l_to_r
+    ///  format_textdirection_l_to_r
     /// </summary>
     FormatTextdirectionLToR,
     /// <summary>
-    /// format_textdirection_r_to_l
+    ///  format_textdirection_r_to_l
     /// </summary>
     FormatTextdirectionRToL,
     /// <summary>
-    /// format_textdirection_vertical
+    ///  format_textdirection_vertical
     /// </summary>
     FormatTextdirectionVertical,
     /// <summary>
-    /// format_underlined
+    ///  format_underlined
     /// </summary>
     FormatUnderlined,
     /// <summary>
-    /// format_underlined_squiggle
+    ///  format_underlined_squiggle
     /// </summary>
     FormatUnderlinedSquiggle,
     /// <summary>
-    /// forms_add_on
+    ///  forms_add_on
     /// </summary>
     FormsAddOn,
     /// <summary>
-    /// forms_apps_script
+    ///  forms_apps_script
     /// </summary>
     FormsAppsScript,
     /// <summary>
-    /// fort
+    ///  fort
     /// </summary>
     Fort,
     /// <summary>
-    /// forum
+    ///  forum
     /// </summary>
     Forum,
     /// <summary>
-    /// forward
+    ///  forward
     /// </summary>
     Forward,
     /// <summary>
-    /// forward_10
+    ///  forward_10
     /// </summary>
     Forward10,
     /// <summary>
-    /// forward_30
+    ///  forward_30
     /// </summary>
     Forward30,
     /// <summary>
-    /// forward_5
+    ///  forward_5
     /// </summary>
     Forward5,
     /// <summary>
-    /// forward_circle
+    ///  forward_circle
     /// </summary>
     ForwardCircle,
     /// <summary>
-    /// forward_media
+    ///  forward_media
     /// </summary>
     ForwardMedia,
     /// <summary>
-    /// forward_to_inbox
+    ///  forward_to_inbox
     /// </summary>
     ForwardToInbox,
     /// <summary>
-    /// foundation
+    ///  foundation
     /// </summary>
     Foundation,
     /// <summary>
-    /// fragrance
+    ///  fragrance
     /// </summary>
     Fragrance,
     /// <summary>
-    /// frame_inspect
+    ///  frame_inspect
     /// </summary>
     FrameInspect,
     /// <summary>
-    /// frame_person
+    ///  frame_person
     /// </summary>
     FramePerson,
     /// <summary>
-    /// frame_person_mic
+    ///  frame_person_mic
     /// </summary>
     FramePersonMic,
     /// <summary>
-    /// frame_person_off
+    ///  frame_person_off
     /// </summary>
     FramePersonOff,
     /// <summary>
-    /// frame_reload
+    ///  frame_reload
     /// </summary>
     FrameReload,
     /// <summary>
-    /// frame_source
+    ///  frame_source
     /// </summary>
     FrameSource,
     /// <summary>
-    /// free_cancellation
+    ///  free_cancellation
     /// </summary>
     FreeCancellation,
     /// <summary>
-    /// front_hand
+    ///  front_hand
     /// </summary>
     FrontHand,
     /// <summary>
-    /// front_loader
+    ///  front_loader
     /// </summary>
     FrontLoader,
     /// <summary>
-    /// full_coverage
+    ///  full_coverage
     /// </summary>
     FullCoverage,
     /// <summary>
-    /// full_hd
+    ///  full_hd
     /// </summary>
     FullHd,
     /// <summary>
-    /// full_stacked_bar_chart
+    ///  full_stacked_bar_chart
     /// </summary>
     FullStackedBarChart,
     /// <summary>
-    /// fullscreen
+    ///  fullscreen
     /// </summary>
     Fullscreen,
     /// <summary>
-    /// fullscreen_exit
+    ///  fullscreen_exit
     /// </summary>
     FullscreenExit,
     /// <summary>
-    /// fullscreen_portrait
+    ///  fullscreen_portrait
     /// </summary>
     FullscreenPortrait,
     /// <summary>
-    /// function
+    ///  function
     /// </summary>
     Function,
     /// <summary>
-    /// functions
+    ///  functions
     /// </summary>
     Functions,
     /// <summary>
-    /// funicular
+    ///  funicular
     /// </summary>
     Funicular,
     /// <summary>
-    /// g_mobiledata
+    ///  g_mobiledata
     /// </summary>
     GMobiledata,
     /// <summary>
-    /// g_mobiledata_badge
+    ///  g_mobiledata_badge
     /// </summary>
     GMobiledataBadge,
     /// <summary>
-    /// g_translate
+    ///  g_translate
     /// </summary>
     GTranslate,
     /// <summary>
-    /// gallery_thumbnail
+    ///  gallery_thumbnail
     /// </summary>
     GalleryThumbnail,
     /// <summary>
-    /// gamepad
+    ///  gamepad
     /// </summary>
     Gamepad,
     /// <summary>
-    /// garage
+    ///  garage
     /// </summary>
     Garage,
     /// <summary>
-    /// garage_check
+    ///  garage_check
     /// </summary>
     GarageCheck,
     /// <summary>
-    /// garage_door
+    ///  garage_door
     /// </summary>
     GarageDoor,
     /// <summary>
-    /// garage_home
+    ///  garage_home
     /// </summary>
     GarageHome,
     /// <summary>
-    /// garage_money
+    ///  garage_money
     /// </summary>
     GarageMoney,
     /// <summary>
-    /// garden_cart
+    ///  garden_cart
     /// </summary>
     GardenCart,
     /// <summary>
-    /// gas_meter
+    ///  gas_meter
     /// </summary>
     GasMeter,
     /// <summary>
-    /// gastroenterology
+    ///  gastroenterology
     /// </summary>
     Gastroenterology,
     /// <summary>
-    /// gate
+    ///  gate
     /// </summary>
     Gate,
     /// <summary>
-    /// gavel
+    ///  gavel
     /// </summary>
     Gavel,
     /// <summary>
-    /// general_device
+    ///  general_device
     /// </summary>
     GeneralDevice,
     /// <summary>
-    /// genetics
+    ///  genetics
     /// </summary>
     Genetics,
     /// <summary>
-    /// genres
+    ///  genres
     /// </summary>
     Genres,
     /// <summary>
-    /// gesture
+    ///  gesture
     /// </summary>
     Gesture,
     /// <summary>
-    /// gesture_select
+    ///  gesture_select
     /// </summary>
     GestureSelect,
     /// <summary>
-    /// gif
+    ///  gif
     /// </summary>
     Gif,
     /// <summary>
-    /// gif_2
+    ///  gif_2
     /// </summary>
     Gif2,
     /// <summary>
-    /// gif_box
+    ///  gif_box
     /// </summary>
     GifBox,
     /// <summary>
-    /// girl
+    ///  girl
     /// </summary>
     Girl,
     /// <summary>
-    /// gite
+    ///  gite
     /// </summary>
     Gite,
     /// <summary>
-    /// glass_cup
+    ///  glass_cup
     /// </summary>
     GlassCup,
     /// <summary>
-    /// globe
+    ///  globe
     /// </summary>
     Globe,
     /// <summary>
-    /// globe_asia
+    ///  globe_asia
     /// </summary>
     GlobeAsia,
     /// <summary>
-    /// globe_book
+    ///  globe_book
     /// </summary>
     GlobeBook,
     /// <summary>
-    /// globe_location_pin
+    ///  globe_location_pin
     /// </summary>
     GlobeLocationPin,
     /// <summary>
-    /// globe_uk
+    ///  globe_uk
     /// </summary>
     GlobeUk,
     /// <summary>
-    /// glucose
+    ///  glucose
     /// </summary>
     Glucose,
     /// <summary>
-    /// glyphs
+    ///  glyphs
     /// </summary>
     Glyphs,
     /// <summary>
-    /// go_to_line
+    ///  go_to_line
     /// </summary>
     GoToLine,
     /// <summary>
-    /// golf_course
+    ///  golf_course
     /// </summary>
     GolfCourse,
     /// <summary>
-    /// gondola_lift
+    ///  gondola_lift
     /// </summary>
     GondolaLift,
     /// <summary>
-    /// google_home_devices
+    ///  google_home_devices
     /// </summary>
     GoogleHomeDevices,
     /// <summary>
-    /// google_tv_remote
+    ///  google_tv_remote
     /// </summary>
     GoogleTvRemote,
     /// <summary>
-    /// google_wifi
+    ///  google_wifi
     /// </summary>
     GoogleWifi,
     /// <summary>
-    /// gpp_bad
+    ///  gpp_bad
     /// </summary>
     GppBad,
     /// <summary>
-    /// gpp_maybe
+    ///  gpp_maybe
     /// </summary>
     GppMaybe,
     /// <summary>
-    /// gradient
+    ///  gradient
     /// </summary>
     Gradient,
     /// <summary>
-    /// grading
+    ///  grading
     /// </summary>
     Grading,
     /// <summary>
-    /// grain
+    ///  grain
     /// </summary>
     Grain,
     /// <summary>
-    /// graph_1
+    ///  graph_1
     /// </summary>
     Graph1,
     /// <summary>
-    /// graph_2
+    ///  graph_2
     /// </summary>
     Graph2,
     /// <summary>
-    /// graph_3
+    ///  graph_3
     /// </summary>
     Graph3,
     /// <summary>
-    /// graph_4
+    ///  graph_4
     /// </summary>
     Graph4,
     /// <summary>
-    /// graph_5
+    ///  graph_5
     /// </summary>
     Graph5,
     /// <summary>
-    /// graph_6
+    ///  graph_6
     /// </summary>
     Graph6,
     /// <summary>
-    /// graph_7
+    ///  graph_7
     /// </summary>
     Graph7,
     /// <summary>
-    /// graphic_eq
+    ///  graphic_eq
     /// </summary>
     GraphicEq,
     /// <summary>
-    /// grass
+    ///  grass
     /// </summary>
     Grass,
     /// <summary>
-    /// grid_3x3
+    ///  grid_3x3
     /// </summary>
     Grid3X3,
     /// <summary>
-    /// grid_3x3_off
+    ///  grid_3x3_off
     /// </summary>
     Grid3X3Off,
     /// <summary>
-    /// grid_4x4
+    ///  grid_4x4
     /// </summary>
     Grid4X4,
     /// <summary>
-    /// grid_goldenratio
+    ///  grid_goldenratio
     /// </summary>
     GridGoldenratio,
     /// <summary>
-    /// grid_guides
+    ///  grid_guides
     /// </summary>
     GridGuides,
     /// <summary>
-    /// grid_off
+    ///  grid_off
     /// </summary>
     GridOff,
     /// <summary>
-    /// grid_on
+    ///  grid_on
     /// </summary>
     GridOn,
     /// <summary>
-    /// grid_view
+    ///  grid_view
     /// </summary>
     GridView,
     /// <summary>
-    /// grocery
+    ///  grocery
     /// </summary>
     Grocery,
     /// <summary>
-    /// group
+    ///  group
     /// </summary>
     Group,
     /// <summary>
-    /// group_add
+    ///  group_add
     /// </summary>
     GroupAdd,
     /// <summary>
-    /// group_off
+    ///  group_off
     /// </summary>
     GroupOff,
     /// <summary>
-    /// group_remove
+    ///  group_remove
     /// </summary>
     GroupRemove,
     /// <summary>
-    /// group_search
+    ///  group_search
     /// </summary>
     GroupSearch,
     /// <summary>
-    /// group_work
+    ///  group_work
     /// </summary>
     GroupWork,
     /// <summary>
-    /// grouped_bar_chart
+    ///  grouped_bar_chart
     /// </summary>
     GroupedBarChart,
     /// <summary>
-    /// groups
+    ///  groups
     /// </summary>
     Groups,
     /// <summary>
-    /// groups_2
+    ///  groups_2
     /// </summary>
     Groups2,
     /// <summary>
-    /// groups_3
+    ///  groups_3
     /// </summary>
     Groups3,
     /// <summary>
-    /// guardian
+    ///  guardian
     /// </summary>
     Guardian,
     /// <summary>
-    /// gynecology
+    ///  gynecology
     /// </summary>
     Gynecology,
     /// <summary>
-    /// h_mobiledata
+    ///  h_mobiledata
     /// </summary>
     HMobiledata,
     /// <summary>
-    /// h_mobiledata_badge
+    ///  h_mobiledata_badge
     /// </summary>
     HMobiledataBadge,
     /// <summary>
-    /// h_plus_mobiledata
+    ///  h_plus_mobiledata
     /// </summary>
     HPlusMobiledata,
     /// <summary>
-    /// h_plus_mobiledata_badge
+    ///  h_plus_mobiledata_badge
     /// </summary>
     HPlusMobiledataBadge,
     /// <summary>
-    /// hail
+    ///  hail
     /// </summary>
     Hail,
     /// <summary>
-    /// hallway
+    ///  hallway
     /// </summary>
     Hallway,
     /// <summary>
-    /// hanami_dango
+    ///  hanami_dango
     /// </summary>
     HanamiDango,
     /// <summary>
-    /// hand_bones
+    ///  hand_bones
     /// </summary>
     HandBones,
     /// <summary>
-    /// hand_gesture
+    ///  hand_gesture
     /// </summary>
     HandGesture,
     /// <summary>
-    /// hand_gesture_off
+    ///  hand_gesture_off
     /// </summary>
     HandGestureOff,
     /// <summary>
-    /// hand_meal
+    ///  hand_meal
     /// </summary>
     HandMeal,
     /// <summary>
-    /// hand_package
+    ///  hand_package
     /// </summary>
     HandPackage,
     /// <summary>
-    /// handheld_controller
+    ///  handheld_controller
     /// </summary>
     HandheldController,
     /// <summary>
-    /// handshake
+    ///  handshake
     /// </summary>
     Handshake,
     /// <summary>
-    /// handyman
+    ///  handyman
     /// </summary>
     Handyman,
     /// <summary>
-    /// hangout_video
+    ///  hangout_video
     /// </summary>
     HangoutVideo,
     /// <summary>
-    /// hangout_video_off
+    ///  hangout_video_off
     /// </summary>
     HangoutVideoOff,
     /// <summary>
-    /// hard_disk
+    ///  hard_disk
     /// </summary>
     HardDisk,
     /// <summary>
-    /// hard_drive
+    ///  hard_drive
     /// </summary>
     HardDrive,
     /// <summary>
-    /// hard_drive_2
+    ///  hard_drive_2
     /// </summary>
     HardDrive2,
     /// <summary>
-    /// hardware
+    ///  hardware
     /// </summary>
     Hardware,
     /// <summary>
-    /// hd
+    ///  hd
     /// </summary>
     Hd,
     /// <summary>
-    /// hdr_auto
+    ///  hdr_auto
     /// </summary>
     HdrAuto,
     /// <summary>
-    /// hdr_auto_select
+    ///  hdr_auto_select
     /// </summary>
     HdrAutoSelect,
     /// <summary>
-    /// hdr_enhanced_select
+    ///  hdr_enhanced_select
     /// </summary>
     HdrEnhancedSelect,
     /// <summary>
-    /// hdr_off
+    ///  hdr_off
     /// </summary>
     HdrOff,
     /// <summary>
-    /// hdr_off_select
+    ///  hdr_off_select
     /// </summary>
     HdrOffSelect,
     /// <summary>
-    /// hdr_on
+    ///  hdr_on
     /// </summary>
     HdrOn,
     /// <summary>
-    /// hdr_on_select
+    ///  hdr_on_select
     /// </summary>
     HdrOnSelect,
     /// <summary>
-    /// hdr_plus
+    ///  hdr_plus
     /// </summary>
     HdrPlus,
     /// <summary>
-    /// hdr_plus_off
+    ///  hdr_plus_off
     /// </summary>
     HdrPlusOff,
     /// <summary>
-    /// hdr_strong
+    ///  hdr_strong
     /// </summary>
     HdrStrong,
     /// <summary>
-    /// hdr_weak
+    ///  hdr_weak
     /// </summary>
     HdrWeak,
     /// <summary>
-    /// head_mounted_device
+    ///  head_mounted_device
     /// </summary>
     HeadMountedDevice,
     /// <summary>
-    /// headphones
+    ///  headphones
     /// </summary>
     Headphones,
     /// <summary>
-    /// headphones_battery
+    ///  headphones_battery
     /// </summary>
     HeadphonesBattery,
     /// <summary>
-    /// headset_mic
+    ///  headset_mic
     /// </summary>
     HeadsetMic,
     /// <summary>
-    /// headset_off
+    ///  headset_off
     /// </summary>
     HeadsetOff,
     /// <summary>
-    /// healing
+    ///  healing
     /// </summary>
     Healing,
     /// <summary>
-    /// health_and_beauty
+    ///  health_and_beauty
     /// </summary>
     HealthAndBeauty,
     /// <summary>
-    /// health_and_safety
+    ///  health_and_safety
     /// </summary>
     HealthAndSafety,
     /// <summary>
-    /// health_cross
+    ///  health_cross
     /// </summary>
     HealthCross,
     /// <summary>
-    /// health_metrics
+    ///  health_metrics
     /// </summary>
     HealthMetrics,
     /// <summary>
-    /// heap_snapshot_large
+    ///  heap_snapshot_large
     /// </summary>
     HeapSnapshotLarge,
     /// <summary>
-    /// heap_snapshot_multiple
+    ///  heap_snapshot_multiple
     /// </summary>
     HeapSnapshotMultiple,
     /// <summary>
-    /// heap_snapshot_thumbnail
+    ///  heap_snapshot_thumbnail
     /// </summary>
     HeapSnapshotThumbnail,
     /// <summary>
-    /// hearing
+    ///  hearing
     /// </summary>
     Hearing,
     /// <summary>
-    /// hearing_aid
+    ///  hearing_aid
     /// </summary>
     HearingAid,
     /// <summary>
-    /// hearing_aid_disabled
+    ///  hearing_aid_disabled
     /// </summary>
     HearingAidDisabled,
     /// <summary>
-    /// hearing_aid_disabled_left
+    ///  hearing_aid_disabled_left
     /// </summary>
     HearingAidDisabledLeft,
     /// <summary>
-    /// hearing_aid_left
+    ///  hearing_aid_left
     /// </summary>
     HearingAidLeft,
     /// <summary>
-    /// hearing_disabled
+    ///  hearing_disabled
     /// </summary>
     HearingDisabled,
     /// <summary>
-    /// heart_broken
+    ///  heart_broken
     /// </summary>
     HeartBroken,
     /// <summary>
-    /// heart_check
+    ///  heart_check
     /// </summary>
     HeartCheck,
     /// <summary>
-    /// heart_minus
+    ///  heart_minus
     /// </summary>
     HeartMinus,
     /// <summary>
-    /// heart_plus
+    ///  heart_plus
     /// </summary>
     HeartPlus,
     /// <summary>
-    /// heart_smile
+    ///  heart_smile
     /// </summary>
     HeartSmile,
     /// <summary>
-    /// heat
+    ///  heat
     /// </summary>
     Heat,
     /// <summary>
-    /// heat_pump
+    ///  heat_pump
     /// </summary>
     HeatPump,
     /// <summary>
-    /// heat_pump_balance
+    ///  heat_pump_balance
     /// </summary>
     HeatPumpBalance,
     /// <summary>
-    /// height
+    ///  height
     /// </summary>
     Height,
     /// <summary>
-    /// helicopter
+    ///  helicopter
     /// </summary>
     Helicopter,
     /// <summary>
-    /// help
+    ///  help
     /// </summary>
     Help,
     /// <summary>
-    /// help_center
+    ///  help_center
     /// </summary>
     HelpCenter,
     /// <summary>
-    /// help_clinic
+    ///  help_clinic
     /// </summary>
     HelpClinic,
     /// <summary>
-    /// hematology
+    ///  hematology
     /// </summary>
     Hematology,
     /// <summary>
-    /// hevc
+    ///  hevc
     /// </summary>
     Hevc,
     /// <summary>
-    /// hexagon
+    ///  hexagon
     /// </summary>
     Hexagon,
     /// <summary>
-    /// hide
+    ///  hide
     /// </summary>
     Hide,
     /// <summary>
-    /// hide_image
+    ///  hide_image
     /// </summary>
     HideImage,
     /// <summary>
-    /// hide_source
+    ///  hide_source
     /// </summary>
     HideSource,
     /// <summary>
-    /// high_chair
+    ///  high_chair
     /// </summary>
     HighChair,
     /// <summary>
-    /// high_density
+    ///  high_density
     /// </summary>
     HighDensity,
     /// <summary>
-    /// high_quality
+    ///  high_quality
     /// </summary>
     HighQuality,
     /// <summary>
-    /// high_res
+    ///  high_res
     /// </summary>
     HighRes,
     /// <summary>
-    /// highlight
+    ///  highlight
     /// </summary>
     Highlight,
     /// <summary>
-    /// highlight_keyboard_focus
+    ///  highlight_keyboard_focus
     /// </summary>
     HighlightKeyboardFocus,
     /// <summary>
-    /// highlight_mouse_cursor
+    ///  highlight_mouse_cursor
     /// </summary>
     HighlightMouseCursor,
     /// <summary>
-    /// highlight_text_cursor
+    ///  highlight_text_cursor
     /// </summary>
     HighlightTextCursor,
     /// <summary>
-    /// highlighter_size_1
+    ///  highlighter_size_1
     /// </summary>
     HighlighterSize1,
     /// <summary>
-    /// highlighter_size_2
+    ///  highlighter_size_2
     /// </summary>
     HighlighterSize2,
     /// <summary>
-    /// highlighter_size_3
+    ///  highlighter_size_3
     /// </summary>
     HighlighterSize3,
     /// <summary>
-    /// highlighter_size_4
+    ///  highlighter_size_4
     /// </summary>
     HighlighterSize4,
     /// <summary>
-    /// highlighter_size_5
+    ///  highlighter_size_5
     /// </summary>
     HighlighterSize5,
     /// <summary>
-    /// hiking
+    ///  hiking
     /// </summary>
     Hiking,
     /// <summary>
-    /// history
+    ///  history
     /// </summary>
     History,
     /// <summary>
-    /// history_2
+    ///  history_2
     /// </summary>
     History2,
     /// <summary>
-    /// history_edu
+    ///  history_edu
     /// </summary>
     HistoryEdu,
     /// <summary>
-    /// history_off
+    ///  history_off
     /// </summary>
     HistoryOff,
     /// <summary>
-    /// history_toggle_off
+    ///  history_toggle_off
     /// </summary>
     HistoryToggleOff,
     /// <summary>
-    /// hive
+    ///  hive
     /// </summary>
     Hive,
     /// <summary>
-    /// hls
+    ///  hls
     /// </summary>
     Hls,
     /// <summary>
-    /// hls_off
+    ///  hls_off
     /// </summary>
     HlsOff,
     /// <summary>
-    /// holiday_village
+    ///  holiday_village
     /// </summary>
     HolidayVillage,
     /// <summary>
-    /// home
+    ///  home
     /// </summary>
     Home,
     /// <summary>
-    /// home_and_garden
+    ///  home_and_garden
     /// </summary>
     HomeAndGarden,
     /// <summary>
-    /// home_app_logo
+    ///  home_app_logo
     /// </summary>
     HomeAppLogo,
     /// <summary>
-    /// home_health
+    ///  home_health
     /// </summary>
     HomeHealth,
     /// <summary>
-    /// home_improvement_and_tools
+    ///  home_improvement_and_tools
     /// </summary>
     HomeImprovementAndTools,
     /// <summary>
-    /// home_iot_device
+    ///  home_iot_device
     /// </summary>
     HomeIotDevice,
     /// <summary>
-    /// home_max
+    ///  home_max
     /// </summary>
     HomeMax,
     /// <summary>
-    /// home_max_dots
+    ///  home_max_dots
     /// </summary>
     HomeMaxDots,
     /// <summary>
-    /// home_mini
+    ///  home_mini
     /// </summary>
     HomeMini,
     /// <summary>
-    /// home_pin
+    ///  home_pin
     /// </summary>
     HomePin,
     /// <summary>
-    /// home_repair_service
+    ///  home_repair_service
     /// </summary>
     HomeRepairService,
     /// <summary>
-    /// home_speaker
+    ///  home_speaker
     /// </summary>
     HomeSpeaker,
     /// <summary>
-    /// home_storage
+    ///  home_storage
     /// </summary>
     HomeStorage,
     /// <summary>
-    /// home_work
+    ///  home_work
     /// </summary>
     HomeWork,
     /// <summary>
-    /// horizontal_distribute
+    ///  horizontal_distribute
     /// </summary>
     HorizontalDistribute,
     /// <summary>
-    /// horizontal_rule
+    ///  horizontal_rule
     /// </summary>
     HorizontalRule,
     /// <summary>
-    /// horizontal_split
+    ///  horizontal_split
     /// </summary>
     HorizontalSplit,
     /// <summary>
-    /// host
+    ///  host
     /// </summary>
     Host,
     /// <summary>
-    /// hot_tub
+    ///  hot_tub
     /// </summary>
     HotTub,
     /// <summary>
-    /// hotel
+    ///  hotel
     /// </summary>
     Hotel,
     /// <summary>
-    /// hotel_class
+    ///  hotel_class
     /// </summary>
     HotelClass,
     /// <summary>
-    /// hourglass
+    ///  hourglass
     /// </summary>
     Hourglass,
     /// <summary>
-    /// hourglass_arrow_down
+    ///  hourglass_arrow_down
     /// </summary>
     HourglassArrowDown,
     /// <summary>
-    /// hourglass_arrow_up
+    ///  hourglass_arrow_up
     /// </summary>
     HourglassArrowUp,
     /// <summary>
-    /// hourglass_bottom
+    ///  hourglass_bottom
     /// </summary>
     HourglassBottom,
     /// <summary>
-    /// hourglass_disabled
+    ///  hourglass_disabled
     /// </summary>
     HourglassDisabled,
     /// <summary>
-    /// hourglass_empty
+    ///  hourglass_empty
     /// </summary>
     HourglassEmpty,
     /// <summary>
-    /// hourglass_pause
+    ///  hourglass_pause
     /// </summary>
     HourglassPause,
     /// <summary>
-    /// hourglass_top
+    ///  hourglass_top
     /// </summary>
     HourglassTop,
     /// <summary>
-    /// house
+    ///  house
     /// </summary>
     House,
     /// <summary>
-    /// house_siding
+    ///  house_siding
     /// </summary>
     HouseSiding,
     /// <summary>
-    /// house_with_shield
+    ///  house_with_shield
     /// </summary>
     HouseWithShield,
     /// <summary>
-    /// houseboat
+    ///  houseboat
     /// </summary>
     Houseboat,
     /// <summary>
-    /// household_supplies
+    ///  household_supplies
     /// </summary>
     HouseholdSupplies,
     /// <summary>
-    /// hov
+    ///  hov
     /// </summary>
     Hov,
     /// <summary>
-    /// how_to_reg
+    ///  how_to_reg
     /// </summary>
     HowToReg,
     /// <summary>
-    /// how_to_vote
+    ///  how_to_vote
     /// </summary>
     HowToVote,
     /// <summary>
-    /// hr_resting
+    ///  hr_resting
     /// </summary>
     HrResting,
     /// <summary>
-    /// html
+    ///  html
     /// </summary>
     Html,
     /// <summary>
-    /// http
+    ///  http
     /// </summary>
     Http,
     /// <summary>
-    /// hub
+    ///  hub
     /// </summary>
     Hub,
     /// <summary>
-    /// humerus
+    ///  humerus
     /// </summary>
     Humerus,
     /// <summary>
-    /// humerus_alt
+    ///  humerus_alt
     /// </summary>
     HumerusAlt,
     /// <summary>
-    /// humidity_high
+    ///  humidity_high
     /// </summary>
     HumidityHigh,
     /// <summary>
-    /// humidity_indoor
+    ///  humidity_indoor
     /// </summary>
     HumidityIndoor,
     /// <summary>
-    /// humidity_low
+    ///  humidity_low
     /// </summary>
     HumidityLow,
     /// <summary>
-    /// humidity_mid
+    ///  humidity_mid
     /// </summary>
     HumidityMid,
     /// <summary>
-    /// humidity_percentage
+    ///  humidity_percentage
     /// </summary>
     HumidityPercentage,
     /// <summary>
-    /// hvac
+    ///  hvac
     /// </summary>
     Hvac,
     /// <summary>
-    /// hvac_max_defrost
+    ///  hvac_max_defrost
     /// </summary>
     HvacMaxDefrost,
     /// <summary>
-    /// ice_skating
+    ///  ice_skating
     /// </summary>
     IceSkating,
     /// <summary>
-    /// icecream
+    ///  icecream
     /// </summary>
     Icecream,
     /// <summary>
-    /// id_card
+    ///  id_card
     /// </summary>
     IdCard,
     /// <summary>
-    /// identity_aware_proxy
+    ///  identity_aware_proxy
     /// </summary>
     IdentityAwareProxy,
     /// <summary>
-    /// identity_platform
+    ///  identity_platform
     /// </summary>
     IdentityPlatform,
     /// <summary>
-    /// ifl
+    ///  ifl
     /// </summary>
     Ifl,
     /// <summary>
-    /// iframe
+    ///  iframe
     /// </summary>
     Iframe,
     /// <summary>
-    /// iframe_off
+    ///  iframe_off
     /// </summary>
     IframeOff,
     /// <summary>
-    /// image
+    ///  image
     /// </summary>
     Image,
     /// <summary>
-    /// image_arrow_up
+    ///  image_arrow_up
     /// </summary>
     ImageArrowUp,
     /// <summary>
-    /// image_aspect_ratio
+    ///  image_aspect_ratio
     /// </summary>
     ImageAspectRatio,
     /// <summary>
-    /// image_inset
+    ///  image_inset
     /// </summary>
     ImageInset,
     /// <summary>
-    /// image_search
+    ///  image_search
     /// </summary>
     ImageSearch,
     /// <summary>
-    /// imagesearch_roller
+    ///  imagesearch_roller
     /// </summary>
     ImagesearchRoller,
     /// <summary>
-    /// imagesmode
+    ///  imagesmode
     /// </summary>
     Imagesmode,
     /// <summary>
-    /// immunology
+    ///  immunology
     /// </summary>
     Immunology,
     /// <summary>
-    /// import_contacts
+    ///  import_contacts
     /// </summary>
     ImportContacts,
     /// <summary>
-    /// important_devices
+    ///  important_devices
     /// </summary>
     ImportantDevices,
     /// <summary>
-    /// in_home_mode
+    ///  in_home_mode
     /// </summary>
     InHomeMode,
     /// <summary>
-    /// inactive_order
+    ///  inactive_order
     /// </summary>
     InactiveOrder,
     /// <summary>
-    /// inbox
+    ///  inbox
     /// </summary>
     Inbox,
     /// <summary>
-    /// inbox_customize
+    ///  inbox_customize
     /// </summary>
     InboxCustomize,
     /// <summary>
-    /// inbox_text
+    ///  inbox_text
     /// </summary>
     InboxText,
     /// <summary>
-    /// inbox_text_asterisk
+    ///  inbox_text_asterisk
     /// </summary>
     InboxTextAsterisk,
     /// <summary>
-    /// inbox_text_person
+    ///  inbox_text_person
     /// </summary>
     InboxTextPerson,
     /// <summary>
-    /// inbox_text_share
+    ///  inbox_text_share
     /// </summary>
     InboxTextShare,
     /// <summary>
-    /// incomplete_circle
+    ///  incomplete_circle
     /// </summary>
     IncompleteCircle,
     /// <summary>
-    /// indeterminate_check_box
+    ///  indeterminate_check_box
     /// </summary>
     IndeterminateCheckBox,
     /// <summary>
-    /// indeterminate_question_box
+    ///  indeterminate_question_box
     /// </summary>
     IndeterminateQuestionBox,
     /// <summary>
-    /// info
+    ///  info
     /// </summary>
     Info,
     /// <summary>
-    /// info_i
+    ///  info_i
     /// </summary>
     InfoI,
     /// <summary>
-    /// infrared
+    ///  infrared
     /// </summary>
     Infrared,
     /// <summary>
-    /// ink_eraser
+    ///  ink_eraser
     /// </summary>
     InkEraser,
     /// <summary>
-    /// ink_eraser_off
+    ///  ink_eraser_off
     /// </summary>
     InkEraserOff,
     /// <summary>
-    /// ink_highlighter
+    ///  ink_highlighter
     /// </summary>
     InkHighlighter,
     /// <summary>
-    /// ink_highlighter_move
+    ///  ink_highlighter_move
     /// </summary>
     InkHighlighterMove,
     /// <summary>
-    /// ink_marker
+    ///  ink_marker
     /// </summary>
     InkMarker,
     /// <summary>
-    /// ink_pen
+    ///  ink_pen
     /// </summary>
     InkPen,
     /// <summary>
-    /// ink_selection
+    ///  ink_selection
     /// </summary>
     InkSelection,
     /// <summary>
-    /// inpatient
+    ///  inpatient
     /// </summary>
     Inpatient,
     /// <summary>
-    /// input
+    ///  input
     /// </summary>
     Input,
     /// <summary>
-    /// input_circle
+    ///  input_circle
     /// </summary>
     InputCircle,
     /// <summary>
-    /// insert_chart
+    ///  insert_chart
     /// </summary>
     InsertChart,
     /// <summary>
-    /// insert_page_break
+    ///  insert_page_break
     /// </summary>
     InsertPageBreak,
     /// <summary>
-    /// insert_text
+    ///  insert_text
     /// </summary>
     InsertText,
     /// <summary>
-    /// install_desktop
+    ///  install_desktop
     /// </summary>
     InstallDesktop,
     /// <summary>
-    /// instant_mix
+    ///  instant_mix
     /// </summary>
     InstantMix,
     /// <summary>
-    /// integration_instructions
+    ///  integration_instructions
     /// </summary>
     IntegrationInstructions,
     /// <summary>
-    /// interactive_space
+    ///  interactive_space
     /// </summary>
     InteractiveSpace,
     /// <summary>
-    /// interests
+    ///  interests
     /// </summary>
     Interests,
     /// <summary>
-    /// interpreter_mode
+    ///  interpreter_mode
     /// </summary>
     InterpreterMode,
     /// <summary>
-    /// inventory
+    ///  inventory
     /// </summary>
     Inventory,
     /// <summary>
-    /// inventory_2
+    ///  inventory_2
     /// </summary>
     Inventory2,
     /// <summary>
-    /// invert_colors
+    ///  invert_colors
     /// </summary>
     InvertColors,
     /// <summary>
-    /// invert_colors_off
+    ///  invert_colors_off
     /// </summary>
     InvertColorsOff,
     /// <summary>
-    /// ios
+    ///  ios
     /// </summary>
     Ios,
     /// <summary>
-    /// ios_share
+    ///  ios_share
     /// </summary>
     IosShare,
     /// <summary>
-    /// iron
+    ///  iron
     /// </summary>
     Iron,
     /// <summary>
-    /// jamboard_kiosk
+    ///  jamboard_kiosk
     /// </summary>
     JamboardKiosk,
     /// <summary>
-    /// japanese_curry
+    ///  japanese_curry
     /// </summary>
     JapaneseCurry,
     /// <summary>
-    /// japanese_flag
+    ///  japanese_flag
     /// </summary>
     JapaneseFlag,
     /// <summary>
-    /// javascript
+    ///  javascript
     /// </summary>
     Javascript,
     /// <summary>
-    /// join
+    ///  join
     /// </summary>
     Join,
     /// <summary>
-    /// join_inner
+    ///  join_inner
     /// </summary>
     JoinInner,
     /// <summary>
-    /// join_left
+    ///  join_left
     /// </summary>
     JoinLeft,
     /// <summary>
-    /// join_right
+    ///  join_right
     /// </summary>
     JoinRight,
     /// <summary>
-    /// joystick
+    ///  joystick
     /// </summary>
     Joystick,
     /// <summary>
-    /// jump_to_element
+    ///  jump_to_element
     /// </summary>
     JumpToElement,
     /// <summary>
-    /// kanji_alcohol
+    ///  kanji_alcohol
     /// </summary>
     KanjiAlcohol,
     /// <summary>
-    /// kayaking
+    ///  kayaking
     /// </summary>
     Kayaking,
     /// <summary>
-    /// kebab_dining
+    ///  kebab_dining
     /// </summary>
     KebabDining,
     /// <summary>
-    /// keep
+    ///  keep
     /// </summary>
     Keep,
     /// <summary>
-    /// keep_off
+    ///  keep_off
     /// </summary>
     KeepOff,
     /// <summary>
-    /// keep_public
+    ///  keep_public
     /// </summary>
     KeepPublic,
     /// <summary>
-    /// kettle
+    ///  kettle
     /// </summary>
     Kettle,
     /// <summary>
-    /// key
+    ///  key
     /// </summary>
     Key,
     /// <summary>
-    /// key_off
+    ///  key_off
     /// </summary>
     KeyOff,
     /// <summary>
-    /// key_vertical
+    ///  key_vertical
     /// </summary>
     KeyVertical,
     /// <summary>
-    /// key_visualizer
+    ///  key_visualizer
     /// </summary>
     KeyVisualizer,
     /// <summary>
-    /// keyboard
+    ///  keyboard
     /// </summary>
     Keyboard,
     /// <summary>
-    /// keyboard_alt
+    ///  keyboard_alt
     /// </summary>
     KeyboardAlt,
     /// <summary>
-    /// keyboard_arrow_down
+    ///  keyboard_arrow_down
     /// </summary>
     KeyboardArrowDown,
     /// <summary>
-    /// keyboard_arrow_left
+    ///  keyboard_arrow_left
     /// </summary>
     KeyboardArrowLeft,
     /// <summary>
-    /// keyboard_arrow_right
+    ///  keyboard_arrow_right
     /// </summary>
     KeyboardArrowRight,
     /// <summary>
-    /// keyboard_arrow_up
+    ///  keyboard_arrow_up
     /// </summary>
     KeyboardArrowUp,
     /// <summary>
-    /// keyboard_backspace
+    ///  keyboard_backspace
     /// </summary>
     KeyboardBackspace,
     /// <summary>
-    /// keyboard_capslock
+    ///  keyboard_capslock
     /// </summary>
     KeyboardCapslock,
     /// <summary>
-    /// keyboard_capslock_badge
+    ///  keyboard_capslock_badge
     /// </summary>
     KeyboardCapslockBadge,
     /// <summary>
-    /// keyboard_command_key
+    ///  keyboard_command_key
     /// </summary>
     KeyboardCommandKey,
     /// <summary>
-    /// keyboard_control_key
+    ///  keyboard_control_key
     /// </summary>
     KeyboardControlKey,
     /// <summary>
-    /// keyboard_double_arrow_down
+    ///  keyboard_double_arrow_down
     /// </summary>
     KeyboardDoubleArrowDown,
     /// <summary>
-    /// keyboard_double_arrow_left
+    ///  keyboard_double_arrow_left
     /// </summary>
     KeyboardDoubleArrowLeft,
     /// <summary>
-    /// keyboard_double_arrow_right
+    ///  keyboard_double_arrow_right
     /// </summary>
     KeyboardDoubleArrowRight,
     /// <summary>
-    /// keyboard_double_arrow_up
+    ///  keyboard_double_arrow_up
     /// </summary>
     KeyboardDoubleArrowUp,
     /// <summary>
-    /// keyboard_external_input
+    ///  keyboard_external_input
     /// </summary>
     KeyboardExternalInput,
     /// <summary>
-    /// keyboard_full
+    ///  keyboard_full
     /// </summary>
     KeyboardFull,
     /// <summary>
-    /// keyboard_hide
+    ///  keyboard_hide
     /// </summary>
     KeyboardHide,
     /// <summary>
-    /// keyboard_keys
+    ///  keyboard_keys
     /// </summary>
     KeyboardKeys,
     /// <summary>
-    /// keyboard_lock
+    ///  keyboard_lock
     /// </summary>
     KeyboardLock,
     /// <summary>
-    /// keyboard_lock_off
+    ///  keyboard_lock_off
     /// </summary>
     KeyboardLockOff,
     /// <summary>
-    /// keyboard_off
+    ///  keyboard_off
     /// </summary>
     KeyboardOff,
     /// <summary>
-    /// keyboard_onscreen
+    ///  keyboard_onscreen
     /// </summary>
     KeyboardOnscreen,
     /// <summary>
-    /// keyboard_option_key
+    ///  keyboard_option_key
     /// </summary>
     KeyboardOptionKey,
     /// <summary>
-    /// keyboard_previous_language
+    ///  keyboard_previous_language
     /// </summary>
     KeyboardPreviousLanguage,
     /// <summary>
-    /// keyboard_return
+    ///  keyboard_return
     /// </summary>
     KeyboardReturn,
     /// <summary>
-    /// keyboard_tab
+    ///  keyboard_tab
     /// </summary>
     KeyboardTab,
     /// <summary>
-    /// keyboard_tab_rtl
+    ///  keyboard_tab_rtl
     /// </summary>
     KeyboardTabRtl,
     /// <summary>
-    /// kid_star
+    ///  kid_star
     /// </summary>
     KidStar,
     /// <summary>
-    /// king_bed
+    ///  king_bed
     /// </summary>
     KingBed,
     /// <summary>
-    /// kitchen
+    ///  kitchen
     /// </summary>
     Kitchen,
     /// <summary>
-    /// kitesurfing
+    ///  kitesurfing
     /// </summary>
     Kitesurfing,
     /// <summary>
-    /// lab_panel
+    ///  lab_panel
     /// </summary>
     LabPanel,
     /// <summary>
-    /// lab_profile
+    ///  lab_profile
     /// </summary>
     LabProfile,
     /// <summary>
-    /// lab_research
+    ///  lab_research
     /// </summary>
     LabResearch,
     /// <summary>
-    /// label
+    ///  label
     /// </summary>
     Label,
     /// <summary>
-    /// label_important
+    ///  label_important
     /// </summary>
     LabelImportant,
     /// <summary>
-    /// label_off
+    ///  label_off
     /// </summary>
     LabelOff,
     /// <summary>
-    /// labs
+    ///  labs
     /// </summary>
     Labs,
     /// <summary>
-    /// lan
+    ///  lan
     /// </summary>
     Lan,
     /// <summary>
-    /// landscape
+    ///  landscape
     /// </summary>
     Landscape,
     /// <summary>
-    /// landscape_2
+    ///  landscape_2
     /// </summary>
     Landscape2,
     /// <summary>
-    /// landscape_2_edit
+    ///  landscape_2_edit
     /// </summary>
     Landscape2Edit,
     /// <summary>
-    /// landscape_2_off
+    ///  landscape_2_off
     /// </summary>
     Landscape2Off,
     /// <summary>
-    /// landslide
+    ///  landslide
     /// </summary>
     Landslide,
     /// <summary>
-    /// language
+    ///  language
     /// </summary>
     Language,
     /// <summary>
-    /// language_chinese_array
+    ///  language_chinese_array
     /// </summary>
     LanguageChineseArray,
     /// <summary>
-    /// language_chinese_cangjie
+    ///  language_chinese_cangjie
     /// </summary>
     LanguageChineseCangjie,
     /// <summary>
-    /// language_chinese_dayi
+    ///  language_chinese_dayi
     /// </summary>
     LanguageChineseDayi,
     /// <summary>
-    /// language_chinese_pinyin
+    ///  language_chinese_pinyin
     /// </summary>
     LanguageChinesePinyin,
     /// <summary>
-    /// language_chinese_quick
+    ///  language_chinese_quick
     /// </summary>
     LanguageChineseQuick,
-    // Legacy/extra icons retained (not present in JSON)
     /// <summary>
-    /// beehive
+    ///  language_chinese_wubi
     /// </summary>
-    Beehive,
+    LanguageChineseWubi,
     /// <summary>
-    /// bell_scope
+    ///  language_french
     /// </summary>
-    BellScope,
+    LanguageFrench,
     /// <summary>
-    /// bell_scope_off
+    ///  language_gb_english
     /// </summary>
-    BellScopeOff,
+    LanguageGbEnglish,
     /// <summary>
-    /// bell_snow_cone
+    ///  language_international
     /// </summary>
-    BellSnowCone,
+    LanguageInternational,
     /// <summary>
-    /// below_sensor
+    ///  language_japanese_kana
     /// </summary>
-    BelowSensor,
+    LanguageJapaneseKana,
     /// <summary>
-    /// below_sensor_not_allowed
+    ///  language_korean_latin
     /// </summary>
-    BelowSensorNotAllowed,
+    LanguageKoreanLatin,
     /// <summary>
-    /// bench
+    ///  language_pinyin
     /// </summary>
-    Bench,
+    LanguagePinyin,
     /// <summary>
-    /// bezier_curve
+    ///  language_spanish
     /// </summary>
-    BezierCurve,
+    LanguageSpanish,
     /// <summary>
-    /// bill
-    /// </summary>
-    Bill,
-    /// <summary>
-    /// bill_off
-    /// </summary>
-    BillOff,
-    /// <summary>
-    /// billing
-    /// </summary>
-    Billing,
-    /// <summary>
-    /// binoculars
-    /// </summary>
-    Binoculars,
-    /// <summary>
-    /// biohazard
-    /// </summary>
-    Biohazard,
-    /// <summary>
-    /// bipolar
-    /// </summary>
-    Bipolar,
-    /// <summary>
-    /// biometric_fingerprint
-    /// </summary>
-    BiometricFingerprint,
-    /// <summary>
-    /// biometrics
-    /// </summary>
-    Biometrics,
-    /// <summary>
-    /// biometrics_lock
-    /// </summary>
-    BiometricsLock,
-    /// <summary>
-    /// biometrics_lock_off
-    /// </summary>
-    BiometricsLockOff,
-    /// <summary>
-    /// biometrics_off
-    /// </summary>
-    BiometricsOff,
-    /// <summary>
-    /// birdie
-    /// </summary>
-    Birdie,
-    /// <summary>
-    /// book_online
-    /// </summary>
-    BookOnline,
-    /// <summary>
-    /// bookmark_border
-    /// </summary>
-    BookmarkBorder,
-    /// <summary>
-    /// box_off
-    /// </summary>
-    BoxOff,
-    /// <summary>
-    /// box_public
-    /// </summary>
-    BoxPublic,
-    /// <summary>
-    /// branch
-    /// </summary>
-    Branch,
-    /// <summary>
-    /// breastpump
-    /// </summary>
-    Breastpump,
-    /// <summary>
-    /// brightness_high
-    /// </summary>
-    BrightnessHigh,
-    /// <summary>
-    /// brightness_low
-    /// </summary>
-    BrightnessLow,
-    /// <summary>
-    /// browser_not_supported
-    /// </summary>
-    BrowserNotSupported,
-    /// <summary>
-    /// building
-    /// </summary>
-    Building,
-    /// <summary>
-    /// building_2
-    /// </summary>
-    Building2,
-    /// <summary>
-    /// building_3
-    /// </summary>
-    Building3,
-    /// <summary>
-    /// buildings
-    /// </summary>
-    Buildings,
-    /// <summary>
-    /// buildings_with_garden
-    /// </summary>
-    BuildingsWithGarden,
-    /// <summary>
-    /// bulk_container
-    /// </summary>
-    BulkContainer,
-    /// <summary>
-    /// bumper_truck
-    /// </summary>
-    BumperTruck,
-    /// <summary>
-    /// bundled_case
-    /// </summary>
-    BundledCase,
-    /// <summary>
-    /// buttons
-    /// </summary>
-    Buttons,
-    /// <summary>
-    /// cactus
-    /// </summary>
-    Cactus,
-    /// <summary>
-    /// cafe
-    /// </summary>
-    Cafe,
-    /// <summary>
-    /// calendar_apps
-    /// </summary>
-    CalendarApps,
-    /// <summary>
-    /// calendars
-    /// </summary>
-    Calendars,
-    /// <summary>
-    /// camera_front
-    /// </summary>
-    CameraFront,
-    /// <summary>
-    /// camera_rear
-    /// </summary>
-    CameraRear,
-    /// <summary>
-    /// cardio_bot
-    /// </summary>
-    CardioBot,
-    /// <summary>
-    /// cardiac_pedometer
-    /// </summary>
-    CardiacPedometer,
-    /// <summary>
-    /// carousel
-    /// </summary>
-    Carousel,
-    /// <summary>
-    /// carport
-    /// </summary>
-    Carport,
-    /// <summary>
-    /// career_shuttle
-    /// </summary>
-    CareerShuttle,
-    /// <summary>
-    /// car_tire_skid
-    /// </summary>
-    CarTireSkid,
-    /// <summary>
-    /// car_wash
-    /// </summary>
-    CarWash,
-    /// <summary>
-    /// carousel_satellite
-    /// </summary>
-    CarouselSatellite,
-    /// <summary>
-    /// carrot
-    /// </summary>
-    Carrot,
-    /// <summary>
-    /// case_study
-    /// </summary>
-    CaseStudy,
-    /// <summary>
-    /// cassette_tape
-    /// </summary>
-    CassetteTape,
-    /// <summary>
-    /// casting
-    /// </summary>
-    Casting,
-    /// <summary>
-    /// casting_button
-    /// </summary>
-    CastingButton,
-    /// <summary>
-    /// casting_circles
-    /// </summary>
-    CastingCircles,
-    /// <summary>
-    /// casting_off
-    /// </summary>
-    CastingOff,
-    /// <summary>
-    /// casual_games
-    /// </summary>
-    CasualGames,
-    /// <summary>
-    /// catch_up
-    /// </summary>
-    CatchUp,
-    /// <summary>
-    /// cemetery
-    /// </summary>
-    Cemetery,
-    /// <summary>
-    /// cfc
-    /// </summary>
-    Cfc,
-    /// <summary>
-    /// chain
-    /// </summary>
-    Chain,
-    /// <summary>
-    /// chain_end
-    /// </summary>
-    ChainEnd,
-    /// <summary>
-    /// chain_start
-    /// </summary>
-    ChainStart,
-    /// <summary>
-    /// charging_station
-    /// </summary>
-    ChargingStation,
-    /// <summary>
-    /// chat_add
-    /// </summary>
-    ChatAdd,
-    /// <summary>
-    /// chat_apps
-    /// </summary>
-    ChatApps,
-    /// <summary>
-    /// chat_bubble_add
-    /// </summary>
-    ChatBubbleAdd,
-    /// <summary>
-    /// chat_bubble_minus
-    /// </summary>
-    ChatBubbleMinus,
-    /// <summary>
-    /// chat_bubble_off
-    /// </summary>
-    ChatBubbleOff,
-    /// <summary>
-    /// chat_delete
-    /// </summary>
-    ChatDelete,
-    /// <summary>
-    /// chat_paste
-    /// </summary>
-    ChatPaste,
-    /// <summary>
-    /// checkered_flag
-    /// </summary>
-    CheckeredFlag,
-    /// <summary>
-    /// checkout
-    /// </summary>
-    Checkout,
-    /// <summary>
-    /// child_safety_lock
-    /// </summary>
-    ChildSafetyLock,
-    /// <summary>
-    /// child_track
-    /// </summary>
-    ChildTrack,
-    /// <summary>
-    /// children_only
-    /// </summary>
-    ChildrenOnly,
-    /// <summary>
-    /// city
-    /// </summary>
-    City,
-    /// <summary>
-    /// clarity
-    /// </summary>
-    Clarity,
-    /// <summary>
-    /// clear
-    /// </summary>
-    Clear,
-    /// <summary>
-    /// clear_night
-    /// </summary>
-    ClearNight,
-    /// <summary>
-    /// clip_board
-    /// </summary>
-    ClipBoard,
-    /// <summary>
-    /// clip_board_list
-    /// </summary>
-    ClipBoardList,
-    /// <summary>
-    /// clip_board_paste
-    /// </summary>
-    ClipBoardPaste,
-    /// <summary>
-    /// clover
-    /// </summary>
-    Clover,
-    /// <summary>
-    /// cloud_queue
-    /// </summary>
-    CloudQueue,
-    /// <summary>
-    /// cloudy_filled
-    /// </summary>
-    CloudyFilled,
-    /// <summary>
-    /// cloudy_snowing
-    /// </summary>
-    CloudySnowing,
-    /// <summary>
-    /// co2_sensor
-    /// </summary>
-    Co2Sensor,
-    /// <summary>
-    /// cockpit
-    /// </summary>
-    Cockpit,
-    /// <summary>
-    /// cohort
-    /// </summary>
-    Cohort,
-    /// <summary>
-    /// collections
-    /// </summary>
-    Collections,
-    /// <summary>
-    /// color_lens
-    /// </summary>
-    ColorLens,
-    /// <summary>
-    /// combo_chart
-    /// </summary>
-    ComboChart,
-    /// <summary>
-    /// commotion
-    /// </summary>
-    Commotion,
-    /// <summary>
-    /// communication_analytics
-    /// </summary>
-    CommunicationAnalytics,
-    /// <summary>
-    /// commutation
-    /// </summary>
-    Commutation,
-    /// <summary>
-    /// compact
-    /// </summary>
-    Compact,
-    /// <summary>
-    /// compact_disc
-    /// </summary>
-    CompactDisc,
-    /// <summary>
-    /// confirm_key
-    /// </summary>
-    ConfirmKey,
-    /// <summary>
-    /// congested
-    /// </summary>
-    Congested,
-    /// <summary>
-    /// congratulations
-    /// </summary>
-    Congratulations,
-    /// <summary>
-    /// contact_less
-    /// </summary>
-    ContactLess,
-    /// <summary>
-    /// contact_trash
-    /// </summary>
-    ContactTrash,
-    /// <summary>
-    /// controller
-    /// </summary>
-    Controller,
-    /// <summary>
-    /// cooperative_learning
-    /// </summary>
-    CooperativeLearning,
-    /// <summary>
-    /// core_apps
-    /// </summary>
-    CoreApps,
-    /// <summary>
-    /// corn
-    /// </summary>
-    Corn,
-    /// <summary>
-    /// coronation
-    /// </summary>
-    Coronation,
-    /// <summary>
-    /// counter_9_plus
-    /// </summary>
-    Counter9Plus,
-    /// <summary>
-    /// counter_tops
-    /// </summary>
-    CounterTops,
-    /// <summary>
-    /// creative_commons
-    /// </summary>
-    CreativeCommons,
-    /// <summary>
-    /// credit_card_person
-    /// </summary>
-    CreditCardPerson,
-    /// <summary>
-    /// credit_card_refresh
-    /// </summary>
-    CreditCardRefresh,
-    /// <summary>
-    /// credit_card_slash
-    /// </summary>
-    CreditCardSlash,
-    /// <summary>
-    /// crossroad
-    /// </summary>
-    Crossroad,
-    /// <summary>
-    /// cruising
-    /// </summary>
-    Cruising,
-    /// <summary>
-    /// cryo_room
-    /// </summary>
-    CryoRoom,
-    /// <summary>
-    /// crypto_asset
-    /// </summary>
-    CryptoAsset,
-    /// <summary>
-    /// cube
-    /// </summary>
-    Cube,
-    /// <summary>
-    /// cube_off
-    /// </summary>
-    CubeOff,
-    /// <summary>
-    /// cup
-    /// </summary>
-    Cup,
-    /// <summary>
-    /// curiosity
-    /// </summary>
-    Curiosity,
-    /// <summary>
-    /// curriculum
-    /// </summary>
-    Curriculum,
-    /// <summary>
-    /// cutting
-    /// </summary>
-    Cutting,
-    /// <summary>
-    /// data_saver_off
-    /// </summary>
-    DataSaverOff,
-    /// <summary>
-    /// dav
-    /// </summary>
-    Dav,
-    /// <summary>
-    /// debit_card
-    /// </summary>
-    DebitCard,
-    /// <summary>
-    /// decor
-    /// </summary>
-    Decor,
-    /// <summary>
-    /// decoration
-    /// </summary>
-    Decoration,
-    /// <summary>
-    /// deep_fake
-    /// </summary>
-    DeepFake,
-    /// <summary>
-    /// delete_off
-    /// </summary>
-    DeleteOff,
-    /// <summary>
-    /// dental
-    /// </summary>
-    Dental,
-    /// <summary>
-    /// deploy
-    /// </summary>
-    Deploy,
-    /// <summary>
-    /// deployment_cluster
-    /// </summary>
-    DeploymentCluster,
-    /// <summary>
-    /// deployment_cluster_off
-    /// </summary>
-    DeploymentClusterOff,
-    /// <summary>
-    /// deployment_incidents
-    /// </summary>
-    DeploymentIncidents,
-    /// <summary>
-    /// deployment_incidents_alert
-    /// </summary>
-    DeploymentIncidentsAlert,
-    /// <summary>
-    /// deployment_off
-    /// </summary>
-    DeploymentOff,
-    /// <summary>
-    /// dermatologist
-    /// </summary>
-    Dermatologist,
-    /// <summary>
-    /// desalination
-    /// </summary>
-    Desalination,
-    /// <summary>
-    /// detox
-    /// </summary>
-    Detox,
-    /// <summary>
-    /// developer_mode
-    /// </summary>
-    DeveloperMode,
-    /// <summary>
-    /// devices_access
-    /// </summary>
-    DevicesAccess,
-    /// <summary>
-    /// diet
-    /// </summary>
-    Diet,
-    /// <summary>
-    /// diff
-    /// </summary>
-    Diff,
-    /// <summary>
-    /// dirt
-    /// </summary>
-    Dirt,
-    /// <summary>
-    /// dirt_road
-    /// </summary>
-    DirtRoad,
-    /// <summary>
-    /// dish
-    /// </summary>
-    Dish,
-    /// <summary>
-    /// dish_spaghetti
-    /// </summary>
-    DishSpaghetti,
-    /// <summary>
-    /// doc_scanner
-    /// </summary>
-    DocScanner,
-    /// <summary>
-    /// dock
-    /// </summary>
-    Dock,
-    /// <summary>
-    /// dogs_and_cats
-    /// </summary>
-    DogsAndCats,
-    /// <summary>
-    /// done
-    /// </summary>
-    Done,
-    /// <summary>
-    /// donuts
-    /// </summary>
-    Donuts,
-    /// <summary>
-    /// doorbell_3
-    /// </summary>
-    Doorbell3,
-    /// <summary>
-    /// drag_and_drop
-    /// </summary>
-    DragAndDrop,
-    /// <summary>
-    /// drag_and_drop_fill
-    /// </summary>
-    DragAndDropFill,
-    /// <summary>
-    /// drain
-    /// </summary>
-    Drain,
-    /// <summary>
-    /// drain_service
-    /// </summary>
-    DrainService,
-    /// <summary>
-    /// drawing_pin
-    /// </summary>
-    DrawingPin,
-    /// <summary>
-    /// drive_file_move_rtl
-    /// </summary>
-    DriveFileMoveRtl,
-    /// <summary>
-    /// drive_file_rename
-    /// </summary>
-    DriveFileRename,
-    /// <summary>
-    /// drowning
-    /// </summary>
-    Drowning,
-    /// <summary>
-    /// eager
-    /// </summary>
-    Eager,
-    /// <summary>
-    /// egg_fried
-    /// </summary>
-    EggFried,
-    /// <summary>
-    /// ekg
-    /// </summary>
-    Ekg,
-    /// <summary>
-    /// ellipsis
-    /// </summary>
-    Ellipsis,
-    /// <summary>
-    /// ellipsis_h
-    /// </summary>
-    EllipsisH,
-    /// <summary>
-    /// emotikon
-    /// </summary>
-    Emotikon,
-    /// <summary>
-    /// end_of_line
-    /// </summary>
-    EndOfLine,
-    /// <summary>
-    /// enter_key
-    /// </summary>
-    EnterKey,
-    /// <summary>
-    /// equity
-    /// </summary>
-    Equity,
-    /// <summary>
-    /// equity_risk_end
-    /// </summary>
-    EquityRiskEnd,
-    /// <summary>
-    /// equity_risk_start
-    /// </summary>
-    EquityRiskStart,
-    /// <summary>
-    /// erosion
-    /// </summary>
-    Erosion,
-    /// <summary>
-    /// estimate
-    /// </summary>
-    Estimate,
-    /// <summary>
-    /// evil
-    /// </summary>
-    Evil,
-    /// <summary>
-    /// exchange
-    /// </summary>
-    Exchange,
-    /// <summary>
-    /// exfoliate
-    /// </summary>
-    Exfoliate,
-    /// <summary>
-    /// exfoliate_rounded
-    /// </summary>
-    ExfoliateRounded,
-    /// <summary>
-    /// expand_less
-    /// </summary>
-    ExpandLess,
-    /// <summary>
-    /// expand_more
-    /// </summary>
-    ExpandMore,
-    /// <summary>
-    /// fan
-    /// </summary>
-    Fan,
-    /// <summary>
-    /// farm
-    /// </summary>
-    Farm,
-    /// <summary>
-    /// feather
-    /// </summary>
-    Feather,
-    /// <summary>
-    /// file_download
-    /// </summary>
-    FileDownload,
-    /// <summary>
-    /// file_download_done
-    /// </summary>
-    FileDownloadDone,
-    /// <summary>
-    /// file_upload
-    /// </summary>
-    FileUpload,
-    /// <summary>
-    /// filter_hdr
-    /// </summary>
-    FilterHdr,
-    /// <summary>
-    /// financial_product
-    /// </summary>
-    FinancialProduct,
-    /// <summary>
-    /// fire_truck_2
-    /// </summary>
-    FireTruck2,
-    /// <summary>
-    /// first_page_media
-    /// </summary>
-    FirstPageMedia,
-    /// <summary>
-    /// flag_filled
-    /// </summary>
-    FlagFilled,
-    /// <summary>
-    /// flame
-    /// </summary>
-    Flame,
-    /// <summary>
-    /// flame_hydrant
-    /// </summary>
-    FlameHydrant,
-    /// <summary>
-    /// flex_end
-    /// </summary>
-    FlexEnd,
-    /// <summary>
-    /// flex_start
-    /// </summary>
-    FlexStart,
-    /// <summary>
-    /// flightsmode
-    /// </summary>
-    Flightsmode,
-    /// <summary>
-    /// fluid_brakes
-    /// </summary>
-    FluidBrakes,
-    /// <summary>
-    /// fluid_coolant
-    /// </summary>
-    FluidCoolant,
-    /// <summary>
-    /// fluid_level
-    /// </summary>
-    FluidLevel,
-    /// <summary>
-    /// fluid_transmission
-    /// </summary>
-    FluidTransmission,
-    /// <summary>
-    /// fluid_window_wash
-    /// </summary>
-    FluidWindowWash,
-    /// <summary>
-    /// flushed
-    /// </summary>
-    Flushed,
-    /// <summary>
-    /// focal_length
-    /// </summary>
-    FocalLength,
-    /// <summary>
-    /// folder_zip_off
-    /// </summary>
-    FolderZipOff,
-    /// <summary>
-    /// folders
-    /// </summary>
-    Folders,
-    /// <summary>
-    /// format_strikethrough_s
-    /// </summary>
-    FormatStrikethroughS,
-    /// <summary>
-    /// format_underlined_sq
-    /// </summary>
-    FormatUnderlinedSq,
-    /// <summary>
-    /// fortress
-    /// </summary>
-    Fortress,
-    /// <summary>
-    /// forwarding
-    /// </summary>
-    Forwarding,
-    /// <summary>
-    /// fountain_pen
-    /// </summary>
-    FountainPen,
-    /// <summary>
-    /// frame
-    /// </summary>
-    Frame,
-    /// <summary>
-    /// free_form_mode
-    /// </summary>
-    FreeFormMode,
-    /// <summary>
-    /// free_mode
-    /// </summary>
-    FreeMode,
-    /// <summary>
-    /// freezes
-    /// </summary>
-    Freezes,
-    /// <summary>
-    /// freight_container
-    /// </summary>
-    FreightContainer,
-    /// <summary>
-    /// frizz
-    /// </summary>
-    Frizz,
-    /// <summary>
-    /// functionality
-    /// </summary>
-    Functionality,
-    /// <summary>
-    /// fusion_table
-    /// </summary>
-    FusionTable,
-    /// <summary>
-    /// gaggle
-    /// </summary>
-    Gaggle,
-    /// <summary>
-    /// game_controller
-    /// </summary>
-    GameController,
-    /// <summary>
-    /// game_controller_off
-    /// </summary>
-    GameControllerOff,
-    /// <summary>
-    /// gather
-    /// </summary>
-    Gather,
-    /// <summary>
-    /// gauging
-    /// </summary>
-    Gauging,
-    /// <summary>
-    /// generating_tokens
-    /// </summary>
-    GeneratingTokens,
-    /// <summary>
-    /// gauge
-    /// </summary>
-    Gauge,
-    /// <summary>
-    /// gesture_hand
-    /// </summary>
-    GestureHand,
-    /// <summary>
-    /// glasses
-    /// </summary>
-    Glasses,
-    /// <summary>
-    /// globe_europe
-    /// </summary>
-    GlobeEurope,
-    /// <summary>
-    /// google_plus_reshare
-    /// </summary>
-    GooglePlusReshare,
-    /// <summary>
-    /// google_travel
-    /// </summary>
-    GoogleTravel,
-    /// <summary>
-    /// gps_fixed
-    /// </summary>
-    GpsFixed,
-    /// <summary>
-    /// gps_not_fixed
-    /// </summary>
-    GpsNotFixed,
-    /// <summary>
-    /// gps_off
-    /// </summary>
-    GpsOff,
-    /// <summary>
-    /// grab_handle
-    /// </summary>
-    GrabHandle,
-    /// <summary>
-    /// grade
-    /// </summary>
-    Grade,
-    /// <summary>
-    /// groups_with_stories
-    /// </summary>
-    GroupsWithStories,
-    /// <summary>
-    /// guest_star
-    /// </summary>
-    GuestStar,
-    /// <summary>
-    /// guesthouse
-    /// </summary>
-    Guesthouse,
-    /// <summary>
-    /// hair
-    /// </summary>
-    Hair,
-    /// <summary>
-    /// hairdryer
-    /// </summary>
-    Hairdryer,
-    /// <summary>
-    /// hairdryer_front
-    /// </summary>
-    HairdryerFront,
-    /// <summary>
-    /// hand_wave
-    /// </summary>
-    HandWave,
-    /// <summary>
-    /// hand_writing
-    /// </summary>
-    HandWriting,
-    /// <summary>
-    /// handball
-    /// </summary>
-    Handball,
-    /// <summary>
-    /// handshakes
-    /// </summary>
-    Handshakes,
-    /// <summary>
-    /// handwashing
-    /// </summary>
-    Handwashing,
-    /// <summary>
-    /// handwashing_bubbles
-    /// </summary>
-    HandwashingBubbles,
-    /// <summary>
-    /// hardwood
-    /// </summary>
-    Hardwood,
-    /// <summary>
-    /// hats
-    /// </summary>
-    Hats,
-    /// <summary>
-    /// haze
-    /// </summary>
-    Haze,
-    /// <summary>
-    /// haze_night
-    /// </summary>
-    HazeNight,
-    /// <summary>
-    /// headphones_off
-    /// </summary>
-    HeadphonesOff,
-    /// <summary>
-    /// help_circle
-    /// </summary>
-    HelpCircle,
-    /// <summary>
-    /// help_desk
-    /// </summary>
-    HelpDesk,
-    /// <summary>
-    /// help_outline
-    /// </summary>
-    HelpOutline,
-    /// <summary>
-    /// hexagon_off
-    /// </summary>
-    HexagonOff,
-    /// <summary>
-    /// highway
-    /// </summary>
-    Highway,
-    /// <summary>
-    /// hotel_services
-    /// </summary>
-    HotelServices,
-    /// <summary>
-    /// hourglass_full
-    /// </summary>
-    HourglassFull,
-    /// <summary>
-    /// humidifier
-    /// </summary>
-    Humidifier,
-    /// <summary>
-    /// hurricane
-    /// </summary>
-    Hurricane,
-    /// <summary>
-    /// hybrid
-    /// </summary>
-    Hybrid,
-    /// <summary>
-    /// hydration
-    /// </summary>
-    Hydration,
-    /// <summary>
-    /// hydroelectric_power
-    /// </summary>
-    HydroelectricPower,
-    /// <summary>
-    /// hydrant
-    /// </summary>
-    Hydrant,
-    /// <summary>
-    /// hypnosis
-    /// </summary>
-    Hypnosis,
-    /// <summary>
-    /// i_mode
-    /// </summary>
-    IMode,
-    /// <summary>
-    /// image_not_supported
-    /// </summary>
-    ImageNotSupported,
-    /// <summary>
-    /// inbox_full
-    /// </summary>
-    InboxFull,
-    /// <summary>
-    /// incense
-    /// </summary>
-    Incense,
-    /// <summary>
-    /// indent_decrease
-    /// </summary>
-    IndentDecrease,
-    /// <summary>
-    /// indent_increase
-    /// </summary>
-    IndentIncrease,
-    /// <summary>
-    /// individual_track
-    /// </summary>
-    IndividualTrack,
-    /// <summary>
-    /// indoor_garden
-    /// </summary>
-    IndoorGarden,
-    /// <summary>
-    /// indoor_grill
-    /// </summary>
-    IndoorGrill,
-    /// <summary>
-    /// injection
-    /// </summary>
-    Injection,
-    /// <summary>
-    /// ink_bottle
-    /// </summary>
-    InkBottle,
-    /// <summary>
-    /// inking_tool
-    /// </summary>
-    InkingTool,
-    /// <summary>
-    /// install_mobile
-    /// </summary>
-    InstallMobile,
-    /// <summary>
-    /// instant_standby
-    /// </summary>
-    InstantStandby,
-    /// <summary>
-    /// intersections
-    /// </summary>
-    Intersections,
-    /// <summary>
-    /// invert_device
-    /// </summary>
-    InvertDevice,
-    /// <summary>
-    /// jewelry
-    /// </summary>
-    Jewelry,
-    /// <summary>
-    /// job_applicant
-    /// </summary>
-    JobApplicant,
-    /// <summary>
-    /// job_yield
-    /// </summary>
-    JobYield,
-    /// <summary>
-    /// jogging
-    /// </summary>
-    Jogging,
-    /// <summary>
-    /// join_full
-    /// </summary>
-    JoinFull,
-    /// <summary>
-    /// kayak
-    /// </summary>
-    Kayak,
-    /// <summary>
-    /// kennel
-    /// </summary>
-    Kennel,
-    /// <summary>
-    /// keyboard_control
-    /// </summary>
-    KeyboardControl,
-    /// <summary>
-    /// keyboard_key
-    /// </summary>
-    KeyboardKey,
-    /// <summary>
-    /// keyboard_voice
-    /// </summary>
-    KeyboardVoice,
-    /// <summary>
-    /// ktx
-    /// </summary>
-    Ktx,
-    /// <summary>
-    /// ktx_alt
-    /// </summary>
-    KtxAlt,
-    /// <summary>
-    /// label_outline
-    /// </summary>
-    LabelOutline,
-    /// <summary>
-    /// laboratory
-    /// </summary>
-    Laboratory,
-    /// <summary>
-    /// language_us
+    ///  language_us
     /// </summary>
     LanguageUs,
     /// <summary>
-    /// language_us_co
+    ///  language_us_colemak
     /// </summary>
-    LanguageUsCo,
+    LanguageUsColemak,
     /// <summary>
-    /// laptop_chromebook
+    ///  language_us_dvorak
+    /// </summary>
+    LanguageUsDvorak,
+    /// <summary>
+    ///  laps
+    /// </summary>
+    Laps,
+    /// <summary>
+    ///  laptop_car
+    /// </summary>
+    LaptopCar,
+    /// <summary>
+    ///  laptop_chromebook
     /// </summary>
     LaptopChromebook,
     /// <summary>
-    /// laptop_mac
+    ///  laptop_mac
     /// </summary>
     LaptopMac,
     /// <summary>
-    /// laptop_windows
+    ///  laptop_windows
     /// </summary>
     LaptopWindows,
     /// <summary>
-    /// last_page
+    ///  lasso_select
+    /// </summary>
+    LassoSelect,
+    /// <summary>
+    ///  last_page
     /// </summary>
     LastPage,
     /// <summary>
-    /// last_page_media
-    /// </summary>
-    LastPageMedia,
-    /// <summary>
-    /// laundry
+    ///  laundry
     /// </summary>
     Laundry,
     /// <summary>
-    /// laundry_gen
-    /// </summary>
-    LaundryGen,
-    /// <summary>
-    /// layers
+    ///  layers
     /// </summary>
     Layers,
     /// <summary>
-    /// layers_clear
+    ///  layers_clear
     /// </summary>
     LayersClear,
     /// <summary>
-    /// ld
+    ///  lda
     /// </summary>
-    Ld,
+    Lda,
     /// <summary>
-    /// leaf_maranta
+    ///  leaderboard
     /// </summary>
-    LeafMaranta,
+    Leaderboard,
     /// <summary>
-    /// leaf_spin
+    ///  leak_add
     /// </summary>
-    LeafSpin,
+    LeakAdd,
     /// <summary>
-    /// learning
+    ///  leak_remove
     /// </summary>
-    Learning,
+    LeakRemove,
     /// <summary>
-    /// learning_coach
+    ///  left_click
     /// </summary>
-    LearningCoach,
+    LeftClick,
     /// <summary>
-    /// leather
+    ///  left_panel_close
     /// </summary>
-    Leather,
+    LeftPanelClose,
     /// <summary>
-    /// leave_bags_at_home
+    ///  left_panel_open
     /// </summary>
-    LeaveBagsAtHome,
+    LeftPanelOpen,
     /// <summary>
-    /// leave_bags_at_home_off
-    /// </summary>
-    LeaveBagsAtHomeOff,
-    /// <summary>
-    /// legend_toggle
+    ///  legend_toggle
     /// </summary>
     LegendToggle,
     /// <summary>
-    /// lens
-    /// </summary>
-    Lens,
-    /// <summary>
-    /// lens_blur
+    ///  lens_blur
     /// </summary>
     LensBlur,
     /// <summary>
-    /// liberation
+    ///  letter_switch
     /// </summary>
-    Liberation,
+    LetterSwitch,
     /// <summary>
-    /// library_add
+    ///  library_add
     /// </summary>
     LibraryAdd,
     /// <summary>
-    /// library_add_check
+    ///  library_add_check
     /// </summary>
     LibraryAddCheck,
     /// <summary>
-    /// library_books
+    ///  library_books
     /// </summary>
     LibraryBooks,
     /// <summary>
-    /// library_music
+    ///  library_music
     /// </summary>
     LibraryMusic,
     /// <summary>
-    /// lift_to_talk
+    ///  license
+    /// </summary>
+    License,
+    /// <summary>
+    ///  lift_to_talk
     /// </summary>
     LiftToTalk,
     /// <summary>
-    /// light
+    ///  light
     /// </summary>
     Light,
     /// <summary>
-    /// light_group
+    ///  light_group
     /// </summary>
     LightGroup,
     /// <summary>
-    /// light_mode
+    ///  light_mode
     /// </summary>
     LightMode,
     /// <summary>
-    /// lightbulb
+    ///  light_off
+    /// </summary>
+    LightOff,
+    /// <summary>
+    ///  lightbulb
     /// </summary>
     Lightbulb,
     /// <summary>
-    /// lightbulb_circle
+    ///  lightbulb_2
+    /// </summary>
+    Lightbulb2,
+    /// <summary>
+    ///  lightbulb_circle
     /// </summary>
     LightbulbCircle,
     /// <summary>
-    /// lightbulb_outline
+    ///  lightning_stand
     /// </summary>
-    LightbulbOutline,
+    LightningStand,
     /// <summary>
-    /// line_axis
+    ///  line_axis
     /// </summary>
     LineAxis,
     /// <summary>
-    /// line_end
+    ///  line_curve
+    /// </summary>
+    LineCurve,
+    /// <summary>
+    ///  line_end
     /// </summary>
     LineEnd,
     /// <summary>
-    /// line_end_arrow
+    ///  line_end_arrow
     /// </summary>
     LineEndArrow,
     /// <summary>
-    /// line_start
+    ///  line_end_arrow_notch
+    /// </summary>
+    LineEndArrowNotch,
+    /// <summary>
+    ///  line_end_circle
+    /// </summary>
+    LineEndCircle,
+    /// <summary>
+    ///  line_end_diamond
+    /// </summary>
+    LineEndDiamond,
+    /// <summary>
+    ///  line_end_square
+    /// </summary>
+    LineEndSquare,
+    /// <summary>
+    ///  line_start
     /// </summary>
     LineStart,
     /// <summary>
-    /// line_start_arrow
+    ///  line_start_arrow
     /// </summary>
     LineStartArrow,
     /// <summary>
-    /// line_style
+    ///  line_start_arrow_notch
+    /// </summary>
+    LineStartArrowNotch,
+    /// <summary>
+    ///  line_start_circle
+    /// </summary>
+    LineStartCircle,
+    /// <summary>
+    ///  line_start_diamond
+    /// </summary>
+    LineStartDiamond,
+    /// <summary>
+    ///  line_start_square
+    /// </summary>
+    LineStartSquare,
+    /// <summary>
+    ///  line_style
     /// </summary>
     LineStyle,
     /// <summary>
-    /// line_weight
+    ///  line_weight
     /// </summary>
     LineWeight,
     /// <summary>
-    /// linear_scale
+    ///  linear_scale
     /// </summary>
     LinearScale,
     /// <summary>
-    /// link
+    ///  link
     /// </summary>
     Link,
     /// <summary>
-    /// link_off
+    ///  link_off
     /// </summary>
     LinkOff,
     /// <summary>
-    /// linked_services
+    ///  linked_camera
+    /// </summary>
+    LinkedCamera,
+    /// <summary>
+    ///  linked_services
     /// </summary>
     LinkedServices,
     /// <summary>
-    /// liquidity
+    ///  liquor
     /// </summary>
-    Liquidity,
+    Liquor,
     /// <summary>
-    /// list
+    ///  list
     /// </summary>
     List,
     /// <summary>
-    /// list_alt
+    ///  list_alt
     /// </summary>
     ListAlt,
     /// <summary>
-    /// list_alt_add
+    ///  list_alt_add
     /// </summary>
     ListAltAdd,
     /// <summary>
-    /// list_collapse
+    ///  list_alt_check
     /// </summary>
-    ListCollapse,
+    ListAltCheck,
     /// <summary>
-    /// list_group
+    ///  lists
     /// </summary>
-    ListGroup,
+    Lists,
     /// <summary>
-    /// list_min
+    ///  live_help
     /// </summary>
-    ListMin,
+    LiveHelp,
     /// <summary>
-    /// list_off
+    ///  live_tv
     /// </summary>
-    ListOff,
+    LiveTv,
     /// <summary>
-    /// list_view
+    ///  living
     /// </summary>
-    ListView,
+    Living,
     /// <summary>
-    /// alive
+    ///  local_activity
     /// </summary>
-    Alive,
+    LocalActivity,
     /// <summary>
-    /// location_pin
+    ///  local_atm
     /// </summary>
-    LocationPin,
+    LocalAtm,
     /// <summary>
-    /// locker
+    ///  local_bar
     /// </summary>
-    Locker,
+    LocalBar,
     /// <summary>
-    /// locker_lock
+    ///  local_cafe
     /// </summary>
-    LockerLock,
+    LocalCafe,
     /// <summary>
-    /// lock_clock
+    ///  local_car_wash
+    /// </summary>
+    LocalCarWash,
+    /// <summary>
+    ///  local_convenience_store
+    /// </summary>
+    LocalConvenienceStore,
+    /// <summary>
+    ///  local_dining
+    /// </summary>
+    LocalDining,
+    /// <summary>
+    ///  local_drink
+    /// </summary>
+    LocalDrink,
+    /// <summary>
+    ///  local_fire_department
+    /// </summary>
+    LocalFireDepartment,
+    /// <summary>
+    ///  local_florist
+    /// </summary>
+    LocalFlorist,
+    /// <summary>
+    ///  local_gas_station
+    /// </summary>
+    LocalGasStation,
+    /// <summary>
+    ///  local_hospital
+    /// </summary>
+    LocalHospital,
+    /// <summary>
+    ///  local_laundry_service
+    /// </summary>
+    LocalLaundryService,
+    /// <summary>
+    ///  local_library
+    /// </summary>
+    LocalLibrary,
+    /// <summary>
+    ///  local_mall
+    /// </summary>
+    LocalMall,
+    /// <summary>
+    ///  local_parking
+    /// </summary>
+    LocalParking,
+    /// <summary>
+    ///  local_pharmacy
+    /// </summary>
+    LocalPharmacy,
+    /// <summary>
+    ///  local_pizza
+    /// </summary>
+    LocalPizza,
+    /// <summary>
+    ///  local_police
+    /// </summary>
+    LocalPolice,
+    /// <summary>
+    ///  local_post_office
+    /// </summary>
+    LocalPostOffice,
+    /// <summary>
+    ///  local_see
+    /// </summary>
+    LocalSee,
+    /// <summary>
+    ///  local_shipping
+    /// </summary>
+    LocalShipping,
+    /// <summary>
+    ///  local_taxi
+    /// </summary>
+    LocalTaxi,
+    /// <summary>
+    ///  location_away
+    /// </summary>
+    LocationAway,
+    /// <summary>
+    ///  location_chip
+    /// </summary>
+    LocationChip,
+    /// <summary>
+    ///  location_city
+    /// </summary>
+    LocationCity,
+    /// <summary>
+    ///  location_disabled
+    /// </summary>
+    LocationDisabled,
+    /// <summary>
+    ///  location_home
+    /// </summary>
+    LocationHome,
+    /// <summary>
+    ///  location_off
+    /// </summary>
+    LocationOff,
+    /// <summary>
+    ///  location_on
+    /// </summary>
+    LocationOn,
+    /// <summary>
+    ///  location_searching
+    /// </summary>
+    LocationSearching,
+    /// <summary>
+    ///  lock
+    /// </summary>
+    Lock,
+    /// <summary>
+    ///  lock_clock
     /// </summary>
     LockClock,
     /// <summary>
-    /// lock_open
+    ///  lock_open
     /// </summary>
     LockOpen,
     /// <summary>
-    /// lock_person
+    ///  lock_open_circle
+    /// </summary>
+    LockOpenCircle,
+    /// <summary>
+    ///  lock_open_right
+    /// </summary>
+    LockOpenRight,
+    /// <summary>
+    ///  lock_person
     /// </summary>
     LockPerson,
     /// <summary>
-    /// lock_reset
+    ///  lock_reset
     /// </summary>
     LockReset,
     /// <summary>
-    /// logistics
+    ///  login
     /// </summary>
-    Logistics,
+    Login,
     /// <summary>
-    /// logo_dev
+    ///  logo_dev
     /// </summary>
     LogoDev,
     /// <summary>
-    /// logout
+    ///  logout
     /// </summary>
     Logout,
     /// <summary>
-    /// look_at_me
+    ///  looks
     /// </summary>
-    LookAtMe,
+    Looks,
     /// <summary>
-    /// lotion
+    ///  looks_3
     /// </summary>
-    Lotion,
+    Looks3,
     /// <summary>
-    /// lotion_plus
+    ///  looks_4
     /// </summary>
-    LotionPlus,
+    Looks4,
     /// <summary>
-    /// love_song
+    ///  looks_5
     /// </summary>
-    LoveSong,
+    Looks5,
     /// <summary>
-    /// lullaby
+    ///  looks_6
     /// </summary>
-    Lullaby,
+    Looks6,
     /// <summary>
-    /// luggage
+    ///  looks_one
+    /// </summary>
+    LooksOne,
+    /// <summary>
+    ///  looks_two
+    /// </summary>
+    LooksTwo,
+    /// <summary>
+    ///  loupe
+    /// </summary>
+    Loupe,
+    /// <summary>
+    ///  low_density
+    /// </summary>
+    LowDensity,
+    /// <summary>
+    ///  low_priority
+    /// </summary>
+    LowPriority,
+    /// <summary>
+    ///  lowercase
+    /// </summary>
+    lowercase,
+    /// <summary>
+    ///  loyalty
+    /// </summary>
+    Loyalty,
+    /// <summary>
+    ///  lte_mobiledata
+    /// </summary>
+    LteMobiledata,
+    /// <summary>
+    ///  lte_mobiledata_badge
+    /// </summary>
+    LteMobiledataBadge,
+    /// <summary>
+    ///  lte_plus_mobiledata
+    /// </summary>
+    LtePlusMobiledata,
+    /// <summary>
+    ///  lte_plus_mobiledata_badge
+    /// </summary>
+    LtePlusMobiledataBadge,
+    /// <summary>
+    ///  luggage
     /// </summary>
     Luggage,
     /// <summary>
-    /// lunch_dining
+    ///  lunch_dining
     /// </summary>
     LunchDining,
     /// <summary>
-    /// lungs
+    ///  lyrics
     /// </summary>
-    Lungs,
+    Lyrics,
     /// <summary>
-    /// m_mobiledata
+    ///  macro_auto
     /// </summary>
-    MMobiledata,
+    MacroAuto,
     /// <summary>
-    /// m_mobiledata_badge
+    ///  macro_off
     /// </summary>
-    MMobiledataBadge,
+    MacroOff,
     /// <summary>
-    /// magic_button
+    ///  magnification_large
     /// </summary>
-    MagicButton,
+    MagnificationLarge,
     /// <summary>
-    /// magic_tether
+    ///  magnification_small
     /// </summary>
-    MagicTether,
+    MagnificationSmall,
     /// <summary>
-    /// magnet_launch
+    ///  magnify_docked
     /// </summary>
-    MagnetLaunch,
+    MagnifyDocked,
     /// <summary>
-    /// mail
+    ///  magnify_fullscreen
+    /// </summary>
+    MagnifyFullscreen,
+    /// <summary>
+    ///  mail
     /// </summary>
     Mail,
     /// <summary>
-    /// mail_lock
+    ///  mail_lock
     /// </summary>
     MailLock,
     /// <summary>
-    /// mail_off
+    ///  mail_off
     /// </summary>
     MailOff,
     /// <summary>
-    /// mail_rotate_left
+    ///  mail_shield
     /// </summary>
-    MailRotateLeft,
+    MailShield,
     /// <summary>
-    /// mail_rotate_right
+    ///  male
     /// </summary>
-    MailRotateRight,
+    Male,
     /// <summary>
-    /// mail_unread
+    ///  man
     /// </summary>
-    MailUnread,
+    Man,
     /// <summary>
-    /// mailed_notification
+    ///  man_2
     /// </summary>
-    MailedNotification,
+    Man2,
     /// <summary>
-    /// main_gate
+    ///  man_3
     /// </summary>
-    MainGate,
+    Man3,
     /// <summary>
-    /// manage_accounts
+    ///  man_4
+    /// </summary>
+    Man4,
+    /// <summary>
+    ///  manage_accounts
     /// </summary>
     ManageAccounts,
     /// <summary>
-    /// manage_history
+    ///  manage_history
     /// </summary>
     ManageHistory,
     /// <summary>
-    /// manage_search
+    ///  manage_search
     /// </summary>
     ManageSearch,
     /// <summary>
-    /// mandatory_house
+    ///  manga
     /// </summary>
-    MandatoryHouse,
+    Manga,
     /// <summary>
-    /// manure
+    ///  manufacturing
     /// </summary>
-    Manure,
+    manufacturing,
     /// <summary>
-    /// map
+    ///  map
     /// </summary>
     Map,
     /// <summary>
-    /// map_data
+    ///  map_pin_heart
     /// </summary>
-    MapData,
+    MapPinHeart,
     /// <summary>
-    /// map_data_off
+    ///  map_pin_review
     /// </summary>
-    MapDataOff,
+    MapPinReview,
     /// <summary>
-    /// margin
+    ///  map_search
+    /// </summary>
+    MapSearch,
+    /// <summary>
+    ///  maps_ugc
+    /// </summary>
+    MapsUgc,
+    /// <summary>
+    ///  margin
     /// </summary>
     Margin,
     /// <summary>
-    /// mark_as_unread
+    ///  mark_as_unread
     /// </summary>
     MarkAsUnread,
     /// <summary>
-    /// mark_chat_read
+    ///  mark_chat_read
     /// </summary>
     MarkChatRead,
     /// <summary>
-    /// mark_chat_unread
+    ///  mark_chat_unread
     /// </summary>
     MarkChatUnread,
     /// <summary>
-    /// mark_email_read
+    ///  mark_email_read
     /// </summary>
     MarkEmailRead,
     /// <summary>
-    /// mark_email_unread
+    ///  mark_email_unread
     /// </summary>
     MarkEmailUnread,
     /// <summary>
-    /// mark_unread_chat_alt
+    ///  mark_unread_chat_alt
     /// </summary>
     MarkUnreadChatAlt,
     /// <summary>
-    /// mask_detection
+    ///  markdown
     /// </summary>
-    MaskDetection,
+    Markdown,
     /// <summary>
-    /// match_case
+    ///  markdown_copy
+    /// </summary>
+    MarkdownCopy,
+    /// <summary>
+    ///  markdown_paste
+    /// </summary>
+    MarkdownPaste,
+    /// <summary>
+    ///  markunread_mailbox
+    /// </summary>
+    MarkunreadMailbox,
+    /// <summary>
+    ///  masked_transitions
+    /// </summary>
+    MaskedTransitions,
+    /// <summary>
+    ///  masked_transitions_add
+    /// </summary>
+    MaskedTransitionsAdd,
+    /// <summary>
+    ///  masks
+    /// </summary>
+    Masks,
+    /// <summary>
+    ///  massage
+    /// </summary>
+    Massage,
+    /// <summary>
+    ///  match_case
     /// </summary>
     MatchCase,
     /// <summary>
-    /// match_word
+    ///  match_case_off
+    /// </summary>
+    MatchCaseOff,
+    /// <summary>
+    ///  match_word
     /// </summary>
     MatchWord,
     /// <summary>
-    /// material
+    ///  matter
     /// </summary>
-    Material,
+    Matter,
     /// <summary>
-    /// material_symbols
+    ///  maximize
     /// </summary>
-    MaterialSymbols,
+    Maximize,
     /// <summary>
-    /// meals
+    ///  meal_dinner
     /// </summary>
-    Meals,
+    MealDinner,
     /// <summary>
-    /// measurements
+    ///  meal_lunch
     /// </summary>
-    Measurements,
+    MealLunch,
     /// <summary>
-    /// medication_liquid
+    ///  measuring_tape
     /// </summary>
-    MedicationLiquid,
+    MeasuringTape,
     /// <summary>
-    /// medical_mask
+    ///  media_bluetooth_off
+    /// </summary>
+    MediaBluetoothOff,
+    /// <summary>
+    ///  media_bluetooth_on
+    /// </summary>
+    MediaBluetoothOn,
+    /// <summary>
+    ///  media_link
+    /// </summary>
+    MediaLink,
+    /// <summary>
+    ///  media_output
+    /// </summary>
+    MediaOutput,
+    /// <summary>
+    ///  media_output_off
+    /// </summary>
+    MediaOutputOff,
+    /// <summary>
+    ///  mediation
+    /// </summary>
+    Mediation,
+    /// <summary>
+    ///  medical_information
+    /// </summary>
+    MedicalInformation,
+    /// <summary>
+    ///  medical_mask
     /// </summary>
     MedicalMask,
     /// <summary>
-    /// medical_services
+    ///  medical_services
     /// </summary>
     MedicalServices,
     /// <summary>
-    /// medication
+    ///  medication
     /// </summary>
     Medication,
     /// <summary>
-    /// membership
+    ///  medication_liquid
     /// </summary>
-    Membership,
+    MedicationLiquid,
     /// <summary>
-    /// memory
+    ///  meeting_room
+    /// </summary>
+    MeetingRoom,
+    /// <summary>
+    ///  memory
     /// </summary>
     Memory,
     /// <summary>
-    /// menu
+    ///  memory_alt
+    /// </summary>
+    MemoryAlt,
+    /// <summary>
+    ///  menstrual_health
+    /// </summary>
+    MenstrualHealth,
+    /// <summary>
+    ///  menu
     /// </summary>
     Menu,
     /// <summary>
-    /// menu_book
+    ///  menu_book
     /// </summary>
     MenuBook,
     /// <summary>
-    /// menu_open
+    ///  menu_book_2
+    /// </summary>
+    MenuBook2,
+    /// <summary>
+    ///  menu_open
     /// </summary>
     MenuOpen,
     /// <summary>
-    /// merge
+    ///  merge
     /// </summary>
     Merge,
     /// <summary>
-    /// merge_type
+    ///  merge_type
     /// </summary>
     MergeType,
     /// <summary>
-    /// metamask
+    ///  metabolism
     /// </summary>
-    Metamask,
+    Metabolism,
     /// <summary>
-    /// metro
+    ///  metro
     /// </summary>
     Metro,
     /// <summary>
-    /// mic
+    ///  mfg_nest_yale_lock
+    /// </summary>
+    MfgNestYaleLock,
+    /// <summary>
+    ///  mic
     /// </summary>
     Mic,
     /// <summary>
-    /// mic_external_off
+    ///  mic_alert
+    /// </summary>
+    MicAlert,
+    /// <summary>
+    ///  mic_double
+    /// </summary>
+    MicDouble,
+    /// <summary>
+    ///  mic_external_off
     /// </summary>
     MicExternalOff,
     /// <summary>
-    /// mic_external_on
+    ///  mic_external_on
     /// </summary>
     MicExternalOn,
     /// <summary>
-    /// mic_off
+    ///  mic_off
     /// </summary>
     MicOff,
     /// <summary>
-    /// microwave
+    ///  microbiology
+    /// </summary>
+    Microbiology,
+    /// <summary>
+    ///  microwave
     /// </summary>
     Microwave,
     /// <summary>
-    /// microwave_gen
+    ///  microwave_gen
     /// </summary>
     MicrowaveGen,
     /// <summary>
-    /// military_tech
+    ///  military_tech
     /// </summary>
     MilitaryTech,
     /// <summary>
-    /// minimalistic_watch
+    ///  mimo
     /// </summary>
-    MinimalisticWatch,
+    Mimo,
     /// <summary>
-    /// milk_bottle
+    ///  mimo_disconnect
     /// </summary>
-    MilkBottle,
+    MimoDisconnect,
     /// <summary>
-    /// mms
+    ///  mindfulness
+    /// </summary>
+    Mindfulness,
+    /// <summary>
+    ///  minimize
+    /// </summary>
+    Minimize,
+    /// <summary>
+    ///  minor_crash
+    /// </summary>
+    MinorCrash,
+    /// <summary>
+    ///  mintmark
+    /// </summary>
+    Mintmark,
+    /// <summary>
+    ///  missed_video_call
+    /// </summary>
+    MissedVideoCall,
+    /// <summary>
+    ///  missing_controller
+    /// </summary>
+    MissingController,
+    /// <summary>
+    ///  mist
+    /// </summary>
+    Mist,
+    /// <summary>
+    ///  mitre
+    /// </summary>
+    Mitre,
+    /// <summary>
+    ///  mixture_med
+    /// </summary>
+    MixtureMed,
+    /// <summary>
+    ///  mms
     /// </summary>
     Mms,
     /// <summary>
-    /// mobiledata_off
+    ///  mobile
     /// </summary>
-    MobiledataOff,
+    Mobile,
     /// <summary>
-    /// mobile_friendly
+    ///  mobile_2
     /// </summary>
-    MobileFriendly,
+    Mobile2,
     /// <summary>
-    /// mobile_off
+    ///  mobile_3
+    /// </summary>
+    Mobile3,
+    /// <summary>
+    ///  mobile_alert
+    /// </summary>
+    MobileAlert,
+    /// <summary>
+    ///  mobile_arrow_down
+    /// </summary>
+    MobileArrowDown,
+    /// <summary>
+    ///  mobile_arrow_right
+    /// </summary>
+    MobileArrowRight,
+    /// <summary>
+    ///  mobile_arrow_up_right
+    /// </summary>
+    MobileArrowUpRight,
+    /// <summary>
+    ///  mobile_block
+    /// </summary>
+    MobileBlock,
+    /// <summary>
+    ///  mobile_camera
+    /// </summary>
+    MobileCamera,
+    /// <summary>
+    ///  mobile_camera_front
+    /// </summary>
+    MobileCameraFront,
+    /// <summary>
+    ///  mobile_camera_rear
+    /// </summary>
+    MobileCameraRear,
+    /// <summary>
+    ///  mobile_cancel
+    /// </summary>
+    MobileCancel,
+    /// <summary>
+    ///  mobile_cast
+    /// </summary>
+    MobileCast,
+    /// <summary>
+    ///  mobile_charge
+    /// </summary>
+    MobileCharge,
+    /// <summary>
+    ///  mobile_chat
+    /// </summary>
+    MobileChat,
+    /// <summary>
+    ///  mobile_check
+    /// </summary>
+    MobileCheck,
+    /// <summary>
+    ///  mobile_code
+    /// </summary>
+    MobileCode,
+    /// <summary>
+    ///  mobile_dots
+    /// </summary>
+    MobileDots,
+    /// <summary>
+    ///  mobile_gear
+    /// </summary>
+    MobileGear,
+    /// <summary>
+    ///  mobile_hand
+    /// </summary>
+    MobileHand,
+    /// <summary>
+    ///  mobile_hand_left
+    /// </summary>
+    MobileHandLeft,
+    /// <summary>
+    ///  mobile_hand_left_off
+    /// </summary>
+    MobileHandLeftOff,
+    /// <summary>
+    ///  mobile_hand_off
+    /// </summary>
+    MobileHandOff,
+    /// <summary>
+    ///  mobile_info
+    /// </summary>
+    MobileInfo,
+    /// <summary>
+    ///  mobile_landscape
+    /// </summary>
+    MobileLandscape,
+    /// <summary>
+    ///  mobile_layout
+    /// </summary>
+    MobileLayout,
+    /// <summary>
+    ///  mobile_lock_landscape
+    /// </summary>
+    MobileLockLandscape,
+    /// <summary>
+    ///  mobile_lock_portrait
+    /// </summary>
+    MobileLockPortrait,
+    /// <summary>
+    ///  mobile_loupe
+    /// </summary>
+    MobileLoupe,
+    /// <summary>
+    ///  mobile_menu
+    /// </summary>
+    MobileMenu,
+    /// <summary>
+    ///  mobile_off
     /// </summary>
     MobileOff,
     /// <summary>
-    /// mobile_screen_share
+    ///  mobile_question
     /// </summary>
-    MobileScreenShare,
+    MobileQuestion,
     /// <summary>
-    /// mode_fan
+    ///  mobile_rotate
+    /// </summary>
+    MobileRotate,
+    /// <summary>
+    ///  mobile_rotate_lock
+    /// </summary>
+    MobileRotateLock,
+    /// <summary>
+    ///  mobile_screensaver
+    /// </summary>
+    MobileScreensaver,
+    /// <summary>
+    ///  mobile_sensor_hi
+    /// </summary>
+    MobileSensorHi,
+    /// <summary>
+    ///  mobile_sensor_lo
+    /// </summary>
+    MobileSensorLo,
+    /// <summary>
+    ///  mobile_share
+    /// </summary>
+    MobileShare,
+    /// <summary>
+    ///  mobile_share_stack
+    /// </summary>
+    MobileShareStack,
+    /// <summary>
+    ///  mobile_sound
+    /// </summary>
+    MobileSound,
+    /// <summary>
+    ///  mobile_sound_2
+    /// </summary>
+    MobileSound2,
+    /// <summary>
+    ///  mobile_sound_off
+    /// </summary>
+    MobileSoundOff,
+    /// <summary>
+    ///  mobile_speaker
+    /// </summary>
+    MobileSpeaker,
+    /// <summary>
+    ///  mobile_text
+    /// </summary>
+    MobileText,
+    /// <summary>
+    ///  mobile_text_2
+    /// </summary>
+    MobileText2,
+    /// <summary>
+    ///  mobile_ticket
+    /// </summary>
+    MobileTicket,
+    /// <summary>
+    ///  mobile_vibrate
+    /// </summary>
+    MobileVibrate,
+    /// <summary>
+    ///  mobile_wrench
+    /// </summary>
+    MobileWrench,
+    /// <summary>
+    ///  mobiledata_off
+    /// </summary>
+    MobiledataOff,
+    /// <summary>
+    ///  mode_comment
+    /// </summary>
+    ModeComment,
+    /// <summary>
+    ///  mode_cool
+    /// </summary>
+    ModeCool,
+    /// <summary>
+    ///  mode_cool_off
+    /// </summary>
+    ModeCoolOff,
+    /// <summary>
+    ///  mode_dual
+    /// </summary>
+    ModeDual,
+    /// <summary>
+    ///  mode_fan
     /// </summary>
     ModeFan,
     /// <summary>
-    /// mode_heat
+    ///  mode_fan_off
+    /// </summary>
+    ModeFanOff,
+    /// <summary>
+    ///  mode_heat
     /// </summary>
     ModeHeat,
     /// <summary>
-    /// mode_off_on
+    ///  mode_heat_cool
+    /// </summary>
+    ModeHeatCool,
+    /// <summary>
+    ///  mode_heat_off
+    /// </summary>
+    ModeHeatOff,
+    /// <summary>
+    ///  mode_night
+    /// </summary>
+    ModeNight,
+    /// <summary>
+    ///  mode_of_travel
+    /// </summary>
+    ModeOfTravel,
+    /// <summary>
+    ///  mode_off_on
     /// </summary>
     ModeOffOn,
     /// <summary>
-    /// mode_standby
+    ///  mode_standby
     /// </summary>
     ModeStandby,
     /// <summary>
-    /// monetization_on
+    ///  model_training
     /// </summary>
-    MonetizationOn,
+    ModelTraining,
     /// <summary>
-    /// money
+    ///  modeling
+    /// </summary>
+    Modeling,
+    /// <summary>
+    ///  money
     /// </summary>
     Money,
     /// <summary>
-    /// money_off
+    ///  money_bag
+    /// </summary>
+    MoneyBag,
+    /// <summary>
+    ///  money_off
     /// </summary>
     MoneyOff,
     /// <summary>
-    /// monitor
+    ///  money_range
+    /// </summary>
+    MoneyRange,
+    /// <summary>
+    ///  monitor
     /// </summary>
     Monitor,
     /// <summary>
-    /// monitor_heart
+    ///  monitor_heart
     /// </summary>
     MonitorHeart,
     /// <summary>
-    /// monitor_weight
+    ///  monitor_weight
     /// </summary>
     MonitorWeight,
     /// <summary>
-    /// monitoring
+    ///  monitor_weight_gain
+    /// </summary>
+    MonitorWeightGain,
+    /// <summary>
+    ///  monitor_weight_loss
+    /// </summary>
+    MonitorWeightLoss,
+    /// <summary>
+    ///  monitoring
     /// </summary>
     Monitoring,
     /// <summary>
-    /// monitoring_off
+    ///  monochrome_photos
     /// </summary>
-    MonitoringOff,
+    MonochromePhotos,
     /// <summary>
-    /// monorail
+    ///  monorail
     /// </summary>
     Monorail,
     /// <summary>
-    /// mood
+    ///  mood
     /// </summary>
     Mood,
     /// <summary>
-    /// mood_bad
+    ///  mood_bad
     /// </summary>
     MoodBad,
     /// <summary>
-    /// moon_phase
+    ///  moon_stars
     /// </summary>
-    MoonPhase,
+    MoonStars,
     /// <summary>
-    /// moped
+    ///  mop
+    /// </summary>
+    Mop,
+    /// <summary>
+    ///  moped
     /// </summary>
     Moped,
     /// <summary>
-    /// morning
+    ///  moped_package
     /// </summary>
-    Morning,
+    MopedPackage,
     /// <summary>
-    /// motion_sensor_active
+    ///  more
+    /// </summary>
+    More,
+    /// <summary>
+    ///  more_down
+    /// </summary>
+    MoreDown,
+    /// <summary>
+    ///  more_horiz
+    /// </summary>
+    MoreHoriz,
+    /// <summary>
+    ///  more_time
+    /// </summary>
+    MoreTime,
+    /// <summary>
+    ///  more_up
+    /// </summary>
+    MoreUp,
+    /// <summary>
+    ///  more_vert
+    /// </summary>
+    MoreVert,
+    /// <summary>
+    ///  mosque
+    /// </summary>
+    Mosque,
+    /// <summary>
+    ///  motion_blur
+    /// </summary>
+    MotionBlur,
+    /// <summary>
+    ///  motion_mode
+    /// </summary>
+    MotionMode,
+    /// <summary>
+    ///  motion_photos_auto
+    /// </summary>
+    MotionPhotosAuto,
+    /// <summary>
+    ///  motion_photos_off
+    /// </summary>
+    MotionPhotosOff,
+    /// <summary>
+    ///  motion_photos_on
+    /// </summary>
+    MotionPhotosOn,
+    /// <summary>
+    ///  motion_photos_paused
+    /// </summary>
+    MotionPhotosPaused,
+    /// <summary>
+    ///  motion_play
+    /// </summary>
+    MotionPlay,
+    /// <summary>
+    ///  motion_sensor_active
     /// </summary>
     MotionSensorActive,
     /// <summary>
-    /// motion_sensor_alert
+    ///  motion_sensor_alert
     /// </summary>
     MotionSensorAlert,
     /// <summary>
-    /// motion_sensor_idle
+    ///  motion_sensor_idle
     /// </summary>
     MotionSensorIdle,
     /// <summary>
-    /// motion_sensor_urgent
+    ///  motion_sensor_urgent
     /// </summary>
     MotionSensorUrgent,
     /// <summary>
-    /// motor_cycle
+    ///  motorcycle
     /// </summary>
     MotorCycle,
     /// <summary>
-    /// mountain_flag
+    ///  mountain_flag
     /// </summary>
     MountainFlag,
     /// <summary>
-    /// mountain_trail
+    ///  mountain_steam
     /// </summary>
-    MountainTrail,
+    MountainSteam,
     /// <summary>
-    /// movie
+    ///  mouse
+    /// </summary>
+    Mouse,
+    /// <summary>
+    ///  mouse_lock
+    /// </summary>
+    MouseLock,
+    /// <summary>
+    ///  mouse_lock_off
+    /// </summary>
+    MouseLockOff,
+    /// <summary>
+    ///  move
+    /// </summary>
+    Move,
+    /// <summary>
+    ///  move_down
+    /// </summary>
+    MoveDown,
+    /// <summary>
+    ///  move_group
+    /// </summary>
+    MoveGroup,
+    /// <summary>
+    ///  move_item
+    /// </summary>
+    MoveItem,
+    /// <summary>
+    ///  move_location
+    /// </summary>
+    MoveLocation,
+    /// <summary>
+    ///  move_selection_down
+    /// </summary>
+    MoveSelectionDown,
+    /// <summary>
+    ///  move_selection_left
+    /// </summary>
+    MoveSelectionLeft,
+    /// <summary>
+    ///  move_selection_right
+    /// </summary>
+    MoveSelectionRight,
+    /// <summary>
+    ///  move_selection_up
+    /// </summary>
+    MoveSelectionUp,
+    /// <summary>
+    ///  move_to_inbox
+    /// </summary>
+    MoveToInbox,
+    /// <summary>
+    ///  move_up
+    /// </summary>
+    MoveUp,
+    /// <summary>
+    ///  moved_location
+    /// </summary>
+    MovedLocation,
+    /// <summary>
+    ///  movie
     /// </summary>
     Movie,
     /// <summary>
-    /// moving_beds
+    ///  movie_edit
+    /// </summary>
+    MovieEdit,
+    /// <summary>
+    ///  movie_info
+    /// </summary>
+    MovieInfo,
+    /// <summary>
+    ///  movie_off
+    /// </summary>
+    MovieOff,
+    /// <summary>
+    ///  movie_speaker
+    /// </summary>
+    MovieSpeaker,
+    /// <summary>
+    ///  moving
+    /// </summary>
+    Moving,
+    /// <summary>
+    ///  moving_beds
     /// </summary>
     MovingBeds,
     /// <summary>
-    /// moving_ministry
+    ///  moving_ministry
     /// </summary>
     MovingMinistry,
     /// <summary>
-    /// mp
+    ///  mp
     /// </summary>
     Mp,
     /// <summary>
-    /// multiplayer
+    ///  multicooker
     /// </summary>
-    Multiplayer,
+    Multicooker,
     /// <summary>
-    /// multiple_stop
+    ///  multiline_chart
+    /// </summary>
+    MultilineChart,
+    /// <summary>
+    ///  multimodal_hand_eye
+    /// </summary>
+    MultimodalHandEye,
+    /// <summary>
+    ///  multiple_airports
+    /// </summary>
+    MultipleAirports,
+    /// <summary>
+    ///  multiple_stop
     /// </summary>
     MultipleStop,
     /// <summary>
-    /// museum
+    ///  museum
     /// </summary>
     Museum,
     /// <summary>
-    /// music_note
+    ///  music_cast
+    /// </summary>
+    MusicCast,
+    /// <summary>
+    ///  music_history
+    /// </summary>
+    MusicHistory,
+    /// <summary>
+    ///  music_note
     /// </summary>
     MusicNote,
     /// <summary>
-    /// music_note_off
+    ///  music_note_add
     /// </summary>
-    MusicNoteOff,
+    MusicNoteAdd,
     /// <summary>
-    /// music_off
+    ///  music_off
     /// </summary>
     MusicOff,
     /// <summary>
-    /// music_video
+    ///  music_video
     /// </summary>
     MusicVideo,
     /// <summary>
-    /// name
+    ///  my_location
     /// </summary>
-    Name,
+    MyLocation,
     /// <summary>
-    /// nas
+    ///  mystery
     /// </summary>
-    Nas,
+    Mystery,
     /// <summary>
-    /// natural
+    ///  nat
     /// </summary>
-    Natural,
+    Nat,
     /// <summary>
-    /// natural_gas
+    ///  nature
     /// </summary>
-    NaturalGas,
+    Nature,
     /// <summary>
-    /// navigation
+    ///  nature_people
+    /// </summary>
+    NaturePeople,
+    /// <summary>
+    ///  navigation
     /// </summary>
     Navigation,
     /// <summary>
-    /// navigation_more
+    ///  near_me
     /// </summary>
-    NavigationMore,
+    NearMe,
     /// <summary>
-    /// navigation_off
-    /// </summary>
-    NavigationOff,
-    /// <summary>
-    /// near_me_disabled
+    ///  near_me_disabled
     /// </summary>
     NearMeDisabled,
     /// <summary>
-    /// nearby_error
+    ///  nearby
+    /// </summary>
+    Nearby,
+    /// <summary>
+    ///  nearby_error
     /// </summary>
     NearbyError,
     /// <summary>
-    /// nearby_off
+    ///  nearby_off
     /// </summary>
     NearbyOff,
     /// <summary>
-    /// nearby_off_2
+    ///  nephrology
     /// </summary>
-    NearbyOff2,
+    Nephrology,
+/// <summary>
+///  nest_audio
+/// </summary>
+,
+/// <summary>
+///  nest_cam_floodlight
+/// </summary>
+,
+/// <summary>
+///  nest_cam_indoor
+/// </summary>
+,
+/// <summary>
+///  nest_cam_iq
+/// </summary>
+,
+/// <summary>
+///  nest_cam_iq_outdoor
+/// </summary>
+,
+/// <summary>
+///  nest_cam_magnet_mount
+/// </summary>
+,
+/// <summary>
+///  nest_cam_outdoor
+/// </summary>
+,
+/// <summary>
+///  nest_cam_stand
+/// </summary>
+,
+/// <summary>
+///  nest_cam_wall_mount
+/// </summary>
+,
+/// <summary>
+///  nest_cam_wired_stand
+/// </summary>
+,
+/// <summary>
+///  nest_clock_farsight_analog
+/// </summary>
+,
+/// <summary>
+///  nest_clock_farsight_digital
+/// </summary>
+,
+/// <summary>
+///  nest_connect
+/// </summary>
+,
+/// <summary>
+///  nest_detect
+/// </summary>
+,
+/// <summary>
+///  nest_display
+/// </summary>
+,
+/// <summary>
+///  nest_display_max
+/// </summary>
+,
+/// <summary>
+///  nest_doorbell_visitor
+/// </summary>
+,
+/// <summary>
+///  nest_eco_leaf
+/// </summary>
+,
+/// <summary>
+///  nest_farsight_cool
+/// </summary>
+,
+/// <summary>
+///  nest_farsight_dual
+/// </summary>
+,
+/// <summary>
+///  nest_farsight_eco
+/// </summary>
+,
+/// <summary>
+///  nest_farsight_heat
+/// </summary>
+,
+/// <summary>
+///  nest_farsight_seasonal
+/// </summary>
+,
+/// <summary>
+///  nest_farsight_weather
+/// </summary>
+,
+/// <summary>
+///  nest_found_savings
+/// </summary>
+,
+/// <summary>
+///  nest_heat_link_e
+/// </summary>
+,
+/// <summary>
+///  nest_heat_link_gen_3
+/// </summary>
+,
+/// <summary>
+///  nest_hello_doorbell
+/// </summary>
+,
+/// <summary>
+///  nest_mini
+/// </summary>
+,
+/// <summary>
+///  nest_multi_room
+/// </summary>
+,
+/// <summary>
+///  nest_protect
+/// </summary>
+,
+/// <summary>
+///  nest_remote_comfort_sensor
+/// </summary>
+,
+/// <summary>
+///  nest_secure_alarm
+/// </summary>
+,
+/// <summary>
+///  nest_sunblock
+/// </summary>
+,
+/// <summary>
+///  nest_tag
+/// </summary>
+,
+/// <summary>
+///  nest_thermostat
+/// </summary>
+,
+/// <summary>
+///  nest_thermostat_e_eu
+/// </summary>
+,
+/// <summary>
+///  nest_thermostat_gen_3
+/// </summary>
+,
+/// <summary>
+///  nest_thermostat_sensor
+/// </summary>
+,
+/// <summary>
+///  nest_thermostat_sensor_eu
+/// </summary>
+,
+/// <summary>
+///  nest_thermostat_zirconium_eu
+/// </summary>
+,
+/// <summary>
+///  nest_true_radiant
+/// </summary>
+,
+/// <summary>
+///  nest_wake_on_approach
+/// </summary>
+,
+/// <summary>
+///  nest_wake_on_press
+/// </summary>
+,
+/// <summary>
+///  nest_wifi_point
+/// </summary>
+,
+/// <summary>
+///  nest_wifi_pro
+/// </summary>
+,
+/// <summary>
+///  nest_wifi_pro_2
+/// </summary>
+,
+/// <summary>
+///  nest_wifi_router
+/// </summary>
+,
+/// <summary>
+///  network_cell
+/// </summary>
+,
+/// <summary>
+///  network_check
+/// </summary>
+,
+/// <summary>
+///  network_intel_node
+/// </summary>
+,
+/// <summary>
+///  network_intelligence
+/// </summary>
+,
+/// <summary>
+///  network_intelligence_history
+/// </summary>
+,
+/// <summary>
+///  network_intelligence_update
+/// </summary>
+,
+/// <summary>
+///  network_locked
+/// </summary>
+,
+/// <summary>
+///  network_manage
+/// </summary>
+,
+/// <summary>
+///  network_node
+/// </summary>
+,
+/// <summary>
+///  network_ping
+/// </summary>
+,
+/// <summary>
+///  network_wifi
+/// </summary>
+,
+/// <summary>
+///  network_wifi_1_bar
+/// </summary>
+,
+/// <summary>
+///  network_wifi_1_bar_locked
+/// </summary>
+,
+/// <summary>
+///  network_wifi_2_bar
+/// </summary>
+,
+/// <summary>
+///  network_wifi_2_bar_locked
+/// </summary>
+,
+/// <summary>
+///  network_wifi_3_bar
+/// </summary>
+,
+/// <summary>
+///  network_wifi_3_bar_locked
+/// </summary>
+,
+/// <summary>
+///  network_wifi_locked
+/// </summary>
+,
+/// <summary>
+///  neurology
+/// </summary>
+,
     /// <summary>
-    /// nearby_share
-    /// </summary>
-    NearbyShare,
-    /// <summary>
-    /// nearby_up
-    /// </summary>
-    NearbyUp,
-    /// <summary>
-    /// neography
-    /// </summary>
-    Neography,
-    /// <summary>
-    /// neurology
-    /// </summary>
-    Neurology,
-    /// <summary>
-    /// new_label
+    ///  new_label
     /// </summary>
     NewLabel,
+/// <summary>
+///  new_window
+/// </summary>
+,
+/// <summary>
+///  news
+/// </summary>
+,
+/// <summary>
+///  newsmode
+/// </summary>
+,
     /// <summary>
-    /// new_releases
-    /// </summary>
-    NewReleases,
-    /// <summary>
-    /// newspaper
+    ///  newspaper
     /// </summary>
     Newspaper,
+/// <summary>
+///  newsstand
+/// </summary>
+,
+/// <summary>
+///  next_plan
+/// </summary>
+,
+/// <summary>
+///  next_week
+/// </summary>
+,
+/// <summary>
+///  nfc
+/// </summary>
+,
+/// <summary>
+///  nfc_off
+/// </summary>
+,
+/// <summary>
+///  night_shelter
+/// </summary>
+,
     /// <summary>
-    /// night_sight_auto
+    ///  night_sight_auto
     /// </summary>
     NightSightAuto,
     /// <summary>
-    /// night_sight_auto_off
+    ///  night_sight_auto_off
     /// </summary>
     NightSightAutoOff,
     /// <summary>
-    /// night_sight_max
+    ///  night_sight_max
     /// </summary>
     NightSightMax,
+/// <summary>
+///  nightlife
+/// </summary>
+,
     /// <summary>
-    /// nightlight
+    ///  nightlight
     /// </summary>
     Nightlight,
+/// <summary>
+///  no_accounts
+/// </summary>
+,
     /// <summary>
-    /// nightlight_off
-    /// </summary>
-    NightlightOff,
-    /// <summary>
-    /// nights_stay
-    /// </summary>
-    NightsStay,
-    /// <summary>
-    /// no_adult_content
+    ///  no_adult_content
     /// </summary>
     NoAdultContent,
     /// <summary>
-    /// no_accounts
-    /// </summary>
-    NoAccounts,
-    /// <summary>
-    /// no_activity
-    /// </summary>
-    NoActivity,
-    /// <summary>
-    /// no_backpack
+    ///  no_backpack
     /// </summary>
     NoBackpack,
     /// <summary>
-    /// no_brakes
-    /// </summary>
-    NoBrakes,
-    /// <summary>
-    /// no_crash
+    ///  no_crash
     /// </summary>
     NoCrash,
     /// <summary>
-    /// no_drinks
+    ///  no_drinks
     /// </summary>
     NoDrinks,
+/// <summary>
+///  no_encryption
+/// </summary>
+,
     /// <summary>
-    /// no_flash
+    ///  no_flash
     /// </summary>
     NoFlash,
     /// <summary>
-    /// no_food
+    ///  no_food
     /// </summary>
     NoFood,
     /// <summary>
-    /// no_luggage
+    ///  no_luggage
     /// </summary>
     NoLuggage,
     /// <summary>
-    /// no_meals
+    ///  no_meals
     /// </summary>
     NoMeals,
+/// <summary>
+///  no_meeting_room
+/// </summary>
+,
     /// <summary>
-    /// no_meals_ouline
-    /// </summary>
-    NoMealsOuline,
-    /// <summary>
-    /// no_mobiledata
-    /// </summary>
-    NoMobiledata,
-    /// <summary>
-    /// no_photography
+    ///  no_photography
     /// </summary>
     NoPhotography,
     /// <summary>
-    /// no_sim
+    ///  no_sim
     /// </summary>
     NoSim,
     /// <summary>
-    /// no_sound
+    ///  no_sound
     /// </summary>
     NoSound,
     /// <summary>
-    /// no_stroller
+    ///  no_stroller
     /// </summary>
     NoStroller,
     /// <summary>
-    /// no_transfer
+    ///  no_transfer
     /// </summary>
     NoTransfer,
     /// <summary>
-    /// noise_aware
+    ///  noise_aware
     /// </summary>
     NoiseAware,
     /// <summary>
-    /// noise_control_off
+    ///  noise_control_off
     /// </summary>
     NoiseControlOff,
     /// <summary>
-    /// noise_control_on
+    ///  noise_control_on
     /// </summary>
     NoiseControlOn,
+/// <summary>
+///  nordic_walking
+/// </summary>
+,
+/// <summary>
+///  north
+/// </summary>
+,
+/// <summary>
+///  north_east
+/// </summary>
+,
+/// <summary>
+///  north_west
+/// </summary>
+,
+/// <summary>
+///  not_accessible
+/// </summary>
+,
+/// <summary>
+///  not_accessible_forward
+/// </summary>
+,
+/// <summary>
+///  not_listed_location
+/// </summary>
+,
+/// <summary>
+///  not_started
+/// </summary>
+,
     /// <summary>
-    /// notifications
-    /// </summary>
-    Notifications,
-    /// <summary>
-    /// notifications_active
-    /// </summary>
-    NotificationsActive,
-    /// <summary>
-    /// notifications_add
-    /// </summary>
-    NotificationsAdd,
-    /// <summary>
-    /// notifications_off
-    /// </summary>
-    NotificationsOff,
-    /// <summary>
-    /// notifications_paused
-    /// </summary>
-    NotificationsPaused,
-    /// <summary>
-    /// note_add
+    ///  note_add
     /// </summary>
     NoteAdd,
     /// <summary>
-    /// note_alt
+    ///  note_alt
     /// </summary>
     NoteAlt,
+/// <summary>
+///  note_stack
+/// </summary>
+,
+/// <summary>
+///  note_stack_add
+/// </summary>
+,
     /// <summary>
-    /// notes
+    ///  notes
     /// </summary>
     Notes,
+/// <summary>
+///  notification_add
+/// </summary>
+,
+/// <summary>
+///  notification_important
+/// </summary>
+,
+/// <summary>
+///  notification_multiple
+/// </summary>
+,
+/// <summary>
+///  notification_settings
+/// </summary>
+,
+/// <summary>
+///  notification_sound
+/// </summary>
+,
     /// <summary>
-    /// notes_add
+    ///  notifications
     /// </summary>
-    NotesAdd,
+    Notifications,
     /// <summary>
-    /// nursery
+    ///  notifications_active
     /// </summary>
-    Nursery,
+    NotificationsActive,
     /// <summary>
-    /// nursery_garden
+    ///  notifications_off
     /// </summary>
-    NurseryGarden,
+    NotificationsOff,
     /// <summary>
-    /// nutrition
+    ///  notifications_paused
     /// </summary>
-    Nutrition,
+    NotificationsPaused,
+/// <summary>
+///  notifications_unread
+/// </summary>
+,
+/// <summary>
+///  numbers
+/// </summary>
+,
+/// <summary>
+///  nutrition
+/// </summary>
+,
+/// <summary>
+///  ods
+/// </summary>
+,
+/// <summary>
+///  odt
+/// </summary>
+,
+/// <summary>
+///  offline_bolt
+/// </summary>
+,
+/// <summary>
+///  offline_pin
+/// </summary>
+,
+/// <summary>
+///  offline_pin_off
+/// </summary>
+,
+/// <summary>
+///  oil_barrel
+/// </summary>
+,
+/// <summary>
+///  okonomiyaki
+/// </summary>
+,
     /// <summary>
-    /// ocr
-    /// </summary>
-    Ocr,
-    /// <summary>
-    /// odor
-    /// </summary>
-    Odor,
-    /// <summary>
-    /// offroad_prohibited
-    /// </summary>
-    OffroadProhibited,
-    /// <summary>
-    /// oil_barrel
-    /// </summary>
-    OilBarrel,
-    /// <summary>
-    /// on_device_training
+    ///  on_device_training
     /// </summary>
     OnDeviceTraining,
     /// <summary>
-    /// on_hub_device
+    ///  on_hub_device
     /// </summary>
     OnHubDevice,
+/// <summary>
+///  oncology
+/// </summary>
+,
     /// <summary>
-    /// on_site_control
-    /// </summary>
-    OnSiteControl,
-    /// <summary>
-    /// on_site_house
-    /// </summary>
-    OnSiteHouse,
-    /// <summary>
-    /// online_prediction
+    ///  online_prediction
     /// </summary>
     OnlinePrediction,
     /// <summary>
-    /// onsen
+    ///  onsen
     /// </summary>
     Onsen,
     /// <summary>
-    /// opacity
+    ///  opacity
     /// </summary>
     Opacity,
     /// <summary>
-    /// open_in_browser
+    ///  open_in_browser
     /// </summary>
     OpenInBrowser,
     /// <summary>
-    /// open_in_full
+    ///  open_in_full
     /// </summary>
     OpenInFull,
     /// <summary>
-    /// open_in_new
+    ///  open_in_new
     /// </summary>
     OpenInNew,
+/// <summary>
+///  open_in_new_down
+/// </summary>
+,
     /// <summary>
-    /// open_in_new_off
+    ///  open_in_new_off
     /// </summary>
     OpenInNewOff,
+/// <summary>
+///  open_jam
+/// </summary>
+,
+/// <summary>
+///  open_run
+/// </summary>
+,
     /// <summary>
-    /// open_with
+    ///  open_with
     /// </summary>
     OpenWith,
     /// <summary>
-    /// ophthalmology
+    ///  ophthalmology
     /// </summary>
     Ophthalmology,
     /// <summary>
-    /// oral_disease
+    ///  oral_disease
     /// </summary>
     OralDisease,
+/// <summary>
+///  orbit
+/// </summary>
+,
     /// <summary>
-    /// order_approve
+    ///  order_approve
     /// </summary>
     OrderApprove,
     /// <summary>
-    /// order_play
+    ///  order_play
     /// </summary>
     OrderPlay,
+/// <summary>
+///  orders
+/// </summary>
+,
     /// <summary>
-    /// orthodontics
-    /// </summary>
-    Orthodontics,
-    /// <summary>
-    /// orthopedics
+    ///  orthopedics
     /// </summary>
     Orthopedics,
     /// <summary>
-    /// other_admission
+    ///  other_admission
     /// </summary>
     OtherAdmission,
     /// <summary>
-    /// other_houses
+    ///  other_houses
     /// </summary>
     OtherHouses,
+/// <summary>
+///  outbound
+/// </summary>
+,
     /// <summary>
-    /// outbox
+    ///  outbox
     /// </summary>
     Outbox,
+/// <summary>
+///  outbox_alt
+/// </summary>
+,
     /// <summary>
-    /// outdoor_garden
+    ///  outdoor_garden
     /// </summary>
     OutdoorGarden,
     /// <summary>
-    /// outdoor_grill
+    ///  outdoor_grill
     /// </summary>
     OutdoorGrill,
     /// <summary>
-    /// outgoing_mail
+    ///  outgoing_mail
     /// </summary>
     OutgoingMail,
     /// <summary>
-    /// outlet
+    ///  outlet
     /// </summary>
     Outlet,
+/// <summary>
+///  outpatient
+/// </summary>
+,
+/// <summary>
+///  outpatient_med
+/// </summary>
+,
+/// <summary>
+///  output
+/// </summary>
+,
+/// <summary>
+///  output_circle
+/// </summary>
+,
+/// <summary>
+///  oven
+/// </summary>
+,
+/// <summary>
+///  oven_gen
+/// </summary>
+,
+/// <summary>
+///  overview
+/// </summary>
+,
+/// <summary>
+///  overview_key
+/// </summary>
+,
+/// <summary>
+///  owl
+/// </summary>
+,
+/// <summary>
+///  oxygen_saturation
+/// </summary>
+,
+/// <summary>
+///  p2p
+/// </summary>
+,
+/// <summary>
+///  pace
+/// </summary>
+,
+/// <summary>
+///  pacemaker
+/// </summary>
+,
+/// <summary>
+///  package
+/// </summary>
+,
+/// <summary>
+///  package_2
+/// </summary>
+,
+/// <summary>
+///  padding
+/// </summary>
+,
+/// <summary>
+///  padel
+/// </summary>
+,
+/// <summary>
+///  page_control
+/// </summary>
+,
+/// <summary>
+///  page_footer
+/// </summary>
+,
+/// <summary>
+///  page_header
+/// </summary>
+,
+/// <summary>
+///  page_info
+/// </summary>
+,
+/// <summary>
+///  page_menu_ios
+/// </summary>
+,
+/// <summary>
+///  pageless
+/// </summary>
+,
+/// <summary>
+///  pages
+/// </summary>
+,
+/// <summary>
+///  pageview
+/// </summary>
+,
+/// <summary>
+///  paid
+/// </summary>
+,
     /// <summary>
-    /// outlign
-    /// </summary>
-    Outlign,
-    /// <summary>
-    /// oval_h
-    /// </summary>
-    OvalH,
-    /// <summary>
-    /// oval_v
-    /// </summary>
-    OvalV,
-    /// <summary>
-    /// palette
+    ///  palette
     /// </summary>
     Palette,
+/// <summary>
+///  pallet
+/// </summary>
+,
     /// <summary>
-    /// pan_tool
+    ///  pan_tool
     /// </summary>
     PanTool,
     /// <summary>
-    /// pan_tool_alt
+    ///  pan_tool_alt
     /// </summary>
     PanToolAlt,
+/// <summary>
+///  pan_zoom
+/// </summary>
+,
     /// <summary>
-    /// panorama
+    ///  panorama
     /// </summary>
     Panorama,
     /// <summary>
-    /// panorama_fish_eye
-    /// </summary>
-    PanoramaFishEye,
-    /// <summary>
-    /// panorama_horizontal
+    ///  panorama_horizontal
     /// </summary>
     PanoramaHorizontal,
     /// <summary>
-    /// panorama_photosphere
+    ///  panorama_photosphere
     /// </summary>
     PanoramaPhotosphere,
     /// <summary>
-    /// panorama_vertical
+    ///  panorama_vertical
     /// </summary>
     PanoramaVertical,
     /// <summary>
-    /// panorama_wide_angle
+    ///  panorama_wide_angle
     /// </summary>
     PanoramaWideAngle,
+/// <summary>
+///  paragliding
+/// </summary>
+,
+/// <summary>
+///  parent_child_dining
+/// </summary>
+,
     /// <summary>
-    /// park
+    ///  park
     /// </summary>
     Park,
+/// <summary>
+///  parking_meter
+/// </summary>
+,
+/// <summary>
+///  parking_sign
+/// </summary>
+,
+/// <summary>
+///  parking_valet
+/// </summary>
+,
+/// <summary>
+///  partly_cloudy_day
+/// </summary>
+,
+/// <summary>
+///  partly_cloudy_night
+/// </summary>
+,
+/// <summary>
+///  partner_exchange
+/// </summary>
+,
+/// <summary>
+///  partner_heart
+/// </summary>
+,
     /// <summary>
-    /// parking
-    /// </summary>
-    Parking,
-    /// <summary>
-    /// part_deselector
-    /// </summary>
-    PartDeselector,
-    /// <summary>
-    /// part_selector
-    /// </summary>
-    PartSelector,
-    /// <summary>
-    /// partner_reports
+    ///  partner_reports
     /// </summary>
     PartnerReports,
     /// <summary>
-    /// party_mode
+    ///  party_mode
     /// </summary>
     PartyMode,
+/// <summary>
+///  passkey
+/// </summary>
+,
+/// <summary>
+///  password
+/// </summary>
+,
+/// <summary>
+///  password_2
+/// </summary>
+,
+/// <summary>
+///  password_2_off
+/// </summary>
+,
+/// <summary>
+///  patient_list
+/// </summary>
+,
     /// <summary>
-    /// pattern
+    ///  pattern
     /// </summary>
     Pattern,
+/// <summary>
+///  pause
+/// </summary>
+,
+/// <summary>
+///  pause_circle
+/// </summary>
+,
+/// <summary>
+///  pause_presentation
+/// </summary>
+,
+/// <summary>
+///  payment_arrow_down
+/// </summary>
+,
+/// <summary>
+///  payment_card
+/// </summary>
+,
+/// <summary>
+///  payments
+/// </summary>
+,
+/// <summary>
+///  pedal_bike
+/// </summary>
+,
     /// <summary>
-    /// pay_to_play
-    /// </summary>
-    PayToPlay,
-    /// <summary>
-    /// payment
-    /// </summary>
-    Payment,
-    /// <summary>
-    /// payment_bank
-    /// </summary>
-    PaymentBank,
-    /// <summary>
-    /// payments
-    /// </summary>
-    Payments,
-    /// <summary>
-    /// pediatrics
+    ///  pediatrics
     /// </summary>
     Pediatrics,
     /// <summary>
-    /// pedestrian_traffic_light
-    /// </summary>
-    PedestrianTrafficLight,
-    /// <summary>
-    /// pen_size_1
+    ///  pen_size_1
     /// </summary>
     PenSize1,
     /// <summary>
-    /// pen_size_2
+    ///  pen_size_2
     /// </summary>
     PenSize2,
     /// <summary>
-    /// pen_size_3
+    ///  pen_size_3
     /// </summary>
     PenSize3,
     /// <summary>
-    /// pen_size_4
+    ///  pen_size_4
     /// </summary>
     PenSize4,
     /// <summary>
-    /// pen_size_5
+    ///  pen_size_5
     /// </summary>
     PenSize5,
     /// <summary>
-    /// pending
+    ///  pending
     /// </summary>
     Pending,
     /// <summary>
-    /// pending_actions
+    ///  pending_actions
     /// </summary>
     PendingActions,
+/// <summary>
+///  pentagon
+/// </summary>
+,
+/// <summary>
+///  percent
+/// </summary>
+,
+/// <summary>
+///  percent_discount
+/// </summary>
+,
+/// <summary>
+///  pergola
+/// </summary>
+,
+/// <summary>
+///  perm_camera_mic
+/// </summary>
+,
+/// <summary>
+///  perm_contact_calendar
+/// </summary>
+,
+/// <summary>
+///  perm_data_setting
+/// </summary>
+,
+/// <summary>
+///  perm_media
+/// </summary>
+,
+/// <summary>
+///  perm_phone_msg
+/// </summary>
+,
+/// <summary>
+///  perm_scan_wifi
+/// </summary>
+,
+/// <summary>
+///  person
+/// </summary>
+,
+/// <summary>
+///  person_2
+/// </summary>
+,
+/// <summary>
+///  person_3
+/// </summary>
+,
+/// <summary>
+///  person_4
+/// </summary>
+,
+/// <summary>
+///  person_add
+/// </summary>
+,
+/// <summary>
+///  person_add_disabled
+/// </summary>
+,
+/// <summary>
+///  person_alert
+/// </summary>
+,
+/// <summary>
+///  person_apron
+/// </summary>
+,
+/// <summary>
+///  person_book
+/// </summary>
+,
+/// <summary>
+///  person_cancel
+/// </summary>
+,
+/// <summary>
+///  person_celebrate
+/// </summary>
+,
+/// <summary>
+///  person_check
+/// </summary>
+,
+/// <summary>
+///  person_edit
+/// </summary>
+,
+/// <summary>
+///  person_heart
+/// </summary>
+,
+/// <summary>
+///  person_off
+/// </summary>
+,
+/// <summary>
+///  person_pin
+/// </summary>
+,
+/// <summary>
+///  person_pin_circle
+/// </summary>
+,
+/// <summary>
+///  person_play
+/// </summary>
+,
+/// <summary>
+///  person_raised_hand
+/// </summary>
+,
+/// <summary>
+///  person_remove
+/// </summary>
+,
+/// <summary>
+///  person_search
+/// </summary>
+,
+/// <summary>
+///  person_shield
+/// </summary>
+,
+/// <summary>
+///  personal_bag
+/// </summary>
+,
+/// <summary>
+///  personal_bag_off
+/// </summary>
+,
+/// <summary>
+///  personal_bag_question
+/// </summary>
+,
+/// <summary>
+///  personal_injury
+/// </summary>
+,
+/// <summary>
+///  personal_places
+/// </summary>
+,
+/// <summary>
+///  pest_control
+/// </summary>
+,
+/// <summary>
+///  pest_control_rodent
+/// </summary>
+,
+/// <summary>
+///  pet_supplies
+/// </summary>
+,
     /// <summary>
-    /// pet_supplies
-    /// </summary>
-    PetSupplies,
-    /// <summary>
-    /// pets
+    ///  pets
     /// </summary>
     Pets,
+/// <summary>
+///  phishing
+/// </summary>
+,
+/// <summary>
+///  phone_bluetooth_speaker
+/// </summary>
+,
+/// <summary>
+///  phone_callback
+/// </summary>
+,
     /// <summary>
-    /// ph
-    /// </summary>
-    Ph,
-    /// <summary>
-    /// phone_disabled
+    ///  phone_disabled
     /// </summary>
     PhoneDisabled,
     /// <summary>
-    /// phone_enabled
+    ///  phone_enabled
     /// </summary>
     PhoneEnabled,
+/// <summary>
+///  phone_forwarded
+/// </summary>
+,
+/// <summary>
+///  phone_in_talk
+/// </summary>
+,
     /// <summary>
-    /// phone_in_talk
-    /// </summary>
-    PhoneInTalk,
-    /// <summary>
-    /// phone_iphone
-    /// </summary>
-    PhoneIphone,
-    /// <summary>
-    /// phone_locked
+    ///  phone_locked
     /// </summary>
     PhoneLocked,
     /// <summary>
-    /// phone_missed
+    ///  phone_missed
     /// </summary>
     PhoneMissed,
     /// <summary>
-    /// phone_paused
+    ///  phone_paused
     /// </summary>
     PhonePaused,
+/// <summary>
+///  photo
+/// </summary>
+,
     /// <summary>
-    /// photo_album
+    ///  photo_album
     /// </summary>
     PhotoAlbum,
+/// <summary>
+///  photo_auto_merge
+/// </summary>
+,
     /// <summary>
-    /// photo_auto_play
-    /// </summary>
-    PhotoAutoPlay,
-    /// <summary>
-    /// photo_camera
+    ///  photo_camera
     /// </summary>
     PhotoCamera,
     /// <summary>
-    /// photo_camera_back
+    ///  photo_camera_back
     /// </summary>
     PhotoCameraBack,
     /// <summary>
-    /// photo_camera_front
+    ///  photo_camera_front
     /// </summary>
     PhotoCameraFront,
     /// <summary>
-    /// photo_frame
+    ///  photo_frame
     /// </summary>
     PhotoFrame,
+/// <summary>
+///  photo_library
+/// </summary>
+,
+/// <summary>
+///  photo_prints
+/// </summary>
+,
     /// <summary>
-    /// photo_size_select_actual
-    /// </summary>
-    PhotoSizeSelectActual,
-    /// <summary>
-    /// photo_size_select_large
+    ///  photo_size_select_large
     /// </summary>
     PhotoSizeSelectLarge,
     /// <summary>
-    /// photo_size_select_small
+    ///  photo_size_select_small
     /// </summary>
     PhotoSizeSelectSmall,
+/// <summary>
+///  php
+/// </summary>
+,
+/// <summary>
+///  physical_therapy
+/// </summary>
+,
     /// <summary>
-    /// piano
+    ///  piano
     /// </summary>
     Piano,
     /// <summary>
-    /// piano_off
+    ///  piano_off
     /// </summary>
     PianoOff,
+/// <summary>
+///  pickleball
+/// </summary>
+,
+/// <summary>
+///  picture_as_pdf
+/// </summary>
+,
     /// <summary>
-    /// picture_in_picture
+    ///  picture_in_picture
     /// </summary>
     PictureInPicture,
     /// <summary>
-    /// picture_in_picture_alt
+    ///  picture_in_picture_alt
     /// </summary>
     PictureInPictureAlt,
+/// <summary>
+///  picture_in_picture_center
+/// </summary>
+,
+/// <summary>
+///  picture_in_picture_large
+/// </summary>
+,
+/// <summary>
+///  picture_in_picture_medium
+/// </summary>
+,
+/// <summary>
+///  picture_in_picture_mobile
+/// </summary>
+,
+/// <summary>
+///  picture_in_picture_off
+/// </summary>
+,
+/// <summary>
+///  picture_in_picture_small
+/// </summary>
+,
     /// <summary>
-    /// picture_in_picture_off
-    /// </summary>
-    PictureInPictureOff,
-    /// <summary>
-    /// pie_chart
+    ///  pie_chart
     /// </summary>
     PieChart,
     /// <summary>
-    /// pie_chart_with_channel
-    /// </summary>
-    PieChartWithChannel,
-    /// <summary>
-    /// pill
+    ///  pill
     /// </summary>
     Pill,
     /// <summary>
-    /// pill_off
+    ///  pill_off
     /// </summary>
     PillOff,
     /// <summary>
-    /// pin
+    ///  pin
     /// </summary>
     Pin,
     /// <summary>
-    /// pin_drop
+    ///  pin_drop
     /// </summary>
     PinDrop,
     /// <summary>
-    /// pin_end
+    ///  pin_end
     /// </summary>
     PinEnd,
     /// <summary>
-    /// pin_invoke
+    ///  pin_invoke
     /// </summary>
     PinInvoke,
+/// <summary>
+///  pinboard
+/// </summary>
+,
+/// <summary>
+///  pinboard_unread
+/// </summary>
+,
     /// <summary>
-    /// pinch
+    ///  pinch
     /// </summary>
     Pinch,
     /// <summary>
-    /// pinch_zoom_in
+    ///  pinch_zoom_in
     /// </summary>
     PinchZoomIn,
     /// <summary>
-    /// pinch_zoom_out
+    ///  pinch_zoom_out
     /// </summary>
     PinchZoomOut,
+/// <summary>
+///  pip
+/// </summary>
+,
+/// <summary>
+///  pip_exit
+/// </summary>
+,
     /// <summary>
-    /// pivot_table_chart
+    ///  pivot_table_chart
     /// </summary>
     PivotTableChart,
     /// <summary>
-    /// pixel_3a
-    /// </summary>
-    Pixel3a,
-    /// <summary>
-    /// place_item
+    ///  place_item
     /// </summary>
     PlaceItem,
+/// <summary>
+///  plagiarism
+/// </summary>
+,
+/// <summary>
+///  plane_contrails
+/// </summary>
+,
+/// <summary>
+///  planet
+/// </summary>
+,
+/// <summary>
+///  planner_banner_ad_pt
+/// </summary>
+,
+/// <summary>
+///  planner_review
+/// </summary>
+,
+/// <summary>
+///  play_arrow
+/// </summary>
+,
+/// <summary>
+///  play_circle
+/// </summary>
+,
+/// <summary>
+///  play_disabled
+/// </summary>
+,
+/// <summary>
+///  play_for_work
+/// </summary>
+,
     /// <summary>
-    /// play_circle
-    /// </summary>
-    PlayCircle,
-    /// <summary>
-    /// play_lesson
+    ///  play_lesson
     /// </summary>
     PlayLesson,
+/// <summary>
+///  play_pause
+/// </summary>
+,
+/// <summary>
+///  playground
+/// </summary>
+,
+/// <summary>
+///  playground_2
+/// </summary>
+,
+/// <summary>
+///  playing_cards
+/// </summary>
+,
     /// <summary>
-    /// play_shapes
-    /// </summary>
-    PlayShapes,
-    /// <summary>
-    /// playlist_add
+    ///  playlist_add
     /// </summary>
     PlaylistAdd,
     /// <summary>
-    /// playlist_add_check
+    ///  playlist_add_check
     /// </summary>
     PlaylistAddCheck,
     /// <summary>
-    /// playlist_add_check_circle
+    ///  playlist_add_check_circle
     /// </summary>
     PlaylistAddCheckCircle,
     /// <summary>
-    /// playlist_add_circle
+    ///  playlist_add_circle
     /// </summary>
     PlaylistAddCircle,
     /// <summary>
-    /// playlist_play
+    ///  playlist_play
     /// </summary>
     PlaylistPlay,
     /// <summary>
-    /// playlist_remove
+    ///  playlist_remove
     /// </summary>
     PlaylistRemove,
+/// <summary>
+///  plug_connect
+/// </summary>
+,
+/// <summary>
+///  plumbing
+/// </summary>
+,
+/// <summary>
+///  podcasts
+/// </summary>
+,
     /// <summary>
-    /// podiatry
+    ///  podiatry
     /// </summary>
     Podiatry,
     /// <summary>
-    /// podium
+    ///  podium
     /// </summary>
     Podium,
     /// <summary>
-    /// point_of_sale
+    ///  point_of_sale
     /// </summary>
     PointOfSale,
     /// <summary>
-    /// point_scan
+    ///  point_scan
     /// </summary>
     PointScan,
     /// <summary>
-    /// poker_chip
+    ///  poker_chip
     /// </summary>
     PokerChip,
+/// <summary>
+///  policy
+/// </summary>
+,
+/// <summary>
+///  policy_alert
+/// </summary>
+,
+/// <summary>
+///  polyline
+/// </summary>
+,
     /// <summary>
-    /// pollination
-    /// </summary>
-    Pollination,
-    /// <summary>
-    /// polymer
+    ///  polymer
     /// </summary>
     Polymer,
     /// <summary>
-    /// pool
+    ///  pool
     /// </summary>
     Pool,
     /// <summary>
-    /// portable_wifi_off
+    ///  portable_wifi_off
     /// </summary>
     PortableWifiOff,
+/// <summary>
+///  position_bottom_left
+/// </summary>
+,
+/// <summary>
+///  position_bottom_right
+/// </summary>
+,
+/// <summary>
+///  position_top_right
+/// </summary>
+,
     /// <summary>
-    /// post
+    ///  post
     /// </summary>
     Post,
     /// <summary>
-    /// postage
-    /// </summary>
-    Postage,
-    /// <summary>
-    /// post_add
+    ///  post_add
     /// </summary>
     PostAdd,
+/// <summary>
+///  potted_plant
+/// </summary>
+,
     /// <summary>
-    /// podcast_notes
-    /// </summary>
-    PodcastNotes,
-    /// <summary>
-    /// pothole
-    /// </summary>
-    Pothole,
-    /// <summary>
-    /// power
+    ///  power
     /// </summary>
     Power,
     /// <summary>
-    /// power_input
+    ///  power_input
     /// </summary>
     PowerInput,
     /// <summary>
-    /// power_off
+    ///  power_off
     /// </summary>
     PowerOff,
+/// <summary>
+///  power_settings_circle
+/// </summary>
+,
     /// <summary>
-    /// power_settings_new
+    ///  power_settings_new
     /// </summary>
     PowerSettingsNew,
+/// <summary>
+///  prayer_times
+/// </summary>
+,
     /// <summary>
-    /// precipitation
-    /// </summary>
-    Precipitation,
-    /// <summary>
-    /// precision_manufacturing
+    ///  precision_manufacturing
     /// </summary>
     PrecisionManufacturing,
     /// <summary>
-    /// pregnancy
+    ///  pregnancy
     /// </summary>
     Pregnancy,
+/// <summary>
+///  pregnant_woman
+/// </summary>
+,
+/// <summary>
+///  preliminary
+/// </summary>
+,
+/// <summary>
+///  prescriptions
+/// </summary>
+,
+/// <summary>
+///  present_to_all
+/// </summary>
+,
+/// <summary>
+///  preview
+/// </summary>
+,
+/// <summary>
+///  preview_off
+/// </summary>
+,
+/// <summary>
+///  price_change
+/// </summary>
+,
+/// <summary>
+///  price_check
+/// </summary>
+,
+/// <summary>
+///  print
+/// </summary>
+,
     /// <summary>
-    /// pressure
-    /// </summary>
-    Pressure,
-    /// <summary>
-    /// pressure_alt
-    /// </summary>
-    PressureAlt,
-    /// <summary>
-    /// pretty_mode
-    /// </summary>
-    PrettyMode,
-    /// <summary>
-    /// print_add
+    ///  print_add
     /// </summary>
     PrintAdd,
+/// <summary>
+///  print_connect
+/// </summary>
+,
     /// <summary>
-    /// print_disabled
+    ///  print_disabled
     /// </summary>
     PrintDisabled,
     /// <summary>
-    /// print_error
+    ///  print_error
     /// </summary>
     PrintError,
+/// <summary>
+///  print_lock
+/// </summary>
+,
     /// <summary>
-    /// priority
+    ///  priority
     /// </summary>
     Priority,
     /// <summary>
-    /// priority_high
+    ///  priority_high
     /// </summary>
     PriorityHigh,
+/// <summary>
+///  privacy
+/// </summary>
+,
     /// <summary>
-    /// privacy_screen
-    /// </summary>
-    PrivacyScreen,
-    /// <summary>
-    /// privacy_screen_off
-    /// </summary>
-    PrivacyScreenOff,
-    /// <summary>
-    /// privacy_tip
+    ///  privacy_tip
     /// </summary>
     PrivacyTip,
     /// <summary>
-    /// private_connectivity
+    ///  private_connectivity
     /// </summary>
     PrivateConnectivity,
+/// <summary>
+///  problem
+/// </summary>
+,
+/// <summary>
+///  procedure
+/// </summary>
+,
+/// <summary>
+///  process_chart
+/// </summary>
+,
+/// <summary>
+///  production_quantity_limits
+/// </summary>
+,
     /// <summary>
-    /// productivity
+    ///  productivity
     /// </summary>
     Productivity,
     /// <summary>
-    /// progress_activity
+    ///  progress_activity
     /// </summary>
     ProgressActivity,
+/// <summary>
+///  prompt_suggestion
+/// </summary>
+,
+/// <summary>
+///  propane
+/// </summary>
+,
+/// <summary>
+///  propane_tank
+/// </summary>
+,
+/// <summary>
+///  psychiatry
+/// </summary>
+,
+/// <summary>
+///  psychology
+/// </summary>
+,
+/// <summary>
+///  psychology_alt
+/// </summary>
+,
+/// <summary>
+///  public
+/// </summary>
+,
+/// <summary>
+///  public_off
+/// </summary>
+,
+/// <summary>
+///  publish
+/// </summary>
+,
+/// <summary>
+///  published_with_changes
+/// </summary>
+,
+/// <summary>
+///  pulmonology
+/// </summary>
+,
     /// <summary>
-    /// progress_check
-    /// </summary>
-    ProgressCheck,
-    /// <summary>
-    /// progress_help
-    /// </summary>
-    ProgressHelp,
-    /// <summary>
-    /// progress_star
-    /// </summary>
-    ProgressStar,
-    /// <summary>
-    /// promissory_note
-    /// </summary>
-    PromissoryNote,
-    /// <summary>
-    /// proud_trademark
-    /// </summary>
-    ProudTrademark,
-    /// <summary>
-    /// pulse_alert
+    ///  pulse_alert
     /// </summary>
     PulseAlert,
+/// <summary>
+///  punch_clock
+/// </summary>
+,
+/// <summary>
+///  qr_code
+/// </summary>
+,
+/// <summary>
+///  qr_code_2
+/// </summary>
+,
+/// <summary>
+///  qr_code_2_add
+/// </summary>
+,
+/// <summary>
+///  qr_code_scanner
+/// </summary>
+,
     /// <summary>
-    /// pulse_ring
-    /// </summary>
-    PulseRing,
-    /// <summary>
-    /// pump
-    /// </summary>
-    Pump,
-    /// <summary>
-    /// pumpkin
-    /// </summary>
-    Pumpkin,
-    /// <summary>
-    /// quarantine
-    /// </summary>
-    Quarantine,
-    /// <summary>
-    /// quarantine_off
-    /// </summary>
-    QuarantineOff,
-    /// <summary>
-    /// query_stats
+    ///  query_stats
     /// </summary>
     QueryStats,
     /// <summary>
-    /// question_answer
-    /// </summary>
-    QuestionAnswer,
-    /// <summary>
-    /// question_exchange
+    ///  question_exchange
     /// </summary>
     QuestionExchange,
     /// <summary>
-    /// question_mark
+    ///  question_mark
     /// </summary>
     QuestionMark,
+/// <summary>
+///  queue_music
+/// </summary>
+,
     /// <summary>
-    /// queue_play_next
+    ///  queue_play_next
     /// </summary>
     QueuePlayNext,
+/// <summary>
+///  quick_phrases
+/// </summary>
+,
+/// <summary>
+///  quick_reference
+/// </summary>
+,
     /// <summary>
-    /// quick_reorder
-    /// </summary>
-    QuickReorder,
-    /// <summary>
-    /// quick_reference_all
+    ///  quick_reference_all
     /// </summary>
     QuickReferenceAll,
+/// <summary>
+///  quick_reorder
+/// </summary>
+,
     /// <summary>
-    /// quick_reference_plus
-    /// </summary>
-    QuickReferencePlus,
-    /// <summary>
-    /// quickreply
+    ///  quickreply
     /// </summary>
     Quickreply,
+/// <summary>
+///  quiz
+/// </summary>
+,
+/// <summary>
+///  r_mobiledata
+/// </summary>
+,
+/// <summary>
+///  radar
+/// </summary>
+,
     /// <summary>
-    /// quilt
-    /// </summary>
-    Quilt,
-    /// <summary>
-    /// aqi_high
-    /// </summary>
-    AqiHigh,
-    /// <summary>
-    /// aqi_low
-    /// </summary>
-    AqiLow,
-    /// <summary>
-    /// aqi_medium
-    /// </summary>
-    AqiMedium,
-    /// <summary>
-    /// aqi_sulfur_dioxide
-    /// </summary>
-    AqiSulfurDioxide,
-    /// <summary>
-    /// aqi_thermometer
-    /// </summary>
-    AqiThermometer,
-    /// <summary>
-    /// aqi_trace
-    /// </summary>
-    AqiTrace,
-    /// <summary>
-    /// rabbit
-    /// </summary>
-    Rabbit,
-    /// <summary>
-    /// radar
-    /// </summary>
-    Radar,
-    /// <summary>
-    /// radio
+    ///  radio
     /// </summary>
     Radio,
     /// <summary>
-    /// radio_button_checked
+    ///  radio_button_checked
     /// </summary>
     RadioButtonChecked,
+/// <summary>
+///  radio_button_partial
+/// </summary>
+,
     /// <summary>
-    /// radio_button_unchecked
+    ///  radio_button_unchecked
     /// </summary>
     RadioButtonUnchecked,
     /// <summary>
-    /// radiology
+    ///  radiology
     /// </summary>
     Radiology,
+/// <summary>
+///  railway_alert
+/// </summary>
+,
+/// <summary>
+///  railway_alert_2
+/// </summary>
+,
+/// <summary>
+///  rainy
+/// </summary>
+,
+/// <summary>
+///  rainy_heavy
+/// </summary>
+,
     /// <summary>
-    /// rainy_light
+    ///  rainy_light
     /// </summary>
     RainyLight,
+/// <summary>
+///  rainy_snow
+/// </summary>
+,
+/// <summary>
+///  ramen_dining
+/// </summary>
+,
+/// <summary>
+///  ramp_left
+/// </summary>
+,
+/// <summary>
+///  ramp_right
+/// </summary>
+,
     /// <summary>
-    /// rainy_strong
-    /// </summary>
-    RainyStrong,
-    /// <summary>
-    /// rainy_weather
-    /// </summary>
-    RainyWeather,
-    /// <summary>
-    /// ram
-    /// </summary>
-    Ram,
-    /// <summary>
-    /// ram_2
-    /// </summary>
-    Ram2,
-    /// <summary>
-    /// range_hood
+    ///  range_hood
     /// </summary>
     RangeHood,
     /// <summary>
-    /// raster
-    /// </summary>
-    Raster,
-    /// <summary>
-    /// raster_off
-    /// </summary>
-    RasterOff,
-    /// <summary>
-    /// rate_review
+    ///  rate_review
     /// </summary>
     RateReview,
+/// <summary>
+///  raven
+/// </summary>
+,
+/// <summary>
+///  raw_off
+/// </summary>
+,
+/// <summary>
+///  raw_on
+/// </summary>
+,
+/// <summary>
+///  read_more
+/// </summary>
+,
+/// <summary>
+///  readiness_score
+/// </summary>
+,
+/// <summary>
+///  real_estate_agent
+/// </summary>
+,
+/// <summary>
+///  rear_camera
+/// </summary>
+,
+/// <summary>
+///  rebase
+/// </summary>
+,
+/// <summary>
+///  rebase_edit
+/// </summary>
+,
+/// <summary>
+///  receipt
+/// </summary>
+,
     /// <summary>
-    /// reading_room
-    /// </summary>
-    ReadingRoom,
-    /// <summary>
-    /// receipt_long
+    ///  receipt_long
     /// </summary>
     ReceiptLong,
+/// <summary>
+///  receipt_long_off
+/// </summary>
+,
     /// <summary>
-    /// recent_actors
+    ///  recent_actors
     /// </summary>
     RecentActors,
     /// <summary>
-    /// recent_patient
+    ///  recent_patient
     /// </summary>
     RecentPatient,
+/// <summary>
+///  recenter
+/// </summary>
+,
     /// <summary>
-    /// recommended
+    ///  recommend
     /// </summary>
     Recommended,
     /// <summary>
-    /// record_voice_over
+    ///  record_voice_over
     /// </summary>
     RecordVoiceOver,
     /// <summary>
-    /// rectangle
+    ///  rectangle
     /// </summary>
     Rectangle,
     /// <summary>
-    /// recycler
-    /// </summary>
-    Recycler,
-    /// <summary>
-    /// recycling
+    ///  recycling
     /// </summary>
     Recycling,
     /// <summary>
-    /// redeem
+    ///  redeem
     /// </summary>
     Redeem,
     /// <summary>
-    /// redo
+    ///  redo
     /// </summary>
     Redo,
+/// <summary>
+///  reduce_capacity
+/// </summary>
+,
     /// <summary>
-    /// refresh
+    ///  refresh
     /// </summary>
     Refresh,
+/// <summary>
+///  regular_expression
+/// </summary>
+,
+/// <summary>
+///  relax
+/// </summary>
+,
     /// <summary>
-    /// relationship
-    /// </summary>
-    Relationship,
-    /// <summary>
-    /// release_alert
+    ///  release_alert
     /// </summary>
     ReleaseAlert,
+/// <summary>
+///  remember_me
+/// </summary>
+,
+/// <summary>
+///  reminder
+/// </summary>
+,
+/// <summary>
+///  remote_gen
+/// </summary>
+,
+/// <summary>
+///  remove
+/// </summary>
+,
+/// <summary>
+///  remove_done
+/// </summary>
+,
+/// <summary>
+///  remove_from_queue
+/// </summary>
+,
+/// <summary>
+///  remove_moderator
+/// </summary>
+,
+/// <summary>
+///  remove_road
+/// </summary>
+,
+/// <summary>
+///  remove_selection
+/// </summary>
+,
+/// <summary>
+///  remove_shopping_cart
+/// </summary>
+,
+/// <summary>
+///  reopen_window
+/// </summary>
+,
     /// <summary>
-    /// reorder
+    ///  reorder
     /// </summary>
     Reorder,
+/// <summary>
+///  repartition
+/// </summary>
+,
+/// <summary>
+///  repeat
+/// </summary>
+,
+/// <summary>
+///  repeat_on
+/// </summary>
+,
+/// <summary>
+///  repeat_one
+/// </summary>
+,
+/// <summary>
+///  repeat_one_on
+/// </summary>
+,
+/// <summary>
+///  replace_audio
+/// </summary>
+,
+/// <summary>
+///  replace_image
+/// </summary>
+,
+/// <summary>
+///  replace_video
+/// </summary>
+,
+/// <summary>
+///  replay
+/// </summary>
+,
+/// <summary>
+///  replay_10
+/// </summary>
+,
+/// <summary>
+///  replay_30
+/// </summary>
+,
+/// <summary>
+///  replay_5
+/// </summary>
+,
+/// <summary>
+///  reply
+/// </summary>
+,
+/// <summary>
+///  reply_all
+/// </summary>
+,
     /// <summary>
-    /// rearrange
-    /// </summary>
-    Rearrange,
-    /// <summary>
-    /// report
+    ///  report
     /// </summary>
     Report,
     /// <summary>
-    /// report_off
+    ///  report_off
     /// </summary>
     ReportOff,
+/// <summary>
+///  request_page
+/// </summary>
+,
     /// <summary>
-    /// request_quote
+    ///  request_quote
     /// </summary>
     RequestQuote,
+/// <summary>
+///  reset_brightness
+/// </summary>
+,
+/// <summary>
+///  reset_exposure
+/// </summary>
+,
+/// <summary>
+///  reset_focus
+/// </summary>
+,
+/// <summary>
+///  reset_image
+/// </summary>
+,
+/// <summary>
+///  reset_iso
+/// </summary>
+,
+/// <summary>
+///  reset_settings
+/// </summary>
+,
+/// <summary>
+///  reset_shadow
+/// </summary>
+,
+/// <summary>
+///  reset_shutter_speed
+/// </summary>
+,
+/// <summary>
+///  reset_tv
+/// </summary>
+,
+/// <summary>
+///  reset_white_balance
+/// </summary>
+,
+/// <summary>
+///  reset_wrench
+/// </summary>
+,
     /// <summary>
-    /// rescue
-    /// </summary>
-    Rescue,
-    /// <summary>
-    /// reservation_private
-    /// </summary>
-    ReservationPrivate,
-    /// <summary>
-    /// reservation_private_off
-    /// </summary>
-    ReservationPrivateOff,
-    /// <summary>
-    /// resize
+    ///  resize
     /// </summary>
     Resize,
+/// <summary>
+///  respiratory_rate
+/// </summary>
+,
     /// <summary>
-    /// responsive_layout
+    ///  responsive_layout
     /// </summary>
     ResponsiveLayout,
+/// <summary>
+///  rest_area
+/// </summary>
+,
+/// <summary>
+///  restart_alt
+/// </summary>
+,
+/// <summary>
+///  restaurant
+/// </summary>
+,
     /// <summary>
-    /// restore
-    /// </summary>
-    Restore,
-    /// <summary>
-    /// restore_from_trash
+    ///  restore_from_trash
     /// </summary>
     RestoreFromTrash,
     /// <summary>
-    /// restore_page
+    ///  restore_page
     /// </summary>
     RestorePage,
+/// <summary>
+///  resume
+/// </summary>
+,
     /// <summary>
-    /// reviews
+    ///  reviews
     /// </summary>
     Reviews,
+/// <summary>
+///  rewarded_ads
+/// </summary>
+,
+/// <summary>
+///  rheumatology
+/// </summary>
+,
+/// <summary>
+///  rib_cage
+/// </summary>
+,
+/// <summary>
+///  rice_bowl
+/// </summary>
+,
+/// <summary>
+///  right_click
+/// </summary>
+,
+/// <summary>
+///  right_panel_close
+/// </summary>
+,
+/// <summary>
+///  right_panel_open
+/// </summary>
+,
     /// <summary>
-    /// reward
-    /// </summary>
-    Reward,
-    /// <summary>
-    /// reward_circ
-    /// </summary>
-    RewardCirc,
-    /// <summary>
-    /// ring_volume
+    ///  ring_volume
     /// </summary>
     RingVolume,
+/// <summary>
+///  ripples
+/// </summary>
+,
+/// <summary>
+///  road
+/// </summary>
+,
     /// <summary>
-    /// robot
+    ///  robot
     /// </summary>
     Robot,
     /// <summary>
-    /// robot_2
+    ///  robot_2
     /// </summary>
     Robot2,
     /// <summary>
-    /// rocket
+    ///  rocket
     /// </summary>
     Rocket,
     /// <summary>
-    /// rocket_launch
+    ///  rocket_launch
     /// </summary>
     RocketLaunch,
     /// <summary>
-    /// rodent
+    ///  roller_shades
     /// </summary>
     Rodent,
+/// <summary>
+///  roller_shades_closed
+/// </summary>
+,
+/// <summary>
+///  roller_skating
+/// </summary>
+,
     /// <summary>
-    /// roofing
+    ///  roofing
     /// </summary>
     Roofing,
     /// <summary>
-    /// room_preferences
+    ///  room_preferences
     /// </summary>
     RoomPreferences,
+/// <summary>
+///  room_service
+/// </summary>
+,
+/// <summary>
+///  rotate_90_degrees_ccw
+/// </summary>
+,
+/// <summary>
+///  rotate_90_degrees_cw
+/// </summary>
+,
+/// <summary>
+///  rotate_auto
+/// </summary>
+,
     /// <summary>
-    /// rotate_left
+    ///  rotate_left
     /// </summary>
     RotateLeft,
     /// <summary>
-    /// rotate_right
+    ///  rotate_right
     /// </summary>
     RotateRight,
+/// <summary>
+///  roundabout_left
+/// </summary>
+,
+/// <summary>
+///  roundabout_right
+/// </summary>
+,
+/// <summary>
+///  rounded_corner
+/// </summary>
+,
+/// <summary>
+///  route
+/// </summary>
+,
     /// <summary>
-    /// roti_maker
-    /// </summary>
-    RotiMaker,
-    /// <summary>
-    /// router
+    ///  router
     /// </summary>
     Router,
+/// <summary>
+///  router_off
+/// </summary>
+,
+/// <summary>
+///  routine
+/// </summary>
+,
+/// <summary>
+///  rowing
+/// </summary>
+,
+/// <summary>
+///  rss_feed
+/// </summary>
+,
     /// <summary>
-    /// routine
-    /// </summary>
-    Routine,
-    /// <summary>
-    /// routine_off
-    /// </summary>
-    RoutineOff,
-    /// <summary>
-    /// rsvp
+    ///  rsvp
     /// </summary>
     Rsvp,
     /// <summary>
-    /// rtt
+    ///  rtt
     /// </summary>
     Rtt,
+/// <summary>
+///  rubric
+/// </summary>
+,
+/// <summary>
+///  rule
+/// </summary>
+,
+/// <summary>
+///  rule_folder
+/// </summary>
+,
+/// <summary>
+///  rule_settings
+/// </summary>
+,
+/// <summary>
+///  run_circle
+/// </summary>
+,
+/// <summary>
+///  running_with_errors
+/// </summary>
+,
+/// <summary>
+///  rv_hookup
+/// </summary>
+,
     /// <summary>
-    /// run_circle
-    /// </summary>
-    RunCircle,
-    /// <summary>
-    /// rural
-    /// </summary>
-    Rural,
-    /// <summary>
-    /// rural_road
-    /// </summary>
-    RuralRoad,
-    /// <summary>
-    /// sad
-    /// </summary>
-    Sad,
-    /// <summary>
-    /// safety_check
+    ///  safety_check
     /// </summary>
     SafetyCheck,
+/// <summary>
+///  safety_check_off
+/// </summary>
+,
     /// <summary>
-    /// safety_divider
+    ///  safety_divider
     /// </summary>
     SafetyDivider,
     /// <summary>
-    /// sailing
+    ///  sailing
     /// </summary>
     Sailing,
+/// <summary>
+///  salinity
+/// </summary>
+,
     /// <summary>
-    /// salad
-    /// </summary>
-    Salad,
-    /// <summary>
-    /// sanitizer
+    ///  sanitizer
     /// </summary>
     Sanitizer,
     /// <summary>
-    /// satellite
+    ///  satellite
     /// </summary>
     Satellite,
     /// <summary>
-    /// satellite_alt
+    ///  satellite_alt
     /// </summary>
     SatelliteAlt,
+/// <summary>
+///  sauna
+/// </summary>
+,
     /// <summary>
-    /// satellite_help
-    /// </summary>
-    SatelliteHelp,
-    /// <summary>
-    /// satellite_off
-    /// </summary>
-    SatelliteOff,
-    /// <summary>
-    /// save
+    ///  save
     /// </summary>
     Save,
     /// <summary>
-    /// save_as
+    ///  save_as
     /// </summary>
     SaveAs,
+/// <summary>
+///  save_clock
+/// </summary>
+,
     /// <summary>
-    /// saved_search
+    ///  saved_search
     /// </summary>
     SavedSearch,
     /// <summary>
-    /// savings
+    ///  savings
     /// </summary>
     Savings,
     /// <summary>
-    /// scale
+    ///  scale
     /// </summary>
     Scale,
     /// <summary>
-    /// scan
+    ///  scan
     /// </summary>
     Scan,
     /// <summary>
-    /// scan_delete
+    ///  scan_delete
     /// </summary>
     ScanDelete,
     /// <summary>
-    /// scanner
+    ///  scanner
     /// </summary>
     Scanner,
+/// <summary>
+///  scatter_plot
+/// </summary>
+,
+/// <summary>
+///  scene
+/// </summary>
+,
+/// <summary>
+///  schedule
+/// </summary>
+,
+/// <summary>
+///  schedule_send
+/// </summary>
+,
+/// <summary>
+///  schema
+/// </summary>
+,
     /// <summary>
-    /// scattered_cloud
-    /// </summary>
-    ScatteredCloud,
-    /// <summary>
-    /// scheduling_paid
-    /// </summary>
-    SchedulingPaid,
-    /// <summary>
-    /// school
+    ///  school
     /// </summary>
     School,
     /// <summary>
-    /// science
+    ///  science
     /// </summary>
     Science,
+/// <summary>
+///  science_off
+/// </summary>
+,
+/// <summary>
+///  scooter
+/// </summary>
+,
+/// <summary>
+///  score
+/// </summary>
+,
+/// <summary>
+///  scoreboard
+/// </summary>
+,
+/// <summary>
+///  screen_record
+/// </summary>
+,
+/// <summary>
+///  screen_rotation_alt
+/// </summary>
+,
+/// <summary>
+///  screen_rotation_up
+/// </summary>
+,
+/// <summary>
+///  screen_search_desktop
+/// </summary>
+,
+/// <summary>
+///  screen_share
+/// </summary>
+,
     /// <summary>
-    /// scope
-    /// </summary>
-    Scope,
-    /// <summary>
-    /// screenshot
-    /// </summary>
-    Screenshot,
-    /// <summary>
-    /// screenshot_frame
+    ///  screenshot_frame
     /// </summary>
     ScreenshotFrame,
+/// <summary>
+///  screenshot_frame_2
+/// </summary>
+,
     /// <summary>
-    /// screenshot_keyboard
+    ///  screenshot_keyboard
     /// </summary>
     ScreenshotKeyboard,
     /// <summary>
-    /// screenshot_monitor
+    ///  screenshot_monitor
     /// </summary>
     ScreenshotMonitor,
+/// <summary>
+///  screenshot_region
+/// </summary>
+,
     /// <summary>
-    /// screenshot_tablet
+    ///  screenshot_tablet
     /// </summary>
     ScreenshotTablet,
     /// <summary>
-    /// screenshot_w_full
-    /// </summary>
-    ScreenshotWFull,
-    /// <summary>
-    /// script
+    ///  script
     /// </summary>
     Script,
     /// <summary>
-    /// scrollable_header
+    ///  scrollable_header
     /// </summary>
     ScrollableHeader,
+/// <summary>
+///  scuba_diving
+/// </summary>
+,
+/// <summary>
+///  sd
+/// </summary>
+,
+/// <summary>
+///  sd_card
+/// </summary>
+,
+/// <summary>
+///  sd_card_alert
+/// </summary>
+,
+/// <summary>
+///  sdk
+/// </summary>
+,
     /// <summary>
-    /// search
+    ///  search
     /// </summary>
     Search,
+/// <summary>
+///  search_activity
+/// </summary>
+,
     /// <summary>
-    /// search_check
+    ///  search_check
     /// </summary>
     SearchCheck,
+/// <summary>
+///  search_check_2
+/// </summary>
+,
+/// <summary>
+///  search_gear
+/// </summary>
+,
     /// <summary>
-    /// search_hands_free
+    ///  search_hands_free
     /// </summary>
     SearchHandsFree,
     /// <summary>
-    /// search_insights
+    ///  search_insights
     /// </summary>
     SearchInsights,
     /// <summary>
-    /// search_off
+    ///  search_off
     /// </summary>
     SearchOff,
+/// <summary>
+///  seat_cool_left
+/// </summary>
+,
+/// <summary>
+///  seat_cool_right
+/// </summary>
+,
+/// <summary>
+///  seat_heat_left
+/// </summary>
+,
+/// <summary>
+///  seat_heat_right
+/// </summary>
+,
+/// <summary>
+///  seat_vent_left
+/// </summary>
+,
+/// <summary>
+///  seat_vent_right
+/// </summary>
+,
+/// <summary>
+///  security
+/// </summary>
+,
+/// <summary>
+///  security_key
+/// </summary>
+,
+/// <summary>
+///  segment
+/// </summary>
+,
+/// <summary>
+///  select
+/// </summary>
+,
+/// <summary>
+///  select_all
+/// </summary>
+,
     /// <summary>
-    /// sedan
-    /// </summary>
-    Sedan,
-    /// <summary>
-    /// select_check_box
+    ///  select_check_box
     /// </summary>
     SelectCheckBox,
+/// <summary>
+///  select_to_speak
+/// </summary>
+,
+/// <summary>
+///  select_window
+/// </summary>
+,
+/// <summary>
+///  select_window_2
+/// </summary>
+,
+/// <summary>
+///  select_window_off
+/// </summary>
+,
     /// <summary>
-    /// select_marker
-    /// </summary>
-    SelectMarker,
-    /// <summary>
-    /// select_on_device
-    /// </summary>
-    SelectOnDevice,
-    /// <summary>
-    /// self_care
+    ///  self_care
     /// </summary>
     SelfCare,
     /// <summary>
-    /// self_improvement
+    ///  self_improvement
     /// </summary>
     SelfImprovement,
     /// <summary>
-    /// sell
+    ///  sell
     /// </summary>
     Sell,
     /// <summary>
-    /// send
+    ///  send
     /// </summary>
     Send,
     /// <summary>
-    /// send_and_archive
+    ///  send_and_archive
     /// </summary>
     SendAndArchive,
+/// <summary>
+///  send_money
+/// </summary>
+,
     /// <summary>
-    /// send_map
-    /// </summary>
-    SendMap,
-    /// <summary>
-    /// send_time_extension
+    ///  send_time_extension
     /// </summary>
     SendTimeExtension,
     /// <summary>
-    /// sensor_door
+    ///  sensor_door
     /// </summary>
     SensorDoor,
     /// <summary>
-    /// sensor_occupied
+    ///  sensor_occupied
     /// </summary>
     SensorOccupied,
     /// <summary>
-    /// sensor_window
+    ///  sensor_window
     /// </summary>
     SensorWindow,
     /// <summary>
-    /// sensors
+    ///  sensors
     /// </summary>
     Sensors,
+/// <summary>
+///  sensors_krx
+/// </summary>
+,
+/// <summary>
+///  sensors_krx_off
+/// </summary>
+,
+/// <summary>
+///  sensors_off
+/// </summary>
+,
+/// <summary>
+///  sentiment_calm
+/// </summary>
+,
+/// <summary>
+///  sentiment_content
+/// </summary>
+,
+/// <summary>
+///  sentiment_dissatisfied
+/// </summary>
+,
+/// <summary>
+///  sentiment_excited
+/// </summary>
+,
+/// <summary>
+///  sentiment_extremely_dissatisfied
+/// </summary>
+,
+/// <summary>
+///  sentiment_frustrated
+/// </summary>
+,
+/// <summary>
+///  sentiment_neutral
+/// </summary>
+,
+/// <summary>
+///  sentiment_sad
+/// </summary>
+,
+/// <summary>
+///  sentiment_satisfied
+/// </summary>
+,
+/// <summary>
+///  sentiment_stressed
+/// </summary>
+,
+/// <summary>
+///  sentiment_very_dissatisfied
+/// </summary>
+,
+/// <summary>
+///  sentiment_very_satisfied
+/// </summary>
+,
+/// <summary>
+///  sentiment_worried
+/// </summary>
+,
+/// <summary>
+///  serif
+/// </summary>
+,
+/// <summary>
+///  server_person
+/// </summary>
+,
     /// <summary>
-    /// sensors_off
-    /// </summary>
-    SensorsOff,
-    /// <summary>
-    /// service_bell
-    /// </summary>
-    ServiceBell,
-    /// <summary>
-    /// service_toolbox
+    ///  service_toolbox
     /// </summary>
     ServiceToolbox,
+/// <summary>
+///  set_meal
+/// </summary>
+,
     /// <summary>
-    /// services
-    /// </summary>
-    Services,
-    /// <summary>
-    /// settings
+    ///  settings
     /// </summary>
     Settings,
     /// <summary>
-    /// settings_accessibility
+    ///  settings_accessibility
     /// </summary>
     SettingsAccessibility,
     /// <summary>
-    /// settings_account_box
+    ///  settings_account_box
     /// </summary>
     SettingsAccountBox,
     /// <summary>
-    /// settings_alert
+    ///  settings_alert
     /// </summary>
     SettingsAlert,
     /// <summary>
-    /// settings_applications
+    ///  settings_applications
     /// </summary>
     SettingsApplications,
+/// <summary>
+///  settings_b_roll
+/// </summary>
+,
     /// <summary>
-    /// settings_b_and_w
-    /// </summary>
-    SettingsBAndW,
-    /// <summary>
-    /// settings_backup_restore
+    ///  settings_backup_restore
     /// </summary>
     SettingsBackupRestore,
     /// <summary>
-    /// settings_bluetooth
+    ///  settings_bluetooth
     /// </summary>
     SettingsBluetooth,
     /// <summary>
-    /// settings_brightness
+    ///  settings_brightness
     /// </summary>
     SettingsBrightness,
+/// <summary>
+///  settings_cinematic_blur
+/// </summary>
+,
     /// <summary>
-    /// settings_cell
-    /// </summary>
-    SettingsCell,
-    /// <summary>
-    /// settings_ethernet
+    ///  settings_ethernet
     /// </summary>
     SettingsEthernet,
     /// <summary>
-    /// settings_heart
+    ///  settings_heart
     /// </summary>
     SettingsHeart,
     /// <summary>
-    /// settings_input_antenna
+    ///  settings_input_antenna
     /// </summary>
     SettingsInputAntenna,
     /// <summary>
-    /// settings_input_component
+    ///  settings_input_component
     /// </summary>
     SettingsInputComponent,
     /// <summary>
-    /// settings_input_composite
-    /// </summary>
-    SettingsInputComposite,
-    /// <summary>
-    /// settings_input_hdmi
+    ///  settings_input_hdmi
     /// </summary>
     SettingsInputHdmi,
     /// <summary>
-    /// settings_input_svideo
+    ///  settings_input_svideo
     /// </summary>
     SettingsInputSvideo,
+/// <summary>
+///  settings_motion_mode
+/// </summary>
+,
+/// <summary>
+///  settings_night_sight
+/// </summary>
+,
+/// <summary>
+///  settings_overscan
+/// </summary>
+,
+/// <summary>
+///  settings_panorama
+/// </summary>
+,
+/// <summary>
+///  settings_phone
+/// </summary>
+,
+/// <summary>
+///  settings_photo_camera
+/// </summary>
+,
     /// <summary>
-    /// settings_o_a
-    /// </summary>
-    SettingsOA,
-    /// <summary>
-    /// settings_power
+    ///  settings_power
     /// </summary>
     SettingsPower,
     /// <summary>
-    /// settings_remote
+    ///  settings_remote
     /// </summary>
     SettingsRemote,
+/// <summary>
+///  settings_seating
+/// </summary>
+,
+/// <summary>
+///  settings_slow_motion
+/// </summary>
+,
+/// <summary>
+///  settings_system_daydream
+/// </summary>
+,
+/// <summary>
+///  settings_timelapse
+/// </summary>
+,
     /// <summary>
-    /// settings_video_camera
+    ///  settings_video_camera
     /// </summary>
     SettingsVideoCamera,
+/// <summary>
+///  settings_voice
+/// </summary>
+,
+/// <summary>
+///  settop_component
+/// </summary>
+,
+/// <summary>
+///  severe_cold
+/// </summary>
+,
+/// <summary>
+///  shadow
+/// </summary>
+,
+/// <summary>
+///  shadow_add
+/// </summary>
+,
+/// <summary>
+///  shadow_minus
+/// </summary>
+,
     /// <summary>
-    /// settings_volume
-    /// </summary>
-    SettingsVolume,
-    /// <summary>
-    /// setting_account_box
-    /// </summary>
-    SettingAccountBox,
-    /// <summary>
-    /// shape_line
+    ///  shape_line
     /// </summary>
     ShapeLine,
+/// <summary>
+///  shapes
+/// </summary>
+,
     /// <summary>
-    /// shape_off
-    /// </summary>
-    ShapeOff,
-    /// <summary>
-    /// share
+    ///  share
     /// </summary>
     Share,
+/// <summary>
+///  share_eta
+/// </summary>
+,
     /// <summary>
-    /// share_circle
-    /// </summary>
-    ShareCircle,
-    /// <summary>
-    /// share_location
+    ///  share_location
     /// </summary>
     ShareLocation,
+/// <summary>
+///  share_off
+/// </summary>
+,
+/// <summary>
+///  share_reviews
+/// </summary>
+,
+/// <summary>
+///  share_windows
+/// </summary>
+,
+/// <summary>
+///  shaved_ice
+/// </summary>
+,
+/// <summary>
+///  sheets_rtl
+/// </summary>
+,
+/// <summary>
+///  shelf_auto_hide
+/// </summary>
+,
+/// <summary>
+///  shelf_position
+/// </summary>
+,
+/// <summary>
+///  shelves
+/// </summary>
+,
     /// <summary>
-    /// sheet
-    /// </summary>
-    Sheet,
-    /// <summary>
-    /// shelter
-    /// </summary>
-    Shelter,
-    /// <summary>
-    /// shield
+    ///  shield
     /// </summary>
     Shield,
     /// <summary>
-    /// shield_lock
+    ///  shield_lock
     /// </summary>
     ShieldLock,
+/// <summary>
+///  shield_locked
+/// </summary>
+,
+/// <summary>
+///  shield_moon
+/// </summary>
+,
+/// <summary>
+///  shield_person
+/// </summary>
+,
+/// <summary>
+///  shield_question
+/// </summary>
+,
+/// <summary>
+///  shield_toggle
+/// </summary>
+,
+/// <summary>
+///  shield_watch
+/// </summary>
+,
+/// <summary>
+///  shield_with_heart
+/// </summary>
+,
+/// <summary>
+///  shield_with_house
+/// </summary>
+,
+/// <summary>
+///  shift
+/// </summary>
+,
+/// <summary>
+///  shift_lock
+/// </summary>
+,
+/// <summary>
+///  shift_lock_off
+/// </summary>
+,
+/// <summary>
+///  shop
+/// </summary>
+,
+/// <summary>
+///  shop_two
+/// </summary>
+,
     /// <summary>
-    /// shield_lock_off
-    /// </summary>
-    ShieldLockOff,
-    /// <summary>
-    /// shield_person
-    /// </summary>
-    ShieldPerson,
-    /// <summary>
-    /// shield_quarter
-    /// </summary>
-    ShieldQuarter,
-    /// <summary>
-    /// shingles
-    /// </summary>
-    Shingles,
-    /// <summary>
-    /// shopping_bag
+    ///  shopping_bag
     /// </summary>
     ShoppingBag,
+/// <summary>
+///  shopping_bag_speed
+/// </summary>
+,
     /// <summary>
-    /// shopping_basket
+    ///  shopping_basket
     /// </summary>
     ShoppingBasket,
     /// <summary>
-    /// shopping_cart
+    ///  shopping_cart
     /// </summary>
     ShoppingCart,
+/// <summary>
+///  shopping_cart_checkout
+/// </summary>
+,
     /// <summary>
-    /// shopping_cart_off
+    ///  shopping_cart_off
     /// </summary>
     ShoppingCartOff,
     /// <summary>
-    /// shoppingmode
+    ///  shoppingmode
     /// </summary>
     Shoppingmode,
+/// <summary>
+///  short_stay
+/// </summary>
+,
     /// <summary>
-    /// short_text
+    ///  short_text
     /// </summary>
     ShortText,
     /// <summary>
-    /// show_chart
+    ///  show_chart
     /// </summary>
     ShowChart,
+/// <summary>
+///  shower
+/// </summary>
+,
     /// <summary>
-    /// show_password
-    /// </summary>
-    ShowPassword,
-    /// <summary>
-    /// shows_video
-    /// </summary>
-    ShowsVideo,
-    /// <summary>
-    /// shuffle
+    ///  shuffle
     /// </summary>
     Shuffle,
     /// <summary>
-    /// shuffle_on
+    ///  shuffle_on
     /// </summary>
     ShuffleOn,
+/// <summary>
+///  shutter_speed
+/// </summary>
+,
+/// <summary>
+///  shutter_speed_add
+/// </summary>
+,
+/// <summary>
+///  shutter_speed_minus
+/// </summary>
+,
+/// <summary>
+///  sick
+/// </summary>
+,
+/// <summary>
+///  side_navigation
+/// </summary>
+,
     /// <summary>
-    /// siberia
-    /// </summary>
-    Siberia,
-    /// <summary>
-    /// sign_language
+    ///  sign_language
     /// </summary>
     SignLanguage,
     /// <summary>
-    /// signal_cellular_0_bar
+    ///  signal_cellular_0_bar
     /// </summary>
     SignalCellular0Bar,
     /// <summary>
-    /// signal_cellular_1_bar
+    ///  signal_cellular_1_bar
     /// </summary>
     SignalCellular1Bar,
     /// <summary>
-    /// signal_cellular_2_bar
+    ///  signal_cellular_2_bar
     /// </summary>
     SignalCellular2Bar,
     /// <summary>
-    /// signal_cellular_3_bar
+    ///  signal_cellular_3_bar
     /// </summary>
     SignalCellular3Bar,
     /// <summary>
-    /// signal_cellular_4_bar
+    ///  signal_cellular_4_bar
     /// </summary>
     SignalCellular4Bar,
+/// <summary>
+///  signal_cellular_add
+/// </summary>
+,
     /// <summary>
-    /// signal_cellular_alt
+    ///  signal_cellular_alt
     /// </summary>
     SignalCellularAlt,
     /// <summary>
-    /// signal_cellular_alt_1_bar
+    ///  signal_cellular_alt_1_bar
     /// </summary>
     SignalCellularAlt1Bar,
     /// <summary>
-    /// signal_cellular_alt_2_bar
+    ///  signal_cellular_alt_2_bar
     /// </summary>
     SignalCellularAlt2Bar,
     /// <summary>
-    /// signal_cellular_connected_no_internet_0_bar
+    ///  signal_cellular_connected_no_internet_0_bar
     /// </summary>
     SignalCellularConnectedNoInternet0Bar,
     /// <summary>
-    /// signal_cellular_connected_no_internet_4_bar
+    ///  signal_cellular_connected_no_internet_4_bar
     /// </summary>
     SignalCellularConnectedNoInternet4Bar,
     /// <summary>
-    /// signal_cellular_nodata
+    ///  signal_cellular_nodata
     /// </summary>
     SignalCellularNodata,
+/// <summary>
+///  signal_cellular_null
+/// </summary>
+,
     /// <summary>
-    /// signal_cellular_off
+    ///  signal_cellular_off
     /// </summary>
     SignalCellularOff,
     /// <summary>
-    /// signal_cellular_pause
+    ///  signal_cellular_pause
     /// </summary>
     SignalCellularPause,
     /// <summary>
-    /// signal_disconnected
+    ///  signal_disconnected
     /// </summary>
     SignalDisconnected,
     /// <summary>
-    /// signal_wifi_0_bar
+    ///  signal_wifi_0_bar
     /// </summary>
     SignalWifi0Bar,
     /// <summary>
-    /// signal_wifi_4_bar
+    ///  signal_wifi_4_bar
     /// </summary>
     SignalWifi4Bar,
     /// <summary>
-    /// signal_wifi_4_bar_lock
-    /// </summary>
-    SignalWifi4BarLock,
-    /// <summary>
-    /// signal_wifi_bad
+    ///  signal_wifi_bad
     /// </summary>
     SignalWifiBad,
     /// <summary>
-    /// signal_wifi_off
+    ///  signal_wifi_off
     /// </summary>
     SignalWifiOff,
+/// <summary>
+///  signal_wifi_statusbar_not_connected
+/// </summary>
+,
+/// <summary>
+///  signal_wifi_statusbar_null
+/// </summary>
+,
     /// <summary>
-    /// signal_wifi_statusbar_4_bar
-    /// </summary>
-    SignalWifiStatusbar4Bar,
-    /// <summary>
-    /// signal_wifi_statusbar_connected_no_internet_4
-    /// </summary>
-    SignalWifiStatusbarConnectedNoInternet4,
-    /// <summary>
-    /// signature
+    ///  signature
     /// </summary>
     Signature,
     /// <summary>
-    /// signpost
+    ///  signpost
     /// </summary>
     Signpost,
     /// <summary>
-    /// sim_card
+    ///  sim_card
     /// </summary>
     SimCard,
     /// <summary>
-    /// sim_card_download
+    ///  sim_card_download
     /// </summary>
     SimCardDownload,
+/// <summary>
+///  simulation
+/// </summary>
+,
     /// <summary>
-    /// sim_card_lock
-    /// </summary>
-    SimCardLock,
-    /// <summary>
-    /// sim_card_off
-    /// </summary>
-    SimCardOff,
-    /// <summary>
-    /// single_bed
+    ///  single_bed
     /// </summary>
     SingleBed,
+/// <summary>
+///  sip
+/// </summary>
+,
+/// <summary>
+///  siren
+/// </summary>
+,
+/// <summary>
+///  siren_check
+/// </summary>
+,
+/// <summary>
+///  siren_open
+/// </summary>
+,
+/// <summary>
+///  siren_question
+/// </summary>
+,
+/// <summary>
+///  skateboarding
+/// </summary>
+,
+/// <summary>
+///  skeleton
+/// </summary>
+,
+/// <summary>
+///  skillet
+/// </summary>
+,
+/// <summary>
+///  skillet_cooktop
+/// </summary>
+,
+/// <summary>
+///  skip_next
+/// </summary>
+,
+/// <summary>
+///  skip_previous
+/// </summary>
+,
+/// <summary>
+///  skull
+/// </summary>
+,
+/// <summary>
+///  skull_list
+/// </summary>
+,
+/// <summary>
+///  slab_serif
+/// </summary>
+,
+/// <summary>
+///  sledding
+/// </summary>
+,
+/// <summary>
+///  sleep_score
+/// </summary>
+,
+/// <summary>
+///  slide_library
+/// </summary>
+,
     /// <summary>
-    /// siri_add
-    /// </summary>
-    SiriAdd,
-    /// <summary>
-    /// siri_app_badging
-    /// </summary>
-    SiriAppBadging,
-    /// <summary>
-    /// siri_paste
-    /// </summary>
-    SiriPaste,
-    /// <summary>
-    /// sitemap
-    /// </summary>
-    Sitemap,
-    /// <summary>
-    /// skirt
-    /// </summary>
-    Skirt,
-    /// <summary>
-    /// slide_show
-    /// </summary>
-    SlideShow,
-    /// <summary>
-    /// sliders
+    ///  sliders
     /// </summary>
     Sliders,
     /// <summary>
-    /// sliders_with_dragger
+    ///  slideshow
     /// </summary>
-    SlidersWithDragger,
+    SlideShow,
     /// <summary>
-    /// slow_motion_video
+    ///  slow_motion_video
     /// </summary>
     SlowMotionVideo,
     /// <summary>
-    /// smart_card_reader
+    ///  smart_card_reader
     /// </summary>
     SmartCardReader,
     /// <summary>
-    /// smart_card_reader_off
+    ///  smart_card_reader_off
     /// </summary>
     SmartCardReaderOff,
+/// <summary>
+///  smart_display
+/// </summary>
+,
+/// <summary>
+///  smart_outlet
+/// </summary>
+,
     /// <summary>
-    /// smart_toy
+    ///  smart_toy
     /// </summary>
     SmartToy,
+/// <summary>
+///  smb_share
+/// </summary>
+,
+/// <summary>
+///  smoke_free
+/// </summary>
+,
+/// <summary>
+///  smoking_rooms
+/// </summary>
+,
+/// <summary>
+///  sms
+/// </summary>
+,
+/// <summary>
+///  snippet_folder
+/// </summary>
+,
+/// <summary>
+///  snooze
+/// </summary>
+,
+/// <summary>
+///  snowboarding
+/// </summary>
+,
+/// <summary>
+///  snowing
+/// </summary>
+,
+/// <summary>
+///  snowing_heavy
+/// </summary>
+,
+/// <summary>
+///  snowmobile
+/// </summary>
+,
     /// <summary>
-    /// smartphone
-    /// </summary>
-    Smartphone,
-    /// <summary>
-    /// smudge
-    /// </summary>
-    Smudge,
-    /// <summary>
-    /// snorkeling
-    /// </summary>
-    Snorkeling,
-    /// <summary>
-    /// snow_shoeing
+    ///  snowshoeing
     /// </summary>
     SnowShoeing,
     /// <summary>
-    /// snowmobile
-    /// </summary>
-    Snowmobile,
-    /// <summary>
-    /// snowy_night
-    /// </summary>
-    SnowyNight,
-    /// <summary>
-    /// soap
+    ///  soap
     /// </summary>
     Soap,
+/// <summary>
+///  soba
+/// </summary>
+,
+/// <summary>
+///  social_distance
+/// </summary>
+,
     /// <summary>
-    /// social_leaderboard
+    ///  social_leaderboard
     /// </summary>
     SocialLeaderboard,
+/// <summary>
+///  solar_power
+/// </summary>
+,
+/// <summary>
+///  solo_dining
+/// </summary>
+,
+/// <summary>
+///  sort
+/// </summary>
+,
     /// <summary>
-    /// soil
-    /// </summary>
-    Soil,
-    /// <summary>
-    /// solar_panel
-    /// </summary>
-    SolarPanel,
-    /// <summary>
-    /// solar_panel_alt
-    /// </summary>
-    SolarPanelAlt,
-    /// <summary>
-    /// sort_by_alpha
+    ///  sort_by_alpha
     /// </summary>
     SortByAlpha,
+/// <summary>
+///  sos
+/// </summary>
+,
+/// <summary>
+///  sound_detection_dog_barking
+/// </summary>
+,
+/// <summary>
+///  sound_detection_glass_break
+/// </summary>
+,
+/// <summary>
+///  sound_detection_loud_sound
+/// </summary>
+,
+/// <summary>
+///  sound_sampler
+/// </summary>
+,
+/// <summary>
+///  soup_kitchen
+/// </summary>
+,
+/// <summary>
+///  source_environment
+/// </summary>
+,
     /// <summary>
-    /// sort_by_alpha_off
-    /// </summary>
-    SortByAlphaOff,
-    /// <summary>
-    /// sounds
-    /// </summary>
-    Sounds,
-    /// <summary>
-    /// source_notes
+    ///  source_notes
     /// </summary>
     SourceNotes,
+/// <summary>
+///  south
+/// </summary>
+,
+/// <summary>
+///  south_america
+/// </summary>
+,
+/// <summary>
+///  south_east
+/// </summary>
+,
+/// <summary>
+///  south_west
+/// </summary>
+,
+/// <summary>
+///  spa
+/// </summary>
+,
     /// <summary>
-    /// space_bar
+    ///  space_bar
     /// </summary>
     SpaceBar,
+/// <summary>
+///  space_dashboard
+/// </summary>
+,
+/// <summary>
+///  spatial_audio
+/// </summary>
+,
+/// <summary>
+///  spatial_audio_off
+/// </summary>
+,
+/// <summary>
+///  spatial_speaker
+/// </summary>
+,
+/// <summary>
+///  spatial_tracking
+/// </summary>
+,
     /// <summary>
-    /// spacer
-    /// </summary>
-    Spacer,
-    /// <summary>
-    /// spacious
-    /// </summary>
-    Spacious,
-    /// <summary>
-    /// speaker
+    ///  speaker
     /// </summary>
     Speaker,
     /// <summary>
-    /// speaker_group
+    ///  speaker_group
     /// </summary>
     SpeakerGroup,
+/// <summary>
+///  speaker_notes
+/// </summary>
+,
+/// <summary>
+///  speaker_notes_off
+/// </summary>
+,
     /// <summary>
-    /// speaker_off
-    /// </summary>
-    SpeakerOff,
-    /// <summary>
-    /// speaker_phone
+    ///  speaker_phone
     /// </summary>
     SpeakerPhone,
+/// <summary>
+///  special_character
+/// </summary>
+,
+/// <summary>
+///  specific_gravity
+/// </summary>
+,
     /// <summary>
-    /// spectacles
-    /// </summary>
-    Spectacles,
-    /// <summary>
-    /// speech_to_text
+    ///  speech_to_text
     /// </summary>
     SpeechToText,
+/// <summary>
+///  speed
+/// </summary>
+,
+/// <summary>
+///  speed_0_25
+/// </summary>
+,
+/// <summary>
+///  speed_0_2x
+/// </summary>
+,
+/// <summary>
+///  speed_0_5
+/// </summary>
+,
+/// <summary>
+///  speed_0_5x
+/// </summary>
+,
+/// <summary>
+///  speed_0_75
+/// </summary>
+,
+/// <summary>
+///  speed_0_7x
+/// </summary>
+,
+/// <summary>
+///  speed_1_2
+/// </summary>
+,
+/// <summary>
+///  speed_1_25
+/// </summary>
+,
+/// <summary>
+///  speed_1_2x
+/// </summary>
+,
+/// <summary>
+///  speed_1_5
+/// </summary>
+,
+/// <summary>
+///  speed_1_5x
+/// </summary>
+,
+/// <summary>
+///  speed_1_75
+/// </summary>
+,
+/// <summary>
+///  speed_1_7x
+/// </summary>
+,
+/// <summary>
+///  speed_2x
+/// </summary>
+,
+/// <summary>
+///  speed_camera
+/// </summary>
+,
+/// <summary>
+///  spellcheck
+/// </summary>
+,
+/// <summary>
+///  split_scene
+/// </summary>
+,
+/// <summary>
+///  split_scene_down
+/// </summary>
+,
+/// <summary>
+///  split_scene_left
+/// </summary>
+,
+/// <summary>
+///  split_scene_right
+/// </summary>
+,
+/// <summary>
+///  split_scene_up
+/// </summary>
+,
+/// <summary>
+///  splitscreen
+/// </summary>
+,
+/// <summary>
+///  splitscreen_add
+/// </summary>
+,
+/// <summary>
+///  splitscreen_bottom
+/// </summary>
+,
+/// <summary>
+///  splitscreen_landscape
+/// </summary>
+,
+/// <summary>
+///  splitscreen_left
+/// </summary>
+,
+/// <summary>
+///  splitscreen_portrait
+/// </summary>
+,
+/// <summary>
+///  splitscreen_right
+/// </summary>
+,
+/// <summary>
+///  splitscreen_top
+/// </summary>
+,
+/// <summary>
+///  splitscreen_vertical_add
+/// </summary>
+,
+/// <summary>
+///  spo2
+/// </summary>
+,
+/// <summary>
+///  spoke
+/// </summary>
+,
     /// <summary>
-    /// spheres
-    /// </summary>
-    Spheres,
-    /// <summary>
-    /// spices
-    /// </summary>
-    Spices,
-    /// <summary>
-    /// sports
+    ///  sports
     /// </summary>
     Sports,
+/// <summary>
+///  sports_and_outdoors
+/// </summary>
+,
+/// <summary>
+///  sports_bar
+/// </summary>
+,
     /// <summary>
-    /// sports_and_entertainment
-    /// </summary>
-    SportsAndEntertainment,
-    /// <summary>
-    /// sports_baseball
+    ///  sports_baseball
     /// </summary>
     SportsBaseball,
     /// <summary>
-    /// sports_basketball
+    ///  sports_basketball
     /// </summary>
     SportsBasketball,
     /// <summary>
-    /// sports_cricket
+    ///  sports_cricket
     /// </summary>
     SportsCricket,
     /// <summary>
-    /// sports_esports
+    ///  sports_esports
     /// </summary>
     SportsEsports,
     /// <summary>
-    /// sports_football
+    ///  sports_football
     /// </summary>
     SportsFootball,
     /// <summary>
-    /// sports_golf
+    ///  sports_golf
     /// </summary>
     SportsGolf,
     /// <summary>
-    /// sports_gymnastics
+    ///  sports_gymnastics
     /// </summary>
     SportsGymnastics,
     /// <summary>
-    /// sports_handball
+    ///  sports_handball
     /// </summary>
     SportsHandball,
     /// <summary>
-    /// sports_hockey
+    ///  sports_hockey
     /// </summary>
     SportsHockey,
+/// <summary>
+///  sports_kabaddi
+/// </summary>
+,
     /// <summary>
-    /// sports_martial_arts
+    ///  sports_martial_arts
     /// </summary>
     SportsMartialArts,
+/// <summary>
+///  sports_mma
+/// </summary>
+,
+/// <summary>
+///  sports_motorsports
+/// </summary>
+,
     /// <summary>
-    /// sports_motorcycle
-    /// </summary>
-    SportsMotorcycle,
-    /// <summary>
-    /// sports_rugby
+    ///  sports_rugby
     /// </summary>
     SportsRugby,
     /// <summary>
-    /// sports_score
+    ///  sports_score
     /// </summary>
     SportsScore,
     /// <summary>
-    /// sports_soccer
+    ///  sports_soccer
     /// </summary>
     SportsSoccer,
     /// <summary>
-    /// sports_tennis
+    ///  sports_tennis
     /// </summary>
     SportsTennis,
     /// <summary>
-    /// sports_volleyball
+    ///  sports_volleyball
     /// </summary>
     SportsVolleyball,
     /// <summary>
-    /// spray_can
-    /// </summary>
-    SprayCan,
-    /// <summary>
-    /// sprinkler
+    ///  sprinkler
     /// </summary>
     Sprinkler,
+/// <summary>
+///  sprint
+/// </summary>
+,
+/// <summary>
+///  square
+/// </summary>
+,
+/// <summary>
+///  square_dot
+/// </summary>
+,
     /// <summary>
-    /// sprinkler_siren
-    /// </summary>
-    SprinklerSiren,
-    /// <summary>
-    /// square_foot
+    ///  square_foot
     /// </summary>
     SquareFoot,
+/// <summary>
+///  ssid_chart
+/// </summary>
+,
+/// <summary>
+///  stack
+/// </summary>
+,
+/// <summary>
+///  stack_group
+/// </summary>
+,
+/// <summary>
+///  stack_hexagon
+/// </summary>
+,
+/// <summary>
+///  stack_off
+/// </summary>
+,
+/// <summary>
+///  stack_star
+/// </summary>
+,
     /// <summary>
-    /// square_off
-    /// </summary>
-    SquareOff,
-    /// <summary>
-    /// stacked_bar_chart
+    ///  stacked_bar_chart
     /// </summary>
     StackedBarChart,
+/// <summary>
+///  stacked_email
+/// </summary>
+,
+/// <summary>
+///  stacked_inbox
+/// </summary>
+,
     /// <summary>
-    /// stacked_line_chart
+    ///  stacked_line_chart
     /// </summary>
     StackedLineChart,
+/// <summary>
+///  stacks
+/// </summary>
+,
+/// <summary>
+///  stadia_controller
+/// </summary>
+,
+/// <summary>
+///  stadium
+/// </summary>
+,
+/// <summary>
+///  stairs
+/// </summary>
+,
+/// <summary>
+///  stairs_2
+/// </summary>
+,
     /// <summary>
-    /// stack_star
-    /// </summary>
-    StackStar,
-    /// <summary>
-    /// stamp
-    /// </summary>
-    Stamp,
-    /// <summary>
-    /// star
+    ///  star
     /// </summary>
     Star,
     /// <summary>
-    /// star_border
-    /// </summary>
-    StarBorder,
-    /// <summary>
-    /// star_half
+    ///  star_half
     /// </summary>
     StarHalf,
     /// <summary>
-    /// star_outline
-    /// </summary>
-    StarOutline,
-    /// <summary>
-    /// star_rate
+    ///  star_rate
     /// </summary>
     StarRate,
     /// <summary>
-    /// star_rate_half
+    ///  star_rate_half
     /// </summary>
     StarRateHalf,
+/// <summary>
+///  star_shine
+/// </summary>
+,
     /// <summary>
-    /// stars
+    ///  stars
     /// </summary>
     Stars,
+/// <summary>
+///  stars_2
+/// </summary>
+,
+/// <summary>
+///  start
+/// </summary>
+,
     /// <summary>
-    /// stat_0
+    ///  stat_0
     /// </summary>
     Stat0,
     /// <summary>
-    /// stat_1
+    ///  stat_1
     /// </summary>
     Stat1,
     /// <summary>
-    /// stat_2
+    ///  stat_2
     /// </summary>
     Stat2,
     /// <summary>
-    /// stat_3
+    ///  stat_3
     /// </summary>
     Stat3,
+/// <summary>
+///  stat_minus_1
+/// </summary>
+,
+/// <summary>
+///  stat_minus_2
+/// </summary>
+,
+/// <summary>
+///  stat_minus_3
+/// </summary>
+,
+/// <summary>
+///  steering_wheel_heat
+/// </summary>
+,
+/// <summary>
+///  step
+/// </summary>
+,
+/// <summary>
+///  step_into
+/// </summary>
+,
+/// <summary>
+///  step_out
+/// </summary>
+,
+/// <summary>
+///  step_over
+/// </summary>
+,
+/// <summary>
+///  steppers
+/// </summary>
+,
+/// <summary>
+///  steps
+/// </summary>
+,
     /// <summary>
-    /// station
-    /// </summary>
-    Station,
-    /// <summary>
-    /// station_siren
-    /// </summary>
-    StationSiren,
-    /// <summary>
-    /// stats_ig
-    /// </summary>
-    StatsIg,
-    /// <summary>
-    /// stethoscope
+    ///  stethoscope
     /// </summary>
     Stethoscope,
     /// <summary>
-    /// stethoscope_arrow
+    ///  stethoscope_arrow
     /// </summary>
     StethoscopeArrow,
     /// <summary>
-    /// stethoscope_check
+    ///  stethoscope_check
     /// </summary>
     StethoscopeCheck,
+/// <summary>
+///  sticky_note
+/// </summary>
+,
+/// <summary>
+///  sticky_note_2
+/// </summary>
+,
+/// <summary>
+///  stock_media
+/// </summary>
+,
+/// <summary>
+///  stockpot
+/// </summary>
+,
+/// <summary>
+///  stop
+/// </summary>
+,
+/// <summary>
+///  stop_circle
+/// </summary>
+,
+/// <summary>
+///  stop_screen_share
+/// </summary>
+,
+/// <summary>
+///  storage
+/// </summary>
+,
+/// <summary>
+///  store
+/// </summary>
+,
+/// <summary>
+///  storefront
+/// </summary>
+,
     /// <summary>
-    /// stethoscope_line
-    /// </summary>
-    StethoscopeLine,
-    /// <summary>
-    /// stock_media
-    /// </summary>
-    StockMedia,
-    /// <summary>
-    /// storm
+    ///  storm
     /// </summary>
     Storm,
+/// <summary>
+///  straight
+/// </summary>
+,
+/// <summary>
+///  straighten
+/// </summary>
+,
+/// <summary>
+///  strategy
+/// </summary>
+,
+/// <summary>
+///  stream
+/// </summary>
+,
     /// <summary>
-    /// streetview
+    ///  streetview
     /// </summary>
     Streetview,
+/// <summary>
+///  stress_management
+/// </summary>
+,
+/// <summary>
+///  strikethrough_s
+/// </summary>
+,
+/// <summary>
+///  stroke_full
+/// </summary>
+,
+/// <summary>
+///  stroke_partial
+/// </summary>
+,
     /// <summary>
-    /// stroll
-    /// </summary>
-    Stroll,
-    /// <summary>
-    /// stroller
+    ///  stroller
     /// </summary>
     Stroller,
     /// <summary>
-    /// style
+    ///  style
     /// </summary>
     Style,
+/// <summary>
+///  styler
+/// </summary>
+,
+/// <summary>
+///  stylus
+/// </summary>
+,
+/// <summary>
+///  stylus_brush
+/// </summary>
+,
+/// <summary>
+///  stylus_fountain_pen
+/// </summary>
+,
+/// <summary>
+///  stylus_highlighter
+/// </summary>
+,
+/// <summary>
+///  stylus_laser_pointer
+/// </summary>
+,
+/// <summary>
+///  stylus_note
+/// </summary>
+,
+/// <summary>
+///  stylus_pen
+/// </summary>
+,
+/// <summary>
+///  stylus_pencil
+/// </summary>
+,
     /// <summary>
-    /// subdirectory_arrow_left
+    ///  subdirectory_arrow_left
     /// </summary>
     SubdirectoryArrowLeft,
     /// <summary>
-    /// subdirectory_arrow_right
+    ///  subdirectory_arrow_right
     /// </summary>
     SubdirectoryArrowRight,
+/// <summary>
+///  subheader
+/// </summary>
+,
     /// <summary>
-    /// subject
+    ///  subject
     /// </summary>
     Subject,
+/// <summary>
+///  subscript
+/// </summary>
+,
     /// <summary>
-    /// subscriptions
+    ///  subscriptions
     /// </summary>
     Subscriptions,
+/// <summary>
+///  subtitles
+/// </summary>
+,
+/// <summary>
+///  subtitles_gear
+/// </summary>
+,
     /// <summary>
-    /// subscriptions_b
-    /// </summary>
-    SubscriptionsB,
-    /// <summary>
-    /// subtitles_off
+    ///  subtitles_off
     /// </summary>
     SubtitlesOff,
     /// <summary>
-    /// subway
+    ///  subway
     /// </summary>
     Subway,
+/// <summary>
+///  subway_walk
+/// </summary>
+,
+/// <summary>
+///  summarize
+/// </summary>
+,
+/// <summary>
+///  sunny
+/// </summary>
+,
     /// <summary>
-    /// summit
-    /// </summary>
-    Summit,
-    /// <summary>
-    /// sun_power
-    /// </summary>
-    SunPower,
-    /// <summary>
-    /// sunglasses
-    /// </summary>
-    Sunglasses,
-    /// <summary>
-    /// sunny_snowing
+    ///  sunny_snowing
     /// </summary>
     SunnySnowing,
+/// <summary>
+///  superscript
+/// </summary>
+,
+/// <summary>
+///  supervised_user_circle
+/// </summary>
+,
+/// <summary>
+///  supervised_user_circle_off
+/// </summary>
+,
     /// <summary>
-    /// supervisor_account
+    ///  supervisor_account
     /// </summary>
     SupervisorAccount,
     /// <summary>
-    /// support
+    ///  support
     /// </summary>
     Support,
     /// <summary>
-    /// support_agent
+    ///  support_agent
     /// </summary>
     SupportAgent,
+/// <summary>
+///  surfing
+/// </summary>
+,
+/// <summary>
+///  surgical
+/// </summary>
+,
+/// <summary>
+///  surround_sound
+/// </summary>
+,
+/// <summary>
+///  swap_calls
+/// </summary>
+,
+/// <summary>
+///  swap_driving_apps
+/// </summary>
+,
+/// <summary>
+///  swap_driving_apps_wheel
+/// </summary>
+,
     /// <summary>
-    /// surgery
-    /// </summary>
-    Surgery,
-    /// <summary>
-    /// surroundings
-    /// </summary>
-    Surroundings,
-    /// <summary>
-    /// swallow
-    /// </summary>
-    Swallow,
-    /// <summary>
-    /// swap_horiz
+    ///  swap_horiz
     /// </summary>
     SwapHoriz,
+/// <summary>
+///  swap_horizontal_circle
+/// </summary>
+,
     /// <summary>
-    /// swap_vert
+    ///  swap_vert
     /// </summary>
     SwapVert,
     /// <summary>
-    /// swap_vertical_circle
+    ///  swap_vertical_circle
     /// </summary>
     SwapVerticalCircle,
+/// <summary>
+///  sweep
+/// </summary>
+,
+/// <summary>
+///  swipe
+/// </summary>
+,
+/// <summary>
+///  swipe_down
+/// </summary>
+,
+/// <summary>
+///  swipe_down_alt
+/// </summary>
+,
+/// <summary>
+///  swipe_left
+/// </summary>
+,
+/// <summary>
+///  swipe_left_alt
+/// </summary>
+,
+/// <summary>
+///  swipe_right
+/// </summary>
+,
+/// <summary>
+///  swipe_right_alt
+/// </summary>
+,
+/// <summary>
+///  swipe_up
+/// </summary>
+,
+/// <summary>
+///  swipe_up_alt
+/// </summary>
+,
+/// <summary>
+///  swipe_vertical
+/// </summary>
+,
+/// <summary>
+///  switch
+/// </summary>
+,
     /// <summary>
-    /// swing_note
-    /// </summary>
-    SwingNote,
-    /// <summary>
-    /// switch_access
+    ///  switch_access
     /// </summary>
     SwitchAccess,
     /// <summary>
-    /// switch_access_2
+    ///  switch_access_2
     /// </summary>
     SwitchAccess2,
+/// <summary>
+///  switch_access_3
+/// </summary>
+,
     /// <summary>
-    /// switch_access_shortcut
+    ///  switch_access_shortcut
     /// </summary>
     SwitchAccessShortcut,
     /// <summary>
-    /// switch_access_shortcut_add
+    ///  switch_access_shortcut_add
     /// </summary>
     SwitchAccessShortcutAdd,
     /// <summary>
-    /// switch_account
+    ///  switch_account
     /// </summary>
     SwitchAccount,
     /// <summary>
-    /// switch_camera
+    ///  switch_camera
     /// </summary>
     SwitchCamera,
     /// <summary>
-    /// switch_left
+    ///  switch_left
     /// </summary>
     SwitchLeft,
     /// <summary>
-    /// switch_right
+    ///  switch_right
     /// </summary>
     SwitchRight,
+/// <summary>
+///  switch_video
+/// </summary>
+,
+/// <summary>
+///  switches
+/// </summary>
+,
+/// <summary>
+///  sword_rose
+/// </summary>
+,
+/// <summary>
+///  swords
+/// </summary>
+,
+/// <summary>
+///  symptoms
+/// </summary>
+,
+/// <summary>
+///  synagogue
+/// </summary>
+,
     /// <summary>
-    /// switch_to_slide
-    /// </summary>
-    SwitchToSlide,
-    /// <summary>
-    /// sync
+    ///  sync
     /// </summary>
     Sync,
     /// <summary>
-    /// sync_alt
+    ///  sync_alt
     /// </summary>
     SyncAlt,
+/// <summary>
+///  sync_arrow_down
+/// </summary>
+,
+/// <summary>
+///  sync_arrow_up
+/// </summary>
+,
+/// <summary>
+///  sync_desktop
+/// </summary>
+,
     /// <summary>
-    /// sync_disabled
+    ///  sync_disabled
     /// </summary>
     SyncDisabled,
     /// <summary>
-    /// sync_lock
+    ///  sync_lock
     /// </summary>
     SyncLock,
     /// <summary>
-    /// sync_problem
+    ///  sync_problem
     /// </summary>
     SyncProblem,
+/// <summary>
+///  sync_saved_locally
+/// </summary>
+,
+/// <summary>
+///  sync_saved_locally_off
+/// </summary>
+,
+/// <summary>
+///  syringe
+/// </summary>
+,
+/// <summary>
+///  system_update_alt
+/// </summary>
+,
+/// <summary>
+///  tab
+/// </summary>
+,
+/// <summary>
+///  tab_close
+/// </summary>
+,
+/// <summary>
+///  tab_close_inactive
+/// </summary>
+,
+/// <summary>
+///  tab_close_right
+/// </summary>
+,
+/// <summary>
+///  tab_duplicate
+/// </summary>
+,
+/// <summary>
+///  tab_group
+/// </summary>
+,
+/// <summary>
+///  tab_inactive
+/// </summary>
+,
+/// <summary>
+///  tab_move
+/// </summary>
+,
+/// <summary>
+///  tab_new_right
+/// </summary>
+,
+/// <summary>
+///  tab_recent
+/// </summary>
+,
+/// <summary>
+///  tab_search
+/// </summary>
+,
+/// <summary>
+///  tab_unselected
+/// </summary>
+,
+/// <summary>
+///  table
+/// </summary>
+,
+/// <summary>
+///  table_bar
+/// </summary>
+,
+/// <summary>
+///  table_chart
+/// </summary>
+,
+/// <summary>
+///  table_chart_view
+/// </summary>
+,
+/// <summary>
+///  table_convert
+/// </summary>
+,
+/// <summary>
+///  table_edit
+/// </summary>
+,
+/// <summary>
+///  table_eye
+/// </summary>
+,
+/// <summary>
+///  table_lamp
+/// </summary>
+,
+/// <summary>
+///  table_large
+/// </summary>
+,
+/// <summary>
+///  table_restaurant
+/// </summary>
+,
+/// <summary>
+///  table_rows
+/// </summary>
+,
+/// <summary>
+///  table_rows_narrow
+/// </summary>
+,
+/// <summary>
+///  table_sign
+/// </summary>
+,
+/// <summary>
+///  table_view
+/// </summary>
+,
     /// <summary>
-    /// synthesis
-    /// </summary>
-    Synthesis,
-    /// <summary>
-    /// syrup
-    /// </summary>
-    Syrup,
-    /// <summary>
-    /// system_security_update_warning
-    /// </summary>
-    SystemSecurityUpdateWarning,
-    /// <summary>
-    /// tablet
+    ///  tablet
     /// </summary>
     Tablet,
     /// <summary>
-    /// tablet_android
+    ///  tablet_android
     /// </summary>
     TabletAndroid,
+/// <summary>
+///  tablet_camera
+/// </summary>
+,
     /// <summary>
-    /// tablet_mac
+    ///  tablet_mac
     /// </summary>
     TabletMac,
+/// <summary>
+///  tabs
+/// </summary>
+,
+/// <summary>
+///  tactic
+/// </summary>
+,
+/// <summary>
+///  tag
+/// </summary>
+,
     /// <summary>
-    /// take_photo_2
-    /// </summary>
-    TakePhoto2,
-    /// <summary>
-    /// take_photo_auto
-    /// </summary>
-    TakePhotoAuto,
-    /// <summary>
-    /// take_photo_360
-    /// </summary>
-    TakePhoto360,
-    /// <summary>
-    /// take_photo_slr
-    /// </summary>
-    TakePhotoSlr,
-    /// <summary>
-    /// take_photo_still
-    /// </summary>
-    TakePhotoStill,
-    /// <summary>
-    /// takeout_dining
+    ///  takeout_dining
     /// </summary>
     TakeoutDining,
+/// <summary>
+///  takeout_dining_2
+/// </summary>
+,
+/// <summary>
+///  tamper_detection_off
+/// </summary>
+,
+/// <summary>
+///  tamper_detection_on
+/// </summary>
+,
+/// <summary>
+///  tapas
+/// </summary>
+,
     /// <summary>
-    /// tandem_forklift
-    /// </summary>
-    TandemForklift,
-    /// <summary>
-    /// tandem_forklift_off
-    /// </summary>
-    TandemForkliftOff,
-    /// <summary>
-    /// tap_and_play
-    /// </summary>
-    TapAndPlay,
-    /// <summary>
-    /// tap_as_tap_outside
-    /// </summary>
-    TapAsTapOutside,
-    /// <summary>
-    /// tap_as_tap_outside_off
-    /// </summary>
-    TapAsTapOutsideOff,
-    /// <summary>
-    /// tape
-    /// </summary>
-    Tape,
-    /// <summary>
-    /// target
+    ///  target
     /// </summary>
     Target,
+/// <summary>
+///  task
+/// </summary>
+,
     /// <summary>
-    /// target_account
-    /// </summary>
-    TargetAccount,
-    /// <summary>
-    /// target_off
-    /// </summary>
-    TargetOff,
-    /// <summary>
-    /// task_alt
+    ///  task_alt
     /// </summary>
     TaskAlt,
+/// <summary>
+///  tatami_seat
+/// </summary>
+,
+/// <summary>
+///  taunt
+/// </summary>
+,
     /// <summary>
-    /// taxi_alert
+    ///  taxi_alert
     /// </summary>
     TaxiAlert,
     /// <summary>
-    /// team_dashboard
+    ///  team_dashboard
     /// </summary>
     TeamDashboard,
+/// <summary>
+///  temp_preferences_eco
+/// </summary>
+,
+/// <summary>
+///  temple_buddhist
+/// </summary>
+,
+/// <summary>
+///  temple_hindu
+/// </summary>
+,
+/// <summary>
+///  tenancy
+/// </summary>
+,
     /// <summary>
-    /// temperature_dragger
-    /// </summary>
-    TemperatureDragger,
-    /// <summary>
-    /// tent
-    /// </summary>
-    Tent,
-    /// <summary>
-    /// terminal
+    ///  terminal
     /// </summary>
     Terminal,
     /// <summary>
-    /// terrain
-    /// </summary>
-    Terrain,
-    /// <summary>
-    /// text_ad
+    ///  text_ad
     /// </summary>
     TextAd,
+/// <summary>
+///  text_compare
+/// </summary>
+,
+/// <summary>
+///  text_decrease
+/// </summary>
+,
     /// <summary>
-    /// text_fields
+    ///  text_fields
     /// </summary>
     TextFields,
+/// <summary>
+///  text_fields_alt
+/// </summary>
+,
     /// <summary>
-    /// text_format
+    ///  text_format
     /// </summary>
     TextFormat,
+/// <summary>
+///  text_increase
+/// </summary>
+,
     /// <summary>
-    /// text_rotate_up
+    ///  text_rotate_up
     /// </summary>
     TextRotateUp,
     /// <summary>
-    /// text_rotate_vertical
+    ///  text_rotate_vertical
     /// </summary>
     TextRotateVertical,
     /// <summary>
-    /// text_rotation_angledown
+    ///  text_rotation_angledown
     /// </summary>
     TextRotationAngledown,
     /// <summary>
-    /// text_rotation_angleup
+    ///  text_rotation_angleup
     /// </summary>
     TextRotationAngleup,
     /// <summary>
-    /// text_rotation_down
+    ///  text_rotation_down
     /// </summary>
     TextRotationDown,
     /// <summary>
-    /// text_rotation_none
+    ///  text_rotation_none
     /// </summary>
     TextRotationNone,
     /// <summary>
-    /// text_select_end
+    ///  text_select_end
     /// </summary>
     TextSelectEnd,
+/// <summary>
+///  text_select_jump_to_beginning
+/// </summary>
+,
+/// <summary>
+///  text_select_jump_to_end
+/// </summary>
+,
+/// <summary>
+///  text_select_move_back_character
+/// </summary>
+,
+/// <summary>
+///  text_select_move_back_word
+/// </summary>
+,
+/// <summary>
+///  text_select_move_down
+/// </summary>
+,
+/// <summary>
+///  text_select_move_forward_character
+/// </summary>
+,
+/// <summary>
+///  text_select_move_forward_word
+/// </summary>
+,
+/// <summary>
+///  text_select_move_up
+/// </summary>
+,
     /// <summary>
-    /// text_select_move_back
-    /// </summary>
-    TextSelectMoveBack,
-    /// <summary>
-    /// text_select_move_forward
-    /// </summary>
-    TextSelectMoveForward,
-    /// <summary>
-    /// text_select_start
+    ///  text_select_start
     /// </summary>
     TextSelectStart,
+/// <summary>
+///  text_snippet
+/// </summary>
+,
     /// <summary>
-    /// text_to_speech
+    ///  text_to_speech
     /// </summary>
     TextToSpeech,
+/// <summary>
+///  text_up
+/// </summary>
+,
+/// <summary>
+///  texture
+/// </summary>
+,
+/// <summary>
+///  texture_add
+/// </summary>
+,
+/// <summary>
+///  texture_minus
+/// </summary>
+,
+/// <summary>
+///  theater_comedy
+/// </summary>
+,
+/// <summary>
+///  theaters
+/// </summary>
+,
     /// <summary>
-    /// text_url
-    /// </summary>
-    TextUrl,
-    /// <summary>
-    /// theme_ext
-    /// </summary>
-    ThemeExt,
-    /// <summary>
-    /// theme_light_dark
-    /// </summary>
-    ThemeLightDark,
-    /// <summary>
-    /// thermometer
+    ///  thermometer
     /// </summary>
     Thermometer,
+/// <summary>
+///  thermometer_add
+/// </summary>
+,
+/// <summary>
+///  thermometer_gain
+/// </summary>
+,
+/// <summary>
+///  thermometer_loss
+/// </summary>
+,
+/// <summary>
+///  thermometer_minus
+/// </summary>
+,
+/// <summary>
+///  thermostat
+/// </summary>
+,
+/// <summary>
+///  thermostat_arrow_down
+/// </summary>
+,
+/// <summary>
+///  thermostat_arrow_up
+/// </summary>
+,
+/// <summary>
+///  thermostat_auto
+/// </summary>
+,
+/// <summary>
+///  thermostat_carbon
+/// </summary>
+,
     /// <summary>
-    /// thermometer_b
-    /// </summary>
-    ThermometerB,
-    /// <summary>
-    /// things_to_do
+    ///  things_to_do
     /// </summary>
     ThingsToDo,
+/// <summary>
+///  thread_unread
+/// </summary>
+,
+/// <summary>
+///  threat_intelligence
+/// </summary>
+,
+/// <summary>
+///  thumb_down
+/// </summary>
+,
+/// <summary>
+///  thumb_up
+/// </summary>
+,
+/// <summary>
+///  thumbnail_bar
+/// </summary>
+,
+/// <summary>
+///  thumbs_up_double
+/// </summary>
+,
+/// <summary>
+///  thumbs_up_down
+/// </summary>
+,
     /// <summary>
-    /// thunderstorm
+    ///  thunderstorm
     /// </summary>
     Thunderstorm,
+/// <summary>
+///  tibia
+/// </summary>
+,
+/// <summary>
+///  tibia_alt
+/// </summary>
+,
+/// <summary>
+///  tile_large
+/// </summary>
+,
+/// <summary>
+///  tile_medium
+/// </summary>
+,
+/// <summary>
+///  tile_small
+/// </summary>
+,
+/// <summary>
+///  time_auto
+/// </summary>
+,
+/// <summary>
+///  timelapse
+/// </summary>
+,
+/// <summary>
+///  timeline
+/// </summary>
+,
+/// <summary>
+///  timer
+/// </summary>
+,
+/// <summary>
+///  timer_1
+/// </summary>
+,
+/// <summary>
+///  timer_10
+/// </summary>
+,
+/// <summary>
+///  timer_10_alt_1
+/// </summary>
+,
+/// <summary>
+///  timer_10_select
+/// </summary>
+,
+/// <summary>
+///  timer_2
+/// </summary>
+,
+/// <summary>
+///  timer_3
+/// </summary>
+,
+/// <summary>
+///  timer_3_alt_1
+/// </summary>
+,
+/// <summary>
+///  timer_3_select
+/// </summary>
+,
+/// <summary>
+///  timer_5
+/// </summary>
+,
+/// <summary>
+///  timer_5_shutter
+/// </summary>
+,
+/// <summary>
+///  timer_arrow_down
+/// </summary>
+,
+/// <summary>
+///  timer_arrow_up
+/// </summary>
+,
+/// <summary>
+///  timer_off
+/// </summary>
+,
+/// <summary>
+///  timer_pause
+/// </summary>
+,
+/// <summary>
+///  timer_play
+/// </summary>
+,
+/// <summary>
+///  tire_repair
+/// </summary>
+,
+/// <summary>
+///  title
+/// </summary>
+,
+/// <summary>
+///  titlecase
+/// </summary>
+,
+/// <summary>
+///  toast
+/// </summary>
+,
+/// <summary>
+///  toc
+/// </summary>
+,
+/// <summary>
+///  today
+/// </summary>
+,
+/// <summary>
+///  toggle_off
+/// </summary>
+,
+/// <summary>
+///  toggle_on
+/// </summary>
+,
+/// <summary>
+///  token
+/// </summary>
+,
+/// <summary>
+///  toll
+/// </summary>
+,
+/// <summary>
+///  tonality
+/// </summary>
+,
+/// <summary>
+///  tonality_2
+/// </summary>
+,
+/// <summary>
+///  toolbar
+/// </summary>
+,
     /// <summary>
-    /// tide
-    /// </summary>
-    Tide,
-    /// <summary>
-    /// tidings
-    /// </summary>
-    Tidings,
-    /// <summary>
-    /// tools_flat_head
+    ///  tools_flat_head
     /// </summary>
     ToolsFlatHead,
+/// <summary>
+///  tools_installation_kit
+/// </summary>
+,
+/// <summary>
+///  tools_ladder
+/// </summary>
+,
     /// <summary>
-    /// tools_level
+    ///  tools_level
     /// </summary>
     ToolsLevel,
     /// <summary>
-    /// tools_phillips
+    ///  tools_phillips
     /// </summary>
     ToolsPhillips,
+/// <summary>
+///  tools_pliers_wire_stripper
+/// </summary>
+,
+/// <summary>
+///  tools_power_drill
+/// </summary>
+,
+/// <summary>
+///  tooltip
+/// </summary>
+,
+/// <summary>
+///  tooltip_2
+/// </summary>
+,
+/// <summary>
+///  top_panel_close
+/// </summary>
+,
+/// <summary>
+///  top_panel_open
+/// </summary>
+,
+/// <summary>
+///  topic
+/// </summary>
+,
+/// <summary>
+///  tornado
+/// </summary>
+,
+/// <summary>
+///  total_dissolved_solids
+/// </summary>
+,
+/// <summary>
+///  touch_app
+/// </summary>
+,
+/// <summary>
+///  touch_double
+/// </summary>
+,
+/// <summary>
+///  touch_long
+/// </summary>
+,
+/// <summary>
+///  touch_triple
+/// </summary>
+,
+/// <summary>
+///  touchpad_mouse
+/// </summary>
+,
+/// <summary>
+///  touchpad_mouse_off
+/// </summary>
+,
+/// <summary>
+///  tour
+/// </summary>
+,
+/// <summary>
+///  toys
+/// </summary>
+,
+/// <summary>
+///  toys_and_games
+/// </summary>
+,
+/// <summary>
+///  toys_fan
+/// </summary>
+,
+/// <summary>
+///  track_changes
+/// </summary>
+,
+/// <summary>
+///  trackpad_input
+/// </summary>
+,
+/// <summary>
+///  trackpad_input_2
+/// </summary>
+,
+/// <summary>
+///  trackpad_input_3
+/// </summary>
+,
     /// <summary>
-    /// topleft_triangle
-    /// </summary>
-    TopleftTriangle,
-    /// <summary>
-    /// topography
-    /// </summary>
-    Topography,
-    /// <summary>
-    /// traffic
+    ///  traffic
     /// </summary>
     Traffic,
+/// <summary>
+///  traffic_jam
+/// </summary>
+,
+/// <summary>
+///  trail_length
+/// </summary>
+,
+/// <summary>
+///  trail_length_medium
+/// </summary>
+,
+/// <summary>
+///  trail_length_short
+/// </summary>
+,
+/// <summary>
+///  train
+/// </summary>
+,
+/// <summary>
+///  tram
+/// </summary>
+,
+/// <summary>
+///  transcribe
+/// </summary>
+,
+/// <summary>
+///  transfer_within_a_station
+/// </summary>
+,
+/// <summary>
+///  transform
+/// </summary>
+,
+/// <summary>
+///  transgender
+/// </summary>
+,
+/// <summary>
+///  transit_enterexit
+/// </summary>
+,
+/// <summary>
+///  transit_ticket
+/// </summary>
+,
+/// <summary>
+///  transition_chop
+/// </summary>
+,
+/// <summary>
+///  transition_dissolve
+/// </summary>
+,
+/// <summary>
+///  transition_fade
+/// </summary>
+,
+/// <summary>
+///  transition_push
+/// </summary>
+,
+/// <summary>
+///  transition_slide
+/// </summary>
+,
+/// <summary>
+///  translate
+/// </summary>
+,
+/// <summary>
+///  translate_indic
+/// </summary>
+,
+/// <summary>
+///  transportation
+/// </summary>
+,
+/// <summary>
+///  travel
+/// </summary>
+,
     /// <summary>
-    /// traffic_light
-    /// </summary>
-    TrafficLight,
-    /// <summary>
-    /// trail_closure
-    /// </summary>
-    TrailClosure,
-    /// <summary>
-    /// trail_short
-    /// </summary>
-    TrailShort,
-    /// <summary>
-    /// travel_explore
+    ///  travel_explore
     /// </summary>
     TravelExplore,
     /// <summary>
-    /// travel_luggage_and_bags
+    ///  travel_luggage_and_bags
     /// </summary>
     TravelLuggageAndBags,
+/// <summary>
+///  trending_down
+/// </summary>
+,
+/// <summary>
+///  trending_flat
+/// </summary>
+,
+/// <summary>
+///  trending_up
+/// </summary>
+,
+/// <summary>
+///  trip
+/// </summary>
+,
+/// <summary>
+///  trip_origin
+/// </summary>
+,
     /// <summary>
-    /// trekking
-    /// </summary>
-    Trekking,
-    /// <summary>
-    /// tree
-    /// </summary>
-    Tree,
-    /// <summary>
-    /// tree_2
-    /// </summary>
-    Tree2,
-    /// <summary>
-    /// trolley
+    ///  trolley
     /// </summary>
     Trolley,
+/// <summary>
+///  trolley_cable_car
+/// </summary>
+,
     /// <summary>
-    /// trophy
+    ///  trophy
     /// </summary>
     Trophy,
+/// <summary>
+///  troubleshoot
+/// </summary>
+,
+/// <summary>
+///  tsunami
+/// </summary>
+,
+/// <summary>
+///  tsv
+/// </summary>
+,
+/// <summary>
+///  tty
+/// </summary>
+,
+/// <summary>
+///  tune
+/// </summary>
+,
+/// <summary>
+///  turn_left
+/// </summary>
+,
+/// <summary>
+///  turn_right
+/// </summary>
+,
+/// <summary>
+///  turn_sharp_left
+/// </summary>
+,
+/// <summary>
+///  turn_sharp_right
+/// </summary>
+,
+/// <summary>
+///  turn_slight_left
+/// </summary>
+,
+/// <summary>
+///  turn_slight_right
+/// </summary>
+,
+/// <summary>
+///  tv
+/// </summary>
+,
+/// <summary>
+///  tv_displays
+/// </summary>
+,
+/// <summary>
+///  tv_gen
+/// </summary>
+,
+/// <summary>
+///  tv_guide
+/// </summary>
+,
+/// <summary>
+///  tv_next
+/// </summary>
+,
+/// <summary>
+///  tv_off
+/// </summary>
+,
+/// <summary>
+///  tv_options_edit_channels
+/// </summary>
+,
+/// <summary>
+///  tv_options_input_settings
+/// </summary>
+,
+/// <summary>
+///  tv_remote
+/// </summary>
+,
+/// <summary>
+///  tv_signin
+/// </summary>
+,
+/// <summary>
+///  tv_with_assistant
+/// </summary>
+,
     /// <summary>
-    /// tropical_storm
-    /// </summary>
-    TropicalStorm,
-    /// <summary>
-    /// truck
-    /// </summary>
-    Truck,
-    /// <summary>
-    /// truck_loader
-    /// </summary>
-    TruckLoader,
-    /// <summary>
-    /// truck_off
-    /// </summary>
-    TruckOff,
-    /// <summary>
-    /// two_pager
+    ///  two_pager
     /// </summary>
     TwoPager,
+/// <summary>
+///  two_pager_store
+/// </summary>
+,
+/// <summary>
+///  two_wheeler
+/// </summary>
+,
     /// <summary>
-    /// type_specimen
+    ///  type_specimen
     /// </summary>
     TypeSpecimen,
+/// <summary>
+///  u_turn_left
+/// </summary>
+,
+/// <summary>
+///  u_turn_right
+/// </summary>
+,
+/// <summary>
+///  udon
+/// </summary>
+,
+/// <summary>
+///  ulna_radius
+/// </summary>
+,
+/// <summary>
+///  ulna_radius_alt
+/// </summary>
+,
     /// <summary>
-    /// umbrella
+    ///  umbrella
     /// </summary>
     Umbrella,
     /// <summary>
-    /// unarchive
+    ///  unarchive
     /// </summary>
     Unarchive,
     /// <summary>
-    /// undo
+    ///  undo
     /// </summary>
     Undo,
     /// <summary>
-    /// unfold_less
+    ///  unfold_less
     /// </summary>
     UnfoldLess,
+/// <summary>
+///  unfold_less_double
+/// </summary>
+,
     /// <summary>
-    /// unfold_more
+    ///  unfold_more
     /// </summary>
     UnfoldMore,
+/// <summary>
+///  unfold_more_double
+/// </summary>
+,
+/// <summary>
+///  ungroup
+/// </summary>
+,
+/// <summary>
+///  universal_currency
+/// </summary>
+,
+/// <summary>
+///  universal_currency_alt
+/// </summary>
+,
+/// <summary>
+///  universal_local
+/// </summary>
+,
+/// <summary>
+///  unknown_2
+/// </summary>
+,
     /// <summary>
-    /// unknown_5
+    ///  unknown_5
     /// </summary>
     Unknown5,
+/// <summary>
+///  unknown_7
+/// </summary>
+,
     /// <summary>
-    /// unknown_document
+    ///  unknown_document
     /// </summary>
     UnknownDocument,
     /// <summary>
-    /// unknown_med
+    ///  unknown_med
     /// </summary>
     UnknownMed,
+/// <summary>
+///  unlicense
+/// </summary>
+,
+/// <summary>
+///  unpaved_road
+/// </summary>
+,
+/// <summary>
+///  unpublished
+/// </summary>
+,
+/// <summary>
+///  unsubscribe
+/// </summary>
+,
     /// <summary>
-    /// unlight
-    /// </summary>
-    Unlight,
-    /// <summary>
-    /// unpaid
-    /// </summary>
-    Unpaid,
-    /// <summary>
-    /// unpaid_off
-    /// </summary>
-    UnpaidOff,
-    /// <summary>
-    /// upcoming
+    ///  upcoming
     /// </summary>
     Upcoming,
     /// <summary>
-    /// update
+    ///  update
     /// </summary>
     Update,
     /// <summary>
-    /// update_disabled
+    ///  update_disabled
     /// </summary>
     UpdateDisabled,
     /// <summary>
-    /// upgrade
+    ///  upgrade
     /// </summary>
     Upgrade,
+/// <summary>
+///  upi_pay
+/// </summary>
+,
     /// <summary>
-    /// upload
+    ///  upload
     /// </summary>
     Upload,
+/// <summary>
+///  upload_2
+/// </summary>
+,
     /// <summary>
-    /// upload_file
+    ///  upload_file
     /// </summary>
     UploadFile,
+/// <summary>
+///  uppercase
+/// </summary>
+,
     /// <summary>
-    /// upload_to_cloud
-    /// </summary>
-    UploadToCloud,
-    /// <summary>
-    /// upload_to_cloud_off
-    /// </summary>
-    UploadToCloudOff,
-    /// <summary>
-    /// urban_transport
-    /// </summary>
-    UrbanTransport,
-    /// <summary>
-    /// urogynecology
-    /// </summary>
-    Urogynecology,
-    /// <summary>
-    /// urology
+    ///  urology
     /// </summary>
     Urology,
+/// <summary>
+///  usb
+/// </summary>
+,
+/// <summary>
+///  usb_off
+/// </summary>
+,
+/// <summary>
+///  user_attributes
+/// </summary>
+,
+/// <summary>
+///  vaccines
+/// </summary>
+,
     /// <summary>
-    /// vaccine
-    /// </summary>
-    Vaccine,
-    /// <summary>
-    /// vacuum
+    ///  vacuum
     /// </summary>
     Vacuum,
+/// <summary>
+///  valve
+/// </summary>
+,
+/// <summary>
+///  vape_free
+/// </summary>
+,
+/// <summary>
+///  vaping_rooms
+/// </summary>
+,
     /// <summary>
-    /// vacuum_cleaner
-    /// </summary>
-    VacuumCleaner,
-    /// <summary>
-    /// variable_add
+    ///  variable_add
     /// </summary>
     VariableAdd,
+/// <summary>
+///  variable_insert
+/// </summary>
+,
+/// <summary>
+///  variable_remove
+/// </summary>
+,
+/// <summary>
+///  variables
+/// </summary>
+,
+/// <summary>
+///  ventilator
+/// </summary>
+,
     /// <summary>
-    /// vegetables
-    /// </summary>
-    Vegetables,
-    /// <summary>
-    /// vehicle_car
-    /// </summary>
-    VehicleCar,
-    /// <summary>
-    /// vehicle_car_profile
-    /// </summary>
-    VehicleCarProfile,
-    /// <summary>
-    /// vehicle_truck
-    /// </summary>
-    VehicleTruck,
-    /// <summary>
-    /// vehicle_truck_profile
-    /// </summary>
-    VehicleTruckProfile,
-    /// <summary>
-    /// vehicle_bus
-    /// </summary>
-    VehicleBus,
-    /// <summary>
-    /// vehicle_bus_profile
-    /// </summary>
-    VehicleBusProfile,
-    /// <summary>
-    /// verified
+    ///  verified
     /// </summary>
     Verified,
+/// <summary>
+///  verified_off
+/// </summary>
+,
     /// <summary>
-    /// verified_user
+    ///  verified_user
     /// </summary>
     VerifiedUser,
     /// <summary>
-    /// vertical_align_bottom
+    ///  vertical_align_bottom
     /// </summary>
     VerticalAlignBottom,
     /// <summary>
-    /// vertical_align_center
+    ///  vertical_align_center
     /// </summary>
     VerticalAlignCenter,
     /// <summary>
-    /// vertical_align_top
+    ///  vertical_align_top
     /// </summary>
     VerticalAlignTop,
     /// <summary>
-    /// vertical_distribute
+    ///  vertical_distribute
     /// </summary>
     VerticalDistribute,
     /// <summary>
-    /// vertical_shades
+    ///  vertical_shades
     /// </summary>
     VerticalShades,
     /// <summary>
-    /// vertical_shades_closed
+    ///  vertical_shades_closed
     /// </summary>
     VerticalShadesClosed,
     /// <summary>
-    /// vertical_split
+    ///  vertical_split
     /// </summary>
     VerticalSplit,
+/// <summary>
+///  video_call
+/// </summary>
+,
     /// <summary>
-    /// video_camera_back
+    ///  video_camera_back
     /// </summary>
     VideoCameraBack,
+/// <summary>
+///  video_camera_back_add
+/// </summary>
+,
     /// <summary>
-    /// video_camera_front
+    ///  video_camera_front
     /// </summary>
     VideoCameraFront,
+/// <summary>
+///  video_camera_front_off
+/// </summary>
+,
     /// <summary>
-    /// video_chat
+    ///  video_chat
     /// </summary>
     VideoChat,
     /// <summary>
-    /// video_file
+    ///  video_file
     /// </summary>
     VideoFile,
     /// <summary>
-    /// video_label
+    ///  video_label
     /// </summary>
     VideoLabel,
     /// <summary>
-    /// video_library
+    ///  video_library
     /// </summary>
     VideoLibrary,
     /// <summary>
-    /// video_search
+    ///  video_search
     /// </summary>
     VideoSearch,
+/// <summary>
+///  video_settings
+/// </summary>
+,
     /// <summary>
-    /// video_stable
+    ///  video_stable
     /// </summary>
     VideoStable,
+/// <summary>
+///  videocam
+/// </summary>
+,
+/// <summary>
+///  videocam_alert
+/// </summary>
+,
+/// <summary>
+///  videocam_off
+/// </summary>
+,
+/// <summary>
+///  videogame_asset
+/// </summary>
+,
+/// <summary>
+///  videogame_asset_off
+/// </summary>
+,
+/// <summary>
+///  view_agenda
+/// </summary>
+,
+/// <summary>
+///  view_apps
+/// </summary>
+,
+/// <summary>
+///  view_array
+/// </summary>
+,
+/// <summary>
+///  view_carousel
+/// </summary>
+,
+/// <summary>
+///  view_column
+/// </summary>
+,
+/// <summary>
+///  view_column_2
+/// </summary>
+,
+/// <summary>
+///  view_comfy
+/// </summary>
+,
+/// <summary>
+///  view_comfy_alt
+/// </summary>
+,
+/// <summary>
+///  view_compact
+/// </summary>
+,
+/// <summary>
+///  view_compact_alt
+/// </summary>
+,
     /// <summary>
-    /// view_cozy
+    ///  view_cozy
     /// </summary>
     ViewCozy,
+/// <summary>
+///  view_day
+/// </summary>
+,
+/// <summary>
+///  view_headline
+/// </summary>
+,
     /// <summary>
-    /// view_in_ar
+    ///  view_in_ar
     /// </summary>
     ViewInAr,
+/// <summary>
+///  view_in_ar_off
+/// </summary>
+,
     /// <summary>
-    /// view_kanban
+    ///  view_kanban
     /// </summary>
     ViewKanban,
     /// <summary>
-    /// view_list
+    ///  view_list
     /// </summary>
     ViewList,
     /// <summary>
-    /// view_module
+    ///  view_module
     /// </summary>
     ViewModule,
+/// <summary>
+///  view_object_track
+/// </summary>
+,
     /// <summary>
-    /// view_quilt
+    ///  view_quilt
     /// </summary>
     ViewQuilt,
+/// <summary>
+///  view_real_size
+/// </summary>
+,
+/// <summary>
+///  view_sidebar
+/// </summary>
+,
     /// <summary>
-    /// view_stream
+    ///  view_stream
     /// </summary>
     ViewStream,
     /// <summary>
-    /// view_timeline
+    ///  view_timeline
     /// </summary>
     ViewTimeline,
     /// <summary>
-    /// view_week
+    ///  view_week
     /// </summary>
     ViewWeek,
+/// <summary>
+///  vignette
+/// </summary>
+,
+/// <summary>
+///  vignette_2
+/// </summary>
+,
+/// <summary>
+///  villa
+/// </summary>
+,
     /// <summary>
-    /// visibility
+    ///  visibility
     /// </summary>
     Visibility,
+/// <summary>
+///  visibility_lock
+/// </summary>
+,
     /// <summary>
-    /// visibility_off
+    ///  visibility_off
     /// </summary>
     VisibilityOff,
     /// <summary>
-    /// vital_signs
+    ///  vital_signs
     /// </summary>
     VitalSigns,
+/// <summary>
+///  vo2_max
+/// </summary>
+,
+/// <summary>
+///  voice_chat
+/// </summary>
+,
+/// <summary>
+///  voice_over_off
+/// </summary>
+,
+/// <summary>
+///  voice_selection
+/// </summary>
+,
+/// <summary>
+///  voice_selection_off
+/// </summary>
+,
     /// <summary>
-    /// voicemail
+    ///  voicemail
     /// </summary>
     Voicemail,
+/// <summary>
+///  voicemail_2
+/// </summary>
+,
     /// <summary>
-    /// volcano
+    ///  volcano
     /// </summary>
     Volcano,
     /// <summary>
-    /// volume_down
+    ///  volume_down
     /// </summary>
     VolumeDown,
+/// <summary>
+///  volume_down_alt
+/// </summary>
+,
+/// <summary>
+///  volume_mute
+/// </summary>
+,
     /// <summary>
-    /// volume_off
+    ///  volume_off
     /// </summary>
     VolumeOff,
     /// <summary>
-    /// volume_up
+    ///  volume_up
     /// </summary>
     VolumeUp,
+/// <summary>
+///  volunteer_activism
+/// </summary>
+,
+/// <summary>
+///  voting_chip
+/// </summary>
+,
     /// <summary>
-    /// vpn_key
+    ///  vpn_key
     /// </summary>
     VpnKey,
+/// <summary>
+///  vpn_key_alert
+/// </summary>
+,
     /// <summary>
-    /// vpn_key_off
+    ///  vpn_key_off
     /// </summary>
     VpnKeyOff,
+/// <summary>
+///  vpn_lock
+/// </summary>
+,
+/// <summary>
+///  vpn_lock_2
+/// </summary>
+,
+/// <summary>
+///  vr180_create2d
+/// </summary>
+,
+/// <summary>
+///  vr180_create2d_off
+/// </summary>
+,
+/// <summary>
+///  vrpano
+/// </summary>
+,
+/// <summary>
+///  wall_art
+/// </summary>
+,
     /// <summary>
-    /// wall_lamp
+    ///  wall_lamp
     /// </summary>
     WallLamp,
     /// <summary>
-    /// wallet
+    ///  wallet
     /// </summary>
     Wallet,
     /// <summary>
-    /// wallpaper
+    ///  wallpaper
     /// </summary>
     Wallpaper,
+/// <summary>
+///  wallpaper_slideshow
+/// </summary>
+,
+/// <summary>
+///  wand_shine
+/// </summary>
+,
+/// <summary>
+///  wand_stars
+/// </summary>
+,
+/// <summary>
+///  ward
+/// </summary>
+,
+/// <summary>
+///  warehouse
+/// </summary>
+,
     /// <summary>
-    /// warm_and_cozy
-    /// </summary>
-    WarmAndCozy,
-    /// <summary>
-    /// warning
+    ///  warning
     /// </summary>
     Warning,
+/// <summary>
+///  warning_off
+/// </summary>
+,
+/// <summary>
+///  wash
+/// </summary>
+,
+/// <summary>
+///  washoku
+/// </summary>
+,
     /// <summary>
-    /// wastebag
-    /// </summary>
-    Wastebag,
-    /// <summary>
-    /// watch
+    ///  watch
     /// </summary>
     Watch,
+/// <summary>
+///  watch_arrow
+/// </summary>
+,
+/// <summary>
+///  watch_button_press
+/// </summary>
+,
+/// <summary>
+///  watch_check
+/// </summary>
+,
+/// <summary>
+///  watch_off
+/// </summary>
+,
     /// <summary>
-    /// watch_screentime
+    ///  watch_screentime
     /// </summary>
     WatchScreentime,
+/// <summary>
+///  watch_vibration
+/// </summary>
+,
+/// <summary>
+///  watch_wake
+/// </summary>
+,
     /// <summary>
-    /// water
+    ///  water
     /// </summary>
     Water,
     /// <summary>
-    /// water_bottle
+    ///  water_bottle
     /// </summary>
     WaterBottle,
+/// <summary>
+///  water_bottle_large
+/// </summary>
+,
     /// <summary>
-    /// water_bottle_refill
-    /// </summary>
-    WaterBottleRefill,
-    /// <summary>
-    /// water_damage
+    ///  water_damage
     /// </summary>
     WaterDamage,
+/// <summary>
+///  water_do
+/// </summary>
+,
+/// <summary>
+///  water_drop
+/// </summary>
+,
+/// <summary>
+///  water_ec
+/// </summary>
+,
+/// <summary>
+///  water_full
+/// </summary>
+,
     /// <summary>
-    /// water_heater
+    ///  water_heater
     /// </summary>
     WaterHeater,
+/// <summary>
+///  water_lock
+/// </summary>
+,
+/// <summary>
+///  water_loss
+/// </summary>
+,
     /// <summary>
-    /// water_lux
+    ///  water_lux
     /// </summary>
     WaterLux,
+/// <summary>
+///  water_medium
+/// </summary>
+,
+/// <summary>
+///  water_orp
+/// </summary>
+,
     /// <summary>
-    /// water_ph
+    ///  water_ph
     /// </summary>
     WaterPh,
     /// <summary>
-    /// water_pump
+    ///  water_pump
     /// </summary>
     WaterPump,
+/// <summary>
+///  water_voc
+/// </summary>
+,
+/// <summary>
+///  waterfall_chart
+/// </summary>
+,
     /// <summary>
-    /// watering_can
-    /// </summary>
-    WateringCan,
-    /// <summary>
-    /// waves
+    ///  waves
     /// </summary>
     Waves,
+/// <summary>
+///  waving_hand
+/// </summary>
+,
+/// <summary>
+///  wb_auto
+/// </summary>
+,
+/// <summary>
+///  wb_incandescent
+/// </summary>
+,
+/// <summary>
+///  wb_iridescent
+/// </summary>
+,
+/// <summary>
+///  wb_shade
+/// </summary>
+,
+/// <summary>
+///  wb_sunny
+/// </summary>
+,
+/// <summary>
+///  wb_twilight
+/// </summary>
+,
+/// <summary>
+///  wc
+/// </summary>
+,
     /// <summary>
-    /// weather_hail
+    ///  weather_hail
     /// </summary>
     WeatherHail,
     /// <summary>
-    /// weather_mix
+    ///  weather_mix
     /// </summary>
     WeatherMix,
     /// <summary>
-    /// weather_snowy
+    ///  weather_snowy
     /// </summary>
     WeatherSnowy,
     /// <summary>
-    /// web
+    ///  web
     /// </summary>
     Web,
     /// <summary>
-    /// web_asset
+    ///  web_asset
     /// </summary>
     WebAsset,
     /// <summary>
-    /// web_asset_off
+    ///  web_asset_off
     /// </summary>
     WebAssetOff,
     /// <summary>
-    /// web_stories
+    ///  web_stories
     /// </summary>
     WebStories,
     /// <summary>
-    /// web_traffic
+    ///  web_traffic
     /// </summary>
     WebTraffic,
     /// <summary>
-    /// webhook
+    ///  webhook
     /// </summary>
     Webhook,
     /// <summary>
-    /// weekend
+    ///  weekend
     /// </summary>
     Weekend,
     /// <summary>
-    /// weight
+    ///  weight
     /// </summary>
     Weight,
     /// <summary>
-    /// west
+    ///  west
     /// </summary>
     West,
     /// <summary>
-    /// whatshot
+    ///  whatshot
     /// </summary>
     Whatshot,
     /// <summary>
-    /// wheelchair_pickup
+    ///  wheelchair_pickup
     /// </summary>
     WheelchairPickup,
     /// <summary>
-    /// where_to_vote
+    ///  where_to_vote
     /// </summary>
     WhereToVote,
     /// <summary>
-    /// widget_medium
+    ///  widget_medium
     /// </summary>
     WidgetMedium,
     /// <summary>
-    /// widget_small
+    ///  widget_small
     /// </summary>
     WidgetSmall,
     /// <summary>
-    /// widget_width
+    ///  widget_width
     /// </summary>
     WidgetWidth,
     /// <summary>
-    /// widgets
+    ///  widgets
     /// </summary>
     Widgets,
     /// <summary>
-    /// width_full
+    ///  width_full
     /// </summary>
     WidthFull,
     /// <summary>
-    /// width_normal
+    ///  width_normal
     /// </summary>
     WidthNormal,
     /// <summary>
-    /// width_wide
+    ///  width_wide
     /// </summary>
     WidthWide,
     /// <summary>
-    /// wifi
+    ///  wifi
     /// </summary>
     Wifi,
     /// <summary>
-    /// wifi_1_bar
+    ///  wifi_1_bar
     /// </summary>
     Wifi1Bar,
     /// <summary>
-    /// wifi_2_bar
+    ///  wifi_2_bar
     /// </summary>
     Wifi2Bar,
     /// <summary>
-    /// wifi_add
+    ///  wifi_add
     /// </summary>
     WifiAdd,
     /// <summary>
-    /// wifi_calling
+    ///  wifi_calling
     /// </summary>
     WifiCalling,
     /// <summary>
-    /// wifi_calling_bar_1
+    ///  wifi_calling_bar_1
     /// </summary>
     WifiCallingBar1,
     /// <summary>
-    /// wifi_calling_bar_2
+    ///  wifi_calling_bar_2
     /// </summary>
     WifiCallingBar2,
     /// <summary>
-    /// wifi_calling_bar_3
+    ///  wifi_calling_bar_3
     /// </summary>
     WifiCallingBar3,
     /// <summary>
-    /// wifi_channel
+    ///  wifi_channel
     /// </summary>
     WifiChannel,
     /// <summary>
-    /// wifi_find
+    ///  wifi_find
     /// </summary>
     WifiFind,
     /// <summary>
-    /// wifi_home
+    ///  wifi_home
     /// </summary>
     WifiHome,
     /// <summary>
-    /// wifi_lock
+    ///  wifi_lock
     /// </summary>
     WifiLock,
     /// <summary>
-    /// wifi_notification
+    ///  wifi_notification
     /// </summary>
     WifiNotification,
     /// <summary>
-    /// wifi_off
+    ///  wifi_off
     /// </summary>
     WifiOff,
     /// <summary>
-    /// wifi_password
+    ///  wifi_password
     /// </summary>
     WifiPassword,
     /// <summary>
-    /// wifi_protected_setup
+    ///  wifi_protected_setup
     /// </summary>
     WifiProtectedSetup,
     /// <summary>
-    /// wifi_proxy
+    ///  wifi_proxy
     /// </summary>
     WifiProxy,
     /// <summary>
-    /// wifi_tethering
+    ///  wifi_tethering
     /// </summary>
     WifiTethering,
     /// <summary>
-    /// wifi_tethering_error
+    ///  wifi_tethering_error
     /// </summary>
     WifiTetheringError,
     /// <summary>
-    /// wifi_tethering_off
+    ///  wifi_tethering_off
     /// </summary>
     WifiTetheringOff,
     /// <summary>
-    /// wind_power
+    ///  wind_power
     /// </summary>
     WindPower,
     /// <summary>
-    /// window
+    ///  window
     /// </summary>
     Window,
+/// <summary>
+///  window_closed
+/// </summary>
+,
+/// <summary>
+///  window_open
+/// </summary>
+,
+/// <summary>
+///  window_sensor
+/// </summary>
+,
+/// <summary>
+///  windshield_defrost_auto
+/// </summary>
+,
+/// <summary>
+///  windshield_defrost_front
+/// </summary>
+,
+/// <summary>
+///  windshield_defrost_rear
+/// </summary>
+,
+/// <summary>
+///  windshield_heat_front
+/// </summary>
+,
     /// <summary>
-    /// wine_bar
+    ///  wine_bar
     /// </summary>
     WineBar,
     /// <summary>
-    /// woman
+    ///  woman
     /// </summary>
     Woman,
     /// <summary>
-    /// woman_2
+    ///  woman_2
     /// </summary>
     Woman2,
     /// <summary>
-    /// work
+    ///  work
     /// </summary>
     Work,
+/// <summary>
+///  work_alert
+/// </summary>
+,
     /// <summary>
-    /// work_history
+    ///  work_history
     /// </summary>
     WorkHistory,
+/// <summary>
+///  work_update
+/// </summary>
+,
     /// <summary>
-    /// work_off
-    /// </summary>
-    WorkOff,
-    /// <summary>
-    /// work_outline
-    /// </summary>
-    WorkOutline,
-    /// <summary>
-    /// workspace_premium
+    ///  workspace_premium
     /// </summary>
     WorkspacePremium,
     /// <summary>
-    /// workspaces
+    ///  workspaces
     /// </summary>
     Workspaces,
+/// <summary>
+///  wounds_injuries
+/// </summary>
+,
     /// <summary>
-    /// wrap_text
+    ///  wrap_text
     /// </summary>
     WrapText,
+/// <summary>
+///  wrist
+/// </summary>
+,
     /// <summary>
-    /// wrong_location
+    ///  wrong_location
     /// </summary>
     WrongLocation,
     /// <summary>
-    /// wysiwyg
+    ///  wysiwyg
     /// </summary>
     Wysiwyg,
+/// <summary>
+///  yakitori
+/// </summary>
+,
     /// <summary>
-    /// yard
+    ///  yard
     /// </summary>
     Yard,
+/// <summary>
+///  yoshoku
+/// </summary>
+,
+/// <summary>
+///  your_trips
+/// </summary>
+,
+/// <summary>
+///  youtube_activity
+/// </summary>
+,
+/// <summary>
+///  youtube_searched_for
+/// </summary>
+,
+/// <summary>
+///  zone_person_alert
+/// </summary>
+,
+/// <summary>
+///  zone_person_idle
+/// </summary>
+,
+/// <summary>
+///  zone_person_urgent
+/// </summary>
+,
     /// <summary>
-    /// zaz
-    /// </summary>
-    Zaz,
-    /// <summary>
-    /// zig_zag
-    /// </summary>
-    ZigZag,
-    /// <summary>
-    /// zoom_in
+    ///  zoom_in
     /// </summary>
     ZoomIn,
+/// <summary>
+///  zoom_in_map
+/// </summary>
+,
     /// <summary>
-    /// zoom_out
+    ///  zoom_out
     /// </summary>
     ZoomOut,
     /// <summary>
-    /// zoom_out_map
+    ///  zoom_out_map
     /// </summary>
     ZoomOutMap
 }
