@@ -1,0 +1,11 @@
+<TextInput Class="mb-2" @bind-Value="@enteredText1" />
+<TextInput Class="mb-2" @bind-Value="@enteredText2" TextAlignment="TextAlignment.Left" />
+<TextInput Class="mb-2" @bind-Value="@enteredText3" TextAlignment="TextAlignment.Center" />
+<TextInput Class="mb-2" @bind-Value="@enteredText4" TextAlignment="TextAlignment.Right" />
+
+@code {
+    private string? enteredText1 = "Sample text";
+    private string? enteredText2 = "Sample text";
+    private string? enteredText3 = "Sample text";
+    private string? enteredText4 = "Sample text";
+}

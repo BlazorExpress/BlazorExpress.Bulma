@@ -95,7 +95,7 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.ExclamationTriangleFill, Href = DemoRouteConstants.Demos_Notification_Documentation, Text = "Notification", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Form_NumberInput_Documentation, Text = "Number Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = false });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.InputCursor, Href = DemoRouteConstants.Demos_Form_NumberInput_Documentation, Text = "Number Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.New, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Asterisk, Href = DemoRouteConstants.Demos_Form_OTPInput_Documentation, Text = "OTP Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = true });
