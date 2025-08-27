@@ -8730,22 +8730,22 @@ public enum GoogleFontIconName
     ///  mp
     /// </summary>
     Mp,
-/// <summary>
-///  multicooker
-/// </summary>
-,
-/// <summary>
-///  multiline_chart
-/// </summary>
-,
-/// <summary>
-///  multimodal_hand_eye
-/// </summary>
-,
-/// <summary>
-///  multiple_airports
-/// </summary>
-,
+    /// <summary>
+    ///  multicooker
+    /// </summary>
+    Multicooker,
+    /// <summary>
+    ///  multiline_chart
+    /// </summary>
+    MultilineChart,
+    /// <summary>
+    ///  multimodal_hand_eye
+    /// </summary>
+    MultimodalHandEye,
+    /// <summary>
+    ///  multiple_airports
+    /// </summary>
+    MultipleAirports,
 /// <summary>
 ///  multiple_stop
 /// </summary>
