@@ -10,7 +10,13 @@
                 <BootstrapIcon Class="@BulmaExpressCssClass.CursorPointer" Name="BootstrapIconName.ChevronDown" Size="BootstrapIconSize.Medium" @onclick="NextPageAsync" title="Next Page" />
             </div>
             <div class="level-item">
-                <input class="input is-small" style="width:60px;" type="number" @bind-value="pageNumber" placeholder="Enter page number" />
+                <input class="input is-small"
+                       style="width:60px;"
+                       type="number"
+                       @bind:event="oninput"
+                       @bind:get="pageNumber" 
+                       @bind:set="OnPageNumberInput"                       
+                       placeholder="Enter page number" />
                 <div class="pl-2">of @pagesCount</div>
             </div>
         </div>
