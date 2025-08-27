@@ -1,14 +1,21 @@
+<Block>
+    Count: <strong>@iconsCount</strong>
+</Block>
+
 <div class="grid">
-    @foreach (var item in Enum.GetValues<BootstrapIconName>().Where(x => x != BootstrapIconName.None))
+    @if (allIcons is not null && allIcons.Any())
     {
-        <div class="cell has-text-centered has-background-light is-clickable py-3">
-            <div>
-                <BootstrapIcon Name="item" />
+        foreach (var item in Enum.GetValues<BootstrapIconName>().Where(x => x != BootstrapIconName.None))
+        {
+            <div class="cell has-text-centered has-background-light is-clickable py-3">
+                <div>
+                    <BootstrapIcon Name="item" />
+                </div>
+                <div>
+                    @item.ToString()
+                </div>
             </div>
-            <div>
-                @item.ToString()
-            </div>
-        </div>
+        }
     }
 </div>
 
@@ -17,3 +24,15 @@
         color: hsl(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-l)) !important;
     }
 </style>
+
+@code {
+    int iconsCount = 0;
+    IEnumerable<BootstrapIconName>? allIcons;
+
+    protected override void OnInitialized()
+    {
+        allIcons = Enum.GetValues<BootstrapIconName>().Where(x => x != BootstrapIconName.None);
+        iconsCount = allIcons.Count();
+        base.OnInitialized();
+    }
+}
