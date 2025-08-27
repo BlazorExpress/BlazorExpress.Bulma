@@ -114,6 +114,11 @@ public partial class PdfViewer : BulmaComponentBase
 
     private async Task NextPageAsync() => await PdfViewerJsInterop.NextPageAsync(objRef!, Id!);
 
+    private void OnPageNumberInput(int value)
+    {
+        queuedTasks.Enqueue(async () => await PageNumberChangedAsync(value));
+    }
+
     private async Task PageNumberChangedAsync(int value)
     {
         if (value < 1 || value > pagesCount)
