@@ -8746,30 +8746,30 @@ public enum GoogleFontIconName
     ///  multiple_airports
     /// </summary>
     MultipleAirports,
-/// <summary>
-///  multiple_stop
-/// </summary>
-,
+    /// <summary>
+    ///  multiple_stop
+    /// </summary>
+    MultipleStop,
     /// <summary>
     ///  museum
     /// </summary>
     Museum,
-/// <summary>
-///  music_cast
-/// </summary>
-,
-/// <summary>
-///  music_history
-/// </summary>
-,
+    /// <summary>
+    ///  music_cast
+    /// </summary>
+    MusicCast,
+    /// <summary>
+    ///  music_history
+    /// </summary>
+    MusicHistory,
     /// <summary>
     ///  music_note
     /// </summary>
     MusicNote,
-/// <summary>
-///  music_note_add
-/// </summary>
-,
+    /// <summary>
+    ///  music_note_add
+    /// </summary>
+    MusicNoteAdd,
     /// <summary>
     ///  music_off
     /// </summary>
@@ -8778,42 +8778,42 @@ public enum GoogleFontIconName
     ///  music_video
     /// </summary>
     MusicVideo,
-/// <summary>
-///  my_location
-/// </summary>
-,
-/// <summary>
-///  mystery
-/// </summary>
-,
-/// <summary>
-///  nat
-/// </summary>
-,
-/// <summary>
-///  nature
-/// </summary>
-,
-/// <summary>
-///  nature_people
-/// </summary>
-,
+    /// <summary>
+    ///  my_location
+    /// </summary>
+    MyLocation,
+    /// <summary>
+    ///  mystery
+    /// </summary>
+    Mystery,
+    /// <summary>
+    ///  nat
+    /// </summary>
+    Nat,
+    /// <summary>
+    ///  nature
+    /// </summary>
+    Nature,
+    /// <summary>
+    ///  nature_people
+    /// </summary>
+    NaturePeople,
     /// <summary>
     ///  navigation
     /// </summary>
     Navigation,
-/// <summary>
-///  near_me
-/// </summary>
-,
-/// <summary>
-///  near_me_disabled
-/// </summary>
-,
-/// <summary>
-///  nearby
-/// </summary>
-,
+    /// <summary>
+    ///  near_me
+    /// </summary>
+    NearMe,
+    /// <summary>
+    ///  near_me_disabled
+    /// </summary>
+    NearMeDisabled,
+    /// <summary>
+    ///  nearby
+    /// </summary>
+    Nearby,
     /// <summary>
     ///  nearby_error
     /// </summary>
@@ -8822,10 +8822,10 @@ public enum GoogleFontIconName
     ///  nearby_off
     /// </summary>
     NearbyOff,
-/// <summary>
-///  nephrology
-/// </summary>
-,
+    /// <summary>
+    ///  nephrology
+    /// </summary>
+    Nephrology,
 /// <summary>
 ///  nest_audio
 /// </summary>
