@@ -8,11 +8,17 @@ namespace BlazorExpress.Bulma;
 ///     <see href="https://bulma.io/documentation/form/input/" />
 /// </para>
 /// </summary>
-public class NumberInput<TValue> : BulmaComponentBase where TValue : INumber<TValue>
+public class NumberInput<TValue> : BulmaComponentBase
 {
     #region Fields and Constants
 
+    private CultureInfo cultureInfo = default!;
+
     private FieldIdentifier fieldIdentifier = default!;
+
+    private string step => Step.HasValue
+                            ? Step.Value.ToString(CultureInfo.InvariantCulture)
+                            : "any";
 
     #endregion
 
@@ -32,11 +38,20 @@ public class NumberInput<TValue> : BulmaComponentBase where TValue : INumber<TVa
         builder.AddAttributeIfNotNullOrWhiteSpace(203, "class", $"{ClassNames} {FieldCssClasses}");
         builder.AddAttributeIfNotNullOrWhiteSpace(204, "style", StyleNames);
         builder.AddAttribute(205, "value", Value);
-        builder.AddAttribute(206, "disabled", Disabled);
-        builder.AddAttribute(207, "placeholder", Placeholder);
-        builder.AddAttribute(208, "maxlength", MaxLength);
-        builder.AddAttribute(209, "autocomplete", AutoCompleteAsString);
-        builder.AddMultipleAttributes(210, AdditionalAttributes);
+        //if(EnableMinMax)
+        //{
+        //    if (!EqualityComparer<TValue>.Default.Equals(Min, default!))
+        //        builder.AddAttribute(206, "min", Min.ToString(CultureInfo.InvariantCulture));
+
+        //    if (!EqualityComparer<TValue>.Default.Equals(Max, default!))
+        //        builder.AddAttribute(207, "max", Max.ToString(CultureInfo.InvariantCulture));
+        //}
+        builder.AddAttribute(208, "step", step);
+        builder.AddAttribute(209, "disabled", Disabled);
+        builder.AddAttribute(210, "placeholder", Placeholder);
+        builder.AddAttribute(211, "maxlength", MaxLength);
+        builder.AddAttribute(212, "autocomplete", AutoCompleteAsString);
+        builder.AddMultipleAttributes(213, AdditionalAttributes);
 
         if (BindEvent == BindEvent.OnChange)
             builder.AddAttribute(211, "onchange", OnChange);
@@ -53,9 +68,35 @@ public class NumberInput<TValue> : BulmaComponentBase where TValue : INumber<TVa
 
     protected override void OnInitialized()
     {
+        if (!(typeof(TValue) == typeof(sbyte)
+              || typeof(TValue) == typeof(sbyte?)
+              || typeof(TValue) == typeof(short)
+              || typeof(TValue) == typeof(short?)
+              || typeof(TValue) == typeof(int)
+              || typeof(TValue) == typeof(int?)
+              || typeof(TValue) == typeof(long)
+              || typeof(TValue) == typeof(long?)
+              || typeof(TValue) == typeof(float)
+              || typeof(TValue) == typeof(float?)
+              || typeof(TValue) == typeof(double)
+              || typeof(TValue) == typeof(double?)
+              || typeof(TValue) == typeof(decimal)
+              || typeof(TValue) == typeof(decimal?)
+             ))
+            throw new InvalidOperationException($"{typeof(TValue)} is not supported.");
+
         AdditionalAttributes ??= new Dictionary<string, object>();
 
         fieldIdentifier = FieldIdentifier.Create(ValueExpression!);
+
+        try
+        {
+            cultureInfo = new CultureInfo(Locale);
+        }
+        catch (CultureNotFoundException)
+        {
+            cultureInfo = new CultureInfo("en-US");
+        }
 
         base.OnInitialized();
     }
@@ -79,7 +120,7 @@ public class NumberInput<TValue> : BulmaComponentBase where TValue : INumber<TVa
         var oldValue = Value;
         var newValue = e.Value; // object
 
-        await ValueChanged.InvokeAsync(newValue);
+        //await ValueChanged.InvokeAsync(newValue);
 
         EditContext?.NotifyFieldChanged(fieldIdentifier);
     }
@@ -89,7 +130,7 @@ public class NumberInput<TValue> : BulmaComponentBase where TValue : INumber<TVa
         var oldValue = Value;
         var newValue = e.Value?.ToString() ?? string.Empty; // object
 
-        await ValueChanged.InvokeAsync(newValue);
+        //await ValueChanged.InvokeAsync(newValue);
 
         EditContext?.NotifyFieldChanged(fieldIdentifier);
     }
@@ -232,7 +273,20 @@ public class NumberInput<TValue> : BulmaComponentBase where TValue : INumber<TVa
     [Parameter]
     public bool Disabled { get; set; } = false;
 
-    [CascadingParameter] private EditContext EditContext { get; set; } = default!;
+    [CascadingParameter]
+    private EditContext EditContext { get; set; } = default!;
+
+    /// <summary>
+    /// Gets or sets a value indicating whether the minimum and maximum constraints are enabled.
+    /// <para>
+    /// Default value is <see langword="false" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets a value indicating whether the minimum and maximum constraints are enabled.")]
+    [Parameter]
+    public bool EnableMinMax { get; set; }
 
     private string FieldCssClasses => EditContext?.FieldCssClass(fieldIdentifier) ?? "";
 
@@ -249,6 +303,32 @@ public class NumberInput<TValue> : BulmaComponentBase where TValue : INumber<TVa
     public bool IsRounded { get; set; } = false;
 
     /// <summary>
+    /// Gets or sets the locale used for formatting and localization.
+    /// <para>
+    /// Default value is "en-US".
+    /// </para>
+    /// </summary>
+    /// <remarks>
+    /// This property determines the culture-specific settings for formatting, such as date, time,
+    /// and number formats. Ensure the value is a valid BCP 47 language tag to avoid unexpected behavior.
+    /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue("en-US")]
+    [Description("Gets or sets the locale used for formatting and localization.")]
+    [Parameter]
+    public string Locale { get; set; } = "en-US";
+
+    /// <summary>
+    /// Gets or sets the maximum allowable value.
+    /// Max value is ignored if <see cref="EnableMinMax" /> is false.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the maximum allowable value. Max value is ignored if <code>EnableMinMax</code> is <b>false</b>.")]
+    [Parameter]
+    public TValue Max { get; set; } = default!;
+
+    /// <summary>
     /// Gets or sets the maximum number of characters that can be entered.
     /// <para>
     /// Default value is <see langword="null" />.
@@ -260,6 +340,16 @@ public class NumberInput<TValue> : BulmaComponentBase where TValue : INumber<TVa
     [ParameterTypeName("int?")]
     [Parameter]
     public int? MaxLength { get; set; }
+
+    /// <summary>
+    /// Gets or sets the minimum allowable value.
+    /// Min value is ignored if <see cref="EnableMinMax" /> is false.
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the minimum allowable value. Min value is ignored if <code>EnableMinMax</code> is <b>false</b>.")]
+    [Parameter]
+    public TValue Min { get; set; } = default!;
 
     /// <summary>
     /// Gets or sets the placeholder text.
@@ -296,6 +386,18 @@ public class NumberInput<TValue> : BulmaComponentBase where TValue : INumber<TVa
     [Description("Gets or sets the state.")]
     [Parameter]
     public TextInputState State { get; set; } = TextInputState.None;
+
+    /// <summary>
+    /// Gets or sets the step interval for the parameter.
+    /// <para>
+    /// Default value is <see langword="null" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the step interval for the parameter.")]
+    [Parameter]
+    public double? Step { get; set; }
 
     /// <summary>
     /// Gets or sets the text alignment.

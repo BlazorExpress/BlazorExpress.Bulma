@@ -18,7 +18,7 @@
                         <th class="@column.ThClassNames"
                             style="@column.ThStyleNames"
                             role="@(AllowSorting ? "button" : null)"
-                            @onclick="@(AllowSorting ? async (e) => OnSortClickAsync(e, column) : null)">
+                            @onclick="@(async (e) => await OnSortClickAsync(e, column))">
 
                             @if (column.HeaderTemplate is not null)
                             {

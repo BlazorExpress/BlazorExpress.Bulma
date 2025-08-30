@@ -7,7 +7,7 @@ public class GridDataProviderRequest<TItem>
     public GridDataProviderResult<TItem> ApplyTo(IEnumerable<TItem> data)
     {
         if (data is null)
-            return new GridDataProviderResult<TItem> { Data = null, TotalCount = 0 };
+            return new GridDataProviderResult<TItem> { Data = null!, TotalCount = 0 };
 
         var resultData = data;
 
