@@ -102,17 +102,17 @@ public class NumberInput<TValue> : BulmaComponentBase
     }
 
     /// <summary>
-    /// Disables the <see cref="TextInput" />.
+    /// Disables the <see cref="NumberInput<TValue>" />.
     /// </summary>
     [AddedVersion("1.0.0")]
-    [Description("Disables the <code>TextInput</code>.")]
+    [Description("Disables the <code>NumberInput<TValue></code>.")]
     public void Disable() => Disabled = true;
 
     /// <summary>
-    /// Enables the <see cref="TextInput" />.
+    /// Enables the <see cref="NumberInput<TValue>" />.
     /// </summary>
     [AddedVersion("1.0.0")]
-    [Description("Enables the <code>TextInput</code>.")]
+    [Description("Enables the <code>NumberInput<TValue></code>.")]
     public void Enable() => Disabled = false;
 
     private async Task OnChange(ChangeEventArgs e)
@@ -325,6 +325,7 @@ public class NumberInput<TValue> : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the maximum allowable value. Max value is ignored if <code>EnableMinMax</code> is <b>false</b>.")]
+    [ParameterTypeName("TValue")]
     [Parameter]
     public TValue Max { get; set; } = default!;
 
@@ -348,6 +349,7 @@ public class NumberInput<TValue> : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the minimum allowable value. Min value is ignored if <code>EnableMinMax</code> is <b>false</b>.")]
+    [ParameterTypeName("TValue")]
     [Parameter]
     public TValue Min { get; set; } = default!;
 
@@ -396,6 +398,7 @@ public class NumberInput<TValue> : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the step interval for the parameter.")]
+    [ParameterTypeName("double?")]
     [Parameter]
     public double? Step { get; set; }
 
@@ -420,14 +423,16 @@ public class NumberInput<TValue> : BulmaComponentBase
     [AddedVersion("1.0.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the value.")]
+    [ParameterTypeName("TValue")]
     [Parameter]
     public TValue Value { get; set; } = default!;
 
     /// <summary>
-    /// This event fires when the <see cref="TextInput" /> value changes.
+    /// This event fires when the <see cref="NumberInput<TValue>" /> value changes.
     /// </summary>
     [AddedVersion("1.0.0")]
-    [Description("This event fires when the <code>TextInput</code> value changes.")]
+    [Description("This event fires when the <code>NumberInput<TValue></code> value changes.")]
+    [ParameterTypeName("EventCallback<TValue>")]
     [Parameter]
     public EventCallback<TValue> ValueChanged { get; set; }
 
