@@ -445,18 +445,6 @@ public class NumberInput<TValue> : BulmaComponentBase
     private string AutoCompleteAsString => AutoComplete ? "true" : "false";
 
     /// <summary>
-    /// Gets or sets the input bind event.
-    /// <para>
-    /// Default value is <see cref="BindEvent.OnChange" />.
-    /// </para>
-    /// </summary>
-    [AddedVersion("1.0.0")]
-    [DefaultValue(BindEvent.OnChange)]
-    [Description("Gets or sets the input bind event.")]
-    [Parameter]
-    public BindEvent BindEvent { get; set; } = BindEvent.OnChange;
-
-    /// <summary>
     /// Gets or sets the color.
     /// <para>
     /// Default value is <see cref="TextInputColor.None" />.
