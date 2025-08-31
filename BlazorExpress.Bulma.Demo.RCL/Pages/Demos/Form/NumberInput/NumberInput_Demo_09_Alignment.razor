@@ -1,6 +1,8 @@
-<NumberInput TValue="int?" @bind-Value="enteredValue" />
-<div class="mb-3">Entered value: @enteredValue</div>
+<NumberInput Class="mb-3" TValue="double?" @bind-Value="enteredValue" />
+<NumberInput Class="mb-3" TextAlignment="TextAlignment.Left" TValue="double?" @bind-Value="enteredValue" />
+<NumberInput Class="mb-3" TextAlignment="TextAlignment.Center" TValue="double?" @bind-Value="enteredValue" />
+<NumberInput Class="mb-3" TextAlignment="TextAlignment.Right" TValue="double?" @bind-Value="enteredValue" />
 
 @code {
-    private int? enteredValue = null;
+    private double? enteredValue = 23.54;
 }
