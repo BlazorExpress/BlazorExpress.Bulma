@@ -1,6 +1,60 @@
-<NumberInput TValue="int?" @bind-Value="enteredValue" />
-<div class="mb-3">Entered value: @enteredValue</div>
+<div class="field">
+    <label class="form-label">Enter int number</label>
+    <NumberInput TValue="int" @bind-Value="value1" />
+    <div>Entered value: @value1</div>
+</div>
+
+<div class="field">
+    <label class="form-label">Enter int? number</label>
+    <NumberInput TValue="int?" @bind-Value="value2" />
+    <div>Entered value: @(value2.HasValue? value2.Value.ToString() : "null")</div>
+</div>
+
+<div class="field">
+    <label class="form-label">Enter float number</label>
+    <NumberInput TValue="float" @bind-Value="value3" />
+    <div>Entered value: @value3</div>
+</div>
+
+<div class="field">
+    <label class="form-label">Enter float? number</label>
+
+    <NumberInput TValue="float?" @bind-Value="value4" />
+    <div>Entered value: @(value4.HasValue? value4.Value.ToString() : "null")</div>
+</div>
+
+<div class="field">
+    <label class="form-label">Enter double number</label>
+
+    <NumberInput TValue="double" @bind-Value="value5" />
+    <div>Entered value: @value5</div>
+</div>
+<div class="field">
+    <label class="form-label">Enter double? number</label>
+
+    <NumberInput TValue="double?" @bind-Value="value6" />
+    <div>Entered value: @(value6.HasValue? value6.Value.ToString() : "null")</div>
+</div>
+<div class="field">
+    <label class="form-label">Enter decimal number</label>
+
+    <NumberInput TValue="decimal" @bind-Value="value7" />
+    <div>Entered value: @value7</div>
+</div>
+<div class="field">
+    <label class="form-label">Enter decimal? number</label>
+
+    <NumberInput TValue="decimal?" @bind-Value="value8" />
+    <div>Entered value: @(value8.HasValue? value8.Value.ToString() : "null")</div>
+</div>
 
 @code {
-    private int? enteredValue = null;
+    private int value1;
+    private int? value2;
+    private float value3;
+    private float? value4;
+    private double value5;
+    private double? value6;
+    private decimal value7;
+    private decimal? value8;
 }

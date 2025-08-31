@@ -288,6 +288,37 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToNumberInputColorClass(this NumberInputColor color) =>
+        color switch
+        {
+            NumberInputColor.Primary => BulmaCssClass.IsPrimary,
+            NumberInputColor.Link => BulmaCssClass.IsLink,
+            NumberInputColor.Info => BulmaCssClass.IsInfo,
+            NumberInputColor.Success => BulmaCssClass.IsSuccess,
+            NumberInputColor.Warning => BulmaCssClass.IsWarning,
+            NumberInputColor.Danger => BulmaCssClass.IsDanger,
+            _ => null
+        };
+
+    public static string? ToNumberInputSizeClass(this NumberInputSize size) =>
+        size switch
+        {
+            NumberInputSize.Small => BulmaCssClass.IsSmall,
+            NumberInputSize.Normal => BulmaCssClass.IsNormal,
+            NumberInputSize.Medium => BulmaCssClass.IsMedium,
+            NumberInputSize.Large => BulmaCssClass.IsLarge,
+            _ => null
+        };
+
+    public static string? ToNumberInputStateClass(this NumberInputState size) =>
+        size switch
+        {
+            NumberInputState.Hovered => BulmaCssClass.IsHovered,
+            NumberInputState.Focused => BulmaCssClass.IsFocused,
+            NumberInputState.Loading => BulmaCssClass.IsLoading,
+            _ => null
+        };
+
     public static string? ToPaginationAlignmentClass(this PaginationAlignment alignment) =>
         alignment switch
         {

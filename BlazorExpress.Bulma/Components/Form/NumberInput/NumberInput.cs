@@ -26,7 +26,7 @@ public class NumberInput<TValue> : BulmaComponentBase
 
     protected override void BuildRenderTree(RenderTreeBuilder builder)
     {
-        if (State == TextInputState.Loading)
+        if (State == NumberInputState.Loading)
         {
             builder.OpenElement(100, "div"); // open div
             builder.AddAttributeIfNotNullOrWhiteSpace(101, "class", $"{BulmaCssClass.Control} {BulmaCssClass.IsLoading}");
@@ -38,14 +38,6 @@ public class NumberInput<TValue> : BulmaComponentBase
         builder.AddAttributeIfNotNullOrWhiteSpace(203, "class", $"{ClassNames} {FieldCssClasses}");
         builder.AddAttributeIfNotNullOrWhiteSpace(204, "style", StyleNames);
         builder.AddAttribute(205, "value", Value);
-        //if(EnableMinMax)
-        //{
-        //    if (!EqualityComparer<TValue>.Default.Equals(Min, default!))
-        //        builder.AddAttribute(206, "min", Min.ToString(CultureInfo.InvariantCulture));
-
-        //    if (!EqualityComparer<TValue>.Default.Equals(Max, default!))
-        //        builder.AddAttribute(207, "max", Max.ToString(CultureInfo.InvariantCulture));
-        //}
         builder.AddAttribute(208, "step", step);
         builder.AddAttribute(209, "disabled", Disabled);
         builder.AddAttribute(210, "placeholder", Placeholder);
@@ -57,7 +49,7 @@ public class NumberInput<TValue> : BulmaComponentBase
 
         builder.CloseElement(); // close: input
 
-        if (State == TextInputState.Loading)
+        if (State == NumberInputState.Loading)
             builder.CloseElement(); // close: div
     }
 
@@ -411,11 +403,11 @@ public class NumberInput<TValue> : BulmaComponentBase
         BuildClassNames(
             Class,
             (BulmaCssClass.Input, true),
-            (Color.ToTextInputColorClass(), Color != TextInputColor.None),
+            (Color.ToNumberInputColorClass(), Color != NumberInputColor.None),
             (TextAlignment.ToTextAlignmentClass(), TextAlignment != TextAlignment.None),
-            (Size.ToTextInputSizeClass(), Size != TextInputSize.None),
+            (Size.ToNumberInputSizeClass(), Size != NumberInputSize.None),
             (BulmaCssClass.IsRounded, IsRounded),
-            (State.ToTextInputStateClass(), State != TextInputState.None)
+            (State.ToNumberInputStateClass(), State != NumberInputState.None)
         );
 
     /// <summary>
@@ -447,14 +439,14 @@ public class NumberInput<TValue> : BulmaComponentBase
     /// <summary>
     /// Gets or sets the color.
     /// <para>
-    /// Default value is <see cref="TextInputColor.None" />.
+    /// Default value is <see cref="NumberInputColor.None" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
-    [DefaultValue(TextInputColor.None)]
+    [DefaultValue(NumberInputColor.None)]
     [Description("Gets or sets the color.")]
     [Parameter]
-    public TextInputColor Color { get; set; } = TextInputColor.None;
+    public NumberInputColor Color { get; set; } = NumberInputColor.None;
 
     /// <summary>
     /// Gets or sets the disabled state.
@@ -563,26 +555,26 @@ public class NumberInput<TValue> : BulmaComponentBase
     /// <summary>
     /// Gets or sets the size.
     /// <para>
-    /// Default value is <see cref="TextInputSize.None" />.
+    /// Default value is <see cref="NumberInputSize.None" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
-    [DefaultValue(TextInputSize.None)]
+    [DefaultValue(NumberInputSize.None)]
     [Description("Gets or sets the size.")]
     [Parameter]
-    public TextInputSize Size { get; set; } = TextInputSize.None;
+    public NumberInputSize Size { get; set; } = NumberInputSize.None;
 
     /// <summary>
     /// Gets or sets the state.
     /// <para>
-    /// Default value is <see cref="TextInputState.None" />.
+    /// Default value is <see cref="NumberInputState.None" />.
     /// </para>
     /// </summary>
     [AddedVersion("1.0.0")]
-    [DefaultValue(TextInputState.None)]
+    [DefaultValue(NumberInputState.None)]
     [Description("Gets or sets the state.")]
     [Parameter]
-    public TextInputState State { get; set; } = TextInputState.None;
+    public NumberInputState State { get; set; } = NumberInputState.None;
 
     /// <summary>
     /// Gets or sets the step interval for the parameter.
