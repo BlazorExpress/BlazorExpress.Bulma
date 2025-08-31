@@ -52,13 +52,8 @@ public class NumberInput<TValue> : BulmaComponentBase
         builder.AddAttribute(211, "maxlength", MaxLength);
         builder.AddAttribute(212, "autocomplete", AutoCompleteAsString);
         builder.AddMultipleAttributes(213, AdditionalAttributes);
-
-        if (BindEvent == BindEvent.OnChange)
-            builder.AddAttribute(211, "onchange", OnChange);
-        else if (BindEvent == BindEvent.OnInput)
-            builder.AddAttribute(212, "oninput", OnInput);
-
-        builder.AddElementReferenceCapture(213, __inputReference => Element = __inputReference);
+        builder.AddAttribute(214, "onchange", OnChange);
+        builder.AddElementReferenceCapture(215, __inputReference => Element = __inputReference);
 
         builder.CloseElement(); // close: input
 
@@ -101,6 +96,29 @@ public class NumberInput<TValue> : BulmaComponentBase
         base.OnInitialized();
     }
 
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync(NumberInputJsInterop.Initialize, Id, isFloatingNumber(), AllowNegativeNumbers, cultureInfo.NumberFormat.NumberDecimalSeparator);
+
+            var currentValue = Value; // object
+
+            if (currentValue is null || !TryParseValue(currentValue, out var value))
+                Value = default!;
+            else if (EnableMinMax && Min is not null && IsLeftGreaterThanRight(Min, Value)) // value < min
+                Value = Min;
+            else if (EnableMinMax && Max is not null && IsLeftGreaterThanRight(Value, Max)) // value > max
+                Value = Max;
+            else
+                Value = value;
+
+            await ValueChanged.InvokeAsync(Value);
+        }
+
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
     /// <summary>
     /// Disables the <see cref="NumberInput<TValue>" />.
     /// </summary>
@@ -115,22 +133,199 @@ public class NumberInput<TValue> : BulmaComponentBase
     [Description("Enables the <code>NumberInput<TValue></code>.")]
     public void Enable() => Disabled = false;
 
+    private string GetInvariantNumber(TValue value)
+    {
+        if (value is null) return string.Empty;
+
+        if (value is float floatValue) return floatValue.ToString(CultureInfo.InvariantCulture);
+
+        if (value is double doubleValue) return doubleValue.ToString(CultureInfo.InvariantCulture);
+
+        if (value is decimal decimalValue) return decimalValue.ToString(CultureInfo.InvariantCulture);
+
+        // All numbers without decimal places work fine by default
+        return value?.ToString() ?? string.Empty;
+    }
+
+    /// <summary>
+    /// Determines whether the type <typeparamref name="TValue"/> represents a floating-point number type.
+    /// </summary>
+    /// <remarks>
+    /// This method checks if <typeparamref name="TValue"/> is one of the following types: <see cref="float"/>, 
+    /// <see cref="double"/>, <see cref="decimal"/>, or their nullable counterparts.
+    /// </remarks>
+    /// <returns><see langword="true"/> if <typeparamref name="TValue"/> is a floating-point number type; otherwise, <see langword="false"/>.
+    /// </returns>
+    private bool isFloatingNumber() =>
+        typeof(TValue) == typeof(float)
+        || typeof(TValue) == typeof(float?)
+        || typeof(TValue) == typeof(double)
+        || typeof(TValue) == typeof(double?)
+        || typeof(TValue) == typeof(decimal)
+        || typeof(TValue) == typeof(decimal?);
+
+    /// <summary>
+    /// Determines whether the specified <paramref name="left"/> value is greater than the specified <paramref
+    /// name="right"/> value.
+    /// </summary>
+    /// <remarks>This method supports comparisons for various numeric types, including <see cref="sbyte"/>,
+    /// <see cref="short"/>, <see cref="int"/>, <see cref="long"/>, <see cref="float"/>, <see cref="double"/>, and <see
+    /// cref="decimal"/>, as well as their nullable counterparts. If the type of <typeparamref name="TValue"/> is not a
+    /// supported numeric type, the method will always return <see langword="false"/>.</remarks>
+    /// <param name="left">The left-hand operand to compare. Must be of a numeric type or a nullable numeric type.</param>
+    /// <param name="right">The right-hand operand to compare. Must be of a numeric type or a nullable numeric type.</param>
+    /// <returns><see langword="true"/> if <paramref name="left"/> is greater than <paramref name="right"/>; otherwise, <see
+    /// langword="false"/>. For nullable numeric types, returns <see langword="false"/> if either <paramref
+    /// name="left"/> or <paramref name="right"/> is <see langword="null"/>.</returns>
+    private bool IsLeftGreaterThanRight(TValue left, TValue right)
+    {
+        // sbyte
+        if (typeof(TValue) == typeof(sbyte))
+        {
+            var l = Convert.ToSByte(left);
+            var r = Convert.ToSByte(right);
+
+            return l > r;
+        }
+
+        // sbyte?
+        if (typeof(TValue) == typeof(sbyte?))
+        {
+            var l = left as sbyte?;
+            var r = right as sbyte?;
+
+            return l.HasValue && r.HasValue && l > r;
+        }
+
+        // short / int16
+        if (typeof(TValue) == typeof(short))
+        {
+            var l = Convert.ToInt16(left);
+            var r = Convert.ToInt16(right);
+
+            return l > r;
+        }
+
+        // short? / int16?
+        if (typeof(TValue) == typeof(short?))
+        {
+            var l = left as short?;
+            var r = right as short?;
+
+            return l.HasValue && r.HasValue && l > r;
+        }
+
+        // int
+        if (typeof(TValue) == typeof(int))
+        {
+            var l = Convert.ToInt32(left);
+            var r = Convert.ToInt32(right);
+
+            return l > r;
+        }
+
+        // int?
+        if (typeof(TValue) == typeof(int?))
+        {
+            var l = left as int?;
+            var r = right as int?;
+
+            return l.HasValue && r.HasValue && l > r;
+        }
+
+        // long
+        if (typeof(TValue) == typeof(long))
+        {
+            var l = Convert.ToInt64(left);
+            var r = Convert.ToInt64(right);
+
+            return l > r;
+        }
+
+        // long?
+        if (typeof(TValue) == typeof(long?))
+        {
+            var l = left as long?;
+            var r = right as long?;
+
+            return l.HasValue && r.HasValue && l > r;
+        }
+
+        // float / single
+        if (typeof(TValue) == typeof(float))
+        {
+            var l = Convert.ToSingle(left);
+            var r = Convert.ToSingle(right);
+
+            return l > r;
+        }
+
+        // float? / single?
+        if (typeof(TValue) == typeof(float?))
+        {
+            var l = left as float?;
+            var r = right as float?;
+
+            return l.HasValue && r.HasValue && l > r;
+        }
+
+        // double
+        if (typeof(TValue) == typeof(double))
+        {
+            var l = Convert.ToDouble(left);
+            var r = Convert.ToDouble(right);
+
+            return l > r;
+        }
+
+        // double?
+        if (typeof(TValue) == typeof(double?))
+        {
+            var l = left as double?;
+            var r = right as double?;
+
+            return l.HasValue && r.HasValue && l > r;
+        }
+
+        // decimal
+        if (typeof(TValue) == typeof(decimal))
+        {
+            var l = Convert.ToDecimal(left);
+            var r = Convert.ToDecimal(right);
+
+            return l > r;
+        }
+
+        // decimal?
+        if (typeof(TValue) == typeof(decimal?))
+        {
+            var l = left as decimal?;
+            var r = right as decimal?;
+
+            return l.HasValue && r.HasValue && l > r;
+        }
+
+        return false;
+    }
+
     private async Task OnChange(ChangeEventArgs e)
     {
         var oldValue = Value;
         var newValue = e.Value; // object
 
-        //await ValueChanged.InvokeAsync(newValue);
+        if (newValue is null || !TryParseValue(newValue, out var value))
+            Value = default!;
+        else if (EnableMinMax && Min is not null && IsLeftGreaterThanRight(Min, value)) // value < min
+            Value = Min;
+        else if (EnableMinMax && Max is not null && IsLeftGreaterThanRight(value, Max)) // value > max
+            Value = Max;
+        else
+            Value = value;
 
-        EditContext?.NotifyFieldChanged(fieldIdentifier);
-    }
+        if (oldValue!.Equals(Value))
+            await JSRuntime.InvokeVoidAsync(NumberInputJsInterop.SetValue, Id, Value);
 
-    private async Task OnInput(ChangeEventArgs e)
-    {
-        var oldValue = Value;
-        var newValue = e.Value?.ToString() ?? string.Empty; // object
-
-        //await ValueChanged.InvokeAsync(newValue);
+        await ValueChanged.InvokeAsync(Value);
 
         EditContext?.NotifyFieldChanged(fieldIdentifier);
     }
@@ -222,6 +417,18 @@ public class NumberInput<TValue> : BulmaComponentBase
             (BulmaCssClass.IsRounded, IsRounded),
             (State.ToTextInputStateClass(), State != TextInputState.None)
         );
+
+    /// <summary>
+    /// Gets or sets a value indicating whether negative numbers are allowed.
+    /// <para>
+    /// Default value is <see langword="false" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(false)]
+    [Description("Gets or sets a value indicating whether negative numbers are allowed.")]
+    [Parameter]
+    public bool AllowNegativeNumbers { get; set; }
 
     /// <summary>
     /// If <see langword="true" />, TextInput can complete the values automatically by the browser.
