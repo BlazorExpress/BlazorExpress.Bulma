@@ -1,6 +1,17 @@
-<NumberInput TValue="int?" @bind-Value="enteredValue" />
-<div class="mb-3">Entered value: @enteredValue</div>
+<div class="field">
+    <label class="label">Amount</label>
+    <div class="control">
+        <NumberInput TValue="decimal?"
+                     @bind-Value="@amount"
+                     EnableMinMax="true"
+                     Min="10"
+                     Max="500"
+                     Placeholder="Enter amount" />
+    </div>
+    <p class="help">Tip: The amount must be between 10 and 500.</p>
+</div>
+<div class="mb-3">Entered value: @amount</div>
 
 @code {
-    private int? enteredValue = null;
+    private decimal? amount;
 }
