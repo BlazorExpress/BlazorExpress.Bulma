@@ -50,7 +50,18 @@
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Placeholder" PageUrl="@pageUrl" Link="placeholder">
     <Block>
-        TODO: Add description here.
+        Use the <strong>Placeholder</strong> parameter to show hint text in the number field until a value is entered. This is most effective with nullable numeric types so the input can be empty and display the hint.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Select a nullable numeric type if you want the field to be clearable (e.g., <code>int?</code>).</li>
+                <li>Declare a backing field in <code>@@code</code>, e.g., <code>private int? enteredValue = null;</code></li>
+                <li>Add <code>NumberInput</code> with matching <code>TValue</code>, bind the value, and set <code>Placeholder</code>, e.g., <code>&lt;NumberInput TValue="int?" @@bind-Value="enteredValue" Placeholder="Enter a value" /&gt;</code></li>
+                <li>Optionally display the current value to verify updates, e.g., <code>Entered value: @@enteredValue</code>.</li>
+            </ol>
+        </div>
+        The placeholder appears when the value is <code>null</code>/empty and hides as soon as a number is entered; it reappears when the input is cleared. With non-nullable types (e.g., <code>int</code>), a default value like <code>0</code> prevents the placeholder from showing.
     </Block>
     <Demo Type="typeof(NumberInput_Demo_03_Placeholder)" Tabs="true" />
 </Section>
