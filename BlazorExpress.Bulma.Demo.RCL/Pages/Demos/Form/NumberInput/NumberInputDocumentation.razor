@@ -68,7 +68,18 @@
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
     <Block>
-        TODO: Add description here.
+        Apply theme colors to the input using the <strong>Color</strong> parameter. Choose a value from <code>NumberInputColor</code> to switch the visual variant (e.g., link, primary, info, success, warning, danger) while keeping the same behavior and binding.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Pick your model type and (optionally) make it nullable so the field can be cleared, e.g., <code>private int? enteredValue = null;</code></li>
+                <li>Add the component with a matching <code>TValue</code> and set <code>Color</code>, e.g., <code>&lt;NumberInput Class="mb-3" Color="NumberInputColor.Primary" TValue="int?" @@bind-Value="enteredValue" Placeholder="Primary number input" /&gt;</code></li>
+                <li>Use different <code>NumberInputColor</code> values to preview variants: <code>Link</code>, <code>Primary</code>, <code>Info</code>, <code>Success</code>, <code>Warning</code>, <code>Danger</code>.</li>
+                <li>Optionally stack multiple inputs (as shown in the demo) and bind them to the same field to compare styles while sharing the value.</li>
+            </ol>
+        </div>
+        Omitting <code>Color</code> uses the default styling. The color selection affects appearance only; validation and value binding work the same across variants.
     </Block>
     <Demo Type="typeof(NumberInput_Demo_04_Colors)" Tabs="true" />
 </Section>
