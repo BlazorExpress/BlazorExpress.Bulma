@@ -86,7 +86,19 @@
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
     <Block>
-        TODO: Add description here.
+        Control the input’s visual scale with the <strong>Size</strong> parameter. Choose a value from <code>NumberInputSize</code> to adjust height and font size while keeping behavior and binding unchanged. Available sizes: <code>Small</code>, <code>Normal</code> (default), <code>Medium</code>, and <code>Large</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Declare a backing field (nullable if you want the field to be clearable), e.g., <code>private int? enteredValue = null;</code></li>
+                <li>Add the component with a matching <code>TValue</code> and set <code>Size</code>, e.g., <code>&lt;NumberInput Class="mb-3" Size="NumberInputSize.Small" TValue="int?" @@bind-Value="enteredValue" Placeholder="Small number input" /&gt;</code></li>
+                <li>Repeat with other sizes to compare variants, e.g., <code>NumberInputSize.Normal</code>, <code>NumberInputSize.Medium</code>, <code>NumberInputSize.Large</code>.</li>
+                <li>Omit the <code>Size</code> parameter to use the default <code>Normal</code> size.</li>
+                <li>Optionally stack multiple inputs (as in the demo) bound to the same field to preview sizes side-by-side.</li>
+            </ol>
+        </div>
+        Sizing only affects appearance; parsing, validation, and two-way binding behave identically across all sizes.
     </Block>
     <Demo Type="typeof(NumberInput_Demo_05_Sizes)" Tabs="true" />
 </Section>
