@@ -31,7 +31,19 @@
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Generic type" PageUrl="@pageUrl" Link="generic-type">
     <Block>
-        TODO: Add description here.
+        The <strong>NumberInput</strong> component is generic. Set <code>TValue</code> to the numeric type you need so parsing, formatting, and validation match your model. The demo shows <code>int</code>, <code>int?</code>, <code>float</code>, <code>float?</code>, <code>double</code>, <code>double?</code>, <code>decimal</code>, and <code>decimal?</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Choose the numeric type for your model. Use a nullable type (e.g., <code>int?</code>) if you want the input to be clearable.</li>
+                <li>Declare a backing field in <code>@@code</code>, e.g., <code>private decimal? amount;</code></li>
+                <li>Add <code>NumberInput</code> and set <code>TValue</code> to the same type, e.g., <code>TValue="decimal?"</code>.</li>
+                <li>Bind the value with <code>@@bind-Value</code>, e.g., <code>@@bind-Value="amount"</code>, to keep the UI and model synchronized.</li>
+                <li>Optionally render the current value, handling nullables, e.g., <code>@@(amount.HasValue ? amount.Value.ToString() : "null")</code>.</li>
+            </ol>
+        </div>
+        This demo highlights type flexibility: the same component works with multiple numeric types by switching the generic <code>TValue</code>.
     </Block>
     <Demo Type="typeof(NumberInput_Demo_02_GenericType)" Tabs="true" />
 </Section>
