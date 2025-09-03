@@ -123,7 +123,20 @@
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="States" PageUrl="@pageUrl" Link="states">
     <Block>
-        TODO: Add description here.
+        Control the input’s visual state with the <strong>State</strong> parameter. Force a specific appearance for design previews or programmatic styling: <code>Normal</code> (default), <code>Hovered</code>, <code>Focused</code>, and <code>Loading</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Declare a backing field (nullable if you want the field to be clearable), e.g., <code>private int? enteredValue = null;</code></li>
+                <li>Render a default input for the normal state, e.g., <code>&lt;NumberInput Class="mb-3" TValue="int?" @@bind-Value="enteredValue" Placeholder="Normal number input" /&gt;</code></li>
+                <li>Force the hover style with <code>State="NumberInputState.Hovered"</code>, e.g., <code>&lt;NumberInput Class="mb-3" State="NumberInputState.Hovered" TValue="int?" @@bind-Value="enteredValue" Placeholder="Hovered number input" /&gt;</code></li>
+                <li>Force the focus style with <code>State="NumberInputState.Focused"</code>, e.g., <code>&lt;NumberInput Class="mb-3" State="NumberInputState.Focused" TValue="int?" @@bind-Value="enteredValue" Placeholder="Focused number input" /&gt;</code></li>
+                <li>Show a progress indicator with <code>State="NumberInputState.Loading"</code>, e.g., <code>&lt;NumberInput Class="mb-3" State="NumberInputState.Loading" TValue="int?" @@bind-Value="enteredValue" Placeholder="Loading number input" /&gt;</code></li>
+                <li>Optionally bind all variants to the same field (as in the demo) to compare appearances with a consistent value.</li>
+            </ol>
+        </div>
+        Omitting <code>State</code> lets natural user interaction control hover/focus visuals. The <code>State</code> parameter affects appearance only; parsing, validation, and two-way binding behave the same across all states.
     </Block>
     <Demo Type="typeof(NumberInput_Demo_07_States)" Tabs="true" />
 </Section>
