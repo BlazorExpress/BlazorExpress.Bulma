@@ -13,7 +13,18 @@
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
     <Block>
-        TODO: Add description here.
+        The <strong>NumberInput</strong> component renders an HTML number field and binds its value to a strongly typed property, keeping the UI and model in sync.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Declare a backing field of a numeric type in <code>@@code</code>. In this demo: <code>int? enteredValue = null;</code> (nullable allows clearing the input).</li>
+                <li>Add the <code>NumberInput</code> component and set the generic <code>TValue</code> to the same type, e.g., <code>TValue="int?"</code>.</li>
+                <li>Bind the value using <code>@@bind-Value</code>, e.g., <code>@@bind-Value="enteredValue"</code>, to enable two-way binding.</li>
+                <li>Optionally render the value to verify updates, e.g., <code>Entered value: @@enteredValue</code>.</li>
+            </ol>
+        </div>
+        This demo shows the minimal setup: choose a numeric type via <code>TValue</code> and use <code>@@bind-Value</code> for instant model synchronization.
     </Block>
     <Demo Type="typeof(NumberInput_Demo_01_How_it_works)" Tabs="true" />
 </Section>
