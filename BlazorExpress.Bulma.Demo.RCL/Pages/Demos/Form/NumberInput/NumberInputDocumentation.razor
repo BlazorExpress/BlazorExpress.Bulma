@@ -105,7 +105,18 @@
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Styles" PageUrl="@pageUrl" Link="styles">
     <Block>
-        TODO: Add description here.
+        Adjust visual style details such as rounded corners using the <strong>IsRounded</strong> parameter. When enabled, the input renders with fully rounded borders (Bulma’s rounded style) while keeping behavior and binding the same.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Declare a backing field (nullable if you want the field to be clearable), e.g., <code>private int? enteredValue = null;</code></li>
+                <li>Add the component with a matching <code>TValue</code>, bind the value, and set <code>IsRounded="true"</code>, e.g., <code>&lt;NumberInput TValue="int?" @@bind-Value="enteredValue" IsRounded="true" Placeholder="Rounded number input" /&gt;</code></li>
+                <li>Optionally display the current value to verify updates, e.g., <code>&lt;div&gt;Entered value: @@enteredValue&lt;/div&gt;</code></li>
+                <li>Combine with <code>Color</code> and <code>Size</code> to create consistent visual variants across your UI.</li>
+            </ol>
+        </div>
+        Omitting <code>IsRounded</code> (or setting it to <code>false</code>) uses the standard corner radius; functionality, validation, and two-way binding are unaffected by this style option.
     </Block>
     <Demo Type="typeof(NumberInput_Demo_06_Styles)" Tabs="true" />
 </Section>
