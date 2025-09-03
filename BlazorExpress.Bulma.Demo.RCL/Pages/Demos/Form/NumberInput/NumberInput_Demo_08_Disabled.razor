@@ -1,0 +1,6 @@
+<NumberInput TValue="int?" @bind-Value="enteredValue" Disabled="true" Placeholder="Disabled number text" />
+<div class="mb-3">Entered value: @enteredValue</div>
+
+@code {
+    private int? enteredValue = 1532;
+}

@@ -1,0 +1,8 @@
+<NumberInput Class="mb-3" TValue="int?" @bind-Value="enteredValue" Placeholder="Normal number input" />
+<NumberInput Class="mb-3" State="NumberInputState.Hovered" TValue="int?" @bind-Value="enteredValue" Placeholder="Hovered number input" />
+<NumberInput Class="mb-3" State="NumberInputState.Focused" TValue="int?" @bind-Value="enteredValue" Placeholder="Focused number input" />
+<NumberInput Class="mb-3" State="NumberInputState.Loading" TValue="int?" @bind-Value="enteredValue" Placeholder="Loading number input" />
+
+@code {
+    private int? enteredValue = null;
+}

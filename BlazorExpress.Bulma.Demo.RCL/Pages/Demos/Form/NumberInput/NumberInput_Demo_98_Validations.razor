@@ -1,0 +1,139 @@
+@using Microsoft.AspNetCore.Components.Forms
+@using System.ComponentModel.DataAnnotations
+
+<EditForm EditContext="@editContext" OnValidSubmit="HandleOnValidSubmit">
+    <DataAnnotationsValidator />
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label">Item Price: <span class="has-text-danger">*</span></label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <p class="control is-expanded">
+                    <NumberInput TValue="decimal?"
+                                 Value="invoice.Price"
+                                 ValueExpression="() => invoice.Price"
+                                 ValueChanged="(value) => PriceChanged(value)"
+                                 Placeholder="Enter price" />
+                    <ValidationMessage For="@(() => invoice.Price)" />
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label">Item Discount:</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <p class="control is-expanded">
+                    <NumberInput TValue="decimal?"
+                                 Value="invoice.Discount"
+                                 ValueExpression="() => invoice.Discount"
+                                 ValueChanged="(value) => DiscountChanged(value)"
+                                 Placeholder="Enter discount" />
+                    <ValidationMessage For="@(() => invoice.Discount)" />
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label">Total Amount: <span class="has-text-danger">*</span></label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <p class="control is-expanded">
+                    <NumberInput TValue="decimal?"
+                                 @bind-Value="invoice.Total"
+                                 Disabled="true"
+                                 Placeholder="Enter discount" />
+                    <ValidationMessage For="@(() => invoice.Total)" />
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="field is-grouped is-grouped-right">
+        <div class="control">
+            <Button Type="ButtonType.Submit" Color="ButtonColor.Link">Save</Button>
+        </div>
+        <div class="control">
+            <Button Color="ButtonColor.Link" IsLightVersion="true" @onclick="ResetForm">Reset</Button>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    private Invoice invoice = new();
+    private EditContext? editContext;
+
+    protected override void OnInitialized()
+    {
+        editContext = new EditContext(invoice);
+        editContext.SetFieldCssClassProvider(new CustomFieldClassProvider());
+    }
+
+    protected override void OnParametersSet() => CalculateToatl();
+
+    private void PriceChanged(decimal? value)
+    {
+        invoice.Price = value;
+        CalculateToatl();
+    }
+
+    private void DiscountChanged(decimal? value)
+    {
+        invoice.Discount = value;
+        CalculateToatl();
+    }
+
+    private void CalculateToatl()
+    {
+        var price = invoice.Price.HasValue ? invoice.Price.Value : 0;
+        var discount = invoice.Discount.HasValue ? invoice.Discount.Value : 0;
+        invoice.Total = price - discount;
+    }
+
+    public void HandleOnValidSubmit()
+    {
+        Console.WriteLine($"Price: {invoice.Price}");
+        Console.WriteLine($"Discount: {invoice.Discount}");
+        Console.WriteLine($"Total: {invoice.Total}");
+    }
+
+    private void ResetForm()
+    {
+        invoice = new();
+        editContext = new EditContext(invoice);
+    }
+
+    public class Invoice
+    {
+        [Required(ErrorMessage = "Price required.")]
+        [Range(60, 500, ErrorMessage = "Price should be between 60 and 500.")]
+        public decimal? Price { get; set; } = 232M;
+
+        [Range(0, 50, ErrorMessage = "Discount should be between 0 and 50.")]
+        public decimal? Discount { get; set; }
+
+        [Required(ErrorMessage = "Amount required.")]
+        [Range(10, 500, ErrorMessage = "Total should be between 60 and 500.")]
+        public decimal? Total { get; set; }
+    }
+
+    /// <summary>
+    /// Custom FieldCssClassProvider to apply custom CSS classes to valid and invalid fields.
+    /// </summary>
+    public class CustomFieldClassProvider : FieldCssClassProvider
+    {
+        public override string GetFieldCssClass(EditContext editContext, in FieldIdentifier fieldIdentifier)
+        {
+            var isValid = editContext.IsValid(fieldIdentifier);
+
+            return isValid ? "" : "is-danger";
+        }
+    }
+}

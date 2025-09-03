@@ -1,0 +1,6 @@
+<NumberInput TValue="int?" @bind-Value="enteredValue" Placeholder="Enter a value" />
+<div>Entered value: @enteredValue</div>
+
+@code {
+    private int? enteredValue = null;
+}

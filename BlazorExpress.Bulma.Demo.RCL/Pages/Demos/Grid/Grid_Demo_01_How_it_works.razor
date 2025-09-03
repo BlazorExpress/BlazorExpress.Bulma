@@ -25,9 +25,9 @@
 
 @code
 {
-    private IEnumerable<Employee> employees;
+    private IEnumerable<Employee>? employees;
 
-    protected override async Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
         employees = new List<Employee>
         {
@@ -42,8 +42,6 @@
             new Employee { Id = 117, Name = "Sharna", Designation = "Data Analyst", DOJ = new DateOnly(1994, 5, 12), IsActive = true },
             new Employee { Id = 108, Name = "Zayne", Designation = "Data Analyst", DOJ = new DateOnly(1991, 1, 1), IsActive = true },
         };
-
-        base.OnInitialized();
     }
 
     public class Employee

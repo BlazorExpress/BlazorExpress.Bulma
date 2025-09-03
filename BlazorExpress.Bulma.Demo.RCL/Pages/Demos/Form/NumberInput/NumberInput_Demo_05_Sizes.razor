@@ -1,0 +1,8 @@
+<NumberInput Class="mb-3" Size="NumberInputSize.Small" TValue="int?" @bind-Value="enteredValue" Placeholder="Small number input" />
+<NumberInput Class="mb-3" Size="NumberInputSize.Normal" TValue="int?" @bind-Value="enteredValue" Placeholder="Normal number input" />
+<NumberInput Class="mb-3" Size="NumberInputSize.Medium" TValue="int?" @bind-Value="enteredValue" Placeholder="Medium number input" />
+<NumberInput Class="mb-3" Size="NumberInputSize.Large" TValue="int?" @bind-Value="enteredValue" Placeholder="Large number input" />
+
+@code {
+    private int? enteredValue = null;
+}

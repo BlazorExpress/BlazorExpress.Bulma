@@ -29,6 +29,7 @@ public class DemoScreenshotSrcConstants
     // Form
     public const string DateInput = DemoScreenshotSrcPrefix + "date-input.png";
     public const string EnumInput = DemoScreenshotSrcPrefix + "enum-input.png";
+    public const string NumberInput = DemoScreenshotSrcPrefix + "number-input.png";
     public const string OTPInput = DemoScreenshotSrcPrefix + "otp-input.png";
     public const string TextInput = DemoScreenshotSrcPrefix + "text-input.png";
 

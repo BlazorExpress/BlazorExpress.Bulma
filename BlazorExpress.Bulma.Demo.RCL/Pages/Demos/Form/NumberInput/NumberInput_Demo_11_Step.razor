@@ -1,0 +1,24 @@
+<!-- Step 1 example -->
+<div class="field">
+    <label class="label">Amount</label>
+    <div class="control">
+        <NumberInput TValue="int?" @bind-Value="amount" Step="10" Placeholder="Enter Amount" />
+    </div>
+    <p class="help">Info: Here <code>Step</code> parameter is set to <b>10</b>.</p>
+</div>
+<div class="mb-3">Entered value: @amount</div>
+
+<!-- Step 2 example -->
+<div class="field">
+    <label class="label">Amount</label>
+    <div class="control">
+        <NumberInput TValue="decimal?" @bind-Value="amount2" Step="2.5" Placeholder="Enter Amount" />
+    </div>
+    <p class="help">Info: Here <code>Step</code> parameter is set to <b>2.5</b>.</p>
+</div>
+<div class="mb-3">Entered value: @amount2</div>
+
+@code {
+    private int? amount = null;
+    private decimal? amount2 = null;
+}

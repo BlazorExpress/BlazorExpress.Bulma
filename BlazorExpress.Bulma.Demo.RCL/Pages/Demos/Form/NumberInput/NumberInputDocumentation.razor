@@ -1,0 +1,290 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_Form_NumberInput_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>NumberInput</strong> component renders an HTML number field and binds its value to a strongly typed property, keeping the UI and model in sync.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Declare a backing field of a numeric type in <code>@@code</code>. In this demo: <code>int? enteredValue = null;</code> (nullable allows clearing the input).</li>
+                <li>Add the <code>NumberInput</code> component and set the generic <code>TValue</code> to the same type, e.g., <code>TValue="int?"</code>.</li>
+                <li>Bind the value using <code>@@bind-Value</code>, e.g., <code>@@bind-Value="enteredValue"</code>, to enable two-way binding.</li>
+                <li>Optionally render the value to verify updates, e.g., <code>Entered value: @@enteredValue</code>.</li>
+            </ol>
+        </div>
+        This demo shows the minimal setup: choose a numeric type via <code>TValue</code> and use <code>@@bind-Value</code> for instant model synchronization.
+    </Block>
+    <Demo Type="typeof(NumberInput_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Generic type" PageUrl="@pageUrl" Link="generic-type">
+    <Block>
+        The <strong>NumberInput</strong> component is generic. Set <code>TValue</code> to the numeric type you need so parsing, formatting, and validation match your model. The demo shows <code>int</code>, <code>int?</code>, <code>float</code>, <code>float?</code>, <code>double</code>, <code>double?</code>, <code>decimal</code>, and <code>decimal?</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Choose the numeric type for your model. Use a nullable type (e.g., <code>int?</code>) if you want the input to be clearable.</li>
+                <li>Declare a backing field in <code>@@code</code>, e.g., <code>private decimal? amount;</code></li>
+                <li>Add <code>NumberInput</code> and set <code>TValue</code> to the same type, e.g., <code>TValue="decimal?"</code>.</li>
+                <li>Bind the value with <code>@@bind-Value</code>, e.g., <code>@@bind-Value="amount"</code>, to keep the UI and model synchronized.</li>
+                <li>Optionally render the current value, handling nullables, e.g., <code>@@(amount.HasValue ? amount.Value.ToString() : "null")</code>.</li>
+            </ol>
+        </div>
+        This demo highlights type flexibility: the same component works with multiple numeric types by switching the generic <code>TValue</code>.
+    </Block>
+    <Demo Type="typeof(NumberInput_Demo_02_GenericType)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Placeholder" PageUrl="@pageUrl" Link="placeholder">
+    <Block>
+        Use the <strong>Placeholder</strong> parameter to show hint text in the number field until a value is entered. This is most effective with nullable numeric types so the input can be empty and display the hint.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Select a nullable numeric type if you want the field to be clearable (e.g., <code>int?</code>).</li>
+                <li>Declare a backing field in <code>@@code</code>, e.g., <code>private int? enteredValue = null;</code></li>
+                <li>Add <code>NumberInput</code> with matching <code>TValue</code>, bind the value, and set <code>Placeholder</code>, e.g., <code>&lt;NumberInput TValue="int?" @@bind-Value="enteredValue" Placeholder="Enter a value" /&gt;</code></li>
+                <li>Optionally display the current value to verify updates, e.g., <code>Entered value: @@enteredValue</code>.</li>
+            </ol>
+        </div>
+        The placeholder appears when the value is <code>null</code>/empty and hides as soon as a number is entered; it reappears when the input is cleared. With non-nullable types (e.g., <code>int</code>), a default value like <code>0</code> prevents the placeholder from showing.
+    </Block>
+    <Demo Type="typeof(NumberInput_Demo_03_Placeholder)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Block>
+        Apply theme colors to the input using the <strong>Color</strong> parameter. Choose a value from <code>NumberInputColor</code> to switch the visual variant (e.g., link, primary, info, success, warning, danger) while keeping the same behavior and binding.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Pick your model type and (optionally) make it nullable so the field can be cleared, e.g., <code>private int? enteredValue = null;</code></li>
+                <li>Add the component with a matching <code>TValue</code> and set <code>Color</code>, e.g., <code>&lt;NumberInput Class="mb-3" Color="NumberInputColor.Primary" TValue="int?" @@bind-Value="enteredValue" Placeholder="Primary number input" /&gt;</code></li>
+                <li>Use different <code>NumberInputColor</code> values to preview variants: <code>Link</code>, <code>Primary</code>, <code>Info</code>, <code>Success</code>, <code>Warning</code>, <code>Danger</code>.</li>
+                <li>Optionally stack multiple inputs (as shown in the demo) and bind them to the same field to compare styles while sharing the value.</li>
+            </ol>
+        </div>
+        Omitting <code>Color</code> uses the default styling. The color selection affects appearance only; validation and value binding work the same across variants.
+    </Block>
+    <Demo Type="typeof(NumberInput_Demo_04_Colors)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
+    <Block>
+        Control the input’s visual scale with the <strong>Size</strong> parameter. Choose a value from <code>NumberInputSize</code> to adjust height and font size while keeping behavior and binding unchanged. Available sizes: <code>Small</code>, <code>Normal</code> (default), <code>Medium</code>, and <code>Large</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Declare a backing field (nullable if you want the field to be clearable), e.g., <code>private int? enteredValue = null;</code></li>
+                <li>Add the component with a matching <code>TValue</code> and set <code>Size</code>, e.g., <code>&lt;NumberInput Class="mb-3" Size="NumberInputSize.Small" TValue="int?" @@bind-Value="enteredValue" Placeholder="Small number input" /&gt;</code></li>
+                <li>Repeat with other sizes to compare variants, e.g., <code>NumberInputSize.Normal</code>, <code>NumberInputSize.Medium</code>, <code>NumberInputSize.Large</code>.</li>
+                <li>Omit the <code>Size</code> parameter to use the default <code>Normal</code> size.</li>
+                <li>Optionally stack multiple inputs (as in the demo) bound to the same field to preview sizes side-by-side.</li>
+            </ol>
+        </div>
+        Sizing only affects appearance; parsing, validation, and two-way binding behave identically across all sizes.
+    </Block>
+    <Demo Type="typeof(NumberInput_Demo_05_Sizes)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Styles" PageUrl="@pageUrl" Link="styles">
+    <Block>
+        Adjust visual style details such as rounded corners using the <strong>IsRounded</strong> parameter. When enabled, the input renders with fully rounded borders (Bulma’s rounded style) while keeping behavior and binding the same.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Declare a backing field (nullable if you want the field to be clearable), e.g., <code>private int? enteredValue = null;</code></li>
+                <li>Add the component with a matching <code>TValue</code>, bind the value, and set <code>IsRounded="true"</code>, e.g., <code>&lt;NumberInput TValue="int?" @@bind-Value="enteredValue" IsRounded="true" Placeholder="Rounded number input" /&gt;</code></li>
+                <li>Optionally display the current value to verify updates, e.g., <code>&lt;div&gt;Entered value: @@enteredValue&lt;/div&gt;</code></li>
+                <li>Combine with <code>Color</code> and <code>Size</code> to create consistent visual variants across your UI.</li>
+            </ol>
+        </div>
+        Omitting <code>IsRounded</code> (or setting it to <code>false</code>) uses the standard corner radius; functionality, validation, and two-way binding are unaffected by this style option.
+    </Block>
+    <Demo Type="typeof(NumberInput_Demo_06_Styles)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="States" PageUrl="@pageUrl" Link="states">
+    <Block>
+        Control the input’s visual state with the <strong>State</strong> parameter. Force a specific appearance for design previews or programmatic styling: <code>Normal</code> (default), <code>Hovered</code>, <code>Focused</code>, and <code>Loading</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Declare a backing field (nullable if you want the field to be clearable), e.g., <code>private int? enteredValue = null;</code></li>
+                <li>Render a default input for the normal state, e.g., <code>&lt;NumberInput Class="mb-3" TValue="int?" @@bind-Value="enteredValue" Placeholder="Normal number input" /&gt;</code></li>
+                <li>Force the hover style with <code>State="NumberInputState.Hovered"</code>, e.g., <code>&lt;NumberInput Class="mb-3" State="NumberInputState.Hovered" TValue="int?" @@bind-Value="enteredValue" Placeholder="Hovered number input" /&gt;</code></li>
+                <li>Force the focus style with <code>State="NumberInputState.Focused"</code>, e.g., <code>&lt;NumberInput Class="mb-3" State="NumberInputState.Focused" TValue="int?" @@bind-Value="enteredValue" Placeholder="Focused number input" /&gt;</code></li>
+                <li>Show a progress indicator with <code>State="NumberInputState.Loading"</code>, e.g., <code>&lt;NumberInput Class="mb-3" State="NumberInputState.Loading" TValue="int?" @@bind-Value="enteredValue" Placeholder="Loading number input" /&gt;</code></li>
+                <li>Optionally bind all variants to the same field (as in the demo) to compare appearances with a consistent value.</li>
+            </ol>
+        </div>
+        Omitting <code>State</code> lets natural user interaction control hover/focus visuals. The <code>State</code> parameter affects appearance only; parsing, validation, and two-way binding behave the same across all states.
+    </Block>
+    <Demo Type="typeof(NumberInput_Demo_07_States)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Disabled" PageUrl="@pageUrl" Link="disabled">
+    <Block>
+        Use the <strong>Disabled</strong> parameter to render a non-interactive number input while preserving value binding. This is useful for read-only displays where you still want consistent styling and formatting.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Declare a backing field (nullable if you want it clearable), e.g., <code>private int? enteredValue = 1532;</code></li>
+                <li>Add <code>NumberInput</code> with matching <code>TValue</code>, bind the value, and set <code>Disabled="true"</code>, e.g., <code>&lt;NumberInput TValue="int?" @@bind-Value="enteredValue" Disabled="true" Placeholder="Disabled number text" /&gt;</code></li>
+                <li>Optionally render the current value below the input to show it can still be read from the model, e.g., <code>Entered value: @@enteredValue</code>.</li>
+            </ol>
+        </div>
+        When disabled, the control can’t be focused or edited (typing, arrow keys, and spinner buttons are inactive). The bound value remains available for display and can still be changed programmatically.
+    </Block>
+    <Demo Type="typeof(NumberInput_Demo_08_Disabled)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Alignment" PageUrl="@pageUrl" Link="alignment">
+    <Block>
+        Control the text’s horizontal alignment inside the input using the <strong>TextAlignment</strong> parameter. Choose from <code>Left</code>, <code>Center</code>, or <code>Right</code> to match your UI or formatting needs (e.g., right-align numbers).
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Declare a backing field, e.g., <code>private double? enteredValue = 23.54;</code></li>
+                <li>Render a default input (inherits the browser’s default alignment), e.g., <code>&lt;NumberInput Class="mb-3" TValue="double?" @@bind-Value="enteredValue" /&gt;</code></li>
+                <li>Set <code>TextAlignment</code> to adjust alignment, e.g., <code>&lt;NumberInput Class="mb-3" TextAlignment="TextAlignment.Left" TValue="double?" @@bind-Value="enteredValue" /&gt;</code>, <code>TextAlignment="TextAlignment.Center"</code>, <code>TextAlignment="TextAlignment.Right"</code>.</li>
+                <li>Optionally bind multiple inputs to the same field (as in the demo) to compare alignments side-by-side.</li>
+            </ol>
+        </div>
+        Alignment is purely visual; parsing, validation, and two-way binding remain unchanged regardless of the chosen alignment.
+    </Block>
+    <Demo Type="typeof(NumberInput_Demo_09_Alignment)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Enable Min Max" PageUrl="@pageUrl" Link="enable-min-max">
+    <Block>
+        Enforce a numeric range by enabling <strong>Min</strong>/<strong>Max</strong> limits. Set <code>EnableMinMax="true"</code> and supply <code>Min</code> and <code>Max</code> values to restrict input to the specified bounds.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Declare a backing field of a suitable numeric type, e.g., <code>private decimal? amount;</code></li>
+                <li>Add <code>NumberInput</code> with matching <code>TValue</code>, bind the value, and configure limits, e.g., <code>&lt;NumberInput TValue="decimal?" @@bind-Value="amount" EnableMinMax="true" Min="10" Max="500" Placeholder="Enter amount" /&gt;</code></li>
+                <li>Optionally show a helper message to communicate the valid range and render the current value to verify binding.</li>
+            </ol>
+        </div>
+        With min/max enabled, the spinner buttons and arrow keys respect the bounds, and the browser/validation logic can flag out-of-range values. Choose a numeric <code>TValue</code> that fits your domain (e.g., <code>decimal?</code> for money).
+    </Block>
+    <Demo Type="typeof(NumberInput_Demo_10_Enable_Min_Max)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Step" PageUrl="@pageUrl" Link="step">
+    <Block>
+        Use the <strong>Step</strong> parameter to control the increment/decrement applied by spinner buttons, the mouse wheel, and the <kbd>ArrowUp</kbd>/<kbd>ArrowDown</kbd> keys. Choose an integer step for whole numbers or a fractional step for decimal values.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Select an appropriate numeric type and declare a backing field. For whole numbers use <code>int?</code> (e.g., <code>private int? amount;</code>); for fractional values use <code>decimal?</code> (e.g., <code>private decimal? amount2;</code>).</li>
+                <li>Add <code>NumberInput</code> with a matching <code>TValue</code> and set <code>Step</code>:
+                    <ul>
+                        <li><code>&lt;NumberInput TValue="int?" @@bind-Value="amount" Step="10" Placeholder="Enter Amount" /&gt;</code></li>
+                        <li><code>&lt;NumberInput TValue="decimal?" @@bind-Value="amount2" Step="2.5" Placeholder="Enter Amount" /&gt;</code></li>
+                    </ul>
+                </li>
+                <li>Optionally combine with <code>EnableMinMax</code> along with <code>Min</code>/<code>Max</code> to keep stepped values within bounds.</li>
+                <li>Render the current value to verify behavior, e.g., <code>Entered value: @@amount</code> or <code>@@amount2</code>.</li>
+            </ol>
+        </div>
+        The step size affects interaction only; users can still type any number allowed by the type and range. Use a decimal-capable <code>TValue</code> (e.g., <code>decimal?</code>) when you need fractional steps.
+    </Block>
+    <Demo Type="typeof(NumberInput_Demo_11_Step)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Validations" PageUrl="@pageUrl" Link="validations">
+    <Block>
+        Integrate <strong>NumberInput</strong> with <strong>Blazor forms validation</strong> to enforce rules like required and range. The demo uses <code>EditForm</code>, <code>DataAnnotationsValidator</code>, and model attributes to validate price, discount, and a computed total.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Create a model with validation attributes:
+                    <ul>
+                        <li><code>[Required]</code> for mandatory fields</li>
+                        <li><code>[Range(min, max)]</code> to constrain values</li>
+                    </ul>
+                    Example: <code>decimal? Price</code>, <code>decimal? Discount</code>, <code>decimal? Total</code>.
+                </li>
+                <li>Wrap inputs in an <code>EditForm</code> and add <code>&lt;DataAnnotationsValidator /&gt;</code>. Initialize an <code>EditContext</code> for the model if needed.</li>
+                <li>Render <code>NumberInput</code> for each field:
+                    <ul>
+                        <li>For validated fields, wire the triad <code>Value</code>, <code>ValueChanged</code>, and <code>ValueExpression</code> so Blazor can associate validation with the property:
+                            <br />
+                            <code>&lt;NumberInput TValue="decimal?" Value="invoice.Price" ValueExpression="() =&gt; invoice.Price" ValueChanged="(v) =&gt; PriceChanged(v)" Placeholder="Enter price" /&gt;</code>
+                        </li>
+                        <li>For read-only/calculated values, bind and disable:
+                            <br />
+                            <code>&lt;NumberInput TValue="decimal?" @@bind-Value="invoice.Total" Disabled="true" /&gt;</code>
+                        </li>
+                    </ul>
+                </li>
+                <li>Show messages with <code>&lt;ValidationMessage For="@@(() =&gt; invoice.Price)" /&gt;</code> (repeat for each field).</li>
+                <li>In change handlers (e.g., <code>PriceChanged</code>, <code>DiscountChanged</code>), assign the incoming value to the model and recalculate totals to keep UI and validation in sync.</li>
+                <li>Handle form submission using <code>OnValidSubmit</code> to process valid data. Optionally provide a custom <code>FieldCssClassProvider</code> to apply Bulma classes (e.g., return <code>"is-danger"</code> for invalid fields).</li>
+            </ol>
+        </div>
+        This setup enables immediate feedback for invalid inputs while keeping calculated fields synchronized and styled consistently with Bulma.
+    </Block>
+    <Demo Type="typeof(NumberInput_Demo_98_Validations)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Value Changed" PageUrl="@pageUrl" Link="value-changed">
+    <Block>
+        React to user input with the <strong>ValueChanged</strong> callback. This event fires whenever the value changes, allowing you to update state, trigger calculations, or format display text. When using <code>Value</code>/<code>ValueChanged</code>, remember to set the backing value in your handler.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Declare backing fields, e.g., <code>private decimal? price = 10M;</code> and <code>private string? displayPrice;</code></li>
+                <li>Render <code>NumberInput</code> with the triad:
+                    <br />
+                    <code>&lt;NumberInput TValue="decimal?" Value="price" ValueExpression="() =&gt; price" ValueChanged="(value) =&gt; PriceChanged(value)" Placeholder="Enter price" /&gt;</code>
+                </li>
+                <li>In the handler, assign the new value and perform side effects:
+                    <br />
+                    <code>price = value; // required to keep UI and model in sync</code>
+                    <br />
+                    <code>displayPrice = $"Price: {value}, changed at @@DateTime.Now.ToLocalTime().";</code>
+                </li>
+                <li>Optionally render <code>@@displayPrice</code> to show feedback.</li>
+            </ol>
+        </div>
+        Prefer <code>@@bind-Value</code> for simple two-way binding. Use <code>Value</code>/<code>ValueChanged</code>/<code>ValueExpression</code> when you need to intercept and handle changes explicitly.
+    </Block>
+    <Demo Type="typeof(NumberInput_Demo_99_Events_ValueChanged)" Tabs="true" />
+</Section>
+
+@code {
+    private const string componentName = nameof(NumberInput<object>);
+    private const string pageUrl = DemoRouteConstants.Demos_Form_NumberInput_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component is built around an HTML input of type number that restricts user input based on the set parameters.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component is built around an HTML input of type number that restricts user input based on the set parameters.";
+    private const string imageUrl = DemoScreenshotSrcConstants.NumberInput;
+}

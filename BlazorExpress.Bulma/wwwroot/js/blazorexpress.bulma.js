@@ -117,6 +117,54 @@ window.blazorexpress.bulma = {
         },
         windowSize: () => window.innerWidth
     },
+    numberInput: {
+        initialize: (elementId, isFloat, allowNegativeNumbers, numberDecimalSeparator) => {
+            let numberEl = document.getElementById(elementId);
+
+            numberEl?.addEventListener('keydown', function (event) {
+                let invalidChars = ["e", "E", "+"];
+                if (!isFloat) {
+                    invalidChars.push("."); // restrict '.' for integer types
+                    invalidChars.push(numberDecimalSeparator); // restrict ',' for specific culture
+                }
+
+                if (!allowNegativeNumbers) {
+                    invalidChars.push("-"); // restrict '-'
+                }
+
+                if (invalidChars.includes(event.key))
+                    event.preventDefault();
+            });
+
+            numberEl?.addEventListener('beforeinput', function (event) {
+                if (event.inputType === 'insertFromPaste' || event.inputType === 'insertFromDrop') {
+
+                    if (!allowNegativeNumbers) {
+                        // restrict 'e', 'E', '+', '-'
+                        if (isFloat && /[\e\E\+\-]/gi.test(event.data)) {
+                            event.preventDefault();
+                        }
+                        // restrict 'e', 'E', '.', '+', '-'
+                        else if (!isFloat && /[\e\E\.\+\-]/gi.test(event.data)) {
+                            event.preventDefault();
+                        }
+                    }
+                    // restrict 'e', 'E', '+'
+                    else if (isFloat && /[\e\E\+]/gi.test(event.data)) {
+                        event.preventDefault();
+                    }
+                    // restrict 'e', 'E', '.', '+'
+                    else if (!isFloat && /[\e\E\.\+]/gi.test(event.data)) {
+                        event.preventDefault();
+                    }
+
+                }
+            });
+        },
+        setValue: (elementId, value) => {
+            document.getElementById(elementId).value = value;
+        }
+    },
     scriptLoader: {
         initialize: (elementId, async, defer, scriptId, source, type, dotNetHelper) => {
             let scriptLoaderEl = document.getElementById(elementId);
