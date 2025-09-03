@@ -195,21 +195,86 @@
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Step" PageUrl="@pageUrl" Link="step">
     <Block>
-        TODO: Add description here.
+        Use the <strong>Step</strong> parameter to control the increment/decrement applied by spinner buttons, the mouse wheel, and the <kbd>ArrowUp</kbd>/<kbd>ArrowDown</kbd> keys. Choose an integer step for whole numbers or a fractional step for decimal values.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Select an appropriate numeric type and declare a backing field. For whole numbers use <code>int?</code> (e.g., <code>private int? amount;</code>); for fractional values use <code>decimal?</code> (e.g., <code>private decimal? amount2;</code>).</li>
+                <li>Add <code>NumberInput</code> with a matching <code>TValue</code> and set <code>Step</code>:
+                    <ul>
+                        <li><code>&lt;NumberInput TValue="int?" @@bind-Value="amount" Step="10" Placeholder="Enter Amount" /&gt;</code></li>
+                        <li><code>&lt;NumberInput TValue="decimal?" @@bind-Value="amount2" Step="2.5" Placeholder="Enter Amount" /&gt;</code></li>
+                    </ul>
+                </li>
+                <li>Optionally combine with <code>EnableMinMax</code> along with <code>Min</code>/<code>Max</code> to keep stepped values within bounds.</li>
+                <li>Render the current value to verify behavior, e.g., <code>Entered value: @@amount</code> or <code>@@amount2</code>.</li>
+            </ol>
+        </div>
+        The step size affects interaction only; users can still type any number allowed by the type and range. Use a decimal-capable <code>TValue</code> (e.g., <code>decimal?</code>) when you need fractional steps.
     </Block>
     <Demo Type="typeof(NumberInput_Demo_11_Step)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Validations" PageUrl="@pageUrl" Link="validations">
     <Block>
-        TODO: Add description here.
+        Integrate <strong>NumberInput</strong> with <strong>Blazor forms validation</strong> to enforce rules like required and range. The demo uses <code>EditForm</code>, <code>DataAnnotationsValidator</code>, and model attributes to validate price, discount, and a computed total.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Create a model with validation attributes:
+                    <ul>
+                        <li><code>[Required]</code> for mandatory fields</li>
+                        <li><code>[Range(min, max)]</code> to constrain values</li>
+                    </ul>
+                    Example: <code>decimal? Price</code>, <code>decimal? Discount</code>, <code>decimal? Total</code>.
+                </li>
+                <li>Wrap inputs in an <code>EditForm</code> and add <code>&lt;DataAnnotationsValidator /&gt;</code>. Initialize an <code>EditContext</code> for the model if needed.</li>
+                <li>Render <code>NumberInput</code> for each field:
+                    <ul>
+                        <li>For validated fields, wire the triad <code>Value</code>, <code>ValueChanged</code>, and <code>ValueExpression</code> so Blazor can associate validation with the property:
+                            <br />
+                            <code>&lt;NumberInput TValue="decimal?" Value="invoice.Price" ValueExpression="() =&gt; invoice.Price" ValueChanged="(v) =&gt; PriceChanged(v)" Placeholder="Enter price" /&gt;</code>
+                        </li>
+                        <li>For read-only/calculated values, bind and disable:
+                            <br />
+                            <code>&lt;NumberInput TValue="decimal?" @@bind-Value="invoice.Total" Disabled="true" /&gt;</code>
+                        </li>
+                    </ul>
+                </li>
+                <li>Show messages with <code>&lt;ValidationMessage For="@@(() =&gt; invoice.Price)" /&gt;</code> (repeat for each field).</li>
+                <li>In change handlers (e.g., <code>PriceChanged</code>, <code>DiscountChanged</code>), assign the incoming value to the model and recalculate totals to keep UI and validation in sync.</li>
+                <li>Handle form submission using <code>OnValidSubmit</code> to process valid data. Optionally provide a custom <code>FieldCssClassProvider</code> to apply Bulma classes (e.g., return <code>"is-danger"</code> for invalid fields).</li>
+            </ol>
+        </div>
+        This setup enables immediate feedback for invalid inputs while keeping calculated fields synchronized and styled consistently with Bulma.
     </Block>
     <Demo Type="typeof(NumberInput_Demo_98_Validations)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Value Changed" PageUrl="@pageUrl" Link="value-changed">
     <Block>
-        TODO: Add description here.
+        React to user input with the <strong>ValueChanged</strong> callback. This event fires whenever the value changes, allowing you to update state, trigger calculations, or format display text. When using <code>Value</code>/<code>ValueChanged</code>, remember to set the backing value in your handler.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Declare backing fields, e.g., <code>private decimal? price = 10M;</code> and <code>private string? displayPrice;</code></li>
+                <li>Render <code>NumberInput</code> with the triad:
+                    <br />
+                    <code>&lt;NumberInput TValue="decimal?" Value="price" ValueExpression="() =&gt; price" ValueChanged="(value) =&gt; PriceChanged(value)" Placeholder="Enter price" /&gt;</code>
+                </li>
+                <li>In the handler, assign the new value and perform side effects:
+                    <br />
+                    <code>price = value; // required to keep UI and model in sync</code>
+                    <br />
+                    <code>displayPrice = $"Price: {value}, changed at @@DateTime.Now.ToLocalTime().";</code>
+                </li>
+                <li>Optionally render <code>@@displayPrice</code> to show feedback.</li>
+            </ol>
+        </div>
+        Prefer <code>@@bind-Value</code> for simple two-way binding. Use <code>Value</code>/<code>ValueChanged</code>/<code>ValueExpression</code> when you need to intercept and handle changes explicitly.
     </Block>
     <Demo Type="typeof(NumberInput_Demo_99_Events_ValueChanged)" Tabs="true" />
 </Section>
