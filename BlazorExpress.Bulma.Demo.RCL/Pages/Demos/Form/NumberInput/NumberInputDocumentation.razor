@@ -143,21 +143,52 @@
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Disabled" PageUrl="@pageUrl" Link="disabled">
     <Block>
-        TODO: Add description here.
+        Use the <strong>Disabled</strong> parameter to render a non-interactive number input while preserving value binding. This is useful for read-only displays where you still want consistent styling and formatting.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Declare a backing field (nullable if you want it clearable), e.g., <code>private int? enteredValue = 1532;</code></li>
+                <li>Add <code>NumberInput</code> with matching <code>TValue</code>, bind the value, and set <code>Disabled="true"</code>, e.g., <code>&lt;NumberInput TValue="int?" @@bind-Value="enteredValue" Disabled="true" Placeholder="Disabled number text" /&gt;</code></li>
+                <li>Optionally render the current value below the input to show it can still be read from the model, e.g., <code>Entered value: @@enteredValue</code>.</li>
+            </ol>
+        </div>
+        When disabled, the control can’t be focused or edited (typing, arrow keys, and spinner buttons are inactive). The bound value remains available for display and can still be changed programmatically.
     </Block>
     <Demo Type="typeof(NumberInput_Demo_08_Disabled)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Alignment" PageUrl="@pageUrl" Link="alignment">
     <Block>
-        TODO: Add description here.
+        Control the text’s horizontal alignment inside the input using the <strong>TextAlignment</strong> parameter. Choose from <code>Left</code>, <code>Center</code>, or <code>Right</code> to match your UI or formatting needs (e.g., right-align numbers).
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Declare a backing field, e.g., <code>private double? enteredValue = 23.54;</code></li>
+                <li>Render a default input (inherits the browser’s default alignment), e.g., <code>&lt;NumberInput Class="mb-3" TValue="double?" @@bind-Value="enteredValue" /&gt;</code></li>
+                <li>Set <code>TextAlignment</code> to adjust alignment, e.g., <code>&lt;NumberInput Class="mb-3" TextAlignment="TextAlignment.Left" TValue="double?" @@bind-Value="enteredValue" /&gt;</code>, <code>TextAlignment="TextAlignment.Center"</code>, <code>TextAlignment="TextAlignment.Right"</code>.</li>
+                <li>Optionally bind multiple inputs to the same field (as in the demo) to compare alignments side-by-side.</li>
+            </ol>
+        </div>
+        Alignment is purely visual; parsing, validation, and two-way binding remain unchanged regardless of the chosen alignment.
     </Block>
     <Demo Type="typeof(NumberInput_Demo_09_Alignment)" Tabs="true" />
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H3" Name="Enable Min Max" PageUrl="@pageUrl" Link="enable-min-max">
     <Block>
-        TODO: Add description here.
+        Enforce a numeric range by enabling <strong>Min</strong>/<strong>Max</strong> limits. Set <code>EnableMinMax="true"</code> and supply <code>Min</code> and <code>Max</code> values to restrict input to the specified bounds.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Declare a backing field of a suitable numeric type, e.g., <code>private decimal? amount;</code></li>
+                <li>Add <code>NumberInput</code> with matching <code>TValue</code>, bind the value, and configure limits, e.g., <code>&lt;NumberInput TValue="decimal?" @@bind-Value="amount" EnableMinMax="true" Min="10" Max="500" Placeholder="Enter amount" /&gt;</code></li>
+                <li>Optionally show a helper message to communicate the valid range and render the current value to verify binding.</li>
+            </ol>
+        </div>
+        With min/max enabled, the spinner buttons and arrow keys respect the bounds, and the browser/validation logic can flag out-of-range values. Choose a numeric <code>TValue</code> that fits your domain (e.g., <code>decimal?</code> for money).
     </Block>
     <Demo Type="typeof(NumberInput_Demo_10_Enable_Min_Max)" Tabs="true" />
 </Section>
