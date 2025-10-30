@@ -32,7 +32,7 @@ public partial class PdfViewer : BulmaComponentBase
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
-            await PdfViewerJsInterop.InitializeAsync(objRef!, Id!, scale, rotation, Url!);
+            await PdfViewerJsInterop.InitializeAsync(objRef!, Id!, scale, rotation, Url!, Password!);
 
         await base.OnAfterRenderAsync(firstRender);
     }
@@ -71,6 +71,15 @@ public partial class PdfViewer : BulmaComponentBase
 
         if (OnDocumentLoaded.HasDelegate)
             OnDocumentLoaded.InvokeAsync(new PdfViewerEventArgs(pageNumber, pagesCount));
+    }
+
+    [JSInvokable]
+    public void DocumentLoadError(string errorMessage)
+    {
+        if (string.IsNullOrEmpty(errorMessage)) return;
+
+        if (OnDocumentLoadError.HasDelegate)
+            OnDocumentLoadError.InvokeAsync(errorMessage);
     }
 
     [JSInvokable]
@@ -228,12 +237,24 @@ public partial class PdfViewer : BulmaComponentBase
     /// <summary>
     /// This event fires immediately after the PDF document is loaded.
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("This event fires immediately after the PDF document is loaded.")]
     [Parameter]
     public EventCallback<PdfViewerEventArgs> OnDocumentLoaded { get; set; }
 
     /// <summary>
+    /// This event fires if there is an error loading the PDF document.
+    /// </summary>
+    [AddedVersion("1.1.0")]
+    [Description("This event fires if there is an error loading the PDF document.")]
+    [Parameter]
+    public EventCallback<string> OnDocumentLoadError { get; set; }
+
+    /// <summary>
     /// This event fires immediately after the page is changed.
     /// </summary>
+    [AddedVersion("1.0.0")]
+    [Description("This event fires immediately after the page is changed.")]
     [Parameter]
     public EventCallback<PdfViewerEventArgs> OnPageChanged { get; set; }
 
@@ -243,8 +264,24 @@ public partial class PdfViewer : BulmaComponentBase
     /// <remarks>
     /// Default value is <see cref="Orientation.Portrait" />.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(Orientation.Portrait)]
+    [Description("Gets or sets the preferred orientation for the PDF viewer.")]
     [Parameter]
     public Orientation Orientation { get; set; } = Orientation.Portrait;
+
+    /// <summary>
+    /// Gets or sets the password used for the PDF document if it is password-protected.
+    /// </summary>
+    /// <remarks>
+    /// Default value is <see langword="null"/>.
+    /// </remarks>
+    [AddedVersion("1.1.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the password used for the PDF document if it is password-protected.")]
+    [Parameter]
+    [ParameterTypeName("string?")]
+    public string? Password { get; set; }
 
     /// <summary>
     /// Provides JavaScript interop functionality for the PDF viewer.
@@ -259,7 +296,11 @@ public partial class PdfViewer : BulmaComponentBase
     /// <remarks>
     /// Default value is null.
     /// </remarks>
+    [AddedVersion("1.0.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the URL of the PDF document to be displayed. PDF Viewer component supports base64 string as a URL.")]
     [Parameter]
+    [ParameterTypeName("string?")]
     public string? Url { get; set; }
 
     #endregion
