@@ -10,6 +10,7 @@ public static class DemoStringConstants
     public const string PageTitle_Suffix = " | Blazor Bulma: An enterprise-grade open-source component library from the Blazor Express team.";
 
     public const string StaticAssets_RootPath = "_content/BlazorExpress.Bulma.Demo.RCL";
+    public const string StaticAssets_Docs_Path = StaticAssets_RootPath + "/docs";
     public const string StaticAssets_Icons_Path = StaticAssets_RootPath + "/icons";
     public const string StaticAssets_Icons_Logo_png = StaticAssets_Icons_Path + "/logo.png";
 

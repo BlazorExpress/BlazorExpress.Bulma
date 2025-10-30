@@ -62,6 +62,42 @@
     <Demo Type="typeof(PdfViewer_Demo_03_Base64String)" Tabs="true" />
 </Section>
 
+<Section Class="p-0" Size="HeadingSize.H3" Name="Password Protected PDFs (Fixed Password)" PageUrl="@pageUrl" Link="password-protected-pdfs-fixed-password">
+    <Block>
+        The <strong>PdfViewer</strong> component supports opening password-protected PDF files by supplying a fixed password via the <code>Password</code> parameter.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>PdfViewer</code> component to your page.</li>
+                <li>Set the <code>Url</code> parameter to the protected PDF file (static URL or data URI).</li>
+                <li>Provide the document password using the <code>Password</code> parameter (example: <code>Password="12345"</code>).</li>
+                <li>Optionally handle <code>OnDocumentLoaded</code> and <code>OnPageChanged</code> to react after the document opens or when the user navigates pages.</li>
+            </ol>
+        </div>
+        The demo loads <code>pdf_password_protected.pdf</code> from static assets and demonstrates a fixed-password scenario: <code>Password="12345"</code>. Security note: do not hard-code production secrets into client-side WebAssembly. If the PDF password must remain secret, validate or supply it server-side or use a user prompt instead (see the "Prompt for Password" demo).
+    </Block>
+    <Demo Type="typeof(PdfViewer_Demo_04_Password_Protected_A)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="password Protected PDFs (Prompt for Password)" PageUrl="@pageUrl" Link="password-protected-pdfs-prompt-for-password">
+    <Block>
+        The <strong>PdfViewer</strong> component can also be used in scenarios where you want the user to provide the password at runtime. Instead of setting a fixed <code>Password</code>, the component will prompt for credentials when a protected document is loaded (or you can implement your own prompt and pass the value to <code>Password</code>).
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>PdfViewer</code> component to your page without setting the <code>Password</code> parameter.</li>
+                <li>Set the <code>Url</code> parameter to the protected PDF file.</li>
+                <li>Optionally delay or control loading (for example, show a <code>Button</code> that creates the viewer on demand) so the prompt appears only when appropriate.</li>
+                <li>Optionally implement a custom UI to collect a password and supply it to the component via the <code>Password</code> parameter if you need a tailored UX.</li>
+            </ol>
+        </div>
+        The demo demonstrates a lazy-load approach: a button toggles <code>showPdfViewer</code> and instantiates the viewer which then prompts for the password. This is useful when you want to avoid showing the prompt until the user explicitly requests the document.
+    </Block>
+    <Demo Type="typeof(PdfViewer_Demo_05_Password_Protected_B_Prompt_For_Password)" Tabs="true" />
+</Section>
+
 @code {
     private const string componentName = nameof(PdfViewer);
     private const string pageUrl = DemoRouteConstants.Demos_PdfViewer_Documentation;
