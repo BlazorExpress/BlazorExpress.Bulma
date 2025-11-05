@@ -72,7 +72,6 @@ public partial class GoogleMap : BulmaComponentBase
 
     private void OnScriptLoad()
     {
-        Console.WriteLine("OnScriptLoad called...");
         Task.Run(async () => await JSRuntime.InvokeVoidAsync(GoogleMapJsInterop.Initialize, Id, Zoom, Center, Markers, Clickable, objRef));
     }
 

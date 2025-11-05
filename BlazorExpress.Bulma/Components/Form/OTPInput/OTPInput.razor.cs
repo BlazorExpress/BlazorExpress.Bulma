@@ -46,15 +46,12 @@ public partial class OTPInput : BulmaComponentBase
         var otpValue = string.Join(string.Empty, otpValues);
         await OnOTPChanged.InvokeAsync(otpValue);
 
-        if (otpValue.Length == Length
-            && !otpValues.Any(string.IsNullOrWhiteSpace))
+        if (otpValue.Length == Length && !otpValues.Any(string.IsNullOrWhiteSpace))
             await OnOTPCompleted.InvokeAsync(otpValue);
     }
 
     private async Task OnInput(ChangeEventArgs e, int index)
     {
-        Console.WriteLine($"OnInput: {e.Value}");
-
         var currentValue = otpValues[index] ?? "";
         var newValue = new string(e.Value?.ToString()?.Where(char.IsDigit)?.ToArray());
 
@@ -84,20 +81,25 @@ public partial class OTPInput : BulmaComponentBase
         await NotifyChangesAsync();
     }
 
-    private void OnKeyUp(KeyboardEventArgs e, int index)
+    private async Task OnKeyUp(KeyboardEventArgs e, int index)
     {
         // Handle backspace key to clear the current input and focus on the previous one
         if (e.Key == "Backspace" && index > 0)
         {
             otpValues[index] = string.Empty;
-            JSRuntime.InvokeVoidAsync(JsInteropUtils.FocusElement, GetInputId(index - 1));
+            await JSRuntime.InvokeVoidAsync(JsInteropUtils.FocusElement, GetInputId(index - 1));
+
+            // Notify changes
+            await NotifyChangesAsync();
         }
 
         // Handle left arrow key to focus on the previous input
-        if (e.Key == "ArrowLeft" && index > 0) JSRuntime.InvokeVoidAsync(JsInteropUtils.FocusElement, GetInputId(index - 1));
+        if (e.Key == "ArrowLeft" && index > 0) 
+            await JSRuntime.InvokeVoidAsync(JsInteropUtils.FocusElement, GetInputId(index - 1));
 
         // Handle right arrow key to focus on the next input
-        if (e.Key == "ArrowRight" && index < Length - 1) JSRuntime.InvokeVoidAsync(JsInteropUtils.FocusElement, GetInputId(index + 1));
+        if (e.Key == "ArrowRight" && index < Length - 1) 
+            await JSRuntime.InvokeVoidAsync(JsInteropUtils.FocusElement, GetInputId(index + 1));
     }
 
     #endregion
