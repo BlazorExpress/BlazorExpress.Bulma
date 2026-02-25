@@ -2,8 +2,9 @@
 
   <PropertyGroup>
     <PackageId>BlazorExpress.Bulma</PackageId>
-    <Version>1.0.0</Version>
-    <PackageVersion>1.0.0</PackageVersion>
+    <Version>1.1.0</Version>
+    <PackageVersion>1.1.0</PackageVersion>
+	  
     <PackageIconUrl>logo.png</PackageIconUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://bulma.blazorexpress.com/</PackageProjectUrl>
@@ -12,8 +13,9 @@
     <Description>An Enterprise-class component library built with the Blazor and Bulma CSS frameworks.</Description>
     <Authors>Vikram Reddy</Authors>
     <Company>Blazor Express</Company>
-    <Copyright>Copyright © 2025 Blazor Express</Copyright>    
-    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Copyright>Copyright © 2026 Blazor Express</Copyright>    
+	  
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <OutputType>Library</OutputType>
@@ -37,7 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BlazorExpress.Core" Version="0.2.0" />
+    <PackageReference Include="BlazorExpress.Core" Version="0.3.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -50,6 +52,10 @@
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net10.0'">
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.0" />
   </ItemGroup>
 
 </Project>
