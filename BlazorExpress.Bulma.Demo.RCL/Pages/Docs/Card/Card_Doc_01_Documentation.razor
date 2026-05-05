@@ -1,0 +1,69 @@
+@attribute [Route(pageUrl)]
+@layout DocsMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DemoLink Href="@DemoRouteConstants.Demos_Card_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Preview" PageUrl="@pageUrl" Link="preview">
+    <Card style="max-width: 30rem;">
+        <CardHeader>
+            <CardHeaderTitle>Card component</CardHeaderTitle>
+        </CardHeader>
+        <CardContent>
+            The <code>Card</code> family gives you a structured way to compose headers, media, content, and footer actions.
+        </CardContent>
+        <CardFooter>
+            <CardFooterItem Href="https://bulma.io/documentation/components/card/">Bulma Docs</CardFooterItem>
+            <CardFooterItem Href="@DemoRouteConstants.Demos_Card_Documentation">View Demos</CardFooterItem>
+        </CardFooter>
+    </Card>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Card Parameters" PageUrl="@pageUrl" Link="card-parameters">
+    <DocxTable TItem="Card" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="CardHeader Parameters" PageUrl="@pageUrl" Link="card-header-parameters">
+    <DocxTable TItem="CardHeader" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="CardHeaderTitle Parameters" PageUrl="@pageUrl" Link="card-header-title-parameters">
+    <DocxTable TItem="CardHeaderTitle" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="CardHeaderIcon Parameters" PageUrl="@pageUrl" Link="card-header-icon-parameters">
+    <DocxTable TItem="CardHeaderIcon" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="CardImage Parameters" PageUrl="@pageUrl" Link="card-image-parameters">
+    <DocxTable TItem="CardImage" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="CardContent Parameters" PageUrl="@pageUrl" Link="card-content-parameters">
+    <DocxTable TItem="CardContent" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="CardFooter Parameters" PageUrl="@pageUrl" Link="card-footer-parameters">
+    <DocxTable TItem="CardFooter" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="CardFooterItem Parameters" PageUrl="@pageUrl" Link="card-footer-item-parameters">
+    <DocxTable TItem="CardFooterItem" DocType="DocType.Parameters" />
+</Section>
+
+@code {
+    private const string componentName = nameof(Card);
+    private const string pageUrl = DemoRouteConstants.Docs_Card_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component family, including its header, content, image, and footer building blocks.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component family, including its header, content, image, and footer building blocks.";
+    private const string imageUrl = "";
+}

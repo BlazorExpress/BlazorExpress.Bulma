@@ -91,6 +91,7 @@ public partial class DemosMainLayout : MainLayoutBase
             CssClass = "is-size-7 has-text-weight-bold has-text-dark",
             Links = [
                 new Link { Href = DemoRouteConstants.Demos_Breadcrumb_Documentation, Text = "Breadcrumb" },
+                new Link { Href = DemoRouteConstants.Demos_Card_Documentation, Text = "Card" },
                 new Link { Href = DemoRouteConstants.Demos_ConfirmDialog_Documentation, Text = "Confirm Dialog" },
                 new Link { Href = DemoRouteConstants.Demos_Dropdown_Documentation, Text = "Dropdown" },
                 new Link { Href = DemoRouteConstants.Demos_GoogleMap_Documentation, Text = "Google Maps" },

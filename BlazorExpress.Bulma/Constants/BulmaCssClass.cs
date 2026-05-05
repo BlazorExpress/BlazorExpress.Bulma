@@ -18,6 +18,13 @@ public static class BulmaCssClass
     public const string Buttons = "buttons";
 
     public const string Card = "card";
+    public const string CardContent = "card-content";
+    public const string CardFooter = "card-footer";
+    public const string CardFooterItem = "card-footer-item";
+    public const string CardHeader = "card-header";
+    public const string CardHeaderIcon = "card-header-icon";
+    public const string CardHeaderTitle = "card-header-title";
+    public const string CardImage = "card-image";
 
     public const string Control = "control";
 

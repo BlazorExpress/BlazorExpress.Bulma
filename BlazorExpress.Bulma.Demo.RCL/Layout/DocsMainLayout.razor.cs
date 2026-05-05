@@ -105,6 +105,7 @@ public partial class DocsMainLayout : MainLayoutBase
             CssClass = "is-size-7 has-text-weight-bold has-text-dark",
             Links = [
                 new Link { Href = DemoRouteConstants.Docs_Breadcrumb_Documentation, Text = "Breadcrumb" },
+                new Link { Href = DemoRouteConstants.Docs_Card_Documentation, Text = "Card" },
                 new Link { Href = DemoRouteConstants.Docs_ConfirmDialog_Documentation, Text = "Confirm Dialog" },
                 new Link { Href = DemoRouteConstants.Docs_Dropdown_Documentation, Text = "Dropdown" },
                 new Link { Href = DemoRouteConstants.Docs_GoogleMap_Documentation, Text = "Google Maps" },

@@ -1,0 +1,90 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_Card_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>Card</strong> component family mirrors Bulma's card structure so you can compose headers, media, content, and footer actions without hand-authoring the CSS classes yourself.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap the overall layout in <code>&lt;Card&gt;</code>.</li>
+                <li>Add sections such as <code>&lt;CardHeader&gt;</code>, <code>&lt;CardImage&gt;</code>, <code>&lt;CardContent&gt;</code>, and <code>&lt;CardFooter&gt;</code> as needed.</li>
+                <li>Use <code>&lt;CardHeaderTitle&gt;</code> and <code>&lt;CardFooterItem&gt;</code> for the common sub-elements inside those regions.</li>
+            </ol>
+        </div>
+        This first example shows the smallest useful card: a title and a body.
+    </Block>
+    <Demo Type="typeof(Card_Demo_01_Basic)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="With image" PageUrl="@pageUrl" Link="with-image">
+    <Block>
+        The <strong>CardImage</strong> section lets you place visual content at the top of a card while keeping the markup aligned with Bulma's expected card image structure.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add a <code>CardImage</code> section inside the <code>Card</code> component.</li>
+                <li>Place your image markup, such as a Bulma <code>figure</code> and <code>img</code>, inside the <code>CardImage</code> tags.</li>
+                <li>Follow the image section with <code>CardContent</code> to provide supporting text or related content.</li>
+            </ol>
+        </div>
+        This demo shows a card with a top image section followed by descriptive content.
+    </Block>
+    <Demo Type="typeof(Card_Demo_02_With_Image)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Header icon" PageUrl="@pageUrl" Link="header-icon">
+    <Block>
+        The <strong>CardHeaderIcon</strong> section is useful when the card header needs an action affordance, such as a menu trigger, expand/collapse toggle, or quick action button.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add a <code>CardHeader</code> section to your card.</li>
+                <li>Place a <code>CardHeaderTitle</code> for the heading and a <code>CardHeaderIcon</code> for the action element.</li>
+                <li>Set the <code>AriaLabel</code> parameter to provide an accessible label for the rendered button.</li>
+            </ol>
+        </div>
+        This demo shows a card header with a title and an icon button for additional actions.
+    </Block>
+    <Demo Type="typeof(Card_Demo_03_Header_Icon)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Footer actions" PageUrl="@pageUrl" Link="footer-actions">
+    <Block>
+        The <strong>CardFooter</strong> section is intended for actions or links related to the card's content. Using <code>CardFooterItem</code> keeps those actions evenly distributed across the footer area.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add a <code>CardFooter</code> section at the bottom of the <code>Card</code> component.</li>
+                <li>Place one or more <code>CardFooterItem</code> components inside the footer.</li>
+                <li>Use the <code>Href</code> parameter on each footer item when you want the action to navigate to another page or resource.</li>
+            </ol>
+        </div>
+        This demo shows a card footer with multiple evenly spaced action links.
+    </Block>
+    <Demo Type="typeof(Card_Demo_04_Footer_Actions)" Tabs="true" />
+</Section>
+
+@code {
+    private const string componentName = nameof(Card);
+    private const string pageUrl = DemoRouteConstants.Demos_Card_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component family helps you compose structured, media-friendly content blocks using Bulma card markup.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component family helps you compose structured, media-friendly content blocks using Bulma card markup.";
+    private const string imageUrl = "";
+}
