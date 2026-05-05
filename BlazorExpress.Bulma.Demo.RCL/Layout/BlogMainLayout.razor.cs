@@ -104,6 +104,7 @@ public partial class BlogMainLayout : MainLayoutBase
                 new Link { Href = DemoRouteConstants.Demos_ConfirmDialog_Documentation, Text = "Confirm Dialog" },
                 new Link { Href = DemoRouteConstants.Demos_GoogleMap_Documentation, Text = "Google Maps" },
                 new Link { Href = DemoRouteConstants.Demos_Grid_Documentation, Text = "Grid" },
+                new Link { Href = DemoRouteConstants.Demos_Menu_Documentation, Text = "Menu" },
                 new Link { Href = DemoRouteConstants.Demos_Message_Documentation, Text = "Message" },
                 new Link { Href = DemoRouteConstants.Demos_Modal_Documentation, Text = "Modal" },
                 new Link { Href = DemoRouteConstants.Demos_Pagination_Documentation, Text = "Pagination" },

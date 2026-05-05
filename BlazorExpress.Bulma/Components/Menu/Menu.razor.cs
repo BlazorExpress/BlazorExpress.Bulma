@@ -42,13 +42,12 @@ public partial class Menu : BulmaComponentBase
     /// <summary>
     /// Toggles the menu.
     /// </summary>
-    /// <returns>
-    /// Current menu visible state.
-    /// <see langword="true" /> if the menu is visible, <see langword="false" /> if it is hidden.
-    /// </returns>
+    [AddedVersion("1.2.0")]
+    [Description("Toggles the menu visibility.")]
     public void Toggle()
     {
         IsVisible = !IsVisible;
+        _ = InvokeAsync(StateHasChanged);
     }
 
     [JSInvokable]
@@ -57,15 +56,16 @@ public partial class Menu : BulmaComponentBase
         deviceType = width.ToDeviceTypeEnum();
         IsVisible = deviceType != DeviceType.Mobile;
 
-        StateHasChanged();
+        _ = InvokeAsync(StateHasChanged);
     }
 
     internal void HideMenu()
     {
         if (deviceType == DeviceType.Mobile)
+        {
             IsVisible = false;
-
-        //StateHasChanged();
+            _ = InvokeAsync(StateHasChanged);
+        }
     }
 
     #endregion
@@ -87,7 +87,7 @@ public partial class Menu : BulmaComponentBase
     /// <para>
     /// Default value is <see langword="null" />.
     /// </para>
-    [AddedVersion("1.0.0")]
+    [AddedVersion("1.2.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the child content.")]
     [EditorRequired]
@@ -100,7 +100,7 @@ public partial class Menu : BulmaComponentBase
     /// Default value is <see langword="false" />.
     /// </para>
     /// </summary>
-    [AddedVersion("1.0.0")]
+    [AddedVersion("1.2.0")]
     [DefaultValue(false)]
     [Description("If <b>true</b>, the menu is scrollable.")]
     [Parameter]
@@ -112,7 +112,7 @@ public partial class Menu : BulmaComponentBase
     /// Default value is <see langword="true" />.
     /// </para>
     /// </summary>
-    [AddedVersion("1.0.0")]
+    [AddedVersion("1.2.0")]
     [DefaultValue(true)]
     [Description("If <b>true</b>, the menu is visible.")]
     [Parameter]

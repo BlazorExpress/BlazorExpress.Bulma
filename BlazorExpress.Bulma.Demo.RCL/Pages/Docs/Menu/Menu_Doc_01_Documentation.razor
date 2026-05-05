@@ -1,0 +1,74 @@
+@attribute [Route(pageUrl)]
+@layout DocsMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DemoLink Href="@DemoRouteConstants.Demos_Menu_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Preview" PageUrl="@pageUrl" Link="preview">
+    <div style="max-width: 18rem;">
+        <Menu>
+            <MenuLabel>Components</MenuLabel>
+            <MenuList>
+                <MenuItem Href="@DemoRouteConstants.Docs_Menu_Documentation" Match="MenuItemMatch.All">Menu</MenuItem>
+                <MenuItem Href="@DemoRouteConstants.Docs_Card_Documentation">Card</MenuItem>
+            </MenuList>
+            <MenuLabel>Navigation Components</MenuLabel>
+            <MenuList>
+                <MenuItem>
+                    <a class="is-active">MenuItem Nesting</a>
+                    <MenuList>
+                        <MenuItem Href="@DemoRouteConstants.Docs_Breadcrumb_Documentation">Breadcrumb</MenuItem>
+                        <MenuItem Href="@DemoRouteConstants.Docs_Dropdown_Documentation">Dropdown</MenuItem>
+                    </MenuList>
+                </MenuItem>
+            </MenuList>
+        </Menu>
+    </div>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="MenuItem Notes" PageUrl="@pageUrl" Link="menuitem-notes">
+    <div class="content">
+        <ul>
+            <li><code>MenuItem</code> renders a <code>NavLink</code> when <code>Href</code> is provided.</li>
+            <li>When <code>Href</code> is omitted, place your own anchor or nested markup inside <code>MenuItem</code> for parent branches.</li>
+            <li><code>IsActive</code> forces the active style, while <code>Match</code> controls automatic route matching for linked items.</li>
+        </ul>
+    </div>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Menu Parameters" PageUrl="@pageUrl" Link="menu-parameters">
+    <DocxTable TItem="Menu" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Menu Methods" PageUrl="@pageUrl" Link="menu-methods">
+    <DocxTable TItem="Menu" DocType="DocType.Methods" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="MenuLabel Parameters" PageUrl="@pageUrl" Link="menu-label-parameters">
+    <DocxTable TItem="MenuLabel" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="MenuList Parameters" PageUrl="@pageUrl" Link="menu-list-parameters">
+    <DocxTable TItem="MenuList" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="MenuItem Parameters" PageUrl="@pageUrl" Link="menu-item-parameters">
+    <DocxTable TItem="MenuItem" DocType="DocType.Parameters" />
+</Section>
+
+@code {
+    private const string componentName = nameof(Menu);
+    private const string pageUrl = DemoRouteConstants.Docs_Menu_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component family, including its labels, lists, items, and toggle API.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component family, including its labels, lists, items, and toggle API.";
+    private const string imageUrl = "";
+}

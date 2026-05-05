@@ -110,6 +110,7 @@ public partial class DocsMainLayout : MainLayoutBase
                 new Link { Href = DemoRouteConstants.Docs_Dropdown_Documentation, Text = "Dropdown" },
                 new Link { Href = DemoRouteConstants.Docs_GoogleMap_Documentation, Text = "Google Maps" },
                 new Link { Href = DemoRouteConstants.Docs_Grid_Documentation, Text = "Grid" },
+                new Link { Href = DemoRouteConstants.Docs_Menu_Documentation, Text = "Menu" },
                 new Link { Href = DemoRouteConstants.Docs_Message_Documentation, Text = "Message" },
                 new Link { Href = DemoRouteConstants.Docs_Modal_Documentation, Text = "Modal" },
                 new Link { Href = DemoRouteConstants.Docs_Navbar_Documentation, Text = "Navbar" },

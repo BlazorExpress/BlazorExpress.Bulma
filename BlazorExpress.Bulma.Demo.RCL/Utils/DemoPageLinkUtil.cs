@@ -80,7 +80,7 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Media_Documentation, Text = "Media", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Layout }, Status = PageLinkStatus.None, IsActive = false });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Menu_Documentation, Text = "Menu", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = false });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.ListNested, Href = DemoRouteConstants.Demos_Menu_Documentation, Text = "Menu", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.New, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.EnvelopeFill, Href = DemoRouteConstants.Demos_Message_Documentation, Text = "Message", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = true });

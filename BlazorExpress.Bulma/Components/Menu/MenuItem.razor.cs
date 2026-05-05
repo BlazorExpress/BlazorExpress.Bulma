@@ -36,7 +36,7 @@ public partial class MenuItem : BulmaComponentBase
     /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
-    [AddedVersion("1.0.0")]
+    [AddedVersion("1.2.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the child content.")]
     [EditorRequired]
@@ -45,37 +45,40 @@ public partial class MenuItem : BulmaComponentBase
 
     /// <summary>
     /// Gets or sets the hyperlink reference.
+    /// If set, the menu item renders a <see cref="NavLink" />.
     /// <para>
     /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
-    [AddedVersion("1.0.0")]
+    [AddedVersion("1.2.0")]
     [DefaultValue(null)]
-    [Description("Gets or sets the hyperlink reference.")]
+    [Description("Gets or sets the hyperlink reference. If set, the <code>MenuItem</code> renders a <code>NavLink</code>.")]
     [Parameter]
     public string? Href { get; set; }
 
     /// <summary>
     /// Gets or sets the active state.
+    /// This forces the active style on the generated link.
     /// <para>
     /// Default value is <see langword="false" />.
     /// </para>
     /// </summary>
-    [AddedVersion("1.0.0")]
+    [AddedVersion("1.2.0")]
     [DefaultValue(false)]
-    [Description("Gets or sets the active state.")]
+    [Description("Gets or sets the active state. This forces the active style on the generated link.")]
     [Parameter]
     public bool IsActive { get; set; } = false;
 
     /// <summary>
     /// Gets or sets the criteria used to match menu items.
+    /// This applies when <see cref="Href" /> is set.
     /// <para>
     /// Default is <see cref="MenuItemMatch.Prefix" />.
     /// </para>
     /// </summary>
-    [AddedVersion("1.0.0")]
+    [AddedVersion("1.2.0")]
     [DefaultValue(MenuItemMatch.Prefix)]
-    [Description("Gets or sets the criteria used to match menu items.")]
+    [Description("Gets or sets the criteria used to match menu items. This applies when <code>Href</code> is set.")]
     [Parameter]
     public MenuItemMatch Match { get; set; } = MenuItemMatch.Prefix;
 

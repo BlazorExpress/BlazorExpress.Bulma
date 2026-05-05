@@ -1,0 +1,20 @@
+<Buttons Class="mb-4">
+    <Button Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="ToggleMenu">Toggle Menu</Button>
+</Buttons>
+
+<div style="max-width: 18rem;">
+    <Menu @ref="menuRef">
+        <MenuLabel>Quick actions</MenuLabel>
+        <MenuList>
+            <MenuItem Href="@DemoRouteConstants.Demos_Menu_Documentation" Match="MenuItemMatch.All">Menu</MenuItem>
+            <MenuItem Href="@DemoRouteConstants.Demos_Dropdown_Documentation">Dropdown</MenuItem>
+            <MenuItem Href="@DemoRouteConstants.Demos_Tabs_Documentation">Tabs</MenuItem>
+        </MenuList>
+    </Menu>
+</div>
+
+@code {
+    private Menu menuRef = default!;
+
+    private void ToggleMenu() => menuRef.Toggle();
+}
