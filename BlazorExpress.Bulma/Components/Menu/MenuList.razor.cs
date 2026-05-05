@@ -18,7 +18,7 @@ public partial class MenuList : BulmaComponentBase
     /// Default value is <see langword="null" />.
     /// </para>
     /// </summary>
-    [AddedVersion("1.0.0")]
+    [AddedVersion("1.2.0")]
     [DefaultValue(null)]
     [Description("Gets or sets the child content.")]
     [EditorRequired]

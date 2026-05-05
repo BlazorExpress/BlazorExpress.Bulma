@@ -1,0 +1,125 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_Menu_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>Menu</strong> component family wraps Bulma's vertical navigation structure so you can build grouped navigation with labels, item lists, nested items, and route-aware links.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap the overall navigation in <code>&lt;Menu&gt;</code>.</li>
+                <li>Use <code>&lt;MenuLabel&gt;</code> to introduce each section.</li>
+                <li>Place one or more <code>&lt;MenuItem&gt;</code> entries inside <code>&lt;MenuList&gt;</code>.</li>
+                <li>Set <code>Href</code> on menu items when they should navigate, or provide custom markup inside a menu item when you need a nested branch.</li>
+            </ol>
+        </div>
+        This first example shows the smallest common shape: labels with navigable menu items underneath each section.
+    </Block>
+    <Demo Type="typeof(Menu_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="MenuItem behavior" PageUrl="@pageUrl" Link="menuitem-behavior">
+    <Block>
+        <strong>MenuItem</strong> behaves differently depending on whether you provide an <code>Href</code>.
+        <br /><br />
+        <strong>What to expect:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>With <code>Href</code>, <code>MenuItem</code> renders a route-aware <code>NavLink</code>.</li>
+                <li>Without <code>Href</code>, <code>MenuItem</code> renders only the list item wrapper, so you can supply your own anchor or nested markup inside it.</li>
+                <li>Use <code>IsActive="true"</code> to force the active style on generated links, and use <code>Match</code> to control automatic route matching.</li>
+            </ol>
+        </div>
+        This behavior is what makes nested menu branches possible without adding a second specialized item component.
+    </Block>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Nested items" PageUrl="@pageUrl" Link="nested-items">
+    <Block>
+        Bulma menus support a second level of navigation by nesting another <code>MenuList</code> inside a parent <code>MenuItem</code>. This is useful for grouped sub-navigation such as administration areas or settings categories.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Create a parent <code>MenuItem</code> without an <code>Href</code>.</li>
+                <li>Add a plain <code>&lt;a&gt;</code> or other custom markup for the parent label.</li>
+                <li>Nest a second <code>MenuList</code> with child <code>MenuItem</code> links inside that parent item.</li>
+            </ol>
+        </div>
+        This demo mirrors the nested structure from the Bulma menu pattern.
+    </Block>
+    <Demo Type="typeof(Menu_Demo_02_Nested_Items)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Active state and matching" PageUrl="@pageUrl" Link="active-state-and-matching">
+    <Block>
+        The <strong>MenuItem</strong> component can highlight the current route automatically through <code>NavLink</code> matching, and it can also be forced into the active style with <code>IsActive="true"</code>.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Href</code> to turn a menu item into a route-aware navigation link.</li>
+                <li>Use <code>Match="MenuItemMatch.All"</code> when you want exact matching for the current page.</li>
+                <li>Use <code>IsActive="true"</code> when you want to force the active styling on a linked item.</li>
+            </ol>
+        </div>
+        This example shows one link that matches the current page exactly and another that is highlighted explicitly.
+    </Block>
+    <Demo Type="typeof(Menu_Demo_03_Active_State_And_Match)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Methods" PageUrl="@pageUrl" Link="methods">
+    <div class="table-container">
+        <table class="table is-fullwidth is-hoverable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Return type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Toggle()</td>
+                    <td>-</td>
+                    <td>Toggles the menu visibility.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <Block>
+        The <strong>Menu</strong> component exposes a <code>Toggle()</code> method so you can show or hide it programmatically through an <code>@@ref</code>. This is especially useful for mobile sidebars or compact layouts.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add <code>@@ref="menuRef"</code> to the <code>Menu</code> component.</li>
+                <li>Call <code>menuRef.Toggle()</code> from a button click or other UI event.</li>
+                <li>Use <code>IsVisible</code> only for the initial rendered state when you plan to toggle through the component API.</li>
+            </ol>
+        </div>
+        This demo uses a button to toggle the menu open and closed.
+    </Block>
+    <Demo Type="typeof(Menu_Demo_04_Methods_Toggle)" Tabs="true" />
+</Section>
+
+@code {
+    private const string componentName = nameof(Menu);
+    private const string pageUrl = DemoRouteConstants.Demos_Menu_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component family helps you build vertical navigation with grouped labels, nested items, and route-aware links.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component family helps you build vertical navigation with grouped labels, nested items, and route-aware links.";
+    private const string imageUrl = "";
+}

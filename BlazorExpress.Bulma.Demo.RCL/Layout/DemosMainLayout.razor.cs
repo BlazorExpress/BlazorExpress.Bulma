@@ -96,6 +96,7 @@ public partial class DemosMainLayout : MainLayoutBase
                 new Link { Href = DemoRouteConstants.Demos_Dropdown_Documentation, Text = "Dropdown" },
                 new Link { Href = DemoRouteConstants.Demos_GoogleMap_Documentation, Text = "Google Maps" },
                 new Link { Href = DemoRouteConstants.Demos_Grid_Documentation, Text = "Grid" },
+                new Link { Href = DemoRouteConstants.Demos_Menu_Documentation, Text = "Menu" },
                 new Link { Href = DemoRouteConstants.Demos_Message_Documentation, Text = "Message" },
                 new Link { Href = DemoRouteConstants.Demos_Modal_Documentation, Text = "Modal" },
                 new Link { Href = DemoRouteConstants.Demos_Navbar_Documentation, Text = "Navbar" },
