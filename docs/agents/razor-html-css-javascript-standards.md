@@ -138,6 +138,34 @@ Repository example:
 - Keep docs pages and demo pages formulaic and easy to scan.
 - When a component changes publicly, update matching docs and demos in the same change.
 
+### Pattern: Give each new demo example its own section
+
+Rule:
+- In demo documentation pages, keep each new example in its own `Section` with its own `Name`, `PageUrl`, and `Link`.
+- Do not stack unrelated new examples into one shared section when the surrounding feature pages present examples as individually linkable sections.
+
+Generic example:
+- keep a basic example in `How it works`, then place image, events, or actions examples in separate sections with their own anchors.
+
+Repository example:
+- `Pages/Demos/Modal/ModalDocumentation.razor` separates `How it works`, `Classic modal`, and `Events`
+- `Pages/Demos/Card/CardDocumentation.razor` separates `How it works`, `With image`, `Header icon`, and `Footer actions`
+
+### Pattern: Match existing demo documentation wording
+
+Rule:
+- When writing explanatory copy for demo documentation sections, follow the established wording rhythm already used in nearby component pages.
+- Prefer a short introductory paragraph, then a `How to use:` label with a brief ordered list, followed by a one-sentence explanation of what the demo shows.
+- Keep section-to-section wording consistent so the documentation reads uniformly across components.
+
+Generic example:
+- explain what the feature does, list the basic setup steps, then end with a sentence such as `This demo shows...` or `This example illustrates...`
+
+Repository example:
+- `Pages/Demos/Notification/NotificationDocumentation.razor`
+- `Pages/Demos/Modal/ModalDocumentation.razor`
+- `Pages/Demos/Card/CardDocumentation.razor`
+
 Repository example:
 - `Pages/Docs/Button/Button_Doc_01_Documentation.razor`
 - `Pages/Demos/Button/Button_Demo_09_Click_Events.razor`

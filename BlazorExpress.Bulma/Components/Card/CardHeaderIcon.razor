@@ -1,0 +1,12 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+
+<button @ref="@Element"
+        type="button"
+        id="@Id"
+        class="@ClassNames"
+        style="@StyleNames"
+        aria-label="@AriaLabel"
+        @attributes="@AdditionalAttributes">
+    @ChildContent
+</button>

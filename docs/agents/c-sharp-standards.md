@@ -91,6 +91,18 @@ Dominant attribute pattern:
 Repository example:
 - `BlazorExpress.Bulma/Components/Button/Button.razor.cs`
 
+### AddedVersion source rule
+
+Rule:
+- When a new public component API is introduced through a GitHub issue or feature that has an assigned milestone, set each new `[AddedVersion(...)]` value to that milestone title.
+- Do not guess the version from the current package version when the issue milestone already defines the release target.
+
+Generic example:
+- if issue `#123` is assigned to milestone `2.4.0`, new public parameters and components added for that issue should use `[AddedVersion("2.4.0")]`
+
+Repository example:
+- issue `#40` for the Card component is assigned to milestone `1.2.0`, so the new `Card` family uses `[AddedVersion("1.2.0")]`
+
 ### Computed class/style properties
 
 Rule:
