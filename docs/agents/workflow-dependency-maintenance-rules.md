@@ -86,6 +86,26 @@ Repository examples:
   - a generic example
   - a short repository example when helpful
 
+## Requirement Clarification Rule
+
+Before implementation:
+- Analyze the provided requirements for ambiguity, missing decisions, or conflicting expectations.
+- If any ambiguity remains that could materially affect the implementation, ask clarifying questions before making code changes.
+- Ask one clarification question at a time.
+- For each clarification question, provide:
+  - multiple-choice options
+  - a `Custom Answer` option
+  - one recommended option
+  - a short justification for the recommended option
+- Wait for the user's answer before asking the next clarification question or starting implementation.
+- If the requirement is already clear enough to implement safely, proceed without inventing unnecessary questions.
+
+Generic example:
+- if a component change request does not specify whether the new behavior should be opt-in or default, ask that decision first before editing parameters or rendering logic
+
+Repository example:
+- if a change to `BlazorExpress.Bulma/Components/Button/` is unclear about whether it should preserve existing rendered markup for demo and docs examples, resolve that expectation before modifying the component and its companion demo/docs pages
+
 ## Temporary Artifact Cleanup Rule
 
 - Remove temporary folders, temp files, tool caches, scratch notes, and ad hoc verification artifacts created during the task before finishing.

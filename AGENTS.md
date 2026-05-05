@@ -31,6 +31,10 @@ This file is the entry point for development agents working in this repository. 
 - Preserve the current inconsistency strategy.
   Rule: when the repository has mixed patterns, use the nearest local pattern for the file or feature you are changing and document the ambiguity if you formalize it here later.
 
+- Clarify requirement ambiguities before implementation.
+  Rule: when a requested change includes ambiguous requirements, pause before coding and resolve them through sequential clarification questions. Ask one question at a time, provide multiple-choice options plus a `Custom Answer` option, mark a recommended option, explain why it is recommended, and wait for the user's response before asking the next question or starting implementation.
+  Example: if a feature request is unclear about API shape, UI behavior, or backward-compatibility expectations, ask the highest-impact unresolved question first and do not begin code changes until that ambiguity is resolved.
+
 - Clean up temporary artifacts after every implementation.
   Rule: remove temporary folders, temp files, tool caches, ad hoc scratch outputs, and one-off verification artifacts created during the task before finishing the change.
   Example: a temporary CLI cache folder like `.dotnet-cli/` should not remain in the repository after the work is complete.
