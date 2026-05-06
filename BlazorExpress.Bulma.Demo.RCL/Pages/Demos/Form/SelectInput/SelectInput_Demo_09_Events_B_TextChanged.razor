@@ -1,0 +1,22 @@
+<SelectInput TValue="string"
+             Items="@environmentItems"
+             Text="@selectedEnvironmentText"
+             TextChanged="OnEnvironmentTextChanged"
+             Placeholder="Select an environment" />
+<div class="mt-3">Last text: @selectedEnvironmentText</div>
+
+@code {
+    private string selectedEnvironmentText = "Staging";
+
+    private readonly List<SelectInputItem<string>> environmentItems =
+    [
+        new("dev", "Development"),
+        new("staging", "Staging"),
+        new("prod", "Production")
+    ];
+
+    private void OnEnvironmentTextChanged(string text)
+    {
+        selectedEnvironmentText = text;
+    }
+}

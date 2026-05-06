@@ -1,0 +1,15 @@
+<SelectInput TValue="string"
+             Items="@frameworkItems"
+             IsRounded="true"
+             @bind-Value="selectedFramework" />
+
+@code {
+    private string selectedFramework = "blazor";
+
+    private readonly List<SelectInputItem<string>> frameworkItems =
+    [
+        new("blazor", "Blazor"),
+        new("mvc", "ASP.NET MVC"),
+        new("razor-pages", "Razor Pages")
+    ];
+}

@@ -1,0 +1,16 @@
+<SelectInput TValue="string"
+             Items="@statusItems"
+             Placeholder="Select a status"
+             @bind-Value="selectedStatus" />
+<div class="mt-3">Selected value: @selectedStatus</div>
+
+@code {
+    private string selectedStatus = "pending";
+
+    private readonly List<SelectInputItem<string>> statusItems =
+    [
+        new("draft", "Draft"),
+        new("pending", "Pending"),
+        new("approved", "Approved")
+    ];
+}

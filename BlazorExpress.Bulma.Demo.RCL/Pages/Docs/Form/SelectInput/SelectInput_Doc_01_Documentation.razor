@@ -1,0 +1,57 @@
+@attribute [Route(pageUrl)]
+@layout DocsMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DemoLink Href="@DemoRouteConstants.Demos_Form_SelectInput_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Preview" PageUrl="@pageUrl" Link="preview">
+    <div style="max-width: 24rem;">
+        <SelectInput TValue="string"
+                     Items="@fruitItems"
+                     Placeholder="Select a fruit"
+                     Color="SelectInputColor.Primary"
+                     @bind-Value="selectedFruit">
+            <LeftIcon>
+                <BootstrapIcon IconContainerCssClass="is-left" Name="BootstrapIconName.Search" />
+            </LeftIcon>
+        </SelectInput>
+    </div>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Parameters" PageUrl="@pageUrl" Link="parameters">
+    <DocxTable TItem="SelectInput<string>" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Methods" PageUrl="@pageUrl" Link="methods">
+    <DocxTable TItem="SelectInput<string>" DocType="DocType.Methods" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Events" PageUrl="@pageUrl" Link="events">
+    <DocxTable TItem="SelectInput<string>" DocType="DocType.Events" />
+</Section>
+
+@code {
+    private const string componentName = nameof(SelectInput<string>);
+    private const string pageUrl = DemoRouteConstants.Docs_Form_SelectInput_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component, including its item binding, Bulma select styling, icons, and event parameters.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component, including its item binding, Bulma select styling, icons, and event parameters.";
+    private const string imageUrl = "";
+
+    private string selectedFruit = "apple";
+
+    private readonly List<SelectInputItem<string>> fruitItems =
+    [
+        new("apple", "Apple"),
+        new("banana", "Banana"),
+        new("orange", "Orange")
+    ];
+}

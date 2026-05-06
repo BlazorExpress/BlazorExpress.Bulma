@@ -49,6 +49,7 @@ Install with [NuGet](https://www.nuget.org/): `Install-Package BlazorExpress.Bul
 | Form - Date Input | [Docs](https://bulma.blazorexpress.com/docs/form/date-input) | [Demos](https://bulma.blazorexpress.com/demos/form/date-input) |
 | Form - Enum Input | [Docs](https://bulma.blazorexpress.com/docs/form/enum-input) | [Demos](https://bulma.blazorexpress.com/demos/form/enum-input) |
 | Form - OTP Input | [Docs](https://bulma.blazorexpress.com/docs/form/otp-input) | [Demos](https://bulma.blazorexpress.com/demos/form/otp-input) |
+| Form - Select Input | [Docs](https://bulma.blazorexpress.com/docs/form/select-input) | [Demos](https://bulma.blazorexpress.com/demos/form/select-input) |
 | Form - Text Input | [Docs](https://bulma.blazorexpress.com/docs/form/text-input) | [Demos](https://bulma.blazorexpress.com/demos/form/text-input) |
 | Grid | [Docs](https://bulma.blazorexpress.com/docs/grid) | [Demos](https://bulma.blazorexpress.com/demos/grid) |
 | Hero | [Docs](https://bulma.blazorexpress.com/docs/hero) | [Demos](https://bulma.blazorexpress.com/demos/hero) |

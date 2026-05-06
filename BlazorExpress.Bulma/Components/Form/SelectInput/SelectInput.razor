@@ -1,0 +1,41 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+@typeparam TValue
+
+<div class="@ControlClassNames" style="@ContainerCssStyle">
+    <div class="@SelectContainerClassNames">
+        <select @ref="@Element"
+                id="@Id"
+                class="@ClassNames @FieldCssClasses"
+                style="@StyleNames"
+                disabled="@Disabled"
+                value="@SelectedOptionKey"
+                @attributes="@AdditionalAttributes"
+                @onchange="OnChange">
+
+            @if (!string.IsNullOrWhiteSpace(Placeholder))
+            {
+                <option value="">@Placeholder</option>
+            }
+
+            @for (int index = 0; index < items.Count; index++)
+            {
+                var item = items[index];
+
+                <option value="@index.ToString(CultureInfo.InvariantCulture)">
+                    @item.Text
+                </option>
+            }
+        </select>
+    </div>
+
+    @if (LeftIcon is not null)
+    {
+        @LeftIcon
+    }
+
+    @if (RightIcon is not null)
+    {
+        @RightIcon
+    }
+</div>

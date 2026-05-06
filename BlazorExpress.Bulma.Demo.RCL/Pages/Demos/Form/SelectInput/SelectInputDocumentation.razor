@@ -1,0 +1,175 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_Form_SelectInput_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>SelectInput</strong> component renders a Bulma-styled HTML <code>select</code> element and binds the selected option to your Blazor state through a typed item collection.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Create a list of <code>SelectInputItem&lt;TValue&gt;</code> values for the available options.</li>
+                <li>Add the <code>SelectInput</code> component and set the matching <code>TValue</code> type.</li>
+                <li>Bind the selected value with <code>@@bind-Value</code> and optionally provide a <code>Placeholder</code>.</li>
+            </ol>
+        </div>
+        This demo shows the basic setup for binding a selected value from a typed option list.
+    </Block>
+    <Demo Type="typeof(SelectInput_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Block>
+        Apply Bulma color variants to the select wrapper with the <strong>Color</strong> parameter to match validation, status, or branding contexts.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>SelectInput</code> component with your typed items and bound value.</li>
+                <li>Set <code>Color</code> to one of the available <code>SelectInputColor</code> values such as <code>Primary</code>, <code>Info</code>, or <code>Danger</code>.</li>
+                <li>Repeat with different color values to preview the supported variants.</li>
+            </ol>
+        </div>
+        This demo shows the supported color themes for <code>SelectInput</code>.
+    </Block>
+    <Demo Type="typeof(SelectInput_Demo_02_Colors)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Styles" PageUrl="@pageUrl" Link="styles">
+    <Block>
+        Use the <strong>IsRounded</strong> parameter to apply Bulma's rounded select styling while keeping the same binding behavior.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>SelectInput</code> component with your items and selected value.</li>
+                <li>Set <code>IsRounded="true"</code> to enable the rounded select appearance.</li>
+                <li>Optionally combine it with a color or placeholder to match your design.</li>
+            </ol>
+        </div>
+        This demo shows the rounded style option for <code>SelectInput</code>.
+    </Block>
+    <Demo Type="typeof(SelectInput_Demo_03_Styles)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
+    <Block>
+        Control the visual scale of the select with the <strong>Size</strong> parameter. Available options mirror Bulma's small, normal, medium, and large variants.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>SelectInput</code> component with your typed items.</li>
+                <li>Set <code>Size</code> to <code>SelectInputSize.Small</code>, <code>Normal</code>, <code>Medium</code>, or <code>Large</code>.</li>
+                <li>Compare the rendered options to choose the best fit for your layout.</li>
+            </ol>
+        </div>
+        This demo illustrates the available size variants for <code>SelectInput</code>.
+    </Block>
+    <Demo Type="typeof(SelectInput_Demo_04_Sizes)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="States" PageUrl="@pageUrl" Link="states">
+    <Block>
+        The <strong>State</strong> parameter lets you preview Bulma's hovered, focused, and loading styles without waiting for user interaction.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>SelectInput</code> component with your typed items and selected value.</li>
+                <li>Set <code>State</code> to <code>SelectInputState.Hovered</code>, <code>Focused</code>, or <code>Loading</code>.</li>
+                <li>Optionally combine the loading state with a size to preview the scaled loading indicator.</li>
+            </ol>
+        </div>
+        This demo shows the normal, hovered, focused, and loading states for <code>SelectInput</code>.
+    </Block>
+    <Demo Type="typeof(SelectInput_Demo_05_States)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="With icons" PageUrl="@pageUrl" Link="with-icons">
+    <Block>
+        Use the <strong>LeftIcon</strong> and <strong>RightIcon</strong> templates to place icon components beside the select while keeping Bulma's icon-aware control layout.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>SelectInput</code> component and provide your typed items and selection binding.</li>
+                <li>Supply icon components inside the <code>&lt;LeftIcon&gt;</code> and <code>&lt;RightIcon&gt;</code> templates.</li>
+                <li>For icon components such as <code>BootstrapIcon</code>, set <code>IconContainerCssClass</code> to <code>is-left</code> or <code>is-right</code> so the icon aligns with the select correctly.</li>
+            </ol>
+        </div>
+        This demo shows left and right icon placement with <code>SelectInput</code>.
+    </Block>
+    <Demo Type="typeof(SelectInput_Demo_06_With_Icons)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Validations" PageUrl="@pageUrl" Link="validations">
+    <Block>
+        Integrate <strong>SelectInput</strong> with Blazor's form validation system by binding it inside an <code>EditForm</code> and pairing it with a placeholder option for required selection scenarios.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Create a form model with validation attributes such as <code>[Required]</code>.</li>
+                <li>Wrap the component in an <code>EditForm</code> and bind it to the model property with <code>@@bind-Value</code>.</li>
+                <li>Provide a <code>Placeholder</code> and render a <code>ValidationMessage</code> for the same property.</li>
+            </ol>
+        </div>
+        This demo shows required-field validation with a placeholder option and validation feedback.
+    </Block>
+    <Demo Type="typeof(SelectInput_Demo_07_Validations)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Events: ValueChanged" PageUrl="@pageUrl" Link="events-value-changed">
+    <Block>
+        Handle the <strong>ValueChanged</strong> callback when you want to run custom logic as soon as the selected value changes.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the current <code>Value</code> and provide a <code>ValueChanged</code> callback.</li>
+                <li>Update your local state inside the callback to keep the UI synchronized.</li>
+                <li>Use the callback result anywhere else in your page or workflow.</li>
+            </ol>
+        </div>
+        This demo shows how to react to changes through the <code>ValueChanged</code> event.
+    </Block>
+    <Demo Type="typeof(SelectInput_Demo_08_Events_A_ValueChanged)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Events: TextChanged" PageUrl="@pageUrl" Link="events-text-changed">
+    <Block>
+        Use the <strong>TextChanged</strong> callback when you need the selected display text instead of, or in addition to, the typed value.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the current <code>Text</code> and provide a <code>TextChanged</code> callback.</li>
+                <li>Update your local state with the selected label inside the callback.</li>
+                <li>Display or process the selected text elsewhere in your page.</li>
+            </ol>
+        </div>
+        This demo shows how to react to selection changes through the <code>TextChanged</code> event.
+    </Block>
+    <Demo Type="typeof(SelectInput_Demo_09_Events_B_TextChanged)" Tabs="true" />
+</Section>
+
+@code {
+    private const string componentName = nameof(SelectInput<string>);
+    private const string pageUrl = DemoRouteConstants.Demos_Form_SelectInput_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component renders a Bulma-styled select element for typed option lists and supports colors, sizes, states, icons, validation, and change events.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component renders a Bulma-styled select element for typed option lists and supports colors, sizes, states, icons, validation, and change events.";
+    private const string imageUrl = "";
+}

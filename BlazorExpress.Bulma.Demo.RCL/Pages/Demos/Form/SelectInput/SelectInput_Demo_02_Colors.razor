@@ -1,0 +1,22 @@
+<SelectInput TValue="string" Class="mb-2" Items="@statusItems" Color="SelectInputColor.Link" @bind-Value="value1" />
+<SelectInput TValue="string" Class="mb-2" Items="@statusItems" Color="SelectInputColor.Primary" @bind-Value="value2" />
+<SelectInput TValue="string" Class="mb-2" Items="@statusItems" Color="SelectInputColor.Info" @bind-Value="value3" />
+<SelectInput TValue="string" Class="mb-2" Items="@statusItems" Color="SelectInputColor.Success" @bind-Value="value4" />
+<SelectInput TValue="string" Class="mb-2" Items="@statusItems" Color="SelectInputColor.Warning" @bind-Value="value5" />
+<SelectInput TValue="string" Items="@statusItems" Color="SelectInputColor.Danger" @bind-Value="value6" />
+
+@code {
+    private string value1 = "draft";
+    private string value2 = "draft";
+    private string value3 = "draft";
+    private string value4 = "draft";
+    private string value5 = "draft";
+    private string value6 = "draft";
+
+    private readonly List<SelectInputItem<string>> statusItems =
+    [
+        new("draft", "Draft"),
+        new("pending", "Pending"),
+        new("approved", "Approved")
+    ];
+}

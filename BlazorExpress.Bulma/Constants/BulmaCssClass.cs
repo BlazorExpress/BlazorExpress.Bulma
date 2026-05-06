@@ -65,6 +65,8 @@ public static class BulmaCssClass
     public const string HasSkeleton = "has-skeleton";
 
     public const string HasFixedSize = "has-fixed-size";
+    public const string HasIconsLeft = "has-icons-left";
+    public const string HasIconsRight = "has-icons-right";
 
     public const string HasSucceedsSeparator = "has-succeeds-separator";
 

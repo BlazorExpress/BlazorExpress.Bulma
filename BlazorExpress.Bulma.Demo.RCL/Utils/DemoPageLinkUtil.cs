@@ -128,7 +128,7 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Section_Documentation, Text = "Section", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Layout }, Status = PageLinkStatus.None, IsActive = false });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Form_SelectInput_Documentation, Text = "Select Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = false });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.MenuButtonWideFill, Href = DemoRouteConstants.Demos_Form_SelectInput_Documentation, Text = "Select Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.New, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.ColumnsGap, Href = DemoRouteConstants.Demos_Skeletons_Documentation, Text = "Skeletons", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Features }, Status = PageLinkStatus.None, IsActive = true });

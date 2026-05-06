@@ -1,0 +1,18 @@
+<SelectInput TValue="string" Class="mb-2" Items="@planItems" @bind-Value="value1" />
+<SelectInput TValue="string" Class="mb-2" Items="@planItems" State="SelectInputState.Hovered" @bind-Value="value2" />
+<SelectInput TValue="string" Class="mb-2" Items="@planItems" State="SelectInputState.Focused" @bind-Value="value3" />
+<SelectInput TValue="string" Items="@planItems" State="SelectInputState.Loading" @bind-Value="value4" />
+
+@code {
+    private string value1 = "starter";
+    private string value2 = "starter";
+    private string value3 = "starter";
+    private string value4 = "starter";
+
+    private readonly List<SelectInputItem<string>> planItems =
+    [
+        new("starter", "Starter"),
+        new("pro", "Pro"),
+        new("enterprise", "Enterprise")
+    ];
+}

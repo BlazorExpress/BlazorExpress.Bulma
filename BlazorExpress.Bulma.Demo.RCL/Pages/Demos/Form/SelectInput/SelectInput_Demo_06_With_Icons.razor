@@ -1,0 +1,34 @@
+<SelectInput TValue="string"
+             Class="mb-2"
+             Items="@assigneeItems"
+             Placeholder="Choose an assignee"
+             @bind-Value="selectedAssignee">
+    <LeftIcon>
+        <BootstrapIcon IconContainerCssClass="is-left" Name="BootstrapIconName.PersonSquare" />
+    </LeftIcon>
+</SelectInput>
+
+<SelectInput TValue="string"
+             Items="@assigneeItems"
+             Placeholder="Choose an assignee"
+             Color="SelectInputColor.Success"
+             @bind-Value="selectedReviewer">
+    <LeftIcon>
+        <BootstrapIcon IconContainerCssClass="is-left" Name="BootstrapIconName.Search" />
+    </LeftIcon>
+    <RightIcon>
+        <BootstrapIcon IconContainerCssClass="is-right" Name="BootstrapIconName.CheckCircleFill" />
+    </RightIcon>
+</SelectInput>
+
+@code {
+    private string selectedAssignee = "vikram";
+    private string selectedReviewer = "maya";
+
+    private readonly List<SelectInputItem<string>> assigneeItems =
+    [
+        new("vikram", "Vikram"),
+        new("maya", "Maya"),
+        new("sam", "Sam")
+    ];
+}

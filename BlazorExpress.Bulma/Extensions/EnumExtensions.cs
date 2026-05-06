@@ -345,6 +345,37 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToSelectInputColorClass(this SelectInputColor color) =>
+        color switch
+        {
+            SelectInputColor.Primary => BulmaCssClass.IsPrimary,
+            SelectInputColor.Link => BulmaCssClass.IsLink,
+            SelectInputColor.Info => BulmaCssClass.IsInfo,
+            SelectInputColor.Success => BulmaCssClass.IsSuccess,
+            SelectInputColor.Warning => BulmaCssClass.IsWarning,
+            SelectInputColor.Danger => BulmaCssClass.IsDanger,
+            _ => null
+        };
+
+    public static string? ToSelectInputSizeClass(this SelectInputSize size) =>
+        size switch
+        {
+            SelectInputSize.Small => BulmaCssClass.IsSmall,
+            SelectInputSize.Normal => BulmaCssClass.IsNormal,
+            SelectInputSize.Medium => BulmaCssClass.IsMedium,
+            SelectInputSize.Large => BulmaCssClass.IsLarge,
+            _ => null
+        };
+
+    public static string? ToSelectInputStateClass(this SelectInputState state) =>
+        state switch
+        {
+            SelectInputState.Hovered => BulmaCssClass.IsHovered,
+            SelectInputState.Focused => BulmaCssClass.IsFocused,
+            SelectInputState.Loading => BulmaCssClass.IsLoading,
+            _ => null
+        };
+
     public static string? ToPanelColorClass(this PanelColor color) =>
         color switch
         {

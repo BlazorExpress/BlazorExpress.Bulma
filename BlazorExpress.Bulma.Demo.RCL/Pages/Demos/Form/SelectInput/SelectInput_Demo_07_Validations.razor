@@ -1,0 +1,41 @@
+<EditForm Model="@registration" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator />
+
+    <div style="max-width: 24rem;">
+        <SelectInput TValue="string"
+                     Items="@roleItems"
+                     Placeholder="Select a role"
+                     @bind-Value="registration.Role" />
+        <ValidationMessage For="@(() => registration.Role)" />
+    </div>
+
+    <Button Class="mt-3" Color="ButtonColor.Primary" ButtonType="ButtonType.Submit">
+        Submit
+    </Button>
+</EditForm>
+
+<div class="mt-3">@resultMessage</div>
+
+@code {
+    private RegistrationModel registration = new();
+
+    private string resultMessage = "Choose a role and submit the form.";
+
+    private readonly List<SelectInputItem<string>> roleItems =
+    [
+        new("developer", "Developer"),
+        new("designer", "Designer"),
+        new("manager", "Manager")
+    ];
+
+    private void OnValidSubmit()
+    {
+        resultMessage = $"Submitted role: {registration.Role}";
+    }
+
+    private sealed class RegistrationModel
+    {
+        [System.ComponentModel.DataAnnotations.Required(ErrorMessage = "Please select a role.")]
+        public string? Role { get; set; }
+    }
+}
