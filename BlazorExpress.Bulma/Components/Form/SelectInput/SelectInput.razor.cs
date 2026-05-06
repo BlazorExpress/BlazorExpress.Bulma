@@ -104,7 +104,8 @@ public partial class SelectInput<TValue> : BulmaComponentBase
 
     protected override string? ClassNames =>
         BuildClassNames(
-            Class
+            Class,
+            (StateClassNames, !string.IsNullOrWhiteSpace(StateClassNames))
         );
 
     private string? ControlClassNames =>
@@ -252,8 +253,16 @@ public partial class SelectInput<TValue> : BulmaComponentBase
             (Color.ToSelectInputColorClass(), Color != SelectInputColor.None),
             (Size.ToSelectInputSizeClass(), Size != SelectInputSize.None),
             (BulmaCssClass.IsRounded, IsRounded),
-            (State.ToSelectInputStateClass(), State != SelectInputState.None)
+            (BulmaCssClass.IsLoading, State == SelectInputState.Loading)
         );
+
+    private string? StateClassNames =>
+        State switch
+        {
+            SelectInputState.Hovered => BulmaCssClass.IsHovered,
+            SelectInputState.Focused => BulmaCssClass.IsFocused,
+            _ => null
+        };
 
     /// <summary>
     /// Gets or sets the size.
