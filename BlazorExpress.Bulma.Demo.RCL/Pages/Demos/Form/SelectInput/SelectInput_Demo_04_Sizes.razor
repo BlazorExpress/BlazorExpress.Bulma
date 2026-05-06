@@ -1,0 +1,18 @@
+<SelectInput TValue="string" ContainerCssClass="mb-3" Items="@teamItems" Size="SelectInputSize.Small" @bind-Value="value1" />
+<SelectInput TValue="string" ContainerCssClass="mb-3" Items="@teamItems" Size="SelectInputSize.Normal" @bind-Value="value2" />
+<SelectInput TValue="string" ContainerCssClass="mb-3" Items="@teamItems" Size="SelectInputSize.Medium" @bind-Value="value3" />
+<SelectInput TValue="string" Items="@teamItems" Size="SelectInputSize.Large" @bind-Value="value4" />
+
+@code {
+    private string value1 = "product";
+    private string value2 = "product";
+    private string value3 = "product";
+    private string value4 = "product";
+
+    private readonly List<SelectInputItem<string>> teamItems =
+    [
+        new("product", "Product"),
+        new("design", "Design"),
+        new("engineering", "Engineering")
+    ];
+}

@@ -80,6 +80,7 @@ public partial class DemosMainLayout : MainLayoutBase
                 new Link { Href = DemoRouteConstants.Demos_Form_EnumInput_Documentation , Text = "Enum Input" },
                 new Link { Href = DemoRouteConstants.Demos_Form_NumberInput_Documentation , Text = "Number Input" },
                 new Link { Href = DemoRouteConstants.Demos_Form_OTPInput_Documentation , Text = "OTP Input" },
+                new Link { Href = DemoRouteConstants.Demos_Form_SelectInput_Documentation , Text = "Select Input" },
                 new Link { Href = DemoRouteConstants.Demos_Form_TextAreaInput_Documentation , Text = "Text Area Input" },
                 new Link { Href = DemoRouteConstants.Demos_Form_TextInput_Documentation , Text = "Text Input" },
             ]

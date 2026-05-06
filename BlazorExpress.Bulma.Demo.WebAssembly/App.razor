@@ -1,7 +1,7 @@
 ﻿<Router AppAssembly="@typeof(App).Assembly" AdditionalAssemblies="new []{ typeof(BlazorExpress.Bulma.Demo.RCL.App).Assembly }">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(BlazorExpress.Bulma.Demo.RCL.MainLayout)" />
-        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+        @* <FocusOnNavigate RouteData="@routeData" Selector="h1" /> *@
     </Found>
     <NotFound>
         <PageTitle>Not found</PageTitle>
