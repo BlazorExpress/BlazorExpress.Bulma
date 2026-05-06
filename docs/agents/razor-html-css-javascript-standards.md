@@ -138,6 +138,20 @@ Repository example:
 - Keep docs pages and demo pages formulaic and easy to scan.
 - When a component changes publicly, update matching docs and demos in the same change.
 
+### Pattern: Prefer a single live preview in component docs pages
+
+Rule:
+- In component documentation pages, prefer one concise live `Preview` example instead of a screenshot or a mini-gallery of examples.
+- Keep the preview contained and representative, following the simpler shape used by docs pages such as `Card` and `Panel`.
+- Reserve multiple scenarios and feature breakdowns for the companion demo page rather than stacking them into the docs reference page.
+
+Generic example:
+- render one component instance inside a width-constrained container and use the remaining sections for parameters, methods, events, or notes.
+
+Repository example:
+- `Pages/Docs/Card/Card_Doc_01_Documentation.razor`
+- `Pages/Docs/Panel/Panel_Doc_01_Documentation.razor`
+
 ### Pattern: Give each new demo example its own section
 
 Rule:

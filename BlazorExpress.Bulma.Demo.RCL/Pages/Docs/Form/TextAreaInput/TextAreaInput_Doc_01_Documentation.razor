@@ -11,8 +11,13 @@
 
 <DemoLink Href="@DemoRouteConstants.Demos_Form_TextAreaInput_Documentation" />
 
-<Section Class="p-0" Size="HeadingSize.H4" Name="Screenshot" PageUrl="@pageUrl" Link="screenshot">
-    <img src="@imageUrl" class="img-fluid" alt="@metaTitle" />
+<Section Class="p-0" Size="HeadingSize.H4" Name="Preview" PageUrl="@pageUrl" Link="preview">
+    <div style="max-width: 36rem;">
+        <TextAreaInput Color="TextAreaInputColor.Primary"
+                       IsFixedSize="true"
+                       Rows="6"
+                       @bind-Value="previewText" />
+    </div>
 </Section>
 
 <Section Class="p-0" Size="HeadingSize.H4" Name="Parameters" PageUrl="@pageUrl" Link="parameters">
@@ -34,5 +39,7 @@
     private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component, including its multiline text entry options and Bulma styling parameters.";
     private const string metaTitle = $"Blazor {componentName} Component";
     private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component, including its multiline text entry options and Bulma styling parameters.";
-    private const string imageUrl = DemoScreenshotSrcConstants.TextAreaInput;
+    private const string imageUrl = "";
+
+    private string previewText = "TextAreaInput supports multiline entry with Bulma textarea styling, configurable height through Rows, and fixed-size behavior for stable layouts.";
 }
