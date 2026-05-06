@@ -1,0 +1,83 @@
+@attribute [Route(pageUrl)]
+@layout DocsMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DemoLink Href="@DemoRouteConstants.Demos_Panel_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Preview" PageUrl="@pageUrl" Link="preview">
+    <div style="max-width: 24rem;">
+        <Panel Color="PanelColor.Primary">
+            <PanelHeading>Panel component</PanelHeading>
+            <PanelTabs>
+                <PanelTab IsActive="true">All</PanelTab>
+                <PanelTab>Open</PanelTab>
+                <PanelTab>Closed</PanelTab>
+            </PanelTabs>
+            <PanelBlock Href="https://bulma.io/documentation/components/panel/" IsActive="true">
+                <PanelIcon>
+                    <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                </PanelIcon>
+                Bulma specification
+            </PanelBlock>
+            <PanelBlock Href="@DemoRouteConstants.Demos_Panel_Documentation">
+                <PanelIcon>
+                    <i class="bi bi-window" aria-hidden="true"></i>
+                </PanelIcon>
+                View demos
+            </PanelBlock>
+        </Panel>
+    </div>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="PanelBlock Notes" PageUrl="@pageUrl" Link="panelblock-notes">
+    <div class="content">
+        <ul>
+            <li><code>PanelBlock</code> renders a <code>div</code> by default.</li>
+            <li>When <code>Href</code> is provided, <code>PanelBlock</code> renders an anchor element.</li>
+            <li>When <code>IsLabel</code> is <code>true</code> and <code>Href</code> is not provided, <code>PanelBlock</code> renders a label element.</li>
+            <li><code>PanelIcon</code> is optional and can wrap raw icon markup or another icon component inside a block.</li>
+            <li><code>Panel.Color</code> supports the main Bulma panel color variants, including <code>Link</code>, <code>Primary</code>, <code>Info</code>, <code>Success</code>, <code>Warning</code>, and <code>Danger</code>.</li>
+        </ul>
+    </div>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Panel Parameters" PageUrl="@pageUrl" Link="panel-parameters">
+    <DocxTable TItem="Panel" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="PanelHeading Parameters" PageUrl="@pageUrl" Link="panel-heading-parameters">
+    <DocxTable TItem="PanelHeading" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="PanelTabs Parameters" PageUrl="@pageUrl" Link="panel-tabs-parameters">
+    <DocxTable TItem="PanelTabs" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="PanelTab Parameters" PageUrl="@pageUrl" Link="panel-tab-parameters">
+    <DocxTable TItem="PanelTab" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="PanelBlock Parameters" PageUrl="@pageUrl" Link="panel-block-parameters">
+    <DocxTable TItem="PanelBlock" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="PanelIcon Parameters" PageUrl="@pageUrl" Link="panel-icon-parameters">
+    <DocxTable TItem="PanelIcon" DocType="DocType.Parameters" />
+</Section>
+
+@code {
+    private const string componentName = nameof(Panel);
+    private const string pageUrl = DemoRouteConstants.Docs_Panel_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component family, including its heading, tabs, blocks, and icon helpers.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component family, including its heading, tabs, blocks, and icon helpers.";
+    private const string imageUrl = "";
+}

@@ -1,0 +1,22 @@
+<Panel style="max-width: 24rem;">
+    <PanelHeading>Mixed block rendering</PanelHeading>
+
+    <PanelBlock>
+        <div>
+            <p class="has-text-weight-semibold mb-2">Search block</p>
+            <input class="input" type="text" placeholder="Filter components" />
+        </div>
+    </PanelBlock>
+
+    <PanelBlock IsLabel="true">
+        <input type="checkbox" checked />
+        <span class="ml-2">Include prerelease packages</span>
+    </PanelBlock>
+
+    <PanelBlock Href="https://www.nuget.org/packages/BlazorExpress.Bulma">
+        <PanelIcon>
+            <i class="bi bi-box-seam" aria-hidden="true"></i>
+        </PanelIcon>
+        View package on NuGet
+    </PanelBlock>
+</Panel>

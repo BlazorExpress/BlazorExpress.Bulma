@@ -108,6 +108,7 @@ public partial class BlogMainLayout : MainLayoutBase
                 new Link { Href = DemoRouteConstants.Demos_Message_Documentation, Text = "Message" },
                 new Link { Href = DemoRouteConstants.Demos_Modal_Documentation, Text = "Modal" },
                 new Link { Href = DemoRouteConstants.Demos_Pagination_Documentation, Text = "Pagination" },
+                new Link { Href = DemoRouteConstants.Demos_Panel_Documentation, Text = "Panel" },
                 new Link { Href = DemoRouteConstants.Demos_ScriptLoader_Documentation, Text = "Script Loader" },
                 new Link { Href = DemoRouteConstants.Demos_Tabs_Documentation, Text = "Tabs" }
             ]

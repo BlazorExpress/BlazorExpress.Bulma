@@ -1,0 +1,49 @@
+<Panel style="max-width: 24rem;">
+    <PanelHeading>Repositories</PanelHeading>
+
+    <PanelBlock>
+        <p class="control has-icons-left">
+            <input class="input" type="text" placeholder="Search" />
+            <span class="icon is-left">
+                <i class="bi bi-search" aria-hidden="true"></i>
+            </span>
+        </p>
+    </PanelBlock>
+
+    <PanelTabs>
+        <PanelTab IsActive="true">All</PanelTab>
+        <PanelTab>Public</PanelTab>
+        <PanelTab>Private</PanelTab>
+        <PanelTab>Forks</PanelTab>
+    </PanelTabs>
+
+    <PanelBlock Href="https://github.com/BlazorExpress/BlazorExpress.Bulma" IsActive="true">
+        <PanelIcon>
+            <i class="bi bi-book" aria-hidden="true"></i>
+        </PanelIcon>
+        BlazorExpress.Bulma
+    </PanelBlock>
+
+    <PanelBlock Href="https://bulma.blazorexpress.com/docs/">
+        <PanelIcon>
+            <i class="bi bi-journal-text" aria-hidden="true"></i>
+        </PanelIcon>
+        Documentation site
+    </PanelBlock>
+
+    <PanelBlock Href="https://bulma.blazorexpress.com/demos/">
+        <PanelIcon>
+            <i class="bi bi-window" aria-hidden="true"></i>
+        </PanelIcon>
+        Component demos
+    </PanelBlock>
+
+    <PanelBlock IsLabel="true">
+        <input type="checkbox" />
+        <span class="ml-2">remember me</span>
+    </PanelBlock>
+
+    <PanelBlock>
+        <button class="button is-link is-outlined is-fullwidth">Reset all filters</button>
+    </PanelBlock>
+</Panel>

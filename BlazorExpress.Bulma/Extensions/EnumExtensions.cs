@@ -345,6 +345,22 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToPanelColorClass(this PanelColor color) =>
+        color switch
+        {
+            PanelColor.Primary => BulmaCssClass.IsPrimary,
+            PanelColor.Link => BulmaCssClass.IsLink,
+            PanelColor.Info => BulmaCssClass.IsInfo,
+            PanelColor.Success => BulmaCssClass.IsSuccess,
+            PanelColor.Warning => BulmaCssClass.IsWarning,
+            PanelColor.Danger => BulmaCssClass.IsDanger,
+            PanelColor.White => BulmaCssClass.IsWhite,
+            PanelColor.Light => BulmaCssClass.IsLight,
+            PanelColor.Dark => BulmaCssClass.IsDark,
+            PanelColor.Black => BulmaCssClass.IsBlack,
+            _ => null
+        };
+
     public static string? ToProgressBarColorClass(this ProgressBarColor color) =>
         color switch
         {

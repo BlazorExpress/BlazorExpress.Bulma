@@ -376,6 +376,12 @@ public static class BulmaCssClass
     public const string PaginationNext = "pagination-next";
     public const string PaginationPrevious = "pagination-previous";
 
+    public const string Panel = "panel";
+    public const string PanelBlock = "panel-block";
+    public const string PanelHeading = "panel-heading";
+    public const string PanelIcon = "panel-icon";
+    public const string PanelTabs = "panel-tabs";
+
     public const string Progress = "progress";
 
     public const string P5 = "p-5";

@@ -31,8 +31,9 @@ This file is the entry point for development agents working in this repository. 
 - Preserve the current inconsistency strategy.
   Rule: when the repository has mixed patterns, use the nearest local pattern for the file or feature you are changing and document the ambiguity if you formalize it here later.
 
-- Clarify requirement ambiguities before implementation.
-  Rule: when a requested change includes ambiguous requirements, pause before coding and resolve them through sequential clarification questions. Ask one question at a time, provide multiple-choice options plus a `Custom Answer` option, mark a recommended option, explain why it is recommended, and wait for the user's response before asking the next question or starting implementation.
+- Perform a mandatory requirement analysis before every new implementation.
+  Rule: before starting any new implementation, first analyze the provided requirements for ambiguity, missing decisions, or conflicting expectations. If any material ambiguity exists, pause before coding and resolve it through sequential clarification questions. Ask one question at a time, provide multiple-choice options plus a `Custom Answer` option, mark a recommended option, explain why it is recommended, and wait for the user's response before asking the next question or starting implementation.
+  Rule: if the requirement is already clear enough to implement safely, document that conclusion in a short user-facing note and then proceed.
   Example: if a feature request is unclear about API shape, UI behavior, or backward-compatibility expectations, ask the highest-impact unresolved question first and do not begin code changes until that ambiguity is resolved.
 
 - Clean up temporary artifacts after every implementation.

@@ -1,0 +1,111 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_Panel_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>Panel</strong> component family mirrors Bulma's compact control panel structure so you can compose headings, filter tabs, interactive blocks, and icons without manually stitching together the CSS classes.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap the overall layout in <code>&lt;Panel&gt;</code>.</li>
+                <li>Add a <code>&lt;PanelHeading&gt;</code> as the title row.</li>
+                <li>Use <code>&lt;PanelTabs&gt;</code> with one or more <code>&lt;PanelTab&gt;</code> elements when you need compact filters.</li>
+                <li>Fill the body with <code>&lt;PanelBlock&gt;</code> entries and use <code>&lt;PanelIcon&gt;</code> when a block needs an icon slot.</li>
+            </ol>
+        </div>
+        This first example follows Bulma's reference layout with a search control, filter tabs, active list items, a checkbox label block, and a footer action.
+    </Block>
+    <Demo Type="typeof(Panel_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Active state" PageUrl="@pageUrl" Link="active-state">
+    <Block>
+        <strong>PanelTab</strong> and <strong>PanelBlock</strong> expose an <code>IsActive</code> parameter so you can highlight the current selection inside the panel.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>IsActive="true"</code> on the current <code>PanelTab</code> to highlight the selected filter.</li>
+                <li>Set <code>IsActive="true"</code> on the current <code>PanelBlock</code> to highlight the active item in the body of the panel.</li>
+                <li>Keep the rest of the tabs and blocks inactive so the current selection stays visually clear.</li>
+            </ol>
+        </div>
+        This example shows one active tab and one active block inside a neutral panel.
+    </Block>
+    <Demo Type="typeof(Panel_Demo_02_Color_And_Active_State)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Block>
+        The <strong>Panel</strong> component supports the same main Bulma color modifiers shown in the panel documentation, which makes it easy to align the panel's emphasis with the rest of your UI.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Color</code> parameter on <code>Panel</code> to one of the supported values such as <code>PanelColor.Link</code>, <code>PanelColor.Primary</code>, <code>PanelColor.Info</code>, <code>PanelColor.Success</code>, <code>PanelColor.Warning</code>, or <code>PanelColor.Danger</code>.</li>
+                <li>Keep the internal structure the same with <code>PanelHeading</code>, optional <code>PanelTabs</code>, and one or more <code>PanelBlock</code> entries.</li>
+                <li>Use active tabs or blocks as needed to reinforce the currently selected item inside each color variant.</li>
+            </ol>
+        </div>
+        The following demos show the main Bulma panel color variants side by side as individually linkable examples.
+    </Block>
+    <Demo Type="typeof(Panel_Demo_04_Colors_A_Link)" Tabs="true" />
+    <Block>
+        This example uses the <code>Primary</code> color to create a strong, branded panel treatment.
+    </Block>
+    <Demo Type="typeof(Panel_Demo_04_Colors_B_Primary)" Tabs="true" />
+    <Block>
+        This example uses the <code>Info</code> color for status-oriented or informational panels.
+    </Block>
+    <Demo Type="typeof(Panel_Demo_04_Colors_C_Info)" Tabs="true" />
+    <Block>
+        This example uses the <code>Success</code> color for completed, healthy, or approved states.
+    </Block>
+    <Demo Type="typeof(Panel_Demo_04_Colors_D_Success)" Tabs="true" />
+    <Block>
+        This example uses the <code>Warning</code> color for cautionary or pending states.
+    </Block>
+    <Demo Type="typeof(Panel_Demo_04_Colors_E_Warning)" Tabs="true" />
+    <Block>
+        This example uses the <code>Danger</code> color for errors, blockers, or critical states.
+    </Block>
+    <Demo Type="typeof(Panel_Demo_04_Colors_F_Danger)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Block rendering" PageUrl="@pageUrl" Link="block-rendering">
+    <Block>
+        <strong>PanelBlock</strong> can render in three useful ways without requiring separate components for each case.
+        <br /><br />
+        <strong>What to expect:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Without extra parameters, <code>PanelBlock</code> renders a <code>div</code>.</li>
+                <li>When <code>Href</code> is set, it renders an anchor block for navigable items.</li>
+                <li>When <code>IsLabel="true"</code> is set and <code>Href</code> is not provided, it renders a <code>label</code> block that works well for checkboxes and toggles.</li>
+            </ol>
+        </div>
+        This demo shows all three rendering modes in one compact panel.
+    </Block>
+    <Demo Type="typeof(Panel_Demo_03_Block_Rendering)" Tabs="true" />
+</Section>
+
+@code {
+    private const string componentName = nameof(Panel);
+    private const string pageUrl = DemoRouteConstants.Demos_Panel_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component family helps you build compact control panels with headings, tabs, blocks, and icon slots using Bulma markup.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component family helps you build compact control panels with headings, tabs, blocks, and icon slots using Bulma markup.";
+    private const string imageUrl = "";
+}
