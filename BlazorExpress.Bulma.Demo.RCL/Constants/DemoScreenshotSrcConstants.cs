@@ -31,6 +31,7 @@ public class DemoScreenshotSrcConstants
     public const string EnumInput = DemoScreenshotSrcPrefix + "enum-input.png";
     public const string NumberInput = DemoScreenshotSrcPrefix + "number-input.png";
     public const string OTPInput = DemoScreenshotSrcPrefix + "otp-input.png";
+    public const string TextAreaInput = DemoScreenshotSrcPrefix + "text-input.png";
     public const string TextInput = DemoScreenshotSrcPrefix + "text-input.png";
 
     // Components

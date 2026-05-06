@@ -487,6 +487,36 @@ public static class EnumExtensions
             _ => ""
         };
 
+    public static string? ToTextAreaInputColorClass(this TextAreaInputColor color) =>
+        color switch
+        {
+            TextAreaInputColor.Primary => BulmaCssClass.IsPrimary,
+            TextAreaInputColor.Link => BulmaCssClass.IsLink,
+            TextAreaInputColor.Info => BulmaCssClass.IsInfo,
+            TextAreaInputColor.Success => BulmaCssClass.IsSuccess,
+            TextAreaInputColor.Warning => BulmaCssClass.IsWarning,
+            TextAreaInputColor.Danger => BulmaCssClass.IsDanger,
+            _ => null
+        };
+
+    public static string? ToTextAreaInputSizeClass(this TextAreaInputSize size) =>
+        size switch
+        {
+            TextAreaInputSize.Small => BulmaCssClass.IsSmall,
+            TextAreaInputSize.Normal => BulmaCssClass.IsNormal,
+            TextAreaInputSize.Medium => BulmaCssClass.IsMedium,
+            TextAreaInputSize.Large => BulmaCssClass.IsLarge,
+            _ => null
+        };
+
+    public static string? ToTextAreaInputStateClass(this TextAreaInputState state) =>
+        state switch
+        {
+            TextAreaInputState.Hovered => BulmaCssClass.IsHovered,
+            TextAreaInputState.Focused => BulmaCssClass.IsFocused,
+            _ => null
+        };
+
     public static string? ToTextInputColorClass(this TextInputColor color) =>
         color switch
         {

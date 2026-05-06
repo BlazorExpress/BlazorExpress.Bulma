@@ -64,6 +64,8 @@ public static class BulmaCssClass
 
     public const string HasSkeleton = "has-skeleton";
 
+    public const string HasFixedSize = "has-fixed-size";
+
     public const string HasSucceedsSeparator = "has-succeeds-separator";
 
     public const string HasTextBlack = "has-text-black";
@@ -399,6 +401,7 @@ public static class BulmaCssClass
     public const string Table = "table";
     public const string TableContianer = "table-container";
     public const string Tabs = "tabs";
+    public const string Textarea = "textarea";
 
     public const string Tag = "tag";
     public const string Tags = "tags";
