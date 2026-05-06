@@ -1,0 +1,21 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+
+@if (RenderAsLink)
+{
+    <a @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" href="@Href" @attributes="@AdditionalAttributes">
+        @ChildContent
+    </a>
+}
+else if (RenderAsLabel)
+{
+    <label @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
+        @ChildContent
+    </label>
+}
+else
+{
+    <div @ref="@Element" id="@Id" class="@ClassNames" style="@StyleNames" @attributes="@AdditionalAttributes">
+        @ChildContent
+    </div>
+}

@@ -89,7 +89,7 @@ Repository examples:
 ## Requirement Clarification Rule
 
 Before implementation:
-- Analyze the provided requirements for ambiguity, missing decisions, or conflicting expectations.
+- Always analyze the provided requirements for ambiguity, missing decisions, or conflicting expectations before starting any new implementation.
 - If any ambiguity remains that could materially affect the implementation, ask clarifying questions before making code changes.
 - Ask one clarification question at a time.
 - For each clarification question, provide:
@@ -98,7 +98,7 @@ Before implementation:
   - one recommended option
   - a short justification for the recommended option
 - Wait for the user's answer before asking the next clarification question or starting implementation.
-- If the requirement is already clear enough to implement safely, proceed without inventing unnecessary questions.
+- If the requirement is already clear enough to implement safely, say so briefly in a user-facing note and then proceed without inventing unnecessary questions.
 
 Generic example:
 - if a component change request does not specify whether the new behavior should be opt-in or default, ask that decision first before editing parameters or rendering logic

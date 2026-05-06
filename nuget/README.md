@@ -47,6 +47,7 @@ Install with [NuGet](https://www.nuget.org/): `Install-Package BlazorExpress.Bul
 | Navbar | [Docs](https://bulma.blazorexpress.com/docs/navbar) | [Demos](https://bulma.blazorexpress.com/demos/navbar) |
 | Notification | [Docs](https://bulma.blazorexpress.com/docs/notification) | [Demos](https://bulma.blazorexpress.com/demos/notification) |
 | Pagination | [Docs](https://bulma.blazorexpress.com/docs/pagination) | [Demos](https://bulma.blazorexpress.com/demos/pagination) |
+| Panel | [Docs](https://bulma.blazorexpress.com/docs/panel) | [Demos](https://bulma.blazorexpress.com/demos/panel) |
 | Pdf Viewer | [Docs](https://bulma.blazorexpress.com/docs/pdf-viewer) | [Demos](https://bulma.blazorexpress.com/demos/pdf-viewer) |
 | Progress Bar | [Docs](https://bulma.blazorexpress.com/docs/progress-bar) | [Demos](https://bulma.blazorexpress.com/demos/progress-bar) |
 | Script Loader | [Docs](https://bulma.blazorexpress.com/docs/script-loader) | [Demos](https://bulma.blazorexpress.com/demos/script-loader) |
