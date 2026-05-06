@@ -1,0 +1,158 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_Form_TextAreaInput_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>TextAreaInput</strong> component renders a multiline HTML textarea and binds its value to your Blazor state, making it easy to capture longer free-form text.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>TextAreaInput</code> component to your page.</li>
+                <li>Bind its <code>Value</code> using <code>@@bind-Value</code> so the textarea stays synchronized with your backing field.</li>
+                <li>Optionally render the bound value elsewhere in the UI to confirm updates.</li>
+            </ol>
+        </div>
+        This demo shows the basic setup for editing and displaying multiline text with <code>TextAreaInput</code>.
+    </Block>
+    <Demo Type="typeof(TextAreaInput_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Set height" PageUrl="@pageUrl" Link="set-height">
+    <Block>
+        Control the visible height of the textarea with the <strong>Rows</strong> parameter, which maps directly to the HTML <code>rows</code> attribute.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>TextAreaInput</code> component and bind its value.</li>
+                <li>Set <code>Rows</code> to the number of visible lines you want, for example <code>Rows="10"</code>.</li>
+                <li>Adjust the bound content as needed; the textarea keeps the same configured height.</li>
+            </ol>
+        </div>
+        This demo shows a taller textarea configured with ten visible lines.
+    </Block>
+    <Demo Type="typeof(TextAreaInput_Demo_02_Set_Height)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Block>
+        Apply Bulma color variants to the textarea with the <strong>Color</strong> parameter. This lets you match the control to validation, status, or branding contexts.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>TextAreaInput</code> component and bind its value.</li>
+                <li>Set <code>Color</code> to one of the available <code>TextAreaInputColor</code> values such as <code>Link</code>, <code>Primary</code>, <code>Info</code>, <code>Success</code>, <code>Warning</code>, or <code>Danger</code>.</li>
+                <li>Repeat with other color values to preview the available variants.</li>
+            </ol>
+        </div>
+        This demo shows the supported color themes for <code>TextAreaInput</code>.
+    </Block>
+    <Demo Type="typeof(TextAreaInput_Demo_03_Colors)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
+    <Block>
+        Use the <strong>Size</strong> parameter to render small, normal, medium, or large textarea variants while keeping the same binding behavior.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>TextAreaInput</code> component and bind its value.</li>
+                <li>Set <code>Size</code> to <code>TextAreaInputSize.Small</code>, <code>Normal</code>, <code>Medium</code>, or <code>Large</code>.</li>
+                <li>Compare the rendered size variants to choose the one that fits your layout.</li>
+            </ol>
+        </div>
+        This demo illustrates the available textarea sizes.
+    </Block>
+    <Demo Type="typeof(TextAreaInput_Demo_04_Sizes)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="States" PageUrl="@pageUrl" Link="states">
+    <Block>
+        The <strong>State</strong> parameter lets you preview Bulma's visual textarea states without user interaction. Use it for hovered, focused, and loading appearances. When loading is combined with a size, the spinner automatically follows that size.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>TextAreaInput</code> component and bind its value.</li>
+                <li>Set <code>State</code> to <code>TextAreaInputState.Hovered</code>, <code>Focused</code>, or <code>Loading</code>.</li>
+                <li>Optionally combine <code>State="TextAreaInputState.Loading"</code> with <code>Size</code> to resize the loading spinner.</li>
+            </ol>
+        </div>
+        This demo shows the normal, hovered, focused, and loading states, including resized loading indicators.
+    </Block>
+    <Demo Type="typeof(TextAreaInput_Demo_05_States)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Disabled" PageUrl="@pageUrl" Link="disabled">
+    <Block>
+        Disable the textarea when you want to show content without allowing user interaction.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>TextAreaInput</code> component and bind its value.</li>
+                <li>Set <code>Disabled="true"</code> to prevent editing and focusing.</li>
+                <li>Optionally provide a value or placeholder to show what the field represents.</li>
+            </ol>
+        </div>
+        This demo shows a disabled <code>TextAreaInput</code> field.
+    </Block>
+    <Demo Type="typeof(TextAreaInput_Demo_06_Disabled)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Readonly" PageUrl="@pageUrl" Link="readonly">
+    <Block>
+        Use the <strong>ReadOnly</strong> parameter when the content should remain selectable and visible but not editable.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>TextAreaInput</code> component and bind its value.</li>
+                <li>Set <code>ReadOnly="true"</code> so users can view the text without changing it.</li>
+                <li>Optionally set <code>Rows</code> to display a larger readonly text area.</li>
+            </ol>
+        </div>
+        This demo shows a readonly textarea with predefined content.
+    </Block>
+    <Demo Type="typeof(TextAreaInput_Demo_07_ReadOnly)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Fixed size" PageUrl="@pageUrl" Link="fixed-size">
+    <Block>
+        Prevent browser resizing by enabling the <strong>IsFixedSize</strong> parameter, which applies Bulma's <code>has-fixed-size</code> modifier.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>TextAreaInput</code> component and bind its value.</li>
+                <li>Set <code>IsFixedSize="true"</code> to disable manual resize handles.</li>
+                <li>Optionally combine it with <code>Rows</code> to define a consistent visible height.</li>
+            </ol>
+        </div>
+        This demo shows a fixed-size textarea that keeps its configured height.
+    </Block>
+    <Demo Type="typeof(TextAreaInput_Demo_08_Fixed_Size)" Tabs="true" />
+</Section>
+
+@code {
+    private const string componentName = nameof(TextAreaInput);
+    private const string pageUrl = DemoRouteConstants.Demos_Form_TextAreaInput_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component renders an HTML textarea for multiline text entry and styles it with Bulma variants such as colors, sizes, states, readonly, and fixed-size behavior.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component renders an HTML textarea for multiline text entry and styles it with Bulma variants such as colors, sizes, states, readonly, and fixed-size behavior.";
+    private const string imageUrl = DemoScreenshotSrcConstants.TextAreaInput;
+}

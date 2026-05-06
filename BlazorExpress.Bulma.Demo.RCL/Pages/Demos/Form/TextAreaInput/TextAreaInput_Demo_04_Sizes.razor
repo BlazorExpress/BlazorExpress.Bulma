@@ -1,0 +1,11 @@
+<TextAreaInput Class="mb-3" Size="TextAreaInputSize.Small" Placeholder="Small textarea" @bind-Value="value1" />
+<TextAreaInput Class="mb-3" Size="TextAreaInputSize.Normal" Placeholder="Normal textarea" @bind-Value="value2" />
+<TextAreaInput Class="mb-3" Size="TextAreaInputSize.Medium" Placeholder="Medium textarea" @bind-Value="value3" />
+<TextAreaInput Size="TextAreaInputSize.Large" Placeholder="Large textarea" @bind-Value="value4" />
+
+@code {
+    private string? value1 = null;
+    private string? value2 = null;
+    private string? value3 = null;
+    private string? value4 = null;
+}

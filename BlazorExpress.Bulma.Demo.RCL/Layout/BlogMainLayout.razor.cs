@@ -89,6 +89,7 @@ public partial class BlogMainLayout : MainLayoutBase
                 new Link { Href = DemoRouteConstants.Demos_Form_DateInput_Documentation , Text = "Date Input" },
                 new Link { Href = DemoRouteConstants.Demos_Form_EnumInput_Documentation , Text = "Enum Input" },
                 new Link { Href = DemoRouteConstants.Demos_Form_OTPInput_Documentation , Text = "OTP Input" },
+                new Link { Href = DemoRouteConstants.Demos_Form_TextAreaInput_Documentation , Text = "Text Area Input" },
                 new Link { Href = DemoRouteConstants.Demos_Form_TextInput_Documentation , Text = "Text Input" },
             ]
         });
