@@ -1,0 +1,90 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_Form_RadioInput_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>RadioInput</strong> component wraps a native radio input in Bulma's <code>radio</code> label pattern, making it easy to compose related radio choices with Blazor-friendly checked-state handling.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add one or more <code>RadioInput</code> components to your page.</li>
+                <li>Set the same <code>Name</code> value for related options that should behave as one radio group.</li>
+                <li>Render the inline label text or markup between the component tags.</li>
+            </ol>
+        </div>
+        This demo shows a simple Yes/No radio group built from two <code>RadioInput</code> components.
+    </Block>
+    <Demo Type="typeof(RadioInput_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Disable" PageUrl="@pageUrl" Link="disable">
+    <Block>
+        The <strong>RadioInput</strong> component can be disabled to prevent user interaction while still displaying the current checked option.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the related <code>RadioInput</code> components to your page.</li>
+                <li>Set <code>Disabled="true"</code> on the radios that should be non-interactive.</li>
+                <li>Keep the same <code>Name</code> value when the disabled radios belong to one group.</li>
+            </ol>
+        </div>
+        This demo shows how to render a disabled radio group.
+    </Block>
+    <Demo Type="typeof(RadioInput_Demo_02_Disable)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Validations" PageUrl="@pageUrl" Link="validations">
+    <Block>
+        Integrate <strong>RadioInput</strong> with Blazor's form validation system by binding it inside an <code>EditForm</code> and validating the checked state with data annotations.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap the component in an <code>EditForm</code> and bind it with <code>@@bind-Value</code>.</li>
+                <li>Add <code>DataAnnotationsValidator</code> and a <code>ValidationMessage</code> for the same property.</li>
+                <li>Use a validation attribute such as <code>Range</code> to require a checked state before form submission.</li>
+            </ol>
+        </div>
+        This demo shows how to validate a radio selection before submission.
+    </Block>
+    <Demo Type="typeof(RadioInput_Demo_03_Validations)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Events: ValueChanged" PageUrl="@pageUrl" Link="events-value-changed">
+    <Block>
+        The <strong>RadioInput</strong> component exposes a <code>ValueChanged</code> event, allowing you to react whenever the radio becomes checked.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Value</code> parameter to the current checked state.</li>
+                <li>Handle the <code>ValueChanged</code> callback to update your page state when the value changes.</li>
+                <li>Use the updated checked state elsewhere in your UI as needed.</li>
+            </ol>
+        </div>
+        This demo shows how to handle checked-state changes through the <code>ValueChanged</code> event.
+    </Block>
+    <Demo Type="typeof(RadioInput_Demo_04_Events_ValueChanged)" Tabs="true" />
+</Section>
+
+@code {
+    private const string componentName = nameof(RadioInput);
+    private const string pageUrl = DemoRouteConstants.Demos_Form_RadioInput_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component is used to capture a boolean checked state with Bulma's native radio styling and Blazor data binding.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component is used to capture a boolean checked state with Bulma's native radio styling and Blazor data binding.";
+    private const string imageUrl = "";
+}
