@@ -1,0 +1,19 @@
+<CheckboxListInput TValue="int"
+                   Items="@featureItems"
+                   @bind-Values="@selectedFeatureIds" />
+
+<p class="mt-3">
+    Selected feature ids: @(selectedFeatureIds.Count == 0 ? "None" : string.Join(", ", selectedFeatureIds))
+</p>
+
+@code {
+    private readonly List<CheckboxListInputItem<int>> featureItems =
+    [
+        new(101, "Audit logs"),
+        new(102, "API access"),
+        new(103, "Dark theme"),
+        new(104, "Offline mode")
+    ];
+
+    private List<int> selectedFeatureIds = [101, 103];
+}

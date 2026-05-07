@@ -31,6 +31,7 @@ public static class DemoRouteConstants
     // Form
     public const string Demos_Form_Prefix = Demos_Prefix + "/form";
     public const string Demos_Form_AutoComplete_Documentation = Demos_Form_Prefix + "/autocomplete";
+    public const string Demos_Form_CheckboxListInput_Documentation = Demos_Form_Prefix + "/checkbox-list-input";
     public const string Demos_Form_CheckboxInput_Documentation = Demos_Form_Prefix + "/checkbox-input";
     public const string Demos_Form_CurrencyInput_Documentation = Demos_Form_Prefix + "/currency-input";
     public const string Demos_Form_DateInput_Documentation = Demos_Form_Prefix + "/date-input";
@@ -106,6 +107,7 @@ public static class DemoRouteConstants
     // Form
     public const string Docs_Form_Prefix = Docs_Prefix + "/form";
     public const string Docs_Form_AutoComplete_Documentation = Docs_Form_Prefix + "/autocomplete";
+    public const string Docs_Form_CheckboxListInput_Documentation = Docs_Form_Prefix + "/checkbox-list-input";
     public const string Docs_Form_CheckboxInput_Documentation = Docs_Form_Prefix + "/checkbox-input";
     public const string Docs_Form_CurrencyInput_Documentation = Docs_Form_Prefix + "/currency-input";
     public const string Docs_Form_DateInput_Documentation = Docs_Form_Prefix + "/date-input";

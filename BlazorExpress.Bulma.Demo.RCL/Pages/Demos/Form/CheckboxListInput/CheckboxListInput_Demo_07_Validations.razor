@@ -1,0 +1,66 @@
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Components.Forms
+
+<style>
+    .valid.modified:not([type=checkbox]) {
+        border-color: hsl(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l)) !important;
+        outline: 1px solid hsl(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l)) !important;
+    }
+
+    .invalid {
+        border-color: hsl(var(--bulma-danger-h), var(--bulma-danger-s), var(--bulma-danger-l)) !important;
+        outline: 1px solid hsl(var(--bulma-danger-h), var(--bulma-danger-s), var(--bulma-danger-l)) !important;
+    }
+
+    .validation-message {
+        color: hsl(var(--bulma-danger-h), var(--bulma-danger-s), var(--bulma-danger-l)) !important;
+    }
+</style>
+
+<EditForm EditContext="@editContext" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator />
+
+    <div style="max-width: 24rem;">
+        <CheckboxListInput TValue="string"
+                           Items="@deliveryDayItems"
+                           @bind-Values="subscription.DeliveryDays" />
+        <ValidationMessage For="@(() => subscription.DeliveryDays)" />
+    </div>
+
+    <Button Class="mt-3" Color="ButtonColor.Primary" Type="ButtonType.Submit">
+        Submit
+    </Button>
+</EditForm>
+
+<div class="mt-3">@resultMessage</div>
+
+@code {
+    private SubscriptionModel subscription = new();
+    private EditContext? editContext;
+
+    private string resultMessage = "Choose at least one delivery day and submit the form.";
+
+    private readonly List<CheckboxListInputItem<string>> deliveryDayItems =
+    [
+        new("monday", "Monday"),
+        new("wednesday", "Wednesday"),
+        new("friday", "Friday")
+    ];
+
+    protected override void OnInitialized()
+    {
+        editContext = new EditContext(subscription);
+        base.OnInitialized();
+    }
+
+    private void OnValidSubmit()
+    {
+        resultMessage = $"Submitted delivery days: {string.Join(", ", subscription.DeliveryDays)}";
+    }
+
+    private sealed class SubscriptionModel
+    {
+        [MinLength(1, ErrorMessage = "Please select at least one delivery day.")]
+        public List<string> DeliveryDays { get; set; } = [];
+    }
+}

@@ -29,6 +29,7 @@ public static class BulmaCssClass
     public const string Control = "control";
 
     public const string Checkbox = "checkbox";
+    public const string Checkboxes = "checkboxes";
 
     public const string Delete = "delete";
 
@@ -158,6 +159,7 @@ public static class BulmaCssClass
     public const string IsFlexDirectionRowReverse = "is-flex-direction-row-reverse";
     public const string IsFlexDirectionColumn = "is-flex-direction-column";
     public const string IsFlexDirectionColumnReverse = "is-flex-direction-column-reverse";
+    public const string IsFlexWrapWrap = "is-flex-wrap-wrap";
     public const string IsFocused = "is-focused";
     public const string IsFullWidth = "is-fullwidth";
     public const string IsGhost = "is-ghost";

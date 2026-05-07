@@ -1,0 +1,36 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+@typeparam TValue
+
+<div @ref="@Element"
+     id="@Id"
+     class="@ClassNames"
+     style="@StyleNames"
+     @attributes="@AdditionalAttributes">
+    @for (int index = 0; index < items.Count; index++)
+    {
+        var item = items[index];
+
+        <label class="@GetItemClassNames(item)"
+               style="@GetItemStyleNames(item)">
+            <input type="checkbox"
+                   id="@GetInputId(index)"
+                   name="@Name"
+                   class="@FieldCssClasses"
+                   checked="@IsChecked(item.Value)"
+                   disabled="@IsItemDisabled(item)"
+                   @onchange="@((ChangeEventArgs args) => OnChangeAsync(item, args))" />
+
+            <span class="@BulmaCssClass.MarginLeft1">
+                @if (ItemTemplate is not null)
+                {
+                    @ItemTemplate(item)
+                }
+                else
+                {
+                    @item.Text
+                }
+            </span>
+        </label>
+    }
+</div>

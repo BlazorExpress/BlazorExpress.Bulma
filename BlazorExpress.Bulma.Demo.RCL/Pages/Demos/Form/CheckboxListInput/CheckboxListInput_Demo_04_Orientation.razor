@@ -1,0 +1,22 @@
+<CheckboxListInput TValue="string"
+                   Class="mb-4"
+                   Items="@taskItems"
+                   Orientation="CheckboxListInputOrientation.Horizontal"
+                   @bind-Values="@horizontalValues" />
+
+<CheckboxListInput TValue="string"
+                   Items="@taskItems"
+                   Orientation="CheckboxListInputOrientation.Vertical"
+                   @bind-Values="@verticalValues" />
+
+@code {
+    private readonly List<CheckboxListInputItem<string>> taskItems =
+    [
+        new("planning", "Planning"),
+        new("design", "Design"),
+        new("testing", "Testing")
+    ];
+
+    private List<string> horizontalValues = ["planning"];
+    private List<string> verticalValues = ["planning"];
+}
