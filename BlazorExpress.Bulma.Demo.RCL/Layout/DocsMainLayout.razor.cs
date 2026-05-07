@@ -90,6 +90,7 @@ public partial class DocsMainLayout : MainLayoutBase
             Name = "FORM",
             CssClass = "is-size-7 has-text-weight-bold has-text-primary",
             Links = [
+                new Link { Href = DemoRouteConstants.Docs_Form_CheckboxInput_Documentation , Text = "Checkbox Input" },
                 new Link { Href = DemoRouteConstants.Docs_Form_DateInput_Documentation , Text = "Date Input" },
                 new Link { Href = DemoRouteConstants.Docs_Form_EnumInput_Documentation , Text = "Enum Input" },
                 new Link { Href = DemoRouteConstants.Docs_Form_NumberInput_Documentation , Text = "Number Input" },

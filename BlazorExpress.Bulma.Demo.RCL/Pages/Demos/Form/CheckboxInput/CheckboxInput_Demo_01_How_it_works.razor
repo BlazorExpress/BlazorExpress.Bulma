@@ -1,0 +1,8 @@
+<CheckboxInput @bind-Value="rememberMe">
+    Remember me
+</CheckboxInput>
+<div class="mt-2">Selected value: @rememberMe</div>
+
+@code {
+    private bool rememberMe = true;
+}

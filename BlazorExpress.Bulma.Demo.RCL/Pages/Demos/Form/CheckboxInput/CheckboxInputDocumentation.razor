@@ -1,0 +1,73 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_Form_CheckboxInput_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>CheckboxInput</strong> component wraps a native checkbox in Bulma's <code>checkbox</code> label pattern, making it easy to combine checked-state binding with inline label content.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>CheckboxInput</code> component to your page.</li>
+                <li>Bind its <code>Value</code> property with <code>@@bind-Value</code>.</li>
+                <li>Place the label text or other inline content between the opening and closing tags.</li>
+            </ol>
+        </div>
+        This demo shows the basic checked-state binding and inline label content of the <code>CheckboxInput</code> component.
+    </Block>
+    <Demo Type="typeof(CheckboxInput_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Disabled" PageUrl="@pageUrl" Link="disabled">
+    <Block>
+        The <strong>CheckboxInput</strong> component can be disabled to prevent user interaction while still displaying its checked state and label.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>CheckboxInput</code> component to your page.</li>
+                <li>Set <code>Disabled="true"</code> to make the checkbox non-interactive.</li>
+                <li>Provide the label content between the component tags as usual.</li>
+            </ol>
+        </div>
+        This demo shows how to render the <code>CheckboxInput</code> component in a disabled state.
+    </Block>
+    <Demo Type="typeof(CheckboxInput_Demo_02_Disabled)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Events: ValueChanged" PageUrl="@pageUrl" Link="events-value-changed">
+    <Block>
+        The <strong>CheckboxInput</strong> component exposes a <code>ValueChanged</code> event, allowing you to react whenever the checkbox is checked or unchecked.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Value</code> parameter to the current checked state.</li>
+                <li>Handle the <code>ValueChanged</code> callback to update your logic when the value changes.</li>
+                <li>Use the updated value elsewhere in your UI as needed.</li>
+            </ol>
+        </div>
+        This demo shows how to handle the checked-state change using the <code>ValueChanged</code> event.
+    </Block>
+    <Demo Type="typeof(CheckboxInput_Demo_03_Events_ValueChanged)" Tabs="true" />
+</Section>
+
+@code {
+    private const string componentName = nameof(CheckboxInput);
+    private const string pageUrl = DemoRouteConstants.Demos_Form_CheckboxInput_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"The <code>{componentName}</code> component is used to capture a boolean choice with Bulma's native checkbox styling and Blazor data binding.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"The {componentName} component is used to capture a boolean choice with Bulma's native checkbox styling and Blazor data binding.";
+    private const string imageUrl = "";
+}

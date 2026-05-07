@@ -86,6 +86,7 @@ public partial class BlogMainLayout : MainLayoutBase
             Name = "FORM",
             CssClass = "is-size-7 has-text-weight-bold has-text-primary",
             Links = [
+                new Link { Href = DemoRouteConstants.Demos_Form_CheckboxInput_Documentation , Text = "Checkbox Input" },
                 new Link { Href = DemoRouteConstants.Demos_Form_DateInput_Documentation , Text = "Date Input" },
                 new Link { Href = DemoRouteConstants.Demos_Form_EnumInput_Documentation , Text = "Enum Input" },
                 new Link { Href = DemoRouteConstants.Demos_Form_OTPInput_Documentation , Text = "OTP Input" },

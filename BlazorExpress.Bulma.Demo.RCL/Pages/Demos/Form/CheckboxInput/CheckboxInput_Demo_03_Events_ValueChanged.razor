@@ -1,0 +1,13 @@
+<CheckboxInput Value="@acceptedTerms" ValueChanged="OnValueChanged">
+    I agree to the terms and conditions
+</CheckboxInput>
+<div class="mt-2">Selected value: @acceptedTerms</div>
+
+@code {
+    private bool acceptedTerms;
+
+    private void OnValueChanged(bool value)
+    {
+        acceptedTerms = value;
+    }
+}
