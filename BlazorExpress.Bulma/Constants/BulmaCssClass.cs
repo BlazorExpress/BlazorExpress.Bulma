@@ -395,6 +395,7 @@ public static class BulmaCssClass
     public const string P5 = "p-5";
 
     public const string Radio = "radio";
+    public const string Radios = "radios";
 
     public const string Reset = "reset";
 

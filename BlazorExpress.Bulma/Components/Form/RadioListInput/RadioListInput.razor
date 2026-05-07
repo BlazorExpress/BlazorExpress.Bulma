@@ -1,0 +1,36 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+@typeparam TValue
+
+<div @ref="@Element"
+     id="@Id"
+     class="@ClassNames"
+     style="@StyleNames"
+     @attributes="@AdditionalAttributes">
+    @for (int index = 0; index < items.Count; index++)
+    {
+        var item = items[index];
+
+        <label class="@GetItemClassNames(item)"
+               style="@GetItemStyleNames(item)"
+               disabled="@IsItemDisabled(item)">
+            <input type="radio"
+                   id="@GetInputId(index)"
+                   name="@InputName"
+                   checked="@IsChecked(item.Value)"
+                   disabled="@IsItemDisabled(item)"
+                   @onchange="@(() => OnChangeAsync(item))" />
+
+            <span class="@BulmaCssClass.MarginLeft1">
+                @if (ItemTemplate is not null)
+                {
+                    @ItemTemplate(item)
+                }
+                else
+                {
+                    @item.Text
+                }
+            </span>
+        </label>
+    }
+</div>

@@ -1,0 +1,106 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_Form_RadioListInput_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>RadioListInput</strong> component renders a typed collection of Bulma-styled radio buttons and binds the selected value to your Blazor state through a single component.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Create a list of <code>RadioListInputItem&lt;TValue&gt;</code> items for the available choices.</li>
+                <li>Add the <code>RadioListInput</code> component and set the matching <code>TValue</code> type.</li>
+                <li>Bind the current selection with <code>@@bind-Value</code>.</li>
+            </ol>
+        </div>
+        This demo shows the default single-select behavior of the <code>RadioListInput</code> component.
+    </Block>
+    <Demo Type="typeof(RadioListInput_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Disable" PageUrl="@pageUrl" Link="disable">
+    <Block>
+        The <strong>RadioListInput</strong> component can be disabled to prevent user interaction while still displaying the current selected option.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>RadioListInput</code> component to your page.</li>
+                <li>Set <code>Disabled="true"</code> to make the entire radio list non-interactive.</li>
+                <li>Pass the same typed items and selected value as usual.</li>
+            </ol>
+        </div>
+        This demo shows how to render the entire radio list in a disabled state.
+    </Block>
+    <Demo Type="typeof(RadioListInput_Demo_02_Disable)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Conditional disable" PageUrl="@pageUrl" Link="conditional-disable">
+    <Block>
+        Individual radio items can be disabled by setting the <code>Disabled</code> property on specific <code>RadioListInputItem&lt;TValue&gt;</code> entries.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Create your item collection in code.</li>
+                <li>Set <code>Disabled = true</code> only for the entries that should not be selectable.</li>
+                <li>Pass the updated collection to the <code>Items</code> parameter.</li>
+            </ol>
+        </div>
+        This demo illustrates how to disable only selected radio items based on your application rules.
+    </Block>
+    <Demo Type="typeof(RadioListInput_Demo_03_Conditional_Disable)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Validations" PageUrl="@pageUrl" Link="validations">
+    <Block>
+        Integrate <strong>RadioListInput</strong> with Blazor's form validation system by using it inside an <code>EditForm</code> and binding the selected value to a model property with validation attributes.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap the component in an <code>EditForm</code> and bind it with <code>@@bind-Value</code>.</li>
+                <li>Add <code>DataAnnotationsValidator</code> and a <code>ValidationMessage</code> for the same property.</li>
+                <li>Use a validation attribute such as <code>Required</code> to require a selection before form submission.</li>
+            </ol>
+        </div>
+        This demo shows how to validate a radio list selection before submission.
+    </Block>
+    <Demo Type="typeof(RadioListInput_Demo_04_Validations)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Events: ValueChanged" PageUrl="@pageUrl" Link="events-value-changed">
+    <Block>
+        The <strong>RadioListInput</strong> component exposes a <code>ValueChanged</code> event, allowing you to react whenever the selected value changes.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Value</code> parameter to the current selection.</li>
+                <li>Handle the <code>ValueChanged</code> callback to update your page state when the selection changes.</li>
+                <li>Use the updated selected value elsewhere in your UI as needed.</li>
+            </ol>
+        </div>
+        This demo shows how to handle selection changes through the <code>ValueChanged</code> event.
+    </Block>
+    <Demo Type="typeof(RadioListInput_Demo_05_Events_ValueChanged)" Tabs="true" />
+</Section>
+
+@code {
+    private const string pageUrl = DemoRouteConstants.Demos_Form_RadioListInput_Documentation;
+    private const string pageTitle = "RadioListInput";
+    private const string pageDescription = "The <code>RadioListInput</code> component is used to capture a single selection with Bulma's radio list styling, typed data items, and Blazor-friendly binding.";
+    private const string metaTitle = "Blazor RadioListInput Component";
+    private const string metaDescription = "The RadioListInput component is used to capture a single selection with Bulma's radio list styling, typed data items, and Blazor-friendly binding.";
+    private const string imageUrl = "";
+}
