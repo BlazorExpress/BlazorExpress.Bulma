@@ -41,7 +41,7 @@ public class PdfViewerJsInterop : IAsyncDisposable
         await module.InvokeVoidAsync("gotoPage", objRef, elementId, gotoPageNum);
     }
 
-    public async Task InitializeAsync(object objRef, string elementId, double scale, double rotation, string url, string password)
+    public async Task InitializeAsync(object objRef, string elementId, double scale, double rotation, string url, string? password)
     {
         var module = await moduleTask.Value;
         await module.InvokeVoidAsync("initialize", objRef, elementId, scale, rotation, url, password);
