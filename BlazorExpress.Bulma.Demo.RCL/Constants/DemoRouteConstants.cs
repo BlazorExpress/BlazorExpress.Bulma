@@ -11,6 +11,16 @@ public static class DemoRouteConstants
     // Features
     public const string Demos_Skeletons_Documentation = Demos_Prefix + "/skeletons";
 
+    // Charts
+    public const string Demos_BarChart = Demos_Prefix + "/bar-chart";
+    public const string Demos_BubbleChart = Demos_Prefix + "/bubble-chart";
+    public const string Demos_DoughnutChart = Demos_Prefix + "/doughnut-chart";
+    public const string Demos_LineChart = Demos_Prefix + "/line-chart";
+    public const string Demos_PieChart = Demos_Prefix + "/pie-chart";
+    public const string Demos_PolarAreaChart = Demos_Prefix + "/polar-area-chart";
+    public const string Demos_RadarChart = Demos_Prefix + "/radar-chart";
+    public const string Demos_ScatterChart = Demos_Prefix + "/scatter-chart";
+
     // Icons
     public const string Demos_BootstrapIcons_Documentation = Demos_Prefix + "/icons/bootstrap-icons";
     public const string Demos_GoogleFontIcons_Documentation = Demos_Prefix + "/icons/google-font-icons";
@@ -86,6 +96,16 @@ public static class DemoRouteConstants
 
     // Features
     public const string Docs_Skeletons_Documentation = Docs_Prefix + "/skeletons";
+
+    // Charts
+    public const string Docs_BarChart = Docs_Prefix + "/bar-chart";
+    public const string Docs_BubbleChart = Docs_Prefix + "/bubble-chart";
+    public const string Docs_DoughnutChart = Docs_Prefix + "/doughnut-chart";
+    public const string Docs_LineChart = Docs_Prefix + "/line-chart";
+    public const string Docs_PieChart = Docs_Prefix + "/pie-chart";
+    public const string Docs_PolarAreaChart = Docs_Prefix + "/polar-area-chart";
+    public const string Docs_RadarChart = Docs_Prefix + "/radar-chart";
+    public const string Docs_ScatterChart = Docs_Prefix + "/scatter-chart";
 
     // Icons
     public const string Docs_BootstrapIcons_Documentation = Docs_Prefix + "/icons/bootstrap-icons";
