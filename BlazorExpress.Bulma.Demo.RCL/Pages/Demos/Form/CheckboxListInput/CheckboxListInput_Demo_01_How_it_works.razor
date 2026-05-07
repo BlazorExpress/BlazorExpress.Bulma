@@ -1,0 +1,22 @@
+<CheckboxListInput TValue="string"
+                   Items="@weekDayItems"
+                   @bind-Values="@selectedDays" />
+
+<p class="mt-3">
+    Selected days: @(selectedDays.Count == 0 ? "None" : string.Join(", ", selectedDays))
+</p>
+
+@code {
+    private readonly List<CheckboxListInputItem<string>> weekDayItems =
+    [
+        new("monday", "Monday"),
+        new("tuesday", "Tuesday"),
+        new("wednesday", "Wednesday"),
+        new("thursday", "Thursday"),
+        new("friday", "Friday"),
+        new("saturday", "Saturday"),
+        new("sunday", "Sunday")
+    ];
+
+    private List<string> selectedDays = ["saturday", "sunday"];
+}

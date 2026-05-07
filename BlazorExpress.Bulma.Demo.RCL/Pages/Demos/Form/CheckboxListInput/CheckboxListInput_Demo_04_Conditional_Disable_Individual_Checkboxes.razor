@@ -1,0 +1,19 @@
+<CheckboxListInput TValue="string"
+                   Items="@permissionItems"
+                   @bind-Values="@selectedPermissions" />
+
+<p class="mt-3">
+    Selected permissions: @(selectedPermissions.Count == 0 ? "None" : string.Join(", ", selectedPermissions))
+</p>
+
+@code {
+    private readonly List<CheckboxListInputItem<string>> permissionItems =
+    [
+        new("read", "Read"),
+        new("write", "Write"),
+        new("delete", "Delete") { Disabled = true },
+        new("export", "Export")
+    ];
+
+    private List<string> selectedPermissions = ["read", "export"];
+}

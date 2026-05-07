@@ -29,6 +29,9 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.CardImage, Href = DemoRouteConstants.Demos_Card_Documentation, Text = "Card", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.New, IsActive = true });
 
         index += 1;
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.CheckSquareFill, Href = DemoRouteConstants.Demos_Form_CheckboxListInput_Documentation, Text = "Checkbox List Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.New, IsActive = true });
+
+        index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.CheckSquare, Href = DemoRouteConstants.Demos_Form_CheckboxInput_Documentation, Text = "Checkbox Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.New, IsActive = true });
 
         index += 1;

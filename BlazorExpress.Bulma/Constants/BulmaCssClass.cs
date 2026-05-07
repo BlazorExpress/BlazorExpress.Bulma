@@ -29,6 +29,7 @@ public static class BulmaCssClass
     public const string Control = "control";
 
     public const string Checkbox = "checkbox";
+    public const string Checkboxes = "checkboxes";
 
     public const string Delete = "delete";
 

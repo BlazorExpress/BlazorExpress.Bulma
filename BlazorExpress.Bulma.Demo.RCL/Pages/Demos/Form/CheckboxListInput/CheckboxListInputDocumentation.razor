@@ -1,0 +1,174 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_Form_CheckboxListInput_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>CheckboxListInput</strong> component renders a typed collection of Bulma-styled checkboxes and binds the selected values to your Blazor state as a list.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Create a list of <code>CheckboxListInputItem&lt;TValue&gt;</code> items for the available choices.</li>
+                <li>Add the <code>CheckboxListInput</code> component and set the matching <code>TValue</code> type.</li>
+                <li>Bind the selected values with <code>@@bind-Values</code>.</li>
+            </ol>
+        </div>
+        This demo shows the default multi-select behavior of the <code>CheckboxListInput</code> component.
+    </Block>
+    <Demo Type="typeof(CheckboxListInput_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Data parameter" PageUrl="@pageUrl" Link="data-parameter">
+    <Block>
+        The <strong>CheckboxListInput</strong> component uses the <code>Items</code> parameter to render typed checkbox data from your page or view model.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Create a typed list of <code>CheckboxListInputItem&lt;TValue&gt;</code> values in your code.</li>
+                <li>Pass that list to the <code>Items</code> parameter.</li>
+                <li>Bind the <code>Values</code> parameter to track which items are selected.</li>
+            </ol>
+        </div>
+        This demo shows how to populate the checkbox list from a strongly typed data collection.
+    </Block>
+    <Demo Type="typeof(CheckboxListInput_Demo_02_Data_Parameter)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Sizes" PageUrl="@pageUrl" Link="sizes">
+    <Block>
+        The <strong>CheckboxListInput</strong> component supports multiple sizes so you can match the list to the density and emphasis of the surrounding form layout.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>CheckboxListInput</code> component with your typed items and selected values.</li>
+                <li>Set <code>Size</code> to one of the available <code>CheckboxListInputSize</code> values: <code>Small</code>, <code>Normal</code>, <code>Medium</code>, or <code>Large</code>.</li>
+                <li>Use the size that best fits the visual weight of the rest of your form.</li>
+            </ol>
+        </div>
+        This demo shows the available size variants for <code>CheckboxListInput</code>.
+    </Block>
+    <Demo Type="typeof(CheckboxListInput_Demo_03_Sizes)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Disabled" PageUrl="@pageUrl" Link="disabled">
+    <Block>
+        The <strong>CheckboxListInput</strong> component can be disabled to prevent user interaction while still displaying the current selections.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>CheckboxListInput</code> component to your page.</li>
+                <li>Set <code>Disabled="true"</code> to make the entire checkbox list non-interactive.</li>
+                <li>Pass the same typed items and selected values as usual.</li>
+            </ol>
+        </div>
+        This demo shows how to render the entire checkbox list in a disabled state.
+    </Block>
+    <Demo Type="typeof(CheckboxListInput_Demo_03_Disabled)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Conditional disable individual checkboxes" PageUrl="@pageUrl" Link="conditional-disable">
+    <Block>
+        Individual checkbox items can be disabled by setting the <code>Disabled</code> property on specific <code>CheckboxListInputItem&lt;TValue&gt;</code> entries.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Create your item collection in code.</li>
+                <li>Set <code>Disabled = true</code> only for the entries that should not be selectable.</li>
+                <li>Pass the updated collection to the <code>Items</code> parameter.</li>
+            </ol>
+        </div>
+        This demo illustrates how to disable only selected checkbox items based on your application rules.
+    </Block>
+    <Demo Type="typeof(CheckboxListInput_Demo_04_Conditional_Disable_Individual_Checkboxes)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Events: ValuesChanged" PageUrl="@pageUrl" Link="events-values-changed">
+    <Block>
+        The <strong>CheckboxListInput</strong> component exposes a <code>ValuesChanged</code> event, allowing you to react whenever the selected values list changes.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Values</code> parameter to the current selection list.</li>
+                <li>Handle the <code>ValuesChanged</code> callback to update your page state when the selection changes.</li>
+                <li>Use the updated values elsewhere in your UI as needed.</li>
+            </ol>
+        </div>
+        This demo shows how to handle selection changes through the <code>ValuesChanged</code> event.
+    </Block>
+    <Demo Type="typeof(CheckboxListInput_Demo_05_Events_ValuesChanged)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Custom item template" PageUrl="@pageUrl" Link="custom-item-template">
+    <Block>
+        The <strong>CheckboxListInput</strong> component supports an <code>ItemTemplate</code> parameter so you can render richer checkbox labels without replacing the component.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Pass your typed items to the <code>Items</code> parameter.</li>
+                <li>Add an <code>ItemTemplate</code> block and use the current item context to render custom content.</li>
+                <li>Keep the checkbox selection binding with <code>Values</code> or <code>@@bind-Values</code>.</li>
+            </ol>
+        </div>
+        This demo shows how to customize each checkbox label with richer markup while keeping the built-in behavior.
+    </Block>
+    <Demo Type="typeof(CheckboxListInput_Demo_06_Custom_Item_Template)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Validations" PageUrl="@pageUrl" Link="validations">
+    <Block>
+        Integrate <strong>CheckboxListInput</strong> with Blazor's form validation system by using it inside an <code>EditForm</code> and binding the selected values to a model property with validation attributes.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Wrap the component in an <code>EditForm</code> and bind it to a model property with <code>@@bind-Values</code>.</li>
+                <li>Add <code>DataAnnotationsValidator</code> and a <code>ValidationMessage</code> for the same property.</li>
+                <li>Use a validation attribute such as <code>MinLength</code> to require one or more selections.</li>
+            </ol>
+        </div>
+        This demo shows how to validate a checkbox list selection before form submission.
+    </Block>
+    <Demo Type="typeof(CheckboxListInput_Demo_07_Validations)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Methods: Select all and clear" PageUrl="@pageUrl" Link="methods-select-all-clear">
+    <Block>
+        The <strong>CheckboxListInput</strong> component includes helper methods that are useful when you want to control selection programmatically.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Capture a component reference with <code>@@ref</code>.</li>
+                <li>Call <code>SelectAllAsync()</code> to select all enabled items.</li>
+                <li>Call <code>ClearAsync()</code> to clear the current selection list.</li>
+            </ol>
+        </div>
+        This demo demonstrates programmatic selection helpers for common developer workflows.
+    </Block>
+    <Demo Type="typeof(CheckboxListInput_Demo_08_Methods_SelectAll_Clear)" Tabs="true" />
+</Section>
+
+@code {
+    private const string pageUrl = DemoRouteConstants.Demos_Form_CheckboxListInput_Documentation;
+    private const string pageTitle = "CheckboxListInput";
+    private const string pageDescription = "The <code>CheckboxListInput</code> component is used to capture multiple selections with Bulma's checkbox list styling, typed data items, and Blazor-friendly binding.";
+    private const string metaTitle = "Blazor CheckboxListInput Component";
+    private const string metaDescription = "The CheckboxListInput component is used to capture multiple selections with Bulma's checkbox list styling, typed data items, and Blazor-friendly binding.";
+    private const string imageUrl = "";
+}

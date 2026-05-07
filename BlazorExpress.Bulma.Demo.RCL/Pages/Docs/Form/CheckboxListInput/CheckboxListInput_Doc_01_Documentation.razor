@@ -1,0 +1,55 @@
+@attribute [Route(pageUrl)]
+@layout DocsMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DemoLink Href="@DemoRouteConstants.Demos_Form_CheckboxListInput_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Preview" PageUrl="@pageUrl" Link="preview">
+    <div style="max-width: 24rem;">
+        <CheckboxListInput TValue="string"
+                           Items="@weekDayItems"
+                           @bind-Values="selectedDays" />
+    </div>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Parameters" PageUrl="@pageUrl" Link="parameters">
+    <DocxTable TItem="CheckboxListInput<string>" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Methods" PageUrl="@pageUrl" Link="methods">
+    <DocxTable TItem="CheckboxListInput<string>" DocType="DocType.Methods" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Events" PageUrl="@pageUrl" Link="events">
+    <DocxTable TItem="CheckboxListInput<string>" DocType="DocType.Events" />
+</Section>
+
+@code {
+    private const string componentName = nameof(CheckboxListInput<string>);
+    private const string pageUrl = DemoRouteConstants.Docs_Form_CheckboxListInput_Documentation;
+    private const string pageTitle = "CheckboxListInput";
+    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>CheckboxListInput&lt;TValue&gt;</code> component, including its typed item collection, selected values binding, and developer-focused customization options.";
+    private const string metaTitle = "Blazor CheckboxListInput Component";
+    private const string metaDescription = "This documentation provides a comprehensive reference for the CheckboxListInput component, including its typed item collection, selected values binding, and customization options.";
+    private const string imageUrl = "";
+
+    private readonly List<CheckboxListInputItem<string>> weekDayItems =
+    [
+        new("monday", "Monday"),
+        new("tuesday", "Tuesday"),
+        new("wednesday", "Wednesday"),
+        new("thursday", "Thursday"),
+        new("friday", "Friday"),
+        new("saturday", "Saturday"),
+        new("sunday", "Sunday")
+    ];
+
+    private List<string> selectedDays = ["saturday", "sunday"];
+}

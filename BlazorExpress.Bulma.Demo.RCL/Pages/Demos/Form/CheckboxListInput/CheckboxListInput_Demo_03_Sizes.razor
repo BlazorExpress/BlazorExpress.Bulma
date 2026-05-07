@@ -1,0 +1,36 @@
+<CheckboxListInput TValue="string"
+                   Class="mb-4"
+                   Items="@notificationItems"
+                   Size="CheckboxListInputSize.Small"
+                   @bind-Values="@smallValues" />
+
+<CheckboxListInput TValue="string"
+                   Class="mb-4"
+                   Items="@notificationItems"
+                   Size="CheckboxListInputSize.Normal"
+                   @bind-Values="@normalValues" />
+
+<CheckboxListInput TValue="string"
+                   Class="mb-4"
+                   Items="@notificationItems"
+                   Size="CheckboxListInputSize.Medium"
+                   @bind-Values="@mediumValues" />
+
+<CheckboxListInput TValue="string"
+                   Items="@notificationItems"
+                   Size="CheckboxListInputSize.Large"
+                   @bind-Values="@largeValues" />
+
+@code {
+    private readonly List<CheckboxListInputItem<string>> notificationItems =
+    [
+        new("builds", "Build notifications"),
+        new("releases", "Release notifications"),
+        new("alerts", "Alert notifications")
+    ];
+
+    private List<string> largeValues = ["releases"];
+    private List<string> mediumValues = ["releases"];
+    private List<string> normalValues = ["releases"];
+    private List<string> smallValues = ["releases"];
+}

@@ -1,0 +1,29 @@
+<CheckboxListInput TValue="string"
+                   Items="@frameworkItems"
+                   Values="@selectedFrameworks"
+                   ValuesChanged="OnValuesChanged" />
+
+<p class="mt-3">@message</p>
+
+@code {
+    private readonly List<CheckboxListInputItem<string>> frameworkItems =
+    [
+        new("blazor", "Blazor"),
+        new("minimal-api", "Minimal API"),
+        new("maui", "MAUI"),
+        new("worker", "Worker Service")
+    ];
+
+    private string message = "Selected frameworks: Blazor, MAUI";
+    private List<string> selectedFrameworks = ["blazor", "maui"];
+
+    private Task OnValuesChanged(List<string> values)
+    {
+        selectedFrameworks = values;
+        message = values.Count == 0
+            ? "Selected frameworks: None"
+            : $"Selected frameworks: {string.Join(", ", values)}";
+
+        return Task.CompletedTask;
+    }
+}

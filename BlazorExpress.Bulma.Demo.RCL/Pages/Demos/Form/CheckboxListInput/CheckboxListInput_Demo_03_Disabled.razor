@@ -1,0 +1,15 @@
+<CheckboxListInput TValue="string"
+                   Disabled="true"
+                   Items="@environmentItems"
+                   Values="@selectedEnvironments" />
+
+@code {
+    private readonly List<CheckboxListInputItem<string>> environmentItems =
+    [
+        new("dev", "Development"),
+        new("test", "Testing"),
+        new("prod", "Production")
+    ];
+
+    private readonly List<string> selectedEnvironments = ["dev", "test"];
+}
