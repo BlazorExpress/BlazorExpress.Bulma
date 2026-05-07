@@ -1,0 +1,15 @@
+<RadioInput Value="@receiveProductUpdates"
+            ValueChanged="OnValueChanged">
+    Receive product updates
+</RadioInput>
+
+<div class="mt-2">Selected value: @receiveProductUpdates</div>
+
+@code {
+    private bool receiveProductUpdates;
+
+    private void OnValueChanged(bool value)
+    {
+        receiveProductUpdates = value;
+    }
+}

@@ -1,0 +1,68 @@
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Components.Forms
+
+<style>
+    .radio.valid.modified {
+        color: hsl(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l)) !important;
+    }
+
+    .radio.valid.modified input {
+        outline: 1px solid hsl(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l)) !important;
+        outline-offset: 0.15rem;
+    }
+
+    .radio.invalid {
+        color: hsl(var(--bulma-danger-h), var(--bulma-danger-s), var(--bulma-danger-l)) !important;
+    }
+
+    .radio.invalid input {
+        outline: 1px solid hsl(var(--bulma-danger-h), var(--bulma-danger-s), var(--bulma-danger-l)) !important;
+        outline-offset: 0.15rem;
+    }
+
+    .validation-message {
+        color: hsl(var(--bulma-danger-h), var(--bulma-danger-s), var(--bulma-danger-l)) !important;
+    }
+</style>
+
+<EditForm EditContext="@editContext" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator />
+
+    <div style="max-width: 24rem;">
+        <RadioInput Name="support-plan"
+                    @bind-Value="subscription.AcceptSupportPlan">
+            I want the primary support plan
+        </RadioInput>
+        <ValidationMessage For="@(() => subscription.AcceptSupportPlan)" />
+    </div>
+
+    <Button Class="mt-3" Color="ButtonColor.Primary" Type="ButtonType.Submit" Size="ButtonSize.Small">
+        Submit
+    </Button>
+</EditForm>
+
+<div class="mt-3">@resultMessage</div>
+
+@code {
+    private SubscriptionModel subscription = new();
+    private EditContext? editContext;
+
+    private string resultMessage = "Select the radio option and submit the form.";
+
+    protected override void OnInitialized()
+    {
+        editContext = new EditContext(subscription);
+        base.OnInitialized();
+    }
+
+    private void OnValidSubmit()
+    {
+        resultMessage = "Submitted selection: primary support plan.";
+    }
+
+    private sealed class SubscriptionModel
+    {
+        [Range(typeof(bool), "true", "true", ErrorMessage = "Please select the support plan option.")]
+        public bool AcceptSupportPlan { get; set; }
+    }
+}

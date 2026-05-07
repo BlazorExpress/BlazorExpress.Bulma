@@ -1,0 +1,31 @@
+<div class="control">
+    <RadioInput Name="how-it-works-answer"
+                Value="@isYesSelected"
+                ValueChanged="@(value => OnAnswerChanged(true, value))">
+        Yes
+    </RadioInput>
+    <RadioInput Name="how-it-works-answer"
+                Value="@isNoSelected"
+                ValueChanged="@(value => OnAnswerChanged(false, value))">
+        No
+    </RadioInput>
+</div>
+
+<div class="mt-2">Selected answer: @selectedAnswer</div>
+
+@code {
+    private bool isYesSelected = true;
+    private bool isNoSelected;
+
+    private string selectedAnswer = "Yes";
+
+    private void OnAnswerChanged(bool isYes, bool value)
+    {
+        if (!value)
+            return;
+
+        isYesSelected = isYes;
+        isNoSelected = !isYes;
+        selectedAnswer = isYes ? "Yes" : "No";
+    }
+}
