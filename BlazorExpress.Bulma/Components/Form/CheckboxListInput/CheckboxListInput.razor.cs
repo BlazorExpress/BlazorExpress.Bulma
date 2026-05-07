@@ -138,16 +138,11 @@ public partial class CheckboxListInput<TValue> : BulmaComponentBase
     protected override string? ClassNames =>
         BuildClassNames(
             Class,
-            (BulmaCssClass.Checkboxes, true)
-        );
-
-    protected override string? StyleNames =>
-        BuildStyleNames(
-            Style,
-            ("display:flex", true),
-            ("flex-direction:column", true),
-            ($"gap:{GetGapCssValue()}", true),
-            ($"font-size:{GetFontSizeCssValue()}", Size != CheckboxListInputSize.None)
+            (BulmaCssClass.Checkboxes, true),
+            (BulmaCssClass.IsFlex, true),
+            (BulmaCssClass.IsFlexWrapWrap, Orientation == CheckboxListInputOrientation.Horizontal),
+            (GetOrientationClassName(), true),
+            (Size.ToCheckboxListInputSizeClass(), Size != CheckboxListInputSize.None)
         );
 
     /// <summary>
@@ -170,25 +165,11 @@ public partial class CheckboxListInput<TValue> : BulmaComponentBase
             ? EditContext?.FieldCssClass(fieldIdentifier) ?? string.Empty
             : string.Empty;
 
-    private static string GetFontSizeCssValue(CheckboxListInputSize size) =>
-        size switch
+    private string GetOrientationClassName() =>
+        Orientation switch
         {
-            CheckboxListInputSize.Small => "0.75rem",
-            CheckboxListInputSize.Normal => "1rem",
-            CheckboxListInputSize.Medium => "1.125rem",
-            CheckboxListInputSize.Large => "1.25rem",
-            _ => "1rem"
-        };
-
-    private string GetFontSizeCssValue() => GetFontSizeCssValue(Size);
-
-    private string GetGapCssValue() =>
-        Size switch
-        {
-            CheckboxListInputSize.Small => "0.5rem",
-            CheckboxListInputSize.Medium => "0.875rem",
-            CheckboxListInputSize.Large => "1rem",
-            _ => "0.75rem"
+            CheckboxListInputOrientation.Vertical => BulmaCssClass.IsFlexDirectionColumn,
+            _ => BulmaCssClass.IsFlexDirectionRow
         };
 
     /// <summary>
@@ -229,6 +210,18 @@ public partial class CheckboxListInput<TValue> : BulmaComponentBase
     [Description("Gets or sets the checkbox input name shared by each rendered input.")]
     [Parameter]
     public string? Name { get; set; }
+
+    /// <summary>
+    /// Gets or sets the orientation.
+    /// <para>
+    /// Default value is <see cref="CheckboxListInputOrientation.Horizontal" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.2.0")]
+    [DefaultValue(CheckboxListInputOrientation.Horizontal)]
+    [Description("Gets or sets the orientation.")]
+    [Parameter]
+    public CheckboxListInputOrientation Orientation { get; set; } = CheckboxListInputOrientation.Horizontal;
 
     /// <summary>
     /// Gets or sets the size.

@@ -106,6 +106,16 @@ public static class EnumExtensions
             _ => BulmaCssClass.Button
         };
 
+    public static string? ToCheckboxListInputSizeClass(this CheckboxListInputSize size) =>
+        size switch
+        {
+            CheckboxListInputSize.Small => BulmaCssClass.IsSize7,
+            CheckboxListInputSize.Normal => BulmaCssClass.IsSize6,
+            CheckboxListInputSize.Medium => BulmaCssClass.IsSize5,
+            CheckboxListInputSize.Large => BulmaCssClass.IsSize4,
+            _ => null
+        };
+
     public static string? ToDateInputSizeClass(this DateInputSize size) =>
         size switch
         {

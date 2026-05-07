@@ -21,7 +21,7 @@
                    disabled="@IsItemDisabled(item)"
                    @onchange="@((ChangeEventArgs args) => OnChangeAsync(item, args))" />
 
-            <span class="@BulmaCssClass.MarginLeft2">
+            <span class="@BulmaCssClass.MarginLeft1">
                 @if (ItemTemplate is not null)
                 {
                     @ItemTemplate(item)
