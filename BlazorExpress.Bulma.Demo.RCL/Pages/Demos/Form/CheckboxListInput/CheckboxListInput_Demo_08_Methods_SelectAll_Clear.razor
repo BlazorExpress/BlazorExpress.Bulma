@@ -1,6 +1,10 @@
 <div class="buttons">
-    <button class="button is-link is-small" type="button" @onclick="SelectAllAsync">Select all</button>
-    <button class="button is-light is-small" type="button" @onclick="ClearAsync">Clear</button>
+    <Button Class="mt-3" Color="ButtonColor.Link" Type="ButtonType.Submit" Size="ButtonSize.Small" @onclick="SelectAllAsync">
+        Select all
+    </Button>
+    <Button Class="mt-3" Color="ButtonColor.Light" Type="ButtonType.Submit" Size="ButtonSize.Small" @onclick="ClearAsync">
+        Clear
+    </Button>
 </div>
 
 <CheckboxListInput @ref="checkboxListInputRef"
