@@ -28,6 +28,8 @@ public static class BulmaCssClass
 
     public const string Control = "control";
 
+    public const string Checkbox = "checkbox";
+
     public const string Delete = "delete";
 
     public const string Dropdown = "dropdown";
