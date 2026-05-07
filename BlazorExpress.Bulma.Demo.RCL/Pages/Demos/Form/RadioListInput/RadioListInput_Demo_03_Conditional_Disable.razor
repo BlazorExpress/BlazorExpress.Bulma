@@ -1,0 +1,18 @@
+<RadioListInput TValue="string"
+                Items="@shippingItems"
+                @bind-Value="@selectedShippingMethod" />
+
+<p class="mt-3">
+    Selected shipping method: @selectedShippingMethod
+</p>
+
+@code {
+    private readonly List<RadioListInputItem<string>> shippingItems =
+    [
+        new("standard", "Standard"),
+        new("express", "Express"),
+        new("overnight", "Overnight") { Disabled = true }
+    ];
+
+    private string selectedShippingMethod = "standard";
+}

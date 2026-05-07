@@ -1,0 +1,19 @@
+<RadioListInput TValue="string"
+                Items="@contactMethodItems"
+                Value="@selectedContactMethod"
+                Disabled="true" />
+
+<p class="mt-3">
+    Selected contact method: @selectedContactMethod
+</p>
+
+@code {
+    private readonly List<RadioListInputItem<string>> contactMethodItems =
+    [
+        new("email", "Email"),
+        new("sms", "SMS"),
+        new("phone", "Phone")
+    ];
+
+    private string selectedContactMethod = "email";
+}

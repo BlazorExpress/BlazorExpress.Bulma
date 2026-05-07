@@ -1,0 +1,51 @@
+@attribute [Route(pageUrl)]
+@layout DocsMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DemoLink Href="@DemoRouteConstants.Demos_Form_RadioListInput_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Preview" PageUrl="@pageUrl" Link="preview">
+    <div style="max-width: 24rem;">
+        <RadioListInput TValue="string"
+                        Items="@attendanceItems"
+                        @bind-Value="selectedAttendance" />
+    </div>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Parameters" PageUrl="@pageUrl" Link="parameters">
+    <DocxTable TItem="RadioListInput<string>" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Methods" PageUrl="@pageUrl" Link="methods">
+    <DocxTable TItem="RadioListInput<string>" DocType="DocType.Methods" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Events" PageUrl="@pageUrl" Link="events">
+    <DocxTable TItem="RadioListInput<string>" DocType="DocType.Events" />
+</Section>
+
+@code {
+    private const string componentName = nameof(RadioListInput<string>);
+    private const string pageUrl = DemoRouteConstants.Docs_Form_RadioListInput_Documentation;
+    private const string pageTitle = "RadioListInput";
+    private const string pageDescription = "This documentation provides a comprehensive reference for the <code>RadioListInput&lt;TValue&gt;</code> component, including its typed item collection, selected value binding, and developer-focused customization options.";
+    private const string metaTitle = "Blazor RadioListInput Component";
+    private const string metaDescription = "This documentation provides a comprehensive reference for the RadioListInput component, including its typed item collection, selected value binding, and customization options.";
+    private const string imageUrl = "";
+
+    private readonly List<RadioListInputItem<string>> attendanceItems =
+    [
+        new("going", "Going"),
+        new("not-going", "Not going"),
+        new("maybe", "Maybe")
+    ];
+
+    private string selectedAttendance = "going";
+}

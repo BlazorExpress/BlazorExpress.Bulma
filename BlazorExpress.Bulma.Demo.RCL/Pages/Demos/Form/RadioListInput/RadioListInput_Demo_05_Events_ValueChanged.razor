@@ -1,0 +1,22 @@
+<RadioListInput TValue="string"
+                Items="@themeItems"
+                Value="@selectedTheme"
+                ValueChanged="OnValueChanged" />
+
+<div class="mt-2">Selected theme: @selectedTheme</div>
+
+@code {
+    private readonly List<RadioListInputItem<string>> themeItems =
+    [
+        new("light", "Light"),
+        new("system", "System"),
+        new("dark", "Dark")
+    ];
+
+    private string selectedTheme = "system";
+
+    private void OnValueChanged(string value)
+    {
+        selectedTheme = value;
+    }
+}

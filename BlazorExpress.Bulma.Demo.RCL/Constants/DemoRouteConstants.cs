@@ -49,6 +49,7 @@ public static class DemoRouteConstants
     public const string Demos_Form_NumberInput_Documentation = Demos_Form_Prefix + "/number-input";
     public const string Demos_Form_OTPInput_Documentation = Demos_Form_Prefix + "/otp-input";
     public const string Demos_Form_PasswordInput_Documentation = Demos_Form_Prefix + "/password-input";
+    public const string Demos_Form_RadioListInput_Documentation = Demos_Form_Prefix + "/radio-list-input";
     public const string Demos_Form_RadioInput_Documentation = Demos_Form_Prefix + "/radio-input";
     public const string Demos_Form_RangeInput_Documentation = Demos_Form_Prefix + "/range-input";
     public const string Demos_Form_SelectInput_Documentation = Demos_Form_Prefix + "/select-input";
@@ -135,6 +136,7 @@ public static class DemoRouteConstants
     public const string Docs_Form_NumberInput_Documentation = Docs_Form_Prefix + "/number-input";
     public const string Docs_Form_OTPInput_Documentation = Docs_Form_Prefix + "/otp-input";
     public const string Docs_Form_PasswordInput_Documentation = Docs_Form_Prefix + "/password-input";
+    public const string Docs_Form_RadioListInput_Documentation = Docs_Form_Prefix + "/radio-list-input";
     public const string Docs_Form_RadioInput_Documentation = Docs_Form_Prefix + "/radio-input";
     public const string Docs_Form_RangeInput_Documentation = Docs_Form_Prefix + "/range-input";
     public const string Docs_Form_SelectInput_Documentation = Docs_Form_Prefix + "/select-input";
