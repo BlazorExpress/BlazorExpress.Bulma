@@ -1,0 +1,13 @@
+<Section Class="p-0" Size="HeadingSize.H4" Name="Prerequisites" PageUrl="@PageUrl" Link="prerequisites">
+    <Block>
+        Add the <code>BlazorExpress.ChartJS</code> package to your project and load the required scripts:
+        <code>Chart.js</code>,
+        <code>chartjs-plugin-datalabels</code> for data-label demos,
+        and <code>_content/BlazorExpress.ChartJS/blazorexpress.chartjs.js</code>.
+    </Block>
+</Section>
+
+@code {
+    [Parameter]
+    public string PageUrl { get; set; } = string.Empty;
+}

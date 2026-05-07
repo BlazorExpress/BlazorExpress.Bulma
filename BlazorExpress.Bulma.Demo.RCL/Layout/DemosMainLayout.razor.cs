@@ -42,6 +42,23 @@ public partial class DemosMainLayout : MainLayoutBase
             ]
         });
 
+        // CHARTS
+        groups.Add(new LinkGroup
+        {
+            Name = "CHARTS",
+            CssClass = "is-size-7 has-text-weight-bold has-text-warning",
+            Links = [
+                new Link { Href = DemoRouteConstants.Demos_BarChart, Text = "Bar Chart" },
+                new Link { Href = DemoRouteConstants.Demos_BubbleChart, Text = "Bubble Chart" },
+                new Link { Href = DemoRouteConstants.Demos_DoughnutChart, Text = "Doughnut Chart" },
+                new Link { Href = DemoRouteConstants.Demos_LineChart, Text = "Line Chart" },
+                new Link { Href = DemoRouteConstants.Demos_PieChart, Text = "Pie Chart" },
+                new Link { Href = DemoRouteConstants.Demos_PolarAreaChart, Text = "PolarArea Chart" },
+                new Link { Href = DemoRouteConstants.Demos_RadarChart, Text = "Radar Chart" },
+                new Link { Href = DemoRouteConstants.Demos_ScatterChart, Text = "Scatter Chart" }
+            ]
+        });
+
         // ICONS
         groups.Add(new LinkGroup
         {

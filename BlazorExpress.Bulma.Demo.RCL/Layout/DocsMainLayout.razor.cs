@@ -56,6 +56,23 @@ public partial class DocsMainLayout : MainLayoutBase
             ]
         });
 
+        // CHARTS
+        groups.Add(new LinkGroup
+        {
+            Name = "CHARTS",
+            CssClass = "is-size-7 has-text-weight-bold has-text-warning",
+            Links = [
+                new Link { Href = DemoRouteConstants.Docs_BarChart, Text = "Bar Chart" },
+                new Link { Href = DemoRouteConstants.Docs_BubbleChart, Text = "Bubble Chart" },
+                new Link { Href = DemoRouteConstants.Docs_DoughnutChart, Text = "Doughnut Chart" },
+                new Link { Href = DemoRouteConstants.Docs_LineChart, Text = "Line Chart" },
+                new Link { Href = DemoRouteConstants.Docs_PieChart, Text = "Pie Chart" },
+                new Link { Href = DemoRouteConstants.Docs_PolarAreaChart, Text = "PolarArea Chart" },
+                new Link { Href = DemoRouteConstants.Docs_RadarChart, Text = "Radar Chart" },
+                new Link { Href = DemoRouteConstants.Docs_ScatterChart, Text = "Scatter Chart" }
+            ]
+        });
+
         // ICONS
         groups.Add(new LinkGroup
         {

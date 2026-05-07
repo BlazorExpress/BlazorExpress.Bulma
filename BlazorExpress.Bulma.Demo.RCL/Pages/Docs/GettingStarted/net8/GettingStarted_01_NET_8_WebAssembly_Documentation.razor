@@ -39,7 +39,8 @@
         <Block>
             <ol>
                 <li>
-                    <b>Add the NuGet package:</b>
+                    <b>Add the NuGet packages:</b>
+                    <Block>Install <code>BlazorExpress.Bulma</code>. If you plan to use chart components, also install <code>BlazorExpress.ChartJS</code> version <code>1.2.2</code>.</Block>
                     <CodeChunk Class="mt-3" LanguageCode="LanguageCode.Text" ProjectRootClassType="DemoAppConstants.ProjectRootClassType" FilePath="~\Pages\Docs\GettingStarted\net8\01_A_Manual_Install_01_Snippet.razor" />
                 </li>
                 <li>
@@ -49,13 +50,14 @@
                 </li>
                 <li>
                     <b>Add JS references:</b>
-                    <Block>Insert the following references into the body section of the <code>wwwroot/index.html</code> file, immediately after the <code>_framework/blazor.webassembly.js</code> reference:</Block>
+                    <Block>Insert the following references into the body section of the <code>wwwroot/index.html</code> file, immediately after the <code>_framework/blazor.webassembly.js</code> reference. The ChartJS references are required when you use chart components and match the current docs and demos: <code>Chart.js</code> <code>4.4.1</code> and <code>chartjs-plugin-datalabels</code> <code>2.2.0</code>.</Block>
                     <CodeChunk Class="mt-3" LanguageCode="LanguageCode.HTML" ProjectRootClassType="DemoAppConstants.ProjectRootClassType" FilePath="~\Pages\Docs\GettingStarted\net8\01_A_Manual_Install_03_Snippet.html" />
                 </li>
                 <li>
                     <b>Register services:</b>
                     <Block>Add <code>@@using BlazorExpress.Bulma</code> to <code>_Imports.razor</code>:</Block>
                     <CodeChunk Class="mt-3" LanguageCode="LanguageCode.Razor" ProjectRootClassType="DemoAppConstants.ProjectRootClassType" FilePath="~\Pages\Docs\GettingStarted\net8\01_A_Manual_Install_04_Snippet.razor" />
+                    <Block>If you use chart components, also add <code>@@using BlazorExpress.ChartJS</code> to the relevant page or to a folder-level <code>_Imports.razor</code> for your chart views.</Block>
 
                     @* <Block>Register services in <code>Program.cs</code> (if required):</Block>
                         <CodeChunk Class="mt-3" LanguageCode="LanguageCode.CSharp" ProjectRootClassType="DemoAppConstants.ProjectRootClassType" FilePath="~\Pages\Docs\GettingStarted\net8\01_A_Manual_Install_05_Snippet.cs" />
@@ -100,6 +102,9 @@
                 </li>
                 <li>
                     <a href="https://www.nuget.org/packages/BlazorExpress.Bulma/" target="_blank">NuGet Package</a>
+                </li>
+                <li>
+                    <a href="https://www.nuget.org/packages/BlazorExpress.ChartJS/" target="_blank">BlazorExpress.ChartJS NuGet Package</a>
                 </li>
             </ul>
         </Block>

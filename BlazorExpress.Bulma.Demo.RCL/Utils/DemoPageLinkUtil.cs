@@ -14,10 +14,16 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Box, Href = DemoRouteConstants.Demos_Block_Documentation, Text = "Block", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.BarChartFill, Href = DemoRouteConstants.Demos_BarChart, Text = "Bar Chart", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Charts }, Status = PageLinkStatus.New, IsActive = true });
+
+        index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.PersonSquare, Href = DemoRouteConstants.Demos_BootstrapIcons_Documentation, Text = "Bootstrap Icons", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Icons }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Box, Href = DemoRouteConstants.Demos_Box_Documentation, Text = "Box", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });
+
+        index += 1;
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.ThreeDotsVertical, Href = DemoRouteConstants.Demos_BubbleChart, Text = "Bubble Chart", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Charts }, Status = PageLinkStatus.New, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.SegmentedNav, Href = DemoRouteConstants.Demos_Breadcrumb_Documentation, Text = "Breadcrumb", Categories = new() { DemoPageLinkCategory.All }, Status = PageLinkStatus.None, IsActive = true });
@@ -53,7 +59,10 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.XCircleFill, Href = DemoRouteConstants.Demos_DeleteButton_Documentation, Text = "Delete Button", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.MenuButtonWideFill, Href = DemoRouteConstants.Demos_Dropdown_Documentation, Text = "Dropdown", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.New, IsActive = true });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.CircleFill, Href = DemoRouteConstants.Demos_DoughnutChart, Text = "Doughnut Chart", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Charts }, Status = PageLinkStatus.New, IsActive = true });
+
+        index += 1;
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.MenuButtonWideFill, Href = DemoRouteConstants.Demos_Dropdown_Documentation, Text = "Dropdown", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.MenuButtonWideFill, Href = DemoRouteConstants.Demos_Form_EnumInput_Documentation, Text = "Enum Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = true });
@@ -80,10 +89,13 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Level_Documentation, Text = "Level", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Layout }, Status = PageLinkStatus.None, IsActive = false });
 
         index += 1;
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.GraphUp, Href = DemoRouteConstants.Demos_LineChart, Text = "Line Chart", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Charts }, Status = PageLinkStatus.New, IsActive = true });
+
+        index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Media_Documentation, Text = "Media", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Layout }, Status = PageLinkStatus.None, IsActive = false });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.ListNested, Href = DemoRouteConstants.Demos_Menu_Documentation, Text = "Menu", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.New, IsActive = true });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.ListNested, Href = DemoRouteConstants.Demos_Menu_Documentation, Text = "Menu", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.Updated, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.EnvelopeFill, Href = DemoRouteConstants.Demos_Message_Documentation, Text = "Message", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = true });
@@ -92,13 +104,13 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.WindowStack, Href = DemoRouteConstants.Demos_Modal_Documentation, Text = "Modal", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.CardHeading, Href = DemoRouteConstants.Demos_Navbar_Documentation, Text = "Navbar", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.New, IsActive = true });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.CardHeading, Href = DemoRouteConstants.Demos_Navbar_Documentation, Text = "Navbar", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.ExclamationTriangleFill, Href = DemoRouteConstants.Demos_Notification_Documentation, Text = "Notification", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.InputCursor, Href = DemoRouteConstants.Demos_Form_NumberInput_Documentation, Text = "Number Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.New, IsActive = true });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.InputCursor, Href = DemoRouteConstants.Demos_Form_NumberInput_Documentation, Text = "Number Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Asterisk, Href = DemoRouteConstants.Demos_Form_OTPInput_Documentation, Text = "OTP Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = true });
@@ -113,7 +125,13 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Form_PasswordInput_Documentation, Text = "Password Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = false });
 
         index += 1;
-        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.FilePdfFill, Href = DemoRouteConstants.Demos_PdfViewer_Documentation, Text = "Pdf Viewer", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.New, IsActive = true });
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.FilePdfFill, Href = DemoRouteConstants.Demos_PdfViewer_Documentation, Text = "Pdf Viewer", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = true });
+
+        index += 1;
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.PieChart, Href = DemoRouteConstants.Demos_PieChart, Text = "Pie Chart", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Charts }, Status = PageLinkStatus.New, IsActive = true });
+
+        index += 1;
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.PieChartFill, Href = DemoRouteConstants.Demos_PolarAreaChart, Text = "PolarArea Chart", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Charts }, Status = PageLinkStatus.New, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.UsbCFill, Href = DemoRouteConstants.Demos_ProgressBar_Documentation, Text = "Progress Bar", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });
@@ -125,7 +143,13 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Form_RangeInput_Documentation, Text = "Range Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = false });
 
         index += 1;
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.Radar, Href = DemoRouteConstants.Demos_RadarChart, Text = "Radar Chart", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Charts }, Status = PageLinkStatus.New, IsActive = true });
+
+        index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.CodeSlash, Href = DemoRouteConstants.Demos_ScriptLoader_Documentation, Text = "Script Loader", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Components }, Status = PageLinkStatus.None, IsActive = true });
+
+        index += 1;
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.GraphUpArrow, Href = DemoRouteConstants.Demos_ScatterChart, Text = "Scatter Chart", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Charts }, Status = PageLinkStatus.New, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Section_Documentation, Text = "Section", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Layout }, Status = PageLinkStatus.None, IsActive = false });

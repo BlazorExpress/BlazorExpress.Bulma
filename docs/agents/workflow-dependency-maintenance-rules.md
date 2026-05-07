@@ -86,6 +86,24 @@ Repository examples:
   - a generic example
   - a short repository example when helpful
 
+### Supported Versions Sync Rule
+
+Rule:
+- When you add, remove, or change any package version, target framework, hosted script dependency, stylesheet dependency, or other externally visible library/framework version used by the repository, update the Getting Started `Supported Versions` section in the same change set.
+- Treat this as required for both reusable-library changes and demo/docs host wiring changes when the effective shipped stack changes.
+
+When it applies:
+- updating NuGet package versions
+- changing target frameworks such as `net8.0`, `net9.0`, or `net10.0`
+- changing CDN-hosted third-party libraries such as Chart.js, PDF.js, Bulma, Bootstrap Icons, or similar browser dependencies
+- changing documented release-stack information that users rely on during setup
+
+Generic example:
+- if a component package starts depending on a newer charting library or a host starts loading a newer CDN script, update the Supported Versions table and related version notes in the setup docs during the same task
+
+Repository example:
+- update `BlazorExpress.Bulma.Demo.RCL/Pages/Docs/GettingStarted/GettingStartedDocumentation.razor` whenever the shipped stack shown there changes
+
 ## Requirement Clarification Rule
 
 Before implementation:
