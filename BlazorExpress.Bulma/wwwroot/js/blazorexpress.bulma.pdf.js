@@ -207,15 +207,31 @@ export function initialize(dotNetHelper, elementId, scale, rotation, url, passwo
 
     // begin loading document
     const loadingTask = pdfJS.getDocument(options);
+    let passwordPromptCanceled = false;
 
     // handle password only when required (optional password support)
     loadingTask.onPassword = function (updatePassword, reason) {
+        if (passwordPromptCanceled)
+            return;
+
         if (reason === pdfJS.PasswordResponses.NEED_PASSWORD) {
             // only prompt if PDF actually requires password
             const password = prompt("This PDF is password protected. Enter password:");
+            if (password === null) {
+                passwordPromptCanceled = true;
+                loadingTask.destroy();
+                dotNetHelper.invokeMethodAsync('DocumentLoadError', "Password prompt canceled.");
+                return;
+            }
             updatePassword(password);
         } else if (reason === pdfJS.PasswordResponses.INCORRECT_PASSWORD) {
             const password = prompt("Incorrect password. Please try again:");
+            if (password === null) {
+                passwordPromptCanceled = true;
+                loadingTask.destroy();
+                dotNetHelper.invokeMethodAsync('DocumentLoadError', "Password prompt canceled.");
+                return;
+            }
             updatePassword(password);
         }
     };
@@ -235,6 +251,11 @@ export function initialize(dotNetHelper, elementId, scale, rotation, url, passwo
             });
         })
         .catch(function (error) {
+            if (passwordPromptCanceled) {
+                console.debug("PDF loading canceled after password prompt dismissal.");
+                return;
+            }
+
             console.error("PDF loading error:", error);
 
             // handle password exceptions specifically

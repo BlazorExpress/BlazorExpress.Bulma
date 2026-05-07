@@ -93,7 +93,7 @@
                 <li>Optionally implement a custom UI to collect a password and supply it to the component via the <code>Password</code> parameter if you need a tailored UX.</li>
             </ol>
         </div>
-        The demo demonstrates a lazy-load approach: a button toggles <code>showPdfViewer</code> and instantiates the viewer which then prompts for the password. This is useful when you want to avoid showing the prompt until the user explicitly requests the document.
+        The demo demonstrates a lazy-load approach: a button toggles <code>showPdfViewer</code> and instantiates the viewer which then prompts for the password. If the user cancels the browser prompt, the sample handles <code>OnDocumentLoadError</code> and resets the viewer so it can be opened again cleanly. This is useful when you want to avoid showing the prompt until the user explicitly requests the document.
     </Block>
     <Demo Type="typeof(PdfViewer_Demo_05_Password_Protected_B_Prompt_For_Password)" Tabs="true" />
 </Section>

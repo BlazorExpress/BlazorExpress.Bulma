@@ -32,7 +32,7 @@ public partial class PdfViewer : BulmaComponentBase
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
-            await PdfViewerJsInterop.InitializeAsync(objRef!, Id!, scale, rotation, Url!, Password!);
+            await PdfViewerJsInterop.InitializeAsync(objRef!, Id!, scale, rotation, Url!, Password);
 
         await base.OnAfterRenderAsync(firstRender);
     }
