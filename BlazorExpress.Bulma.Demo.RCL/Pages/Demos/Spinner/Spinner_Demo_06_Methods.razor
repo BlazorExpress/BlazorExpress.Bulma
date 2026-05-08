@@ -1,0 +1,17 @@
+<div class="is-flex is-align-items-center is-flex-wrap-wrap mb-4" style="gap: 0.75rem;">
+    <Button Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="ShowSpinner">Show()</Button>
+    <Button Color="ButtonColor.Warning" Size="ButtonSize.Small" @onclick="HideSpinner">Hide()</Button>
+</div>
+
+<div class="is-flex is-align-items-center" style="gap: 1rem;">
+    <Spinner @ref="spinnerRef" Color="SpinnerColor.Danger" Type="SpinnerType.Grow" />
+    <span>Control this spinner instance directly through its public methods.</span>
+</div>
+
+@code {
+    private Spinner? spinnerRef;
+
+    private void HideSpinner() => spinnerRef?.Hide();
+
+    private void ShowSpinner() => spinnerRef?.Show();
+}

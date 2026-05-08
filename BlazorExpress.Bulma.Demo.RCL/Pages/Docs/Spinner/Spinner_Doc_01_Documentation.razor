@@ -1,0 +1,38 @@
+@attribute [Route(pageUrl)]
+@layout DocsMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DemoLink Href="@DemoRouteConstants.Demos_Spinner_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Preview" PageUrl="@pageUrl" Link="preview">
+    <div class="is-flex is-align-items-center" style="gap: 1rem;">
+        <Spinner Color="SpinnerColor.Primary" />
+        <Spinner Color="SpinnerColor.Info" Type="SpinnerType.Grow" />
+        <Spinner Color="SpinnerColor.Success" Type="SpinnerType.Dots" />
+    </div>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Parameters" PageUrl="@pageUrl" Link="parameters">
+    <DocxTable TItem="Spinner" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Methods" PageUrl="@pageUrl" Link="methods">
+    <DocxTable TItem="Spinner" DocType="DocType.Methods" />
+</Section>
+
+@code {
+    private const string componentName = nameof(Spinner);
+    private const string pageUrl = DemoRouteConstants.Docs_Spinner_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component, including Bulma-aligned colors, Bulma size classes, visibility, and instance methods.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component, including Bulma-aligned colors, Bulma size classes, visibility, and instance methods.";
+    private const string imageUrl = "";
+}

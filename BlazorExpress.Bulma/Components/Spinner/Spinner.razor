@@ -1,0 +1,25 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+
+@if (isVisible)
+{
+    <div @ref="@Element"
+         id="@Id"
+         class="@ClassNames"
+         style="@StyleNames"
+         role="@Role"
+         aria-hidden="@AriaHidden"
+         @attributes="@AdditionalAttributes">
+        @if (Type == SpinnerType.Dots)
+        {
+            <span class="@BulmaCssClass.SpinnerDot" aria-hidden="true"></span>
+            <span class="@BulmaCssClass.SpinnerDot" aria-hidden="true"></span>
+            <span class="@BulmaCssClass.SpinnerDot" aria-hidden="true"></span>
+        }
+
+        @if (HasAccessibleLabel)
+        {
+            <span class="@BulmaCssClass.VisuallyHidden">@Label</span>
+        }
+    </div>
+}

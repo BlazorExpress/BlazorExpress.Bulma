@@ -402,6 +402,11 @@ public static class BulmaCssClass
     public const string Select = "select";
 
     public const string Submit = "submit";
+    public const string Spinner = "be-bulma-spinner";
+    public const string SpinnerBorder = "be-bulma-spinner-border";
+    public const string SpinnerDot = "be-bulma-spinner-dot";
+    public const string SpinnerDots = "be-bulma-spinner-dots";
+    public const string SpinnerGrow = "be-bulma-spinner-grow";
     public const string Section = "section";
     public const string SkeletonBlock = "skeleton-block";
     public const string SkeletonLines = "skeleton-lines";
@@ -416,6 +421,7 @@ public static class BulmaCssClass
     public const string Tags = "tags";
 
     public const string Title = "title";
+    public const string VisuallyHidden = "be-bulma-visually-hidden";
 
     #endregion
 }

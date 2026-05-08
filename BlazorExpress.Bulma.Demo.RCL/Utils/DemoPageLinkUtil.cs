@@ -2,10 +2,10 @@
 
 public static class DemoPageLinkUtil
 {
-    public static HashSet<PageLink> GetDemosLinks()
+    public static IReadOnlyList<PageLink> GetDemosLinks()
     {
         var index = 1;
-        var links = new HashSet<PageLink>();
+        var links = new List<PageLink>();
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Form_AutoComplete_Documentation, Text = "AutoComplete", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = false });
@@ -162,6 +162,9 @@ public static class DemoPageLinkUtil
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.ColumnsGap, Href = DemoRouteConstants.Demos_Skeletons_Documentation, Text = "Skeletons", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Features }, Status = PageLinkStatus.None, IsActive = true });
+
+        index += 1;
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.ArrowRepeat, Href = DemoRouteConstants.Demos_Spinner_Documentation, Text = "Spinner", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Elements }, Status = PageLinkStatus.New, IsActive = true });
 
         index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Form_Switch_Documentation, Text = "Switch", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = false });

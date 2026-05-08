@@ -1,0 +1,120 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_Spinner_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>Spinner</strong> component shows a compact loading indicator for asynchronous work such as fetching data, saving changes, or waiting for background tasks.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Add the <code>Spinner</code> component to your page.</li>
+                <li>Optionally set the <code>Color</code> property to a Bulma semantic color that matches the surrounding UI.</li>
+                <li>Keep the default <code>Label</code> or provide your own accessible loading text for screen readers.</li>
+            </ol>
+        </div>
+        This demo shows the default spinner in a typical inline loading scenario.
+    </Block>
+    <Demo Type="typeof(Spinner_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Types" PageUrl="@pageUrl" Link="types">
+    <Block>
+        The <strong>Spinner</strong> component supports <code>SpinnerType.Border</code>, <code>SpinnerType.Grow</code>, and <code>SpinnerType.Dots</code>, letting you choose the visual style that best fits the page.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Use the default <code>SpinnerType.Border</code> for the standard spinner style.</li>
+                <li>Set <code>Type="SpinnerType.Grow"</code> to switch to the grow variant.</li>
+                <li>Set <code>Type="SpinnerType.Dots"</code> to render a dotted loading indicator.</li>
+            </ol>
+        </div>
+        This demo compares the supported spinner types side by side.
+    </Block>
+    <Demo Type="typeof(Spinner_Demo_02_Types)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Block>
+        The <strong>Spinner</strong> component supports Bulma semantic colors so the loading indicator can align with your status messaging or theme.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Color</code> property to a Bulma semantic value such as <code>Primary</code>, <code>Info</code>, <code>Success</code>, or <code>Danger</code>.</li>
+                <li>Choose a color that stays visible against the spinner's background.</li>
+            </ol>
+        </div>
+        This demo illustrates Bulma semantic color options for the border, grow, and dots spinner types.
+    </Block>
+    <Demo Type="typeof(Spinner_Demo_03_Colors)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Size" PageUrl="@pageUrl" Link="size">
+    <Block>
+        The <strong>Spinner</strong> component can be displayed in multiple Bulma size classes to suit inline text, cards, panels, or larger loading states.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set the <code>Size</code> property to <code>SpinnerSize.Small</code>, <code>SpinnerSize.Normal</code>, <code>SpinnerSize.Medium</code>, or <code>SpinnerSize.Large</code> to follow the Bulma size scale.</li>
+                <li>Leave <code>Size</code> unset to use the default spinner size.</li>
+            </ol>
+        </div>
+        This demo shows the supported Bulma size options for the border, grow, and dots spinner types.
+    </Block>
+    <Demo Type="typeof(Spinner_Demo_04_Sizes)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="IsVisible" PageUrl="@pageUrl" Link="isvisible">
+    <Block>
+        The <strong>IsVisible</strong> property lets you control whether the spinner is rendered, which is useful for toggling loading states from your page logic.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Bind the <code>IsVisible</code> property to a boolean field.</li>
+                <li>Update that field when your loading operation starts or ends.</li>
+            </ol>
+        </div>
+        This demo shows how to show, hide, and toggle a spinner through the <code>IsVisible</code> parameter.
+    </Block>
+    <Demo Type="typeof(Spinner_Demo_05_IsVisible)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Methods" PageUrl="@pageUrl" Link="methods">
+    <Block>
+        The <strong>Spinner</strong> component exposes <code>Show()</code> and <code>Hide()</code> methods for instance-based control when you are working with a component reference.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Capture the component with <code>@@ref</code>.</li>
+                <li>Call <code>Show()</code> or <code>Hide()</code> on that reference when you want to update visibility imperatively.</li>
+            </ol>
+        </div>
+        This demo shows direct control of a spinner instance through its public methods.
+    </Block>
+    <Demo Type="typeof(Spinner_Demo_06_Methods)" Tabs="true" />
+</Section>
+
+@code {
+    private const string componentName = nameof(Spinner);
+    private const string pageUrl = DemoRouteConstants.Demos_Spinner_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"Use the <code>{componentName}</code> component to indicate loading states with Bulma-aligned colors, Bulma size classes, and built-in visibility controls.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"Use the {componentName} component to indicate loading states with Bulma-aligned colors, Bulma size classes, and built-in visibility controls.";
+    private const string imageUrl = "";
+}

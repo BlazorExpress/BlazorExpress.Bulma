@@ -83,6 +83,7 @@ public partial class DemosMainLayout : MainLayoutBase
                 new Link { Href = DemoRouteConstants.Demos_Image_Documentation, Text = "Image" },
                 new Link { Href = DemoRouteConstants.Demos_Notification_Documentation, Text = "Notification" },
                 new Link { Href = DemoRouteConstants.Demos_ProgressBar_Documentation, Text = "Progress Bar" },
+                new Link { Href = DemoRouteConstants.Demos_Spinner_Documentation, Text = "Spinner" },
                 new Link { Href = DemoRouteConstants.Demos_Tags_Documentation, Text = "Tags" },
             ]
         });

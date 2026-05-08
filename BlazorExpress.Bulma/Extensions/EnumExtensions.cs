@@ -448,6 +448,40 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToSpinnerColorClass(this SpinnerColor color) =>
+        color switch
+        {
+            SpinnerColor.Primary => BulmaCssClass.HasTextPrimary,
+            SpinnerColor.Link => BulmaCssClass.HasTextLink,
+            SpinnerColor.Info => BulmaCssClass.HasTextInfo,
+            SpinnerColor.Success => BulmaCssClass.HasTextSuccess,
+            SpinnerColor.Warning => BulmaCssClass.HasTextWarning,
+            SpinnerColor.Danger => BulmaCssClass.HasTextDanger,
+            SpinnerColor.White => BulmaCssClass.HasTextWhite,
+            SpinnerColor.Black => BulmaCssClass.HasTextBlack,
+            SpinnerColor.Light => BulmaCssClass.HasTextLight,
+            SpinnerColor.Dark => BulmaCssClass.HasTextDark,
+            _ => null
+        };
+
+    public static string? ToSpinnerSizeClass(this SpinnerSize size) =>
+        size switch
+        {
+            SpinnerSize.Small => BulmaCssClass.IsSmall,
+            SpinnerSize.Normal => BulmaCssClass.IsNormal,
+            SpinnerSize.Medium => BulmaCssClass.IsMedium,
+            SpinnerSize.Large => BulmaCssClass.IsLarge,
+            _ => null
+        };
+
+    public static string ToSpinnerTypeClass(this SpinnerType type) =>
+        type switch
+        {
+            SpinnerType.Dots => BulmaCssClass.SpinnerDots,
+            SpinnerType.Grow => BulmaCssClass.SpinnerGrow,
+            _ => BulmaCssClass.SpinnerBorder
+        };
+
     public static string? ToSubTitleSizeClass(this HeadingSize headingSize) =>
         headingSize switch
         {
