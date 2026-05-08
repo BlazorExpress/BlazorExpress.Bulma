@@ -410,6 +410,18 @@ public static class BulmaCssClass
     public const string Section = "section";
     public const string SkeletonBlock = "skeleton-block";
     public const string SkeletonLines = "skeleton-lines";
+    public const string SplitView = "be-bulma-split-view";
+    public const string SplitViewDisabled = "be-bulma-split-view-disabled";
+    public const string SplitViewDivider = "be-bulma-split-view-divider";
+    public const string SplitViewDividerDisabled = "be-bulma-split-view-divider-disabled";
+    public const string SplitViewDragging = "be-bulma-split-view-dragging";
+    public const string SplitViewGrip = "be-bulma-split-view-grip";
+    public const string SplitViewHandle = "be-bulma-split-view-handle";
+    public const string SplitViewHorizontal = "be-bulma-split-view-horizontal";
+    public const string SplitViewPane = "be-bulma-split-view-pane";
+    public const string SplitViewPanePrimary = "be-bulma-split-view-pane-primary";
+    public const string SplitViewPaneSecondary = "be-bulma-split-view-pane-secondary";
+    public const string SplitViewVertical = "be-bulma-split-view-vertical";
     public const string SubTitle = "subtitle";
 
     public const string Table = "table";

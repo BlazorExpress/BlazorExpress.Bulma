@@ -448,6 +448,13 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string ToSplitViewOrientationClass(this SplitViewOrientation orientation) =>
+        orientation switch
+        {
+            SplitViewOrientation.Vertical => BulmaCssClass.SplitViewVertical,
+            _ => BulmaCssClass.SplitViewHorizontal
+        };
+
     public static string? ToSpinnerColorClass(this SpinnerColor color) =>
         color switch
         {

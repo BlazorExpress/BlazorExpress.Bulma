@@ -165,6 +165,151 @@ window.blazorexpress.bulma = {
             document.getElementById(elementId).value = value;
         }
     },
+    splitView: {
+        apply: (instance) => {
+            if (!instance?.element || !instance?.options) {
+                return;
+            }
+
+            instance.element.style.setProperty("--be-bulma-split-view-primary-pane-size", `${instance.options.primaryPaneSize}%`);
+            instance.element.style.setProperty("--be-bulma-split-view-minimum-pane-size", `${instance.options.minimumPaneSize}%`);
+        },
+        clamp: (value, minimumPaneSize) => {
+            return Math.min(100 - minimumPaneSize, Math.max(minimumPaneSize, value));
+        },
+        dispose: (elementId) => {
+            const instance = window.blazorexpress.bulma.splitView.instances[elementId];
+            if (!instance) {
+                return;
+            }
+
+            window.removeEventListener("mousemove", instance.onMouseMove);
+            window.removeEventListener("mouseup", instance.onMouseUp);
+
+            instance.divider?.removeEventListener("mousedown", instance.onMouseDown);
+            instance.element?.classList.remove("be-bulma-split-view-dragging");
+
+            delete window.blazorexpress.bulma.splitView.instances[elementId];
+        },
+        getPercentage: (instance, event) => {
+            const rect = instance.element.getBoundingClientRect();
+
+            if (instance.options.isHorizontal) {
+                if (rect.width <= 0) {
+                    return instance.options.primaryPaneSize;
+                }
+
+                return ((event.clientX - rect.left) / rect.width) * 100;
+            }
+
+            if (rect.height <= 0) {
+                return instance.options.primaryPaneSize;
+            }
+
+            return ((event.clientY - rect.top) / rect.height) * 100;
+        },
+        initialize: (elementId, options, dotNetHelper) => {
+            const element = document.getElementById(elementId);
+            const divider = element?.querySelector(".be-bulma-split-view-divider");
+
+            if (!element || !divider) {
+                return;
+            }
+
+            if (window.blazorexpress.bulma.splitView.instances[elementId]) {
+                const instance = window.blazorexpress.bulma.splitView.instances[elementId];
+                instance.options = options;
+                instance.dotNetHelper = dotNetHelper;
+                instance.element = element;
+                instance.divider = divider;
+                window.blazorexpress.bulma.splitView.apply(instance);
+                return;
+            }
+
+            const instance = {
+                divider: divider,
+                dotNetHelper: dotNetHelper,
+                dragging: false,
+                element: element,
+                onMouseDown: null,
+                onMouseMove: null,
+                onMouseUp: null,
+                options: options
+            };
+
+            instance.onMouseDown = (event) => {
+                if (instance.options.isDisabled) {
+                    return;
+                }
+
+                event.preventDefault();
+
+                instance.dragging = true;
+                instance.element.classList.add("be-bulma-split-view-dragging");
+
+                if (instance.options.notifyResizeStarted) {
+                    instance.dotNetHelper.invokeMethodAsync("OnResizeStartedJS", instance.options.primaryPaneSize, 100 - instance.options.primaryPaneSize);
+                }
+
+                window.addEventListener("mousemove", instance.onMouseMove);
+                window.addEventListener("mouseup", instance.onMouseUp);
+            };
+
+            instance.onMouseMove = (event) => {
+                if (!instance.dragging) {
+                    return;
+                }
+
+                const nextPaneSize = window.blazorexpress.bulma.splitView.clamp(
+                    window.blazorexpress.bulma.splitView.getPercentage(instance, event),
+                    instance.options.minimumPaneSize);
+
+                if (Math.abs(nextPaneSize - instance.options.primaryPaneSize) < 0.01) {
+                    return;
+                }
+
+                instance.options.primaryPaneSize = nextPaneSize;
+                window.blazorexpress.bulma.splitView.apply(instance);
+
+                if (instance.options.notifyResize) {
+                    instance.dotNetHelper.invokeMethodAsync("OnResizedJS", nextPaneSize, 100 - nextPaneSize);
+                }
+            };
+
+            instance.onMouseUp = () => {
+                if (!instance.dragging) {
+                    return;
+                }
+
+                instance.dragging = false;
+                instance.element.classList.remove("be-bulma-split-view-dragging");
+
+                window.removeEventListener("mousemove", instance.onMouseMove);
+                window.removeEventListener("mouseup", instance.onMouseUp);
+
+                instance.dotNetHelper.invokeMethodAsync("OnResizeEndedJS", instance.options.primaryPaneSize, 100 - instance.options.primaryPaneSize);
+            };
+
+            divider.addEventListener("mousedown", instance.onMouseDown);
+
+            window.blazorexpress.bulma.splitView.instances[elementId] = instance;
+            window.blazorexpress.bulma.splitView.apply(instance);
+        },
+        instances: {},
+        update: (elementId, options) => {
+            const instance = window.blazorexpress.bulma.splitView.instances[elementId];
+            if (!instance) {
+                return;
+            }
+
+            instance.options = options;
+            window.blazorexpress.bulma.splitView.apply(instance);
+
+            if (instance.options.isDisabled && instance.dragging) {
+                instance.onMouseUp();
+            }
+        }
+    },
     scriptLoader: {
         initialize: (elementId, async, defer, scriptId, source, type, dotNetHelper) => {
             let scriptLoaderEl = document.getElementById(elementId);

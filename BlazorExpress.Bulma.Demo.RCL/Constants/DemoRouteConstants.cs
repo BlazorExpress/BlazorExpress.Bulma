@@ -79,10 +79,11 @@ public static class DemoRouteConstants
     // Layout
     public const string Demos_Container_Documentation = Demos_Prefix + "/container";
     public const string Demos_Hero_Documentation = Demos_Prefix + "/hero";
-    public const string Demos_Section_Documentation = Demos_Prefix + "/section";
     public const string Demos_Level_Documentation = Demos_Prefix + "/level";
     public const string Demos_Media_Documentation = Demos_Prefix + "/media";
     public const string Demos_Footer_Documentation = Demos_Prefix + "/footer";
+    public const string Demos_Section_Documentation = Demos_Prefix + "/section";
+    public const string Demos_SplitView_Documentation = Demos_Prefix + "/split-view";
 
     #endregion
 
@@ -176,10 +177,11 @@ public static class DemoRouteConstants
     // Layout
     public const string Docs_Container_Documentation = Docs_Prefix + "/container";
     public const string Docs_Hero_Documentation = Docs_Prefix + "/hero";
-    public const string Docs_Section_Documentation = Docs_Prefix + "/section";
     public const string Docs_Level_Documentation = Docs_Prefix + "/level";
     public const string Docs_Media_Documentation = Docs_Prefix + "/media";
     public const string Docs_Footer_Documentation = Docs_Prefix + "/footer";
+    public const string Docs_Section_Documentation = Docs_Prefix + "/section";
+    public const string Docs_SplitView_Documentation = Docs_Prefix + "/split-view";
 
     // Utils
     public const string Docs_Utils_Prefix = Docs_Prefix + "/utils";

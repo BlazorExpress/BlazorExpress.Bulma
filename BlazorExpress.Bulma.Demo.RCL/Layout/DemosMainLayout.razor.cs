@@ -138,7 +138,8 @@ public partial class DemosMainLayout : MainLayoutBase
             Name = "LAYOUT",
             CssClass = "is-size-7 has-text-weight-bold has-text-success",
             Links = [
-                new Link { Href = DemoRouteConstants.Demos_Hero_Documentation, Text = "Hero" }
+                new Link { Href = DemoRouteConstants.Demos_Hero_Documentation, Text = "Hero" },
+                new Link { Href = DemoRouteConstants.Demos_SplitView_Documentation, Text = "SplitView" }
             ]
         });
 

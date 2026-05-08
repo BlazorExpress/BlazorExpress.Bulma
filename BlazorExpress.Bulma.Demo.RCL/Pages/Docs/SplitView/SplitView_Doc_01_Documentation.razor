@@ -1,0 +1,70 @@
+@attribute [Route(pageUrl)]
+@layout DocsMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DemoLink Href="@DemoRouteConstants.Demos_SplitView_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Preview" PageUrl="@pageUrl" Link="preview">
+    <div style="height: 22rem;">
+        <SplitView PrimaryPaneSize="34">
+            <Pane1>
+                <div style="padding: 1rem;">
+                    <p class="title is-6 mb-3">Files</p>
+                    <div class="content">
+                        <ul>
+                            <li>Components</li>
+                            <li>Pages</li>
+                            <li>wwwroot</li>
+                            <li>Program.cs</li>
+                        </ul>
+                    </div>
+                </div>
+            </Pane1>
+            <Pane2>
+                <div style="padding: 1rem;">
+                    <p class="title is-6 mb-3">Preview</p>
+                    <div class="box mb-3">
+                        A SplitView keeps two related surfaces visible while letting users resize the working area between them.
+                    </div>
+                    <div class="content">
+                        <p>Use it for navigation and detail views, editors and previews, logs and dashboards, or nested workspace layouts.</p>
+                    </div>
+                </div>
+            </Pane2>
+        </SplitView>
+    </div>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Notes" PageUrl="@pageUrl" Link="notes">
+    <div class="content">
+        <ul>
+            <li>The parent container should provide an explicit height so the SplitView has space to fill and resize.</li>
+            <li>While dragging, pane child content temporarily ignores pointer events to keep the divider interaction responsive.</li>
+        </ul>
+    </div>
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Parameters" PageUrl="@pageUrl" Link="parameters">
+    <DocxTable TItem="SplitView" DocType="DocType.Parameters" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H4" Name="Events" PageUrl="@pageUrl" Link="events">
+    <DocxTable TItem="SplitView" DocType="DocType.Events" />
+</Section>
+
+@code {
+    private const string componentName = nameof(SplitView);
+    private const string pageUrl = DemoRouteConstants.Docs_SplitView_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"This documentation provides a comprehensive reference for the <code>{componentName}</code> component, including pane sizing, disabling drag, orientation, and resize events.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"This documentation provides a comprehensive reference for the {componentName} component, including pane sizing, disabling drag, orientation, and resize events.";
+    private const string imageUrl = "";
+}
