@@ -46,6 +46,23 @@
     <Demo Type="typeof(SplitView_Demo_02_Disable)" Tabs="true" />
 </Section>
 
+<Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Block>
+        The <strong>Color</strong> parameter applies a Bulma semantic accent to the divider, which helps the SplitView align with branded, informational, success, or destructive workflows.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color</code> to a Bulma semantic value such as <code>Primary</code>, <code>Link</code>, <code>Success</code>, or <code>Danger</code>.</li>
+                <li>Use the semantic color as the divider default when you want a stronger visual cue between the panes.</li>
+                <li>Optionally override individual divider states later with the explicit divider color parameters.</li>
+            </ol>
+        </div>
+        This demo covers the full <code>SplitViewColor</code> palette so you can see how the interaction states inherit each accent.
+    </Block>
+    <Demo Type="typeof(SplitView_Demo_06_Colors)" Tabs="true" />
+</Section>
+
 <Section Class="p-0" Size="HeadingSize.H3" Name="Orientation" PageUrl="@pageUrl" Link="orientation">
     <Block>
         The <strong>Orientation</strong> parameter switches the SplitView between a left-right workspace and a top-bottom workspace without changing the basic component shape.
