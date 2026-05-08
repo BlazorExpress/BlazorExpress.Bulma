@@ -237,7 +237,7 @@ html {
 
 .be-bulma-split-view-divider {
     align-items: center;
-    background-color: transparent;
+    background-color: var(--be-bulma-split-view-divider-background-color, color-mix(in srgb, var(--bulma-border-weak, #b5b5b5) 18%, transparent));
     display: flex;
     flex: 0 0 auto;
     justify-content: center;
@@ -256,9 +256,12 @@ html {
     height: 8px;
 }
 
-.be-bulma-split-view-divider:hover,
+.be-bulma-split-view-divider:hover {
+    background-color: var(--be-bulma-split-view-divider-hover-background-color, color-mix(in srgb, var(--bulma-border, #dbdbdb) 32%, transparent));
+}
+
 .be-bulma-split-view-dragging > .be-bulma-split-view-divider {
-    background-color: rgba(10, 10, 10, .06);
+    background-color: var(--be-bulma-split-view-divider-dragging-background-color, color-mix(in srgb, var(--bulma-border, #dbdbdb) 55%, transparent));
 }
 
 .be-bulma-split-view-handle {
@@ -309,7 +312,7 @@ html {
 }
 
 .be-bulma-split-view-disabled > .be-bulma-split-view-divider:hover {
-    background-color: transparent;
+    background-color: var(--be-bulma-split-view-divider-background-color, color-mix(in srgb, var(--bulma-border-weak, #b5b5b5) 18%, transparent));
 }
 
 .be-bulma-split-view-dragging .be-bulma-split-view-pane > * {

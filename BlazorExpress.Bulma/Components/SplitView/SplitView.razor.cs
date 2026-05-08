@@ -136,6 +136,42 @@ public partial class SplitView : BulmaComponentBase, IAsyncDisposable
         );
 
     /// <summary>
+    /// Gets or sets the divider background color.
+    /// <para>
+    /// Default value is <see langword="null" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.2.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the divider background color.")]
+    [Parameter]
+    public string? DividerBackgroundColor { get; set; }
+
+    /// <summary>
+    /// Gets or sets the divider dragging background color.
+    /// <para>
+    /// Default value is <see langword="null" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.2.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the divider dragging background color.")]
+    [Parameter]
+    public string? DividerDraggingBackgroundColor { get; set; }
+
+    /// <summary>
+    /// Gets or sets the divider hover background color.
+    /// <para>
+    /// Default value is <see langword="null" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.2.0")]
+    [DefaultValue(null)]
+    [Description("Gets or sets the divider hover background color.")]
+    [Parameter]
+    public string? DividerHoverBackgroundColor { get; set; }
+
+    /// <summary>
     /// If <see langword="true" />, dragging is disabled.
     /// <para>
     /// Default value is <see langword="false" />.
@@ -258,6 +294,9 @@ public partial class SplitView : BulmaComponentBase, IAsyncDisposable
     protected override string? StyleNames =>
         BuildStyleNames(
             Style,
+            ($"--be-bulma-split-view-divider-background-color: {DividerBackgroundColor};", !string.IsNullOrWhiteSpace(DividerBackgroundColor)),
+            ($"--be-bulma-split-view-divider-dragging-background-color: {DividerDraggingBackgroundColor};", !string.IsNullOrWhiteSpace(DividerDraggingBackgroundColor)),
+            ($"--be-bulma-split-view-divider-hover-background-color: {DividerHoverBackgroundColor};", !string.IsNullOrWhiteSpace(DividerHoverBackgroundColor)),
             ($"--be-bulma-split-view-primary-pane-size: {currentPrimaryPaneSize.ToString("0.##", CultureInfo.InvariantCulture)}%;", true),
             ($"--be-bulma-split-view-minimum-pane-size: {MinimumPaneSize.ToString("0.##", CultureInfo.InvariantCulture)}%;", true)
         );
