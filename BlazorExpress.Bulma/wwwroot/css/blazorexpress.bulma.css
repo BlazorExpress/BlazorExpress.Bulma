@@ -8,6 +8,17 @@
     --be-bulma-menu-background-offset: 9%;
     --be-bulma-menu-border-offset: -6%;
     --be-bulma-menu-item-margin: 4px 0;
+    /* app loading */
+    --be-bulma-app-loading-background-color: var(--bulma-body-background-color);
+    --be-bulma-app-loading-color: var(--bulma-text);
+    --be-bulma-app-loading-panel-border-color: var(--bulma-border);
+    --be-bulma-app-loading-panel-border-radius: var(--bulma-radius-large);
+    --be-bulma-app-loading-panel-background-color: var(--bulma-scheme-main);
+    --be-bulma-app-loading-label-color: var(--bulma-text-weak);
+    --be-bulma-app-loading-label-font-size: var(--bulma-size-medium);
+    --be-bulma-app-loading-label-line-height: var(--bulma-body-line-height);
+    --be-bulma-app-loading-logo-width: 64px;
+    --be-bulma-app-loading-logo-height: auto;
 }
 
 [data-theme=dark] {
@@ -29,6 +40,43 @@ input[type=date] {
 /* layout */
 html {
     overflow-y: hidden;
+}
+
+.be-bulma-app-loading {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: var(--be-bulma-app-loading-background-color);
+    color: var(--be-bulma-app-loading-color);
+}
+
+.be-bulma-app-loading .be-bulma-app-loading-panel {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    margin-inline: auto;
+    border: 1px solid var(--be-bulma-app-loading-panel-border-color);
+    border-radius: var(--be-bulma-app-loading-panel-border-radius);
+    background-color: var(--be-bulma-app-loading-panel-background-color);
+    color: inherit;
+    text-align: center;
+}
+
+.be-bulma-app-loading .be-bulma-app-loading-logo {
+    width: var(--be-bulma-app-loading-logo-width);
+    height: var(--be-bulma-app-loading-logo-height);
+    display: block;
+}
+
+.be-bulma-app-loading .be-bulma-app-loading-label {
+    color: var(--be-bulma-app-loading-label-color);
+    font-size: var(--be-bulma-app-loading-label-font-size);
+    line-height: var(--be-bulma-app-loading-label-line-height);
 }
 
 .be-bulma-page {
