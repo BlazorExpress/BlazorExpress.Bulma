@@ -97,6 +97,7 @@ public partial class DocsMainLayout : MainLayoutBase
                 new Link { Href = DemoRouteConstants.Docs_Image_Documentation, Text = "Image" },
                 new Link { Href = DemoRouteConstants.Docs_Notification_Documentation, Text = "Notification" },
                 new Link { Href = DemoRouteConstants.Docs_ProgressBar_Documentation, Text = "Progress Bar" },
+                new Link { Href = DemoRouteConstants.Docs_Spinner_Documentation, Text = "Spinner" },
                 new Link { Href = DemoRouteConstants.Docs_Tags_Documentation, Text = "Tags" },
             ]
         });

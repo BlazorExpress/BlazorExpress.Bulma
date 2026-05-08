@@ -19,6 +19,14 @@
     --be-bulma-app-loading-label-line-height: var(--bulma-body-line-height);
     --be-bulma-app-loading-logo-width: 64px;
     --be-bulma-app-loading-logo-height: auto;
+    /* spinner */
+    --be-bulma-spinner-size-small: 1rem;
+    --be-bulma-spinner-size-normal: 2rem;
+    --be-bulma-spinner-size-medium: 3rem;
+    --be-bulma-spinner-size-large: 4rem;
+    --be-bulma-spinner-border-width: 0.25em;
+    --be-bulma-spinner-animation-duration: 0.75s;
+    --be-bulma-spinner-dot-gap: 0.4em;
 }
 
 [data-theme=dark] {
@@ -77,6 +85,123 @@ html {
     color: var(--be-bulma-app-loading-label-color);
     font-size: var(--be-bulma-app-loading-label-font-size);
     line-height: var(--be-bulma-app-loading-label-line-height);
+}
+
+.be-bulma-spinner {
+    --be-bulma-spinner-size: var(--be-bulma-spinner-size-normal);
+    --be-bulma-spinner-current-border-width: var(--be-bulma-spinner-border-width);
+    --be-bulma-spinner-dot-size: calc(var(--be-bulma-spinner-size) / 3);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: var(--be-bulma-spinner-size);
+    height: var(--be-bulma-spinner-size);
+    position: relative;
+    vertical-align: text-bottom;
+}
+
+    .be-bulma-spinner.is-small {
+        --be-bulma-spinner-size: var(--be-bulma-spinner-size-small);
+        --be-bulma-spinner-current-border-width: calc(var(--be-bulma-spinner-border-width) * 0.8);
+    }
+
+    .be-bulma-spinner.is-normal {
+        --be-bulma-spinner-size: var(--be-bulma-spinner-size-normal);
+    }
+
+    .be-bulma-spinner.is-medium {
+        --be-bulma-spinner-size: var(--be-bulma-spinner-size-medium);
+    }
+
+    .be-bulma-spinner.is-large {
+        --be-bulma-spinner-size: var(--be-bulma-spinner-size-large);
+    }
+
+    .be-bulma-spinner.be-bulma-spinner-border {
+        border: var(--be-bulma-spinner-current-border-width) solid currentColor;
+        border-right-color: transparent;
+        border-radius: 50%;
+        animation: be-bulma-spinner-border var(--be-bulma-spinner-animation-duration) linear infinite;
+    }
+
+    .be-bulma-spinner.be-bulma-spinner-grow {
+        border-radius: 50%;
+        background-color: currentColor;
+        animation: be-bulma-spinner-grow var(--be-bulma-spinner-animation-duration) linear infinite;
+    }
+
+    .be-bulma-spinner.be-bulma-spinner-dots {
+        gap: var(--be-bulma-spinner-dot-gap);
+        width: auto;
+        height: auto;
+    }
+
+        .be-bulma-spinner.be-bulma-spinner-dots > .be-bulma-spinner-dot {
+            width: var(--be-bulma-spinner-dot-size);
+            height: var(--be-bulma-spinner-dot-size);
+            border-radius: 50%;
+            background-color: currentColor;
+            animation: be-bulma-spinner-dots var(--be-bulma-spinner-animation-duration) ease-in-out infinite;
+        }
+
+            .be-bulma-spinner.be-bulma-spinner-dots > .be-bulma-spinner-dot:nth-child(2) {
+                animation-delay: 0.12s;
+            }
+
+            .be-bulma-spinner.be-bulma-spinner-dots > .be-bulma-spinner-dot:nth-child(3) {
+                animation-delay: 0.24s;
+            }
+
+.be-bulma-visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+@keyframes be-bulma-spinner-border {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes be-bulma-spinner-grow {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes be-bulma-spinner-dots {
+    0%,
+    80%,
+    100% {
+        opacity: 0.35;
+        transform: scale(0.7);
+    }
+
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .be-bulma-spinner.be-bulma-spinner-border,
+    .be-bulma-spinner.be-bulma-spinner-grow,
+    .be-bulma-spinner.be-bulma-spinner-dots > .be-bulma-spinner-dot {
+        animation-duration: calc(var(--be-bulma-spinner-animation-duration) * 2);
+    }
 }
 
 .be-bulma-page {

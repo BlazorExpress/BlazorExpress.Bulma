@@ -34,6 +34,7 @@ public static class DemoRouteConstants
     public const string Demos_Image_Documentation = Demos_Prefix + "/image";
     public const string Demos_Notification_Documentation = Demos_Prefix + "/notification";
     public const string Demos_ProgressBar_Documentation = Demos_Prefix + "/progress-bar";
+    public const string Demos_Spinner_Documentation = Demos_Prefix + "/spinner";
     public const string Demos_Table_Documentation = Demos_Prefix + "/table";
     public const string Demos_Tags_Documentation = Demos_Prefix + "/tags";
     public const string Demos_Title_Documentation = Demos_Prefix + "/title";
@@ -121,6 +122,7 @@ public static class DemoRouteConstants
     public const string Docs_Image_Documentation = Docs_Prefix + "/image";
     public const string Docs_Notification_Documentation = Docs_Prefix + "/notification";
     public const string Docs_ProgressBar_Documentation = Docs_Prefix + "/progress-bar";
+    public const string Docs_Spinner_Documentation = Docs_Prefix + "/spinner";
     public const string Docs_Table_Documentation = Docs_Prefix + "/table";
     public const string Docs_Tags_Documentation = Docs_Prefix + "/tags";
     public const string Docs_Title_Documentation = Docs_Prefix + "/title";

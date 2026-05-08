@@ -1,0 +1,20 @@
+<div class="is-flex is-align-items-center is-flex-wrap-wrap mb-4" style="gap: 0.75rem;">
+    <Button Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="ShowSpinner">Show spinner</Button>
+    <Button Color="ButtonColor.Warning" Size="ButtonSize.Small" @onclick="HideSpinner">Hide spinner</Button>
+    <Button Size="ButtonSize.Small" @onclick="ToggleSpinner">Toggle</Button>
+</div>
+
+<div class="is-flex is-align-items-center" style="gap: 1rem;">
+    <Spinner Color="SpinnerColor.Success" IsVisible="@isVisible" />
+    <span>Current <code>IsVisible</code>: <strong>@isVisible</strong></span>
+</div>
+
+@code {
+    private bool isVisible = true;
+
+    private void HideSpinner() => isVisible = false;
+
+    private void ShowSpinner() => isVisible = true;
+
+    private void ToggleSpinner() => isVisible = !isVisible;
+}

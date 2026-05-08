@@ -137,6 +137,9 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.UsbCFill, Href = DemoRouteConstants.Demos_ProgressBar_Documentation, Text = "Progress Bar", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Elements }, Status = PageLinkStatus.None, IsActive = true });
 
         index += 1;
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.ArrowRepeat, Href = DemoRouteConstants.Demos_Spinner_Documentation, Text = "Spinner", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Elements }, Status = PageLinkStatus.New, IsActive = true });
+
+        index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.UiRadios, Href = DemoRouteConstants.Demos_Form_RadioInput_Documentation, Text = "Radio Input", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.New, IsActive = true });
 
         index += 1;
