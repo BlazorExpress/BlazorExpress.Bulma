@@ -1,0 +1,125 @@
+@attribute [Route(pageUrl)]
+@layout DemosMainLayout
+
+<PageMetaTags PageUrl="@pageUrl" Title="@metaTitle" Description="@metaDescription" ImageUrl="@imageUrl" />
+
+<PageHero Title="@pageTitle">
+    <SubTitleTemplate>
+        @((MarkupString)pageDescription)
+    </SubTitleTemplate>
+</PageHero>
+
+<DocsLink Href="@DemoRouteConstants.Docs_SplitView_Documentation" />
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="How it works" PageUrl="@pageUrl" Link="how-it-works">
+    <Block>
+        The <strong>SplitView</strong> component creates a two-pane workspace with a draggable divider so users can decide how much room each side should receive.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Place the component inside a container with an explicit height.</li>
+                <li>Provide the two pane fragments through <code>&lt;Pane1&gt;</code> and <code>&lt;Pane2&gt;</code>.</li>
+                <li>Optionally set <code>PrimaryPaneSize</code> to choose the initial split percentage.</li>
+                <li>Optionally set <code>Color</code> to a Bulma semantic value when the divider should pick up your UI accent color.</li>
+            </ol>
+        </div>
+        This demo shows a common master-detail workspace with a resizable file list and preview area.
+    </Block>
+    <Demo Type="typeof(SplitView_Demo_01_How_it_works)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Disable" PageUrl="@pageUrl" Link="disable">
+    <Block>
+        The <strong>IsDisabled</strong> parameter freezes the current pane sizes and turns the divider into a visual boundary instead of an interactive control.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Bind <code>IsDisabled</code> to a boolean field.</li>
+                <li>Toggle that field when your page enters or leaves a locked layout state.</li>
+                <li>Optionally bind <code>PrimaryPaneSize</code> so the current split stays visible in your page state.</li>
+            </ol>
+        </div>
+        This demo lets you lock and unlock the divider while keeping the current split percentage on screen.
+    </Block>
+    <Demo Type="typeof(SplitView_Demo_02_Disable)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Colors" PageUrl="@pageUrl" Link="colors">
+    <Block>
+        The <strong>Color</strong> parameter applies a Bulma semantic accent to the divider, which helps the SplitView align with branded, informational, success, or destructive workflows.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Set <code>Color</code> to a Bulma semantic value such as <code>Primary</code>, <code>Link</code>, <code>Success</code>, or <code>Danger</code>.</li>
+                <li>Use the semantic color as the divider default when you want a stronger visual cue between the panes.</li>
+                <li>Optionally override individual divider states later with the explicit divider color parameters.</li>
+            </ol>
+        </div>
+        This demo covers the full <code>SplitViewColor</code> palette so you can see how the interaction states inherit each accent.
+    </Block>
+    <Demo Type="typeof(SplitView_Demo_06_Colors)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Orientation" PageUrl="@pageUrl" Link="orientation">
+    <Block>
+        The <strong>Orientation</strong> parameter switches the SplitView between a left-right workspace and a top-bottom workspace without changing the basic component shape.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Use <code>SplitViewOrientation.Horizontal</code> for side-by-side panes.</li>
+                <li>Use <code>SplitViewOrientation.Vertical</code> for stacked panes.</li>
+                <li>Choose the orientation that best matches the way users compare or edit the content.</li>
+            </ol>
+        </div>
+        This demo compares both orientations in one place so you can see how the divider and pane flow adapt.
+    </Block>
+    <Demo Type="typeof(SplitView_Demo_03_Orientation)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Mixed" PageUrl="@pageUrl" Link="mixed">
+    <Block>
+        Multiple <strong>SplitView</strong> instances can be nested to build richer workspaces such as explorers, editors, previews, and diagnostics panels.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Place one SplitView inside the pane content of another SplitView.</li>
+                <li>Give each nested area its own height by letting the parent pane fill the available space.</li>
+                <li>Mix horizontal and vertical orientations to create the workspace shape you need.</li>
+            </ol>
+        </div>
+        This demo shows a nested layout with a left explorer, a top editor, and a bottom output panel.
+    </Block>
+    <Demo Type="typeof(SplitView_Demo_04_Mixed)" Tabs="true" />
+</Section>
+
+<Section Class="p-0" Size="HeadingSize.H3" Name="Events" PageUrl="@pageUrl" Link="events">
+    <Block>
+        The <strong>SplitView</strong> component exposes resize lifecycle events so you can react when dragging starts, while the divider moves, and after the final size is committed.
+        <br /><br />
+        <strong>How to use:</strong>
+        <div class="content mb-2">
+            <ol>
+                <li>Handle <code>OnResizeStarted</code> when you want to note the beginning of user interaction.</li>
+                <li>Handle <code>OnResized</code> to update live indicators such as labels or measurements while dragging.</li>
+                <li>Handle <code>OnResizeEnded</code> when you want to persist the final layout choice.</li>
+            </ol>
+        </div>
+        This demo shows live resize feedback along with a small event log for the drag lifecycle.
+    </Block>
+    <Demo Type="typeof(SplitView_Demo_05_Events)" Tabs="true" />
+</Section>
+
+@code {
+    private const string componentName = nameof(SplitView);
+    private const string pageUrl = DemoRouteConstants.Demos_SplitView_Documentation;
+    private const string pageTitle = componentName;
+    private const string pageDescription = $"Use the <code>{componentName}</code> component to build draggable two-pane layouts with Bulma semantic divider colors, horizontal or vertical orientation, nested workspaces, disabled states, and resize events.";
+    private const string metaTitle = $"Blazor {componentName} Component";
+    private const string metaDescription = $"Use the {componentName} component to build draggable two-pane layouts with Bulma semantic divider colors, horizontal or vertical orientation, nested workspaces, disabled states, and resize events.";
+    private const string imageUrl = "";
+}

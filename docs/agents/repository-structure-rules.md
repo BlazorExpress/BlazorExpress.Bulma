@@ -120,8 +120,10 @@ Repository examples:
 - When a new component gets its first demo/docs presence, add it to both demo navigation sources in the same change set:
   - `BlazorExpress.Bulma.Demo.RCL/Utils/DemoPageLinkUtil.cs` for the home page and demo catalog links
   - `BlazorExpress.Bulma.Demo.RCL/Layout/DemosMainLayout.razor.cs` for the demos sidebar menu
+- When a new component gets its first docs page, add it to `BlazorExpress.Bulma.Demo.RCL/Layout/DocsMainLayout.razor.cs` for the docs sidebar menu in the same change set.
 - Repository example:
   - `Spinner` is listed in both `DemoPageLinkUtil.GetDemosLinks()` and the `DemosMainLayout` `ELEMENTS` section.
+  - docs pages such as `Spinner` are also listed in `DocsMainLayout`.
 
 ## Maintenance Rule
 

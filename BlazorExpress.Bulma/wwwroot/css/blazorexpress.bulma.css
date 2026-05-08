@@ -204,6 +204,122 @@ html {
     }
 }
 
+.be-bulma-split-view {
+    align-items: stretch;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.be-bulma-split-view-horizontal {
+    flex-direction: row;
+}
+
+.be-bulma-split-view-vertical {
+    flex-direction: column;
+}
+
+.be-bulma-split-view-pane {
+    min-height: 0;
+    min-width: 0;
+    overflow: auto;
+}
+
+.be-bulma-split-view-pane-primary {
+    flex: 0 0 var(--be-bulma-split-view-primary-pane-size, 50%);
+}
+
+.be-bulma-split-view-pane-secondary {
+    flex: 1 1 0;
+}
+
+.be-bulma-split-view-divider {
+    align-items: center;
+    background-color: var(--be-bulma-split-view-divider-background-color, color-mix(in srgb, var(--be-bulma-split-view-divider-base-color, var(--bulma-border-weak, #b5b5b5)) 18%, transparent));
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    transition: background-color .2s ease;
+    user-select: none;
+    z-index: 5;
+}
+
+.be-bulma-split-view-horizontal > .be-bulma-split-view-divider {
+    cursor: col-resize;
+    width: 8px;
+}
+
+.be-bulma-split-view-vertical > .be-bulma-split-view-divider {
+    cursor: row-resize;
+    height: 8px;
+}
+
+.be-bulma-split-view-divider:hover {
+    background-color: var(--be-bulma-split-view-divider-hover-background-color, color-mix(in srgb, var(--be-bulma-split-view-divider-base-color, var(--bulma-border, #dbdbdb)) 32%, transparent));
+}
+
+.be-bulma-split-view-dragging > .be-bulma-split-view-divider {
+    background-color: var(--be-bulma-split-view-divider-dragging-background-color, color-mix(in srgb, var(--be-bulma-split-view-divider-base-color, var(--bulma-border, #dbdbdb)) 55%, transparent));
+}
+
+.be-bulma-split-view-handle {
+    background: var(--bulma-scheme-main, #ffffff);
+    border: 1px solid var(--bulma-border, #dbdbdb);
+    border-radius: 999px;
+    box-shadow: 0 1px 3px rgba(10, 10, 10, .12);
+    display: flex;
+    gap: 2px;
+    padding: 3px;
+}
+
+.be-bulma-split-view-horizontal .be-bulma-split-view-handle {
+    flex-direction: column;
+    height: 30px;
+    width: 10px;
+}
+
+.be-bulma-split-view-vertical .be-bulma-split-view-handle {
+    flex-direction: row;
+    height: 10px;
+    width: 30px;
+}
+
+.be-bulma-split-view-grip {
+    background: var(--bulma-border-weak, #b5b5b5);
+    border-radius: 1px;
+    display: block;
+}
+
+.be-bulma-split-view-horizontal .be-bulma-split-view-grip {
+    height: 2px;
+    width: 4px;
+}
+
+.be-bulma-split-view-vertical .be-bulma-split-view-grip {
+    height: 4px;
+    width: 2px;
+}
+
+.be-bulma-split-view-disabled > .be-bulma-split-view-divider,
+.be-bulma-split-view-divider-disabled {
+    cursor: default;
+}
+
+.be-bulma-split-view-disabled .be-bulma-split-view-handle {
+    opacity: .65;
+}
+
+.be-bulma-split-view-disabled > .be-bulma-split-view-divider:hover {
+    background-color: var(--be-bulma-split-view-divider-background-color, color-mix(in srgb, var(--be-bulma-split-view-divider-base-color, var(--bulma-border-weak, #b5b5b5)) 18%, transparent));
+}
+
+.be-bulma-split-view-dragging .be-bulma-split-view-pane > * {
+    pointer-events: none;
+    user-select: none;
+}
+
 .be-bulma-page {
     position: relative;
     display: flex !important;

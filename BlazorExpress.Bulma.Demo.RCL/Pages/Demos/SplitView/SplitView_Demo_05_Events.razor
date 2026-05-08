@@ -1,0 +1,55 @@
+<div class="mb-4">
+    <p class="mb-2">Current <code>PrimaryPaneSize</code>: <strong>@currentPrimaryPaneSize.ToString("0.##")%</strong></p>
+    <p class="mb-0">Latest <code>OnResized</code> message: <strong>@lastResizeMessage</strong></p>
+</div>
+
+<div style="height: 18rem;">
+    <SplitView PrimaryPaneSize="@currentPrimaryPaneSize"
+               OnResizeStarted="HandleResizeStarted"
+               OnResized="HandleResized"
+               OnResizeEnded="HandleResizeEnded">
+        <Pane1>
+            <div style="padding: 1rem;">
+                <p class="title is-6 mb-3">Resizable Pane</p>
+                <div class="content">
+                    <p>Drag the divider and watch the current size plus the event messages update.</p>
+                </div>
+            </div>
+        </Pane1>
+        <Pane2>
+            <div style="padding: 1rem;">
+                <p class="title is-6 mb-3">Event Summary</p>
+                <div class="content">
+                    <p>The move event updates the live percentage while the start and end events are recorded below.</p>
+                </div>
+            </div>
+        </Pane2>
+    </SplitView>
+</div>
+
+<div class="mt-5" style="max-height: 180px; overflow-y: auto;">
+    @foreach (var item in messages)
+    {
+        <p>Event: @item.Event, Message: @item.Message, UTC Time: @item.TimeStamp</p>
+    }
+</div>
+
+@code {
+    private double currentPrimaryPaneSize = 40;
+    private string lastResizeMessage = "No resize yet.";
+    private List<SplitViewMessage> messages = new();
+
+    private void HandleResized(SplitViewResizeEventArgs args)
+    {
+        currentPrimaryPaneSize = args.PrimaryPaneSize;
+        lastResizeMessage = $"Pane 1: {args.PrimaryPaneSize:0.##}%, Pane 2: {args.SecondaryPaneSize:0.##}%";
+    }
+
+    private void HandleResizeEnded(SplitViewResizeEventArgs args) =>
+        messages.Add(new("OnResizeEnded", $"Pane 1: {args.PrimaryPaneSize:0.##}%, Pane 2: {args.SecondaryPaneSize:0.##}%", DateTime.UtcNow));
+
+    private void HandleResizeStarted(SplitViewResizeEventArgs args) =>
+        messages.Add(new("OnResizeStarted", $"Pane 1: {args.PrimaryPaneSize:0.##}%, Pane 2: {args.SecondaryPaneSize:0.##}%", DateTime.UtcNow));
+
+    private record SplitViewMessage(string Event, string Message, DateTime TimeStamp);
+}

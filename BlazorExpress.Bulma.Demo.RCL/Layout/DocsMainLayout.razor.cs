@@ -152,7 +152,8 @@ public partial class DocsMainLayout : MainLayoutBase
             Name = "LAYOUT",
             CssClass = "is-size-7 has-text-weight-bold has-text-success",
             Links = [
-                new Link { Href = DemoRouteConstants.Docs_Hero_Documentation, Text = "Hero" }
+                new Link { Href = DemoRouteConstants.Docs_Hero_Documentation, Text = "Hero" },
+                new Link { Href = DemoRouteConstants.Docs_SplitView_Documentation, Text = "SplitView" }
             ]
         });
 

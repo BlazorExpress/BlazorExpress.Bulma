@@ -1,0 +1,43 @@
+<div style="height: 24rem;">
+    <SplitView Orientation="SplitViewOrientation.Horizontal" PrimaryPaneSize="26">
+        <Pane1>
+            <div style="padding: 1rem;">
+                <p class="title is-6 mb-3">Explorer</p>
+                <div class="content">
+                    <ul>
+                        <li>Dashboard</li>
+                        <li>Reports</li>
+                        <li>Queries</li>
+                        <li>Settings</li>
+                    </ul>
+                </div>
+            </div>
+        </Pane1>
+        <Pane2>
+            <SplitView Orientation="SplitViewOrientation.Vertical" PrimaryPaneSize="58">
+                <Pane1>
+                    <div style="padding: 1rem;">
+                        <p class="title is-6 mb-3">Editor</p>
+                        <div class="box">
+                            SELECT *
+                            <br />
+                            FROM Customers
+                            <br />
+                            WHERE IsActive = 1
+                            <br />
+                            ORDER BY Name;
+                        </div>
+                    </div>
+                </Pane1>
+                <Pane2>
+                    <div style="padding: 1rem;">
+                        <p class="title is-6 mb-3">Output</p>
+                        <div class="content">
+                            <p>Nested SplitView layouts let you combine navigation, editing, diagnostics, and previews in a single reusable pattern.</p>
+                        </div>
+                    </div>
+                </Pane2>
+            </SplitView>
+        </Pane2>
+    </SplitView>
+</div>

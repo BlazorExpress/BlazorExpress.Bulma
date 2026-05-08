@@ -1,0 +1,30 @@
+@namespace BlazorExpress.Bulma
+@inherits BulmaComponentBase
+
+<div @ref="@Element"
+     id="@Id"
+     class="@ClassNames"
+     style="@StyleNames"
+     @attributes="@AdditionalAttributes">
+    <div class="@PrimaryPaneClassNames">
+        @Pane1
+    </div>
+
+    <div class="@DividerClassNames"
+         role="separator"
+         aria-disabled="@AriaDisabled"
+         aria-orientation="@SeparatorOrientation"
+         aria-valuemin="0"
+         aria-valuemax="100"
+         aria-valuenow="@AriaValueNow">
+        <div class="@BulmaCssClass.SplitViewHandle" aria-hidden="true">
+            <span class="@BulmaCssClass.SplitViewGrip"></span>
+            <span class="@BulmaCssClass.SplitViewGrip"></span>
+            <span class="@BulmaCssClass.SplitViewGrip"></span>
+        </div>
+    </div>
+
+    <div class="@SecondaryPaneClassNames">
+        @Pane2
+    </div>
+</div>

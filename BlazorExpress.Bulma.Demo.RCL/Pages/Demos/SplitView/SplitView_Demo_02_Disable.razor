@@ -1,0 +1,39 @@
+<div class="is-flex is-align-items-center is-flex-wrap-wrap mb-4" style="gap: 0.75rem;">
+    <Button Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="EnableDrag">Enable drag</Button>
+    <Button Color="ButtonColor.Warning" Size="ButtonSize.Small" @onclick="DisableDrag">Disable drag</Button>
+    <Button Size="ButtonSize.Small" @onclick="ToggleDrag">Toggle</Button>
+    <span>Current <code>IsDisabled</code>: <strong>@isDisabled</strong></span>
+    <span>Current <code>PrimaryPaneSize</code>: <strong>@primaryPaneSize.ToString("0.##")%</strong></span>
+</div>
+
+<div style="height: 20rem;">
+    <SplitView IsDisabled="@isDisabled" @bind-PrimaryPaneSize="primaryPaneSize">
+        <Pane1>
+            <div style="padding: 1rem;">
+                <p class="title is-6 mb-3">Locked Navigation</p>
+                <div class="content">
+                    <p>Disable dragging when you want to preserve a known layout during a wizard, review mode, or presentation flow.</p>
+                </div>
+            </div>
+        </Pane1>
+        <Pane2>
+            <div style="padding: 1rem;">
+                <p class="title is-6 mb-3">Working Surface</p>
+                <div class="box">
+                    Turn dragging off and on with the buttons above, then try moving the divider again.
+                </div>
+            </div>
+        </Pane2>
+    </SplitView>
+</div>
+
+@code {
+    private bool isDisabled;
+    private double primaryPaneSize = 50;
+
+    private void DisableDrag() => isDisabled = true;
+
+    private void EnableDrag() => isDisabled = false;
+
+    private void ToggleDrag() => isDisabled = !isDisabled;
+}

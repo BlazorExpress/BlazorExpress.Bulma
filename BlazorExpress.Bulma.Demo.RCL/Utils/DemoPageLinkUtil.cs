@@ -167,6 +167,9 @@ public static class DemoPageLinkUtil
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.ArrowRepeat, Href = DemoRouteConstants.Demos_Spinner_Documentation, Text = "Spinner", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Elements }, Status = PageLinkStatus.New, IsActive = true });
 
         index += 1;
+        links.Add(new PageLink { Id = index, IconName = BootstrapIconName.LayoutSplit, Href = DemoRouteConstants.Demos_SplitView_Documentation, Text = "SplitView", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Layout }, Status = PageLinkStatus.New, IsActive = true });
+
+        index += 1;
         links.Add(new PageLink { Id = index, IconName = BootstrapIconName.None, Href = DemoRouteConstants.Demos_Form_Switch_Documentation, Text = "Switch", Categories = new() { DemoPageLinkCategory.All, DemoPageLinkCategory.Form }, Status = PageLinkStatus.None, IsActive = false });
 
         index += 1;
