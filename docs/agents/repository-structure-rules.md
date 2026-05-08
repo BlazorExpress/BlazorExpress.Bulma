@@ -117,6 +117,11 @@ Repository examples:
 
 - If a public library component changes, review whether matching docs, demos, screenshots, or snippets should also change.
 - Keep those companion updates in the same change set when they are affected.
+- When a new component gets its first demo/docs presence, add it to both demo navigation sources in the same change set:
+  - `BlazorExpress.Bulma.Demo.RCL/Utils/DemoPageLinkUtil.cs` for the home page and demo catalog links
+  - `BlazorExpress.Bulma.Demo.RCL/Layout/DemosMainLayout.razor.cs` for the demos sidebar menu
+- Repository example:
+  - `Spinner` is listed in both `DemoPageLinkUtil.GetDemosLinks()` and the `DemosMainLayout` `ELEMENTS` section.
 
 ## Maintenance Rule
 

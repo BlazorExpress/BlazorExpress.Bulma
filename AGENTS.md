@@ -22,6 +22,10 @@ This file is the entry point for development agents working in this repository. 
   Rule: if a library change affects public parameters, events, rendered output, install/setup guidance, or user-facing behavior, update the matching demo/docs content in the same change set.
   Example: a change under `BlazorExpress.Bulma/Components/Button/` should trigger review of `BlazorExpress.Bulma.Demo.RCL/Pages/Docs/Button/` and `Pages/Demos/Button/`.
 
+- Align demo navigation sources for every new component implementation.
+  Rule: when you add a new component or first-time demo/docs area, wire it into both demo navigation sources in the same change set: `DemoPageLinkUtil` for the home/demo catalog and `DemosMainLayout` for the demos sidebar menu.
+  Example: adding `Spinner` requires both the `DemoPageLinkUtil.GetDemosLinks()` entry and the `DemosMainLayout` `ELEMENTS` sidebar link.
+
 - Keep ownership boundaries intact.
   Rule: reusable component code and reusable static assets belong in `BlazorExpress.Bulma/`; docs, demos, screenshots, demo CSS/JS, and content assets belong in `BlazorExpress.Bulma.Demo.RCL/`; host startup wiring belongs in the server or WebAssembly host projects.
 

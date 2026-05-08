@@ -37,7 +37,7 @@
 </div>
 
 @code {
-    private HashSet<PageLink> componentsLinks = null!;
+    private List<PageLink> componentsLinks = null!;
 
     [Parameter]
     public string Title { get; set; } = default!;
@@ -49,6 +49,6 @@
     {
         componentsLinks = DemoPageLinkUtil.GetDemosLinks()
         .Where(link => link.Categories.Contains(Category) && link.IsActive && !link.ExcludedFromHomePage)
-        .ToHashSet();
+        .ToList();
     }
 }
