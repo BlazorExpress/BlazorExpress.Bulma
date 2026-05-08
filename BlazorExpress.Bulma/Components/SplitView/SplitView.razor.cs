@@ -136,6 +136,18 @@ public partial class SplitView : BulmaComponentBase, IAsyncDisposable
         );
 
     /// <summary>
+    /// Gets or sets the Bulma semantic color used for divider state defaults.
+    /// <para>
+    /// Default value is <see cref="SplitViewColor.None" />.
+    /// </para>
+    /// </summary>
+    [AddedVersion("1.2.0")]
+    [DefaultValue(SplitViewColor.None)]
+    [Description("Gets or sets the Bulma semantic color used for divider state defaults.")]
+    [Parameter]
+    public SplitViewColor Color { get; set; } = SplitViewColor.None;
+
+    /// <summary>
     /// Gets or sets the divider background color.
     /// <para>
     /// Default value is <see langword="null" />.
@@ -294,6 +306,7 @@ public partial class SplitView : BulmaComponentBase, IAsyncDisposable
     protected override string? StyleNames =>
         BuildStyleNames(
             Style,
+            ($"--be-bulma-split-view-divider-base-color: {Color.ToSplitViewDividerColorCssValue()};", Color != SplitViewColor.None),
             ($"--be-bulma-split-view-divider-background-color: {DividerBackgroundColor};", !string.IsNullOrWhiteSpace(DividerBackgroundColor)),
             ($"--be-bulma-split-view-divider-dragging-background-color: {DividerDraggingBackgroundColor};", !string.IsNullOrWhiteSpace(DividerDraggingBackgroundColor)),
             ($"--be-bulma-split-view-divider-hover-background-color: {DividerHoverBackgroundColor};", !string.IsNullOrWhiteSpace(DividerHoverBackgroundColor)),

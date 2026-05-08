@@ -402,6 +402,22 @@ public static class EnumExtensions
             _ => null
         };
 
+    public static string? ToSplitViewDividerColorCssValue(this SplitViewColor color) =>
+        color switch
+        {
+            SplitViewColor.Primary => "var(--bulma-primary, hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l)))",
+            SplitViewColor.Link => "var(--bulma-link, hsl(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-l)))",
+            SplitViewColor.Info => "var(--bulma-info, hsl(var(--bulma-info-h), var(--bulma-info-s), var(--bulma-info-l)))",
+            SplitViewColor.Success => "var(--bulma-success, hsl(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l)))",
+            SplitViewColor.Warning => "var(--bulma-warning, hsl(var(--bulma-warning-h), var(--bulma-warning-s), var(--bulma-warning-l)))",
+            SplitViewColor.Danger => "var(--bulma-danger, hsl(var(--bulma-danger-h), var(--bulma-danger-s), var(--bulma-danger-l)))",
+            SplitViewColor.White => "var(--bulma-white, #ffffff)",
+            SplitViewColor.Light => "var(--bulma-light, #f5f5f5)",
+            SplitViewColor.Dark => "var(--bulma-dark, #363636)",
+            SplitViewColor.Black => "var(--bulma-black, #0a0a0a)",
+            _ => null
+        };
+
     public static string? ToProgressBarColorClass(this ProgressBarColor color) =>
         color switch
         {
