@@ -183,10 +183,15 @@ window.blazorexpress.bulma = {
                 return;
             }
 
-            window.removeEventListener("mousemove", instance.onMouseMove);
-            window.removeEventListener("mouseup", instance.onMouseUp);
+            window.removeEventListener("pointermove", instance.onPointerMove);
+            window.removeEventListener("pointerup", instance.onPointerUp);
+            window.removeEventListener("pointercancel", instance.onPointerCancel);
 
-            instance.divider?.removeEventListener("mousedown", instance.onMouseDown);
+            if (instance.activePointerId !== null && instance.divider?.hasPointerCapture?.(instance.activePointerId)) {
+                instance.divider.releasePointerCapture(instance.activePointerId);
+            }
+
+            instance.divider?.removeEventListener("pointerdown", instance.onPointerDown);
             instance.element?.classList.remove("be-bulma-split-view-dragging");
 
             delete window.blazorexpress.bulma.splitView.instances[elementId];
@@ -227,37 +232,66 @@ window.blazorexpress.bulma = {
             }
 
             const instance = {
+                activePointerId: null,
                 divider: divider,
                 dotNetHelper: dotNetHelper,
                 dragging: false,
                 element: element,
-                onMouseDown: null,
-                onMouseMove: null,
-                onMouseUp: null,
+                onPointerCancel: null,
+                onPointerDown: null,
+                onPointerMove: null,
+                onPointerUp: null,
                 options: options
             };
 
-            instance.onMouseDown = (event) => {
+            instance.onPointerDown = (event) => {
                 if (instance.options.isDisabled) {
                     return;
                 }
 
-                event.preventDefault();
+                if (event.pointerType === "mouse" && event.button !== 0) {
+                    return;
+                }
+
+                if (event.isPrimary === false) {
+                    return;
+                }
+
+                if (event.cancelable) {
+                    event.preventDefault();
+                }
 
                 instance.dragging = true;
+                instance.activePointerId = event.pointerId ?? null;
                 instance.element.classList.add("be-bulma-split-view-dragging");
+
+                if (instance.activePointerId !== null && typeof instance.divider.setPointerCapture === "function") {
+                    try {
+                        instance.divider.setPointerCapture(instance.activePointerId);
+                    } catch {
+                    }
+                }
 
                 if (instance.options.notifyResizeStarted) {
                     instance.dotNetHelper.invokeMethodAsync("OnResizeStartedJS", instance.options.primaryPaneSize, 100 - instance.options.primaryPaneSize);
                 }
 
-                window.addEventListener("mousemove", instance.onMouseMove);
-                window.addEventListener("mouseup", instance.onMouseUp);
+                window.addEventListener("pointermove", instance.onPointerMove);
+                window.addEventListener("pointerup", instance.onPointerUp);
+                window.addEventListener("pointercancel", instance.onPointerCancel);
             };
 
-            instance.onMouseMove = (event) => {
+            instance.onPointerMove = (event) => {
                 if (!instance.dragging) {
                     return;
+                }
+
+                if (instance.activePointerId !== null && event.pointerId !== instance.activePointerId) {
+                    return;
+                }
+
+                if (event.cancelable) {
+                    event.preventDefault();
                 }
 
                 const nextPaneSize = window.blazorexpress.bulma.splitView.clamp(
@@ -276,21 +310,36 @@ window.blazorexpress.bulma = {
                 }
             };
 
-            instance.onMouseUp = () => {
+            instance.onPointerUp = (event) => {
                 if (!instance.dragging) {
                     return;
                 }
 
+                if (instance.activePointerId !== null && event?.pointerId !== undefined && event.pointerId !== instance.activePointerId) {
+                    return;
+                }
+
+                const pointerId = instance.activePointerId;
                 instance.dragging = false;
+                instance.activePointerId = null;
                 instance.element.classList.remove("be-bulma-split-view-dragging");
 
-                window.removeEventListener("mousemove", instance.onMouseMove);
-                window.removeEventListener("mouseup", instance.onMouseUp);
+                window.removeEventListener("pointermove", instance.onPointerMove);
+                window.removeEventListener("pointerup", instance.onPointerUp);
+                window.removeEventListener("pointercancel", instance.onPointerCancel);
+
+                if (pointerId !== null && instance.divider?.hasPointerCapture?.(pointerId)) {
+                    instance.divider.releasePointerCapture(pointerId);
+                }
 
                 instance.dotNetHelper.invokeMethodAsync("OnResizeEndedJS", instance.options.primaryPaneSize, 100 - instance.options.primaryPaneSize);
             };
 
-            divider.addEventListener("mousedown", instance.onMouseDown);
+            instance.onPointerCancel = (event) => {
+                instance.onPointerUp(event);
+            };
+
+            divider.addEventListener("pointerdown", instance.onPointerDown);
 
             window.blazorexpress.bulma.splitView.instances[elementId] = instance;
             window.blazorexpress.bulma.splitView.apply(instance);
@@ -306,7 +355,7 @@ window.blazorexpress.bulma = {
             window.blazorexpress.bulma.splitView.apply(instance);
 
             if (instance.options.isDisabled && instance.dragging) {
-                instance.onMouseUp();
+                instance.onPointerUp();
             }
         }
     },
