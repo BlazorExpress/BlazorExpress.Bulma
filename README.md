@@ -26,6 +26,9 @@
 ## Table of contents
 
 - [Install](#install)
+- [Release 1.2.0](#release-120)
+- [Versions](#versions)
+- [Supported Versions](#supported-versions)
 - [Install Blazor Express Bulma templates](#install-blazor-express-bulma-templates)
 - [Components](#blazor-express-bulma-components)
 - [Documentation](#documentation)
@@ -34,7 +37,31 @@
 
 ## Install
 
-Install with [NuGet](https://www.nuget.org/): `Install-Package BlazorExpress.Bulma -Version 1.0.0`
+Install with [NuGet](https://www.nuget.org/): `Install-Package BlazorExpress.Bulma -Version 1.2.0`
+
+## Release 1.2.0
+
+`1.2.0` adds Card, Menu, Panel, Spinner, SplitView, SelectInput, TextAreaInput, CheckboxInput, CheckboxListInput, RadioInput, RadioListInput, and chart components, along with PdfViewer password-flow improvements.
+
+## Versions
+
+| Package | Version | Notes |
+|:--|:--|:--|
+| `BlazorExpress.Bulma` | `1.2.0` | Primary UI component library package. |
+| `BlazorExpress.Core` | `0.3.0` | Required dependency referenced by the library package. |
+| `BlazorExpress.ChartJS` | `1.2.2` | Optional package used by the chart docs and demos. |
+
+## Supported Versions
+
+| Surface | Version |
+|:--|:--|
+| .NET targets | `net8.0`, `net9.0`, `net10.0` |
+| Bulma | `1.0.4` |
+| PDF.js | `4.0.379` |
+| Bootstrap Icons | `1.11.3` |
+| Google Font Icons | Included |
+| Chart.js | `4.4.1` |
+| `chartjs-plugin-datalabels` | `2.2.0` |
 
 ## Components
 
