@@ -1,13 +1,16 @@
-<Section Class="p-0" Size="HeadingSize.H4" Name="Prerequisites" PageUrl="@PageUrl" Link="prerequisites">
-    <Block>
-        Add the <code>BlazorExpress.ChartJS</code> package to your project and load the required scripts:
-        <code>Chart.js</code>,
-        <code>chartjs-plugin-datalabels</code> for data-label demos,
-        and <code>_content/BlazorExpress.ChartJS/blazorexpress.chartjs.js</code>.
-    </Block>
+<Section Class="p-0" Size="HeadingSize.H4" Name="Chart setup" PageUrl="@PageUrl" Link="chart-setup">
+    <Message Color="MessageColor.Info">
+        <MessageBody>
+            <strong>Before using any chart demo:</strong> install <code>BlazorExpress.ChartJS</code> <code>1.2.2</code>, load <code>Chart.js</code> <code>4.4.1</code>, <code>chartjs-plugin-datalabels</code> <code>2.2.0</code>, and <code>_content/BlazorExpress.ChartJS/blazorexpress.chartjs.js</code>, then add <code>@@using BlazorExpress.ChartJS</code> to your chart page or chart folder.
+            <br /><br />
+            Follow the <a href="@ChartSetupUrl">shared chart setup guide</a>, the <a href="@DemoRouteConstants.Docs_Getting_Started_WebAssembly_NET_8">.NET 8 WebAssembly guide</a>, or the <a href="@DemoRouteConstants.Docs_Getting_Started_WebApp_Server_NET_8">.NET 8 Web App Server guide</a>. For full chart component guidance and examples, visit <a href="https://chartjs.blazorexpress.com/" target="_blank">chartjs.blazorexpress.com</a>.
+        </MessageBody>
+    </Message>
 </Section>
 
 @code {
     [Parameter]
     public string PageUrl { get; set; } = string.Empty;
+
+    private static string ChartSetupUrl => $"{DemoRouteConstants.Docs_Getting_Started_Introduction}#chart-setup";
 }

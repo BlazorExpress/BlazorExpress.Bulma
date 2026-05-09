@@ -180,6 +180,20 @@ Repository example:
 - `Pages/Demos/Modal/ModalDocumentation.razor`
 - `Pages/Demos/Card/CardDocumentation.razor`
 
+### Pattern: Centralize chart setup guidance
+
+Rule:
+- Keep chart setup instructions centralized instead of rewriting ad hoc setup notes on each chart demo page.
+- Use the shared chart setup callout in `Prerequisites.razor` for chart demo pages and keep the fuller shared setup target in `Pages/Docs/GettingStarted/GettingStartedDocumentation.razor`.
+- When chart setup depends on external guidance, point users to `chartjs.blazorexpress.com` in addition to the local getting-started setup section.
+
+Generic example:
+- if multiple chart demo pages all depend on the same package, scripts, and `@using` statements, update the shared chart setup content once and let the chart pages inherit it.
+
+Repository example:
+- `Pages/Demos/Charts/*/*Documentation.razor` uses `Prerequisites.razor`
+- `Pages/Docs/GettingStarted/GettingStartedDocumentation.razor` contains the shared chart setup target
+
 Repository example:
 - `Pages/Docs/Button/Button_Doc_01_Documentation.razor`
 - `Pages/Demos/Button/Button_Demo_09_Click_Events.razor`

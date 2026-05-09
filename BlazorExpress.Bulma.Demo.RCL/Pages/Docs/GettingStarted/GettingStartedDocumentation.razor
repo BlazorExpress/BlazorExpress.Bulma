@@ -125,6 +125,31 @@
     </Block>
 </Section>
 
+<Section Class="p-0" Size="HeadingSize.H2" Name="Chart Setup" PageUrl="@pageUrl" Link="chart-setup">
+    <Block>
+        Use the checklist below before trying any chart demo or chart component in <code>BlazorExpress.Bulma</code>.
+    </Block>
+    <Block>
+        <div class="content">
+            <ol>
+                <li>Install <code>BlazorExpress.ChartJS</code> <code>1.2.2</code> in the same app where you install <code>BlazorExpress.Bulma</code>.</li>
+                <li>Load <code>Chart.js</code> <code>4.4.1</code>, <code>chartjs-plugin-datalabels</code> <code>2.2.0</code>, and <code>_content/BlazorExpress.ChartJS/blazorexpress.chartjs.js</code>.</li>
+                <li>Add <code>@@using BlazorExpress.ChartJS</code> to the chart page itself or to a chart-specific <code>_Imports.razor</code>.</li>
+                <li>Use the project setup guide that matches your app type for the exact insertion points and code snippets.</li>
+            </ol>
+        </div>
+    </Block>
+    <Block>
+        <div class="content">
+            <ul>
+                <li><DocsLink Text=".NET 8 WebAssembly chart setup guide" Href="@DemoRouteConstants.Docs_Getting_Started_WebAssembly_NET_8" /></li>
+                <li><DocsLink Text=".NET 8 Web App Server chart setup guide" Href="@DemoRouteConstants.Docs_Getting_Started_WebApp_Server_NET_8" /></li>
+                <li>For complete chart setup guidance and component examples, visit <a href="https://chartjs.blazorexpress.com/" target="_blank">chartjs.blazorexpress.com</a>.</li>
+            </ul>
+        </div>
+    </Block>
+</Section>
+
 <Section Class="p-0" Size="HeadingSize.H2" Name="Documentation" PageUrl="@pageUrl" Link="documentation">
     <Block>
         Please find the getting started documentation links, corresponding to each .NET version and project type, listed below:
