@@ -81,7 +81,12 @@ public partial class BulmaLayout : BulmaLayoutComponentBase
 
     [Parameter] public RenderFragment? HeaderSection { get; set; }
 
-    [Parameter] public string? HeaderSectionCssClass { get; set; } = "d-flex justify-content-end";
+    private string? HeaderSectionClassNames =>
+        BuildClassNames(
+            HeaderSectionCssClass
+        );
+
+    [Parameter] public string? HeaderSectionCssClass { get; set; }
 
     [Parameter] public RenderFragment? SidebarSection { get; set; }
 
