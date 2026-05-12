@@ -15,10 +15,14 @@
 
 ## Status
 
+Track the latest published package version and download activity from NuGet at a glance.
+
 [![NuGet](https://img.shields.io/nuget/vpre/blazorexpress.bulma)](https://www.nuget.org/packages/blazorexpress.bulma/absoluteLatest)
 [![NuGet](https://img.shields.io/nuget/dt/blazorexpress.bulma.svg)](https://www.nuget.org/packages/blazorexpress.bulma/absoluteLatest)
 
 ## Docs & Demos
+
+Explore the documentation for implementation guidance and browse live demos to evaluate the components before adoption.
 
 - [Docs Website](https://bulma.blazorexpress.com/docs/)
 - [Demos Website](https://bulma.blazorexpress.com/demos/)
@@ -37,13 +41,19 @@
 
 ## Install
 
+Get started quickly by installing the NuGet package and integrating the library into your Blazor application.
+
 Install with [NuGet](https://www.nuget.org/): `Install-Package BlazorExpress.Bulma -Version 1.2.0`
 
 ## Release 1.2.0
 
+This release expands the component catalog and improves key user workflows for common application scenarios.
+
 `1.2.0` adds Card, Menu, Panel, Spinner, SplitView, SelectInput, TextAreaInput, CheckboxInput, CheckboxListInput, RadioInput, RadioListInput, and chart components, along with PdfViewer password-flow improvements.
 
 ## Versions
+
+Use the package versions below when planning installation, upgrades, or dependency alignment across projects.
 
 | Package | Version | Notes |
 |:--|:--|:--|
@@ -52,6 +62,8 @@ Install with [NuGet](https://www.nuget.org/): `Install-Package BlazorExpress.Bul
 | `BlazorExpress.ChartJS` | `1.2.2` | Optional package used by the chart docs and demos. |
 
 ## Supported Versions
+
+Reference the currently supported target frameworks and front-end dependencies used by the library.
 
 | Surface | Version |
 |:--|:--|
@@ -65,7 +77,7 @@ Install with [NuGet](https://www.nuget.org/): `Install-Package BlazorExpress.Bul
 
 ## Components
 
-Browse the currently available components, organized by category, with direct links to the documentation and live demos. This section is intended to help evaluators and adopters quickly explore the library surface area.
+Explore the current component catalog with direct access to documentation and live demos. The list is organized by category to help teams evaluate the library quickly and identify the components most relevant to their applications.
 
 | Category | Component Name | Docs | Demo |
 |:--|:--|:--|:--|
@@ -120,10 +132,7 @@ Browse the currently available components, organized by category, with direct li
 
 ## Component Screenshots
 
-Preview the available components visually before opening the full documentation or demos. Existing screenshots are shown where available, and components without a captured preview currently use a placeholder image that can be replaced later.
-
-Placeholder image currently used for missing screenshots:
-`BlazorExpress.Bulma.Demo.RCL/wwwroot/images/placeholders/640x360.png`
+Preview the out-of-the-box look and feel of the available components before diving into the documentation or live demos. These screenshots are intended to give evaluators, developers, and stakeholders a faster visual overview of the library.
 
 ### Features
 
@@ -188,7 +197,7 @@ Placeholder image currently used for missing screenshots:
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/progress-bar.png" alt="Progress Bar screenshot" width="320">
 
 **Spinner**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/placeholders/640x360.png" alt="Spinner placeholder screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/spinner.png" alt="Spinner screenshot" width="320">
 
 **Tags**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/tag.png" alt="Tags screenshot" width="320">
@@ -196,10 +205,10 @@ Placeholder image currently used for missing screenshots:
 ### Form
 
 **Checkbox List Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/placeholders/640x360.png" alt="Checkbox List Input placeholder screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/checkbox-list-input.png" alt="Checkbox List Input screenshot" width="320">
 
 **Checkbox Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/placeholders/640x360.png" alt="Checkbox Input placeholder screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/checkbox-input.png" alt="Checkbox Input screenshot" width="320">
 
 **Date Input**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/date-input.png" alt="Date Input screenshot" width="320">
@@ -214,16 +223,16 @@ Placeholder image currently used for missing screenshots:
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/otp-input.png" alt="OTP Input screenshot" width="320">
 
 **Radio Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/placeholders/640x360.png" alt="Radio Input placeholder screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radio-input.png" alt="Radio Input screenshot" width="320">
 
 **Radio List Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/placeholders/640x360.png" alt="Radio List Input placeholder screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radio-list-input.png" alt="Radio List Input screenshot" width="320">
 
 **Select Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/placeholders/640x360.png" alt="Select Input placeholder screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/select-input.png" alt="Select Input screenshot" width="320">
 
 **Text Area Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/placeholders/640x360.png" alt="Text Area Input placeholder screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/textarea-input.png" alt="Text Area Input screenshot" width="320">
 
 **Text Input**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/text-input.png" alt="Text Input screenshot" width="320">
@@ -234,7 +243,7 @@ Placeholder image currently used for missing screenshots:
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/breadcrumb.png" alt="Breadcrumb screenshot" width="320">
 
 **Card**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/placeholders/640x360.png" alt="Card placeholder screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/card.png" alt="Card screenshot" width="320">
 
 **Confirm Dialog**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/confirm-dialog.png" alt="Confirm Dialog screenshot" width="320">
@@ -249,7 +258,7 @@ Placeholder image currently used for missing screenshots:
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/grid.png" alt="Grid screenshot" width="320">
 
 **Menu**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/placeholders/640x360.png" alt="Menu placeholder screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/menu.png" alt="Menu screenshot" width="320">
 
 **Message**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/message.png" alt="Message screenshot" width="320">
@@ -264,7 +273,7 @@ Placeholder image currently used for missing screenshots:
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/pagination.png" alt="Pagination screenshot" width="320">
 
 **Panel**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/placeholders/640x360.png" alt="Panel placeholder screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/panel.png" alt="Panel screenshot" width="320">
 
 **Pdf Viewer**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/pdf-viewer.png" alt="Pdf Viewer screenshot" width="320">
@@ -281,7 +290,7 @@ Placeholder image currently used for missing screenshots:
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/hero.png" alt="Hero screenshot" width="320">
 
 **SplitView**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/placeholders/640x360.png" alt="SplitView placeholder screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/split-view.png" alt="SplitView screenshot" width="320">
 
 ## Copyright and license
 
