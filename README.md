@@ -77,58 +77,58 @@ Reference the currently supported target frameworks and front-end dependencies u
 
 ## Components
 
-Component catalog with direct links to documentation and live demos, organized by category.
+Component catalog with direct links to documentation and live demos.
 
-| Category | Component Name | Docs | Demo |
-|:--|:--|:--|:--|
-| Features | Skeletons | [Docs](https://bulma.blazorexpress.com/docs/skeletons) | [Demos](https://bulma.blazorexpress.com/demos/skeletons) |
-| Charts | Bar Chart | [Docs](https://bulma.blazorexpress.com/docs/bar-chart) | [Demos](https://bulma.blazorexpress.com/demos/bar-chart) |
-| Charts | Bubble Chart | [Docs](https://bulma.blazorexpress.com/docs/bubble-chart) | [Demos](https://bulma.blazorexpress.com/demos/bubble-chart) |
-| Charts | Doughnut Chart | [Docs](https://bulma.blazorexpress.com/docs/doughnut-chart) | [Demos](https://bulma.blazorexpress.com/demos/doughnut-chart) |
-| Charts | Line Chart | [Docs](https://bulma.blazorexpress.com/docs/line-chart) | [Demos](https://bulma.blazorexpress.com/demos/line-chart) |
-| Charts | Pie Chart | [Docs](https://bulma.blazorexpress.com/docs/pie-chart) | [Demos](https://bulma.blazorexpress.com/demos/pie-chart) |
-| Charts | PolarArea Chart | [Docs](https://bulma.blazorexpress.com/docs/polar-area-chart) | [Demos](https://bulma.blazorexpress.com/demos/polar-area-chart) |
-| Charts | Radar Chart | [Docs](https://bulma.blazorexpress.com/docs/radar-chart) | [Demos](https://bulma.blazorexpress.com/demos/radar-chart) |
-| Charts | Scatter Chart | [Docs](https://bulma.blazorexpress.com/docs/scatter-chart) | [Demos](https://bulma.blazorexpress.com/demos/scatter-chart) |
-| Icons | Bootstrap Icons | [Docs](https://bulma.blazorexpress.com/docs/icons/bootstrap-icons) | [Demos](https://bulma.blazorexpress.com/demos/icons/bootstrap-icons) |
-| Icons | Google Font Icons | [Docs](https://bulma.blazorexpress.com/docs/icons/google-font-icons) | [Demos](https://bulma.blazorexpress.com/demos/icons/google-font-icons) |
-| Elements | Block | [Docs](https://bulma.blazorexpress.com/docs/block) | [Demos](https://bulma.blazorexpress.com/demos/block) |
-| Elements | Box | [Docs](https://bulma.blazorexpress.com/docs/box) | [Demos](https://bulma.blazorexpress.com/demos/box) |
-| Elements | Button | [Docs](https://bulma.blazorexpress.com/docs/button) | [Demos](https://bulma.blazorexpress.com/demos/button) |
-| Elements | Delete Button | [Docs](https://bulma.blazorexpress.com/docs/delete-button) | [Demos](https://bulma.blazorexpress.com/demos/delete-button) |
-| Elements | Image | [Docs](https://bulma.blazorexpress.com/docs/image) | [Demos](https://bulma.blazorexpress.com/demos/image) |
-| Elements | Notification | [Docs](https://bulma.blazorexpress.com/docs/notification) | [Demos](https://bulma.blazorexpress.com/demos/notification) |
-| Elements | Progress Bar | [Docs](https://bulma.blazorexpress.com/docs/progress-bar) | [Demos](https://bulma.blazorexpress.com/demos/progress-bar) |
-| Elements | Spinner | [Docs](https://bulma.blazorexpress.com/docs/spinner) | [Demos](https://bulma.blazorexpress.com/demos/spinner) |
-| Elements | Tags | [Docs](https://bulma.blazorexpress.com/docs/tags) | [Demos](https://bulma.blazorexpress.com/demos/tags) |
-| Form | Checkbox List Input | [Docs](https://bulma.blazorexpress.com/docs/form/checkbox-list-input) | [Demos](https://bulma.blazorexpress.com/demos/form/checkbox-list-input) |
-| Form | Checkbox Input | [Docs](https://bulma.blazorexpress.com/docs/form/checkbox-input) | [Demos](https://bulma.blazorexpress.com/demos/form/checkbox-input) |
-| Form | Date Input | [Docs](https://bulma.blazorexpress.com/docs/form/date-input) | [Demos](https://bulma.blazorexpress.com/demos/form/date-input) |
-| Form | Enum Input | [Docs](https://bulma.blazorexpress.com/docs/form/enum-input) | [Demos](https://bulma.blazorexpress.com/demos/form/enum-input) |
-| Form | Number Input | [Docs](https://bulma.blazorexpress.com/docs/form/number-input) | [Demos](https://bulma.blazorexpress.com/demos/form/number-input) |
-| Form | OTP Input | [Docs](https://bulma.blazorexpress.com/docs/form/otp-input) | [Demos](https://bulma.blazorexpress.com/demos/form/otp-input) |
-| Form | Radio Input | [Docs](https://bulma.blazorexpress.com/docs/form/radio-input) | [Demos](https://bulma.blazorexpress.com/demos/form/radio-input) |
-| Form | Radio List Input | [Docs](https://bulma.blazorexpress.com/docs/form/radio-list-input) | [Demos](https://bulma.blazorexpress.com/demos/form/radio-list-input) |
-| Form | Select Input | [Docs](https://bulma.blazorexpress.com/docs/form/select-input) | [Demos](https://bulma.blazorexpress.com/demos/form/select-input) |
-| Form | Text Area Input | [Docs](https://bulma.blazorexpress.com/docs/form/text-area-input) | [Demos](https://bulma.blazorexpress.com/demos/form/text-area-input) |
-| Form | Text Input | [Docs](https://bulma.blazorexpress.com/docs/form/text-input) | [Demos](https://bulma.blazorexpress.com/demos/form/text-input) |
-| Components | Breadcrumb | [Docs](https://bulma.blazorexpress.com/docs/breadcrumb) | [Demos](https://bulma.blazorexpress.com/demos/breadcrumb) |
-| Components | Card | [Docs](https://bulma.blazorexpress.com/docs/card) | [Demos](https://bulma.blazorexpress.com/demos/card) |
-| Components | Confirm Dialog | [Docs](https://bulma.blazorexpress.com/docs/confirm-dialog) | [Demos](https://bulma.blazorexpress.com/demos/confirm-dialog) |
-| Components | Dropdown | [Docs](https://bulma.blazorexpress.com/docs/dropdown) | [Demos](https://bulma.blazorexpress.com/demos/dropdown) |
-| Components | Google Maps | [Docs](https://bulma.blazorexpress.com/docs/google-maps) | [Demos](https://bulma.blazorexpress.com/demos/google-maps) |
-| Components | Grid | [Docs](https://bulma.blazorexpress.com/docs/grid) | [Demos](https://bulma.blazorexpress.com/demos/grid) |
-| Components | Menu | [Docs](https://bulma.blazorexpress.com/docs/menu) | [Demos](https://bulma.blazorexpress.com/demos/menu) |
-| Components | Message | [Docs](https://bulma.blazorexpress.com/docs/message) | [Demos](https://bulma.blazorexpress.com/demos/message) |
-| Components | Modal | [Docs](https://bulma.blazorexpress.com/docs/modal) | [Demos](https://bulma.blazorexpress.com/demos/modal) |
-| Components | Navbar | [Docs](https://bulma.blazorexpress.com/docs/navbar) | [Demos](https://bulma.blazorexpress.com/demos/navbar) |
-| Components | Pagination | [Docs](https://bulma.blazorexpress.com/docs/pagination) | [Demos](https://bulma.blazorexpress.com/demos/pagination) |
-| Components | Panel | [Docs](https://bulma.blazorexpress.com/docs/panel) | [Demos](https://bulma.blazorexpress.com/demos/panel) |
-| Components | Pdf Viewer | [Docs](https://bulma.blazorexpress.com/docs/pdf-viewer) | [Demos](https://bulma.blazorexpress.com/demos/pdf-viewer) |
-| Components | Script Loader | [Docs](https://bulma.blazorexpress.com/docs/script-loader) | [Demos](https://bulma.blazorexpress.com/demos/script-loader) |
-| Components | Tabs | [Docs](https://bulma.blazorexpress.com/docs/tabs) | [Demos](https://bulma.blazorexpress.com/demos/tabs) |
-| Layout | Hero | [Docs](https://bulma.blazorexpress.com/docs/hero) | [Demos](https://bulma.blazorexpress.com/demos/hero) |
-| Layout | SplitView | [Docs](https://bulma.blazorexpress.com/docs/split-view) | [Demos](https://bulma.blazorexpress.com/demos/split-view) |
+| Component Name | Docs | Demo |
+|:--|:--|:--|
+| Bar Chart | [Docs](https://bulma.blazorexpress.com/docs/bar-chart) | [Demos](https://bulma.blazorexpress.com/demos/bar-chart) |
+| Block | [Docs](https://bulma.blazorexpress.com/docs/block) | [Demos](https://bulma.blazorexpress.com/demos/block) |
+| Bootstrap Icons | [Docs](https://bulma.blazorexpress.com/docs/icons/bootstrap-icons) | [Demos](https://bulma.blazorexpress.com/demos/icons/bootstrap-icons) |
+| Box | [Docs](https://bulma.blazorexpress.com/docs/box) | [Demos](https://bulma.blazorexpress.com/demos/box) |
+| Breadcrumb | [Docs](https://bulma.blazorexpress.com/docs/breadcrumb) | [Demos](https://bulma.blazorexpress.com/demos/breadcrumb) |
+| Bubble Chart | [Docs](https://bulma.blazorexpress.com/docs/bubble-chart) | [Demos](https://bulma.blazorexpress.com/demos/bubble-chart) |
+| Button | [Docs](https://bulma.blazorexpress.com/docs/button) | [Demos](https://bulma.blazorexpress.com/demos/button) |
+| Card | [Docs](https://bulma.blazorexpress.com/docs/card) | [Demos](https://bulma.blazorexpress.com/demos/card) |
+| Checkbox Input | [Docs](https://bulma.blazorexpress.com/docs/form/checkbox-input) | [Demos](https://bulma.blazorexpress.com/demos/form/checkbox-input) |
+| Checkbox List Input | [Docs](https://bulma.blazorexpress.com/docs/form/checkbox-list-input) | [Demos](https://bulma.blazorexpress.com/demos/form/checkbox-list-input) |
+| Confirm Dialog | [Docs](https://bulma.blazorexpress.com/docs/confirm-dialog) | [Demos](https://bulma.blazorexpress.com/demos/confirm-dialog) |
+| Date Input | [Docs](https://bulma.blazorexpress.com/docs/form/date-input) | [Demos](https://bulma.blazorexpress.com/demos/form/date-input) |
+| Delete Button | [Docs](https://bulma.blazorexpress.com/docs/delete-button) | [Demos](https://bulma.blazorexpress.com/demos/delete-button) |
+| Doughnut Chart | [Docs](https://bulma.blazorexpress.com/docs/doughnut-chart) | [Demos](https://bulma.blazorexpress.com/demos/doughnut-chart) |
+| Dropdown | [Docs](https://bulma.blazorexpress.com/docs/dropdown) | [Demos](https://bulma.blazorexpress.com/demos/dropdown) |
+| Enum Input | [Docs](https://bulma.blazorexpress.com/docs/form/enum-input) | [Demos](https://bulma.blazorexpress.com/demos/form/enum-input) |
+| Google Font Icons | [Docs](https://bulma.blazorexpress.com/docs/icons/google-font-icons) | [Demos](https://bulma.blazorexpress.com/demos/icons/google-font-icons) |
+| Google Maps | [Docs](https://bulma.blazorexpress.com/docs/google-maps) | [Demos](https://bulma.blazorexpress.com/demos/google-maps) |
+| Grid | [Docs](https://bulma.blazorexpress.com/docs/grid) | [Demos](https://bulma.blazorexpress.com/demos/grid) |
+| Hero | [Docs](https://bulma.blazorexpress.com/docs/hero) | [Demos](https://bulma.blazorexpress.com/demos/hero) |
+| Image | [Docs](https://bulma.blazorexpress.com/docs/image) | [Demos](https://bulma.blazorexpress.com/demos/image) |
+| Line Chart | [Docs](https://bulma.blazorexpress.com/docs/line-chart) | [Demos](https://bulma.blazorexpress.com/demos/line-chart) |
+| Menu | [Docs](https://bulma.blazorexpress.com/docs/menu) | [Demos](https://bulma.blazorexpress.com/demos/menu) |
+| Message | [Docs](https://bulma.blazorexpress.com/docs/message) | [Demos](https://bulma.blazorexpress.com/demos/message) |
+| Modal | [Docs](https://bulma.blazorexpress.com/docs/modal) | [Demos](https://bulma.blazorexpress.com/demos/modal) |
+| Navbar | [Docs](https://bulma.blazorexpress.com/docs/navbar) | [Demos](https://bulma.blazorexpress.com/demos/navbar) |
+| Notification | [Docs](https://bulma.blazorexpress.com/docs/notification) | [Demos](https://bulma.blazorexpress.com/demos/notification) |
+| Number Input | [Docs](https://bulma.blazorexpress.com/docs/form/number-input) | [Demos](https://bulma.blazorexpress.com/demos/form/number-input) |
+| OTP Input | [Docs](https://bulma.blazorexpress.com/docs/form/otp-input) | [Demos](https://bulma.blazorexpress.com/demos/form/otp-input) |
+| Pagination | [Docs](https://bulma.blazorexpress.com/docs/pagination) | [Demos](https://bulma.blazorexpress.com/demos/pagination) |
+| Panel | [Docs](https://bulma.blazorexpress.com/docs/panel) | [Demos](https://bulma.blazorexpress.com/demos/panel) |
+| Pdf Viewer | [Docs](https://bulma.blazorexpress.com/docs/pdf-viewer) | [Demos](https://bulma.blazorexpress.com/demos/pdf-viewer) |
+| Pie Chart | [Docs](https://bulma.blazorexpress.com/docs/pie-chart) | [Demos](https://bulma.blazorexpress.com/demos/pie-chart) |
+| PolarArea Chart | [Docs](https://bulma.blazorexpress.com/docs/polar-area-chart) | [Demos](https://bulma.blazorexpress.com/demos/polar-area-chart) |
+| Progress Bar | [Docs](https://bulma.blazorexpress.com/docs/progress-bar) | [Demos](https://bulma.blazorexpress.com/demos/progress-bar) |
+| Radar Chart | [Docs](https://bulma.blazorexpress.com/docs/radar-chart) | [Demos](https://bulma.blazorexpress.com/demos/radar-chart) |
+| Radio Input | [Docs](https://bulma.blazorexpress.com/docs/form/radio-input) | [Demos](https://bulma.blazorexpress.com/demos/form/radio-input) |
+| Radio List Input | [Docs](https://bulma.blazorexpress.com/docs/form/radio-list-input) | [Demos](https://bulma.blazorexpress.com/demos/form/radio-list-input) |
+| Scatter Chart | [Docs](https://bulma.blazorexpress.com/docs/scatter-chart) | [Demos](https://bulma.blazorexpress.com/demos/scatter-chart) |
+| Script Loader | [Docs](https://bulma.blazorexpress.com/docs/script-loader) | [Demos](https://bulma.blazorexpress.com/demos/script-loader) |
+| Select Input | [Docs](https://bulma.blazorexpress.com/docs/form/select-input) | [Demos](https://bulma.blazorexpress.com/demos/form/select-input) |
+| Skeletons | [Docs](https://bulma.blazorexpress.com/docs/skeletons) | [Demos](https://bulma.blazorexpress.com/demos/skeletons) |
+| Spinner | [Docs](https://bulma.blazorexpress.com/docs/spinner) | [Demos](https://bulma.blazorexpress.com/demos/spinner) |
+| SplitView | [Docs](https://bulma.blazorexpress.com/docs/split-view) | [Demos](https://bulma.blazorexpress.com/demos/split-view) |
+| Tabs | [Docs](https://bulma.blazorexpress.com/docs/tabs) | [Demos](https://bulma.blazorexpress.com/demos/tabs) |
+| Tags | [Docs](https://bulma.blazorexpress.com/docs/tags) | [Demos](https://bulma.blazorexpress.com/demos/tags) |
+| Text Area Input | [Docs](https://bulma.blazorexpress.com/docs/form/text-area-input) | [Demos](https://bulma.blazorexpress.com/demos/form/text-area-input) |
+| Text Input | [Docs](https://bulma.blazorexpress.com/docs/form/text-input) | [Demos](https://bulma.blazorexpress.com/demos/form/text-input) |
 
 ## Component Screenshots
 
