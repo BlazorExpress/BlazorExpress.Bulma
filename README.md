@@ -22,7 +22,7 @@ Track the latest published package version and download activity from NuGet at a
 
 ## Docs & Demos
 
-Explore the documentation for implementation guidance and browse live demos to evaluate the components before adoption.
+Access the full documentation and live demos for the component library.
 
 - [Docs Website](https://bulma.blazorexpress.com/docs/)
 - [Demos Website](https://bulma.blazorexpress.com/demos/)
@@ -77,7 +77,7 @@ Reference the currently supported target frameworks and front-end dependencies u
 
 ## Components
 
-Explore the current component catalog with direct access to documentation and live demos. The list is organized by category to help teams evaluate the library quickly and identify the components most relevant to their applications.
+Component catalog with direct links to documentation and live demos, organized by category.
 
 | Category | Component Name | Docs | Demo |
 |:--|:--|:--|:--|
@@ -132,7 +132,7 @@ Explore the current component catalog with direct access to documentation and li
 
 ## Component Screenshots
 
-Preview the out-of-the-box look and feel of the available components before diving into the documentation or live demos. These screenshots are intended to give evaluators, developers, and stakeholders a faster visual overview of the library.
+An at-a-glance showcase of the library’s components, presenting their default appearance and visual consistency.
 
 ### Features
 
