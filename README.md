@@ -137,160 +137,160 @@ An at-a-glance showcase of the library’s components, presenting their default 
 ### Features
 
 **Skeletons**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/skeleton.png" alt="Skeletons screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/skeleton.png" alt="Skeletons screenshot">
 
 ### Charts
 
 **Bar Chart**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/bar-chart.png" alt="Bar Chart screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/bar-chart.png" alt="Bar Chart screenshot">
 
 **Bubble Chart**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/bubble-chart.png" alt="Bubble Chart screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/bubble-chart.png" alt="Bubble Chart screenshot">
 
 **Doughnut Chart**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/doughnut-chart.png" alt="Doughnut Chart screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/doughnut-chart.png" alt="Doughnut Chart screenshot">
 
 **Line Chart**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/line-chart.png" alt="Line Chart screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/line-chart.png" alt="Line Chart screenshot">
 
 **Pie Chart**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/pie-chart.png" alt="Pie Chart screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/pie-chart.png" alt="Pie Chart screenshot">
 
 **PolarArea Chart**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/polar-area-chart.png" alt="PolarArea Chart screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/polar-area-chart.png" alt="PolarArea Chart screenshot">
 
 **Radar Chart**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radar-chart.png" alt="Radar Chart screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radar-chart.png" alt="Radar Chart screenshot">
 
 **Scatter Chart**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/scatter-chart.png" alt="Scatter Chart screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/scatter-chart.png" alt="Scatter Chart screenshot">
 
 ### Icons
 
 **Bootstrap Icons**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/bootstrap-icon.png" alt="Bootstrap Icons screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/bootstrap-icon.png" alt="Bootstrap Icons screenshot">
 
 **Google Font Icons**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/google-font-icon.png" alt="Google Font Icons screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/google-font-icon.png" alt="Google Font Icons screenshot">
 
 ### Elements
 
 **Block**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/block.png" alt="Block screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/block.png" alt="Block screenshot">
 
 **Box**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/box.png" alt="Box screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/box.png" alt="Box screenshot">
 
 **Button**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/button.png" alt="Button screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/button.png" alt="Button screenshot">
 
 **Delete Button**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/delete-button.png" alt="Delete Button screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/delete-button.png" alt="Delete Button screenshot">
 
 **Image**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/image.png" alt="Image screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/image.png" alt="Image screenshot">
 
 **Notification**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/notification.png" alt="Notification screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/notification.png" alt="Notification screenshot">
 
 **Progress Bar**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/progress-bar.png" alt="Progress Bar screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/progress-bar.png" alt="Progress Bar screenshot">
 
 **Spinner**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/spinner.png" alt="Spinner screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/spinner.png" alt="Spinner screenshot">
 
 **Tags**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/tag.png" alt="Tags screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/tag.png" alt="Tags screenshot">
 
 ### Form
 
 **Checkbox List Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/checkbox-list-input.png" alt="Checkbox List Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/checkbox-list-input.png" alt="Checkbox List Input screenshot">
 
 **Checkbox Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/checkbox-input.png" alt="Checkbox Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/checkbox-input.png" alt="Checkbox Input screenshot">
 
 **Date Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/date-input.png" alt="Date Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/date-input.png" alt="Date Input screenshot">
 
 **Enum Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/enum-input.png" alt="Enum Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/enum-input.png" alt="Enum Input screenshot">
 
 **Number Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/number-input.png" alt="Number Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/number-input.png" alt="Number Input screenshot">
 
 **OTP Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/otp-input.png" alt="OTP Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/otp-input.png" alt="OTP Input screenshot">
 
 **Radio Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radio-input.png" alt="Radio Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radio-input.png" alt="Radio Input screenshot">
 
 **Radio List Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radio-list-input.png" alt="Radio List Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radio-list-input.png" alt="Radio List Input screenshot">
 
 **Select Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/select-input.png" alt="Select Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/select-input.png" alt="Select Input screenshot">
 
 **Text Area Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/textarea-input.png" alt="Text Area Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/textarea-input.png" alt="Text Area Input screenshot">
 
 **Text Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/text-input.png" alt="Text Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/text-input.png" alt="Text Input screenshot">
 
 ### Components
 
 **Breadcrumb**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/breadcrumb.png" alt="Breadcrumb screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/breadcrumb.png" alt="Breadcrumb screenshot">
 
 **Card**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/card.png" alt="Card screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/card.png" alt="Card screenshot">
 
 **Confirm Dialog**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/confirm-dialog.png" alt="Confirm Dialog screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/confirm-dialog.png" alt="Confirm Dialog screenshot">
 
 **Dropdown**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/dropdown.png" alt="Dropdown screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/dropdown.png" alt="Dropdown screenshot">
 
 **Google Maps**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/google-map.png" alt="Google Maps screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/google-map.png" alt="Google Maps screenshot">
 
 **Grid**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/grid.png" alt="Grid screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/grid.png" alt="Grid screenshot">
 
 **Menu**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/menu.png" alt="Menu screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/menu.png" alt="Menu screenshot">
 
 **Message**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/message.png" alt="Message screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/message.png" alt="Message screenshot">
 
 **Modal**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/modal.png" alt="Modal screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/modal.png" alt="Modal screenshot">
 
 **Navbar**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/navbar.png" alt="Navbar screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/navbar.png" alt="Navbar screenshot">
 
 **Pagination**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/pagination.png" alt="Pagination screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/pagination.png" alt="Pagination screenshot">
 
 **Panel**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/panel.png" alt="Panel screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/panel.png" alt="Panel screenshot">
 
 **Pdf Viewer**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/pdf-viewer.png" alt="Pdf Viewer screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/pdf-viewer.png" alt="Pdf Viewer screenshot">
 
 **Script Loader**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/script-loader.png" alt="Script Loader screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/script-loader.png" alt="Script Loader screenshot">
 
 **Tabs**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/tabs.png" alt="Tabs screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/tabs.png" alt="Tabs screenshot">
 
 ### Layout
 
 **Hero**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/hero.png" alt="Hero screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/hero.png" alt="Hero screenshot">
 
 **SplitView**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/split-view.png" alt="SplitView screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/split-view.png" alt="SplitView screenshot">
 
 ## Copyright and license
 
