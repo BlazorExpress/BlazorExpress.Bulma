@@ -134,13 +134,6 @@ Component catalog with direct links to documentation and live demos.
 
 An at-a-glance showcase of the library’s components, presenting their default appearance and visual consistency.
 
-### Features
-
-**Skeletons**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/skeleton.png" alt="Skeletons screenshot">
-
-### Charts
-
 **Bar Chart**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/bar-chart.png" alt="Bar Chart screenshot">
 
@@ -165,44 +158,23 @@ An at-a-glance showcase of the library’s components, presenting their default 
 **Scatter Chart**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/scatter-chart.png" alt="Scatter Chart screenshot">
 
-### Icons
+**Block**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/block.png" alt="Block screenshot">
 
 **Bootstrap Icons**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/bootstrap-icon.png" alt="Bootstrap Icons screenshot">
 
-**Google Font Icons**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/google-font-icon.png" alt="Google Font Icons screenshot">
-
-### Elements
-
-**Block**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/block.png" alt="Block screenshot">
-
 **Box**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/box.png" alt="Box screenshot">
+
+**Breadcrumb**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/breadcrumb.png" alt="Breadcrumb screenshot">
 
 **Button**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/button.png" alt="Button screenshot">
 
-**Delete Button**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/delete-button.png" alt="Delete Button screenshot">
-
-**Image**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/image.png" alt="Image screenshot">
-
-**Notification**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/notification.png" alt="Notification screenshot">
-
-**Progress Bar**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/progress-bar.png" alt="Progress Bar screenshot">
-
-**Spinner**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/spinner.png" alt="Spinner screenshot">
-
-**Tags**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/tag.png" alt="Tags screenshot">
-
-### Form
+**Card**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/card.png" alt="Card screenshot">
 
 **Checkbox Input**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/checkbox-input.png" alt="Checkbox Input screenshot">
@@ -210,52 +182,35 @@ An at-a-glance showcase of the library’s components, presenting their default 
 **Checkbox List Input**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/checkbox-list-input.png" alt="Checkbox List Input screenshot">
 
+**Confirm Dialog**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/confirm-dialog.png" alt="Confirm Dialog screenshot">
+
 **Date Input**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/date-input.png" alt="Date Input screenshot">
+
+**Delete Button**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/delete-button.png" alt="Delete Button screenshot">
+
+**Dropdown**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/dropdown.png" alt="Dropdown screenshot">
 
 **Enum Input**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/enum-input.png" alt="Enum Input screenshot">
 
-**Number Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/number-input.png" alt="Number Input screenshot">
-
-**OTP Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/otp-input.png" alt="OTP Input screenshot">
-
-**Radio Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radio-input.png" alt="Radio Input screenshot">
-
-**Radio List Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radio-list-input.png" alt="Radio List Input screenshot">
-
-**Select Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/select-input.png" alt="Select Input screenshot">
-
-**Text Area Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/textarea-input.png" alt="Text Area Input screenshot">
-
-**Text Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/text-input.png" alt="Text Input screenshot">
-
-### Components
-
-**Breadcrumb**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/breadcrumb.png" alt="Breadcrumb screenshot">
-
-**Card**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/card.png" alt="Card screenshot">
-
-**Confirm Dialog**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/confirm-dialog.png" alt="Confirm Dialog screenshot">
-
-**Dropdown**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/dropdown.png" alt="Dropdown screenshot">
+**Google Font Icons**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/google-font-icon.png" alt="Google Font Icons screenshot">
 
 **Google Maps**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/google-map.png" alt="Google Maps screenshot">
 
 **Grid**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/grid.png" alt="Grid screenshot">
+
+**Hero**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/hero.png" alt="Hero screenshot">
+
+**Image**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/image.png" alt="Image screenshot">
 
 **Menu**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/menu.png" alt="Menu screenshot">
@@ -269,6 +224,15 @@ An at-a-glance showcase of the library’s components, presenting their default 
 **Navbar**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/navbar.png" alt="Navbar screenshot">
 
+**Notification**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/notification.png" alt="Notification screenshot">
+
+**Number Input**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/number-input.png" alt="Number Input screenshot">
+
+**OTP Input**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/otp-input.png" alt="OTP Input screenshot">
+
 **Pagination**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/pagination.png" alt="Pagination screenshot">
 
@@ -278,19 +242,41 @@ An at-a-glance showcase of the library’s components, presenting their default 
 **Pdf Viewer**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/pdf-viewer.png" alt="Pdf Viewer screenshot">
 
+**Progress Bar**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/progress-bar.png" alt="Progress Bar screenshot">
+
+**Radio Input**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radio-input.png" alt="Radio Input screenshot">
+
+**Radio List Input**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radio-list-input.png" alt="Radio List Input screenshot">
+
 **Script Loader**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/script-loader.png" alt="Script Loader screenshot">
+
+**Select Input**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/select-input.png" alt="Select Input screenshot">
+
+**Skeletons**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/skeleton.png" alt="Skeletons screenshot">
+
+**Spinner**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/spinner.png" alt="Spinner screenshot">
+
+**SplitView**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/split-view.png" alt="SplitView screenshot">
 
 **Tabs**  
 <img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/tabs.png" alt="Tabs screenshot">
 
-### Layout
+**Tags**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/tag.png" alt="Tags screenshot">
 
-**Hero**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/hero.png" alt="Hero screenshot">
+**Text Area Input**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/textarea-input.png" alt="Text Area Input screenshot">
 
-**SplitView**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/split-view.png" alt="SplitView screenshot">
+**Text Input**  
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/text-input.png" alt="Text Input screenshot">
 
 ## Copyright and license
 
