@@ -77,58 +77,58 @@ Reference the currently supported target frameworks and front-end dependencies u
 
 ## Components
 
-Component catalog with direct links to documentation and live demos, organized by category.
+Component catalog with direct links to documentation and live demos.
 
-| Category | Component Name | Docs | Demo |
-|:--|:--|:--|:--|
-| Features | Skeletons | [Docs](https://bulma.blazorexpress.com/docs/skeletons) | [Demos](https://bulma.blazorexpress.com/demos/skeletons) |
-| Charts | Bar Chart | [Docs](https://bulma.blazorexpress.com/docs/bar-chart) | [Demos](https://bulma.blazorexpress.com/demos/bar-chart) |
-| Charts | Bubble Chart | [Docs](https://bulma.blazorexpress.com/docs/bubble-chart) | [Demos](https://bulma.blazorexpress.com/demos/bubble-chart) |
-| Charts | Doughnut Chart | [Docs](https://bulma.blazorexpress.com/docs/doughnut-chart) | [Demos](https://bulma.blazorexpress.com/demos/doughnut-chart) |
-| Charts | Line Chart | [Docs](https://bulma.blazorexpress.com/docs/line-chart) | [Demos](https://bulma.blazorexpress.com/demos/line-chart) |
-| Charts | Pie Chart | [Docs](https://bulma.blazorexpress.com/docs/pie-chart) | [Demos](https://bulma.blazorexpress.com/demos/pie-chart) |
-| Charts | PolarArea Chart | [Docs](https://bulma.blazorexpress.com/docs/polar-area-chart) | [Demos](https://bulma.blazorexpress.com/demos/polar-area-chart) |
-| Charts | Radar Chart | [Docs](https://bulma.blazorexpress.com/docs/radar-chart) | [Demos](https://bulma.blazorexpress.com/demos/radar-chart) |
-| Charts | Scatter Chart | [Docs](https://bulma.blazorexpress.com/docs/scatter-chart) | [Demos](https://bulma.blazorexpress.com/demos/scatter-chart) |
-| Icons | Bootstrap Icons | [Docs](https://bulma.blazorexpress.com/docs/icons/bootstrap-icons) | [Demos](https://bulma.blazorexpress.com/demos/icons/bootstrap-icons) |
-| Icons | Google Font Icons | [Docs](https://bulma.blazorexpress.com/docs/icons/google-font-icons) | [Demos](https://bulma.blazorexpress.com/demos/icons/google-font-icons) |
-| Elements | Block | [Docs](https://bulma.blazorexpress.com/docs/block) | [Demos](https://bulma.blazorexpress.com/demos/block) |
-| Elements | Box | [Docs](https://bulma.blazorexpress.com/docs/box) | [Demos](https://bulma.blazorexpress.com/demos/box) |
-| Elements | Button | [Docs](https://bulma.blazorexpress.com/docs/button) | [Demos](https://bulma.blazorexpress.com/demos/button) |
-| Elements | Delete Button | [Docs](https://bulma.blazorexpress.com/docs/delete-button) | [Demos](https://bulma.blazorexpress.com/demos/delete-button) |
-| Elements | Image | [Docs](https://bulma.blazorexpress.com/docs/image) | [Demos](https://bulma.blazorexpress.com/demos/image) |
-| Elements | Notification | [Docs](https://bulma.blazorexpress.com/docs/notification) | [Demos](https://bulma.blazorexpress.com/demos/notification) |
-| Elements | Progress Bar | [Docs](https://bulma.blazorexpress.com/docs/progress-bar) | [Demos](https://bulma.blazorexpress.com/demos/progress-bar) |
-| Elements | Spinner | [Docs](https://bulma.blazorexpress.com/docs/spinner) | [Demos](https://bulma.blazorexpress.com/demos/spinner) |
-| Elements | Tags | [Docs](https://bulma.blazorexpress.com/docs/tags) | [Demos](https://bulma.blazorexpress.com/demos/tags) |
-| Form | Checkbox List Input | [Docs](https://bulma.blazorexpress.com/docs/form/checkbox-list-input) | [Demos](https://bulma.blazorexpress.com/demos/form/checkbox-list-input) |
-| Form | Checkbox Input | [Docs](https://bulma.blazorexpress.com/docs/form/checkbox-input) | [Demos](https://bulma.blazorexpress.com/demos/form/checkbox-input) |
-| Form | Date Input | [Docs](https://bulma.blazorexpress.com/docs/form/date-input) | [Demos](https://bulma.blazorexpress.com/demos/form/date-input) |
-| Form | Enum Input | [Docs](https://bulma.blazorexpress.com/docs/form/enum-input) | [Demos](https://bulma.blazorexpress.com/demos/form/enum-input) |
-| Form | Number Input | [Docs](https://bulma.blazorexpress.com/docs/form/number-input) | [Demos](https://bulma.blazorexpress.com/demos/form/number-input) |
-| Form | OTP Input | [Docs](https://bulma.blazorexpress.com/docs/form/otp-input) | [Demos](https://bulma.blazorexpress.com/demos/form/otp-input) |
-| Form | Radio Input | [Docs](https://bulma.blazorexpress.com/docs/form/radio-input) | [Demos](https://bulma.blazorexpress.com/demos/form/radio-input) |
-| Form | Radio List Input | [Docs](https://bulma.blazorexpress.com/docs/form/radio-list-input) | [Demos](https://bulma.blazorexpress.com/demos/form/radio-list-input) |
-| Form | Select Input | [Docs](https://bulma.blazorexpress.com/docs/form/select-input) | [Demos](https://bulma.blazorexpress.com/demos/form/select-input) |
-| Form | Text Area Input | [Docs](https://bulma.blazorexpress.com/docs/form/text-area-input) | [Demos](https://bulma.blazorexpress.com/demos/form/text-area-input) |
-| Form | Text Input | [Docs](https://bulma.blazorexpress.com/docs/form/text-input) | [Demos](https://bulma.blazorexpress.com/demos/form/text-input) |
-| Components | Breadcrumb | [Docs](https://bulma.blazorexpress.com/docs/breadcrumb) | [Demos](https://bulma.blazorexpress.com/demos/breadcrumb) |
-| Components | Card | [Docs](https://bulma.blazorexpress.com/docs/card) | [Demos](https://bulma.blazorexpress.com/demos/card) |
-| Components | Confirm Dialog | [Docs](https://bulma.blazorexpress.com/docs/confirm-dialog) | [Demos](https://bulma.blazorexpress.com/demos/confirm-dialog) |
-| Components | Dropdown | [Docs](https://bulma.blazorexpress.com/docs/dropdown) | [Demos](https://bulma.blazorexpress.com/demos/dropdown) |
-| Components | Google Maps | [Docs](https://bulma.blazorexpress.com/docs/google-maps) | [Demos](https://bulma.blazorexpress.com/demos/google-maps) |
-| Components | Grid | [Docs](https://bulma.blazorexpress.com/docs/grid) | [Demos](https://bulma.blazorexpress.com/demos/grid) |
-| Components | Menu | [Docs](https://bulma.blazorexpress.com/docs/menu) | [Demos](https://bulma.blazorexpress.com/demos/menu) |
-| Components | Message | [Docs](https://bulma.blazorexpress.com/docs/message) | [Demos](https://bulma.blazorexpress.com/demos/message) |
-| Components | Modal | [Docs](https://bulma.blazorexpress.com/docs/modal) | [Demos](https://bulma.blazorexpress.com/demos/modal) |
-| Components | Navbar | [Docs](https://bulma.blazorexpress.com/docs/navbar) | [Demos](https://bulma.blazorexpress.com/demos/navbar) |
-| Components | Pagination | [Docs](https://bulma.blazorexpress.com/docs/pagination) | [Demos](https://bulma.blazorexpress.com/demos/pagination) |
-| Components | Panel | [Docs](https://bulma.blazorexpress.com/docs/panel) | [Demos](https://bulma.blazorexpress.com/demos/panel) |
-| Components | Pdf Viewer | [Docs](https://bulma.blazorexpress.com/docs/pdf-viewer) | [Demos](https://bulma.blazorexpress.com/demos/pdf-viewer) |
-| Components | Script Loader | [Docs](https://bulma.blazorexpress.com/docs/script-loader) | [Demos](https://bulma.blazorexpress.com/demos/script-loader) |
-| Components | Tabs | [Docs](https://bulma.blazorexpress.com/docs/tabs) | [Demos](https://bulma.blazorexpress.com/demos/tabs) |
-| Layout | Hero | [Docs](https://bulma.blazorexpress.com/docs/hero) | [Demos](https://bulma.blazorexpress.com/demos/hero) |
-| Layout | SplitView | [Docs](https://bulma.blazorexpress.com/docs/split-view) | [Demos](https://bulma.blazorexpress.com/demos/split-view) |
+| Component Name | Docs | Demo |
+|:--|:--|:--|
+| Bar Chart | [Docs](https://bulma.blazorexpress.com/docs/bar-chart) | [Demos](https://bulma.blazorexpress.com/demos/bar-chart) |
+| Block | [Docs](https://bulma.blazorexpress.com/docs/block) | [Demos](https://bulma.blazorexpress.com/demos/block) |
+| Bootstrap Icons | [Docs](https://bulma.blazorexpress.com/docs/icons/bootstrap-icons) | [Demos](https://bulma.blazorexpress.com/demos/icons/bootstrap-icons) |
+| Box | [Docs](https://bulma.blazorexpress.com/docs/box) | [Demos](https://bulma.blazorexpress.com/demos/box) |
+| Breadcrumb | [Docs](https://bulma.blazorexpress.com/docs/breadcrumb) | [Demos](https://bulma.blazorexpress.com/demos/breadcrumb) |
+| Bubble Chart | [Docs](https://bulma.blazorexpress.com/docs/bubble-chart) | [Demos](https://bulma.blazorexpress.com/demos/bubble-chart) |
+| Button | [Docs](https://bulma.blazorexpress.com/docs/button) | [Demos](https://bulma.blazorexpress.com/demos/button) |
+| Card | [Docs](https://bulma.blazorexpress.com/docs/card) | [Demos](https://bulma.blazorexpress.com/demos/card) |
+| Checkbox Input | [Docs](https://bulma.blazorexpress.com/docs/form/checkbox-input) | [Demos](https://bulma.blazorexpress.com/demos/form/checkbox-input) |
+| Checkbox List Input | [Docs](https://bulma.blazorexpress.com/docs/form/checkbox-list-input) | [Demos](https://bulma.blazorexpress.com/demos/form/checkbox-list-input) |
+| Confirm Dialog | [Docs](https://bulma.blazorexpress.com/docs/confirm-dialog) | [Demos](https://bulma.blazorexpress.com/demos/confirm-dialog) |
+| Date Input | [Docs](https://bulma.blazorexpress.com/docs/form/date-input) | [Demos](https://bulma.blazorexpress.com/demos/form/date-input) |
+| Delete Button | [Docs](https://bulma.blazorexpress.com/docs/delete-button) | [Demos](https://bulma.blazorexpress.com/demos/delete-button) |
+| Doughnut Chart | [Docs](https://bulma.blazorexpress.com/docs/doughnut-chart) | [Demos](https://bulma.blazorexpress.com/demos/doughnut-chart) |
+| Dropdown | [Docs](https://bulma.blazorexpress.com/docs/dropdown) | [Demos](https://bulma.blazorexpress.com/demos/dropdown) |
+| Enum Input | [Docs](https://bulma.blazorexpress.com/docs/form/enum-input) | [Demos](https://bulma.blazorexpress.com/demos/form/enum-input) |
+| Google Font Icons | [Docs](https://bulma.blazorexpress.com/docs/icons/google-font-icons) | [Demos](https://bulma.blazorexpress.com/demos/icons/google-font-icons) |
+| Google Maps | [Docs](https://bulma.blazorexpress.com/docs/google-maps) | [Demos](https://bulma.blazorexpress.com/demos/google-maps) |
+| Grid | [Docs](https://bulma.blazorexpress.com/docs/grid) | [Demos](https://bulma.blazorexpress.com/demos/grid) |
+| Hero | [Docs](https://bulma.blazorexpress.com/docs/hero) | [Demos](https://bulma.blazorexpress.com/demos/hero) |
+| Image | [Docs](https://bulma.blazorexpress.com/docs/image) | [Demos](https://bulma.blazorexpress.com/demos/image) |
+| Line Chart | [Docs](https://bulma.blazorexpress.com/docs/line-chart) | [Demos](https://bulma.blazorexpress.com/demos/line-chart) |
+| Menu | [Docs](https://bulma.blazorexpress.com/docs/menu) | [Demos](https://bulma.blazorexpress.com/demos/menu) |
+| Message | [Docs](https://bulma.blazorexpress.com/docs/message) | [Demos](https://bulma.blazorexpress.com/demos/message) |
+| Modal | [Docs](https://bulma.blazorexpress.com/docs/modal) | [Demos](https://bulma.blazorexpress.com/demos/modal) |
+| Navbar | [Docs](https://bulma.blazorexpress.com/docs/navbar) | [Demos](https://bulma.blazorexpress.com/demos/navbar) |
+| Notification | [Docs](https://bulma.blazorexpress.com/docs/notification) | [Demos](https://bulma.blazorexpress.com/demos/notification) |
+| Number Input | [Docs](https://bulma.blazorexpress.com/docs/form/number-input) | [Demos](https://bulma.blazorexpress.com/demos/form/number-input) |
+| OTP Input | [Docs](https://bulma.blazorexpress.com/docs/form/otp-input) | [Demos](https://bulma.blazorexpress.com/demos/form/otp-input) |
+| Pagination | [Docs](https://bulma.blazorexpress.com/docs/pagination) | [Demos](https://bulma.blazorexpress.com/demos/pagination) |
+| Panel | [Docs](https://bulma.blazorexpress.com/docs/panel) | [Demos](https://bulma.blazorexpress.com/demos/panel) |
+| Pdf Viewer | [Docs](https://bulma.blazorexpress.com/docs/pdf-viewer) | [Demos](https://bulma.blazorexpress.com/demos/pdf-viewer) |
+| Pie Chart | [Docs](https://bulma.blazorexpress.com/docs/pie-chart) | [Demos](https://bulma.blazorexpress.com/demos/pie-chart) |
+| PolarArea Chart | [Docs](https://bulma.blazorexpress.com/docs/polar-area-chart) | [Demos](https://bulma.blazorexpress.com/demos/polar-area-chart) |
+| Progress Bar | [Docs](https://bulma.blazorexpress.com/docs/progress-bar) | [Demos](https://bulma.blazorexpress.com/demos/progress-bar) |
+| Radar Chart | [Docs](https://bulma.blazorexpress.com/docs/radar-chart) | [Demos](https://bulma.blazorexpress.com/demos/radar-chart) |
+| Radio Input | [Docs](https://bulma.blazorexpress.com/docs/form/radio-input) | [Demos](https://bulma.blazorexpress.com/demos/form/radio-input) |
+| Radio List Input | [Docs](https://bulma.blazorexpress.com/docs/form/radio-list-input) | [Demos](https://bulma.blazorexpress.com/demos/form/radio-list-input) |
+| Scatter Chart | [Docs](https://bulma.blazorexpress.com/docs/scatter-chart) | [Demos](https://bulma.blazorexpress.com/demos/scatter-chart) |
+| Script Loader | [Docs](https://bulma.blazorexpress.com/docs/script-loader) | [Demos](https://bulma.blazorexpress.com/demos/script-loader) |
+| Select Input | [Docs](https://bulma.blazorexpress.com/docs/form/select-input) | [Demos](https://bulma.blazorexpress.com/demos/form/select-input) |
+| Skeletons | [Docs](https://bulma.blazorexpress.com/docs/skeletons) | [Demos](https://bulma.blazorexpress.com/demos/skeletons) |
+| Spinner | [Docs](https://bulma.blazorexpress.com/docs/spinner) | [Demos](https://bulma.blazorexpress.com/demos/spinner) |
+| SplitView | [Docs](https://bulma.blazorexpress.com/docs/split-view) | [Demos](https://bulma.blazorexpress.com/demos/split-view) |
+| Tabs | [Docs](https://bulma.blazorexpress.com/docs/tabs) | [Demos](https://bulma.blazorexpress.com/demos/tabs) |
+| Tags | [Docs](https://bulma.blazorexpress.com/docs/tags) | [Demos](https://bulma.blazorexpress.com/demos/tags) |
+| Text Area Input | [Docs](https://bulma.blazorexpress.com/docs/form/text-area-input) | [Demos](https://bulma.blazorexpress.com/demos/form/text-area-input) |
+| Text Input | [Docs](https://bulma.blazorexpress.com/docs/form/text-input) | [Demos](https://bulma.blazorexpress.com/demos/form/text-input) |
 
 ## Component Screenshots
 
@@ -137,160 +137,160 @@ An at-a-glance showcase of the library’s components, presenting their default 
 ### Features
 
 **Skeletons**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/skeleton.png" alt="Skeletons screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/skeleton.png" alt="Skeletons screenshot">
 
 ### Charts
 
 **Bar Chart**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/bar-chart.png" alt="Bar Chart screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/bar-chart.png" alt="Bar Chart screenshot">
 
 **Bubble Chart**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/bubble-chart.png" alt="Bubble Chart screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/bubble-chart.png" alt="Bubble Chart screenshot">
 
 **Doughnut Chart**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/doughnut-chart.png" alt="Doughnut Chart screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/doughnut-chart.png" alt="Doughnut Chart screenshot">
 
 **Line Chart**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/line-chart.png" alt="Line Chart screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/line-chart.png" alt="Line Chart screenshot">
 
 **Pie Chart**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/pie-chart.png" alt="Pie Chart screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/pie-chart.png" alt="Pie Chart screenshot">
 
 **PolarArea Chart**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/polar-area-chart.png" alt="PolarArea Chart screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/polar-area-chart.png" alt="PolarArea Chart screenshot">
 
 **Radar Chart**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radar-chart.png" alt="Radar Chart screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radar-chart.png" alt="Radar Chart screenshot">
 
 **Scatter Chart**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/scatter-chart.png" alt="Scatter Chart screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/scatter-chart.png" alt="Scatter Chart screenshot">
 
 ### Icons
 
 **Bootstrap Icons**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/bootstrap-icon.png" alt="Bootstrap Icons screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/bootstrap-icon.png" alt="Bootstrap Icons screenshot">
 
 **Google Font Icons**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/google-font-icon.png" alt="Google Font Icons screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/google-font-icon.png" alt="Google Font Icons screenshot">
 
 ### Elements
 
 **Block**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/block.png" alt="Block screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/block.png" alt="Block screenshot">
 
 **Box**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/box.png" alt="Box screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/box.png" alt="Box screenshot">
 
 **Button**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/button.png" alt="Button screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/button.png" alt="Button screenshot">
 
 **Delete Button**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/delete-button.png" alt="Delete Button screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/delete-button.png" alt="Delete Button screenshot">
 
 **Image**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/image.png" alt="Image screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/image.png" alt="Image screenshot">
 
 **Notification**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/notification.png" alt="Notification screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/notification.png" alt="Notification screenshot">
 
 **Progress Bar**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/progress-bar.png" alt="Progress Bar screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/progress-bar.png" alt="Progress Bar screenshot">
 
 **Spinner**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/spinner.png" alt="Spinner screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/spinner.png" alt="Spinner screenshot">
 
 **Tags**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/tag.png" alt="Tags screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/tag.png" alt="Tags screenshot">
 
 ### Form
 
 **Checkbox List Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/checkbox-list-input.png" alt="Checkbox List Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/checkbox-list-input.png" alt="Checkbox List Input screenshot">
 
 **Checkbox Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/checkbox-input.png" alt="Checkbox Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/checkbox-input.png" alt="Checkbox Input screenshot">
 
 **Date Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/date-input.png" alt="Date Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/date-input.png" alt="Date Input screenshot">
 
 **Enum Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/enum-input.png" alt="Enum Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/enum-input.png" alt="Enum Input screenshot">
 
 **Number Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/number-input.png" alt="Number Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/number-input.png" alt="Number Input screenshot">
 
 **OTP Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/otp-input.png" alt="OTP Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/otp-input.png" alt="OTP Input screenshot">
 
 **Radio Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radio-input.png" alt="Radio Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radio-input.png" alt="Radio Input screenshot">
 
 **Radio List Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radio-list-input.png" alt="Radio List Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/radio-list-input.png" alt="Radio List Input screenshot">
 
 **Select Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/select-input.png" alt="Select Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/select-input.png" alt="Select Input screenshot">
 
 **Text Area Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/textarea-input.png" alt="Text Area Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/textarea-input.png" alt="Text Area Input screenshot">
 
 **Text Input**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/text-input.png" alt="Text Input screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/text-input.png" alt="Text Input screenshot">
 
 ### Components
 
 **Breadcrumb**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/breadcrumb.png" alt="Breadcrumb screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/breadcrumb.png" alt="Breadcrumb screenshot">
 
 **Card**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/card.png" alt="Card screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/card.png" alt="Card screenshot">
 
 **Confirm Dialog**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/confirm-dialog.png" alt="Confirm Dialog screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/confirm-dialog.png" alt="Confirm Dialog screenshot">
 
 **Dropdown**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/dropdown.png" alt="Dropdown screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/dropdown.png" alt="Dropdown screenshot">
 
 **Google Maps**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/google-map.png" alt="Google Maps screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/google-map.png" alt="Google Maps screenshot">
 
 **Grid**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/grid.png" alt="Grid screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/grid.png" alt="Grid screenshot">
 
 **Menu**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/menu.png" alt="Menu screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/menu.png" alt="Menu screenshot">
 
 **Message**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/message.png" alt="Message screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/message.png" alt="Message screenshot">
 
 **Modal**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/modal.png" alt="Modal screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/modal.png" alt="Modal screenshot">
 
 **Navbar**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/navbar.png" alt="Navbar screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/navbar.png" alt="Navbar screenshot">
 
 **Pagination**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/pagination.png" alt="Pagination screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/pagination.png" alt="Pagination screenshot">
 
 **Panel**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/panel.png" alt="Panel screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/panel.png" alt="Panel screenshot">
 
 **Pdf Viewer**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/pdf-viewer.png" alt="Pdf Viewer screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/pdf-viewer.png" alt="Pdf Viewer screenshot">
 
 **Script Loader**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/script-loader.png" alt="Script Loader screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/script-loader.png" alt="Script Loader screenshot">
 
 **Tabs**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/tabs.png" alt="Tabs screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/tabs.png" alt="Tabs screenshot">
 
 ### Layout
 
 **Hero**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/hero.png" alt="Hero screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/hero.png" alt="Hero screenshot">
 
 **SplitView**  
-<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/split-view.png" alt="SplitView screenshot" width="320">
+<img src="BlazorExpress.Bulma.Demo.RCL/wwwroot/images/screenshots/split-view.png" alt="SplitView screenshot">
 
 ## Copyright and license
 
