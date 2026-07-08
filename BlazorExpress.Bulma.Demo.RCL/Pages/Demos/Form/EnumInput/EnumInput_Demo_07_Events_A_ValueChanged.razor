@@ -8,24 +8,36 @@
     {
         value1 = value;
 
-        if (value == (int)Status.Active)
+        if (value == (int)Status.Pending)
         {
-            // Do something when the value is Active
+            // Do something when the value is Pending Review
         }
-        else if (value == (int)Status.Inactive)
+        else if (value == (int)Status.ReviewInProgress)
         {
-            // Do something when the value is Inactive
+            // Do something when the value is Review In Progress
         }
-        else if (value == (int)Status.Pending)
+        else if (value == (int)Status.Approved)
         {
-            // Do something when the value is Pending
+            // Do something when the value is Approved
+        }
+        else if (value == (int)Status.Rejected)
+        {
+            // Do something when the value is Rejected
         }
     }
 
     public enum Status
     {
-        Active,
-        Inactive,
-        Pending
+        [Display(Name = "Pending Review")]
+        Pending,
+
+        [Display(Name = "Review In Progress")]
+        ReviewInProgress,
+
+        [Display(Name = "Approved")]
+        Approved,
+
+        [Display(Name = "Rejected")]
+        Rejected
     }
 }

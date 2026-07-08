@@ -2,30 +2,42 @@
 <div>Selected text: @text1</div>
 
 @code {
-    private string text1 = Status.Pending.ToString();
+    private string text1 = "Pending Review";
 
     private void OnTextChanged(string value)
     {
         text1 = value;
 
-        if (value == "Active")
+        if (value == "Pending Review")
         {
-            // Do something when the text is "Active"
+            // Do something when the text is "Pending Review"
         }
-        else if (value == "Inactive")
+        else if (value == "Review In Progress")
         {
-            // Do something when the text is "Inactive"
+            // Do something when the text is "Review In Progress"
         }
-        else if (value == "Pending")
+        else if (value == "Approved")
         {
-            // Do something when the text is "Pending"
+            // Do something when the text is "Approved"
+        }
+        else if (value == "Rejected")
+        {
+            // Do something when the text is "Rejected"
         }
     }
 
     public enum Status
     {
-        Active,
-        Inactive,
-        Pending
+        [Display(Name = "Pending Review")]
+        Pending,
+
+        [Display(Name = "Review In Progress")]
+        ReviewInProgress,
+
+        [Display(Name = "Approved")]
+        Approved,
+
+        [Display(Name = "Rejected")]
+        Rejected
     }
 }

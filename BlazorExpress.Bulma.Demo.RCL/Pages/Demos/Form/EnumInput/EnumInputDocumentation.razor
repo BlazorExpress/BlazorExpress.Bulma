@@ -19,12 +19,13 @@
         <div class="content mb-2">
             <ol>
                 <li>Define an <code>enum</code> representing your options.</li>
+                <li>Optionally decorate enum members with <code>[Display(Name = "...")]</code> to show friendlier labels in the dropdown.</li>
                 <li>Add the <code>EnumInput</code> component to your page, specifying the <code>TEnum</code> type parameter.</li>
                 <li>Bind the selected value using <code>@@bind-Value</code> or <code>@@bind-Text</code> as needed.</li>
                 <li>Use the selected value or text in your logic as shown in the demo.</li>
             </ol>
         </div>
-        This demo shows how to bind both the enum value and text, and how to display the selected result.
+        This demo shows how to bind both the enum value and text, and how to display user-friendly document review statuses.
     </Block>
     <Demo Type="typeof(EnumInput_Demo_01_How_it_works)" Tabs="true" />
 </Section>
@@ -131,12 +132,12 @@
                 <li>Update your logic based on the new text in the event handler.</li>
             </ol>
         </div>
-        This demo shows how to handle text changes using the TextChanged event.
+        This demo shows how to handle text changes using the display text produced by the enum metadata.
     </Block>
     <Demo Type="typeof(EnumInput_Demo_07_Events_B_TextChanged)" Tabs="true" />
 </Section>
 
-<Section Class="p-0" Size="HeadingSize.H3" Name="Mehods" PageUrl="@pageUrl" Link="methods">
+<Section Class="p-0" Size="HeadingSize.H3" Name="Methods" PageUrl="@pageUrl" Link="methods">
     <Block>
         The <strong>EnumInput</strong> component can be enabled or disabled dynamically at runtime.
         <br /><br />
@@ -156,8 +157,8 @@
     private const string componentName = nameof(EnumInput);
     private const string pageUrl = DemoRouteConstants.Demos_Form_EnumInput_Documentation;
     private const string pageTitle = componentName;
-    private const string pageDescription = $"The <code>{componentName}</code> component is used to show enum values in a dropdown list. It is a simple and effective way to allow users to select from a predefined set of options.";
+    private const string pageDescription = $"The <code>{componentName}</code> component is used to show enum values in a dropdown list. It is a simple and effective way to allow users to select from a predefined set of options, including user-friendly labels from <code>Display</code> attributes.";
     private const string metaTitle = $"Blazor {componentName} Component";
-    private const string metaDescription = $"The {componentName} component is used to show enum values in a dropdown list. It is a simple and effective way to allow users to select from a predefined set of options.";
+    private const string metaDescription = $"The {componentName} component is used to show enum values in a dropdown list. It is a simple and effective way to allow users to select from a predefined set of options with user-friendly labels from Display attributes.";
     private const string imageUrl = DemoScreenshotSrcConstants.EnumInput;
 }

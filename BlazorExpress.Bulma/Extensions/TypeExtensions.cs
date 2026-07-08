@@ -3,7 +3,7 @@
 /// <summary>
 /// Various extension methods for <see cref="Type" />.
 /// </summary>
-public static class TypeExtensions
+public static partial class TypeExtensions
 {
     #region Methods
 

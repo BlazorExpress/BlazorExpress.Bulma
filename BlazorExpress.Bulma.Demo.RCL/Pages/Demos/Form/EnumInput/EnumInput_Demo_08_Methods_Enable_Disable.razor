@@ -21,8 +21,16 @@
 
     public enum Status
     {
-        Active,
-        Inactive,
-        Pending
+        [Display(Name = "Pending Review")]
+        Pending,
+
+        [Display(Name = "Review In Progress")]
+        ReviewInProgress,
+
+        [Display(Name = "Approved")]
+        Approved,
+
+        [Display(Name = "Rejected")]
+        Rejected
     }
 }

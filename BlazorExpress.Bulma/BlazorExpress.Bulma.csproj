@@ -39,7 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BlazorExpress.Core" Version="0.3.0" />
+    <PackageReference Include="BlazorExpress.Core" Version="0.3.1" />
   </ItemGroup>
 
   <ItemGroup>
